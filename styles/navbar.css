@@ -1,11 +1,5 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-@media (max-width: 1009px){
+
+/*@media (max-width: 1009px){
     .nav-bar{
         /*height: 70px;*/
         height: 3.6vw;
@@ -102,7 +96,14 @@ body{
     .cart-text{
         font-size: 0.75vw;
     }
+}*/.account-create-text{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
+
 .nav-bar{
     background-color: hsla(128, 50%, 6%, 0.871);
     width: 100vw;
