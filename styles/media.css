@@ -1,0 +1,220 @@
+@media (max-width: 1009px){
+    .nav-bar{
+        /*height: 70px;*/
+        height: 3.6vw;
+    }
+    .logo-location-container{
+        /*height: 70px;*/
+        height: 3.6vw;
+    }
+    .right-section{
+        /*height: 70px;*/
+        height: 3.6vw;
+        width: 19vw;
+        /*gap: 2px;*/
+        gap: 0.2vw;
+    }
+    .amazon-logo-container{
+        /*height: 70px;*/
+        height: 3.6vw;
+        /*margin-right: 1px;*/
+        margin-right: 0.2vw;
+        /*padding: 1px;*/
+        padding: 0.2vw;
+    }
+    .amazon-logo-container img{
+        /*width: 20px;*/
+        width: 4.6vw;
+        height: auto;
+    }
+    .location-text{
+        /*height: 50px;*/
+        height: 3.6vw;
+        padding: 0.2vw;
+    }
+    #location-icon-address{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+    }
+    .delivery-address{
+        /*font-size: 14px;*/
+        font-size: 0.75vw;
+    }
+    .location-details{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+        margin-left: 0.5vw;
+        
+    }
+    .update-location{
+        font-weight: bold;
+    }
+    .search-bar-button{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+        /*height: 15px;*/
+        height: 2.1vw;
+        /*width: 15px;*/
+        width: 2.1vw;
+    }
+    .lang-flag-container{
+        padding: 1vw 0.6vw;
+    }
+    .flag-icon img{
+        /*width: 20px;*/
+        width: 2.1vw;
+    }
+    .lang-select{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+    }
+    .drop-fill-icon{
+       /* font-size: 15px;*/
+        font-size: 0.5vw;
+        padding-top: 1vw;
+    }
+    .hello-sign,
+    .account-lists-text{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+    }
+    .down-fill-container{
+        /*font-size: 15px;*/
+        font-size: 0.5vw;
+        padding-top: 2vw;
+    }
+    .return-text,
+    .order-text{
+        font-size: 0.75vw;
+    }
+    .cart-num-items{
+        font-size: 0.75vw;
+        top: -1vw;
+        right: 1vw;
+    }
+    .cart-text{
+        font-size: 0.75vw;
+    }
+   .account-create-text{
+        font-size: 0.6vw;
+    }
+}
+
+/*@media*/
+@media (max-width: 1009px){
+    .nav-bar{
+        height: 50px;
+        font-size: 9px;
+        /*height: 3.6vw;*/
+    }
+    .nav-bar .logo-location-container{
+        height: 50px;
+        /*height: 3.6vw;*/
+        flex: 1;
+    }
+    .nav-bar .right-section{
+        background-color: red;
+        height: 50px;
+        /*height: 3.6vw;*/
+        width: 245px;
+        /*width: 27vw;*/
+        gap: 1px;
+        /*gap: 0.2vw;*/
+        flex-shrink: 0;
+        flex: 1;
+    }
+    .nav-bar .amazon-logo-container{
+        height: 50px;
+        /*height: 3.6vw;*/
+        /*margin-right: 1px;*/
+        /*margin-right: 0.2vw;*/
+        /*padding: 1px;*/
+        padding: 0.2vw;
+    }
+    .nav-bar .amazon-logo-container img{
+        /*width: 20px;*/
+        width: 4.6vw;
+        height: auto;
+    }
+    .nav-bar .location-text{
+        /*height: 50px;*/
+        height: 3.6vw;
+        padding: 0.2vw;
+    }
+    .nav-bar #location-icon-address{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+    }
+    .nav-bar .delivery-address{
+        /*font-size: 14px;*/
+        font-size: 0.75vw;
+    }
+    .nav-bar .location-details{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+        margin-left: 0.5vw;
+        
+    }
+    .nav-bar .update-location{
+        font-weight: bold;
+    }
+    .nav-bar .search-bar-button{
+        /*font-size: 15px;*/
+        font-size: 0.75vw;
+        /*height: 15px;*/
+        height: 2.1vw;
+        /*width: 15px;*/
+        width: 2.1vw;
+    }
+    .nav-bar .lang-flag-container{
+        padding: 1vw 0.6vw;
+    }
+    .nav-bar .flag-icon img{
+        /*width: 20px;*/
+        width: 2.1vw;
+    }
+    .nav-bar .lang-select{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+    }
+    .nav-bar .drop-fill-icon{
+       /* font-size: 15px;*/
+        font-size: 0.5vw;
+        padding-top: 1vw;
+    }
+    .nav-bar .hello-sign,
+    .nav-bar .account-lists-text{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+    }
+    .nav-bar .down-fill-container{
+        /*font-size: 15px;*/
+        font-size: 0.5vw;
+        padding-top: 2vw;
+    }
+    .nav-bar .return-text,
+    .nav-bar .order-text{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+    }
+    .nav-bar .cart-num-items{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+        top: -1vw;
+        right: 1vw;
+    }
+    .nav-bar .cart-text{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+    }
+   .nav-bar .account-create-text{
+        /*font-size: 0.6vw;*/
+        font-size: 8px;
+    }
+    .nav-bar .cart-image img{
+        /*width: 2vw;*/
+        width: 3vw;
+        height: auto;
+    }
+}
+/*end of @media*/
