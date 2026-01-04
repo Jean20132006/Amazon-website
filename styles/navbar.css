@@ -1,4 +1,491 @@
 
+/*@media*/
+@media  (max-width: 569px){
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 25px;
+        font-size: 4px;
+        /*height: 3.6vw;*/
+    }
+    .nav-bar .logo-location-container{
+        /*background-color: rgb(211, 101, 101);*/
+        display: flex;
+        /*align-items: center;*/
+        justify-content: start;
+        height: 20px;
+        margin-left: -15px;
+        flex: 1;
+    }
+    .nav-bar .right-section{
+        display: flex;
+        /*background-color: rgb(199, 14, 42);*/
+        height: 20px;
+        gap: 1px;
+        margin-right: -10px;
+        flex-shrink: 0;
+        flex: 1;
+    }
+    /*End of the 3 sections*/
+
+    /*Search bar*/
+    .nav-bar .search-bar-container{
+        margin-left: none;
+    }
+    .nav-bar .all-button{
+        font-size: 7px;
+        width: 20px;
+        height: 20px;
+
+    }
+    .nav-bar .all-drop-downfill{
+        font-size: 3px;
+    }
+    .search-bar-input-container{
+      margin: none;
+    }
+    .nav-bar .search-bar-input{
+        height: 20px;
+        width: 0;
+        
+    }  
+
+    .nav-bar .search-bar-input::placeholder{
+        font-size: 6px;
+        
+    }
+
+    .nav-bar .search-bar-button-container{
+        margin: none;
+    }
+
+    .nav-bar .search-button{
+        font-size: 6px;
+        height: 20px;
+        width: 20px;   
+    }
+    
+    /*End of search bar*/
+    
+    /*amazon logo and location*/
+    .nav-bar .amazon-logo-container img{
+        width: 55px;
+        height: auto;
+    }
+    .nav-bar .location-text{
+        /*background-color: lightpink;*/
+        margin-left: -13px;
+        height: 20px;
+        padding: 1px;
+    }
+    .nav-bar #location-icon-address{
+        font-size: 4px;    
+    }
+    .nav-bar .delivery-address{
+        font-size: 4px;
+        padding-bottom: 4px;
+        
+    }
+    .nav-bar .location-details{
+        font-size: 5px;
+        margin-left: 1px;
+        
+    }
+    .nav-bar .update-location{
+        font-weight: bold;
+    }
+    /*End of amazon logo and location*/
+
+    /*lang, account, order, cart*/
+    .nav-bar .lang-flag-container{
+        padding: 1px 1px;
+        margin-left: -10px;
+    }
+    .nav-bar .flag-icon img{
+        width: 7px;
+        
+    }
+    .nav-bar .lang-select{
+        font-size: 5px;
+    }
+    .nav-bar .drop-fill-icon{
+        font-size: 3px;
+        padding-top: 3px;
+        margin-left: -4px;
+    }
+    .nav-bar .hello-sign {
+        padding-bottom: 6px;
+    }
+    .nav-bar .hello-sign,
+    .nav-bar .account-lists-text{
+        font-size: 4px;
+        margin-left: -4px;
+        
+    }
+    /*Hello, Sign in icon*/
+    .nav-bar .down-fill-container{
+        font-size: 3px;
+        padding-top: 8px;
+        margin-left: -2px;
+    }
+    .nav-bar .return-text{
+        padding-bottom: 6px;
+    }
+    .nav-bar .return-text,
+    .nav-bar .order-text{
+        font-size: 4px;
+        margin-left: -7px;
+    }
+    .cart-container{
+        margin-left: -10px;
+    }
+    .nav-bar .cart-num-items{
+        font-size: 4px;
+        /*top: -1vw;
+        right: 1vw;*/
+    }
+    .nav-bar .cart-text{
+        font-size: 4px;
+        /*font-size: 0.75vw;*/
+    }
+   .nav-bar .account-create-text{
+        /*font-size: 0.6vw;*/
+        font-size: 4px;
+    }
+    .nav-bar .cart-image img{
+        /*width: 2vw;*/
+        width: 3vw;
+        height: auto;
+        margin-right: 4px;
+    }
+    /*End of lang, account, order, cart*/
+}
+/*end of @media*/
+/*@media*/
+@media (min-width: 570px) and (max-width: 615px){
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        font-size: 7px;
+        /*height: 3.6vw;*/
+    }
+    .nav-bar .logo-location-container{
+        /*background-color: lightblue;*/
+        display: flex;
+        /*align-items: center;*/
+        justify-content: start;
+        height: 25px;
+        margin-left: -15px;
+        flex: 1;
+    }
+    .nav-bar .right-section{
+        display: flex;
+        /*background-color: lightpink;*/
+        height: 25px;
+        gap: 1px;
+        margin-right: -10px;
+        flex-shrink: 0;
+        flex: 1;
+    }
+    /*End of the 3 sections*/
+
+    /*Search bar*/
+    .nav-bar .search-bar-container{
+        margin-left: none;
+    }
+    .nav-bar .all-button{
+        font-size: 9px;
+        width: 25px;
+        height: 25px;
+
+    }
+    .nav-bar .all-drop-downfill{
+        font-size: 4px;
+    }
+    .search-bar-input-container{
+      margin: none;
+    }
+    .nav-bar .search-bar-input{
+        height: 25px;
+        /*width: 0;*/
+        
+    }  
+
+    .nav-bar .search-bar-input::placeholder{
+        font-size: 9px;
+        
+    }
+
+    .nav-bar .search-bar-button-container{
+        margin: none;
+    }
+
+    .nav-bar .search-button{
+        font-size: 10px;
+        height: 25px;
+        width: 25px;   
+    }
+    
+    /*End of search bar*/
+    
+    /*amazon logo and location*/
+    .nav-bar .amazon-logo-container img{
+        width: 50px;
+        height: auto;
+    }
+    .nav-bar .location-text{
+        /*background-color: lightpink;*/
+        margin-left: -13px;
+        height: 30px;
+        padding: 1px;
+    }
+    .nav-bar #location-icon-address{
+        font-size: 6px;    
+    }
+    .nav-bar .delivery-address{
+        font-size: 7px;
+        
+    }
+    .nav-bar .location-details{
+        font-size: 7px;
+        margin-left: 1px;
+        
+    }
+    .nav-bar .update-location{
+        font-weight: bold;
+    }
+    /*End of amazon logo and location*/
+
+    /*lang, account, order, cart*/
+    .nav-bar .lang-flag-container{
+        padding: 1px 1px;
+        margin-left: -10px;
+    }
+    .nav-bar .flag-icon img{
+        width: 10px;
+        
+    }
+    .nav-bar .lang-select{
+        font-size: 7px;
+    }
+    .nav-bar .drop-fill-icon{
+        font-size: 4px;
+        padding-top: 3px;
+        margin-left: -4px;
+    }
+    .nav-bar .hello-sign {
+        padding-bottom: 4px;
+    }
+    .nav-bar .hello-sign,
+    .nav-bar .account-lists-text{
+        font-size: 6px;
+        margin-left: -4px;
+        
+    }
+    /*Hello, Sign in icon*/
+    .nav-bar .down-fill-container{
+        font-size: 4px;
+        padding-top: 8px;
+        margin-left: -2px;
+    }
+    .nav-bar .return-text{
+        padding-bottom: 4px;
+    }
+    .nav-bar .return-text,
+    .nav-bar .order-text{
+        font-size: 6px;
+        margin-left: -7px;
+    }
+    .cart-container{
+        margin-left: -10px;
+    }
+    .nav-bar .cart-num-items{
+        font-size: 6px;
+        /*top: -1vw;
+        right: 1vw;*/
+    }
+    .nav-bar .cart-text{
+        font-size: 6px;
+        /*font-size: 0.75vw;*/
+    }
+   .nav-bar .account-create-text{
+        /*font-size: 0.6vw;*/
+        font-size: 6px;
+    }
+    .nav-bar .cart-image img{
+        /*width: 2vw;*/
+        width: 3vw;
+        height: auto;
+        margin-right: 4px;
+    }
+    /*End of lang, account, order, cart*/
+}
+/*end of @media*/
+
+/*@media*/
+@media (min-width:616px) and (max-width: 764px){
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 8px;
+        /*height: 3.6vw;*/
+    }
+    .nav-bar .logo-location-container{
+        /*background-color: lightblue;*/
+        display: flex;
+        /*align-items: center;*/
+        justify-content: start;
+        height: 30px;
+        margin-left: -15px;
+        flex: 1;
+    }
+    .nav-bar .right-section{
+        display: flex;
+        /*background-color: lightblue;*/
+        height: 30px;
+        gap: 1px;
+        margin-right: -10px;
+        flex-shrink: 0;
+        flex: 1;
+    }
+    /*End of the 3 sections*/
+
+    /*Search bar*/
+    .nav-bar .search-bar-container{
+        margin-right: none;
+    }
+    .nav-bar .all-button{
+        font-size: 11px;
+        width: 30px;
+        height: 30px;
+
+    }
+    .nav-bar .all-drop-downfill{
+        font-size: 5px;
+    }
+    .search-bar-input-container{
+      margin: none;
+    }
+    .nav-bar .search-bar-input{
+        height: 30px;
+        width: 0;
+        
+    }  
+
+    .nav-bar .search-bar-input::placeholder{
+        font-size: 11px;
+        
+    }
+
+    .nav-bar .search-bar-button-container{
+        margin: none;
+    }
+
+    .nav-bar .search-button{
+        font-size: 11px;
+        height: 30px;
+        width: 30px;   
+    }
+    
+    /*End of search bar*/
+    
+    /*amazon logo and location*/
+    .nav-bar .amazon-logo-container img{
+        width: 50px;
+        height: auto;
+    }
+    .nav-bar .location-text{
+        /*background-color: lightpink;*/
+        margin-left: -13px;
+        height: 40px;
+        padding: 1px;
+    }
+    .nav-bar #location-icon-address{
+        font-size: 8px;    
+    }
+    .nav-bar .delivery-address{
+        font-size: 8px;
+        
+    }
+    .nav-bar .location-details{
+        font-size: 8px;
+        margin-left: 1px;
+        
+    }
+    .nav-bar .update-location{
+        font-weight: bold;
+    }
+    /*End of amazon logo and location*/
+
+    /*lang, account, order, cart*/
+    .nav-bar .lang-flag-container{
+        padding: 1px 1px;
+        margin-left: -10px;
+    }
+    .nav-bar .flag-icon img{
+        width: 7px;
+        
+    }
+    .nav-bar .lang-select{
+        font-size: 8px;
+    }
+    .nav-bar .drop-fill-icon{
+        font-size: 5px;
+        padding-top: 3px;
+        margin-left: -4px;
+    }
+    .nav-bar .hello-sign {
+        padding-bottom: 2px;
+    }
+    .nav-bar .hello-sign,
+    .nav-bar .account-lists-text{
+        font-size: 8px;
+        margin-left: -4px;
+        
+    }
+    /*Hello, Sign in icon*/
+    .nav-bar .down-fill-container{
+        font-size: 5px;
+        padding-top: 8px;
+        margin-left: -2px;
+    }
+    .nav-bar .return-text{
+        padding-bottom: 2px;
+    }
+    .nav-bar .return-text,
+    .nav-bar .order-text{
+        font-size: 8px;
+        margin-left: -7px;
+    }
+    .cart-container{
+        margin-left: -10px;
+    }
+    .nav-bar .cart-num-items{
+        font-size: 8px;
+        /*top: -1vw;
+        right: 1vw;*/
+    }
+    .nav-bar .cart-text{
+        font-size: 8px;
+        /*font-size: 0.75vw;*/
+    }
+   .nav-bar .account-create-text{
+        /*font-size: 0.6vw;*/
+        font-size: 8px;
+    }
+    .nav-bar .cart-image img{
+        /*width: 2vw;*/
+        width: 3vw;
+        height: auto;
+    }
+    /*End of lang, account, order, cart*/
+}
+/*end of @media*/
 body{
     margin: 0;
     padding: 0;
@@ -7,7 +494,7 @@ body{
     text-decoration: none;
 }
 /*@media*/
-@media (max-width: 1003px){
+@media (min-width: 765px) and (max-width: 1003px){
     .nav-bar{
         display: flex;
         align-items: center;
@@ -29,7 +516,7 @@ body{
         display: flex;
         /*background-color: red;*/
         height: 40px;
-        gap: auto;
+        gap: 1px;
         margin-right: -10px;
         flex-shrink: 0;
         flex: 1;
@@ -74,9 +561,9 @@ body{
     
     /*End of search bar*/
     
-    
+    /*amazon logo and location*/
     .nav-bar .amazon-logo-container img{
-        width: 50px;
+        width: 60px;
         height: auto;
     }
     .nav-bar .location-text{
@@ -98,14 +585,9 @@ body{
     .nav-bar .update-location{
         font-weight: bold;
     }
-    .nav-bar .search-bar-button{
-        /*font-size: 15px;*/
-        font-size: 0.75vw;
-        /*height: 15px;*/
-        height: 2.1vw;
-        /*width: 15px;*/
-        width: 2.1vw;
-    }
+    /*End of amazon logo and location*/
+
+    /*lang, account, order, cart*/
     .nav-bar .lang-flag-container{
         padding: 1px 1px;
     }
@@ -160,6 +642,7 @@ body{
         width: 3vw;
         height: auto;
     }
+    /*End of lang, account, order, cart*/
 }
 /*end of @media*/
 .nav-bar{
@@ -410,8 +893,7 @@ body{
     flex: 1;
     /*height: 2.1vw;*/
     height: 40px;
-    /*min-width: 0;*/
-    /*width: 0;*/    
+    /*width: 0;*/  
 }
 .search-bar-input:focus-within  {
     border: 3px solid orange;      
@@ -562,6 +1044,12 @@ body{
     margin-left: -8px;
     /*font-size: 0.5vw;*/
     font-size: 10px;
+}
+.account-signin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .account-lists-container{
