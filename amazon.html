@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/mediaheader.css">
+    <link rel="stylesheet" href="styles/amazon.css">
+    <link rel="stylesheet" href="styles/mediaamazon.css">
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -228,12 +233,13 @@
                 <a href="#cart">
                     <div class="cart-container">
                            <div class="cart-image-num-container">
-                                <div class="cart-image">
-                                    <img src="images/cart-icon.png" alt="cart image">    
-                                </div>
                                 <div class="cart-num-items">
                                     <span>0</span>
                                 </div>
+                                <div class="cart-image">
+                                    <img src="images/cart-icon.png" alt="cart image">    
+                                </div>
+                                
                             </div>
                             <div class="cart-text">
                               <span >Cart</span> 
@@ -245,224 +251,257 @@
         </div>
     </nav>
     <!--header-->
-    <!--<header>
+    <header class="header">
         <div class="all-department-menu">
-            <div class="hamburger-container">
-                <button class="hamburger-button">
-                    <div class="hamburger-menu">
-                        <i class="bi bi-list"></i>
-                        <span class="all-department-text">All</span>    
+            <!--first flexible container-->
+            <div class="flexible-container-one">
+                <div class="hamburger-container">
+                    <button class="hamburger-button">
+                        <div class="hamburger-menu">
+                            <i class="bi bi-list"></i>
+                            <span class="all-department-text">All</span>    
+                        </div>
+                    </button>
+                    <div class="hamburger-tooltip-hello-signin">
+                            <a href="hamburger-sidebar-signin">
+                                <img src="images/avatar-icon.png" alt="avatar icon">
+                                <span>Hello, Sign in</span>
+                            </a>    
                     </div>
-                </button>
-                <div class="hamburger-tooltip-hello-signin">
-                        <a href="hamburger-sidebar-signin">
-                            <img src="images/avatar-icon.png" alt="avatar icon">
-                            <span>Hello, Sign in</span>
-                        </a>    
-                </div>
-                <div class="hamburger-tooltip">
-                    
-                    <div class="trending-container">
-                        <span>Trending</span>
-                    </div>
-                    <div class="best-new-movers-container">
-                        <ul>
-                            <a href="#best-sellers"><li>Best Sellers</li></a>
-                            <a href="#new-releases"><li>New Releases</li></a>
-                            <a href="#movers-shakers"><li>Movers & Shakers</li></a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="digital-content-container">
-                        <span>Digital Content & Devices</span>
-                    </div>
-                    <div class="digital-content-devices-container">
-                        <ul>
-                            <a href="#prime-video"><li>Prime Video</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#amazon-music"><li>Amazon Music</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#echo-alexa"><li>Echo & Alexa</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#fire-tablets"><li>Fire Tablets</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#fire-tv"><li>Fire TV</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="amazon-luna"><li>Amazon Luna</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#kindle-e-readers"><li>Kindle E-Readers & eBooks</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#audible-books"><li>Audible Books & Originals</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#amazon-photos"><li>Amazon Photos</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#amazon-appstore"><li>Amazon Appstore</li><i class="bi bi-chevron-right"></i></a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="shop-by-department-tittle">
-                        <span>Shop By Department</span>
-                    </div>
-                    <div class="shop-by-department-container">
-                        <ul>
-                            <a href="#clothing-shoes-jewelry-watches"><li>Clothing, Shoes, Jewelry & Watches</li>
-                            <i class="bi bi-chevron-right"></i></a>
-                            <a href="#amazon-fresh"><li>Amazon Fresh</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#whole-food-market"><li>Whole Foods Market</li><i class="bi bi-chevron-right"></i></a>
-                            <a href="#books"><li>Books</li><i class="bi bi-chevron-right"></i></a>
-                            <div class="see-all">
-                                <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
-                            </div>
-                            <div class="remaining-links">
+                    <div class="hamburger-tooltip">
+                        
+                        <div class="trending-container">
+                            <span>Trending</span>
+                        </div>
+                        <div class="best-new-movers-container">
+                            <ul>
+                                <a href="#best-sellers"><li>Best Sellers</li></a>
+                                <a href="#new-releases"><li>New Releases</li></a>
+                                <a href="#movers-shakers"><li>Movers & Shakers</li></a>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="digital-content-container">
+                            <span>Digital Content & Devices</span>
+                        </div>
+                        <div class="digital-content-devices-container">
+                            <ul>
+                                <a href="#prime-video"><li>Prime Video</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-music"><li>Amazon Music</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#echo-alexa"><li>Echo & Alexa</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#fire-tablets"><li>Fire Tablets</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#fire-tv"><li>Fire TV</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="amazon-luna"><li>Amazon Luna</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#kindle-e-readers"><li>Kindle E-Readers & eBooks</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#audible-books"><li>Audible Books & Originals</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-photos"><li>Amazon Photos</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-appstore"><li>Amazon Appstore</li><i class="bi bi-chevron-right"></i></a>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="shop-by-department-tittle">
+                            <span>Shop By Department</span>
+                        </div>
+                        <div class="shop-by-department-container">
+                            <ul>
+                                <a href="#clothing-shoes-jewelry-watches"><li>Clothing, Shoes, Jewelry & Watches</li>
+                                <i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-fresh"><li>Amazon Fresh</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#whole-food-market"><li>Whole Foods Market</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#books"><li>Books</li><i class="bi bi-chevron-right"></i></a>
+                                <div class="see-all">
+                                    <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
+                                </div>
+                                <div class="remaining-links">
+                                    
+                                </div>
                                 
-                            </div>
-                            
-                            <a href="#appliances"><li>Appliances</li></a>
-                            <a href="#arts-crafts"><li>Arts & Crafts</li></a>
-                            <a href="#automotive-parts-accessories"><li>Automotive Parts & Accessories</li></a>
-                            <a href="#baby"><li>Baby</li></a>
-                            <a href="#beauty-personal-care"><li>Beauty & Personal Care</li></a>
-                            <a href="#books"><li>Books</li></a>
-                            <a href="#cds-vinyl"><li>CDs & Vinyl</li></a>
-                            <a href="#cell-phones-accessories"><li>Cell Phones & Accessories</li></a>
-                            <a href="#clothing-shoes-jewelry"><li>Clothing, Shoes & Jewelry</li></a>
-                            <a href="#collectibles-fine-art"><li>Collectibles & Fine Art</li></a>
-                            <a href="#computers-accessories"><li>Computers & Accessories</li></a>
-                        </ul>
+                                <!--<a href="#appliances"><li>Appliances</li></a>
+                                <a href="#arts-crafts"><li>Arts & Crafts</li></a>
+                                <a href="#automotive-parts-accessories"><li>Automotive Parts & Accessories</li></a>
+                                <a href="#baby"><li>Baby</li></a>
+                                <a href="#beauty-personal-care"><li>Beauty & Personal Care</li></a>
+                                <a href="#books"><li>Books</li></a>
+                                <a href="#cds-vinyl"><li>CDs & Vinyl</li></a>
+                                <a href="#cell-phones-accessories"><li>Cell Phones & Accessories</li></a>
+                                <a href="#clothing-shoes-jewelry"><li>Clothing, Shoes & Jewelry</li></a>
+                                <a href="#collectibles-fine-art"><li>Collectibles & Fine Art</li></a>
+                                <a href="#computers-accessories"><li>Computers & Accessories</li></a>-->
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="amazon-haul-container"> 
+                    <a href="#amazon-haul">
+                        <div class="amazon-haul">
+                            <span>Amazon-Haul</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="medical-care-container">
+                    <a href="#medical-care">
+                        <div class="medical-care">
+                            <span>Medical Care</span>
+                            <i class="bi bi-caret-down-fill"></i>   
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="amazon-basics-container">
+                    <a href="#amazon-basics">
+                        <div class="amazon-basics">
+                            <span>Amazon Basics</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-sellers-container">
+                    <a href="#best-sellers">
+                        <div class="best-sellers">
+                            <span>Best Sellers</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="books-container">
+                    <a href="#books">
+                        <div class="books">
+                            <span>Books</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-releases-container">
+                    <a href="#new-releases">
+                        <div class="new-releases">
+                            <span>New Releases</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="registry-container">
+                    <a href="#registry">
+                        <div class="registry">
+                            <span>Registry</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="today-deal-container">
+                    <a href="#today-deal">          
+                        <div class="today-deal">
+                            <span>Today's Deals</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gift-cards-container">
+                    <a href="#gift-cards">
+                        <div class="gift-cards">
+                            <span>Gift Cards</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="amazon-haul-container"> 
-                <a href="#amazon-haul">
-                    <div class="amazon-haul">
-                        <span>Amazon-Haul</span>
-                    </div>
-                </a>
-            </div>
-            <div class="medical-care-container">
-                <a href="#medical-care">
-                    <div class="medical-care">
-                        <span>Medical Care</span>
-                        <i class="bi bi-caret-down-fill"></i>   
-                    </div>
-                    
-                </a>
-            </div>
-            <div class="amazon-basics-container">
-                <a href="#amazon-basics">
-                    <div class="amazon-basics">
-                        <span>Amazon Basics</span>
-                    </div>
-                </a>
-            </div>
-            <div class="best-sellers-container">
-                <a href="#best-sellers">
-                    <div class="best-sellers">
-                        <span>Best Sellers</span>
-                    </div>
-                </a>
-            </div>
-            <div class="books-container">
-                <a href="#books">
-                    <div class="books">
-                        <span>Books</span>
-                    </div>
-                </a>
-            </div>
-            <div class="new-releases-container">
-                <a href="#new-releases">
-                    <div class="new-releases">
-                        <span>New Releases</span>
-                    </div>
-                </a>
-            </div>
-            <div class="registry-container">
-                <a href="#registry">
-                    <div class="registry">
-                        <span>Registry</span>
-                    </div>
-                </a>
-            </div>
-            <div class="today-deal-container">
-                <a href="#today-deal">          
-                    <div class="today-deal">
-                        <span>Today's Deals</span>
-                    </div>
-                </a>
-            </div>
-            <div class="gift-cards-container">
-                <a href="#gift-cards">
-                    <div class="gift-cards">
-                        <span>Gift Cards</span>
-                        <i class="bi bi-caret-down-fill"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="smart-home-container">
-                <a href="#smart-home">
-                    <div class="smart-home">
-                        <span>Smart Home</span>
-                    </div>
-                </a>
-            </div>
-            <div class="groceries-container">
-                <a href="#groceries">
-                    <div class="groceries">
-                        <span>Groceries</span>
-                        <i class="bi bi-caret-down-fill"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="prime-container">
-                <a href="#prime">
-                    <div class="prime">
-                        <span>Prime</span>
-                        <i class="bi bi-caret-down-fill"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="pharmacy-container">
-                <a href="#pharmacy">
-                    <div class="pharmacy">
-                        <span>Pharmacy</span>
-                    </div>
-                </a>
-            </div>
-            <div class="customer-service-container">
-                <a href="#customer-service">
-                    <div class="customer-service">
-                        <span>Customer Service</span>
-                    </div>
-                </a>
-            </div>
-            <div class="music-container">
-                <a href="#music">
-                    <div class="music">
-                        <span>Music</span>
-                    </div>
-                </a>
-            </div>
-            <div class="amazon-home-container">
-                <a href="#amazon-home">
-                    <div class="amazon-home">
-                        <span>Amazon Home</span>
-                    </div>
-                </a>
-            </div>
-            <div class="fashion-container">
-                <a href="#fashion">
-                    <div class="fashion">
-                        <span>Fashion</span>
-                    </div>
-                </a>
-            </div>
-            <div class="toys-games-container">
-                <a href="#toys-games">
-                    <div class="toys-games">
-                        <span>Toys & Games</span>
-                    </div>
-                </a>
-            </div>
-            <div class="sports-outdoors-container">
-                <a href="#sports-outdoors">
-                    <div class="sports-outdoors">
-                        <span>Sports & Outdoors</span>
-                    </div>
-                </a>
+            <!--second flexible container-->
+            <div class="flexible-container-two">
+                <div class="smart-home-container">
+                    <a href="#smart-home">
+                        <div class="smart-home">
+                            <span>Smart Home</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="groceries-container">
+                    <a href="#groceries">
+                        <div class="groceries">
+                            <span>Groceries</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="prime-container">
+                    <a href="#prime">
+                        <div class="prime">
+                            <span>Prime</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="pharmacy-container">
+                    <a href="#pharmacy">
+                        <div class="pharmacy">
+                            <span>Pharmacy</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="customer-service-container">
+                    <a href="#customer-service">
+                        <div class="customer-service">
+                            <span>Customer Service</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="#music">
+                        <div class="music">
+                            <span>Music</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="amazon-home-container">
+                    <a href="#amazon-home">
+                        <div class="amazon-home">
+                            <span>Amazon Home</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="fashion-container">
+                    <a href="#fashion">
+                        <div class="fashion">
+                            <span>Fashion</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="toys-games-container">
+                    <a href="#toys-games">
+                        <div class="toys-games">
+                            <span>Toys & Games</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sports-outdoors-container">
+                    <a href="#sports-outdoors">
+                        <div class="sports-outdoors">
+                            <span>Sports</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-    </header>--> 
-    <script src="scripts/nav-bar.js"></script> 
+    </header>
+    <!--Amazon slideshow section-->
+    <div class="amazon-slideshow-section"> 
+        <div class="slideshow-first-section"></div>
+        <!-- Slideshow container -->
+        <div class="slideshow">
+
+            <!-- Each slide is a DIV with a background image -->
+
+            <!--<div class="slide background" style="background-image: url('https://m.media-amazon.com/images/I/61K7+SH3bYL._SR3000,600_.jpg');"></div>-->
+            <img class="slide active" src="images/prime-image.jpg" alt="Prime Image">
+            <img class="slide" src="images/home-fresh.jpg" alt="Home Fresh Image">
+            <img class="slide" src="images/movie.jpg" alt="Movie Image">
+            <!--<div class="slide background" style="background-image: url('https://m.media-amazon.com/images/I/71ogiRHDTsL._SR3000,600_.jpg');"></div>-->
+            <img class="slide" src="images/comb-image.jpg" alt="Comb Image">
+            <img class="slide" src="images/wildcard.jpg" alt="Wildcard Image">
+            <img class="slide" src="images/clothes.jpg" alt="Clothes Image">
+            <img class="slide" src="images/mengear.jpg" alt="men gear Image">
+            <img class="slide" src="images/drug.jpg" alt="advertisement image">
+            <!-- Navigation buttons -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="slideshow-second-section"></div>
+    </div>
+    <!--End of Amazon slideshow section-->
+    
+    <script src="scripts/nav-bar.js"></script>
+    <script src="scripts/amazon.js"></script> 
 </body>
 </html>

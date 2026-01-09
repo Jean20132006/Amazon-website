@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.amazon-slideshow-section{
+  display: flex;
+  flex-direction: row;
+}
+.slideshow-first-section{
+  flex: 1;
+}
+.slideshow-second-section{
+  flex: 1;
+}
+/* Slideshow container */
+.slideshow {
+  display: flex;
+  align-items: center;
+  width: 1500px;
+  height: 600px;
+  /*width: clamp(300px, 80vw, 1500px);*/
+  border: 2px solid red;
+  /*height: clamp(300px, 80vh, 600px);*/
+  margin: 120px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slides */
+.slide {
+  display: flex;
+  position: absolute;
+  width: 1500px;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.slide img {
+  width: 1500px;
+  height: 600px;
+  flex: 1;
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+@media (min-width: 800px) and (max-width: 1100px) {
+  .slide {
+    width: 1000px;
+    
+  }
+  .slide img {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+  }
+  .slideshow {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+    margin-top: 89px
+  }
+  .slideshow-first-section{
+    flex: 1;
+  }
+  .slideshow-second-section{
+    flex: 1;
+  }
+}
+
+@media (min-width: 622px) and (max-width: 799px) {
+  .slide {
+    width: 1000px;
+  }
+  .slide img {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+  }
+  .slideshow {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+    margin-top: 70px
+  }
+  .slideshow-first-section{
+    flex: 1;
+  }
+  .slideshow-second-section{
+    flex: 1;
+  }
+}
+@media (max-width: 621px) {
+  .slide {
+    width: 1000px;
+  }
+  .slide img {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+  }
+  .slideshow {
+    width: 1000px;
+    height: 450px;
+    flex-shrink: 0;
+    margin-top: 56px
+  }
+  .slideshow-first-section{
+    flex: 1;
+  }
+  .slideshow-second-section{
+    flex: 1;
+  }
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}

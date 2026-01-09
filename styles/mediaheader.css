@@ -1,0 +1,130 @@
+@media (min-width: 883px) and (max-width: 1029px) {
+    .header{
+        height: 40px;
+        margin-top: 49px;
+    }
+    .header .flexible-container-one {
+        display: flex;
+        flex: 1;
+        /*background-color: lightpink;*/
+        font-size: 5px;
+        flex-shrink: 0;
+    }
+    .header .flexible-container-two{
+        display: none;
+    }
+    .all-department-menu  span{
+        font-size: 11px;
+    }
+    .all-department-menu .all-department-text{
+        font-size: 13px;
+    }
+    .header .hamburger-menu i{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 777px) and (max-width: 884px) {
+    .header{
+        height: 40px;
+        margin-top: 49px;
+    }
+    .header .flexible-container-one {
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        /*background-color: lightpink;*/
+        flex-shrink: 0;
+    }
+    .header .flexible-container-two{
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        margin-left: 10px;
+    }
+    .all-department-menu  span{
+        font-size: 9px;
+        margin-left: -25px;
+    }
+    .all-department-menu .all-department-text{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .header .hamburger-menu i{
+        font-size: 20px;
+    }
+    .all-department-menu .amazon-haul-container span{
+        margin-left: -30px;
+    }
+    
+}
+
+@media (min-width: 605px) and (max-width: 776px) {
+    .header{
+        height: 30px;
+        margin-top: 40px;
+        /*margin-top: 25px;*/ /*604px*/
+    }
+    .header .flexible-container-one {
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        /*background-color: lightpink;*/
+        flex-shrink: 0;
+    }
+    .header .flexible-container-two{
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        margin-left: 10px;
+    }
+    .all-department-menu  span{
+        font-size: 7px;
+        margin-left: -25px;
+    }
+    .all-department-menu .all-department-text{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .header .hamburger-menu i{
+        font-size: 15px;
+    }
+    .all-department-menu .amazon-haul-container span{
+        margin-left: -30px;
+    }   
+}
+
+@media  (max-width: 604px) {
+    .header{
+        height: 30px;
+       /* margin-top: 45px;*/
+        margin-top: 25px; /*604px*/
+    }
+    .header .flexible-container-one {
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        /*background-color: lightpink;*/
+        flex-shrink: 0;
+    }
+    .header .flexible-container-two{
+        display: flex;
+        flex: 1;
+        gap: 1px;
+        margin-left: 10px;
+    }
+    .all-department-menu  span{
+        font-size: 7px;
+        margin-left: -25px;
+    }
+    .all-department-menu .all-department-text{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .header .hamburger-menu i{
+        font-size: 15px;
+    }
+    .all-department-menu .amazon-haul-container span{
+        margin-left: -30px;
+    }
+}
