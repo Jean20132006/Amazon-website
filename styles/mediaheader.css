@@ -27,7 +27,7 @@
 @media (min-width: 777px) and (max-width: 884px) {
     .header{
         height: 40px;
-        margin-top: 49px;
+        margin-top: 52px;
     }
     .header .flexible-container-one {
         display: flex;
@@ -62,7 +62,7 @@
 @media (min-width: 605px) and (max-width: 776px) {
     .header{
         height: 30px;
-        margin-top: 40px;
+        margin-top: 50px;
         /*margin-top: 25px;*/ /*604px*/
     }
     .header .flexible-container-one {
@@ -98,7 +98,7 @@
     .header{
         height: 30px;
        /* margin-top: 45px;*/
-        margin-top: 25px; /*604px*/
+        margin-top: 50px; /*604px*/
     }
     .header .flexible-container-one {
         display: flex;

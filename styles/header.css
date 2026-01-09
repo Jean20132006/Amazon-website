@@ -175,7 +175,7 @@ header a{
 .shop-by-department-tittle
 {
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding-left: 32px;
 }
 .hamburger-tooltip-hello-signin{
@@ -215,7 +215,7 @@ hr{
 }
 .amazon-haul-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -224,7 +224,7 @@ hr{
 }
 .medical-care-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     
     transition-duration: border-color 1s ease-in-out;
 }
@@ -238,7 +238,7 @@ hr{
 }
 .amazon-basics-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -247,7 +247,7 @@ hr{
 }
 .best-sellers-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -256,7 +256,7 @@ hr{
 }
 .books-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -265,7 +265,7 @@ hr{
 }
 .new-releases-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -274,7 +274,7 @@ hr{
 }
 .registry-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -283,7 +283,7 @@ hr{
 }
 .today-deal-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -293,7 +293,7 @@ hr{
 }
 .gift-cards-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     transition-duration: border-color 1s ease-in-out;
 }
 .gift-cards-container i{
@@ -306,7 +306,7 @@ hr{
 }
 .smart-home-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -315,7 +315,7 @@ hr{
 }
 .groceries-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     transition-duration: border-color 1s ease-in-out;
 }
 .groceries-container i{
@@ -328,7 +328,7 @@ hr{
 }
 .prime-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     transition-duration: border-color 1s ease-in-out;
 }
 .prime-container i{
@@ -341,7 +341,7 @@ hr{
 }
 .pharmacy-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -350,7 +350,7 @@ hr{
 }
 .customer-service-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -359,7 +359,7 @@ hr{
 }
 .music-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -368,7 +368,7 @@ hr{
 }
 .amazon-home-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -377,7 +377,7 @@ hr{
 }
 .fashion-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }
@@ -386,7 +386,7 @@ hr{
 }
 .toys-games-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }   
@@ -395,7 +395,7 @@ hr{
 }
 .sports-outdoors-container{
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     padding: 13px 3px;
     transition-duration: border-color 1s ease-in-out;
 }

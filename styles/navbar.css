@@ -212,10 +212,9 @@ body{
     align-items: center;
     gap: 0.2vw;
     font-family: Nunito, Helvetica, Arial, sans-serif;
-    /*font-size: 0.7vw;*/
     font-size: 13px;
     color:rgb(70, 65, 65);
-    /*width: 2.8vw;*/
+    padding-left: 13px;
     width: 55px;
     height: 40px;
     border: none;
