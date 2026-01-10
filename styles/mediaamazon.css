@@ -1,4 +1,4 @@
-@media (min-width: 1304) and (max-width: 1503px) {
+@media (min-width: 1304px) and (max-width: 1503px) {
     .first-row-flex-box-left{
         flex: 1;
     }
@@ -11,7 +11,8 @@
     .title-four-picture-container{
         flex-shrink: 0;
         width: 300px;
-        height: 400px;
+        /*width: 25vw;*/
+        height: auto;
     
     }
 
@@ -25,5 +26,102 @@
         height: auto;
         object-fit: cover;
     }
-
 }
+
+@media (min-width: 1104px) and (max-width: 1303px) {
+    .first-row-flex-box-left{
+        flex: 1;
+    }
+    .first-row-flex-box-right{
+        flex: 1;
+    }
+    .row-container{
+        flex-shrink: 0;
+    }
+    .title-four-picture-container{
+        flex-shrink: 0;
+        width: 350px;
+        height: 400px;
+    
+    }
+
+    .container1-img{
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+    }
+    .container2-img{
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+    }
+    .title-four-picture-container.hidden{
+        display: none;
+    }
+}
+
+@media (min-width: 984px) and (max-width: 1103px) {
+    .first-row-flex-box-left{
+        flex: 1;
+    }
+    .first-row-flex-box-right{
+        flex: 1;
+    }
+    .row-container{
+        flex-shrink: 0;
+        margin-top: 60px;
+    }
+    .title-four-picture-container{
+        flex-shrink: 0;
+        width: 250px;
+        height: auto;
+    
+    }
+
+    .container1-img{
+        width: 120px;
+        height: auto;
+        object-fit: cover;
+    }
+    .container2-img{
+        width: 120px;
+        height: auto;
+        object-fit: cover;
+    }
+    .title-four-picture-container.hidden{
+        display: none;
+    }
+}
+@media (max-width: 983px) {
+    .first-row-flex-box-left{
+        flex: 1;
+    }
+    .first-row-flex-box-right{
+        flex: 1;
+    }
+    .row-container{
+        flex-shrink: 0;
+        margin-top: 70px;
+    }
+    .title-four-picture-container{
+        flex-shrink: 0;
+        width: 200px;
+        height: auto;
+    
+    }
+
+    .container1-img{
+        width: 90px;
+        height: auto;
+        object-fit: cover;
+    }
+    .container2-img{
+        width: 90px;
+        height: auto;
+        object-fit: cover;
+    }
+    .title-four-picture-container.hidden{
+        display: none;
+    }
+}
+
