@@ -157,15 +157,27 @@ body{
 .first-row-section{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   gap: 20px;
   margin-top: -460px;
 }
-.first-row-flex-box-left, .first-row-flex-box-right{
+.row-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.first-row-flex-box-left{
   border: 1px solid red;
   flex: 1;
-  height: 420px;
+  height: 410px;
+}
+.first-row-flex-box-right{
+  border: 1px solid red;
+  flex: 1;
+  height: 410px;
 }
 .title-four-picture-container{
   display: flex;

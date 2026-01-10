@@ -639,4 +639,14 @@
     /*End of lang, account, order, cart*/
 }
 
+@media (min-width: 1010px) and (max-width: 1503px){
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
 /*end of @media*/

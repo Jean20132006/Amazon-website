@@ -1,0 +1,29 @@
+@media (min-width: 1304) and (max-width: 1503px) {
+    .first-row-flex-box-left{
+        flex: 1;
+    }
+    .first-row-flex-box-right{
+        flex: 1;
+    }
+    .row-container{
+        flex-shrink: 0;
+    }
+    .title-four-picture-container{
+        flex-shrink: 0;
+        width: 300px;
+        height: 400px;
+    
+    }
+
+    .container1-img{
+        width: 130px;
+        height: auto;
+        object-fit: cover;
+    }
+    .container2-img{
+        width: 130px;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
