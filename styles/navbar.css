@@ -1,13 +1,9 @@
 /*Navbar CSS*/
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
+
+
 .nav-bar{
     background-color: hsla(128, 50%, 6%, 0.871);
+    background-color: black;
     width: 100vw;
     /*height: 3.6vw;*/
     height: 70px;
@@ -244,7 +240,7 @@ body{
     height: 40px;    
 }
 .search-bar-input{
-    /*background-color:#ffb703;*/
+    background-color: white;
     /*font-size: 0.8vw;*/
     font-size: 14px;
     font-family: Nunito, Arial, Helvetica, sans-serif;

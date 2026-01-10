@@ -5,7 +5,9 @@ header{
     position: fixed;
     top: 0;
     height: 50px;
-    background-color: hsla(127, 88%, 13%, 0.871);
+    /*background-color: hsla(127, 88%, 13%, 0.871);*/
+    background-color: rgb(35, 47, 62);
+    /*background-attachment: scroll;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
