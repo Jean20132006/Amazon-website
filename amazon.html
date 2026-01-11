@@ -480,11 +480,21 @@
         <div class="slideshow-first-section"></div>
         <!-- Slideshow container -->
         <div class="slideshow">
-
             <!-- Each slide is a DIV with a background image -->
 
             <!--<div class="slide background" style="background-image: url('https://m.media-amazon.com/images/I/61K7+SH3bYL._SR3000,600_.jpg');"></div>-->
             <img class="slide active" src="images/prime-image.jpg" alt="Prime Image">
+            <!-- VIDEO SLIDE -->
+            <video class="slide" id="video" muted loop playsinline preload="none"
+                poster="images/sparkling-energy.jpg">
+                <source src="videos/sparkling-drink.mp4" type="video/mp4">
+            </video>
+            <button id="playPauseBtn" class="control-btn">
+                <i class="bi bi-caret-right-fill"></i>
+            </button>
+            <button id="muteBtn" class="control-btn-mute">
+                <img src="images/volume-up.png" alt="Unmuted">
+            </button>
             <img class="slide" src="images/home-fresh.jpg" alt="Home Fresh Image">
             <img class="slide" src="images/movie.jpg" alt="Movie Image">
             <!--<div class="slide background" style="background-image: url('https://m.media-amazon.com/images/I/71ogiRHDTsL._SR3000,600_.jpg');"></div>-->
@@ -494,6 +504,7 @@
             <img class="slide" src="images/clothes.jpg" alt="Clothes Image">
             <img class="slide" src="images/mengear.jpg" alt="men gear Image">
             <img class="slide" src="images/drug.jpg" alt="advertisement image">
+        
             <!-- Navigation buttons -->
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>

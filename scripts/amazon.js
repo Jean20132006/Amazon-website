@@ -8,13 +8,33 @@ const prevBtn = document.querySelector('.prev');
 // Current slide index
 let currentIndex = 0;
 
-// Auto slide interval (3 seconds)
-let autoSlide = setInterval(nextSlide, 3000);
+// Auto slide interval (7 seconds)
+let autoSlide = setInterval(nextSlide, 7000);
 
 // Show slide by index
-function showSlide(index) {
+/*function showSlide(index) {
   slides.forEach(slide => slide.classList.remove('active'));
   slides[index].classList.add('active');
+}*/
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+
+    // If slide is a video, pause it
+    if (slide.tagName === 'VIDEO') {
+      /*slide.pause();*/
+      slide.play();
+      slide.currentTime = 0;
+    }
+  });
+
+  const activeSlide = slides[index];
+  activeSlide.classList.add('active');
+
+  // If active slide is a video, play it
+  if (activeSlide.tagName === 'VIDEO') {
+    activeSlide.play();
+  }
 }
 
 // Move to next slide
@@ -43,5 +63,37 @@ prevBtn.addEventListener('click', () => {
 // Reset auto slideshow after manual click
 function resetAutoSlide() {
   clearInterval(autoSlide);
-  autoSlide = setInterval(nextSlide, 3000);
+  autoSlide = setInterval(nextSlide, 7000);
 }
+/*function to toggle play/pause on video slides */
+const video = document.getElementById("video");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const muteBtn = document.getElementById("muteBtn");
+
+// Play / Pause
+playPauseBtn.addEventListener("click", () => {
+  if (video.paused) {
+    video.play();
+    /*playPauseBtn.textContent = "⏸";*/
+    playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
+  } else {
+    video.pause();
+    playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+  }
+});
+
+// Mute / Unmute
+muteBtn.addEventListener("click", () => {
+  video.muted = !video.muted;
+  if(video.muted){
+    muteBtn.innerHTML = '<img src="images/volume-mute.png" alt="Muted">';
+  } else {
+    muteBtn.innerHTML = '<img src="images/volume-up.png" alt="Unmuted">';
+  }
+});
+
+// Reset play icon when video ends
+video.addEventListener("ended", () => {
+  /*playPauseBtn.textContent = "▶";*/
+  playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+});
