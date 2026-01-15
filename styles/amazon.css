@@ -166,6 +166,15 @@ main{
   gap: 20px;
   margin-top: -340px;
 }
+/*second row of products*/
+.second-row-section{
+  /*border: 2px solid blue;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
 .row-container{
   /*border: 2px solid green;*/
   display: flex;
@@ -201,7 +210,8 @@ main{
   align-items: center;
   flex-shrink: 0;
   justify-content: center;
-  gap: 10px;
+  /*gap: 10px;*/
+  margin-left: -19px; /* After adding link to the code*/
 }
 .first-square-first-column{
   display: flex;
@@ -220,7 +230,8 @@ main{
   align-items: center;
   flex-shrink: 0;
   justify-content: center;
-  gap: 10px;
+  /*gap: 10px;*/
+  margin-left: -19px; /* After adding link to the code*/
 }
 .second-square-first-column{
   display: flex;
@@ -238,7 +249,8 @@ main{
   align-items: center;
   flex-shrink: 0;
   justify-content: center;
-  gap: 10px;
+  /*gap: 10px;*/
+  margin-left: -19px; /* After adding link to the code*/
 }
 .third-square-first-column{
   display: flex;
@@ -256,7 +268,8 @@ main{
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  gap: 10px;
+  /*gap: 10px;*/
+  margin-left: -19px; /* After adding link to the code*/
 }
 .fourth-square-first-column{
   display: flex;
@@ -308,8 +321,15 @@ main{
 
 }
 /*End of first row of products*/
+
 /*first carousel styles*/
 .carousel-section{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin-top: 25px;
+}
+.carousel-section-2{
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
