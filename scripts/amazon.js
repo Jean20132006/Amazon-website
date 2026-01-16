@@ -132,6 +132,6 @@ const track = document.querySelector('.carousel-track');
   window.addEventListener('resize', updateArrows);
 
   // Initialize on load
-  /*updateArrows();*/
+  updateArrows();
 
   

@@ -98,42 +98,10 @@ main{
     object-fit: cover; 
   }
 
-@media (max-width: 373px) {
-  .slide {
-    width: 1000px;
-  }
-  .slide img {
-    width: 1000px;
-    height: 450px;
-    flex-shrink: 0;
-  }
-  .slideshow video {
-    width: 1000px;
-    /*width: 100%;*/
-    height: 300px;
-    flex-shrink: 0;
-    display: block;
-    object-fit: cover;  
-  }
-  .slideshow {
-    width: 1000px;
-    /*width: 100%;*/
-    height: 450px;
-    flex-shrink: 0;
-  }
-  .slideshow-first-section{
-    flex: 1;
-  }
-  .slideshow-second-section{
-    flex: 1;
-  }
-}
 /* Active slide */
 .slide.active {
   opacity: 1;
 }
-
-
 
 /* Navigation buttons */
 /*box-shadow: color x-offset y-offset blur spread;*/
@@ -153,7 +121,6 @@ main{
 
 .prev { left: 15px; }
 .next { right: 15px; }
-
 /*End of slideshow styles*/
 
 /*First row of products*/
@@ -196,13 +163,28 @@ main{
  /* border: 2px solid red;*/
   display: flex;
   flex-direction: column;
-  
   flex-shrink: 0;
   gap: 10px;
   width: 350px;
   height: 400px;
   border: none;
   background-color: white;
+}
+.default-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left:  14px; /* After adding link to the code*/
+  opacity: 1;   
+}
+.default-image img{
+  width: 320px;
+  height: auto;
+  object-fit: cover;
 }
 /*square of 4 pictures styles*/
 .first-square-container{
@@ -213,6 +195,7 @@ main{
   justify-content: center;
   /*gap: 10px;*/
   margin-left: -19px; /* After adding link to the code*/
+  position: relative;
 }
 .first-square-first-column{
   display: flex;
@@ -313,13 +296,6 @@ main{
   font-size: 14px;
   color: #0066c0;
   margin-left: 20px;
-
-}
-
-@media (max-width: 374px){
-  .title-four-picture-container.hidden{
-        display: none;
-  }
 
 }
 /*End of first row of products*/

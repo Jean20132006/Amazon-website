@@ -10,7 +10,7 @@ header{
     display: flex;
     align-items: center;
     gap: 12px;
-    /*justify-content: space-between;*/
+    z-index: 2000;
     white-space: nowrap;   /*prevent text wrapping*/
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
