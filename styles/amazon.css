@@ -126,7 +126,6 @@ main{
 /*First row of products*/
 /*First square styles*/
 .first-row-section{
-  /*border: 2px solid blue;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,7 +134,6 @@ main{
 }
 /*second row of products*/
 .second-row-section{
-  /*border: 2px solid blue;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -144,7 +142,6 @@ main{
 }
 
 .row-container{
-  /*border: 2px solid green;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -155,12 +152,10 @@ main{
   flex: 1;
 }
 .first-row-flex-box-right{
-  /*border: 2px solid red;*/
   flex: 1;
 }
 /*each square container with title and link*/
 .title-four-picture-container{
- /* border: 2px solid red;*/
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -427,4 +422,225 @@ main{
   .carousel{
     margin-left: 15px;
   }
+}
+
+/*End of first carousel styles*/
+
+/*Bottom page carousel section*/
+.bottom-carousel-section{
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  /*width: 1895px;*/
+  margin-top: 30px;
+}
+/*content title, immages and signin button*/
+.carousel-card{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*flex-shrink: 0;*/
+  /*width: 1897px;*/
+  /*width: 1460px;*/
+  height: 860px;
+  background: white;
+}
+/*contain all the pages inside the bottom carousel*/
+.carousel-bottom-track{
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  width: 1460px;
+  height: auto;
+  margin-bottom: 60px;
+}
+/*each page inside the bottom carousel*/
+.carousel-page{
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  width: 1460px;
+  gap: 10px;
+  height: auto;
+  /*justify-content: center;*/
+}
+.for-design-purpuse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  /*width: 1850px;*/
+  width: 1413px;
+  height: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.customer-pagenum{
+  border: 2px solid black;
+  width: 1460px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.pagenum{
+  width: 100px;
+  height: auto;
+  border: 2px solid red;  
+}
+.customer{
+  background-color: lightblue;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  width: auto;
+  height: auto;
+}
+.flex-title-empty{
+  background: lightpink;
+  flex: 1;
+}
+
+.personalized-recom{
+  border: 2px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 1460px;
+}
+
+.text-signin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  
+  margin: 20px 0;
+}
+.text{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.signin-bottom-button{
+  background-color: #ffb703;
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+}
+.sign-here{
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400px;  
+}
+
+.img-name-rating{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 160px;
+  height: auto; 
+}
+.img-name-rating img{
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+}
+.img-name-rating a{
+  text-decoration: none;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #033663;
+}
+.rating img{
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* End of bottom page carousel section */
+
+/*Back to the top of the page  section*/
+.back-to-top{
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(35, 47, 62);
+  
+}
+.back-to-top a{
+  text-decoration: none;
+}
+.leftpage,
+.rightpage{
+  flex: 1;
+}
+.go-to-top{
+  background-color: rgb(35, 47, 62);
+  display: flex;
+  align-items: center;
+  width: 1460px;
+  height: 50px;
+  flex-shrink: 0;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  justify-content: center;
+
+}
+.go-to-top span{
+  margin-left: 415px;
+
+}
+@media (max-width: 1493px){
+  .go-to-top{
+    margin-left: 15px;
+  }
+}
+/* End of back to the top of the page section*/
+/*links section styles*/
+.amazon-botton-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+/*links container*/
+.links{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 120px;
+  width: 1460px;
+  height: auto;
+  justify-content: center;
+}
+.first-column,
+.second-column,
+.third-column,
+.fourth-column{
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: auto;
 }
