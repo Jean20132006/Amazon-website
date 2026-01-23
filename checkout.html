@@ -3,16 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/checkout.css">
     <title>checkout</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--BootStrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CSS link-->
+    <!--BootStrap Icons link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div class="checkout-container">
         <div class="leftpage"></div>
-        <div class="radio-but-image-section"></div>
-        <div class="name-star-info-section"></div>
-        <div class="checkout-section"></div>
+        <div class="image-name-checkout-container">
+            <div class="radiobutton-image-section">
+                <div class="radio-button-section">
+                    <button class="radio-button"><img src="images/small-images/core.jpg"></button>
+                    <button class="radio-button"><img src="images/small-images/core2.jpg"></button>
+                    <button class="radio-button"><img src="images/small-images/core3.jpg"></button>
+                    <button class="radio-button"><img src="https://m.media-amazon.com/images/I/51DuUJcDgJL._AA50_.jpg"></button>
+                    <button class="radio-button"><video id="vid" preload="auto" poster="https://m.media-amazon.com/images/I/61VT5955qTL.jpg">
+                        <source src="blob:https://www.amazon.com/c0fb17e2-1729-44ff-bebf-047b16e5394b" type="video/mp4">
+                        </video>
+                    </button>
+                </div>
+                <div class="image-section">
+                    <img src="	https://m.media-amazon.com/images/I/81gd0FxLYYL._SX425_PIbundle-12,TopRight,0,0_AA425SH20_.jpg" alt="Product Image">
+                </div>
+            </div>
+            <div class="name-star-info-section">
+                <div class="name-section">
+                    <h4>Core Power Elite High Protein Shake, Chocolate, 42g <br>
+                        Bottle, 14oz, 12 Pack
+                    </h4>
+                    
+                </div>
+                <div class="star-visit-amazonchoice-section">
+                    <span><a href="#visit">Visit the Core Power Store</a></span>
+                    <span>4.6<img src="images/bottom-carousel-images/star.png"></span>
+                    <span class="amazon-choice">Amazon's choice</span>
+                    <span>100k+ bought in past month</span>
+                </div>
+                <div class="hr"></div>
+                <div class="info-section">
+                    <div class="price-indollar">
+                        <span class="dollar-sign">$</span>
+                         <span class="dollars-amount">50</span>
+                         <span class="cents">64</span>
+                         <span>($0.30 / fluid ounce)</span>
+                    </div>
+                   
+                    <span class="get"><a href="#Get Amazon">Get a $50 Amazon 
+                        Gift Card instantly upon approval for Amazon Visa. 
+                        No annual fee.</a>
+                    </span>
+                    <span class="other-sellers">Available at a lower price from <a href="#other-sellers">other sellers</a>  
+                        that may not offer free Prime shipping.
+                    </span>
+                    <span class="favour-name">Flavour name: <span id="chocolate">Chocolate</span></span>
+                    <div class="flavour-button">
+                        <button class="btton-flavour">Chocolate</button>
+                        <button class="btton-flavour">Strawberry</button>
+                        <button class="btton-flavour">Vanilla</button>
+                    </div>
+                    <span class="size">Size: <a href="#size">14 Fl oz (Pack of 12)</a></span>
+                    <div class="size-button">
+                        <button class="btton-size"><span class="size-button-text"><a href="#size">14 Fl oz (Pack of 1)</a></span> 
+                            <div class="short-hr"></div>
+                            <span class="amount">$5.18
+                               ($0.29/fluid ounce)</a>
+                            </span>
+                        </button>
+                        <button class="btton-size" id="active-option"><span class="size-button-text"><a href="#size">14 Fl oz (Pack of 12)</a></span> 
+                            <div class="short-hr"></div>
+                            <span class="amount">$48.98
+                               ($0.29/fluid ounce)</a>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="diet-type">
+                        <span>Diet type</span>
+                        <span class="diet-option"><i class="bi bi-check-lg"></i>Kosher</span>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="ingredients">
+                        <span id="ingredients">Ingredients </span>
+                        <button class="down-button"><span><i class="bi bi-chevron-down"></i></span></button>
+                    </div>
+                    <div class="empty-div"></div>
+                    <div class="hr"></div> 
+                    <div class="About-this-item">
+                        <span id="ingredients">About this item</span>
+                        <button class="down-button2"><span><i class="bi bi-chevron-down"></i></span></button>
+                    </div>
+                    <div class="empty-div2"></div>
+                    <div class="hr"></div>
+                    <div class="report-issue">
+                        <i class="bi bi-chat-square-text"></i>
+                        <a href="#report-issue">Report an issue with this product or seller</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="advertissement">
+                        <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF894,1000_QL80_FMwebp_.jpg" alt="Advertissement Image">
+                        <div class="advertissement-text">
+                            <div class="product-text">
+                                <span>Slate Milk Ultra protein Shake Salted Caramel
+                                    -42g protein,1g sugar 180 calories, 1g Net Carbs 
+                                    lactose free No Added...
+                                </span>
+                            </div>
+                            <div class="star-price-container">
+                                <div class="star-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">
+                                    <span>559</span>
+                                </div>
+                                <span>|</span>
+                                <span class="price">$29.99($0.96/ounce)</span>
+                                <span class="check-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="shop-now">
+                                <a href="#shopNow">Shop now ></a>
+                            </div>
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+            <div class="checkout-section">
+                <div class="prime">
+                    <img src="images/small-images/prime-logo.png" alt="Prime Logo">
+                    <div class="prime-text">
+                        <span>Enjoy fast, free delivery, exclusive deals, and 
+                            award-winning movies & TV shows.
+                        </span>
+                    </div>
+                    <div class="join-prime-link">
+                        <a href="#join-prime">Join Prime</a>
+                    </div>
+                </div>
+                <div class="main-checkout">
+                    <div class="purchase-option">
+                        <span>One-time purchase</span>
+                        <div class="price-indollar">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollars-amount">50</span>
+                            <span class="cents">64</span>
+                            <span>($0.30 / fluid ounce)</span>
+                       </div>
+                    </div>
+                    <div class="delivery-day">
+                        <span>FREE delivery 
+                            <span class="delivery-date"> Thursday, January 29</span>
+                        </span>
+                    </div>
+                    <div class="prime-members">
+                        <span>Or <span class="prime-mem">Prime members</span> get FREE delivery Sunday, 
+                            January 25. Order within <span class="time">2 hrs 56 mins</span>. 
+                            <a href="#join-prime">Join Prime</a>
+                        </span>
+                    </div>
+                    <div class="delivery-address-checkout">
+                        <i class="bi bi-geo-alt" ></i>
+                        <span>Delivering to Frederick 21702-Update location</span>
+                    </div>
+                    <div class="in-stock">
+                        <span>In Stock.</span>
+                    </div>
+                    <div class="quantity-section">
+                        <span>Quantity:</span>
+                        <select class="quantity-dropdown">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>   
+                    </div>
+                    <div class="add-to-cart-button">
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="buy-now-button">
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <div class="snap">SNAP EBT eligible</div>
+                    <div class="shipper-seller">
+                        <span>Shipper / Seller</span>
+                        <span class="amazon-com">Amazon.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="rightpage"></div>
     </div>
+
+    <script src="scripts/checkout.js"></script>
     
 </body>
 </html>

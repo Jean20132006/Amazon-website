@@ -1,4 +1,4 @@
-/*Script to handle "See All" button functionality in the navigation bar */
+/*Script to handle "See All" (on the amburger tooltip) button functionality in the navigation bar */
 
 let button = document.querySelector('.button-see-all');
 let remainingItems = document.querySelector('.remaining-links');
