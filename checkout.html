@@ -53,7 +53,7 @@
                         <span class="dollar-sign">$</span>
                          <span class="dollars-amount">50</span>
                          <span class="cents">64</span>
-                         <span>($0.30 / fluid ounce)</span>
+                         <span class="price-per-ounce">($0.30 / fluid ounce)</span>
                     </div>
                    
                     <span class="get"><a href="#Get Amazon">Get a $50 Amazon 
@@ -71,12 +71,19 @@
                     </div>
                     <span class="size">Size: <a href="#size">14 Fl oz (Pack of 12)</a></span>
                     <div class="size-button">
-                        <button class="btton-size"><span class="size-button-text"><a href="#size">14 Fl oz (Pack of 1)</a></span> 
-                            <div class="short-hr"></div>
-                            <span class="amount">$5.18
-                               ($0.29/fluid ounce)</a>
-                            </span>
-                        </button>
+                        <a href="#size">
+                            <button class="btton-size">
+                                
+                                    <span class="size-button-text">
+                                        14 Fl oz (Pack of 1)
+                                    </span> 
+                                    <div class="short-hr"></div>
+                                    <span class="amount">$5.18
+                                    ($0.29/fluid ounce)
+                                    </span>
+                                
+                            </button>
+                        </a>
                         <button class="btton-size" id="active-option"><span class="size-button-text"><a href="#size">14 Fl oz (Pack of 12)</a></span> 
                             <div class="short-hr"></div>
                             <span class="amount">$48.98
@@ -146,28 +153,35 @@
                 </div>
                 <div class="main-checkout">
                     <div class="purchase-option">
-                        <span>One-time purchase</span>
+                        <div class="purchase-container">
+                            <span>One-time purchase</span>
+                            <i class="bi bi-record-circle-fill"></i>
+                        </div>
                         <div class="price-indollar">
                             <span class="dollar-sign">$</span>
                             <span class="dollars-amount">50</span>
                             <span class="cents">64</span>
-                            <span>($0.30 / fluid ounce)</span>
+                            <span class="price-per-ounce">($0.30 / fluid ounce)</span>
                        </div>
                     </div>
                     <div class="delivery-day">
                         <span>FREE delivery 
-                            <span class="delivery-date"> Thursday, January 29</span>
+                            <span class="delivery-date"> Thursday, <br> January 29</span>
                         </span>
                     </div>
                     <div class="prime-members">
-                        <span>Or <span class="prime-mem">Prime members</span> get FREE delivery Sunday, 
-                            January 25. Order within <span class="time">2 hrs 56 mins</span>. 
+                        <span>Or <span class="prime-mem">Prime members</span> get FREE delivery <span class="delivery-date">Sunday, 
+                            January 25. Order within <span class="time">2 hrs 56 mins</span>.<br> 
                             <a href="#join-prime">Join Prime</a>
                         </span>
                     </div>
                     <div class="delivery-address-checkout">
-                        <i class="bi bi-geo-alt" ></i>
-                        <span>Delivering to Frederick 21702-Update location</span>
+                        <a href="#delivery-address">
+                            <i class="bi bi-geo-alt" ></i>
+                            <span class="delivery-add">Delivering to Frederick 
+                                21702-Update location    
+                            </span>
+                        </a>
                     </div>
                     <div class="in-stock">
                         <span>In Stock.</span>
@@ -198,11 +212,248 @@
                         <span>Shipper / Seller</span>
                         <span class="amazon-com">Amazon.com</span>
                     </div>
+                    <div class="return-checkout">
+                        <span>Returns</span>
+                        <span><a href="#return-policy">Non-returnable 
+                            due to Food safety reasons</a>
+                        </span>
+                    </div>
+                    <div class="payment">
+                        <span>Payment</span>
+                        <span><a href="#secure-payment">Secure transaction</a>
+                    </div>
+                    <div class="add-gift">
+                        <form action="/checkout.html" method="post">
+                            <input type="checkbox" id="gift-checkbox" name="gift-checkbox" value="gift">
+                            <label for="gift-checkbox">Add a gift receipt for easy return</label>
+                        </form>
+                    </div>
+                    <div class="subscribe-save-container">
+                        <a href="#subscribe&save">
+                        <div class="sub-save-cart">
+                            <span>Subscribe & Save</span>
+                            <i class="bi bi-arrow-repeat"></i>
+                            <i class="bi bi-cart4"></i>
+                            <span><i class="bi bi-circle-fill"></i></span>
+                        </div>
+                        <div class="price-indollar">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollars-amount">48</span>
+                            <span class="cents">11</span>
+                            <span class="price-per-ounce">($0.29 / fluid ounce)</span>
+                       </div>
+                       <div class="delivery-day">
+                            <span>FREE delivery 
+                                <span class="delivery-date"> Thursday, <br> January 29</span>
+                            </span>
+                        </div>
+                        <div class="shipper-seller">
+                            <span>Shipper / Seller</span>
+                            <span class="amazon-com">Amazon.com</span>
+                        </div>
+                        </a>
+                    </div>   
                 </div>
             </div>
         </div>
         <div class="rightpage"></div>
     </div>
+    <!--Frequently Bought Together Section-->
+    <!--Title Section-->
+    <div class="title-section">
+        <div class="leftpage"></div>
+        <div class="title-container">
+            <div class="title-hr"></div>
+            <span>Frequently Bought Together</span>
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of title section-->
+    <div class="frequently-bought-together">
+        <div class="leftpage"></div>
+        <div class="products-totalPrice-add-to-list-container">
+            <div class="products-totalPrice">
+                <div class="first-image">
+                    <img src="images/first-carousel-images/core-power.jpg" alt="Product 1">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>
+                        This item: Core Power Elite High Protein Shake, 
+                        Chocolate, 42g Bottle, 14oz, 12 Pack
+                        $50.64 ($0.30/fluid ounce)
+                    </span>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="second-image">
+                    <img src="images/first-carousel-images/core-power-protein-shake.jpg" alt="Product 2">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>
+                        <a href="#core">
+                            Core Power Protein Shake, 
+                            Chocolate, 26g Bottle, 14oz, 12 Pack
+                        </a>
+                    </span>
+                    <span>$38.99 ($0.23/fluid ounce)</span>
+                </div>
+                <div class="plus-sign">+</div>
+                <div class="third-image">
+                    <img src="images/first-carousel-images/celsius-sparkling-orange.jpg" alt="Product 3">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>
+                        <a href="#celsius">
+                            CELSIUS Assorted Flavors Official Variety Pack, Functional
+                            Essential Energy Drinks, 12 Fl Oz (Pack of 12)
+                        </a>
+                    </span>
+                    <span>$19.99 ($0.14/fluid ounce)</span>
+                </div>
+                <div class="totalprice">
+                    <span>Total price: 
+                        <span class="total-price-container">$109.62</span>
+                    </span>
+                    <button class="add-all-3-to-cart">Add all 3 to cart</button>
+                </div>
+            </div>
+            <div class="add-to-list">
+                <div class="link-to-add-to-list">
+                    <a href="#add-to-list">Add to List</a>
+                </div>
+                <div class="other-sellers-container">
+                    <span>Other sellers on Amazon</span>
+                    <div class="othersellers-hr"></div>
+                    
+                    <span><a href="#see-offers">52 options from $50.64 & FREE Shipping.</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of Frequently Bought Together Section-->
+    <!--Manufacturer Section-->
+    <div class="title1-section">
+        <div class="leftpage"></div>
+        <div class="title1-container">
+            <div class="title1-hr"></div>
+            <span>From Manifacturer</span>
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of Manufacturer title section-->
+    <div class="manufacturer-section">
+        <div class="leftpage"></div>
+        <div class="manufacturer-container">
+            <div class="manufacturer-first-row">
+                <img src="images/high-quality.jpg" alt="High Quality">
+            </div>
+            <div class="protein">
+                <img src="images/first-carousel-images/core-power-protein-shake.jpg" alt="Protein">
+            </div>
+            <!--Sponsored Video Section-->
+            <div class="sponsored-video-section">
+                <div class="sponsored">
+                    <video autoplay muted playsinline loop>
+                        <source src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/eba56eed-1ecb-4741-b838-21f9b551eb02.mp4/productVideoOptimized.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="sponsored-text">
+                    <!--<a href="#sponsored">-->
+                    <img src="images/chocolate-flavor.jpg" alt="chocolate flavor">
+                    <div class="text-garden">
+                        <span>Garden of Life Meal Replacement</span> 
+                        Shakes, Raw Organic, Chocolate...
+                        <span class="clearence">-13% $42.00</span> 
+                        <span class="old-price">$48.29</span>
+                        <span class="sponsored-prime"><i class="bi bi-check-lg"></i>prime</span>
+                    </div>
+                    <!--</a>-->    
+                </div>
+            </div>
+            <!--End of Sponsored Video Section-->    
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of Manufacturer first row Section-->
+    <!--Manufacturer second row Section-->
+    <div class="manufacturer-second-row-section">
+        <div class="leftpage"></div>
+        <div class="manufacturer-second-row-container">
+            <div class="power-img">
+                <img src="images/power-elite.jpg" alt="Power Elite">
+            </div>
+            <div class="core-power">
+                <span class="title-shake">Power Core High Protein Shake</span>
+                <span class="champion">Champion Your Recovery</span>
+                <span class="text-second-row">
+                    Core Power High Protein Shakes are a delicious post-workout 
+                    protein shake. Made with 100% real, lactose free, ultra-filtered 
+                    milk and without any added protein powders, Core Power is a delicious 
+                    source of nutrition to help you build muscle and recover after 
+                    exercise, so you're prepared for your next workout. 
+                </span>
+                <div class="list">
+                    <ul>
+                        <li>High Quality Protein</li>
+                        <li>Protein to Build Muscles and Electrolytes to Help Hydrate</li>
+                        <li>Ready to Drink Protein Shake</li>
+                        <li>Made from Ultra-filtered Milk</li>
+                        <li>Lactose Free</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fairlife-container">
+                <img src="images/fairlife.jpg" alt="fairlife">
+                <div class="fairlife-text">
+                    <span>We believe in better</span><br> care for the people we nourish, animals that provides 
+                    us with milk, and the planet we live on. At fairlife we're on a mission to 
+                    nourish the modern world with great tasting, better-for-you products, but 
+                    our purpose extends beyond what's in our bottles. We go the extra mile to
+                    provide better care for the people we nourish, animals that provides us with milk, 
+                    and the planet we live on.
+                </div>
+            </div>
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of Manufacturer second row Section-->
+    <!--Third Manufacturer row Section-->
+    <div class="manufacturer-third-row-section">
+        <div class="leftpage"></div>
+        <div class="manufacturer-third-row-container">
+            <div class="maximize-recovery">
+                <span class="max">Core Power Protein Shake</span>
+                <img src="images/man-drink.jpg" alt="Man Drink">
+                <span class="max">Maximize Recovery</span>
+                <span>Core Power fights post-workout fatigue 
+                    with high quality protein.
+                </span>
+            </div>
+            <div class="recovery-start">
+                <img src="images/woman-sport-drink.jpg" alt="Woman Sport Drink">
+                <span class="max">Recovery starts with protein</span>
+                <span>Protein works to repair and rebuild muscle to help you power
+                     on to your next workout.
+                </span>
+            </div>
+            <div class="fuel-by-fairlife">
+                <img src="images/half-drink.jpg" alt="Half Drink">
+                <span class="max">Fuelled by fairlife</span>
+                <span>Made with ultra-filtered milk, Core Power is a delicious way 
+                    to recover.
+                </span>
+            </div>
+        </div>
+        <div class="rightpage"></div>
+    </div>
+    <!--End of Third Manufacturer row Section-->
+    <!--fourth Manufacturer row Section-->
+    <div class="manufacturer-fourth-row-section">
+        <div class="leftpage"></div>
+        <div class="manufacturer-fourth-row-container">
+            <img src="images/recovery-core.jpg" alt="Recovery Core">
+        </div>
+        <div class="rightpage"></div>
+    </div>
+            
+            
 
     <script src="scripts/checkout.js"></script>
     

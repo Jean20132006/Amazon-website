@@ -1,6 +1,5 @@
 
 .checkout-container{
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,7 +9,6 @@
     flex: 1;
 }
 .image-name-checkout-container{
-    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -20,10 +18,8 @@
     gap: 10px;
 }
 .radiobutton-image-section{
-    border: 2px solid lightpink;
     display: flex;
     flex-direction: row;
-    /*align-items: start;*/
     gap: 5px;
     width: 550px;
     height: auto;
@@ -35,15 +31,12 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    border: 2px solid orange;
 }
 .image-section{
-    border: 2px solid green;
-    width: 470px;
+    width: 480px;
     height: auto;
 }
 .name-star-info-section{
-    border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -68,9 +61,7 @@
 .price-indollar{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    /*font-family: Nunito, sans-serif;*/
-    
+    align-items: center;   
 }
 .price-indollar span{
     font-family: Nunito, sans-serif;
@@ -108,8 +99,17 @@
     font-weight: bold;
     
 }
+.size-button a{
+    text-decoration: none;
+    color: black;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
 .size-button-text{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
 }
 .size-button-text a{
     font-family: Nunito, sans-serif;
@@ -186,7 +186,17 @@
     gap: 10px;
     
 }
+.amount{
+    font-family: Nunito, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .btton-size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     border: 1px solid grey;
     width: 100px;
     height: 110px;
@@ -224,8 +234,7 @@
     height: 1px;
     background-color: rgb(194, 187, 187);
     margin-bottom: 5px;
-    
-    margin-left: -6px;
+    margin-left: -2px;
 }
 .About-this-item,
 .ingredients{
@@ -344,7 +353,7 @@
 }
 
 .checkout-section{
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,11 +364,11 @@
     display: flex;
     flex-direction: column;
     border: 1px solid grey;
-    width: 230px;
+    width: 270px;
     height: 190px;
     border-radius: 5px;
     gap: 10px;
-    
+    padding-right: 10px;
 }
 
 .prime img{
@@ -383,15 +392,61 @@
     font-weight: 600;
     margin-left: 10px;
 }
+.purchase-option{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.price-per-ounce{
+    font-family: Nunito, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.delivery-day{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.prime-members{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.prime-members a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+.delivery-address-checkout{
+    font-family: Nunito, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.delivery-address-checkout a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
 .main-checkout{
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
     padding-left: 10px;
+    padding-right: 10px;
     flex-shrink: 0;
     border: 1px solid grey;
-    width: 230px;
-    height: 780px;
+    width: 270px;
+    /*height: 780px;*/
+    height: auto;
     border-radius: 5px;
     gap: 15px;
     padding-top: 10px;
@@ -399,6 +454,15 @@
 .purchase-option{
     display: flex;
     flex-direction: column;
+}
+.purchase-container{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.bi.bi-record-circle-fill{
+    color: #023e8a;
+
 }
 .delivery-date{
     font-family: Nunito, sans-serif;
@@ -467,8 +531,489 @@
 .amazon-com{
     font-weight: 600;
 }
+.return-checkout{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+}
+.return-checkout a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+.payment{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+}
+.payment a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+.add-gift{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.subscribe-save-container{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-top: 1px solid grey;
+    background-color: #e0e1dd;
+    width: 268px;
+    height: auto;
+    margin-left: -10px;
+    padding: 0 10px 25px 10px;
+}
+.subscribe-save-container a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+.sub-save-cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.bi.bi-circle-fill{
+    color: white;
+    font-size: 14px;
+}
+.bi.bi-cart4{
+    font-size: 12px;
+    margin-left: -21px;
+    margin-right: 70px;
+}
+.bi.bi-arrow-repeat{
+    margin-left: 5px;
+    
+    font-size: 30px;
+    color:#ffba08;   
+}
 
 #vid{
     width: 50px;
     height: 50px;
+}
+/* Frequently Bought Together Section */
+.title-section{
+    display: flex;
+    flex-direction: row;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -60px;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.title-container span{
+    margin: 10px 0px;
+}
+.title-hr{
+    width: 1175px;
+    height: 1px;
+    background-color: grey;
+}
+.frequently-bought-together{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.products-totalPrice-add-to-list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.products-totalPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 1160px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.first-image,
+.second-image,
+.third-image {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: auto;
+    flex-shrink: 0;
+    gap: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    position: relative;
+      
+}
+.first-image img,
+.second-image img,
+.third-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    
+}
+    
+.second-image a,
+.third-image a{
+    text-decoration: none;
+    color: #0077b6;
+}
+
+.plus-sign{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -140px;
+}
+.totalprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -140px;
+}
+.add-all-3-to-cart{
+    background-color: #f9c80e;
+    border: none;
+    width: 260px;
+    height: 35px;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.add-to-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Nunito, sans-serif;
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 10px;
+}
+.link-to-add-to-list{
+    width: 270px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.othersellers-hr{
+    width: 270px;
+    height: 3px;
+    background-color: grey;
+    margin-left: -10px;
+}
+.link-to-add-to-list a{
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+.other-sellers-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 270px;
+    height: auto;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+}
+.other-sellers-container a{
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    color: #0077b6;
+    font-weight: 600;
+}
+.bi.bi-check-square-fill{
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    color: #023e8a;
+    font-size: 20px;
+}
+/* End of Frequently Bought Together Section */
+
+/*Advertissement video Section*/
+.sponsored-video-section{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border: 1px solid grey;
+}
+.sponsored video{
+    width: 300px;
+}
+.sponsored-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.sponsored-text img{
+    width: 40px;
+    height: auto;
+}
+
+.sponsored-text a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+.clearence{
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    color: red;    
+}
+.old-price{
+    text-decoration: line-through;
+}
+.sponsored-prime{
+    color: #39c7e3;
+}
+/* End of Advertissement video Section*/
+
+/* Manufacturer Section */
+/*manufacturer title section*/
+.title1-section{
+    display: flex;
+    flex-direction: row;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.title1-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.title1-container span{
+    margin: 10px 0px;
+}
+.title1-hr{
+    width: 1460px;
+    height: 1px;
+    background-color: grey;
+}
+/* End of manufacturer title section*/
+.manufacturer-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.manufacturer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.manufacturer-first-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 900px;
+    height: auto;
+    flex-shrink: 0;  
+}
+.manufacturer-first-row img{
+    width: 900px;
+    height: auto;
+}
+.protein img{
+    width: 240px;
+    height: auto;
+    margin-right: 20px; 
+}
+/* End of Manufacturer first row Section */
+/* Manufacturer second row Section */
+.manufacturer-second-row-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.manufacturer-second-row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.core-power{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    gap: 10px;
+    flex-shrink: 0;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.power-img img{
+    width: 350px;
+    height: auto;
+}
+.list{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #edede9;
+}
+.fairlife-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    
+}
+.fairlife-container img{
+    width: 170px;
+    height: auto;
+}
+.fairlife-text{ 
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;   
+}
+.fairlife-text span{
+    font-weight: bold;
+}
+.title-shake{
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.champion{
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+/* End of Manufacturer second row Section */
+/*Third row manufacturer section*/
+.manufacturer-third-row-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.manufacturer-third-row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+    gap: 50px;
+}
+.maximize-recovery,
+.recovery-start,
+.fuel-by-fairlife,
+.recovery-start,
+.fuel-by-fairlife{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+    gap: 10px;
+    flex-shrink: 0;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.maximize-recovery img,
+.recovery-start img,
+.fuel-by-fairlife img{
+    width: 320px;
+    height: auto;
+}
+.maximize-recovery{
+    margin-top: -35px;
+}
+.max{
+    font-weight: bold;
+    font-size: 18px;
+}
+/* End of Manufacturer third row section*/
+/* Manufaturer fourth row section*/
+.manufacturer-fourth-row-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.manufacturer-fourth-row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.manufacturer-fourth-row-container img{
+    width: 1025px;
+    height: auto;
 }

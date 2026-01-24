@@ -1,6 +1,8 @@
 /**
  * @brief Script to handle drop down functionality for 
  * Ingredients section in checkout page
+ * @param {HTMLElement} downButton - The dropdown button element
+ * @param {HTMLElement} ingredientsSection - The section to show/hide content
  */
 let downButton = document.querySelector('.down-button');
 let ingredientsSection = document.querySelector('.empty-div');
@@ -22,7 +24,11 @@ downButton.addEventListener('click', () => {
     }
 });
 
-/** This Script handle the About this item drop down*/
+/** 
+ * @brief This Script handle the About this item drop down
+ * @param {HTMLElement} downButton2 - The dropdown button element
+ * @param {HTMLElement} aboutSection - The section to show/hide content
+ */
 let downButton2 = document.querySelector('.down-button2');
 let aboutSection= document.querySelector('.empty-div2');
 downButton2.addEventListener('click', () =>{
