@@ -333,11 +333,10 @@ main{
   
 }
 .carousel-track{
-  /*background-color: lightpink;*/
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1440px;
+  width: 1440px;  
   height: 250px;
   gap: 10px;
   flex-shrink: 0;
@@ -423,7 +422,6 @@ main{
     margin-left: 15px;
   }
 }
-
 /*End of first carousel styles*/
 
 /*Bottom page carousel section*/
@@ -571,8 +569,6 @@ main{
   height: auto;
   object-fit: contain;
 }
-
-
 /* End of bottom page carousel section */
 
 /*Back to the top of the page  section*/

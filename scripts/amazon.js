@@ -103,11 +103,8 @@ video.addEventListener("ended", () => {
   playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
 });
 
-/**
- * @brief:This function handles the carousel functionality 
- * including next/previous item navigation.
- */
-const track = document.querySelector('.carousel-track');
+
+/*const track = document.querySelector('.carousel-track');
   const leftBtn = document.querySelector('.arrow.left');
   const rightBtn = document.querySelector('.arrow.right');
 
@@ -132,6 +129,45 @@ const track = document.querySelector('.carousel-track');
   window.addEventListener('resize', updateArrows);
 
   // Initialize on load
+  /*updateArrows();*/
+
+/**
+ * @brief :This function handles the carousel functionality 
+ * including next/previous item navigation.
+ * @note Handles carousel functionality per carousel instance
+ */
+
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const leftBtn = track.querySelector('.arrow.left');
+  const rightBtn = track.querySelector('.arrow.right');
+
+  const scrollAmount = 300;
+
+  function updateArrows() {
+    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+
+    leftBtn.disabled = track.scrollLeft <= 0;
+    rightBtn.disabled = track.scrollLeft >= maxScrollLeft - 1;
+  }
+
+  leftBtn.addEventListener('click', e => {
+    e.stopPropagation(); // prevent accidental bubbling
+    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  track.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+
+  // Initialize state
   updateArrows();
+});
+
+
 
   
