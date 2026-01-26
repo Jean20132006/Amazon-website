@@ -1,5 +1,5 @@
 /**
- * @brief:This function handles the slideshow functionality 
+ * @brief :This function handles the slideshow functionality 
  * including next/previous slide navigation, auto-sliding, 
  * and video play/pause controls.*/
 
@@ -17,10 +17,6 @@ let currentIndex = 0;
 let autoSlide = setInterval(nextSlide, 8000);
 
 // Show slide by index
-/*function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[index].classList.add('active');
-}*/
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.remove('active');
@@ -28,7 +24,6 @@ function showSlide(index) {
     // If slide is a video, pause it
     if (slide.tagName === 'VIDEO') {
       slide.pause();
-      /*slide.play();*/
       slide.currentTime = 0;
     }
   });
@@ -79,7 +74,6 @@ const muteBtn = document.getElementById("muteBtn");
 playPauseBtn.addEventListener("click", () => {
   if (video.paused) {
     video.play();
-    /*playPauseBtn.textContent = "⏸";*/
     playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
   } else {
     video.pause();
@@ -99,10 +93,13 @@ muteBtn.addEventListener("click", () => {
 
 // Reset play icon when video ends
 video.addEventListener("ended", () => {
-  /*playPauseBtn.textContent = "▶";*/
   playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
 });
 
+/**
+ * @brief :This function handles the carousel functionality 
+ * including next/previous item navigation.
+ */
 
 /*const track = document.querySelector('.carousel-track');
   const leftBtn = document.querySelector('.arrow.left');
@@ -139,33 +136,31 @@ video.addEventListener("ended", () => {
 
 document.querySelectorAll('.carousel').forEach(carousel => {
   const track = carousel.querySelector('.carousel-track');
-  const leftBtn = track.querySelector('.arrow.left');
-  const rightBtn = track.querySelector('.arrow.right');
-
+  const leftBtn = carousel.querySelector('.arrow.left');
+  const rightBtn = carousel.querySelector('.arrow.right');
   const scrollAmount = 300;
+  const tolerance = 2;
 
   function updateArrows() {
     const maxScrollLeft = track.scrollWidth - track.clientWidth;
 
-    leftBtn.disabled = track.scrollLeft <= 0;
-    rightBtn.disabled = track.scrollLeft >= maxScrollLeft - 1;
+    leftBtn.disabled = track.scrollLeft <= tolerance;
+    rightBtn.disabled = track.scrollLeft >= maxScrollLeft - tolerance;
   }
 
   leftBtn.addEventListener('click', e => {
-    e.stopPropagation(); // prevent accidental bubbling
+    e.preventDefault(); // Prevent the link from opening the href or url
     track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 
   rightBtn.addEventListener('click', e => {
-    e.stopPropagation();
+    e.preventDefault(); // Prevent the link from opening the href or url
     track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   });
 
   track.addEventListener('scroll', updateArrows);
+  window.addEventListener('load', updateArrows);
   window.addEventListener('resize', updateArrows);
-
-  // Initialize state
-  updateArrows();
 });
 
 

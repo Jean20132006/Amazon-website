@@ -44,6 +44,46 @@ downButton2.addEventListener('click', () =>{
     }
 });
 
- 
-    
+/**
+ * @brief This script handles carousel page functionality
+ */
+let leftButton = document.querySelector('.checkout-arrow.left');
+let rightButton = document.querySelector('.checkout-arrow.right');
+let track = document.querySelector('.checkout-carousel-track');
+let currentPage = document.querySelector('.current-page');
+let totalPage = document.querySelector('.total-pages');
+let pages = document.querySelectorAll('.checkout-carosel-page');
+totalPage.innerHTML = pages.length;
 
+let currentIndex = 0;
+let pageWidth = document.querySelector('.checkout-carousel').clientWidth;
+function updateCarousel(){
+    track.style.transform = `translateX(-${currentIndex * pageWidth}px)`;
+    currentPage.innerHTML = currentIndex + 1;
+    if(currentIndex === 0){
+        leftButton.disabled = true;
+    }
+    else{
+        leftButton.disabled = false;
+    }
+    if(currentIndex === pages.length - 1){
+        rightButton.disabled = true;
+    }
+    else{
+        rightButton.disabled = false;
+    }
+}
+leftButton.addEventListener('click', () => {
+    if(currentIndex > 0){
+        currentIndex--;
+        updateCarousel();
+    }
+});
+rightButton.addEventListener('click', () => {
+    if(currentIndex < pages.length - 1){
+        currentIndex++;
+        updateCarousel();
+    }
+});
+// Initialize carousel state
+updateCarousel();
