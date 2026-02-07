@@ -33,8 +33,24 @@
     gap: 5px;
 }
 .image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     width: 480px;
     height: auto;
+    margin-top: 60px;
+}
+.click-to-see-full-view a{
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    color: #0077b6;
+    font-weight: 600;
+
+}
+.click-to-see-full-view:hover a{
+    text-decoration: underline;
 }
 .name-star-info-section{
     display: flex;
@@ -1125,20 +1141,24 @@
     height: auto;
     flex-shrink: 0;
 }
+
 .page-num{
     font-family: Nunito, sans-serif;
     font-size: 15px;
     font-weight: 600;
+    position : absolute;
+    top: -5px;
+    right: 20px;
 }
 .checkout-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.7);
-    border: none;
+    border: 1px solid rgb(243, 241, 241);
     /*font-size: 24px;*/
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     z-index: 5;
     box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
@@ -1179,8 +1199,449 @@
     height: auto;
     flex-shrink: 0;
     gap: 20px;
+    justify-content: center;
 }
 #product-video1{
     width: 900px;
     height: 270px;
 }
+/* End of product video section*/
+/*Advertissement section*/
+.advertissement-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.advertissement-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+    justify-content: center;
+}
+.advertissement-container img{
+    width: 1000px;
+    height: auto;
+    object-fit: contain;
+}
+/* End of Advertissement section*/
+
+/* Video carousel section*/
+.checkout-carousel-video-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.checkout-carousel-video{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+.checkout-carousel-video-track{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: auto;
+    transition: transform 0.7s ease-in-out;
+}
+.checkout-carosel-video-page{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-shrink: 0;
+    min-width: 1460px;
+    gap: 40px;
+}
+.checkout-carousel-vid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+}
+.checkout-carousel-vid video{
+    width: 375px;
+    height: auto;
+    object-fit: contain;
+}
+/*.title-pagenum-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}*/
+.page-video-num{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.checkout-arrow-video{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(243, 241, 241);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
+               rgba(250, 250, 250, 0.4) 0px 1px 2px;
+}
+.checkout-arrow-video.left-video{
+    left: 0px;
+    font-size: 28px;
+}
+.checkout-arrow-video.right-video{
+    right: 0px;
+    font-size: 28px;
+}
+.sponsored-text-video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 375px;
+    height: auto;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sponsored-text-video img{
+    width: 70px;
+    height: auto;
+}
+/* End of video carousel section*/
+
+/*Customers review and say section*/
+.customers-review-and-say-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.customers-review-and-say-container{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.review-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 450px;
+    flex-shrink: 0;
+    gap: 10px;
+}
+.say-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 750px;
+    flex-shrink: 0;
+    gap: 10px;
+}
+.review-title{
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.say-title{
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.review-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.review-rating img{
+    width: 90px;
+    height: auto;
+}
+.review-count{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+}
+.share-your-thoughts,
+.say-rating{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.static-progress-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+     
+}
+.progress-bar{
+    width: 210px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.progress-bar-fill-5,
+.progress-bar-fill-4,
+.progress-bar-fill-3,
+.progress-bar-fill-2,
+.progress-bar-fill-1{
+    width: 0;
+    height: 20px;
+    background-color: #fb5607;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    border: none;
+}
+.review-container a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+.How-customer-review-this-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 5px;
+}
+.How-customer-reviews-and-ratings-work-up,
+.How-customer-reviews-and-ratings-work{
+    border: none;
+    background-color: white;
+    font-family: Nunito, sans-serif;
+    
+}
+.How-customer-reviews-and-ratings-work-text-expand{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 304px;
+    height: auto;
+}
+.How-customer-reviews-and-ratings-work i{
+    font-weight: bold;
+}
+.customer-review-hr{
+    width: 320px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.write-a-customer-review{
+    width: 320px;
+    height: 35px;
+    background-color: white;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+.write-a-customer-review a{
+    text-decoration: none;
+    color: rgb(7, 6, 6);
+}
+.write-a-customer-review:hover{
+    background-color: #c5ba91;
+}
+.select-to-learn-more{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;    
+}
+.select-to-learn-more-content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.select-to-learn-more-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: #023e8a; 
+}
+.select-to-learn-more-button .bi.bi-check2{
+    color: green;
+    font-size: 20px;
+}
+.taste{
+    color: grey;
+    font-size: 18px;
+}
+.say-view{
+    font-family: Nunito, sans-serif;
+    font-size: 13px;
+    color: grey;    
+}
+.bi.bi-dash{
+    font-size: 25px;
+    font-weight: bold;
+}
+.customer-say-hr{
+    width: 1010px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.Customer-Nate-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.customer-say-rating,
+.customer-say-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.customer-say-comment .bi.bi-person-circle {
+    font-size: 40px;
+    color: grey;
+}
+.customer-say-comment span{
+    color: black;
+}
+.comment-Nate{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 700px;
+    height: auto;
+}
+/* End of Customers review and say section*/
+
+/*Carousel review section*/
+.checkout-carousel-review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1010px;
+    height: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.checkout-carousel-review-track{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: auto;
+    transition: transform 0.7s ease-in-out;
+}
+.checkout-carosel-review-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    flex-shrink: 0;
+    min-width: 1010px;
+}
+.checkout-carousel-review-img{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 160px;
+    height: auto;
+    flex-shrink: 0;
+}
+.checkout-carousel-review-img{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.checkout-carousel-review-img img{
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.checkout-arrow-review{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(243, 241, 241);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
+               rgba(250, 250, 250, 0.4) 0px 1px 2px;
+}
+.checkout-arrow-review.left-review{
+    left: 0px;
+    font-size: 28px;
+}
+.checkout-arrow-review.right-review{
+    right: 0px;
+    font-size: 28px;
+}
+.say-title-pagenum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1010px;
+    height: auto;
+    flex-shrink: 0;
+}
+.page-num-review{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* End of carousel review section*/
