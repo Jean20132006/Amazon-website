@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addToCart</title>
+    <link rel="stylesheet" href="styles/addToCart.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--BootStrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CSS link-->
+    <!--BootStrap Icons link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="add-to-cart-container">
+        <div class="add-to-cart-content">
+            <!--nav bar-->
+            <nav class="nav-bar-add-to-cart">
+                <div class="logo-location-container">
+                    <!--<div class="hamburger-tooltip-hello-signin">
+                        <a href="hamburger-sidebar-signin">
+                            <img src="images/avatar-icon.png" alt="avatar icon">
+                            <span>Hello, Sign in</span>
+                        </a>    
+                    </div>-->
+                    <div class="amazon-logo-container">
+                        <a href="amazon.html">
+                            <div class="amazon-logo">
+                                <img src="images/amazon-logo.png" alt="Amazon Logo">
+                            </div>
+                        </a>
+                    </div>
+                            
+                    <div class="location-text">
+                        <a href="#location">
+                            <div class="location-icon-address">
+                                <div class="location-icon-update">
+                                    <i class="bi bi-geo-alt" id="location-icon-address"></i>
+                                </div>
+                                <div class="location-details">
+                                    <span class="delivery-address">Delivering to Frederick 2172</span>
+                                    <span class="update-location">Update location</span>
+                                </div>        
+                            </div>        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="search-bar-container">
+                    <div class="all">
+                        <button class="all-button">
+                            <span>All</span>
+                            <div class="all-drop-downfill">
+                                <i class="bi bi-caret-down-fill"></i>
+                            </div>        
+                        </button>
+                        <div class="all-tooltip">Search in</div>
+                        <div class="all-active-tooltip">
+                            <ul>
+                                <a href="#all-departments"><li class="all-department">All Departments</li></a>
+                                <a href="#alexa-skills"><li>Alexa Skills</li></a>
+                                <a href="#amazon-devices"><li>Amazon Devices</li></a>
+                                <a href="#amazon-fresh"><li>Amazon Fresh</li></a>
+                                <a href="#appliances"><li>Appliances</li></a>
+                                <a href="#arts-crafts"><li>Arts & Crafts</li></a>
+                                <a href="#automotive-parts-accessories"><li>Automotive Parts & Accessories</li></a>
+                                <a href="#baby"><li>Baby</li></a>
+                                <a href="#beauty-personal-care"><li>Beauty & Personal Care</li></a>
+                                <a href="#books"><li>Books</li></a>
+                                <a href="#cds-vinyl"><li>CDs & Vinyl</li></a>
+                                <a href="#cell-phones-accessories"><li>Cell Phones & Accessories</li></a>
+                                <a href="#clothing-shoes-jewelry"><li>Clothing, Shoes & Jewelry</li></a>
+                                <a href="#collectibles-fine-art"><li>Collectibles & Fine Art</li></a>
+                                <a href="#computers-accessories"><li>Computers & Accessories</li></a>
+                                <a href="#electronics"><li>Electronics</li></a>
+                                <a href="#garden-outdoor"><li>Garden & Outdoor</li></a>
+                                <a href="#gift-cards"><li>Gift Cards</li></a>
+                                <a href="#grocery-gourmet-food"><li>Grocery & Gourmet Food</li></a>
+                                <a href="#handmade"><li>Handmade</li></a>
+                                <a href="#health-household-baby-care"><li>Health, Household & Baby Care</li></a>
+                                <a href="#home-kitchen"><li>Home & Kitchen</li></a>
+                                <a href="#industrial-scientific"><li>Industrial & Scientific</li></a>
+                                <a href="#kindle-store"><li>Kindle Store</li></a>
+                                <a href="#luggage-travel-gear"><li>Luggage & Travel Gear</li></a>
+                                <a href="#movies-tv"><li>Movies & TV</li></a>
+                                <a href="#musical-instruments"><li>Musical Instruments</li></a>
+                                <a href="#office-products"><li>Office Products</li></a>
+                                <a href="#pet-supplies"><li>Pet Supplies</li></a>
+                                <a href="#prime-video"><li>Prime Video</li></a>
+                                <a href="#software"><li>Software</li></a>
+                                <a href="#sports-outdoors"><li>Sports & Outdoors</li></a>
+                                <a href="#tools-home-improvement"><li>Tools & Home Improvement</li></a>
+                                <a href="#toys-games"><li>Toys & Games</li></a>
+                                <a href="#video-games"><li>Video Games</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="text" class="search-bar-input" placeholder="Search Amazon">
+                    <button class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>       
+                </div>
+                <div class="right-section">
+                    <div class ="lang-account-order-cart">
+                    <div class="lang-container">
+                            <a href="#choose country">
+                                <div class="lang-flag-container">
+                                    <div class="flag-icon">
+                                        <img src="images/United State flag.png" alt="US Flag" >
+                                    </div>
+                                    <div class="lang-select">
+                                        <span>EN</span>
+                                    </div>
+                                </div>
+                            </a>
+                        <div class="drop-fill-icon">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+
+                        <div class="lang-container-tooltip">
+                            <div class="lang-tooltip-pointer"></div>
+                            <div class="tooltip-text">
+                                <p>Change language</p>
+                                <div class="lang-radio-button">
+                                    <form>
+                                        <input type="radio" id="english" name="language" value="english" checked>
+                                        <label for="english">English - EN</label><br>
+                                        <hr>
+                                        <input type="radio" id="spanish" name="language" value="spanish">
+                                        <label for="spanish">Spanish - ES</label><br>
+                                        <hr>
+                                        
+                                    </form>
+                                </div>
+                                <div class="flag-text">
+                                    <div class="tooltip-flag">
+                                        <img src="images/United State flag.png" alt="US Flag">
+                                        <span>You are shopping on Amazon.com</span>
+                                    </div>                            
+                                    
+                                </div>
+                                <div>
+                                    <a href="#change-country">Change country/region.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="account-lists-container">
+                        <div class="account-signin-container">
+                            <a href="#account">
+                                <div class="hello-sign" >
+                                    <span >Hello, Sign in</span>
+                                </div>
+                                <div class="account-lists-text">
+                                    <span>Account & Lists</span>
+                                </div>
+                            </a> 
+                            <div class="account-signin-tooltip">
+                                <div class="account-tooltip-pointer"></div>
+                                <div class="account-tooltip-text">
+                                    <div class="sign-in-button-container">
+                                        <a href="#sign-in">
+                                            <button class="sign-in-button">Sign in</button>
+                                        </a>
+                                    </div>
+                                    <div class="account-create-text">
+                                        <span>New customer? <a href="#start here">Start here.</a></span>
+                                    </div>
+                                    <hr>
+                                    <div class="your-account-links">
+                                        <div class="your-list">
+                                            <span>Your Lists</span><br>
+                                            <a href="#createList">Create a list</a>
+                                            <br>
+                                            <a href="#findList">Find a list or registry</a>                        
+                                        </div>
+
+                                        <div class="vertical-line"></div>
+                                        <div class="your-account">
+                                            <span>Your Account</span>
+                                            <div class="account-links">
+                                                <a href="#account">Account</a><br>
+                                                <a href="#orders">Orders</a><br>
+                                                <a href="#keepshopping">Keep Shopping For</a><br>
+                                                <a href="#recommendations">Recommendations</a><br>
+                                                <a href="#browsinghistory">Browsing History</a><br>
+                                                <a href="#amazoncreditcards">Amazon Credits Cards</a><br>
+                                                <a href="#watchlist">Watchlist</a><br>
+                                                <a href="#videos">Video Purchases & Rental</a><br>
+                                                <a href="#kindle">Kindle Unlimited</a><br>
+                                                <a href="#contentanddevice">Content & Devices</a><br>
+                                                <a href="#subscribe">Subscribe & Save Items</a><br>
+                                                <a href="#membership">Memberships &Subscriptions</a><br>
+                                                <a href="#primemember">Prime membership</a><br>
+                                                <a href="#music">Music Library</a><br>
+                                                <a href="#start">Start a Selling Account</a><br>
+                                                <a href="#createfree">Create Your Free Business<br>Account</a><br>
+                                                <a href="#customerservice">Customer Service</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="down-fill-container">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>  
+                    </div>
+                    <div class="return-order-container">
+                        <a href="#returns & orders">
+                            <div class="return-text">
+                                <span>Returns</span>
+                            </div>
+                            <div class="order-text">
+                                <span>& Orders</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="cart-num-text-container">
+                        <a href="#cart">
+                            <div class="cart-container">
+                                <div class="cart-image-num-container">
+                                        <div class="cart-num-items">
+                                            <span>0</span>
+                                        </div>
+                                        <div class="cart-image">
+                                            <img src="images/cart-icon.png" alt="cart image">    
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cart-text">
+                                    <span >Cart</span> 
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            <!--End of navbar-->
+
+            <!--header-->
+            <header class="header-add-to-cart">
+                <div class="all-department-menu">
+                    <!--first flexible container-->
+                    <div class="flexible-container-one">
+                        <div class="hamburger-container">
+                            <button class="hamburger-button">
+                                <div class="hamburger-menu">
+                                    <i class="bi bi-list"></i>
+                                    <span class="all-department-text">All</span>    
+                                </div>
+                            </button>
+                            <!--<div class="hamburger-tooltip-hello-signin">
+                                    <a href="hamburger-sidebar-signin">
+                                        <img src="images/avatar-icon.png" alt="avatar icon">
+                                        <span>Hello, Sign in</span>
+                                    </a>    
+                            </div>-->
+                            <div class="hamburger-tooltip">
+                                
+                                <div class="trending-container">
+                                    <span>Trending</span>
+                                </div>
+                                <div class="best-new-movers-container">
+                                    <ul>
+                                        <a href="#best-sellers"><li>Best Sellers</li></a>
+                                        <a href="#new-releases"><li>New Releases</li></a>
+                                        <a href="#movers-shakers"><li>Movers & Shakers</li></a>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="digital-content-container">
+                                    <span>Digital Content & Devices</span>
+                                </div>
+                                <div class="digital-content-devices-container">
+                                    <ul>
+                                        <a href="#prime-video"><li>Prime Video</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#amazon-music"><li>Amazon Music</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#echo-alexa"><li>Echo & Alexa</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#fire-tablets"><li>Fire Tablets</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#fire-tv"><li>Fire TV</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="amazon-luna"><li>Amazon Luna</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#kindle-e-readers"><li>Kindle E-Readers & eBooks</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#audible-books"><li>Audible Books & Originals</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#amazon-photos"><li>Amazon Photos</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#amazon-appstore"><li>Amazon Appstore</li><i class="bi bi-chevron-right"></i></a>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="shop-by-department-tittle">
+                                    <span>Shop By Department</span>
+                                </div>
+                                <div class="shop-by-department-container">
+                                    <ul class="shop-by-department-container-links">
+                                        <a href="#clothing-shoes-jewelry-watches" class="shop-by-department-container-link"><li>Clothing, Shoes, Jewelry & Watches</li>
+                                        <i class="bi bi-chevron-right"></i></a>
+                                        <a href="#amazon-fresh" class="shop-by-department-container-link"><li>Amazon Fresh</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#whole-food-market" class="shop-by-department-container-link"><li>Whole Foods Market</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#books" class="shop-by-department-container-link"><li>Books</li><i class="bi bi-chevron-right"></i></a>
+                                        <div class="see-all">
+                                            <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
+                                        </div>
+                                        <div class="remaining-links"></div>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="shop-by-department-tittle">
+                                    <span>Programs & Features</span>
+                                </div>
+                                <div class="shop-by-department-container">
+                                    <ul class="shop-by-department-container-links">
+                                        <a href="#clothing-shoes-jewelry-watches" class="programs-features-container-link"><li>Medical Care & Pharmacy</li>
+                                        <i class="bi bi-chevron-right"></i></a>
+                                        <a href="#amazon-fresh" class="programs-features-container-link"><li>Amazon Physical Stores</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#whole-food-market" class="programs-features-container-link"><li>Amazon Haul</li><i class="bi bi-chevron-right"></i></a>
+                                        <a href="#books" class="programs-features-container-link"><li>Amazon Business</li><i class="bi bi-chevron-right"></i></a>
+                                        <div class="see-all">
+                                            <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
+                                        </div>
+                                        <div class="remaining-links-programs-features"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="amazon-haul-container"> 
+                            <a href="#amazon-haul">
+                                <div class="amazon-haul">
+                                    <span>Amazon-Haul</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="medical-care-container">
+                            <a href="#medical-care">
+                                <div class="medical-care">
+                                    <span>Medical Care</span>
+                                    <i class="bi bi-caret-down-fill"></i>   
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="amazon-basics-container">
+                            <a href="#amazon-basics">
+                                <div class="amazon-basics">
+                                    <span>Amazon Basics</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best-sellers-container">
+                            <a href="#best-sellers">
+                                <div class="best-sellers">
+                                    <span>Best Sellers</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="books-container">
+                            <a href="#books">
+                                <div class="books">
+                                    <span>Books</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="new-releases-container">
+                            <a href="#new-releases">
+                                <div class="new-releases">
+                                    <span>New Releases</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="registry-container">
+                            <a href="#registry">
+                                <div class="registry">
+                                    <span>Registry</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="today-deal-container">
+                            <a href="#today-deal">          
+                                <div class="today-deal">
+                                    <span>Today's Deals</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gift-cards-container">
+                            <a href="#gift-cards">
+                                <div class="gift-cards">
+                                    <span>Gift Cards</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--second flexible container-->
+                    <div class="flexible-container-two">
+                        <div class="smart-home-container">
+                            <a href="#smart-home">
+                                <div class="smart-home">
+                                    <span>Smart Home</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="groceries-container">
+                            <a href="#groceries">
+                                <div class="groceries">
+                                    <span>Groceries</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="prime-container">
+                            <a href="#prime">
+                                <div class="prime">
+                                    <span>Prime</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pharmacy-container">
+                            <a href="#pharmacy">
+                                <div class="pharmacy">
+                                    <span>Pharmacy</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="customer-service-container">
+                            <a href="#customer-service">
+                                <div class="customer-service">
+                                    <span>Customer Service</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="music-container">
+                            <a href="#music">
+                                <div class="music">
+                                    <span>Music</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="amazon-home-container">
+                            <a href="#amazon-home">
+                                <div class="amazon-home">
+                                    <span>Amazon Home</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="fashion-container">
+                            <a href="#fashion">
+                                <div class="fashion">
+                                    <span>Fashion</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="toys-games-container">
+                            <a href="#toys-games">
+                                <div class="toys-games">
+                                    <span>Toys & Games</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="sports-outdoors-container">
+                            <a href="#sports-outdoors">
+                                <div class="sports-outdoors">
+                                    <span>Sports & Outdoors</span>
+                                </div>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </header>
+            <!--End of header section-->
+            <!--Item added to cart & Proceed to checkout section-->
+            <div class="add-to-cart-picture-procceed-to-checkout">
+                <div class="add-to-cart-picture">
+                    <div class="image-add-to-cart">
+                        <img src="images/first-carousel-images/core-power.jpg" alt="item added to cart image">
+                    </div>
+                    <div class="confirmation-added-to-cart">
+                        <div class="added-to-cart-text">
+                            <span class="added-to-cart-bi-check"><i class="bi bi-check2"></i></span>
+                            <span class="added-to-cart">Added to Cart</span>
+                        </div>
+                        <div class="add-to-cart-product-flavor">
+                            <span class="addtocart-product-flavor">Flavor Name: 
+                                <span class="js-add-to-cart-flavor">Chocolate</span>
+                            </span>
+                            <span class="addtocart-product-flavor">Size: 
+                                <span class="js-add-to-cart-size">14 Fl Oz (Pack of 12)</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-to-cart-proceed-to-checkout">
+                    <div class="add-to-cart-subtotal">
+                        <span class="add-to-cart-subtotal-text">Subtotal:</span>
+                        <span class="add-to-cart-subtotal-price">$640</span>
+                    </div>
+                    <div class="add-to-cart-proceed-to-checkout-button">
+                        <a href="#proceed-to-checkout">
+                            <button class="proceed-to-checkout-button">Proceed to checkout (11 items)</button>
+                        </a>
+                    </div>
+                    <div class="add-to-cart-go-to-cart">
+                        <a href="#go-to-cart">
+                            <button class="go-to-cart-button">Go to Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--End of item added to cart & Proceed to checkout section-->
+
+            <!--First add to cart Carousel-->
+            <!--Title for Products related Section-->
+            <div class="add-to-cart-title1-section">
+                <div class="add-to-cart-title1-container">
+                    <div class="add-to-cart-title-pagenum-container">
+                        <span>Add to your fitness nutrition routine</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="add-to-cart-carousel-container">
+                <div class="add-to-cart-carousel">
+                    <span class="add-to-cart-page-num">Page <span class="current-page">0</span> of <span class="total-pages">0</span></span>
+                    <button class="add-to-cart-arrow left">&#10094;</button>
+                    <div class="add-to-cart-carousel-track">
+                        <div class="add-to-cart-carosel-page">
+                             <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-amazon-choice">Amazon's choice</span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                        </div>
+                        <div class="add-to-cart--carosel-page">
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/614ciIWbLAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/612X3Vm2BSL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81zZNf9tbKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/71xBMKiy0oL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81-415N+PAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/71mUEPS5TXL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                            <div class="add-to-cart-carousel-img">
+                                <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                                <span class="add-to-cart-carousel-img-text">
+                                    <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                                </span>
+                                <span class="add-to-cart-carousel-img-rating">
+                                    <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                                </span>
+                                <span class="add-to-cart-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                                <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-arrow right">&#10095;</button>
+                </div>
+            </div>
+            <!--End of Products related section-->
+            <!--End of First add to cart Carousel-->
+        </div>
+        <div class="add-to-cart-corbeille"></div>
+    </div>
+    
+</body>
+</html>

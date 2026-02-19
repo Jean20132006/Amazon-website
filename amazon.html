@@ -20,6 +20,12 @@
 <body>
     <nav class="nav-bar">
         <div class="logo-location-container">
+            <div class="hamburger-tooltip-hello-signin">
+                <a href="hamburger-sidebar-signin">
+                    <img src="images/avatar-icon.png" alt="avatar icon">
+                    <span>Hello, Sign in</span>
+                </a>    
+            </div>
             <div class="amazon-logo-container">
                 <a href="amazon.html">
                     <div class="amazon-logo">
@@ -258,12 +264,12 @@
                             <span class="all-department-text">All</span>    
                         </div>
                     </button>
-                    <div class="hamburger-tooltip-hello-signin">
+                    <!--<div class="hamburger-tooltip-hello-signin">
                             <a href="hamburger-sidebar-signin">
                                 <img src="images/avatar-icon.png" alt="avatar icon">
                                 <span>Hello, Sign in</span>
                             </a>    
-                    </div>
+                    </div>-->
                     <div class="hamburger-tooltip">
                         
                         <div class="trending-container">
@@ -299,30 +305,33 @@
                             <span>Shop By Department</span>
                         </div>
                         <div class="shop-by-department-container">
-                            <ul>
-                                <a href="#clothing-shoes-jewelry-watches"><li>Clothing, Shoes, Jewelry & Watches</li>
+                            <ul class="shop-by-department-container-links">
+                                <a href="#clothing-shoes-jewelry-watches" class="shop-by-department-container-link"><li>Clothing, Shoes, Jewelry & Watches</li>
                                 <i class="bi bi-chevron-right"></i></a>
-                                <a href="#amazon-fresh"><li>Amazon Fresh</li><i class="bi bi-chevron-right"></i></a>
-                                <a href="#whole-food-market"><li>Whole Foods Market</li><i class="bi bi-chevron-right"></i></a>
-                                <a href="#books"><li>Books</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-fresh" class="shop-by-department-container-link"><li>Amazon Fresh</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#whole-food-market" class="shop-by-department-container-link"><li>Whole Foods Market</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#books" class="shop-by-department-container-link"><li>Books</li><i class="bi bi-chevron-right"></i></a>
                                 <div class="see-all">
                                     <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
                                 </div>
-                                <div class="remaining-links">
-                                    
+                                <div class="remaining-links"></div>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="shop-by-department-tittle">
+                            <span>Programs & Features</span>
+                        </div>
+                        <div class="shop-by-department-container">
+                            <ul class="shop-by-department-container-links">
+                                <a href="#clothing-shoes-jewelry-watches" class="programs-features-container-link"><li>Medical Care & Pharmacy</li>
+                                <i class="bi bi-chevron-right"></i></a>
+                                <a href="#amazon-fresh" class="programs-features-container-link"><li>Amazon Physical Stores</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#whole-food-market" class="programs-features-container-link"><li>Amazon Haul</li><i class="bi bi-chevron-right"></i></a>
+                                <a href="#books" class="programs-features-container-link"><li>Amazon Business</li><i class="bi bi-chevron-right"></i></a>
+                                <div class="see-all">
+                                    <button class="button-see-all"><span>See All</span><i class="bi bi-chevron-down"></i></button>
                                 </div>
-                                
-                                <!--<a href="#appliances"><li>Appliances</li></a>
-                                <a href="#arts-crafts"><li>Arts & Crafts</li></a>
-                                <a href="#automotive-parts-accessories"><li>Automotive Parts & Accessories</li></a>
-                                <a href="#baby"><li>Baby</li></a>
-                                <a href="#beauty-personal-care"><li>Beauty & Personal Care</li></a>
-                                <a href="#books"><li>Books</li></a>
-                                <a href="#cds-vinyl"><li>CDs & Vinyl</li></a>
-                                <a href="#cell-phones-accessories"><li>Cell Phones & Accessories</li></a>
-                                <a href="#clothing-shoes-jewelry"><li>Clothing, Shoes & Jewelry</li></a>
-                                <a href="#collectibles-fine-art"><li>Collectibles & Fine Art</li></a>
-                                <a href="#computers-accessories"><li>Computers & Accessories</li></a>-->
+                                <div class="remaining-links-programs-features"></div>
                             </ul>
                         </div>
                     </div>
@@ -471,6 +480,7 @@
             </div>
         </div>
     </header>
+    <!--End of header section-->
     <main>
     <!--End of header section-->
     <!--Amazon slideshow section-->
@@ -493,7 +503,8 @@
             <button id="muteBtn" class="control-btn-mute">
                 <img src="images/volume-up.png" alt="Unmuted">
             </button>
-            <img class="slide" src="images/home-fresh.jpg" alt="Home Fresh Image">
+            <!--<img class="slide" src="images/home-fresh.jpg" alt="Home Fresh Image">-->
+            <img class="slide" src="images/terrasse.jpg" alt="Terrasse Image">
             <!-- VIDEO SLIDE -->
             <video class="slide" id="video" muted loop playsinline preload="none"
                 poster="images/sparkling-energy.jpg">
@@ -1602,557 +1613,560 @@
 
     <!--bottom page carousel section-->
     <div class="last-bottom-container">
-    <div class="title1-section">
-        <div class="leftpage"></div>
-        <div class="title1-container">
-            
-            <div class="title-pagenum-container">
-                <span>Customer who viewed this item also viewed</span>
-                <!--<span class="page-num">Page <span class="current-page1">0</span> of <span class="total-pages1">0</span></span>-->
+        <div class="title1-section">
+            <div class="leftpage"></div>
+            <div class="title1-container">
+                
+                <div class="title-pagenum-container">
+                    <span>Customer who viewed this item also viewed</span>
+                </div>
+                
             </div>
-            
+            <div class="rightpage"></div>
         </div>
-        <div class="rightpage"></div>
-    </div>
-    <!--Featured items to consider itself section-->
-    <div class="checkout-carousel-container">
-        <div class="leftpage"></div>
-        <div class="checkout-carousel">
-            <span class="page-num">Page <span class="current-page">0</span> of <span class="total-pages">0</span></span>
-            <button class="checkout-arrow left">&#10094;</button>
-            <div class="checkout-carousel-track">
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-amazon-choice">Amazon's choice</span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+        <!--Featured items to consider itself section-->
+        <div class="checkout-carousel-container">
+            <div class="leftpage"></div>
+            <div class="checkout-carousel">
+                <span class="page-num">Page <span class="current-page">0</span> of <span class="total-pages">0</span></span>
+                <button class="checkout-arrow left">&#10094;</button>
+                <div class="checkout-carousel-track">
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/614ciIWbLAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/612X3Vm2BSL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81zZNf9tbKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71xBMKiy0oL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81-415N+PAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71mUEPS5TXL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
                 </div>
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-amazon-choice">Amazon's choice</span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                </div>
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/614ciIWbLAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/612X3Vm2BSL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81zZNf9tbKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71xBMKiy0oL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81-415N+PAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71mUEPS5TXL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                </div>
+                <button class="checkout-arrow right">&#10095;</button>
             </div>
-            <button class="checkout-arrow right">&#10095;</button>
+            <div class="rightpage"></div>
         </div>
-        <div class="rightpage"></div>
-    </div>
-    <!--End of Customer who viewed this item also viewed section-->
+        <!--End of Customer who viewed this item also viewed section-->
 
-    <!--Best Sellers in Grocery and Gourmet Foods Section-->
-    <div class="title1-section">
-        <div class="leftpage"></div>
-        <div class="title1-container">
-            <!--<div class="title1-hr"></div>-->
-            <div class="title-pagenum-container">
-                <span>Best Sellers in Grocery and Gourmet Foods</span>
-                <!--<span class="page-num">Page <span class="current-page1">0</span> of <span class="total-pages1">0</span></span>-->
+        <!--Best Sellers in Grocery and Gourmet Foods Section-->
+        <div class="title1-section">
+            <div class="leftpage"></div>
+            <div class="title1-container">
+                <!--<div class="title1-hr"></div>-->
+                <div class="title-pagenum-container">
+                    <span>Best Sellers in Grocery and Gourmet Foods</span>
+                </div>
+                
             </div>
-            
+            <div class="rightpage"></div>
         </div>
-        <div class="rightpage"></div>
-    </div>
-    <!--Best Sellers in Grocery and Gourmet Foods itself section-->
-    <div class="checkout-carousel-container">
-        <div class="leftpage"></div>
-        <div class="checkout-carousel">
-            <span class="page-num">Page <span class="current-page">0</span> of <span class="total-pages">0</span></span>
-            <button class="checkout-arrow left">&#10094;</button>
-            <div class="checkout-carousel-track">
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-amazon-choice">Amazon's choice</span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+        <!--Best Sellers in Grocery and Gourmet Foods itself section-->
+        <div class="checkout-carousel-container">
+            <div class="leftpage"></div>
+            <div class="checkout-carousel">
+                <span class="page-num">Page <span class="current-page">0</span> of <span class="total-pages">0</span></span>
+                <button class="checkout-arrow left">&#10094;</button>
+                <div class="checkout-carousel-track">
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                    <div class="checkout-carosel-page">
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/614ciIWbLAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/612X3Vm2BSL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81zZNf9tbKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71xBMKiy0oL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81-415N+PAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/71mUEPS5TXL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
+                        <div class="checkout-carousel-img">
+                            <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
+                            <span class="checkout-carousel-img-text">
+                                <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
+                            </span>
+                            <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>
                     </div>
                 </div>
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81U1j+Ni3BL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-amazon-choice">Amazon's choice</span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81uf4cuz5YL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/61ZjQzipqKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81nFk-p-IzL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71Pu0Y4ZmTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81eU2PJVL1L._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/815q2P1AIoL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                </div>
-                <div class="checkout-carosel-page">
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/614ciIWbLAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/612X3Vm2BSL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81zZNf9tbKL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71xBMKiy0oL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81-415N+PAL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/71mUEPS5TXL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                    </div>
-                    <div class="checkout-carousel-img">
-                        <img src="https://m.media-amazon.com/images/I/81gLaenQHTL._AC_UF480,480_SR480,480_.jpg" alt="core-power">
-                        <span class="checkout-carousel-img-text">
-                            <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
-                        </span>
-                        <span class="checkout-carousel-img-rating">
-                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
-                        </span>
-                        <span class="checkout-carousel-img-price">$38.99 ($0.23/fluid ounce)</span>
-                        <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                <button class="checkout-arrow right">&#10095;</button>
+            </div>
+            <div class="rightpage"></div>
+        </div>
+        <!--End of Best sellers in Grocery and Gourmet Food section-->
+        <div class="title1-section">
+            <div class="leftpage"></div>
+            <div class="title1-container">
+                <div class="title1-hr"></div>
+            </div>
+            <div class="rightpage"></div>
+        </div>
+        <!--Personalized recommendations section-->
+        <div class="personalized-recom-section">
+            <div class="leftpage-section"></div>
+            <div class="personalized-recom">
+                <div class="text-signin">
+                    <span class="text">See personalized recommendations</span>
+                    <button class="signin-bottom-button">Sign in </button>
+                    <div class="sign-here">
+                        <span>New customer?</span>
+                        <a href="#start-here">Start here.</a>
                     </div>
                 </div>
             </div>
-            <button class="checkout-arrow right">&#10095;</button>
+            <div class="rightpage-section"></div>
         </div>
-        <div class="rightpage"></div>
-    </div>
-    </div>
-    <!--End of Best sellers in Grocery and Gourmet Food section-->
-    
-    <!-- End of bottom Carousel Section-->
-
-    <!--Personalized recommendations section-->
-    <div class="personalized-recom-section">
-        <div class="leftpage-section"></div>
-        <div class="personalized-recom">
-            <div class="text-signin">
-                <span class="text">See personalized recommendations</span>
-                <button class="signin-bottom-button">Sign in </button>
-                <div class="sign-here">
-                    <span>New customer?</span>
-                    <a href="#start-here">Start here.</a>
-                </div>
-            </div>
-        </div>
-        <div class="rightpage-section"></div>
-    </div>
     <!--End of personlized recommendations-->
-
+    </div>
+   
+    <!-- End of bottom Carousel Section-->
 
     <!--Back to the top of the page  section-->
     <div class="back-to-top">
@@ -2256,6 +2270,234 @@
         </div>
         <div class="rightpage-section"></div>
     </div>
+
+      <!--last section of each page (footer)-->
+    <div class="last-links-section">
+        <div class="leftpage-section"></div>
+        <div class="last-links-container">
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Music</span> <br>
+                        <span>streams millions of songs</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Business</span> <br>
+                        <span>Everything for your business</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Goodreads</span> <br>
+                        <span>Books reviews & recommendations</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Resale</span> <br>
+                        <span>Great deal on quality used products</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Ads</span> <br>
+                        <span>Reach customers wherever they spend their time</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Fresh</span> <br>
+                        <span>Groceries & More Right to your Door</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">IMDb</span> <br>
+                        <span>Movies, TV & Celebrities</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Whole Foods Market</span> <br>
+                        <span>America's Helthiest Grocery Stores</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Neighbors App</span> <br>
+                        <span>Real-time Crime & Safety Alerts</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">6pm</span> <br>
+                        <span>Score Deal on Fashion Brands</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Global</span> <br>
+                        <span>Ship Orders internationally</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">IMDbpro</span> <br>
+                        <span>Get info Entertainment Professionals</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Woot</span> <br>
+                        <span>Deals & Discounts</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Subcription Boxes</span> <br>
+                        <span>Top Subcription Boxes-Right to your Door</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">AbeBooks</span> <br>
+                        <span>Books, art & collectibles</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Home Service</span> <br>
+                        <span>Experienced Pros Happiness Guarantee</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Kindle Direct Publishing</span> <br>
+                        <span>Indie Digital & Print Publishing Made Easy</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Zappos</span> <br>
+                        <span>Shoes & Clothing</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">PillPack</span> <br>
+                        <span>Pharmacy Simplified</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">ACX</span> <br>
+                        <span>Audiobook Publishing Made Easy</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Web Services</span> <br>
+                        <span>Scalable Cloud Computing Services</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Photos</span> <br>
+                        <span>Unlimited Photo Storage</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Ring</span> <br>
+                                <span>Smart Security for every Home</span>    
+                            </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Amazon Renewed</span> <br>
+                        <span>Refurbished tech you can trust</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Veeqo</span> <br>
+                        <span>Shipping Software Inventory Management</span>     
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Box Office Majo</span> <br>
+                        <span>Find Movies Box Office data</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">ShopBop</span> <br>
+                        <span>Design Fashion Brands</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Blink</span> <br>
+                        <span>Smart Security for every Home</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="last-links-column">
+                <a href="#Amazon-music">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Sell on Amazon</span> <br>
+                        <span>Start a selling account</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-business">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Audible</span> <br>
+                        <span>Listen to Books & Original Audio Performances</span>    
+                    </div>
+                </a>
+                <a href="#Goodreads">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">Prime Videos Direct</span> <br>
+                        <span>Videos Distribution Made Easy</span>    
+                    </div>
+                </a>
+                <a href="#Amazon-resale">
+                    <div class="footer-last-links">
+                        <span class="amazon-music-footer">eero WIFI</span> <br>
+                        <span>Stream 4k Videos in every Rooms</span>    
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="rightpage-section"></div>
+    </div>
+    <div class="conditions-of-use-section">
+        <div class="leftpage-section"></div>
+        <div class="conditions-of-use-copyright-container">
+            <div class="conditions-of-use-container">
+                <span><a href="#conditions-of-use">Conditions of Use</a></span>
+                <span><a href="#privacy-notice">Privacy Notice</a></span>
+                <span><a href="#privacy-notice">Consumer Health Data Privacy Disclosure</a></span>
+                <span><a href="#interest-based-ads">Your Ads Privacy Choices</a></span>
+            </div>
+            <span>© 1996-2026, Amazon.com, Inc. or its affiliates</span>
+        </div>
+        <div class="rightpage-section"></div>
+    </div>
+    <!--End of footer section-->
     </main>
     
     <script src="scripts/nav-bar.js"></script>
