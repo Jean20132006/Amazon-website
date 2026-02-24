@@ -189,7 +189,7 @@ body{
 }
 /*End of add to cart picture and proceed to checkout*/
 
-/*carousel page section*/
+/*Add to cart second carousel section*/
 .add-to-cart-carousel-container{
     display: flex;
     flex-direction: row;
@@ -197,7 +197,7 @@ body{
     margin-bottom: 40px;
     background-color: white;
     width: 1730px;
-    height: 400px;
+    height: 450px;
     flex-shrink: 0;
 }
 .add-to-cart-carousel{
@@ -206,7 +206,7 @@ body{
     flex-direction: row;
     align-items: center;
     width: 1730px;
-    height: 400px;
+    height: 450px;
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
@@ -315,8 +315,187 @@ body{
     border-radius: 3px;
     margin-top: 5px;
 }
-/* End of carousel page section*/
+.add-to-cart-img-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 200px;
+}
+.add-to-cart-carousel-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+.add-to-cart-carousel-add-to-cart-button{
+    background-color:#ffd60a;
+    border: none;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+}
+/* End of second carousel section*/
 
+/*Add to cart first carousel section*/
+.add-to-cart-first-carousel-card-container{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    flex-shrink: 0;
+    gap: 20px;
+}
+
+.add-to-cart-first-carousel-container{
+    /*border: 1px solid yellow;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: white;
+    width: 1400px;
+    height: 450px;
+    flex-shrink: 0;
+    
+}
+.add-to-cart-first-carousel{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1400px;
+    height: 450px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+.add-to-cart-first-carosel-page{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-shrink: 0;
+    min-width: 1400px;
+}
+.add-to-cart-first-title1-section{
+    display: flex;
+    flex-direction: row;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.add-to-cart-first-title1-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.add-to-cart-title{
+    background-color: white;
+    width: 1400px;
+}
+.add-to-cart-title span{
+    margin-left: 20px;
+}   
+
+.add-to-cart-first-title1-right-section{
+    width: 310px;
+}
+.add-to-cart-credit-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 260px;
+    background-color: white;
+    margin-top: -294px;
+    gap : 30px;
+}
+.add-to-cart-credit-card a{
+    text-decoration: none;
+    color: black;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+/*credit card section*/
+.add-to-cart-credit-card-img-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.add-to-cart-credit-card-img-text img{
+    width: 60px;
+    height: auto;
+}
+.add-to-cart-credit-card-text{
+    width: 200px;
+}
+.jean-get{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.add-to-cart-cost-after-savings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 2px;
+    width: 250px;
+    background-color: white;
+}
+.add-to-cart-current-total-labels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-to-cart-current-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-to-cart-gift-saving-amount,
+.add-to-cart-gift-saving{
+    font-weight: bold;
+}
+.add-to-cart-cost-after-savings-amount,
+.add-to-cart-cost-after{
+    font-weight: bold;
+    color: red;
+}
+.add-to-cart-find-out-now-button{
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+}
+/*End of credit card section*/
+/* End of add to cart first carousel section*/
+
+/*add to cart title second carousel section*/
 .add-to-cart-title1-section{
     display: flex;
     flex-direction: row;
@@ -328,6 +507,9 @@ body{
     background-color: white;
     
 }
+.add-to-cart-title-pagenum-container{
+    margin-left: 20px;
+}
 .add-to-cart-title1-container{
     display: flex;
     flex-direction: column;
@@ -338,4 +520,46 @@ body{
 }
 .add-to-cart-title1-container span{
     margin: 10px 0px;
+}
+/* End of add to cart title second carousel section*/
+
+/*Bottom add to cart section*/
+.personalized-recom{
+    width: 1730px;
+}
+.go-to-top{
+    width: 1730px;
+}
+.links{
+    width: 1730px;
+}
+.before-footer-links{
+    width: 1730px;
+}
+.title1-container{
+    width: 1730px;
+}
+.title1-hr{
+    width: 1730px;
+}
+.checkout-carousel{
+    width: 1730px;
+}
+.checkout-carosel-page{
+    min-width: 1730px;
+}
+.title-pagenum-container{
+    width: 1730px;
+}
+.last-bottom-container{
+    width: 1730px;
+}
+.last-links-container{
+    width: 1730px;
+}
+.conditions-of-use-copyright-container{
+    width: 1730px;
+}
+.conditions-of-use-container{
+    width: 1730px;
 }
