@@ -28,25 +28,19 @@ body{
 .add-to-cart-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
+    flex-shrink: 0;
 }
 .add-to-cart-content{
-    height: 900px;
+    /*border: 1px solid blue;*/
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
     width: 1760px;
 }
-.add-to-cart-corbeille{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    border: 1px solid red;
-    height: 900px;
-    width: 150px;
-}
+
 /*End of add to cart all content (entire page)*/
 
 /*Add to cart header*/
@@ -194,14 +188,12 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
     background-color: white;
     width: 1730px;
     height: 450px;
     flex-shrink: 0;
 }
 .add-to-cart-carousel{
-    /*border: 1px solid green;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -212,7 +204,6 @@ body{
     position: relative;
 }
 .add-to-cart-carousel-track{
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -222,7 +213,6 @@ body{
     transition: transform 0.7s ease-in-out;
 }
 .add-to-cart-carosel-page{
-    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -354,7 +344,6 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
     background-color: white;
     width: 1400px;
     height: 450px;
@@ -562,4 +551,125 @@ body{
 }
 .conditions-of-use-container{
     width: 1730px;
+}
+/*End of bottom add to cart section*/
+
+/*Corbeille content*/
+.add-to-cart-corbeille{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    flex-shrink: 0;
+    background-color: white;
+    /*border: 1px solid red;*/
+    height: 3644px;
+    width: 130px;
+    position: relative;
+    
+}
+.add-to-cart-corbeille-tooltip{
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    z-index: 3000;
+}
+.bi.bi-caret-left-fill{
+    font-size: 20px;
+    color: white;
+    border-left: none;
+}
+.add-to-cart-corbeille-subtotal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 80px;
+    border-bottom: 1px solid rgb(232, 231, 231);
+}
+.add-to-cart-corbeille-subtotal-text{
+    font-family: Nunito, sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+.add-to-cart-corbeille-subtotal-price{
+    font-family: Nunito, sans-serif;
+    color: #c1121f;
+    font-size: 15px;
+    font-weight: bold;    
+}
+.add-to-cart-corbeille-button{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 25px;  
+}
+.add-to-cart-corbeille-cart-roll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: auto;
+}
+.add-to-cart-corbeille-image-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    gap: 10px;
+    border-bottom: 1px solid rgb(232, 231, 231);
+    margin-top: 20px;
+    
+}
+.add-to-cart-corbeille-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-to-cart-corbeille-image img{
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+}
+.add-to-cart-corbeille-item-price{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: bold;    
+}
+.add-to-cart-num-items,
+.add-to-cart-plus-sign{
+    font-size: 16px;
+    font-weight: bold;
+}
+.add-to-cart-delete-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    height: 35px;
+    background-color: white;
+    border: 3px solid #ffd60a;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    padding: 5px;
+}
+.add-to-cart-plus-sign,
+.add-to-cart-delete-button{
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+}
+.bi.bi-plus-lg,
+.bi.bi-trash{
+    font-weight: bold;
+    font-size: 16px;
 }
