@@ -1,91 +1,173 @@
- const firstRowProducts = [
-    { name: "CORE_HP_Trending_Pre-loved_handbags_5",
-      image: "images/products-img/CORE_HP_Trending_Pre-loved_handbags_5.jpg",
-      price: 19.99,
-      id: "186x116._SY116_CB804224994",
-      description: "Chanel",
-      category: "bags"
-    },{
-        name: "CORE_HP_Pre-loved_jewelry",
-        image: "images/products-img/CORE_HP_Pre-loved_jewelry_6.jpg",
-        price: 29.99,
-        id: "186x116._SY116_CB803997880",
-        description: "Hermes",
-        category: "Jewelry"
-    },{
-        name: "CORE_HP_Pre-loved_jewelry",
-        image: "images/products-img/CORE_HP_Pre-loved_jewelry_7.jpg",
-        price: 15.99,
-        id: "186x116._SY116_AB803997880",
-        description: "Van Cleef",
-        category: "Jewelry"
-    },{
-        name: "CORE_HP_Trending_Pre-loved_handbags_8",
-        image: "images/products-img/CORE_HP_Trending_Pre-loved_handbags_8.jpg",   
-        price: 12.99,
-        id: "186x116._SY116_CB804224994",
-        description: "A gentle facial cleanser that removes impurities without stripping moisture.",
-        category: "Bags"
-    },{
-        name: "Desktop_QC_TopLeft_Editorial_5",
-        image: "images/products-img/Desktop_QC_TopLeft_Editorial_5.jpg",
-        price: 22.99,
-        id: "1x._SY116_CB774835635",
-        description: "Dolce&Gabbana",
-        category: "dress"
-    },{
-        name: "Desktop_QC_BottomRight_Editorial_5",
-        image: "images/products-img/Desktop_QC_BottomRight_Editorial_5.jpg",
-        price: 18.99,
-        id: "1x5._SY116_CB774835635",
-        description: "Balmain",
-        category: "T-shirt"
-    },{
-        name: "Desktop_QC_BottomLeft_Editorial_4",
-        image: "images/products-img/Desktop_QC_BottomLeft_Editorial_4.jpg",   
-        price: 14.99,
-        id: "1x12._SY116_CB775366018",
-        description: "Stella McCartney",    
-        category: "bags"
-    },{
-        name: "Desktop_QC_TopRight_Editorial_5",
-        image: "images/products-img/Desktop_QC_TopRight_Editorial_5.jpg",   
-        price: 16.99,
-        id: "1x.25_SY116_CB774835635",
-        description: "Pierre Hardy",
-        category: "shoes"
-    },{
-        name: "PC",
-        image: "images/products-img/PC.jpg",
-        price: 19.99,
-        id: "18x116._SY116_CB561026793",
-        description: "Computer",
-        category: "computers"
-    },{
-        name: "XCM_CUTTLE",
-        image: "images/products-img/XCM_CUTTLE.jpg",
-        price: 24.99,
-        id: "186x00_1X_en_US._SY116_CB561559219",
-        description: "Software",
-        category: "software"
-    },{
-        name: "Wireless",
-        image: "images/products-img/Wireless.jpg",
-        price: 29.99,
-        id: "223x116._SY116_TB561026793_",
-        description: "Headphones",
-        category: "accessories"
-    },{
-        name: "HomeEntertainment",
-        image: "images/products-img/HomeEntertainment.jpg",
-        price: 39.99,
-        id: "186x116._SY116_kA561026793",
-        description: "TVs",
-        category: "electronics"
+ const products = [
+{
+  id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+
+  title: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
+
+  shortTitle: "Core Power Protein Shake",
+
+  brand: "Fairlife",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/core-power.jpg",
+    gallery: [
+      "images/small-images/core.jpg",
+      "images/small-images/core2.jpg",
+      "images/small-images/core3.jpg",
+      "https://m.media-amazon.com/images/I/51DuUJcDgJL._AA50_.jpg"
+    ],
+    reviews: [
+      "images/review-carousel/core1.jpg",
+      "images/review-carousel/core2.jpg",
+      "images/review-carousel/core3.jpg",
+      "images/review-carousel/core4.jpg",
+      "images/review-carousel/core5.jpg",
+      "images/review-carousel/core6.jpg",
+      "images/review-carousel/core7.jpg",
+      "images/review-carousel/core8.jpg",
+      "images/review-carousel/core9.jpg",
+      "images/review-carousel/core10.jpg"
+    ]
+  },
+
+  videos : {
+    advertisement: "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/eba56eed-1ecb-4741-b838-21f9b551eb02.mp4/productVideoOptimized.mp4",
+    galleryVideos : [
+      "images/productVideoOptimized.mp4",
+      "images/video2.mp4",
+      "images/video4.mp4"
+    ],
+    galleryVideosImages : [
+      "images/video3_img.jpg",
+      "images/video1_img.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/high-quality.jpg",
+    image2: "images/first-carousel-images/core-power-protein-shake.jpg",
+    image3: "images/power-elite.jpg",
+    thirdRowImages: [
+      "images/man-drink.jpg",
+      "images/woman-sport-drink.jpg",
+      "images/half-drink.jpg"
+    ],
+    fourthRowImage: "images/recovery-core.jpg"
+  },
+
+  price: {
+    priceDollar: 50,
+    priceCents: 64,
+    currentPrice: 50.64,
+    currency: "USD",
+    discountPercent: 33
+  },
+
+  rating: {
+    average: 4.6,
+    totalReviews: 2387,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
     }
+  },
+
+  productDetails : {
+    productDimensions: "10.75 x 8.19 x 7.5 inches; 10.92 Pounds",
+    modelNumber: "1",
+    department: "Men",
+    upc: "811620020640",
+    manufacturer: "fairlife, LLC",
+    asin: "B01DDIRDZA",
+    units: "168 Fluid Ounces"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "Chocolate",
+      size: "14 oz Bottle",
+      pack: "12 Pack",
+      asin: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6-1"
+    },
+    {
+      flavor: "Vanilla",
+      size: "14 oz Bottle",
+      pack: "12 Pack",
+      asin: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6-2"
+    },
+    {
+      flavor: "Strawberry Banana",
+      size: "14 oz Bottle",
+      pack: "12 Pack",
+      asin: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "Breathable running shoes designed for comfort and performance. Lightweight mesh upper with durable rubber outsole.",
+
+  features: [
+    "26g high quality complete protein",
+    "Lactose free",
+    "Made with ultra-filtered milk",
+    "Contains calcium and vitamin D",
+    "Ideal post workout recovery drink"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+}
 ];
 
-
+ 
 const secondCarouselProducts = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",

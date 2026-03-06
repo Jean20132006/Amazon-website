@@ -1,8 +1,84 @@
 /**
- * @brief Script to handle drop down functionality for 
- * Ingredients section in checkout page
- * @param {HTMLElement} downButton - The dropdown button element
- * @param {HTMLElement} ingredientsSection - The section to show/hide content
+ * @brief This script generates the checkoutout page content dynamically based on the product data
+ *@note  window.location.search returns everything after the ?
+ -URLSearchParams is a built-in JavaScript object that parses query parameters from a URL
+ -params.get("id") This retrieves the value of a specific parameter.
+*/
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const matchingProduct = products.find(product => product.id === id);
+if (matchingProduct) {
+  let title = document.querySelector('.name-section');                              // product name
+  let mainImage  = document.querySelector('.js-image-section');                     // main product image
+  let imageGallery = document.querySelectorAll('.js-radio-button');                 // image gallery 
+  let reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
+  let videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
+  let sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
+  let productDetails = document.querySelectorAll('.product');                       // product details section
+  let productVideo1 = document.getElementById('product-video2');                    // product video element
+  let productVideo2 = document.getElementById('product-video');                     // product video element
+  let manifacturerFirstRow = document.querySelector('.js-manufacturer-first-row');  // manufacturer first row image
+  let proteinImage = document.querySelector('.js-protein');                         // protein image in manufacturer section
+  let firstImageSecondRow = document.querySelector('.js-manufacturer-second-row-container'); // first image in manufacturer second row
+  let thirdRowImage = document.querySelectorAll('.js-max');                          // images in manufacturer third row
+  let shortTitle = document.querySelector('.js-short-title');                        // short title element in manufacturer third row
+  let fourthRowImage = document.querySelector('.js-manufacturer-fourth-row-container'); // fourth row image in manufacturer section
+  let productPriceDollar = document.querySelector('.dollars-amount');                 // product price in dollars
+  let productPriceCent = document.querySelector('.cents');                            // product price in cents
+
+  title.textContent = matchingProduct.title;
+
+  mainImage.src = matchingProduct.images.main;
+
+  imageGallery.forEach((img, index) => {
+    img.src = matchingProduct.images.gallery[index];
+  });
+
+  reviewImages.forEach((reviewImage, index) => {
+    reviewImage.src = matchingProduct.images.reviews[index];
+  });
+
+  videoElements.forEach((video, index) => {
+    video.src = matchingProduct.videos.galleryVideos[index];
+  });
+
+  sponsoredVideosImages.forEach((img, index) => {
+    img.src = matchingProduct.videos.galleryVideosImages[index];
+  });
+
+  productDetails[0].textContent = `Product Dimensions : ${matchingProduct.productDetails.productDimensions}`;
+  productDetails[1].textContent = `Item model number : ${matchingProduct.productDetails.modelNumber}`;
+  productDetails[2].textContent = `Department : ${matchingProduct.productDetails.department}`;
+  productDetails[3].textContent = `UPC : ${matchingProduct.productDetails.upc}`;
+  productDetails[4].textContent = `Manufacturer : ${matchingProduct.productDetails.manufacturer}`;
+  productDetails[5].textContent = `ASIN : ${matchingProduct.productDetails.asin}`;
+  productDetails[6].textContent = `Units : ${matchingProduct.productDetails.units}`;
+
+  productVideo1.src = matchingProduct.videos.galleryVideos[0];
+  productVideo2.src = matchingProduct.videos.galleryVideos[1];
+  
+  manifacturerFirstRow.src = matchingProduct.manifacturer.image1;
+  proteinImage.src = matchingProduct.manifacturer.image2;
+  firstImageSecondRow.src = matchingProduct.manifacturer.image3;
+  thirdRowImage.forEach((img, index) => {
+    img.src= matchingProduct.manifacturer.thirdRowImages[index];
+  });
+
+  shortTitle.textContent = matchingProduct.shortTitle;
+
+  fourthRowImage.src = matchingProduct.manifacturer.fourthRowImage;
+
+  productPriceDollar.textContent = matchingProduct.price.priceDollar;
+  productPriceCent.textContent = matchingProduct.price.priceCents;
+
+} else {
+  document.body.innerHTML = "Product not found";
+}
+ ///////////////////////////////////////////////////////////////////////////////////////////////////
+ /** 
+  * @brief Script to handle drop down functionality for Ingredients section in checkout page
+  * @param {HTMLElement} downButton - The dropdown button element
+  * @param {HTMLElement} ingredientsSection - The section to show/hide content
  */
 let downButton = document.querySelector('.down-button');
 let ingredientsSection = document.querySelector('.empty-div');
