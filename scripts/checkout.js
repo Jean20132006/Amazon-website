@@ -23,8 +23,15 @@ if (matchingProduct) {
   let thirdRowImage = document.querySelectorAll('.js-max');                          // images in manufacturer third row
   let shortTitle = document.querySelector('.js-short-title');                        // short title element in manufacturer third row
   let fourthRowImage = document.querySelector('.js-manufacturer-fourth-row-container'); // fourth row image in manufacturer section
-  let productPriceDollar = document.querySelector('.dollars-amount');                 // product price in dollars
-  let productPriceCent = document.querySelector('.cents');                            // product price in cents
+  let productPriceDollar = document.querySelectorAll('.dollars-amount');              // product price in dollars
+  let productPriceCent = document.querySelectorAll('.cents');                         // product price in cents
+  let pricePerUnit = document.querySelectorAll('.price-per-ounce');                   // price per unit
+  let advertVideo = document.querySelectorAll('.js-sponsored-video');                 // advert video element
+  let productDescription = document.querySelector('.js-product-description');         // product description element
+  let advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
+  let selectFlavorButtons = document.querySelectorAll('.js-btton-flavour');           // flavour selection buttons
+  let selectSizeButtons = document.querySelectorAll('.js-size-button');               // size selection buttons
+  let flavorName =document.getElementById('chocolate');
 
   title.textContent = matchingProduct.title;
 
@@ -68,8 +75,36 @@ if (matchingProduct) {
 
   fourthRowImage.src = matchingProduct.manifacturer.fourthRowImage;
 
-  productPriceDollar.textContent = matchingProduct.price.priceDollar;
-  productPriceCent.textContent = matchingProduct.price.priceCents;
+  productPriceDollar.forEach((element) => {
+    element.textContent = matchingProduct.price.priceDollar;
+  });
+  productPriceCent.forEach((element) => {
+    element.textContent = matchingProduct.price.priceCents;
+  });
+
+  pricePerUnit.forEach((element) => {
+    element.textContent = `($${matchingProduct.price.pricePerUnit} / fluid ounce)`;
+  });
+
+  advertVideo.forEach((video) => {
+    video.src = matchingProduct.videos.advertisement;
+  });
+
+  productDescription.textContent = matchingProduct.description;
+
+  advertImage.forEach((img, index) => {
+    img.src= matchingProduct.images.advertisementImages[index];
+  });
+
+    selectFlavorButtons.forEach((button, index) => {
+    button.textContent = matchingProduct.variants[index].flavor;
+  });
+
+  selectSizeButtons.forEach((button, index) => {
+    button.textContent = `${matchingProduct.variants[index].size} (${matchingProduct.variants[index].pack})`;
+  });
+
+  flavorName.textContent = matchingProduct.variants[0].flavor;
 
 } else {
   document.body.innerHTML = "Product not found";

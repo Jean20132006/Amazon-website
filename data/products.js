@@ -35,6 +35,10 @@
       "images/review-carousel/core8.jpg",
       "images/review-carousel/core9.jpg",
       "images/review-carousel/core10.jpg"
+    ],
+    advertisementImages: [
+      "images/pub1.jpg",
+      "images/advert-videos/celsius-advert-img.png"
     ]
   },
 
@@ -69,7 +73,8 @@
     priceCents: 64,
     currentPrice: 50.64,
     currency: "USD",
-    discountPercent: 33
+    discountPercent: 33,
+    pricePerUnit: 0.30
   },
 
   rating: {
@@ -138,7 +143,177 @@
   },
 
   description:
-    "Breathable running shoes designed for comfort and performance. Lightweight mesh upper with durable rubber outsole.",
+    "Whether you're working towards a new personal record or you're just trying to stay fit, you should make the most of your workouts, which includes your recovery. That's why Core Power protein shakes are designed to help you refuel, rebuild, rehydrate and recover from your workout. With Core Power Elite Chocolate, you get a protein shake that's packed with 42g of high quality protein, all 9 essential amino acids, electrolytes and a creamy chocolate taste. Its high quality protein from fairlife ultra-filtered milk helps you recover after each and every workout. These delicious ready-to-drink protein shakes come in a variety of different flavors, so you can always satisfy your taste buds. Fueled by fairlife ultra-filtered milk, Core Power Elite is about helping you recover after a workout so you feel good and can tackle the rest of your day. Champion Your Recovery.",
+
+  features: [
+    "26g high quality complete protein",
+    "Lactose free",
+    "Made with ultra-filtered milk",
+    "Contains calcium and vitamin D",
+    "Ideal post workout recovery drink"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+
+  title: "CELSIUS Sparkling Orange, Functional Essential Energy Drink 12 Fl Oz (Pack of 4)",
+
+  shortTitle: "CELSIUS Sparkling Orange",
+
+  brand: "Celsius, Inc.",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/Celsius-1.jpg",
+    gallery: [
+      "images/small-images/celsius-1.jpg",
+      "images/small-images/celsius-2.jpg",
+      "images/small-images/celsius-3.jpg",
+      "images/small-images/celsius-4.jpg"
+    ],
+    reviews: [
+      "images/review-carousel/celsius-orange-1.jpg",
+      "images/review-carousel/celsius-orange-2.jpg",
+      "images/review-carousel/celsius-orange-3.jpg",
+      "images/review-carousel/celsius-orange-4.jpg",
+      "images/review-carousel/celsius-orange-5.jpg",
+      "images/review-carousel/celsius-orange-6.jpg",
+      "images/review-carousel/celsius-orange-7.jpg",
+      "images/review-carousel/celsius-orange-1.jpg",
+      "images/review-carousel/celsius-orange-2.jpg",
+      "images/review-carousel/celsius-orange-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/celsius-advert-img.png",
+      "images/advert-videos/celsius-advert-img.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/advert-videos/redBull-video.mp4",
+    galleryVideos : [
+      "images/gallery-videos/c4-video-1.mp4",
+      "images/gallery-videos/nocco-video.mp4",
+      "images/video4.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/c4-image.jpg",
+      "images/gallery-videos/nocco-image.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/Celsius-manu-1.jpeg",
+    image2: "images/first-carousel-images/celsius-sparkling-orange.jpg",
+    image3: "images/drink-images/Celsius-1.jpg",
+    thirdRowImages: [
+      "images/manufacturer-images/celsius-manu-2.jpeg",
+      "images/manufacturer-images/celsius-manu-3.jpeg",
+      "images/manufacturer-images/celsius-manu-4.jpeg"
+    ],
+    fourthRowImage: "images/manufacturer-images/celsius-manu-5.jpeg"
+  },
+
+  price: {
+    priceDollar: 7,
+    priceCents: 38,
+    currentPrice: 7.38,
+    currency: "USD",
+    discountPercent: 33,
+    pricePerUnit: 0.15
+  },
+
+  rating: {
+    average: 4.6,
+    totalReviews: 1319,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "4.5 x 4.5 x 6.12 inches; 3 Pounds",
+    modelNumber: "0440792",
+    department: "GNC|ALL|ALL|ENERGY DRINK SUPPLMT FACT",
+    upc: "315054211198 889392000412",
+    manufacturer: "Celsius, Inc.",
+    asin: "B0714LQ3C2",
+    units: "48 Fluid Ounces"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "Orange",
+      size: "14 oz Bottle",
+      pack: "4 Pack",
+      asin: "15b6fc6f-327a-4ec4-896f-486349e85a3d-1"
+    },
+    {
+      flavor: "Grape",
+      size: "14 oz Bottle",
+      pack: "4 Pack",
+      asin: "15b6fc6f-327a-4ec4-896f-486349e85a3d-2"
+    },
+    {
+      flavor: "Kiwi Guava",
+      size: "14 oz Bottle",
+      pack: "4 Pack",
+      asin: "15b6fc6f-327a-4ec4-896f-486349e85a3d-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description: "CELSIUS is functional, Essential Energy, a better-for-you, premium alternative to traditional energy drinks. As a global, lifestyle fitness drink, CELSIUS was created to help people LIVE FIT, exceed their goals and elevate their everyday lives. Made with proven, premium ingredients, 7 Essential Vitamins and zero sugar, no artificial colors, no aspartame, no high fructose corn syrup and non-GMO. CELSIUS is vegan, gluten-free and Kosher. Our proprietary MetaPlus blend contains green tea extract with EGCG. It also includes guarana seed extract, ginger root for flavor and digestion, vitamin C to help support your immune system, vitamin B for energy production, and chromium to help control hunger, making it an ideal pre-workout drink. Stay active and dazzle your tastebuds with the juicy and citrusy sweet blend of refreshing oranges. Our take on a classic, but without all the sugar! Made with clinically proven ingredients, this carbonated flavor of CELSIUS has the perfect balance of flavor and energy that serves as an awesome pick-me-up for active lifestyles. Make CELSIUS your go-to choice for Essential Energy! CELSIUS is available in 12 oz. slim cans and sold in a 4-pack for convenience.",
 
   features: [
     "26g high quality complete protein",
@@ -165,9 +340,18 @@
     }
   ]
 }
+
 ];
 
  
+
+
+
+
+
+
+
+
 const secondCarouselProducts = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
