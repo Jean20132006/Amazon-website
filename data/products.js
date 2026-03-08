@@ -231,6 +231,7 @@
     image1: "images/manufacturer-images/Celsius-manu-1.jpeg",
     image2: "images/first-carousel-images/celsius-sparkling-orange.jpg",
     image3: "images/drink-images/Celsius-1.jpg",
+    image4: "images/manufacturer-images/celsius-manu-6.jpeg",
     thirdRowImages: [
       "images/manufacturer-images/celsius-manu-2.jpeg",
       "images/manufacturer-images/celsius-manu-3.jpeg",
@@ -314,6 +315,350 @@
   },
 
   description: "CELSIUS is functional, Essential Energy, a better-for-you, premium alternative to traditional energy drinks. As a global, lifestyle fitness drink, CELSIUS was created to help people LIVE FIT, exceed their goals and elevate their everyday lives. Made with proven, premium ingredients, 7 Essential Vitamins and zero sugar, no artificial colors, no aspartame, no high fructose corn syrup and non-GMO. CELSIUS is vegan, gluten-free and Kosher. Our proprietary MetaPlus blend contains green tea extract with EGCG. It also includes guarana seed extract, ginger root for flavor and digestion, vitamin C to help support your immune system, vitamin B for energy production, and chromium to help control hunger, making it an ideal pre-workout drink. Stay active and dazzle your tastebuds with the juicy and citrusy sweet blend of refreshing oranges. Our take on a classic, but without all the sugar! Made with clinically proven ingredients, this carbonated flavor of CELSIUS has the perfect balance of flavor and energy that serves as an awesome pick-me-up for active lifestyles. Make CELSIUS your go-to choice for Essential Energy! CELSIUS is available in 12 oz. slim cans and sold in a 4-pack for convenience.",
+
+  features: [
+    "26g high quality complete protein",
+    "Lactose free",
+    "Made with ultra-filtered milk",
+    "Contains calcium and vitamin D",
+    "Ideal post workout recovery drink"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
+
+  title: "Premier Protein Shake, Chocolate, 30g Protein, 11.5 fl oz, 12 Pack",
+
+  shortTitle: "Premier Protein Shake",
+
+  brand: "Premier Nutrition, Inc.",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/premier-protein-main.jpg",
+
+    gallery: [
+      "images/small-images/premier-protein-1.jpg",
+      "images/small-images/premier-protein-2.jpg",
+      "images/small-images/premier-protein-3.jpg",
+      "images/small-images/premier-protein-4.jpg",
+    ],
+    reviews: [
+      "images/review-carousel/premier-1.jpg",
+      "images/review-carousel/premier-2.jpg",
+      "images/review-carousel/premier-3.jpg",
+      "images/review-carousel/premier-4.jpg",
+      "images/review-carousel/premier-5.jpg",
+      "images/review-carousel/premier-6.jpg",
+      "images/review-carousel/core7.jpg",
+      "images/review-carousel/core8.jpg",
+      "images/review-carousel/core9.jpg",
+      "images/review-carousel/core10.jpg"
+    ],
+    advertisementImages: [
+      "images/pub1.jpg",
+      "images/advert-videos/celsius-advert-img.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/newVideo.mp4",
+    galleryVideos : [
+      "images/productVideoOptimized.mp4",
+      "images/video2.mp4",
+      "images/video4.mp4"
+    ],
+    galleryVideosImages : [
+      "images/video3_img.jpg",
+      "images/video1_img.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/premier-manu-1.jpg",
+    image2: "images/manufacturer-images/premier-manu-2.jpg",
+    image3: "images/manufacturer-images/premier-manu-3.jpg",
+    thirdRowImages: [
+      "images/manufacturer-images/premier-manu-5.jpg",
+      "images/manufacturer-images/premier-manu-6.jpg",
+      "images/manufacturer-images/premier-manu-7.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/premier-manu-4.jpg"
+  },
+
+  price: {
+    priceDollar: 28,
+    priceCents: 22,
+    currentPrice: 28.22,
+    currency: "USD",
+    discountPercent: 12,
+    pricePerUnit: 0.20
+  },
+
+  rating: {
+    average: 4.6,
+    totalReviews: 57291,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "10.13 x 7.69 x 7.25 inches; 8.99 Pounds",
+    modelNumber: "71714",
+    department: "Men",
+    upc: "811620020640",
+    manufacturer: "Premier Nutrition, Inc.",
+    asin: " B07MJL8NXR",
+    units: "68 Fluid Ounces"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "Chocolate",
+      size: "11 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Vanilla",
+      size: "11 oz Bottle",
+      pack: "4 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "Strawberry Banana",
+      size: "11 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "Packaged in an 11.5oz bottle, each Premier Protein Shake contains 30g of protein, complete with all the essential amino acids, 1g of sugar, 3–5g of carbs (depending on flavor), 160 calories, 24 vitamins and minerals, and is also low in fat. We use a blend of milk protein concentrate and calcium caseinate to help support your fitness goals. Enjoy a shake as a healthy snack, a breakfast on the go, or as post or pre-workout fuel. They are delicious as is but also highly customizable. Blend with your favorite fruits and vegetables in a smoothie, pour over cereal or oatmeal, or use as a base for proffee (protein coffee) or protein ice cream. Available in 12 core flavors: Bananas & Cream, Cake Batter Delight, Cafe Latte, Caramel, Chocolate, Chocolate Peanut Butter, Cinnamon Roll, Cookie Dough, Cookies & Cream, Peaches & Cream, Strawberries & Cream, and Vanilla. (Seasonal flavors also available for a limited time.)",
+
+  features: [
+    "26g high quality complete protein",
+    "Lactose free",
+    "Made with ultra-filtered milk",
+    "Contains calcium and vitamin D",
+    "Ideal post workout recovery drink"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "54e0eccd-8f36-462b-b68a-8182611d9add",
+
+  title: "Monster Energy Ultra Sunrise, Sugar Free Energy Drink, 16 Fl Oz | Pack of 15",
+
+  shortTitle: "Monster Energy Ultra Sunrise",
+
+  brand: "Monster Energy",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/monster-energy-main.jpg",
+    
+    gallery: [
+      "images/small-images/monster-1.jpg",
+      "images/small-images/monster-2.jpg",
+      "images/small-images/monster-3.jpg",
+      "images/small-images/monster-4.jpg",
+    ],
+    reviews: [
+      "images/review-carousel/monster1.jpg",
+      "images/review-carousel/monster2.jpg",
+      "images/review-carousel/monster3.jpg",
+      "images/review-carousel/monster4.jpg",
+      "images/review-carousel/monster5.jpg",
+      "images/review-carousel/monster6.jpg",
+      "images/review-carousel/monster1.jpg",
+      "images/review-carousel/monster2.jpg",
+      "images/review-carousel/monster3.jpg",
+      "images/review-carousel/monster4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/celsius-advert-img.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/newVideo.mp4",
+    galleryVideos : [
+      "images/productVideoOptimized.mp4",
+      "images/video2.mp4",
+      "images/video4.mp4"
+    ],
+    galleryVideosImages : [
+      "images/video3_img.jpg",
+      "images/video1_img.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/monster-manu-1.jpg",
+    image2: "images/manufacturer-images/monster-manu-2.jpeg",
+    image3: "images/manufacturer-images/monster-manu-3.jpg",
+    thirdRowImages: [
+      "images/manufacturer-images/monster-manu-4.jpeg",
+      "images/manufacturer-images/monster-manu-7.jpg",
+      "images/manufacturer-images/monster-manu-5.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/monster-manu-8.jpeg"
+  },
+
+  price: {
+    priceDollar: 28,
+    priceCents: 20,
+    currentPrice: 28.20,
+    currency: "USD",
+    discountPercent: 12,
+    pricePerUnit: 0.20
+  },
+
+  rating: {
+    average: 4.7,
+    totalReviews: 8750,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "2.6 x 2.6 x 6.2 inches; 16.64 Pounds",
+    modelNumber: "U-S1-33333",
+    department: "Men",
+    upc: "070847891567",
+    manufacturer: "Monster Energy Company",
+    asin: "B0BL6WQKPM",
+    units: "240 Fluid Ounces"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "Ultra Sunrise",
+      size: "11 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ultra Red",
+      size: "11 oz Bottle",
+      pack: "4 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "Ultra Violet",
+      size: "11 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "Ultra Sunrise is dedicated to those who sacrifice sleep for passion: catching waves at dawn patrol, up on the bike when the morning dew gives the dirt more grip, or the first pass on that glassy lake kicking off an epic wake session. Ultra Sunrise will get you started but it`s great anytime: light, crisp, and refreshing with a flavor all its own. Packed with a full load of our Monster orange energy blend to keep the fire burning all day long. After all it's always sunrise somewhere.",
 
   features: [
     "26g high quality complete protein",

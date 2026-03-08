@@ -924,6 +924,13 @@
     font-size: 14px;
     font-weight: 600;
 }
+
+.core-power img{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
 .power-img img{
     width: 350px;
     height: auto;
@@ -947,6 +954,10 @@
     
 }
 .fairlife-container img{
+    width: 250px;
+    height: auto;
+}
+.image-or-text{
     width: 170px;
     height: auto;
 }

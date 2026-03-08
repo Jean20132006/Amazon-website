@@ -31,7 +31,9 @@ if (matchingProduct) {
   let advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
   let selectFlavorButtons = document.querySelectorAll('.js-btton-flavour');           // flavour selection buttons
   let selectSizeButtons = document.querySelectorAll('.js-size-button');               // size selection buttons
-  let flavorName =document.getElementById('chocolate');
+  let flavorName =document.getElementById('chocolate');                               // flavor name element in size selection section 
+  let imageOrText1 = document.querySelector('.js-image-or-text1');                   // image or text element in manufacturer section
+  let imageOrText2 = document.querySelector('.js-image-or-text2');                   // image or text element in manufacturer section
 
   title.textContent = matchingProduct.title;
 
@@ -105,6 +107,43 @@ if (matchingProduct) {
   });
 
   flavorName.textContent = matchingProduct.variants[0].flavor;
+     
+    if(matchingProduct.id === "e43638ce-6aa0-4b85-b27f-e1d07eb678c6"){
+
+        imageOrText1.innerHTML = `<span class="title-shake">Power Core High Protein Shake</span>
+                <span class="champion">Champion Your Recovery</span>
+                <span class="text-second-row">
+                    Core Power High Protein Shakes are a delicious post-workout 
+                    protein shake. Made with 100% real, lactose free, ultra-filtered 
+                    milk and without any added protein powders, Core Power is a delicious 
+                    source of nutrition to help you build muscle and recover after 
+                    exercise, so you're prepared for your next workout. 
+                </span>
+                <div class="list">
+                    <ul>
+                        <li>High Quality Protein</li>
+                        <li>Protein to Build Muscles and Electrolytes to Help Hydrate</li>
+                        <li>Ready to Drink Protein Shake</li>
+                        <li>Made from Ultra-filtered Milk</li>
+                        <li>Lactose Free</li>
+                    </ul>
+                </div>
+            `;
+        imageOrText2.innerHTML = `<img class="image-or-text" src="images/fairlife.jpg" alt="fairlife">
+                <div class="fairlife-text">
+                    <span>We believe in better</span><br> care for the people we nourish, animals that provides 
+                    us with milk, and the planet we live on. At fairlife we're on a mission to 
+                    nourish the modern world with great tasting, better-for-you products, but 
+                    our purpose extends beyond what's in our bottles. We go the extra mile to
+                    provide better care for the people we nourish, animals that provides us with milk, 
+                    and the planet we live on.
+                </div>
+            `;
+
+    }else{
+        imageOrText1.innerHTML = `<img src="${matchingProduct.manifacturer.image2}" alt="manufacturer">`;
+        imageOrText2.innerHTML = `<img src="${matchingProduct.manifacturer.image3}" alt="manufacturer">`;
+    }
 
 } else {
   document.body.innerHTML = "Product not found";
