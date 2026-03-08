@@ -917,7 +917,7 @@
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: auto;
+    height: 450px;
     gap: 10px;
     flex-shrink: 0;
     font-family: Nunito, sans-serif;
@@ -927,13 +927,18 @@
 
 .core-power img{
     width: 400px;
-    height: auto;
+    height: 450px;
     object-fit: contain;
+}
+.power-img{
+    width: 400px;
+    height: 450px;
 }
 
 .power-img img{
-    width: 350px;
-    height: auto;
+    width: 400px;
+    height: 450px;
+    object-fit: contain;
 }
 .list{
     font-family: Nunito, sans-serif;
@@ -949,17 +954,18 @@
     flex-direction: column;
     flex-shrink: 0;
     align-items: center;
-    width: 250px;
-    height: auto;
+    width: 400px;
+    height: 450px;
     
 }
-.fairlife-container img{
-    width: 250px;
-    height: auto;
-}
-.image-or-text{
+/*.fairlife-container img{
     width: 170px;
     height: auto;
+}*/
+.image-or-text{
+    width: 400px;
+    height: 450px;
+    object-fit: contain;
 }
 .fairlife-text{ 
     font-family: Nunito, sans-serif;

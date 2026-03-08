@@ -684,6 +684,346 @@
       date: "2026-02-03"
     }
   ]
+},
+{
+  id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
+
+  title: "Sparkling Ice, Black Raspberry Sparkling Water, Zero Sugar Flavored Water, 17 fl oz Bottles (Pack of 12)",
+
+  shortTitle: "Sparkling Ice",
+
+  brand: "Talking Rain Beverage Company",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/sparkling-ice-main.jpg",
+    
+    gallery: [
+      "images/small-images/sparkling-ice1.jpg",
+      "images/small-images/sparkling-ice2.jpg",
+      "images/small-images/sparkling-ice3.jpg",
+      "images/small-images/sparkling-ice4.jpg",
+    ],
+    reviews: [
+      "images/review-carousel/sparkling-ice-1.jpg",
+      "images/review-carousel/sparkling-ice-2.jpg",
+      "images/review-carousel/sparkling-ice-3.jpg",
+      "images/review-carousel/sparkling-ice-4.jpg",
+      "images/review-carousel/sparkling-ice-5.jpg",
+      "images/review-carousel/sparkling-ice-6.jpg",
+      "images/review-carousel/sparkling-ice-4.jpg",
+      "images/review-carousel/sparkling-ice-1.jpg",
+      "images/review-carousel/sparkling-ice-5.jpg",
+      "images/review-carousel/sparkling-ice-2.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/newVideo.mp4",
+    galleryVideos : [
+      "images/video3.mp4",
+      "images/video5.mp4",
+      "images/video4.mp4"
+    ],
+    galleryVideosImages : [
+      "images/video3_img.jpg",
+      "images/video1_img.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/ice-manu-2.jpeg",
+    image2: "images/manufacturer-images/ice-manu-6.jpeg",
+    image3: "images/manufacturer-images/ice-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/ice-manu-4.jpeg",
+      "images/manufacturer-images/ice-manu-5.jpeg",
+      "images/manufacturer-images/ice-manu-6.jpeg"
+    ],
+    fourthRowImage: "images/manufacturer-images/ice-manu-1.jpeg"
+  },
+
+  price: {
+    priceDollar: 11,
+    priceCents: 99,
+    currentPrice: 11.99,
+    currency: "USD",
+    discountPercent: 12,
+    pricePerUnit: 0.006
+  },
+
+  rating: {
+    average: 4.7,
+    totalReviews: 27145,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "2.25 x 2.25 x 9.25 inches; 14.75 ounces",
+    modelNumber: "FG00014",
+    department: "Men",
+    upc: "016571245733",
+    manufacturer: "Talking Rain Beverage Company",
+    asin: "B003P02EGU",
+    units: "204 Fluid Ounces"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "Black Raspberry",
+      size: "17 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Cherry Limeade",
+      size: "17 oz Bottle",
+      pack: "4 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "Cranberry Grape",
+      size: "17 oz Bottle",
+      pack: "12 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "This best-selling, succulent flavor makes for one sweet experience. Sparkling Ice Black Raspberry is a fizzy, flavorful sparkling water, without all the calories. Sparkling Ice Black Raspberry flavored sparkling water contains 0g sugar, only 5 calories per bottle, and 0g carbs. Made with better-for-you ingredients, this low-calorie carbonated water is bursting with real fruit flavor, is made with colors from natural sources, and contains vitamins and antioxidants. Enjoy Sparkling Ice as a mocktail or mix it with your drink of choice for a delicious, low calorie cocktail. The product ships in a pack of 12 bottles. Each sparkling water bottle contains 17 fl oz.",
+
+  features: [
+    "26g high quality complete protein",
+    "Lactose free",
+    "Made with ultra-filtered milk",
+    "Contains calcium and vitamin D",
+    "Ideal post workout recovery drink"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
+
+  title: "Twinings Lemon & Ginger Herbal Tea, 100 Count (Pack of 1), Tangy Lemon, Spicy Ginger, 100 Teabags",
+
+  shortTitle: "Twinings Lemon & Ginger Tea",
+
+  brand: "Twinings",
+
+  categories: [
+    "drink",
+    "protein shake",
+    "nutrition",
+    "Grocery & Gourmet Food",
+    "beverages"
+  ],
+
+  images: {
+    main: "images/drink-images/twinings-main.jpg",
+    
+    gallery: [
+      "images/small-images/twinings1.jpg",
+      "images/small-images/twinings2.jpg",
+      "images/small-images/twinings3.jpg",
+      "images/small-images/twinings4.jpg",
+    ],
+    reviews: [
+      "images/review-carousel/twinings-1.jpg",
+      "images/review-carousel/twinings-2.jpg",
+      "images/review-carousel/twinings-3.jpg",
+      "images/review-carousel/twinings-4.jpg",
+      "images/review-carousel/twinings-5.jpg",
+      "images/review-carousel/twinings-6.jpg",
+      "images/review-carousel/twinings-4.jpg",
+      "images/review-carousel/twinings-3.jpg",
+      "images/review-carousel/twinings-2.jpg",
+      "images/review-carousel/twinings-1.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/newVideo.mp4",
+    galleryVideos : [
+      "images/video4.mp4",
+      "images/video5.mp4",
+      "images/video3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/video3_img.jpg",
+      "images/video1_img.jpg",
+      "images/video2_img.jpg"
+    ]
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg"
+  },
+
+  price: {
+    priceDollar: 16,
+    priceCents: 99,
+    currentPrice: 16.99,
+    currency: "USD",
+    discountPercent: 12,
+    pricePerUnit: 0.17
+  },
+
+  rating: {
+    average: 4.6,
+    totalReviews: 3466,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "DAILYLIVEA120",
+    department: "Tea",
+    upc: "070177229870",
+    manufacturer: "Twinings",
+    asin: "B09RC41QGJ",
+    units: "100 counts"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "lemon",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "ZESTY CITRUS FLAVOUR OF LEMON: Blended with the distinct flavour of ginger along with blackberry leaves, lemon peel and lemongrass; Naturally Caffeine Free Herbal, 100 Tea Bags",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
 }
 
 ];

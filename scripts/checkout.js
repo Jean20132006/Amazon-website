@@ -129,7 +129,7 @@ if (matchingProduct) {
                     </ul>
                 </div>
             `;
-        imageOrText2.innerHTML = `<img class="image-or-text" src="images/fairlife.jpg" alt="fairlife">
+        imageOrText2.innerHTML = `<img src="images/fairlife.jpg" alt="fairlife">
                 <div class="fairlife-text">
                     <span>We believe in better</span><br> care for the people we nourish, animals that provides 
                     us with milk, and the planet we live on. At fairlife we're on a mission to 
@@ -142,7 +142,7 @@ if (matchingProduct) {
 
     }else{
         imageOrText1.innerHTML = `<img src="${matchingProduct.manifacturer.image2}" alt="manufacturer">`;
-        imageOrText2.innerHTML = `<img src="${matchingProduct.manifacturer.image3}" alt="manufacturer">`;
+        imageOrText2.innerHTML = `<img class="image-or-text" src="${matchingProduct.manifacturer.image3}" alt="manufacturer">`;
     }
 
 } else {
