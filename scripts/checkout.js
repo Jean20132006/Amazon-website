@@ -384,3 +384,51 @@ customerReviewsButton.addEventListener('click', () => {
         customerReviewsButton.classList.replace('How-customer-reviews-and-ratings-work-up', 'How-customer-reviews-and-ratings-work');
     }
 });
+
+//////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This script handles carousel to choose color functionality in checkout page
+ */
+let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
+let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
+let trackColor = document.querySelector('.checkout-carousel-color-track');
+let currentPageColor = document.querySelector('.current-page-color');
+let totalPageColor = document.querySelector('.total-pages-color');
+let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
+totalPageColor.innerHTML = pagesColor.length;
+
+let currentIndexColor = 0;
+let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
+function updateCarouselColor(){
+    trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
+    currentPageColor.innerHTML = currentIndexColor + 1;
+    if(currentIndexColor === 0){
+        leftButtonColor.disabled = true;
+    }
+    else{
+        leftButtonColor.disabled = false;
+    }
+    if(currentIndexColor === pagesColor.length - 1){
+        rightButtonColor.disabled = true;
+    }
+    else{
+        rightButtonColor.disabled = false;
+    }
+}
+leftButtonColor.addEventListener('click', () => {
+    if(currentIndexColor > 0){
+        currentIndexColor--;
+        updateCarouselColor();
+    }
+});
+rightButtonColor.addEventListener('click', () => {
+    if(currentIndexColor < pagesColor.length - 1){
+        currentIndexColor++;
+        updateCarouselColor();
+    }
+});
+
+updateCarouselColor();         // Initialize carousel state
+
+//////////////////////////////////////////////////////////////////

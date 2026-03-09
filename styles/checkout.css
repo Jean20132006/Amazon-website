@@ -59,6 +59,7 @@
     align-items: left;
     flex-shrink: 0;
     gap: 10px;
+    margin-bottom: 80px;
 }
 .name-section{
     margin-top: 10px;
@@ -184,7 +185,7 @@
 .btton-flavour{
     border: 1px solid grey;
     background-color: white;
-    width: 100px;
+    width: auto;
     height: 30px;
     border-radius: 3px;
     transition: border 0.3s;
@@ -2006,3 +2007,133 @@
     color: grey;
 }
 /*End of footer section*/
+
+/*Carousel choose color section*/
+.checkout-carousel-color-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /*margin-bottom: 40px;*/
+    /*width: 600px;
+    height: auto;*/
+}
+.checkout-carousel-color{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+.checkout-carousel-color-track{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: auto;
+    transition: transform 0.7s ease-in-out;
+}
+.checkout-carosel-color-page{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: auto;
+    flex-shrink: 0;
+    min-width: 600px;
+}
+.checkout-carousel-color-img{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+}
+.checkout-carousel-color-img{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.checkout-carousel-color-img img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.checkout-arrow-color{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(243, 241, 241);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
+               rgba(250, 250, 250, 0.4) 0px 1px 2px;
+}
+.checkout-arrow-color.left{
+    left: 0px;
+    font-size: 28px;
+}
+.checkout-arrow-color.right{
+    right: 0px;
+    font-size: 28px;
+}
+.column-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;   
+}
+.item-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    width: 70px;
+    height: 90px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+}
+.item-color img{
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
+}
+.item-color-horizontal-line{
+    width: 70px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 5px;
+}
+.item-color-listprice,
+.item-color-price{
+    font-family: Nunito, sans-serif;
+    font-size: 10px;
+    font-weight: 600;    
+}
+.item-color-listprice{
+    text-decoration: line-through;
+    color: grey;
+}
+/*.page-num-color{
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    position : absolute;
+    bottom: 0px;
+    left: 35px;
+}*/
+/* End of carousel choose color section*/
