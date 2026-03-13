@@ -34,6 +34,23 @@ if (matchingProduct) {
   let flavorName =document.getElementById('chocolate');                               // flavor name element in size selection section 
   let imageOrText1 = document.querySelector('.js-image-or-text1');                   // image or text element in manufacturer section
   let imageOrText2 = document.querySelector('.js-image-or-text2');                   // image or text element in manufacturer section
+  const firsrowManufacturer = document.querySelector('.manufacturer-section'); // first row in manufacturer section
+  const secondRowManufacturer = document.querySelector('.manufacturer-second-row-section'); // second row in manufacturer section
+  const thirdRowManufacturer = document.querySelector('.manufacturer-third-row-section'); // third row in manufacturer section
+  const fourthRowManufacturer = document.querySelector('.manufacturer-fourth-row-section'); // fourth row in manufacturer section
+  const imageForVideoAdvertisement = document.querySelectorAll('.js-image-for-video-advertisement'); // image for video advertisement in manufacturer section
+  const textForVideoAdvertisement = document.querySelectorAll('.js-text-for-video-advertisement'); // text for video advertisement in manufacturer section
+
+  ///////////////////////////////////////////////////////////////////////////////
+  const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
+  const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
+  
+  if(matchingProduct.categories[0] === "electronics") {
+    firsrowManufacturer.style.display = "none";
+    secondRowManufacturer.style.display = "none";
+    thirdRowManufacturer.style.display = "none";
+    fourthRowManufacturer.style.display = "none";
+  }
 
   title.textContent = matchingProduct.title;
 
@@ -144,6 +161,22 @@ if (matchingProduct) {
         imageOrText1.innerHTML = `<img src="${matchingProduct.manifacturer.image2}" alt="manufacturer">`;
         imageOrText2.innerHTML = `<img class="image-or-text" src="${matchingProduct.manifacturer.image3}" alt="manufacturer">`;
     }
+
+    clothesComputersCarouselImages.forEach((img, index) => {
+        img.src = matchingProduct.manifacturer.clothesComputerImages[index];
+    });
+
+    clothesComputerBigImages.forEach((img, index) => {
+        img.src = matchingProduct.manifacturer.bigImages[index];
+    });
+
+    imageForVideoAdvertisement.forEach((img, index) => {
+        img.src = matchingProduct.videos.advertisementVideosImages[index];
+    });
+    
+    textForVideoAdvertisement.forEach((element) => {
+        element.textContent = matchingProduct.videos.advertisementVideosText;
+    });
 
 } else {
   document.body.innerHTML = "Product not found";

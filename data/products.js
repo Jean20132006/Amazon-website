@@ -1024,6 +1024,204 @@
       date: "2026-02-03"
     }
   ]
+},
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "iPad (A16) 11th Generation",
+
+  brand: "Moko",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-1.jpg",
+    
+    gallery: [
+      "images/small-images/small-ipad-1.jpg",
+      "images/small-images/small-ipad-2.jpg",
+      "images/small-images/small-ipad-3.jpg",
+      "images/small-images/small-ipad-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ]
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-1.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [
+      "images/electronic-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amile.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/electronic-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg",
+      "images/images/electronic-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg"
+    ],
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+
+  price: {
+    priceDollar: 49,
+    priceCents: 99,
+    currentPrice: 49.99,
+    currency: "USD",
+    discountPercent: 12,
+    pricePerUnit: 0.17
+  },
+
+  rating: {
+    average: 4.8,
+    totalReviews: 5976,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "DAILYLIVEA120",
+    department: "Tea",
+    upc: "070177229870",
+    manufacturer: "Twinings",
+    asin: "B09RC41QGJ",
+    units: "100 counts"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      flavor: "lemon",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2 days",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  description:
+    "ZESTY CITRUS FLAVOUR OF LEMON: Blended with the distinct flavour of ginger along with blackberry leaves, lemon peel and lemongrass; Naturally Caffeine Free Herbal, 100 Tea Bags",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
 }
 
 ];
