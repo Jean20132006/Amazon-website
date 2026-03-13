@@ -38,9 +38,14 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 480px;
+    width: 470px;
     height: auto;
     margin-top: 60px;
+}
+.image-section img{
+    width: 470px;
+    height: auto;
+    object-fit: contain;
 }
 .click-to-see-full-view a{
     text-decoration: none;
@@ -2142,15 +2147,11 @@
 /*Carousel choose color section*/
 .checkout-carousel-clothes-computers-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
-    /*margin-bottom: 40px;*/
-    /*width: 600px;
-    height: auto;*/
 }
 .checkout-carousel-clothes-computers{
-    /*border: 1px solid green;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2161,21 +2162,18 @@
     position: relative;
 }
 .checkout-carousel-clothes-computers-track{
-    /*border: 1px solid red;*/
-    background-image: url('../images/background-images/background-img-2.jpg');
+    background-image: url('../images/background-images/background-ipad.jpg');
     background-size: contain;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: center;
     flex-shrink: 0;
     height: 600px;
     transition: transform 0.7s ease-in-out;
 }
 .checkout-carosel-clothes-computers-page{
-    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -2294,4 +2292,38 @@
   margin-left: 20px;
 
 }
-/*End of first row of products*/
+/*End of big carousel for clothes and computers section*/
+
+/*Big image CSS*/
+.clothes-computers-image-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.clothes-computers-image-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1460px;
+    height: auto;
+    flex-shrink: 0;
+}
+.clothes-computers-image-container img{
+    width: 1460px;
+    height: auto;
+    object-fit: contain;
+}
+
+.big-image-clothes-computers-text{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+     color: black;
+     font-size: 18px;
+     font-weight: bold;
+     width: 1460px;
+     height: auto;
+     flex-shrink: 0;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+/*End of big image CSS*/

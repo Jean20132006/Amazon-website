@@ -432,3 +432,305 @@ rightButtonColor.addEventListener('click', () => {
 updateCarouselColor();         // Initialize carousel state
 
 //////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This script handles carousel to choose color functionality in checkout page
+ */
+let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
+let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
+let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
+let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
+let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
+let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
+totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
+
+let currentIndexBigCarousel = 0;
+let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
+function updateCarouselBigCarousel(){
+    trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
+    currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
+    if(currentIndexBigCarousel === 0){
+        leftButtonBigCarousel.disabled = true;
+    }
+    else{
+        leftButtonBigCarousel.disabled = false;
+    }
+    if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
+        rightButtonBigCarousel.disabled = true;
+    }
+    else{
+        rightButtonBigCarousel.disabled = false;
+    }
+}
+leftButtonBigCarousel.addEventListener('click', () => {
+    if(currentIndexBigCarousel > 0){
+        currentIndexBigCarousel--;
+        updateCarouselBigCarousel();
+    }
+});
+rightButtonBigCarousel.addEventListener('click', () => {
+    if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
+        currentIndexBigCarousel++;
+        updateCarouselBigCarousel();
+    }
+});
+
+updateCarouselBigCarousel();         // Initialize carousel state
+
+//////////////////////////////////////////////////////////////////
+/**
+ * @brief This script handles the functionality of changing the main image 
+ * when clicking on the color options in checkout page
+ * @param {NodeList} buttonSelectItem - The color option buttons
+ * @param {HTMLElement} mainImage2 - The main image element to update
+ */
+const buttonSelectItem = document.querySelectorAll('.item-color');
+const mainImage2 = document.querySelector('.js-image-section');
+        buttonSelectItem.forEach((button) => {
+            button.addEventListener('click', () => {
+                let buttonId = button.dataset.id;
+                if(buttonId === "1") {
+                    mainImage2.src = "images/electronic-images/ipad-1.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                    });
+
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "2") {
+                    mainImage2.src = "images/electronic-images/ipad-2.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "3") {
+                    mainImage2.src = "images/electronic-images/ipad-3.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "4") {
+                    mainImage2.src = "images/electronic-images/ipad-4.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "5") {
+                    mainImage2.src = "images/electronic-images/ipad-5.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "6") {
+                    mainImage2.src = "images/electronic-images/ipad-6.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "7") {
+                    mainImage2.src = "images/electronic-images/ipad-7.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                 else if(buttonId === "8") {
+                    mainImage2.src = "images/electronic-images/ipad-8.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "9") {
+                    mainImage2.src = "images/electronic-images/ipad-9.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "10") {
+                    mainImage2.src = "images/electronic-images/ipad-10.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "11") {
+                    mainImage2.src = "images/electronic-images/ipad-11.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "12") {
+                    mainImage2.src = "images/electronic-images/ipad-12.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "13") {
+                    mainImage2.src = "images/electronic-images/ipad-13.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                 else if(buttonId === "14") {
+                    mainImage2.src = "images/electronic-images/ipad-14.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "15") {
+                    mainImage2.src = "images/electronic-images/ipad-15.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "16") {
+                    mainImage2.src = "images/electronic-images/ipad-16.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "17") {
+                    mainImage2.src = "images/electronic-images/ipad-17.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "18") {
+                    mainImage2.src = "images/electronic-images/ipad-18.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "19") {
+                    mainImage2.src = "images/electronic-images/ipad-19.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+            });
+        });
+
+//////////////////////////////////////////////////////////////////
+/**
+ * @brief This script handles the functionality of changing the main image 
+ * when hovering over the color options in checkout page
+ * @param {NodeList} buttonMouseover - The color option buttons
+ * @param {HTMLElement} mainImage3 - The main image element to update
+ */
+
+const buttonMouseover = document.querySelectorAll('.item-color');
+const mainImage3 = document.querySelector('.js-image-section');
+buttonMouseover.forEach((button) => {
+    button.addEventListener('mouseover', () => {
+        if(button.dataset.id === "1") {
+            mainImage3.src = "images/electronic-images/ipad-1.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "2") {
+            mainImage3.src = "images/electronic-images/ipad-2.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "3") {
+            mainImage3.src = "images/electronic-images/ipad-3.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "4") {
+            mainImage3.src = "images/electronic-images/ipad-4.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "5") {
+            mainImage3.src = "images/electronic-images/ipad-5.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "6") {
+            mainImage3.src = "images/electronic-images/ipad-6.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "7") {
+            mainImage3.src = "images/electronic-images/ipad-7.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "8") {
+            mainImage3.src = "images/electronic-images/ipad-8.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "9") {
+            mainImage3.src = "images/electronic-images/ipad-9.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "10") {
+            mainImage3.src = "images/electronic-images/ipad-10.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "11") {
+            mainImage3.src = "images/electronic-images/ipad-11.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "12") {
+            mainImage3.src = "images/electronic-images/ipad-12.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "13") {
+            mainImage3.src = "images/electronic-images/ipad-13.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "14") {
+            mainImage3.src = "images/electronic-images/ipad-14.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "15") {
+            mainImage3.src = "images/electronic-images/ipad-15.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "16") {
+            mainImage3.src = "images/electronic-images/ipad-16.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "17") {
+            mainImage3.src = "images/electronic-images/ipad-17.jpg";
+            button.style.border = "1px solid blue";
+        }
+        else if(button.dataset.id === "18") {
+            mainImage3.src = "images/electronic-images/ipad-18.jpg";
+            button.style.border = "1px solid blue";
+        }
+    });
+    button.addEventListener('mouseout', () => {
+        button.style.border = "1px solid grey";
+        button.style.borderRadius = "5px";
+    });
+});
