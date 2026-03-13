@@ -40,6 +40,7 @@ if (matchingProduct) {
   const fourthRowManufacturer = document.querySelector('.manufacturer-fourth-row-section'); // fourth row in manufacturer section
   const imageForVideoAdvertisement = document.querySelectorAll('.js-image-for-video-advertisement'); // image for video advertisement in manufacturer section
   const textForVideoAdvertisement = document.querySelectorAll('.js-text-for-video-advertisement'); // text for video advertisement in manufacturer section
+  const ingredientsButton = document.querySelector('.ingredients'); // ingredients dropdown button
 
   ///////////////////////////////////////////////////////////////////////////////
   const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
@@ -50,6 +51,7 @@ if (matchingProduct) {
     secondRowManufacturer.style.display = "none";
     thirdRowManufacturer.style.display = "none";
     fourthRowManufacturer.style.display = "none";
+    ingredientsButton.style.display = "none";
   }
 
   title.textContent = matchingProduct.title;
@@ -178,10 +180,103 @@ if (matchingProduct) {
         element.textContent = matchingProduct.videos.advertisementVideosText;
     });
 
+    renderShipping(matchingProduct);
+    document.querySelector(".js-delivery-day").innerHTML = `FREE delivery <span class="delivery-date">${getDeliveryDate(3)}</span>`;
+    document.getElementById("advert-free-delivery").innerHTML = `${getDeliveryDate(3)}`; 
+
 } else {
   document.body.innerHTML = "Product not found";
 }
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function calculates the delivery date based on the number of days 
+ * @param {number} days - The number of days until delivery
+ * @return {string} - The formatted delivery date string
+*/
+
+function getDeliveryDate(days){
+
+  const date = new Date();                            // Get the current date
+
+  date.setDate(date.getDate() + days);                // Add the specified number of days to the current date
+
+  return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
+    weekday:"long",
+    month:"long",
+    day:"numeric"
+  });
+
+}
+console.log(`Delivery Date: ${getDeliveryDate(2)}`);
+
+function getTomorrow(){
+
+  const date = new Date();
+  date.setDate(date.getDate() + 1);
+
+  return date.toLocaleDateString("en-US",{
+    weekday:"long",
+    month:"long",
+    day:"numeric"
+  });
+
+}
+
+function renderShipping(product){
+
+  const deliveryDate = getDeliveryDate(product.shipping.estimatedDelivery);
+  const tomorrow = getTomorrow();
+
+  let message1 = "";
+  let message2 = "";
+
+  if(product.shipping.primeEligible){
+     message2 = `<span class="prime">FREE Prime delivery <span class="delivery-date">${tomorrow}</span></span>`;
+  }
+
+  if(product.shipping.freeShipping){
+    message1 = `FREE delivery <span class="delivery-date">${deliveryDate}</span>`; 
+  }
+  else{
+    /*message1 = `Delivery ${deliveryDate}`;*/
+    message1 = `FREE delivery <span class="delivery-date">${getDeliveryDate(7)}</span>`;
+  }
+
+  /*document.querySelector(".js-delivery-day").innerHTML = message1;*/
+  document.querySelector('.js-prime-delivery-date').innerHTML = message2;
+
+  /*document.querySelector(".js-fastest-delivery").innerHTML =
+  `<span class="fastest">Or fastest delivery ${tomorrow}</span>`;*/
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+function updateTimer(){
+
+  const now = new Date();                         // Get the current date and time
+
+  const cutoff = new Date();
+  cutoff.setHours(18,0,0,0);                      //Set hours, setHours(hour, minutes, seconds, milliseconds) 5PM shipping cutoff
+
+  let diff = cutoff - now;                        // Calculate the difference in milliseconds between the cutoff time and the current time 
+
+  if(diff < 0){                                   // If the difference is negative, it means the cutoff time has passed for today
+    document.querySelector(".time").innerHTML =
+      "Order tomorrow for next shipment";
+    return;
+  }
+
+  const hours = Math.floor(diff / (1000*60*60)); // Convert milliseconds to hours
+  const mins = Math.floor((diff % (1000*60*60))/(1000*60)); // Calculate remaining minutes after accounting for hours
+
+  document.querySelector(".time").innerHTML = ` ${hours} hrs ${mins} mins`;
+
+}
+
+setInterval(updateTimer,60000);              // Update the timer every minutes
+updateTimer();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
  /** 
   * @brief Script to handle drop down functionality for Ingredients section in checkout page
   * @param {HTMLElement} downButton - The dropdown button element

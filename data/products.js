@@ -1112,7 +1112,7 @@
       "images/Sixth-carousel-images/aliun-screen-protector.jpg",
       "images/electronic-images/ipad-7.jpg",
       "images/electronic-images/ipad-5.jpg",
-      "images/images/electronic-images/ipad-3.jpg",
+      "images/electronic-images/ipad-3.jpg",
       "images/Sixth-carousel-images/aliun-screen-protector.jpg",
       "images/electronic-images/ipad-7.jpg",
       "images/electronic-images/ipad-5.jpg"
@@ -1188,7 +1188,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2 days",
+    estimatedDelivery: "2",
     weight: "1.2 lb"
   },
 

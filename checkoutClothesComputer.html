@@ -802,6 +802,10 @@
                         <span id="ingredients">Ingredients </span>
                         <button class="down-button"><span><i class="bi bi-chevron-down"></i></span></button>
                     </div>
+                    <div class="ingredients">
+                        <span id="ingredients">Product details </span>
+                        <button class="down-button"><span><i class="bi bi-chevron-down"></i></span></button>
+                    </div>
                     <div class="empty-div"></div>
                     <div class="hr-checkout"></div> 
                     <div class="About-this-item">
@@ -867,13 +871,14 @@
                        </div>
                     </div>
                     <div class="delivery-day">
-                        <span>FREE delivery 
-                            <span class="delivery-date"> Thursday, <br> January 29</span>
+                        <span class="js-delivery-day">
                         </span>
                     </div>
                     <div class="prime-members">
-                        <span>Or <span class="prime-mem">Prime members</span> get FREE delivery <span class="delivery-date">Sunday, 
-                            January 25. Order within <span class="time">2 hrs 56 mins</span>.<br> 
+                        <span>Or <span class="prime-mem">Prime members</span> 
+                            <span class="js-prime-delivery-date"></span>
+                            <span class="delivery-date">Order within</span>
+                            <span class="time">2 hrs 56 mins</span><br>
                             <a href="#join-prime">Join Prime</a>
                         </span>
                     </div>
@@ -946,7 +951,7 @@
                        </div>
                        <div class="delivery-day">
                             <span>FREE delivery 
-                                <span class="delivery-date"> Thursday, <br> January 29</span>
+                                <span class="delivery-date" id="advert-free-delivery"> </span>
                             </span>
                         </div>
                         <div class="shipper-seller">
@@ -1054,11 +1059,13 @@
             <div class="checkout-carousel-track">
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        <a href="#ipad">
+                           <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
-                        <span class="checkout-carousel-img-rating">
+                        <span class="checkout-carousel-img-rating">   
                             <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
                         </span>
                         <span class="checkout-amazon-choice">Amazon's choice</span>
@@ -1066,7 +1073,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1077,7 +1086,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1088,7 +1099,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1099,7 +1112,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1110,7 +1125,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1121,7 +1138,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1134,7 +1153,9 @@
                 </div>
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1145,7 +1166,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1156,7 +1179,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1167,7 +1192,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1178,7 +1205,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1189,7 +1218,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1200,7 +1231,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1543,11 +1576,13 @@
             <div class="checkout-carousel-track">
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        <a href="#ipad">
+                           <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
-                        <span class="checkout-carousel-img-rating">
+                        <span class="checkout-carousel-img-rating">   
                             <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
                         </span>
                         <span class="checkout-amazon-choice">Amazon's choice</span>
@@ -1555,7 +1590,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1566,7 +1603,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1577,7 +1616,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1588,7 +1629,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1599,7 +1642,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1610,7 +1655,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1623,7 +1670,9 @@
                 </div>
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1634,7 +1683,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1645,7 +1696,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1656,7 +1709,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1667,7 +1722,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1678,7 +1735,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -1689,7 +1748,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2117,11 +2178,13 @@
             <div class="checkout-carousel-track">
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        <a href="#ipad">
+                           <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
-                        <span class="checkout-carousel-img-rating">
+                        <span class="checkout-carousel-img-rating">   
                             <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
                         </span>
                         <span class="checkout-amazon-choice">Amazon's choice</span>
@@ -2129,7 +2192,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2140,7 +2205,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2151,7 +2218,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2162,7 +2231,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2173,7 +2244,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2184,7 +2257,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2197,7 +2272,9 @@
                 </div>
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2208,7 +2285,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2219,7 +2298,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2230,7 +2311,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2241,7 +2324,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2252,7 +2337,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2263,7 +2350,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2350,11 +2439,13 @@
             <div class="checkout-carousel-track">
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        <a href="#ipad">
+                           <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
-                        <span class="checkout-carousel-img-rating">
+                        <span class="checkout-carousel-img-rating">   
                             <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
                         </span>
                         <span class="checkout-amazon-choice">Amazon's choice</span>
@@ -2362,7 +2453,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2373,7 +2466,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2384,7 +2479,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2395,7 +2492,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2406,7 +2505,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2417,7 +2518,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2430,7 +2533,9 @@
                 </div>
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2441,7 +2546,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2452,7 +2559,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2463,7 +2572,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2474,7 +2585,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2485,7 +2598,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2496,7 +2611,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2534,11 +2651,13 @@
             <div class="checkout-carousel-track">
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        <a href="#ipad">
+                           <img src="images/electronic-images/ipad-carousel-4.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
-                        <span class="checkout-carousel-img-rating">
+                        <span class="checkout-carousel-img-rating">   
                             <img src="images/bottom-carousel-images/star.png" alt="Star Rating">4.6
                         </span>
                         <span class="checkout-amazon-choice">Amazon's choice</span>
@@ -2546,7 +2665,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-5.jpg" alt="ipad">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2557,7 +2678,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-6.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2568,7 +2691,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-7.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2579,7 +2704,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-8.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2590,7 +2717,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-9.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2601,7 +2730,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-10.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2614,7 +2745,9 @@
                 </div>
                 <div class="checkout-carosel-page">
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-11.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2625,7 +2758,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-12.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2636,7 +2771,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-13.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2647,7 +2784,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-1.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2658,7 +2797,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-2.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2669,7 +2810,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-3.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2680,7 +2823,9 @@
                         <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
                     </div>
                     <div class="checkout-carousel-img">
-                        <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        <a href="#ipad">
+                            <img src="images/electronic-images/ipad-carousel-4.jpg" alt="core-power">
+                        </a>
                         <span class="checkout-carousel-img-text">
                             <a href="#core">Core Power Protein Shake, Chocolate, 26g Bottle, 14oz, 12 Pack</a>
                         </span>
@@ -2727,7 +2872,7 @@
         <div class="leftpage-section"></div>
         <a href="amazon.html">
             <div class="go-to-top">
-                <span>Back to top</span>
+                <span>Return on home page</span>
             </div>
         </a>
         <div class="rightpage-section"></div>
