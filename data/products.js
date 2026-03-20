@@ -142,6 +142,8 @@
     totalSales: 152000
   },
 
+  about: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
+
   description:
     "Whether you're working towards a new personal record or you're just trying to stay fit, you should make the most of your workouts, which includes your recovery. That's why Core Power protein shakes are designed to help you refuel, rebuild, rehydrate and recover from your workout. With Core Power Elite Chocolate, you get a protein shake that's packed with 42g of high quality protein, all 9 essential amino acids, electrolytes and a creamy chocolate taste. Its high quality protein from fairlife ultra-filtered milk helps you recover after each and every workout. These delicious ready-to-drink protein shakes come in a variety of different flavors, so you can always satisfy your taste buds. Fueled by fairlife ultra-filtered milk, Core Power Elite is about helping you recover after a workout so you feel good and can tackle the rest of your day. Champion Your Recovery.",
 
@@ -1126,17 +1128,17 @@
   },
 
   price: {
-    priceDollar: 49,
+    priceDollar: 9,
     priceCents: 99,
-    currentPrice: 49.99,
+    currentPrice: 9.99,
     currency: "USD",
-    discountPercent: 12,
+    discountPercent: 27,
     pricePerUnit: 0.17
   },
 
   rating: {
-    average: 4.8,
-    totalReviews: 5976,
+    average: 4.6,
+    totalReviews: 37937,
     breakdown: {
       fiveStar: 70,
       fourStar: 18,
@@ -1199,6 +1201,13 @@
     totalSales: 152000
   },
 
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+    
+    
   description:
     "ZESTY CITRUS FLAVOUR OF LEMON: Blended with the distinct flavour of ginger along with blackberry leaves, lemon peel and lemongrass; Naturally Caffeine Free Herbal, 100 Tea Bags",
 
