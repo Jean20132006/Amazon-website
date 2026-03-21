@@ -39,7 +39,8 @@
     advertisementImages: [
       "images/pub1.jpg",
       "images/advert-videos/celsius-advert-img.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/core-power.jpg"
   },
 
   videos : {
@@ -212,7 +213,8 @@
     advertisementImages: [
       "images/advert-videos/celsius-advert-img.png",
       "images/advert-videos/celsius-advert-img.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/celsius-sparkling-orange.jpg"
   },
 
   videos : {
@@ -384,7 +386,8 @@
     advertisementImages: [
       "images/pub1.jpg",
       "images/advert-videos/celsius-advert-img.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/premier_protein.jpg"
   },
 
   videos : {
@@ -556,7 +559,8 @@
     advertisementImages: [
       "images/advert-videos/ensure.png",
       "images/advert-videos/celsius-advert-img.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/monster-energy.jpg"
   },
 
   videos : {
@@ -728,7 +732,8 @@
     advertisementImages: [
       "images/advert-videos/ensure.png",
       "images/advert-videos/ensure.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/sparkling-ice.jpg"
   },
 
   videos : {
@@ -900,7 +905,8 @@
     advertisementImages: [
       "images/advert-videos/ensure.png",
       "images/advert-videos/ensure.png"
-    ]
+    ],
+    cartImageConfiramation: "images/first-carousel-images/twining-lemon.jpg"
   },
 
   videos : {
@@ -1069,7 +1075,8 @@
     advertisementImages: [
       "images/advert-videos/ensure.png",
       "images/advert-videos/ensure.png"
-    ]
+    ],
+    cartImageConfiramation: "images/Sixth-carousel-images/moko.jpg"
   },
 
   videos : {

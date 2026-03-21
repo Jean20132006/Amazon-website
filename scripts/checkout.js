@@ -1,6 +1,10 @@
 /**
  * @brief This script generates the checkoutout page content dynamically based on the product data
  *@note  window.location.search returns everything after the ?
+ @param {object} params - An instance of URLSearchParams that parses the query parameters from the current page URL, allowing access to specific parameters such as "id" to identify the product being viewed
+ @param {string} id - The unique identifier for the product, extracted from the URL query parameters
+ @param {Object} matchingProduct - The product object that matches the extracted id, used to populate the checkout page with relevant information
+ -window.location represents page URL
  -URLSearchParams is a built-in JavaScript object that parses query parameters from a URL
  -params.get("id") This retrieves the value of a specific parameter.
 */
@@ -52,6 +56,98 @@ if (matchingProduct) {
     thirdRowManufacturer.style.display = "none";
     fourthRowManufacturer.style.display = "none";
     ingredientsButton.style.display = "none";
+
+    //////////////////////////////////////////////////////////////////
+
+    /**
+     * @brief This script handles carousel to choose color functionality in checkout page
+     */
+    let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
+    let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
+    let trackColor = document.querySelector('.checkout-carousel-color-track');
+    let currentPageColor = document.querySelector('.current-page-color');
+    let totalPageColor = document.querySelector('.total-pages-color');
+    let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
+    totalPageColor.innerHTML = pagesColor.length;
+
+    let currentIndexColor = 0;
+    let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
+    function updateCarouselColor(){
+        trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
+        currentPageColor.innerHTML = currentIndexColor + 1;
+        if(currentIndexColor === 0){
+            leftButtonColor.disabled = true;
+        }
+        else{
+            leftButtonColor.disabled = false;
+        }
+        if(currentIndexColor === pagesColor.length - 1){
+            rightButtonColor.disabled = true;
+        }
+        else{
+            rightButtonColor.disabled = false;
+        }
+    }
+    leftButtonColor.addEventListener('click', () => {
+        if(currentIndexColor > 0){
+            currentIndexColor--;
+            updateCarouselColor();
+        }
+    });
+    rightButtonColor.addEventListener('click', () => {
+        if(currentIndexColor < pagesColor.length - 1){
+            currentIndexColor++;
+            updateCarouselColor();
+        }
+    });
+
+    updateCarouselColor();         // Initialize carousel state
+
+    //////////////////////////////////////////////////////////////////
+
+    /**
+     * @brief This script handles carousel to choose color functionality in checkout page
+     */
+    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
+    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
+    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
+    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
+    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
+    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
+    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
+
+    let currentIndexBigCarousel = 0;
+    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
+    function updateCarouselBigCarousel(){
+        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
+        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
+        if(currentIndexBigCarousel === 0){
+            leftButtonBigCarousel.disabled = true;
+        }
+        else{
+            leftButtonBigCarousel.disabled = false;
+        }
+        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
+            rightButtonBigCarousel.disabled = true;
+        }
+        else{
+            rightButtonBigCarousel.disabled = false;
+        }
+    }
+    leftButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel > 0){
+            currentIndexBigCarousel--;
+            updateCarouselBigCarousel();
+        }
+    });
+    rightButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
+            currentIndexBigCarousel++;
+            updateCarouselBigCarousel();
+        }
+    });
+
+    updateCarouselBigCarousel();         // Initialize carousel state
   }
 
   title.textContent = matchingProduct.title;
@@ -513,97 +609,6 @@ customerReviewsButton.addEventListener('click', () => {
     }
 });
 
-//////////////////////////////////////////////////////////////////
-
-/**
- * @brief This script handles carousel to choose color functionality in checkout page
- */
-let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
-let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
-let trackColor = document.querySelector('.checkout-carousel-color-track');
-let currentPageColor = document.querySelector('.current-page-color');
-let totalPageColor = document.querySelector('.total-pages-color');
-let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
-totalPageColor.innerHTML = pagesColor.length;
-
-let currentIndexColor = 0;
-let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
-function updateCarouselColor(){
-    trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
-    currentPageColor.innerHTML = currentIndexColor + 1;
-    if(currentIndexColor === 0){
-        leftButtonColor.disabled = true;
-    }
-    else{
-        leftButtonColor.disabled = false;
-    }
-    if(currentIndexColor === pagesColor.length - 1){
-        rightButtonColor.disabled = true;
-    }
-    else{
-        rightButtonColor.disabled = false;
-    }
-}
-leftButtonColor.addEventListener('click', () => {
-    if(currentIndexColor > 0){
-        currentIndexColor--;
-        updateCarouselColor();
-    }
-});
-rightButtonColor.addEventListener('click', () => {
-    if(currentIndexColor < pagesColor.length - 1){
-        currentIndexColor++;
-        updateCarouselColor();
-    }
-});
-
-updateCarouselColor();         // Initialize carousel state
-
-//////////////////////////////////////////////////////////////////
-
-/**
- * @brief This script handles carousel to choose color functionality in checkout page
- */
-let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
-let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
-let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
-let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
-let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
-let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
-totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
-
-let currentIndexBigCarousel = 0;
-let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
-function updateCarouselBigCarousel(){
-    trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
-    currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
-    if(currentIndexBigCarousel === 0){
-        leftButtonBigCarousel.disabled = true;
-    }
-    else{
-        leftButtonBigCarousel.disabled = false;
-    }
-    if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
-        rightButtonBigCarousel.disabled = true;
-    }
-    else{
-        rightButtonBigCarousel.disabled = false;
-    }
-}
-leftButtonBigCarousel.addEventListener('click', () => {
-    if(currentIndexBigCarousel > 0){
-        currentIndexBigCarousel--;
-        updateCarouselBigCarousel();
-    }
-});
-rightButtonBigCarousel.addEventListener('click', () => {
-    if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
-        currentIndexBigCarousel++;
-        updateCarouselBigCarousel();
-    }
-});
-
-updateCarouselBigCarousel();         // Initialize carousel state
 
 //////////////////////////////////////////////////////////////////
 /**
@@ -862,3 +867,27 @@ buttonMouseover.forEach((button) => {
         button.style.borderRadius = "5px";
     });
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////// ADD TO CART FUNCTIONALITY ///////////////
+const addToCartButton = document.querySelector('.js-add-to-cart-btn');
+
+addToCartButton.addEventListener('click', () => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];      // Get existing cart or create empty array
+    let existingItem = cart.find(item => item.id === id);           // Check if product already exists
+    if(existingItem){
+        existingItem.quantity += 1;                                  // Increase quantity           
+    } 
+    else {
+        cart.push({                                                 // Add new product to cart
+        id: id,
+        quantity: 1
+        });
+   }
+   
+   localStorage.setItem("cart", JSON.stringify(cart));              // Save updated cart
+   localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
+   window.location.href = "addToCart.html";                         // Redirect
+});
+
+

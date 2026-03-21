@@ -104,3 +104,24 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
 
 //////////////////////////////////////////////////////////////////
+
+///////////////////Add to cart code////////////////////////
+
+/**
+ * @brief This script handles the add to cart functionality, including 
+ * updating the cart count and displaying a confirmation message when an 
+ * item is added to the cart.
+ * @note The script listens for click events on the "Add to Cart" button,
+    * updates the cart count in localStorage, and retrieves the last added 
+    * product to display its image in the confirmation message. It assumes 
+    * that the product data is stored in a variable named "products" and that 
+    * each product has an "id" and an "images.gallery" array.
+ */
+
+// Get last added product id
+const id2 = localStorage.getItem("lastAddedProduct");                       // Get last added product id
+const product = products.find(p => p.id == id2);                            // Get product from your product list
+document.querySelector('.js-image-add-to-cart').src = product.images.cartImageConfiramation; // Set product image in confirmation message
+
+let cart1 = localStorage.getItem("cart");
+console.log(cart1);
