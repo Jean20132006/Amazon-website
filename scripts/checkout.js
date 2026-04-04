@@ -890,4 +890,11 @@ addToCartButton.addEventListener('click', () => {
    window.location.href = "addToCart.html";                         // Redirect
 });
 
+///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+
+let CheckoutCartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
+const cartNumberElement = document.querySelector('.js-cart-num-items');
+cartNumberElement.innerText = CheckoutCartNumberItems;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 

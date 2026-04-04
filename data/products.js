@@ -73,6 +73,7 @@
     priceDollar: 50,
     priceCents: 64,
     currentPrice: 50.64,
+    currentPriceInCents: 5064,
     currency: "USD",
     discountPercent: 33,
     pricePerUnit: 0.30
@@ -248,6 +249,7 @@
     priceDollar: 7,
     priceCents: 38,
     currentPrice: 7.38,
+    currentPriceInCents: 738,
     currency: "USD",
     discountPercent: 33,
     pricePerUnit: 0.15
@@ -420,6 +422,7 @@
     priceDollar: 28,
     priceCents: 22,
     currentPrice: 28.22,
+    currentPriceInCents: 2822,
     currency: "USD",
     discountPercent: 12,
     pricePerUnit: 0.20
@@ -593,6 +596,7 @@
     priceDollar: 28,
     priceCents: 20,
     currentPrice: 28.20,
+    currentPriceInCents: 2820,
     currency: "USD",
     discountPercent: 12,
     pricePerUnit: 0.20
@@ -766,6 +770,7 @@
     priceDollar: 11,
     priceCents: 99,
     currentPrice: 11.99,
+    currentPriceInCents: 1199,
     currency: "USD",
     discountPercent: 12,
     pricePerUnit: 0.006
@@ -939,6 +944,7 @@
     priceDollar: 16,
     priceCents: 99,
     currentPrice: 16.99,
+    currentPriceInCents: 1699,
     currency: "USD",
     discountPercent: 12,
     pricePerUnit: 0.17
@@ -1138,6 +1144,7 @@
     priceDollar: 9,
     priceCents: 99,
     currentPrice: 9.99,
+    currentPriceInCents: 999,
     currency: "USD",
     discountPercent: 27,
     pricePerUnit: 0.17
