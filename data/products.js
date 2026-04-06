@@ -1182,9 +1182,9 @@
 
   variants: [
     {
-      flavor: "lemon",
+      color: "Blue",
       size: "17 oz Bottle",
-      pack: "100 Pack",
+      pack: "1 Pack",
       asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
     },
     {

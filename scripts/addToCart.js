@@ -119,12 +119,28 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 let id2 = localStorage.getItem("lastAddedProduct");                         // Get last added product id 
 let product = products.find(p => p.id == id2);                              // Get product from your product list
 document.querySelector('.js-image-add-to-cart').src = product.images.cartImageConfiramation; // Set product image in confirmation message
+if(product.categories[0] === "drink"){
+    const flavorElement = document.querySelector('.add-to-cart-product-flavor');
+    flavorElement.innerHTML = `<span class="addtocart-product-flavor">Flavor Name: 
+                                <span class="js-add-to-cart-flavor">${product.variants[0].flavor}</span>
+                            </span>
+                            <span class="addtocart-product-flavor">Size: 
+                                <span class="js-add-to-cart-size">${product.variants[0].size} ($${product.variants[0].pack})</span>
+                            </span>`;
+}
+else{
+    const flavorElement = document.querySelector('.add-to-cart-product-flavor');
+    flavorElement.innerHTML = `<span class="addtocart-product-flavor">Color: 
+                                <span class="js-add-to-cart-flavor">${product.variants[0].color}</span>
+                            </span>`;
+}
 
 let cart1 = JSON.parse(localStorage.getItem("cart")) || [];                 // Get cart from localStorage or initialize as empty array
-/*console.log(cart1);*/
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
- * @brief This section generates the HTML for the cart.
+ * @brief This function generates the HTML for the cart.
  * @returns HTML string representing the cart summary, including product image, price, quantity,
  *          and buttons for deleting or adding more items.
  * @note The script iterates through the cart items, finds the corresponding product details, 
@@ -135,72 +151,132 @@ let cart1 = JSON.parse(localStorage.getItem("cart")) || [];                 // G
  * @param cartSummaryHTML - A string that accumulates the HTML for the cart summary, 
  *                          which is then injected into the DOM.
  */
-let cartSummaryHTML = "";                                                   // Initialize cart summary HTML
-cart1.forEach(cartItem => {
-    const matchProduct = products.find(p => p.id === cartItem.id);          // Find product details for each cart item
-    if (matchProduct) {
-        cartSummaryHTML += `<div class="add-to-cart-corbeille-image-button  add-to-cart-corbeille-image-button-${cartItem.id}">
-                    <div class="add-to-cart-corbeille-image">
-                    <img src="${matchProduct.images.cartImageConfiramation}" alt="${matchProduct.name}">
-                    <span class="add-to-cart-corbeille-item-price">$${(matchProduct.price.currentPriceInCents / 100).toFixed(2)}</span>
-                    </div>
-                    <div class="add-to-cart-item-button">
-                        <div class="add-to-cart-delete-add">
-                            <button class="add-to-cart-delete-button" data-id="${cartItem.id}"><i class="bi bi-trash"></i></button>
-                            <span class="add-to-cart-num-items">${cartItem.quantity}</span>
-                            <button class="add-to-cart-plus-sign" data-id="${cartItem.id}"><i class="bi bi-plus-lg"></i></button>
-                        </div>
-                    </div>
-                </div>`; 
-    }
-});
-document.querySelector('.js-add-to-cart-corbeille-cart').innerHTML = cartSummaryHTML; // Update cart summary in confirmation message
+
+
+function renderCart() {
+    let cartSummaryHTML = "";
+
+    cart1.forEach(cartItem => {
+        const matchProduct = products.find(p => p.id === cartItem.id);
+
+        if (!matchProduct) return;
+
+        const iconClass = cartItem.quantity > 1 ? 'bi-dash-lg' : 'bi-trash';
+
+        cartSummaryHTML += `
+        <div class="add-to-cart-corbeille-image-button add-to-cart-corbeille-image-button-${cartItem.id}">
+            <div class="add-to-cart-corbeille-image">
+                <img src="${matchProduct.images.cartImageConfiramation}">
+                <span class="add-to-cart-corbeille-item-price">$${(matchProduct.price.currentPriceInCents / 100).toFixed(2)}</span>
+            </div>
+            
+            <div class="add-to-cart-item-button">
+                <div class="add-to-cart-delete-add">
+                    <button class="cart-action-btn" data-id="${cartItem.id}">
+                        <i class="bi ${iconClass}"></i>
+                    </button>
+
+                    <span class="add-to-cart-num-items">${cartItem.quantity}</span>
+
+                    <button class="add-to-cart-plus-sign" data-id="${cartItem.id}">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>    
+        </div>
+        `;
+    });
+
+    document.querySelector('.js-add-to-cart-corbeille-cart').innerHTML = cartSummaryHTML;
+}
+
+renderCart(); // Initial render of cart summary
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
- * @brief This section adds event listeners for the delete and plus buttons in the cart summary.
- * @note The delete button removes the item from the cart and updates localStorage, while the plus button increments the quantity of the item in the cart and updates both localStorage and the displayed quantity in the cart summary.
- * @param button - The button element that was clicked, either delete or plus.
- * @param cartItemId - The id of the cart item associated with the button, used to identify which item to update or remove.
- * @param itemIndex - The index of the cart item in the cart array, used to update the quantity when the plus button is clicked.
+ * @brief This section uses event delegation to handle click events for both delete and minus buttons in the 
+ *        cart summary.
+ * @note Instead of adding individual event listeners to each button, this approach adds a single event listener 
+ *       to the parent container of the cart items. When a click event occurs, it checks if the clicked element is 
+ *       a delete or minus button and performs the corresponding action (deleting the item or decrementing the quantity)
+ *       while updating localStorage and re-rendering the cart summary.
+ * @param document.querySelector('.js-add-to-cart-corbeille-cart')
+ *        -parent container element that holds all buttons for the cart items.
+ * @param e - is the event object, It contains information about the click (where it happened, which element was clicked, etc.) 
+ *       for identifying the cart item.
+ * 
+ * @code {JavaScript} 
+ *       .addEventListener('click', (e) => { ... }); //Listen for ANY click inside it
+ * @code {JavaScript} 
+ *      const button = e.target.closest('.cart-action-btn'); // Find the actual button that was clicked
+ *                                                              (even if user clicked icon inside it)
  */
-// Add event listeners for delete button to remove item from cart summary and localStorage
-document.querySelectorAll('.add-to-cart-delete-button').forEach(button => {
-    button.addEventListener('click', () => {
-        let cartItemId = button.dataset.id;
-        // Handle delete functionality
-        cart1 = cart1.filter(item => item.id !== cartItemId);
-        localStorage.setItem("cart1", JSON.stringify(cart1));   // Update localStorage after deleting item
-        let container = document.querySelector(`.add-to-cart-corbeille-image-button-${cartItemId}`);
-        if(container){
-            container.remove();
-        }
-        updateCartSummary(); // Update cart summary after deleting item
 
-    });
+//Select parent container and add event listener for both delete and minus buttons using event delegation
+document.querySelector('.js-add-to-cart-corbeille-cart')
+.addEventListener('click', (e) => {
+
+    const button = e.target.closest('.cart-action-btn');
+    if (!button) return;
+
+    const id = button.dataset.id;
+    const itemIndex = cart1.findIndex(item => item.id === id);
+
+    if (itemIndex === -1) return;
+
+    const item = cart1[itemIndex];
+
+    if (item.quantity > 1) {
+        // MINUS behavior
+        item.quantity -= 1;
+    } else {
+        // DELETE behavior
+        cart1 = cart1.filter(i => i.id !== id);
+    }
+
+    localStorage.setItem("cart1", JSON.stringify(cart1));
+
+    // Re-render everything
+    renderCart();
+    updateCartSummary();
 });
+               
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This section uses event delegation to handle click events for the plus button in the cart summary.
+ * @note Similar to the previous section, this approach adds a single event listener to the parent container of the cart items. When a click event occurs, it checks if the clicked element is a plus button and increments the quantity of the corresponding cart item, updates localStorage, and re-renders the cart summary.
+ * @param document.querySelector('.js-add-to-cart-corbeille-cart')
+ *       -parent container element that holds all buttons for the cart items.
+ * @param e - is the event object, It contains information about the click (where it happened, which element was clicked, etc.) 
+ *       for identifying the cart item.
+ * @code {JavaScript} 
+ *       .addEventListener('click', (e) => { ... }); //Listen for ANY click inside it
+ * @code {JavaScript} 
+ *      const plusBtn = e.target.closest('.add-to-cart-plus-sign'); // Find the actual plus button that was clicked
+ *                                                              (even if user clicked icon inside it)
+ */
+document.querySelector('.js-add-to-cart-corbeille-cart')
+.addEventListener('click', (e) => {
 
-// Add event listeners for plus button to increment quantity in cart summary
-document.querySelectorAll('.add-to-cart-plus-sign').forEach(button => {
-    button.addEventListener('click', () => {
-        const cartItemId2 = button.dataset.id;
-        // Handle plus functionality
-        let itemIndex = cart1.findIndex(item => item.id === cartItemId2);
-        if (itemIndex !== -1) {
-            cart1[itemIndex].quantity += 1; // Increment quantity
-            localStorage.setItem("cart1", JSON.stringify(cart1)); // Update localStorage
-            let quantitySpan = button.parentElement.querySelector('.add-to-cart-num-items');
-            if (quantitySpan) {
-                quantitySpan.innerHTML = cart1[itemIndex].quantity; // Update quantity display
-                 updateCartSummary(); // Update cart summary after incrementing quantity
-            }
-        }
-    });
+    const plusBtn = e.target.closest('.add-to-cart-plus-sign');
+    if (!plusBtn) return;
+
+    const id = plusBtn.dataset.id;
+
+    const item = cart1.find(i => i.id === id);
+    if (!item) return;
+
+    item.quantity += 1;
+
+    localStorage.setItem("cart1", JSON.stringify(cart1));
+
+    // Re-render everything
+    renderCart();
+    updateCartSummary();
 });
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
@@ -242,14 +318,16 @@ function updateCartSummary() {
     const itemText = cartQuantity === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
     proceedToCheckoutButton.innerHTML = `Proceed to checkout (${cartQuantity} ${itemText})`; // Update proceed to checkout button with current cart quantity
 
+    ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+
+    let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0;                //Get current cart quantity from localStorage or initialize to 0 
+    const cartNumberElement = document.querySelector('.js-cart-num-items');
+    cartNumberElement.innerText = cartNumberItems;
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 
 updateCartSummary(); // Call function to update cart summary on page load
 
-///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
 
-let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
-const cartNumberElement = document.querySelector('.js-cart-num-items');
-cartNumberElement.innerText = cartNumberItems;
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
 

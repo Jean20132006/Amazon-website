@@ -897,4 +897,62 @@ const cartNumberElement = document.querySelector('.js-cart-num-items');
 cartNumberElement.innerText = CheckoutCartNumberItems;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////Generate dynamically carousels for checkout page////////////////////////////////////////
+
+/*const carousels = [
+  { title: "Health & Nutrition", filter: p => p.category === "health" },
+  { title: "Top Rated", filter: p => p.rating >= 4.5 },
+  { title: "Sports", filter: p => p.category === "sports" }
+];*/
+
+// Generate carousel HTML for each category
+/*carousels.forEach(carousel => {
+  const filteredProducts = products.filter(carousel.filter);
+  //const filteredProducts = products.filter(p => p.category === "health");
+
+  renderCarousel(carousel.title, filteredProducts);
+});*/
+
+// Function to render a carousel given a title and list of products
+/*function renderCarousel(title, items) {
+  const container = document.createElement("div");
+  container.classList.add("carousel-container");
+
+  container.innerHTML = `
+    <h2>${title}</h2>
+    <div class="carousel">
+      <button class="left">←</button>
+      <div class="track"></div>
+      <button class="right">→</button>
+    </div>
+  `;
+
+  const track = container.querySelector(".track");
+
+  // Create pages with 6 items each
+  const itemsPerPage = 6;
+
+  for (let i = 0; i < items.length; i += itemsPerPage) {
+    const page = document.createElement("div");
+    page.classList.add("page");
+
+    items.slice(i, i + itemsPerPage).forEach(product => {
+      const item = document.createElement("div");
+      item.classList.add("product");
+
+      item.innerHTML = `
+        <img src="${product.image}">
+        <p>${product.title}</p>
+      `;
+
+      page.appendChild(item);
+    });
+
+    track.appendChild(page);
+  }
+
+  document.body.appendChild(container);
+}*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
