@@ -1114,7 +1114,7 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
       "images/electronic-images/ipad-1.jpg",
       "images/Sixth-carousel-images/aliun-screen-protector.jpg",
       "images/electronic-images/ipad-7.jpg",
@@ -1149,6 +1149,45 @@
     discountPercent: 27,
     pricePerUnit: 0.17
   },
+
+  colorItems : [
+  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+  { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
+  { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
+  { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
+  { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null },
+  { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null },
+  { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null },
+  { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null },
+  { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null },
+  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+  { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
+  { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
+  { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
+  { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
+  { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null }
+],
 
   rating: {
     average: 4.6,

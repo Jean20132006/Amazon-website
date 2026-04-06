@@ -11,6 +11,7 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const matchingProduct = products.find(product => product.id === id);
+
 if (matchingProduct) {
   let title = document.querySelector('.name-section');                              // product name
   let mainImage  = document.querySelector('.js-image-section');                     // main product image
@@ -58,55 +59,13 @@ if (matchingProduct) {
     ingredientsButton.style.display = "none";
 
     //////////////////////////////////////////////////////////////////
-
-    /**
-     * @brief This script handles carousel to choose color functionality in checkout page
-     */
-    let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
-    let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
-    let trackColor = document.querySelector('.checkout-carousel-color-track');
-    let currentPageColor = document.querySelector('.current-page-color');
-    let totalPageColor = document.querySelector('.total-pages-color');
-    let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
-    totalPageColor.innerHTML = pagesColor.length;
-
-    let currentIndexColor = 0;
-    let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
-    function updateCarouselColor(){
-        trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
-        currentPageColor.innerHTML = currentIndexColor + 1;
-        if(currentIndexColor === 0){
-            leftButtonColor.disabled = true;
-        }
-        else{
-            leftButtonColor.disabled = false;
-        }
-        if(currentIndexColor === pagesColor.length - 1){
-            rightButtonColor.disabled = true;
-        }
-        else{
-            rightButtonColor.disabled = false;
-        }
-    }
-    leftButtonColor.addEventListener('click', () => {
-        if(currentIndexColor > 0){
-            currentIndexColor--;
-            updateCarouselColor();
-        }
-    });
-    rightButtonColor.addEventListener('click', () => {
-        if(currentIndexColor < pagesColor.length - 1){
-            currentIndexColor++;
-            updateCarouselColor();
-        }
-    });
-
-    updateCarouselColor();         // Initialize carousel state
-
+    
+    
+    
     //////////////////////////////////////////////////////////////////
 
     /**
-     * @brief This script handles carousel to choose color functionality in checkout page
+     * @brief This script handles Big carousel functionality in checkoutClothesComputer page
      */
     let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
     let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
@@ -595,7 +554,7 @@ customerReviewsButton.addEventListener('click', () => {
     if(customerReviewsButton.classList.contains('How-customer-reviews-and-ratings-work')){
         customerReviewSection.innerHTML= `Customer Reviews, including Product Star Ratings 
             help customers to learn more about the product and decide whether it is the right product for them.
-            To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. 
+            To calculate the overall star rating and percentage breakdown by star, we don't use a simple average. 
             Instead, our system considers things like how recent a review is and if the reviewer bought the item 
             on Amazon. It also analyzed reviews to verify trustworthiness.
         `;
@@ -609,173 +568,6 @@ customerReviewsButton.addEventListener('click', () => {
     }
 });
 
-
-//////////////////////////////////////////////////////////////////
-/**
- * @brief This script handles the functionality of changing the main image 
- * when clicking on the color options in checkout page
- * @param {NodeList} buttonSelectItem - The color option buttons
- * @param {HTMLElement} mainImage2 - The main image element to update
- */
-const buttonSelectItem = document.querySelectorAll('.item-color');
-const mainImage2 = document.querySelector('.js-image-section');
-        buttonSelectItem.forEach((button) => {
-            button.addEventListener('click', () => {
-                let buttonId = button.dataset.id;
-                if(buttonId === "1") {
-                    mainImage2.src = "images/electronic-images/ipad-1.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                    });
-
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "2") {
-                    mainImage2.src = "images/electronic-images/ipad-2.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "3") {
-                    mainImage2.src = "images/electronic-images/ipad-3.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "4") {
-                    mainImage2.src = "images/electronic-images/ipad-4.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "5") {
-                    mainImage2.src = "images/electronic-images/ipad-5.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "6") {
-                    mainImage2.src = "images/electronic-images/ipad-6.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "7") {
-                    mainImage2.src = "images/electronic-images/ipad-7.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                 else if(buttonId === "8") {
-                    mainImage2.src = "images/electronic-images/ipad-8.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "9") {
-                    mainImage2.src = "images/electronic-images/ipad-9.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "10") {
-                    mainImage2.src = "images/electronic-images/ipad-10.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "11") {
-                    mainImage2.src = "images/electronic-images/ipad-11.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "12") {
-                    mainImage2.src = "images/electronic-images/ipad-12.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "13") {
-                    mainImage2.src = "images/electronic-images/ipad-13.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                 else if(buttonId === "14") {
-                    mainImage2.src = "images/electronic-images/ipad-14.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "15") {
-                    mainImage2.src = "images/electronic-images/ipad-15.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "16") {
-                    mainImage2.src = "images/electronic-images/ipad-16.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "17") {
-                    mainImage2.src = "images/electronic-images/ipad-17.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "18") {
-                    mainImage2.src = "images/electronic-images/ipad-18.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "19") {
-                    mainImage2.src = "images/electronic-images/ipad-19.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-            });
-        });
 
 //////////////////////////////////////////////////////////////////
 /**
@@ -955,4 +747,270 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
 }*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////// Choose Items color & its carousel code ///////////////////////////////////////////////////////
+
+const itemsPerColumn = 3;
+const columnsPerPage = 6;
+
+const track = document.querySelector(".checkout-carousel-color-track");
+
+function generateCarousel(items) {
+  track.innerHTML = ""; // Clear previous content
+
+  const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage));
+
+  for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+    const pageDiv = document.createElement("div");
+    pageDiv.classList.add("checkout-carosel-color-page");
+
+    for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
+      const columnDiv = document.createElement("div");
+      columnDiv.classList.add("column-color");
+
+      // Calculate start index of items for this column
+      const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn;
+      const endIndex = startIndex + itemsPerColumn;
+
+      items.slice(startIndex, endIndex).forEach(item => {
+        const button = document.createElement("button");
+        button.classList.add("item-color");
+        button.dataset.id = item.id;
+
+        button.innerHTML = `
+          <img src="${item.img}" alt="color option ${item.id}">
+          <div class="item-color-horizontal-line"></div>
+          <div class="item-color-price">$${item.price.toFixed(2)}</div>
+          <div class="item-color-listprice">${item.listPrice ? `$${item.listPrice.toFixed(2)}` : ''}</div>
+        `;
+
+        columnDiv.appendChild(button);
+      });
+
+      pageDiv.appendChild(columnDiv);
+    }
+
+    track.appendChild(pageDiv);
+  }
+
+  // Update page numbers
+  /*document.querySelector(".total-pages-color").textContent = totalPages;
+  document.querySelector(".current-page-color").textContent = 1;*/
+}
+
+generateCarousel(matchingProduct.colorItems);
+
+/**
+     * @brief This script handles carousel to choose color functionality in checkout page
+     */
+    let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
+    let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
+    let trackColor = document.querySelector('.checkout-carousel-color-track');
+    let currentPageColor = document.querySelector('.current-page-color');
+    let totalPageColor = document.querySelector('.total-pages-color');
+    let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
+    totalPageColor.innerHTML = pagesColor.length;
+
+    let currentIndexColor = 0;
+    let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
+    function updateCarouselColor(){
+        trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
+        currentPageColor.innerHTML = currentIndexColor + 1;
+        if(currentIndexColor === 0){
+            leftButtonColor.disabled = true;
+        }
+        else{
+            leftButtonColor.disabled = false;
+        }
+        if(currentIndexColor === pagesColor.length - 1){
+            rightButtonColor.disabled = true;
+        }
+        else{
+            rightButtonColor.disabled = false;
+        }
+    }
+    leftButtonColor.addEventListener('click', () => {
+        if(currentIndexColor > 0){
+            currentIndexColor--;
+            updateCarouselColor();
+        }
+    });
+    rightButtonColor.addEventListener('click', () => {
+        if(currentIndexColor < pagesColor.length - 1){
+            currentIndexColor++;
+            updateCarouselColor();
+        }
+    });
+
+    updateCarouselColor();         // Initialize carousel state
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////
+/**
+ * @brief This script handles the functionality of changing the main image 
+ * when clicking on the color options in checkout page
+ * @param {NodeList} buttonSelectItem - The color option buttons
+ * @param {HTMLElement} mainImage2 - The main image element to update
+ */
+const buttonSelectItem = document.querySelectorAll('.item-color');
+const mainImage2 = document.querySelector('.js-image-section');
+        buttonSelectItem.forEach((button) => {
+            button.addEventListener('click', () => {
+                let buttonId = button.dataset.id;
+                if(buttonId === "1") {
+                    mainImage2.src = "images/electronic-images/ipad-1.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                    });
+
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "2") {
+                    mainImage2.src = "images/electronic-images/ipad-2.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "3") {
+                    mainImage2.src = "images/electronic-images/ipad-3.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "4") {
+                    mainImage2.src = "images/electronic-images/ipad-4.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "5") {
+                    mainImage2.src = "images/electronic-images/ipad-5.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "6") {
+                    mainImage2.src = "images/electronic-images/ipad-6.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "7") {
+                    mainImage2.src = "images/electronic-images/ipad-7.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                 else if(buttonId === "8") {
+                    mainImage2.src = "images/electronic-images/ipad-8.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "9") {
+                    mainImage2.src = "images/electronic-images/ipad-9.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "10") {
+                    mainImage2.src = "images/electronic-images/ipad-10.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "11") {
+                    mainImage2.src = "images/electronic-images/ipad-11.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "12") {
+                    mainImage2.src = "images/electronic-images/ipad-12.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "13") {
+                    mainImage2.src = "images/electronic-images/ipad-13.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                 else if(buttonId === "14") {
+                    mainImage2.src = "images/electronic-images/ipad-14.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "15") {
+                    mainImage2.src = "images/electronic-images/ipad-15.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "16") {
+                    mainImage2.src = "images/electronic-images/ipad-16.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "17") {
+                    mainImage2.src = "images/electronic-images/ipad-17.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "18") {
+                    mainImage2.src = "images/electronic-images/ipad-18.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+                else if(buttonId === "19") {
+                    mainImage2.src = "images/electronic-images/ipad-19.jpg";
+                    buttonSelectItem.forEach((btn) => {
+                        btn.style.border = "1px solid grey";
+                        btn.style.borderRadius = "5px";
+                    });
+                    button.style.border = "2px solid blue";
+                }
+            });
+        });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
