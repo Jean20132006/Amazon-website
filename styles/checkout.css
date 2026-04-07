@@ -44,7 +44,7 @@
 }
 .image-section img{
     width: 470px;
-    height: auto;
+    height: 500px;
     object-fit: contain;
 }
 .click-to-see-full-view a{
