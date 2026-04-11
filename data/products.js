@@ -54,7 +54,12 @@
       "images/video3_img.jpg",
       "images/video1_img.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -229,7 +234,12 @@
       "images/gallery-videos/c4-image.jpg",
       "images/gallery-videos/nocco-image.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -403,7 +413,12 @@
       "images/video3_img.jpg",
       "images/video1_img.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -577,7 +592,12 @@
       "images/video3_img.jpg",
       "images/video1_img.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -751,7 +771,12 @@
       "images/video3_img.jpg",
       "images/video1_img.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -925,7 +950,12 @@
       "images/video3_img.jpg",
       "images/video1_img.jpg",
       "images/video2_img.jpg"
-    ]
+    ],
+    advertisementVideosImages : [
+      "images/chocolate-flavor.jpg",
+      "images/chocolate-flavor.jpg"
+    ],
+    advertisementVideosText : "Garden of Life Meal Replacement Shakes, Raw Organic, Chocolate..."
   },
 
   manifacturer: {
@@ -1151,43 +1181,45 @@
   },
 
   colorItems : [
-  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-  { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
-  { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
-  { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
-  { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null },
-  { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null },
-  { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null },
-  { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null },
-  { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null },
-  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-  { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-  { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-  { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-  { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
-  { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
-  { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
-  { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null }
-],
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null }
+  ],
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
 
   rating: {
     average: 4.6,
@@ -1290,12 +1322,12 @@
 
   title: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
 
-  shortTitle: "THE GYM PEOPLE Thick",
+  shortTitle: "The Gym People Thick",
 
   brand: "THE GYM PEOPLE",
 
   categories: [
-    "electronics",
+    "clothing",
     "tablet",
     "accessories",
     "phone",
@@ -1340,13 +1372,13 @@
       "images/gallery-videos/gym-people-video-3.mp4"
     ],
     galleryVideosImages : [
-      "images/small-images/gym-people-1.jpg",
-      "images/small-images/gym-people-2.jpg",
-      "images/small-images/gym-people-3.jpg"
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
     ],
     advertisementVideosImages : [
-      "images/small-images/gym-people-1.jpg",
-      "images/small-images/gym-people-2.jpg"
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
     ],
     advertisementVideosText : "Amazon Essentials Women's Active FormFlex Buttery Soft High Waist Yoga Workout..."
   },
@@ -1393,60 +1425,62 @@
     currentPrice: 19.99,
     currentPriceInCents: 1999,
     currency: "USD",
-    discountPercent: 26,
+    discountPercent: 5,
     pricePerUnit: 0.17
   },
 
   colorItems : [
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
   { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-  { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-  { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-  { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-  { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-  { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-  { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-  { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-  { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-  { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-  { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-  { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-  { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-  { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
- { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-  { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-  { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-  { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-  { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-  { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-  { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-  { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-  { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-  { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-  { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-  { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-  { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-  { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-  { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-  { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-  { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-  { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-  { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-  { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-  { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-  { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-  { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-  { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-  { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-  { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-  { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-  { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-  { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 }
-],
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 }
+  ],
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
 
   rating: {
     average: 4.4,
@@ -1520,8 +1554,7 @@
   ], 
     
     
-  description:
-    "ZESTY CITRUS FLAVOUR OF LEMON: Blended with the distinct flavour of ginger along with blackberry leaves, lemon peel and lemongrass; Naturally Caffeine Free Herbal, 100 Tea Bags",
+  description: " ",
 
   features: [
     "See package for ingredients"

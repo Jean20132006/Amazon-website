@@ -45,27 +45,33 @@ if (matchingProduct) {
   const fourthRowManufacturer = document.querySelector('.manufacturer-fourth-row-section'); // fourth row in manufacturer section
   const imageForVideoAdvertisement = document.querySelectorAll('.js-image-for-video-advertisement'); // image for video advertisement in manufacturer section
   const textForVideoAdvertisement = document.querySelectorAll('.js-text-for-video-advertisement'); // text for video advertisement in manufacturer section
+  const priceOnAdvertVideo = document.querySelectorAll('.clearence');                             // price on advert video
+  const listPriceOnAdvertVideo = document.querySelectorAll('.old-price');                          // list price on advert video
   const ingredientsButton = document.querySelector('.ingredients'); // ingredients dropdown button
+  const clothesComputerBigCarouselBackground = document.querySelector('.checkout-carousel-clothes-computers-track'); // background for clothes and computers carousel
+  const bigCarouselSquareText = document.querySelectorAll('.title-four-picture-container-name');
+  const productDescriptionTitle = document.querySelector('.js-product-decription-title');
+  const visitStore = document.querySelectorAll('.js-visit-store');
+  const rating = document.querySelectorAll('.js-rating');
 
   ///////////////////////////////////////////////////////////////////////////////
   const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
   const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
   
-  if(matchingProduct.categories[0] === "electronics") {
+  if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
     firsrowManufacturer.style.display = "none";
     secondRowManufacturer.style.display = "none";
     thirdRowManufacturer.style.display = "none";
     fourthRowManufacturer.style.display = "none";
     ingredientsButton.style.display = "none";
+    productDescriptionTitle.style.display = "none";
+    clothesComputerBigCarouselBackground.style.backgroundImage = `url('${matchingProduct.backgroundImage}')`;
 
-    //////////////////////////////////////////////////////////////////
-    
-    
-    
-    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * @brief This script handles Big carousel functionality in checkoutClothesComputer page
+     * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
+     * clothing and computer products
      */
     let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
     let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
@@ -108,6 +114,7 @@ if (matchingProduct) {
 
     updateCarouselBigCarousel();         // Initialize carousel state
   }
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
 
   title.textContent = matchingProduct.title;
 
@@ -234,7 +241,25 @@ if (matchingProduct) {
     textForVideoAdvertisement.forEach((element) => {
         element.textContent = matchingProduct.videos.advertisementVideosText;
     });
+    priceOnAdvertVideo.forEach(element => {
+        element.textContent = `-${matchingProduct.price.discountPercent}% $${((matchingProduct.price.currentPriceInCents - ((matchingProduct.price.currentPriceInCents * matchingProduct.price.discountPercent) / 100)) / 100).toFixed(2)}`;
+    });
 
+    listPriceOnAdvertVideo.forEach(element => {
+        element.textContent = `$${(matchingProduct.price.currentPriceInCents / 100).toFixed(2)}`;
+    });
+
+    bigCarouselSquareText.forEach(element => {
+        element.textContent = matchingProduct.shortTitle;
+    });
+
+    visitStore.forEach(element => {
+        element.innerHTML = `<a href="#visit">Visit the ${matchingProduct.shortTitle} Store</a>`;
+    });
+
+    rating.forEach(element => {
+        element.textContent = matchingProduct.rating.average;
+    });
     renderShipping(matchingProduct);
     document.querySelector(".js-delivery-day").innerHTML = `FREE delivery <span class="delivery-date">${getDeliveryDate(3)}</span>`;
     document.getElementById("advert-free-delivery").innerHTML = `${getDeliveryDate(3)}`; 
@@ -262,13 +287,24 @@ function getDeliveryDate(days){
   });
 
 }
-console.log(`Delivery Date: ${getDeliveryDate(2)}`);
+console.log(`Delivery Date: ${getDeliveryDate(2)}`);   //Get delivery date 2 days from now and log it to the console
+
+/**
+ *  @brief This function calculates tomorrow's date and formats it as a string in the format "Weekday, Month Day"
+ *  @note The getTomorrow function calculates tomorrow's date by creating a new Date object for 
+ *       the current date, adding one day to it using setDate, and then formatting the result as 
+ *       a string in the format "Weekday, Month Day" using toLocaleDateString. This function is 
+ *       used to display the estimated delivery date for Prime eligible products and the fastest 
+ *       delivery option on the checkout page.
+ *  @return {string} - The formatted date string for tomorrow's date
+ *  
+ */
 
 function getTomorrow(){
 
-  const date = new Date();
-  date.setDate(date.getDate() + 1);
-
+  const date = new Date();                             // Get the current date
+  date.setDate(date.getDate() + 1);                    // Add 1 day to the current date to get tomorrow's date
+  // Format the date as a string in the format "Weekday, Month Day" and return it
   return date.toLocaleDateString("en-US",{
     weekday:"long",
     month:"long",
@@ -276,6 +312,11 @@ function getTomorrow(){
   });
 
 }
+
+/**
+ * 
+ * @brief This function renders the shipping information on the checkout page based on the product's shipping details 
+ */
 
 function renderShipping(product){
 
@@ -306,6 +347,10 @@ function renderShipping(product){
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Updates the timer display based on the remaining time until the shipping cutoff
+ *  
+ */
 function updateTimer(){
 
   const now = new Date();                         // Get the current date and time
@@ -524,7 +569,7 @@ rightButtonVideo.addEventListener('click', () => {
 // Initialize carousel state
 updateCarouselVideo();
 
-//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
  * @brief This script handles progress bar functionality
  */
@@ -577,91 +622,11 @@ customerReviewsButton.addEventListener('click', () => {
  * @param {HTMLElement} mainImage3 - The main image element to update
  */
 
-const buttonMouseover = document.querySelectorAll('.item-color');
-const mainImage3 = document.querySelector('.js-image-section');
-buttonMouseover.forEach((button) => {
-    button.addEventListener('mouseover', () => {
-        if(button.dataset.id === "1") {
-            mainImage3.src = "images/electronic-images/ipad-1.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "2") {
-            mainImage3.src = "images/electronic-images/ipad-2.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "3") {
-            mainImage3.src = "images/electronic-images/ipad-3.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "4") {
-            mainImage3.src = "images/electronic-images/ipad-4.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "5") {
-            mainImage3.src = "images/electronic-images/ipad-5.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "6") {
-            mainImage3.src = "images/electronic-images/ipad-6.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "7") {
-            mainImage3.src = "images/electronic-images/ipad-7.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "8") {
-            mainImage3.src = "images/electronic-images/ipad-8.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "9") {
-            mainImage3.src = "images/electronic-images/ipad-9.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "10") {
-            mainImage3.src = "images/electronic-images/ipad-10.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "11") {
-            mainImage3.src = "images/electronic-images/ipad-11.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "12") {
-            mainImage3.src = "images/electronic-images/ipad-12.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "13") {
-            mainImage3.src = "images/electronic-images/ipad-13.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "14") {
-            mainImage3.src = "images/electronic-images/ipad-14.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "15") {
-            mainImage3.src = "images/electronic-images/ipad-15.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "16") {
-            mainImage3.src = "images/electronic-images/ipad-16.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "17") {
-            mainImage3.src = "images/electronic-images/ipad-17.jpg";
-            button.style.border = "1px solid blue";
-        }
-        else if(button.dataset.id === "18") {
-            mainImage3.src = "images/electronic-images/ipad-18.jpg";
-            button.style.border = "1px solid blue";
-        }
-    });
-    button.addEventListener('mouseout', () => {
-        button.style.border = "1px solid grey";
-        button.style.borderRadius = "5px";
-    });
-});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////// ADD TO CART FUNCTIONALITY ///////////////
+
+
+/////////////////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
 const addToCartButton = document.querySelector('.js-add-to-cart-btn');
 
 addToCartButton.addEventListener('click', () => {
@@ -749,58 +714,67 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
 
 //////////////////////////////// Choose Items color & its carousel code ///////////////////////////////////////////////////////
 
-const itemsPerColumn = 3;
-const columnsPerPage = 6;
+/**
+ * @brief This script  dynamically carousel to choose color functionality in checkout page
+ * @note The carousel displays color options in a paginated format, allowing users to navigate through different color choices 
+ *       for the product. Each page of the carousel contains a set number of color options, and users can click 
+ *       on the left and right arrows to navigate between pages. The carousel dynamically generates its content based 
+ *       on the available color options for the product.
+ */
 
-const track = document.querySelector(".checkout-carousel-color-track");
+const itemsPerColumn = 3;                                                      // Number of items to display in each column
+const columnsPerPage = 6;                                                      // Number of columns to display in each page
+
+const track = document.querySelector(".checkout-carousel-color-track");        // The container element where the carousel pages will be added
 
 function generateCarousel(items) {
-  track.innerHTML = ""; // Clear previous content
+  track.innerHTML = "";                                                        // Clear previous content
 
-  const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage));
+  const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
 
   for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
-    const pageDiv = document.createElement("div");
-    pageDiv.classList.add("checkout-carosel-color-page");
+    const pageDiv = document.createElement("div");                                // Create a new page container
+    pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
 
     for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
-      const columnDiv = document.createElement("div");
-      columnDiv.classList.add("column-color");
+      const columnDiv = document.createElement("div");                            // Create a new column container
+      columnDiv.classList.add("column-color");                                    // Add class for styling
 
       // Calculate start index of items for this column
-      const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn;
+      const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
       const endIndex = startIndex + itemsPerColumn;
 
-      items.slice(startIndex, endIndex).forEach(item => {
+      items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
         const button = document.createElement("button");
         button.classList.add("item-color");
         button.dataset.id = item.id;
-
+        // Set button content with image and price information
         button.innerHTML = `
-          <img src="${item.img}" alt="color option ${item.id}">
+          <img src="${item.img}" alt="color option ${item.id}">                  
           <div class="item-color-horizontal-line"></div>
           <div class="item-color-price">$${item.price.toFixed(2)}</div>
           <div class="item-color-listprice">${item.listPrice ? `$${item.listPrice.toFixed(2)}` : ''}</div>
         `;
 
-        columnDiv.appendChild(button);
+        columnDiv.appendChild(button);                                            // Add button to the column container
       });
 
-      pageDiv.appendChild(columnDiv);
+      pageDiv.appendChild(columnDiv);                                             // Add column to the page container
     }
 
-    track.appendChild(pageDiv);
+    track.appendChild(pageDiv);                                                   // Add page to the carousel track
   }
 
-  // Update page numbers
-  /*document.querySelector(".total-pages-color").textContent = totalPages;
-  document.querySelector(".current-page-color").textContent = 1;*/
+  displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
+
 }
 
-generateCarousel(matchingProduct.colorItems);
+generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
 
 /**
      * @brief This script handles carousel to choose color functionality in checkout page
+     * @note this script the page navigation. It updates the carousel's position based on the current 
+     * page index and enables/disables navigation buttons accordingly.
      */
     let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
     let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
@@ -845,172 +819,46 @@ generateCarousel(matchingProduct.colorItems);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////
 /**
- * @brief This script handles the functionality of changing the main image 
- * when clicking on the color options in checkout page
- * @param {NodeList} buttonSelectItem - The color option buttons
- * @param {HTMLElement} mainImage2 - The main image element to update
+ * @brief This function handles the functionality of changing the main image on checkout page
+ *        when clicking on the color options in checkout page
+ * @note Instead of adding individual event listeners to each button, this approach adds a 
+ *       single event listener 
+ *       to the parent container of the cart items. When a click event occurs, it gets the 
+ *       id of the clicked button and updates the main image accordingly. This method is more 
+ *       efficient and scalable, especially when dealing with a large number of buttons or dynamically 
+ *       generated content.
+ * @param document.querySelector('.js-add-to-cart-corbeille-cart')
+ *        -parent container element that holds all buttons for the cart items.
+ * @param e - is the event object, It contains information about the click (where it happened, which element was clicked, etc.) 
+ *       for identifying the cart item.
+ * 
+ * @code {JavaScript} 
+ *       .addEventListener('click', (e) => { ... }); //Listen for ANY click inside a container.
+ * @code {JavaScript} 
+ *      const button = e.target.closest('.cart-action-btn'); // Find the actual button that was clicked
+ *                                                              (even if user clicked icon inside it)
  */
-const buttonSelectItem = document.querySelectorAll('.item-color');
-const mainImage2 = document.querySelector('.js-image-section');
-        buttonSelectItem.forEach((button) => {
-            button.addEventListener('click', () => {
-                let buttonId = button.dataset.id;
-                if(buttonId === "1") {
-                    mainImage2.src = "images/electronic-images/ipad-1.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                    });
 
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "2") {
-                    mainImage2.src = "images/electronic-images/ipad-2.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "3") {
-                    mainImage2.src = "images/electronic-images/ipad-3.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "4") {
-                    mainImage2.src = "images/electronic-images/ipad-4.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "5") {
-                    mainImage2.src = "images/electronic-images/ipad-5.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "6") {
-                    mainImage2.src = "images/electronic-images/ipad-6.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "7") {
-                    mainImage2.src = "images/electronic-images/ipad-7.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                 else if(buttonId === "8") {
-                    mainImage2.src = "images/electronic-images/ipad-8.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "9") {
-                    mainImage2.src = "images/electronic-images/ipad-9.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "10") {
-                    mainImage2.src = "images/electronic-images/ipad-10.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "11") {
-                    mainImage2.src = "images/electronic-images/ipad-11.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "12") {
-                    mainImage2.src = "images/electronic-images/ipad-12.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "13") {
-                    mainImage2.src = "images/electronic-images/ipad-13.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                 else if(buttonId === "14") {
-                    mainImage2.src = "images/electronic-images/ipad-14.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "15") {
-                    mainImage2.src = "images/electronic-images/ipad-15.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "16") {
-                    mainImage2.src = "images/electronic-images/ipad-16.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "17") {
-                    mainImage2.src = "images/electronic-images/ipad-17.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "18") {
-                    mainImage2.src = "images/electronic-images/ipad-18.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
-                else if(buttonId === "19") {
-                    mainImage2.src = "images/electronic-images/ipad-19.jpg";
-                    buttonSelectItem.forEach((btn) => {
-                        btn.style.border = "1px solid grey";
-                        btn.style.borderRadius = "5px";
-                    });
-                    button.style.border = "2px solid blue";
-                }
+function displayMainImage(matchProduct){
+    const buttonSelectItem = document.querySelectorAll('.item-color');
+    const mainImage2 = document.querySelector('.js-image-section');
+    const track = document.querySelector(".checkout-carousel-color-track");
+    track.addEventListener('click', (e) => {
+        const button = e.target.closest('.item-color');
+        if(button){
+            let buttonId = button.dataset.id;
+            mainImage2.src = `${matchProduct[buttonId - 1].img}`;
+            buttonSelectItem.forEach((btn) => {
+                btn.style.border = "1px solid grey";
+                btn.style.borderRadius = "5px";
             });
-        });
+            button.style.border = "2px solid blue";
+        }
+    });
+}
+
+//////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 

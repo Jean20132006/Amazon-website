@@ -84,6 +84,12 @@
     font-weight: 400;
     gap: 10px;
 }
+
+.star-visit-amazonchoice-section a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
 .price-indollar{
     display: flex;
     flex-direction: row;
@@ -163,6 +169,13 @@
     font-size: 15px;
     color: #0077b6;
     font-weight: 600;
+}
+
+.rating-star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 .other-sellers{
     font-family: Nunito, sans-serif;
@@ -2163,7 +2176,6 @@
     position: relative;
 }
 .checkout-carousel-clothes-computers-track{
-    background-image: url('../images/background-images/background-ipad.jpg');
     background-size: contain;
     background-position: center;
     background-attachment: scroll;
