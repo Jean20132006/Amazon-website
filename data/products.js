@@ -2249,7 +2249,6 @@
     }
   ]
 },
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
 
@@ -2597,7 +2596,7 @@
   },
 
   colorItems : [
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 1, img: "images/fifth-carousel-images/gym-people.jpg", price: 19.19, listPrice: 26.99 },
     { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
     { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
     { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
@@ -2743,8 +2742,529 @@
       date: "2026-02-03"
     }
   ]
-}
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
 
+  title: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
+
+  shortTitle: "The Gym People Thick",
+
+  brand: "THE GYM PEOPLE",
+
+  categories: [
+    "clothing",
+    "leggings",
+    "workout",
+    "yoga",
+    "shirts"
+  ],
+
+  images: {
+    main: "images/clothes-images/gym-people-color-3.jpg",
+     
+    
+    gallery: [
+      "images/small-images/gym-1.jpg",
+      "images/small-images/gym-2.jpg",
+      "images/small-images/gym-3.jpg",
+      "images/small-images/gym-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/gym-people1.jpg",
+      "images/review-carousel/gym-people2.jpg",
+      "images/review-carousel/gym-people3.jpg",
+      "images/review-carousel/gym-people4.jpg",
+      "images/review-carousel/gym-people5.jpg",
+      "images/review-carousel/gym-people6.jpg",
+      "images/review-carousel/gym-people7.jpg",
+      "images/review-carousel/gym-people2.jpg",
+      "images/review-carousel/gym-people3.jpg",
+      "images/review-carousel/gym-people4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/fifth-carousel-images/gym-people-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/gym-people-video.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-people-video-1.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
+    ],
+    advertisementVideosText : "Amazon Essentials Women's Active FormFlex Buttery Soft High Waist Yoga Workout..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/gym-big-carousel-1.jpg",
+      "images/clothes-images/gym-big-carousel-2.jpg",
+      "images/clothes-images/gym-big-carousel-3.jpg",
+      "images/clothes-images/gym-big-carousel-4.jpg",
+      "images/clothes-images/gym-big-carousel-5.jpg",
+      "images/clothes-images/gym-big-carousel-6.jpg",
+      "images/clothes-images/gym-big-carousel-7.jpg",
+      "images/clothes-images/gym-big-carousel-8.jpg",
+      "images/clothes-images/gym-big-carousel-9.jpg",
+      "images/clothes-images/gym-big-carousel-10.jpg",
+      "images/clothes-images/gym-big-carousel-11.jpg",
+      "images/clothes-images/gym-big-carousel-3.jpg",
+      "images/clothes-images/gym-big-carousel-4.jpg",
+      "images/clothes-images/gym-big-carousel-5.jpg",
+      "images/clothes-images/gym-big-carousel-6.jpg",
+      "images/clothes-images/gym-big-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/gym-people-1.jpg",
+      "images/big-images/gym-people-2.jpg",
+      "images/big-images/gym-people-1.jpg",
+      "images/big-images/gym-people-4.jpg"
+    ]
+  },
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 5,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/fifth-carousel-images/gym-people.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
+  { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 }
+  ],
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 37937,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Leggings",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "THE GYM PEOPLE",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White & Black",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
+
+  title: "THE GYM PEOPLE Thick High Waist Capris Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
+
+  shortTitle: "The Gym People High Waist Capris",
+
+  brand: "THE GYM PEOPLE",
+
+  categories: [
+    "clothing",
+    "leggings",
+    "workout",
+    "yoga",
+    "shirts"
+  ],
+
+  images: {
+    main: "images/clothes-images/gym-capris.jpg",
+     
+    
+    gallery: [
+      "images/small-images/gym-capris-1.jpg",
+      "images/small-images/gym-capris-2.jpg",
+      "images/small-images/gym-capris-3.jpg",
+      "images/small-images/gym-capris-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/gym-people1.jpg",
+      "images/review-carousel/gym-people2.jpg",
+      "images/review-carousel/gym-people3.jpg",
+      "images/review-carousel/gym-people4.jpg",
+      "images/review-carousel/gym-people5.jpg",
+      "images/review-carousel/gym-people6.jpg",
+      "images/review-carousel/gym-people7.jpg",
+      "images/review-carousel/gym-people2.jpg",
+      "images/review-carousel/gym-people3.jpg",
+      "images/review-carousel/gym-people4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/gym-capris.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/gym-capris.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-capris.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/small-gym-people-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
+    ],
+    advertisementVideosText : "Amazon Essentials Women's Active FormFlex Buttery Soft High Waist Yoga Workout..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/gym-big-carousel-1.jpg",
+      "images/clothes-images/gym-big-carousel-2.jpg",
+      "images/clothes-images/gym-big-carousel-3.jpg",
+      "images/clothes-images/gym-big-carousel-4.jpg",
+      "images/clothes-images/gym-big-carousel-5.jpg",
+      "images/clothes-images/gym-big-carousel-6.jpg",
+      "images/clothes-images/gym-big-carousel-7.jpg",
+      "images/clothes-images/gym-big-carousel-8.jpg",
+      "images/clothes-images/gym-big-carousel-9.jpg",
+      "images/clothes-images/gym-big-carousel-10.jpg",
+      "images/clothes-images/gym-big-carousel-11.jpg",
+      "images/clothes-images/gym-big-carousel-3.jpg",
+      "images/clothes-images/gym-big-carousel-4.jpg",
+      "images/clothes-images/gym-big-carousel-5.jpg",
+      "images/clothes-images/gym-big-carousel-6.jpg",
+      "images/clothes-images/gym-big-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/gym-capris-1.jpg",
+      "images/big-images/gym-capris-2.jpg",
+      "images/big-images/gym-capris-3.jpg",
+      "images/big-images/gym-capris-4.jpg"
+    ]
+  },
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 33,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/gym-capris.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 37937,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Leggings",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "THE GYM PEOPLE",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White & Black",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+}
 ];
 
  
@@ -2758,36 +3278,6 @@
 
 const secondCarouselProducts = [
   
-  {
-    id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
-    image: "images/second-carousel-images/cerave-moisturizer-cream.jpg",
-    name: "CeraVe Moisturizing Cream - 16 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 232
-    },
-    priceCents: 4599,
-    keywords: [
-      "bedroom",
-      "curtains",
-      "home"
-    ]
-  },
-  {
-    id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
-    image: "images/second-carousel-images/mebelin-slash.jpg",
-    name: "Mebeli Slash",
-    rating: {
-      stars: 4,
-      count: 160
-    },
-    priceCents: 1699,
-    keywords: [
-      "shorts",
-      "apparel",
-      "mens"
-    ]
-  },
   {
     id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
     image: "images/second-carousel-images/medicube-collagen.jpg",
