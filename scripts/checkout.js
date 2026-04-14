@@ -49,10 +49,11 @@ if (matchingProduct) {
   const listPriceOnAdvertVideo = document.querySelectorAll('.old-price');                          // list price on advert video
   const ingredientsButton = document.querySelector('.ingredients'); // ingredients dropdown button
   const clothesComputerBigCarouselBackground = document.querySelector('.checkout-carousel-clothes-computers-track'); // background for clothes and computers carousel
-  const bigCarouselSquareText = document.querySelectorAll('.title-four-picture-container-name');
-  const productDescriptionTitle = document.querySelector('.js-product-decription-title');
-  const visitStore = document.querySelectorAll('.js-visit-store');
-  const rating = document.querySelectorAll('.js-rating');
+  const bigCarouselSquareText = document.querySelectorAll('.title-four-picture-container-name');      // text in big carousel for clothes and computers
+  const productDescriptionTitle = document.querySelector('.js-product-decription-title');             // product description title element
+  const visitStore = document.querySelectorAll('.js-visit-store');                                    // visit store element after the title in checkout page
+  const rating = document.querySelectorAll('.js-rating');                                             // rating element in checkout page
+  const fourthBigCarouselTitle = document.querySelectorAll('.big-image-clothes-computers-text'); // title for fourth big carousel picture in clothes and computers section
 
   ///////////////////////////////////////////////////////////////////////////////
   const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
@@ -259,6 +260,10 @@ if (matchingProduct) {
 
     rating.forEach(element => {
         element.textContent = matchingProduct.rating.average;
+    });
+
+    fourthBigCarouselTitle.forEach(element => {
+        element.textContent = `${matchingProduct.fourthBigCarouselTitle}`;
     });
     renderShipping(matchingProduct);
     document.querySelector(".js-delivery-day").innerHTML = `FREE delivery <span class="delivery-date">${getDeliveryDate(3)}</span>`;

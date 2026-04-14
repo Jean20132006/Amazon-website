@@ -1169,6 +1169,7 @@
       "images/big-images/ipad-4.jpg"
     ]
   },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
 
   price: {
     priceDollar: 9,
@@ -1181,42 +1182,42 @@
   },
 
   colorItems : [
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null }
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "Yellow" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "Yellow" },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Black" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "White" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Green" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "Yellow" }
   ],
 
   backgroundImage: "images/background-images/background-ipad.jpg",
@@ -1317,6 +1318,1172 @@
     }
   ]
 },
+{
+  id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
+
+  title: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11 (2022&2021&2020&2018)/ iPad Air 5th & Air 4th Generation(10.9 Inch), Crafted for Natural Writing, Anti Glare, Easy Installation | (10.9 Inch), Anti Glare, Easy Installation",
+
+  shortTitle: "MOBDIK 2 Pack Paperfeel Screen Protector",
+
+  brand: "MOBDIK",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/mobdik-1.jpg",
+    
+    gallery: [
+      "images/small-images/mobdik-1.jpg",
+      "images/small-images/mobdik-2.jpg",
+      "images/small-images/mobdik-3.jpg",
+      "images/small-images/mobdik-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/mobdik-1.jpg",
+      "images/review-carousel/mobdik-2.jpg",
+      "images/review-carousel/mobdik-3.jpg",
+      "images/review-carousel/mobdik-4.jpg",
+      "images/review-carousel/mobdik-5.jpg",
+      "images/review-carousel/mobdik-2.jpg",
+      "images/review-carousel/mobdik-3.jpg",
+      "images/review-carousel/mobdik-1.jpg",
+      "images/review-carousel/mobdik-5.jpg",
+      "images/review-carousel/mobdik-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/Sixth-carousel-images/mobdic.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-1.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/electronic-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg",
+      "images/electronic-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/electronic-images/ipad-7.jpg",
+      "images/electronic-images/ipad-5.jpg"
+    ],
+    bigImages : [
+      "images/big-images/mobdik-1.jpg",
+      "images/big-images/mobdik-2.jpg",
+      "images/big-images/mobdik-3.jpg",
+      "images/big-images/mobdik-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11. iPad Air 5th & Air 4th Generation(10.9 Inch)",
+  price: {
+    priceDollar: 6,
+    priceCents: 38,
+    currentPrice: 6.38,
+    currentPriceInCents: 638,
+    currency: "USD",
+    discountPercent: 20,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" }
+  ],
+
+  backgroundImage: "images/big-images/mobdik-4.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 41683,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "DAILYLIVEA120",
+    department: "Mobdic",
+    upc: "070177229870",
+    manufacturer: "Mobdic",
+    asin: "B09RC41QGJ",
+    units: "100 counts"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Blue",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility: Compatible with iPad Air 5th Generation 2022 & iPad Air 4th generation 2020 & iPad Pro 11 inch",
+    "Attention: This is not compatible with iPad 10th 2022(10.9 inch), iPad A16 2025 (11 inch), iPad Pro 11 inch (2025 / 2024) and iPad Air 11 inch (2024 / 2025)",
+    "Paperfeel Surface: Using advanced technologies and non-slip treatment on surface of iPad air screen protector 5th generation, it enhances the touch of writing and drawing, provides unmatched precision and control, makes writing more smooth and continuous touch, and easily record your inspiration on the iPad"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
+
+  title: "Ailun Screen Protector for iPad Pro 11 inch 2025/2024 [6th/5th Generation, M5/M4] 2 Pack + 2 Pack Camera Lens Protector,Tempered Glass 0.33mm,Face ID & Apple Pencil & Case Compatible [4 Pack]",
+
+  shortTitle: "Ailun Screen Protector for iPad Pro",
+
+  brand: "Ailun",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ailun.jpg",
+    
+    gallery: [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ailun-2.jpg",
+      "images/small-images/ailun-3.jpg",
+      "images/small-images/ailun-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ailun-1.jpg",
+      "images/review-carousel/ailun-2.jpg",
+      "images/review-carousel/ailun-3.jpg",
+      "images/review-carousel/ailun-4.jpg",
+      "images/review-carousel/ailun-5.jpg",
+      "images/review-carousel/ailun-6.jpg",
+      "images/review-carousel/ailun-3.jpg",
+      "images/review-carousel/ailun-1.jpg",
+      "images/review-carousel/ailun-5.jpg",
+      "images/review-carousel/ailun-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/Sixth-carousel-images/aliun-screen-protector.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/ailun-1.jpg",
+      "images/big-images/ailun-2.jpg",
+      "images/big-images/ailun-3.jpg",
+      "images/big-images/ailun-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "PandaShield 2Pack Screen Protector for ipad Pro 11 inch 2024/2025",
+  price: {
+    priceDollar: 10,
+    priceCents: 89,
+    currentPrice: 10.89,
+    currentPriceInCents: 1089,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" }
+  ],
+
+  backgroundImage: "images/big-images/ailun-4.jpg",
+
+  rating: {
+    average: 4.6,
+    totalReviews: 41683,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "9.6L x 6.88W",
+    modelNumber: "Generation M5/M4",
+    department: "Ailun",
+    upc: "070177229870",
+    manufacturer: "Ailun",
+    asin: "B09RC41QGJ",
+    units: "iPad Pro 11 inch 2024 5th Generation M4, iPad Pro 11 inch 2025 6th"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Works For iPad Pro 11 Inch 2025 6th Generation M5/2024 5th Generation M4 tempered glass screen protector and camera lens protector.Featuring maximum protection from scratches, scrapes, and bumps.[Not Fit for iPad Air 6 Generation 11 Inch 2025/2024 Release]",
+    "High Transparency: High-Transparency maintains the original viewing experience. Oleophobic coating on the surface effectively provents the smudges and fingerprints, providing a clean and clear screen environment.",
+    "Night shooting function: specially designed iPad Pro 11 inch 2025 6th Generation/2024 5th Generation camera lens protective film.The camera lens protector adopts the new technology of seamless integration of augmented reality, with light transmittance and night shooting function, without the need to design the flash hole position, when the flash is turned on at night, the original quality of photos and videos can be restored.",
+    "Face ID&Apple Pencil Compatible: Maintain the original response sensitivity, which ensures quick and accurate typing, smooth games and video playing."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "1ad29d11-ea98-41ee-9285-b916638cac4a",
+
+  title: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025, iPad 10th Generation 10.9 inch 2022, Slim Stand Protective Cover with Hard PC Translucent Back Shell Cover, Support Touch ID, Raspberry",
+
+  shortTitle: "CoBak Case for iPad (A16)",
+
+  brand: "CoBak",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/cobak.jpg",
+    
+    gallery: [
+      "images/small-images/cobak-1.jpg",
+      "images/small-images/cobak-2.jpg",
+      "images/small-images/cobak-3.jpg",
+      "images/small-images/cobak-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-2.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-4.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/Sixth-carousel-images/cobak.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/cobak-3.jpg",
+      "images/big-images/cobak-4.jpg",
+      "images/big-images/cobak-5.jpg",
+      "images/big-images/cobak-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "CoBak Clear Case for ipad (A16) 11th Generation",
+  price: {
+    priceDollar: 6,
+    priceCents: 29,
+    currentPrice: 6.29,
+    currentPriceInCents: 629,
+    currency: "USD",
+    discountPercent: 10,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/cobak-1.jpg", price: 6.29, listPrice: 6.69, color: "pink" },
+    { id: 2, img: "images/electronic-images/cobak-2.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/cobak-3.jpg", price: 16.79, listPrice: null, color: "clear pink" },
+    { id: 4, img: "images/electronic-images/cobak-4.jpg", price: 15.49, listPrice: 15.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/cobak-5.jpg", price: 6.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/cobak-6.jpg", price: 16.79, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/cobak-7.jpg", price: 16.79, listPrice: 16.95, color: "Blue" },
+    { id: 8, img: "images/electronic-images/cobak-8.jpg", price: 13.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/cobak-9.jpg", price: 16.79, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/cobak-10.jpg", price: 13.49, listPrice: 13.89, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/cobak-11.jpg", price: 16.79, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/cobak-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/cobak-13.jpg", price: 16.79, listPrice: 16.85, color: "Blue" },
+    { id: 14, img: "images/electronic-images/cobak-14.jpg", price: 16.79, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/cobak-15.jpg", price: 15.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/cobak-16.jpg", price: 16.79, listPrice: 16.89, color: "Yellow" },
+  ],
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.6,
+    totalReviews: 1683,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "9.6L x 6.88W",
+    modelNumber: "Generation M5/M4",
+    department: "CoBak",
+    upc: "070177229870",
+    manufacturer: "CoBak",
+    asin: "B09RC41QGJ",
+    units: "CoBak Clear Case for ipad (A16) 11th Generation"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+{
+  id: "04701903-bc79-49c6-bc11-1af7e3651358",
+
+  title: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025, Lifetime MS Office + Windows 11 Pro, Quad-Core Intel CPU, 16GB RAM & 628GB Storage (128GB UFS+500GB Ext), Wi-Fi 6, HubxcelAccessory, Silver",
+
+  shortTitle: "HP Ultrabook 14 Laptop Computer",
+
+  brand: "HP",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/hp.jpg",
+    
+    gallery: [
+      "images/small-images/hp-1.jpg",
+      "images/small-images/hp-2.jpg",
+      "images/small-images/hp-3.jpg",
+      "images/small-images/hp-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-2.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-4.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/electronic-images/hp.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/cobak-3.jpg",
+      "images/big-images/cobak-4.jpg",
+      "images/big-images/cobak-5.jpg",
+      "images/big-images/cobak-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+  price: {
+    priceDollar: 359,
+    priceCents: 0,
+    currentPrice: 359.00,
+    currentPriceInCents: 35900,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "Natural Silver" },
+    { id: 2, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "pink clear" },
+    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
+    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
+  ],
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 148,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "14 inches",
+    modelNumber: "HP 2025 Premium 14 Laptop",
+    department: "HP",
+    upc: "070177229870",
+    manufacturer: "HP",
+    asin: "B09RC41QGJ",
+    units: "Anti Glare Coating, Fast Charge, HD Audio, Lifetime MS Office, Microsoft Copilot"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Natural Silver",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    " [Quad-Core Intel N150 Processor] 13th Gen Intel N150 (Up to 3.6 GHz with Intel Turbo Boost Technology, 6 MB L3 Cache, 4 cores, 4 threads). Save time and increase productivity with powerful performance and smooth multitasking. Access fast web applications, edit photos and videos, and get the responsiveness you're looking for",
+    "[16GB RAM + 628GB Storage (128GB UFS + 500GB Ext)] Reams of high-bandwidth 16GB DDR4 RAM to smoothly run your games and video-editing applications, as well as numerous programs and browser tabs all at once. Non-volatile 128GB UFS storage handles multiple read and write requests simultaneously; power gating increases power efficiency. Enjoy additional portable storage with 500GB external drive.",
+    "[Windows Pro Operating System] Windows 11 Pro delivers a powerful, streamlined user experience that helps you stay focused and get more done wherever your office might be. Safeguard data and access anywhere with hardware-based isolation, encryption, and malware protection built in.",
+    "[14 Anti-glare Display] Watch videos and create colorful presentations in excellent, high definition quality rendered with 1 million pixels. The anti-glare panel lets you enjoy time outside without glare on your screen. HP True Vision 720p HD camera with integrated dual array digital microphones. Online Class, Google Classroom, Remote Learning, Zoom Ready."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
+
+  title: "Kenke for iPad 11/10th Gen Case with Pencil Holder 11/10.9 inch 2025 A16/2022, Soft TPU Back Shell Hybrid Slim Trifold Stand Protective Cover Support Touch ID Auto Wake/Sleep (Pink)",
+
+  shortTitle: "Kenke iPad Case",
+
+  brand: "Kenke",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/kenke.jpg",
+    
+    gallery: [
+      "images/small-images/kenke-1.jpg",
+      "images/small-images/kenke-2.jpg",
+      "images/small-images/kenke-3.jpg",
+      "images/small-images/kenke-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/kenke-1.jpg",
+      "images/review-carousel/kenke-2.jpg",
+      "images/review-carousel/kenke-3.jpg",
+      "images/review-carousel/kenke-4.jpg",
+      "images/review-carousel/kenke-5.jpg",
+      "images/review-carousel/kenke-3.jpg",
+      "images/review-carousel/kenke-1.jpg",
+      "images/review-carousel/kenke-5.jpg",
+      "images/review-carousel/kenke-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/Sixth-carousel-images/kenke.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/kenke-1.jpg",
+      "images/big-images/kenke-2.jpg",
+      "images/big-images/kenke-3.jpg",
+      "images/big-images/kenke-4.jpeg"
+    ]
+  },
+  fourthBigCarouselTitle: "Kenke for iPad 11/10th Gen Case with Pencil Holder",
+  price: {
+    priceDollar: 9,
+    priceCents: 99,
+    currentPrice: 9.99,
+    currentPriceInCents: 999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/Sixth-carousel-images/kenke.jpg", price: 6.29, listPrice: 6.69, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/kenke-2.jpg",
+
+  rating: {
+    average: 4.6,
+    totalReviews: 1683,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "9.6L x 6.88W",
+    modelNumber: "Generation M5/M4",
+    department: "Kenke",
+    upc: "070177229870",
+    manufacturer: "Kenke",
+    asin: "B09RC41QGJ",
+    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatible Model】Design for iPad case 10th generation 2022 A2696 A2757 A2777. NOT compatible with any other iPad models. Please check the back bottom of your iPad to find the model number before placing order.",
+    "【Support Touch ID Function & Auto Wake/Sleep】Built-in magnetic strip, our 10th gen ipad case can automatically wakes or puts your tablet to sleep when the lid is opened and closed, protecting and extending battery life; precise cutout also completely supports newest touch ID key function.",
+    "【Two Viewing Angles】 The trifold stand shell design of this apple ipad 10th generation case can easily change the angle to meet your viewing and typing needs. 65°∠ video mode can act as a screen stand; 30°∠ input mode acts as a keyboard stand, which will greatly free your hands when relaxing or working with your iPad.",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
 
@@ -1591,102 +2758,6 @@
 
 const secondCarouselProducts = [
   
-  {
-    id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
-    image: "images/second-carousel-images/eos-cashmare-body.jpg",
-    name: "Eos Cashmere Body Lotion - 6 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 144
-    },
-    priceCents: 3599,
-    keywords: [
-      "bathroom",
-      "washroom",
-      "restroom",
-      "towels",
-      "bath towels"
-    ]
-  },
-  {
-    id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
-    image: "images/second-carousel-images/cerave-hydratinf-daily-facial.jpg",
-    name: "CeraVe Hydrating Daily Facial Cleanser - 16 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 305
-    },
-    priceCents: 2899,
-    keywords: [
-      "bathroom",
-      "cleaning"
-    ]
-  },
-  {
-    id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
-    image: "images/second-carousel-images/essence-lash-princesse.jpg",
-    name: "Essence Lash Princesse False Lash Effect Mascara - 0.27 Fl Oz",
-    rating: {
-      stars: 4,
-      count: 89
-    },
-    priceCents: 3390,
-    keywords: [
-      "shoes",
-      "running shoes",
-      "footwear"
-    ]
-  },
-  {
-    id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-    image: "images/second-carousel-images/jelly-eye-lashes.jpg",
-    name: "Jelly Eye Lashes",
-    rating: {
-      stars: 4.5,
-      count: 235
-    },
-    priceCents: 2070,
-    keywords: [
-      "robe",
-      "swimsuit",
-      "swimming",
-      "bathing",
-      "apparel"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
-    image: "images/second-carousel-images/kitsh-dermaplane.jpg",
-    name: "Kitsh Dermaplane Facial Tool",
-    rating: {
-      stars: 4.5,
-      count: 30
-    },
-    priceCents: 1560,
-    keywords: [
-      "accessories",
-      "shades"
-    ]
-  },
-  {
-    id: "04701903-bc79-49c6-bc11-1af7e3651358",
-    image: "images/second-carousel-images/la-roche-posay.jpg",
-    name: "La Roche-Posay Anthelios Melt-in Milk Sunscreen SPF 100 - 3 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 562
-    },
-    priceCents: 2499,
-    keywords: [
-      "footwear",
-      "sandals",
-      "womens",
-      "beach",
-      "summer"
-    ]
-  },
   {
     id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
     image: "images/second-carousel-images/cerave-moisturizer-cream.jpg",
