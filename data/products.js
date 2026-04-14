@@ -2584,6 +2584,7 @@
       "images/big-images/gym-people-4.jpg"
     ]
   },
+  fourthBigCarouselTitle: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets",
 
   price: {
     priceDollar: 19,
@@ -2612,7 +2613,7 @@
     { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
     { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
     { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
     { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
     { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
     { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
@@ -2845,6 +2846,7 @@
       "images/big-images/gym-people-4.jpg"
     ]
   },
+  fourthBigCarouselTitle: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets",
 
   price: {
     priceDollar: 19,
@@ -2873,7 +2875,7 @@
     { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
     { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
     { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-  { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
     { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
     { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
     { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
@@ -3004,7 +3006,7 @@
     }
   ]
 },
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 {
   id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
 
@@ -3106,6 +3108,7 @@
       "images/big-images/gym-capris-4.jpg"
     ]
   },
+  fourthBigCarouselTitle: "THE GYM PEOPLE Thick High Waist Capris Yoga Pants with Pockets",
 
   price: {
     priceDollar: 19,
@@ -3236,9 +3239,538 @@
   },
 
   about: [
-    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
-    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
-    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+    "Buttery Soft Stretchy Fabric:Made from 92% Polyester and 8% Spandex, this top feels incredibly soft against your skin with a second skin feel. The four way stretch provides complete freedom of movement, making it perfect for yoga, workouts, or all-day wear. Breathable and lightweight, it keeps you comfortable even on the hottest summer days",
+    "Fashion Designs: Featuring a stretch-fitted cut that hugs your curves comfortably, it delivers a cute and effortlessly sleek silhouette perfect for casual, everyday wear",
+    "Occasion: With its simple yet stylish design, this piece is your perfect all season companion. It transitions effortlessly from daily essentials like workouts, running, gym, yoga, and casual streetwear, to vibrant social scenes including raves, clubs, dating, beach trips, travel, vacation, and shopping stylish enough to go anywhere",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
+
+  title: "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer Crop Tops Slim Fit Y2k Basic Tees for Workout",
+
+  shortTitle: "Trendy Queen Womens Short Sleeve T Shirts",
+
+  brand: "Trendy Queen",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/trendy.jpg",
+     
+    
+    gallery: [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/trendy-2.jpg",
+      "images/small-images/trendy-3.jpg",
+      "images/small-images/trendy-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/trendy-1.jpg",
+      "images/review-carousel/trendy-2.jpg",
+      "images/review-carousel/trendy-3.jpg",
+      "images/review-carousel/trendy-4.jpg",
+      "images/review-carousel/trendy-5.jpg",
+      "images/review-carousel/trendy-2.jpg",
+      "images/review-carousel/trendy-4.jpg",
+      "images/review-carousel/trendy-5.jpg",
+      "images/review-carousel/trendy-1.jpg",
+      "images/review-carousel/trendy-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/trendy-cart.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/trendyVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/trendyVideo.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
+    ],
+    advertisementVideosText : "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer Crop Tops Slim Fit Y2k Basic Tees for Workout..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/trendy-carousel-1.jpg",
+      "images/clothes-images/trendy-carousel-2.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/trendy-carousel-2.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/trendy-1.jpg",
+      "images/big-images/trendy-2.jpg",
+      "images/big-images/trendy-3.jpg",
+      "images/big-images/trendy-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Trendy Queen Womens Short Sleeve T Shirts",
+
+  price: {
+    priceDollar: 7,
+    priceCents: 99,
+    currentPrice: 7.99,
+    currentPriceInCents: 799,
+    currency: "USD",
+    discountPercent: 20,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/trendy.jpg", price: 7.99, listPrice: 8.99, color: "white" },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/trendy-2.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 5532,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Shirrts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "Trendy Queen",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Buttery Soft Stretchy Fabric:Made from 92% Polyester and 8% Spandex, this top feels incredibly soft against your skin with a second skin feel. The four way stretch provides complete freedom of movement, making it perfect for yoga, workouts, or all-day wear. Breathable and lightweight, it keeps you comfortable even on the hottest summer days",
+    "Fashion Designs: Featuring a stretch-fitted cut that hugs your curves comfortably, it delivers a cute and effortlessly sleek silhouette perfect for casual, everyday wear",
+    "Occasion: With its simple yet stylish design, this piece is your perfect all season companion. It transitions effortlessly from daily essentials like workouts, running, gym, yoga, and casual streetwear, to vibrant social scenes including raves, clubs, dating, beach trips, travel, vacation, and shopping stylish enough to go anywhere",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
+
+  title: "Trendy Queen Womens Short Sleeve V Neck Crop Shirts Basic Tops Buttery Soft Summer Slim Fit Workout Yoga Y2k Clothes 2026",
+
+  shortTitle: "Trendy Queen Womens Short Sleeve V Neck Crop Shirts",
+
+  brand: "Trendy Queen",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/trendy-v.jpg",
+     
+    
+    gallery: [
+      "images/small-images/trendy-v-1.jpg",
+      "images/small-images/trendy-v-2.jpg",
+      "images/small-images/trendy-v-3.jpg",
+      "images/small-images/trendy-v-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/trendy-1.jpg",
+      "images/review-carousel/trendy-2.jpg",
+      "images/review-carousel/trendy-3.jpg",
+      "images/review-carousel/trendy-4.jpg",
+      "images/review-carousel/trendy-5.jpg",
+      "images/review-carousel/trendy-2.jpg",
+      "images/review-carousel/trendy-4.jpg",
+      "images/review-carousel/trendy-5.jpg",
+      "images/review-carousel/trendy-1.jpg",
+      "images/review-carousel/trendy-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/trendy-v-cart.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/trendyVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/trendyVideo.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
+    ],
+    advertisementVideosText : "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer Crop Tops Slim Fit Y2k Basic Tees for Workout..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/trendy-v-cart.jpg",
+      "images/clothes-images/trendy-carousel-2.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/trendy-carousel-2.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/trendy-v-1.jpg",
+      "images/big-images/trendy-v-2.jpg",
+      "images/big-images/trendy-v-3.jpg",
+      "images/big-images/trendy-v-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Trendy Queen Womens Short Sleeve V Neck Crop Shirts",
+
+  price: {
+    priceDollar: 8,
+    priceCents: 99,
+    currentPrice: 8.99,
+    currentPriceInCents: 899,
+    currency: "USD",
+    discountPercent: 50,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/trendy-v.jpg", price: 8.99, listPrice: 17.19, color: "white" },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/trendy-2.jpg",
+
+  rating: {
+    average: 4.6,
+    totalReviews: 44,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Shirrts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "Trendy Queen",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Buttery Soft Stretchy Fabric:Made from 92% Polyester and 8% Spandex, this top feels incredibly soft against your skin with a second skin feel. The four way stretch provides complete freedom of movement, making it perfect for yoga, workouts, or all-day wear. Breathable and lightweight, it keeps you comfortable even on the hottest summer days",
+    "Fashion Designs: Featuring a stretch-fitted cut that hugs your curves comfortably, it delivers a cute and effortlessly sleek silhouette perfect for casual, everyday wear",
+    "Occasion: With its simple yet stylish design, this piece is your perfect all season companion. It transitions effortlessly from daily essentials like workouts, running, gym, yoga, and casual streetwear, to vibrant social scenes including raves, clubs, dating, beach trips, travel, vacation, and shopping stylish enough to go anywhere",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
   ], 
     
     
@@ -3277,39 +3809,6 @@
 
 
 const secondCarouselProducts = [
-  
-  {
-    id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
-    image: "images/second-carousel-images/medicube-collagen.jpg",
-    name: "Medicube Collagen Ampoule - 1.01 Fl Oz",
-    rating: {
-      stars: 5,
-      count: 846
-    },
-    priceCents: 3074,
-    keywords: [
-      "water boiler",
-      "appliances",
-      "kitchen"
-    ]
-  },
-  {
-    id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
-    image: "images/second-carousel-images/medicube-wrapping.jpg",
-    name: "Medicube Wrapping Mask - 5 Pack",
-    rating: {
-      stars: 4,
-      count: 99
-    },
-    priceCents: 2374,
-    keywords: [
-      "kleenex",
-      "tissues",
-      "kitchen",
-      "tissues box",
-      "napkins"
-    ]
-  },
   {
     id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
     image: "images/second-carousel-images/medicube-zero-pore-pad.jpg",
