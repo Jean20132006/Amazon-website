@@ -632,25 +632,38 @@ customerReviewsButton.addEventListener('click', () => {
 
 
 /////////////////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
-const addToCartButton = document.querySelector('.js-add-to-cart-btn');
 
-addToCartButton.addEventListener('click', () => {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];      // Get existing cart or create empty array
-    let existingItem = cart.find(item => item.id === id);           // Check if product already exists
-    if(existingItem){
-        existingItem.quantity += 1;                                  // Increase quantity           
-    } 
-    else {
-        cart.push({                                                 // Add new product to cart
-        id: id,
-        quantity: 1
-        });
-   }
-   
-   localStorage.setItem("cart", JSON.stringify(cart));              // Save updated cart
-   localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
-   window.location.href = "addToCart.html";                         // Redirect
-});
+/**
+ * @brief This script handles the add to cart functionality on the checkout page
+ * @note When the "Add to Cart" button is clicked, the script retrieves the existing cart from localStorage 
+ *       (or initializes an empty array if no cart exists), checks if the product being added already exists 
+ *       in the cart, and either increments the quantity of the existing item or adds a new item to the cart. 
+ *       The updated cart is then saved back to localStorage, and the user is redirected to the addToCart 
+ *       confirmation page.
+ */
+
+function addToCart(){
+    const addToCartButton = document.querySelector('.js-add-to-cart-btn');
+
+    addToCartButton.addEventListener('click', () => {
+        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];      // Get existing cart or create empty array
+        let existingItem = cart1.find(item => item.id === id);           // Check if product already exists
+        if(existingItem){
+            existingItem.quantity += 1;                                  // Increase quantity           
+        } 
+        else {
+            cart1.push({                                                 // Add new product to cart
+            id: id,
+            quantity: 1
+            });
+    }
+    
+    localStorage.setItem("cart1", JSON.stringify(cart1));              // Save updated cart
+    localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
+    window.location.href = "addToCart.html";                         // Redirect
+    });
+}
+addToCart();
 
 ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
 

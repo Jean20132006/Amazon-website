@@ -135,7 +135,7 @@ else{
                             </span>`;
 }
 
-let cart1 = JSON.parse(localStorage.getItem("cart")) || [];                 // Get cart from localStorage or initialize as empty array
+let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

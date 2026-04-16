@@ -3533,7 +3533,6 @@
     }
   ]
 },
- //////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
 
@@ -3796,7 +3795,272 @@
       date: "2026-02-03"
     }
   ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
+
+  title: "J.VER Men's Dress Shirts Solid Long Sleeve Stretch Wrinkle-Free Formal Shirt Business Casual Button Down Shirts",
+
+  shortTitle: "J.VER Men's Dress Shirts",
+
+  brand: "J.VER",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/j-ver.jpg",
+     
+    
+    gallery: [
+      "images/small-images/j-ver-1.jpg",
+      "images/small-images/j-ver-2.jpg",
+      "images/small-images/j-ver-3.jpg",
+      "images/small-images/j-ver-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/j-ver-1.jpg",
+      "images/review-carousel/j-ver-2.jpg",
+      "images/review-carousel/j-ver-3.jpg",
+      "images/review-carousel/j-ver-4.jpg",
+      "images/review-carousel/j-ver-5.jpg",
+      "images/review-carousel/j-ver-2.jpg",
+      "images/review-carousel/j-ver-4.jpg",
+      "images/review-carousel/j-ver-5.jpg",
+      "images/review-carousel/j-ver-1.jpg",
+      "images/review-carousel/j-ver-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/j-ver-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/trendyVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/trendyVideo.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/small-gym-people-2.jpg"
+    ],
+    advertisementVideosText : "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer Crop Tops Slim Fit Y2k Basic Tees for Workout..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/trendy-v-cart.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/trendy-carousel-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/j-ver-3.jpg",
+      "images/big-images/j-ver-1.jpg",
+      "images/big-images/j-ver-2.jpg",
+      "images/big-images/j-ver-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "J.VER Men's Dress Shirts Solid Long Sleeve Stretch Wrinkle-Free Formal Shirt Business Casual Button Down Shirts",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/j-ver.jpg", price: 19.99, listPrice: 23.99, color: "white" },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/j-ver-3.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 35294,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Shirts",
+    department: "Men's Clothing",
+    upc: "070177229870",
+    manufacturer: "J.VER",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "white",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Flex Fabric: The long sleeve dress shirt is made of stretch fabric,makes you move body easier;soft and comfortable with good breathability",
+    "Wrinkle Free: The combination of high-quality fabrics and special technology makes the solid dress shirt not easy to wrinkle, easy to care.The classic spread collar easily matches with a tie or bow tie",
+    "Occasion: Business/ Wedding/ Party/ Dating/ Office/ Nightclub, whether for formal occasions or daily casual, this mens dress shirt is a perfect choice. The classic design ensures it's a staple in any wardrobe",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
 }
+
 ];
 
  
@@ -3809,22 +4073,7 @@
 
 
 const secondCarouselProducts = [
-  {
-    id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
-    image: "images/second-carousel-images/medicube-zero-pore-pad.jpg",
-    name: "Medicube Zero Pore Pad - 70 Pads",
-    rating: {
-      stars: 4,
-      count: 215
-    },
-    priceCents: 2200,
-    keywords: [
-      "hats",
-      "straw hats",
-      "summer",
-      "apparel"
-    ]
-  },
+  
   {
     id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
     image: "images/second-carousel-images/method-body-wash.jpg",
