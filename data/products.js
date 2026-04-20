@@ -2649,6 +2649,16 @@
   
   backgroundImage: "images/big-images/gym-people-1.jpg",
 
+  size: [
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+  ],
+
   rating: {
     average: 4.4,
     totalReviews: 37937,
@@ -2910,6 +2920,18 @@
   ],
   
   backgroundImage: "images/big-images/gym-people-1.jpg",
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
 
   rating: {
     average: 4.4,
@@ -3172,6 +3194,19 @@
   ],
   
   backgroundImage: "images/big-images/gym-people-1.jpg",
+
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
 
   rating: {
     average: 4.4,
@@ -3437,6 +3472,16 @@
   
   backgroundImage: "images/big-images/trendy-2.jpg",
 
+  size: [
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large" 
+  ],
+
   rating: {
     average: 4.5,
     totalReviews: 5532,
@@ -3699,6 +3744,19 @@
   ],
   
   backgroundImage: "images/big-images/trendy-2.jpg",
+
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
 
   rating: {
     average: 4.6,
@@ -3965,6 +4023,19 @@
   
   backgroundImage: "images/big-images/y2k-1.jpg",
 
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
+
   rating: {
     average: 4.5,
     totalReviews: 4231,
@@ -4061,7 +4132,6 @@
     }
   ]
 },
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
@@ -4232,6 +4302,18 @@
   ],
   
   backgroundImage: "images/big-images/gayhay-1.jpg",
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
 
   rating: {
     average: 4.5,
@@ -4301,7 +4383,7 @@
   about: [
     "Like a Second Skin - GAYHAY 3 pack basic tees for women experience cloud-like softness with lightweight fabric that moves with you. The breathable fabric keeps you fresh with just the right amount of compression for a flattering silhouette",
     "2 Looks in 1 Top - These women's tshirts features a classic round neckline that flatters all face shapes. The stretchy hem allows you to effortlessly roll up for a trendy cropped look, or wear it full-length for timeless elegance",
-    "True to Size & Easy Care – Designed for a flattering fit, this womens baby tee runs true to size, Please check the size chart data before purchasing. Machine washable and it retains its shape and softness even after multiple washes",
+    "True to Size & Easy Care - Designed for a flattering fit, this womens baby tee runs true to size, Please check the size chart data before purchasing. Machine washable and it retains its shape and softness even after multiple washes",
     "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
   ], 
     
@@ -4329,7 +4411,282 @@
     }
   ]
 },
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
+
+  title: "Trendy Queen Womens Long Sleeve T Shirts Fall Fashion 2026 Basic Crop Tops Going Out Outfits Y2k Clothes",
+
+  shortTitle: "Trendy Queen Womens Long Sleeve T Shirts",
+
+  brand: "Trendy Queen",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/fashion.jpg",
+     
+    
+    gallery: [
+      "images/small-images/fashion-1.jpg",
+      "images/small-images/fashion-2.jpg",
+      "images/small-images/fashion-3.jpg",
+      "images/small-images/fashion-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/fashion-1.jpg",
+      "images/review-carousel/fashion-2.jpg",
+      "images/review-carousel/fashion-3.jpg",
+      "images/review-carousel/fashion-4.jpg",
+      "images/review-carousel/fashion-5.jpg",
+      "images/review-carousel/fashion-2.jpg",
+      "images/review-carousel/fashion-4.jpg",
+      "images/review-carousel/fashion-5.jpg",
+      "images/review-carousel/fashion-1.jpg",
+      "images/review-carousel/fashion-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/fashion-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/fashion.mp4",
+    galleryVideos : [
+      "images/gallery-videos/trendyVideo.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/gayhay-1.jpg",
+      "images/small-images/trendy-1.jpg",
+      "images/small-images/trendy-1.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/fashion-1.jpg",
+      "images/small-images/fashion-1.jpg"
+    ],
+    advertisementVideosText : "Trendy Queen Womens Long Sleeve T Shirts Fall Fashion Basic Crop Tops..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/trendy-carousel-4.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/fashion-1.jpg",
+      "images/big-images/fashion-2.jpg",
+      "images/big-images/fashion-3.jpg",
+      "images/big-images/fashion-4.jpg"  
+    ]
+  },
+  fourthBigCarouselTitle: "Trendy Queen Womens Long Sleeve T Shirts Fall Fashion Basic Crop Tops Going Out Outfits Y2k Clothes",
+
+  price: {
+    priceDollar: 12,
+    priceCents: 99,
+    currentPrice: 12.99,
+    currentPriceInCents: 1299,
+    currency: "USD",
+    discountPercent: 13,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/fashion.jpg", price: 12.99, listPrice: 14.99, color: "white" },
+    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/fashion-3.jpg",
+  size: [
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+
+  rating: {
+    average: 4.5,
+    totalReviews: 7215,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "Trendy Queen",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Material: This long sleeve teacher shirt is made of 88% polyester,12% spandex. Light weight, super soft and high-stretch fabric with a second-skin feel",
+    "Design: Cropped and stretch fitted style,crew neck, tight underscrubs layer,you can wear it regularly or fold it up like a crop top,cute,slim fit,casual y2k style fashion",
+    "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
 
@@ -4496,6 +4853,18 @@
   ],
   
   backgroundImage: "images/big-images/j-ver-3.jpg",
+  size: [
+    "3X-Small",
+    "XX-Small",
+    "X-Small",
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+    "4X-Large"
+  ],
 
   rating: {
     average: 4.5,
@@ -4607,21 +4976,7 @@
 
 
 const secondCarouselProducts = [
-  {
-    id: "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
-    image: "images/second-carousel-images/native-deodorant.jpg",
-    name: "Native Deodorant - Coconut & Vanilla - 2.65 Oz",
-    rating: {
-      stars: 4.5,
-      count: 119
-    },
-    priceCents: 1250,
-    keywords: [
-      "bathmat",
-      "bathroom",
-      "home"
-    ]
-  },
+  
   {
     id: "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
     image: "images/second-carousel-images/neutrogena-makeup.jpg",
