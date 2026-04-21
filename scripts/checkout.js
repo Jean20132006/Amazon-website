@@ -877,38 +877,46 @@ function displayMainImage(matchProduct){
 }
 
 //////////////////////////////////////////////////////////////////
-const selectButtonSize = document.querySelector('.items-size')
-const allButtons = document.querySelector('.items-size-buttons');
-let numBttonPerRow = 7;
-let numButtons = matchingProduct.size.length;
-let numberOfDiv = Math.ceil(numButtons/numBttonPerRow);
 
-if(matchingProduct.size.length < 7){
-    numBttonPerRow = matchingProduct.size.length;
+/**
+ * @brief This function generates dynamically the list of size buttons for clothes items
+ * @param {*} matchProduct is the matching product 
+ */
+
+function GenerateItemSize(matchProduct){
+    const selectButtonSize = document.querySelector('.items-size')
+    const allButtons = document.querySelector('.items-size-buttons');
+    let numBttonPerRow = 7;
+    let numButtons = matchProduct.size.length;
+    let numberOfDiv = Math.ceil(numButtons/numBttonPerRow);
+    let j = 0;
+    if(matchProduct.size.length < 7){
+        numBttonPerRow = matchProduct.size.length;
+    }
+    else{
+        numBttonPerRow = 7;
+    }
+
+    for(let i = 0; i < numberOfDiv; ++i){
+        let rowDiv = document.createElement("div");
+        rowDiv.classList.add("items-size-buttons");
+        let startIndex = i * numBttonPerRow;
+        let endIndex = (i + 1) * numBttonPerRow;
+
+        (matchProduct.size).slice(startIndex, endIndex).forEach((element) => {
+            let button = document.createElement("button");
+            button.classList.add("item-size-btton");
+            button.innerHTML = `${matchProduct.size[j]}`;
+            j = j + 1;
+            button.dataset.id = j;                                    // set the id for each button
+            rowDiv.appendChild(button);
+        });
+
+        selectButtonSize.appendChild(rowDiv);
+    }
 }
-else{
-    numBttonPerRow = 7;
-}
 
-for(let i = 0; i < numberOfDiv; ++i){
-    let rowDiv = document.createElement("div");
-    rowDiv.classList.add("items-size-buttons");
-    let startIndex = i * numBttonPerRow;
-    let endIndex = (i + 1) * numBttonPerRow;
-    console.log("Start Index", startIndex);
-    console.log("End Index", endIndex);
-
-    (matchingProduct.size).slice(startIndex, endIndex).forEach((element, j) => {
-        let button = document.createElement("button");
-        button.classList.add("item-size-btton");
-        button.innerHTML = `${matchingProduct.size[j]}`;
-        button.dataset.id = j;                                    // set the id for each button
-        rowDiv.appendChild(button);
-        console.log("row div element:", rowDiv);
-
-    });
-    selectButtonSize.appendChild(rowDiv);
-}
+GenerateItemSize(matchingProduct);
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
