@@ -255,7 +255,7 @@ if (matchingProduct) {
     });
 
     visitStore.forEach(element => {
-        element.innerHTML = `<a href="#visit">Visit the ${matchingProduct.shortTitle} Store</a>`;
+        element.innerHTML = `<a href="#visit">Visit the ${matchingProduct.brand} Store</a>`;
     });
 
     rating.forEach(element => {

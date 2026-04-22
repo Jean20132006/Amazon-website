@@ -4685,7 +4685,6 @@
     }
   ]
 },
-///////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
@@ -4933,6 +4932,556 @@
     "Fashionable and Versatile Tops: These half-sleeve, loose-fit tops are great for all body types, covering the abdomen and pairing well with denim, skirts, and more. They're perfect for a chic or casual look.",
     "Comfortable Fabric: Made of a blend (60% Polyester, 35% Rayon, 5% Spandex), these tops are soft, breathable, and ideal for summer wear",
     "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
+
+  title: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops 2026 Fashion S-4XL",
+
+  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve",
+
+  brand: "WIHOLL",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/wiholl-v.jpg",
+     
+    
+    gallery: [
+      "images/small-images/wiholl-v-1.jpg",
+      "images/small-images/wiholl-v-2.jpg",
+      "images/small-images/wiholl-v-3.jpg",
+      "images/small-images/wiholl-v-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/wiholl-v-1.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-3.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/wiholl-v-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-people-video-1.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosText : "Wiholl Trendy Sweater color Bloc tops Long Sleeve T Shirts Fall..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/wiholl-v-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/wiholl.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/wiholl-v-1.jpg",
+      "images/big-images/wiholl-v-2.jpg",
+      "images/big-images/wiholl-v-3.jpg",
+      "images/big-images/wiholl-v-4.jpg",
+      "images/big-images/wiholl-v-5.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color",
+
+  price: {
+    priceDollar: 8,
+    priceCents: 99,
+    currentPrice: 8.99,
+    currentPriceInCents: 899,
+    currency: "USD",
+    discountPercent: 7,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/wiholl-v.jpg", price: 8.99, listPrice: 14.99, color: "Dark Blue" },
+    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/wiholl-v-1.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 391,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "WIHOLL",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Dark Blue",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Fashionable and Versatile Tops: These half-sleeve, loose-fit tops are great for all body types, covering the abdomen and pairing well with denim, skirts, and more. They're perfect for a chic or casual look.",
+    "Comfortable Fabric: Made of a blend (60% Polyester, 35% Rayon, 5% Spandex), these tops are soft, breathable, and ideal for summer wear",
+    "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
+
+  title: "WIHOLL Womens Summer Tops Short Petal Sleeve Shirts Fashion V Neck Womens Clothing",
+
+  shortTitle: "WIHOLL Womens Summer Tops Short Petal Sleeve",
+
+  brand: "WIHOLL",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/wiholl2.jpg",
+     
+    
+    gallery: [
+      "images/small-images/wiholl2-1.jpg",
+      "images/small-images/wiholl2-2.jpg",
+      "images/small-images/wiholl2-3.jpg",
+      "images/small-images/wiholl2-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/wiholl2-1.jpg",
+      "images/review-carousel/wiholl2-2.jpg",
+      "images/review-carousel/wiholl2-3.jpg",
+      "images/review-carousel/wiholl-3.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/wiholl2-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl2.mp4",
+    galleryVideos : [
+      "images/gallery-videos/wiholl2.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl2-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl2-advert.jpg",
+      "images/small-images/wiholl2-advert.jpg"
+    ],
+    advertisementVideosText : "Womens Tops Dressy Casual 3/4 Length Sleeve Shirts ..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/wiholl-v-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/wiholl.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/wiholl2-1.jpg",
+      "images/big-images/wiholl2-2.jpg",
+      "images/big-images/wiholl2-3.jpg",
+      "images/big-images/wiholl2-4.jpg",
+      "images/big-images/wiholl2-5.jpg",
+      "images/big-images/wiholl2-6.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "WIHOLL Womens Summer Tops Short Petal Sleeve Shirts",
+
+  price: {
+    priceDollar: 9,
+    priceCents: 99,
+    currentPrice: 9.99,
+    currentPriceInCents: 999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/wiholl2.jpg", price: 9.99, listPrice: 9.99, color: "White" },
+    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/wiholl2-1.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.4,
+    totalReviews: 494,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "WIHOLL",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "MATCH: This womens top is effortlessly versatile,it pairs beautifully with shorts, jeans, leggings, skirts, sneakers, boots, and more. A must-have fashion staple for 2026 wardrobes.",
+    "DESIGN: Featuring a stylish split petal sleeve design, this top stands out from the crowd with its unique flair. The classic V-neckline elegantly elongates the neck and contours the face for a slimmer, more refined silhouette,making it the standout piece of any outfit.",
+    "OCCASION: Perfect for any scene in your day — from relaxing at home and weekend lounging to casual brunches or everyday errands. Dress it up for an evening out or keep it cozy for laid-back moments. A truly versatile, year-round essential.",
     "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
   ], 
     
@@ -5251,40 +5800,6 @@
 
 const secondCarouselProducts = [
   
-  {
-    id: "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
-    image: "images/second-carousel-images/nizora-anti.jpg",
-    name: "Nizora Anti-Aging Serum - 1 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 2556
-    },
-    priceCents: 1599,
-    keywords: [
-      "tshirts",
-      "shirts",
-      "apparel",
-      "mens"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
-    image: "images/second-carousel-images/ordinary-glycolic-acid.jpg",
-    name: "The Ordinary Glycolic Acid 7% Toning Solution - 8.45 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 2286
-    },
-    priceCents: 8300,
-    keywords: [
-      "garbage",
-      "bins",
-      "cans",
-      "kitchen"
-    ]
-  },
   {
     id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
     image: "images/second-carousel-images/ordinary-hyurolic-acid.jpg",
