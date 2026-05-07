@@ -13,12 +13,12 @@ const id = params.get("id");
 const matchingProduct = products.find(product => product.id === id);
 
 if (matchingProduct) {
-  let title = document.querySelector('.name-section');                              // product name
-  let mainImage  = document.querySelector('.js-image-section');                     // main product image
-  let imageGallery = document.querySelectorAll('.js-radio-button');                 // image gallery 
-  let reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
-  let videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
-  let sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
+  const title = document.querySelector('.name-section');                              // product name
+  const mainImage  = document.querySelector('.js-image-section');                     // main product image
+  const imageGallery = document.querySelectorAll('.js-radio-button');                 // image gallery 
+  const reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
+  const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
+  const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
   let productDetails = document.querySelectorAll('.product');                       // product details section
   let productVideo1 = document.getElementById('product-video2');                    // product video element
   let productVideo2 = document.getElementById('product-video');                     // product video element
@@ -229,10 +229,6 @@ if (matchingProduct) {
 
     clothesComputersCarouselImages.forEach((img, index) => {
         img.src = matchingProduct.manifacturer.clothesComputerImages[index];
-    });
-
-    clothesComputerBigImages.forEach((img, index) => {
-        img.src = matchingProduct.manifacturer.bigImages[index];
     });
 
     imageForVideoAdvertisement.forEach((img, index) => {
@@ -918,6 +914,27 @@ function GenerateItemSize(matchProduct){
 
 GenerateItemSize(matchingProduct);
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * This function generates dynamically big images in clothes and computers checkout pages
+ * @param {*} matchProduct: matchingProduct 
+ */
+function bigImageGenerator(matchProduct){
+    const bigImageContainer = document.querySelector('.clothes-computers-image-container');
+    let imageArrayLength = matchProduct.manifacturer.bigImages.length;
+
+    for (let i = 0; i < imageArrayLength; ++i) {
+
+        const img = document.createElement('img');                         // Create image
+        img.classList.add('js-clothes-computers-image-container');         // Add class
+        img.src = matchProduct.manifacturer.bigImages[i];                  // Set image source
+        img.alt = `${matchProduct.brand}`;                                 // add alt
+
+        bigImageContainer.appendChild(img);                                // Append image into container
+    }
+}
+
+bigImageGenerator(matchingProduct);                                         // Call the function                                       
+
 

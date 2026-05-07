@@ -2337,7 +2337,7 @@
 }
 .clothes-computers-image-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 1460px;

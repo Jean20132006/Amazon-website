@@ -5233,7 +5233,6 @@
     }
   ]
 },
-///////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
@@ -5446,6 +5445,283 @@
   variants: [
     {
       color: "White",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "MATCH: This womens top is effortlessly versatile,it pairs beautifully with shorts, jeans, leggings, skirts, sneakers, boots, and more. A must-have fashion staple for 2026 wardrobes.",
+    "DESIGN: Featuring a stylish split petal sleeve design, this top stands out from the crowd with its unique flair. The classic V-neckline elegantly elongates the neck and contours the face for a slimmer, more refined silhouette,making it the standout piece of any outfit.",
+    "OCCASION: Perfect for any scene in your day — from relaxing at home and weekend lounging to casual brunches or everyday errands. Dress it up for an evening out or keep it cozy for laid-back moments. A truly versatile, year-round essential.",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "d2785924-743d-49b3-8f03-ec258e640503",
+
+  title: "ANRABESS Womens Short Sleeve Henley Tops V Neck Dressy Casual Blouses Summer Trendy Tee Shirts 2026 Vacation Fashion Clothes",
+
+  shortTitle: "ANRABESS Womens Short Sleeve Henley Tops V",
+
+  brand: "ANRABESS",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/anrabess.jpg",
+     
+    
+    gallery: [
+      "images/small-images/anrabess.jpg",
+      "images/small-images/anrabess-2.jpg",
+      "images/small-images/anrabes-3.jpg",
+      "images/small-images/anrabess-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/anrabess-1.jpg",
+      "images/review-carousel/anrabess-2.jpg",
+      "images/review-carousel/anrabess-3.jpg",
+      "images/review-carousel/anrabess-3.jpg",
+      "images/review-carousel/anrabess-4.jpg",
+      "images/review-carousel/anrabess-5.jpg",
+      "images/review-carousel/anrabess-2.jpg",
+      "images/review-carousel/anrabess-4.jpg",
+      "images/review-carousel/anrabess-5.jpg",
+      "images/review-carousel/anrabess-1.jpg",
+      "images/review-carousel/anrabess-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/small-images/anrabess.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl2.mp4",
+    galleryVideos : [
+      "images/gallery-videos/wiholl2.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl2-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl2-advert.jpg",
+      "images/small-images/wiholl2-advert.jpg"
+    ],
+    advertisementVideosText : "Womens Tops Dressy Casual 3/4 Length Sleeve Shirts ..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/anrabess-1.jpg",
+      "images/clothes-images/anrabess-2.jpg",
+      "images/clothes-images/anrabess-3.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-1.jpg",
+      "images/clothes-images/anrabess-3.jpg",
+      "images/clothes-images/anrabess-2.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+    ],
+    bigImages : [
+      "images/big-images/anrabess-1.jpg",
+      "images/big-images/anrabess-2.jpg",
+      "images/big-images/anrabess-3.jpg",
+      "images/big-images/anrabess-4.jpg",
+      "images/big-images/anrabess-5.jpg",
+      "images/big-images/anrabess-7.jpg",
+      "images/big-images/anrabess-6.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "ANRABESS Womens Short Sleeve Henley Tops V",
+
+  price: {
+    priceDollar: 8,
+    priceCents: 99,
+    currentPrice: 8.99,
+    currentPriceInCents: 899,
+    currency: "USD",
+    discountPercent: 55,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/anrabess.jpg", price: 8.99, listPrice: 19.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/anrabess-1.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.5,
+    totalReviews: 10352,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "ANRABESS",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
       size: "17 oz Bottle",
       pack: "3 Pack",
       asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
@@ -5800,23 +6076,6 @@
 
 const secondCarouselProducts = [
   
-  {
-    id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
-    image: "images/second-carousel-images/ordinary-hyurolic-acid.jpg",
-    name: "The Ordinary Hyaluronic Acid 2% + B5 - 1 Fl Oz",
-    rating: {
-      stars: 4,
-      count: 456
-    },
-    priceCents: 2399,
-    keywords: [
-      "bedroom",
-      "bed sheets",
-      "sheets",
-      "covers",
-      "home"
-    ]
-  },
   {
     id: "d2785924-743d-49b3-8f03-ec258e640503",
     image: "images/second-carousel-images/ordinary-medinamide.jpg",
