@@ -2482,7 +2482,480 @@
     }
   ]
 },
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "bc2847e9-5323-403f-b7cf-57fde044a955",
+
+  title: "Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercise Equipment, 6-Months Premium Membership Included, GPS, Health Tools and More, Obsidian/Black, One Size (S & L Bands Included)",
+
+  shortTitle: "Fitbit Charge 6 Fitness Tracker with Google apps",
+
+  brand: "Fitbit",
+
+  categories: [
+    "electronics",
+    "tablet",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/fitbit.jpg",
+    
+    gallery: [
+      "images/small-images/fitbit-1.jpg",
+      "images/small-images/fitbit-2.jpg",
+      "images/small-images/fitbit-3.jpg",
+      "images/small-images/fitbit-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/fitbit-1.jpg",
+      "images/review-carousel/fitbit-2.jpg",
+      "images/review-carousel/fitbit-3.jpg",
+      "images/review-carousel/fitbit-4.jpg",
+      "images/review-carousel/fitbit-5.jpg",
+      "images/review-carousel/fitbit-3.jpg",
+      "images/review-carousel/fitbit-1.jpg",
+      "images/review-carousel/fitbit-5.jpg",
+      "images/review-carousel/fitbit-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/electronic-images/fitbit-1.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/kpep-2.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4",
+      "images/gallery-videos/kpep-1.mp4",
+      "images/gallery-videos/kpep-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/kpep-img-2.jpg",
+      "images/gallery-videos/kpep-img-1.jpg",
+      "images/gallery-videos/kpep-img-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/kpep-img-2.jpg",
+      "images/gallery-videos/kpep-img-2.jpg"
+    ],
+    advertisementVideosText : "FITVII Slim Fitness Tracker AMOLED with Blood Oxygen, Blood Pressure, 24/7..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/fitbit-1.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/fitbit-1.jpg",
+      "images/big-images/fitbit-2.jpg",
+      "images/big-images/fitbit-3.jpg",
+      "images/big-images/fitbit-4.jpg",
+      "images/big-images/fitbit-5.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Fitbit Charge 6 Fitness Tracker with Google apps",
+  price: {
+    priceDollar: 119,
+    priceCents: 95,
+    currentPrice: 119.95,
+    currentPriceInCents: 11995,
+    currency: "USD",
+    discountPercent: 25,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/fitbit.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/fitbit-3.jpg",
+
+  rating: {
+    average: 4.2,
+    totalReviews: 20245,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "9.6L x 6.88W",
+    modelNumber: "Generation M5/M4",
+    department: "Kenke",
+    upc: "070177229870",
+    manufacturer: "Kenke",
+    asin: "B09RC41QGJ",
+    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Find your way seamlessly during runs or rides with turn-by-turn directions from Google Maps on Fitbit Charge 6[7, 8]; and when you need a snack break on the go, just tap to pay with Google Wallet[8, 9]",
+    "【Support Touch ID Function & Auto Wake/Sleep】Built-in magnetic strip, our 10th gen ipad case can automatically wakes or puts your tablet to sleep when the lid is opened and closed, protecting and extending battery life; precise cutout also completely supports newest touch ID key function.",
+    "【Two Viewing Angles】 The trifold stand shell design of this apple ipad 10th generation case can easily change the angle to meet your viewing and typing needs. 65°∠ video mode can act as a screen stand; 30°∠ input mode acts as a keyboard stand, which will greatly free your hands when relaxing or working with your iPad.",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
+
+  title: "KPEP AMOLED Fitness Watches for Women Men with Stress Blood Oxygen Heart Rate Monitor Sleep Tracking 110+ Sport Modes Fitness Tracker Watch Calorie Counter Step Tracker IP68 Waterproof for Andriod iOS",
+
+  shortTitle: "KPEP AMOLED Fitness Watches for Women Men",
+
+  brand: "KPEP",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/kpep.jpg",
+    
+    gallery: [
+      "images/small-images/kpep-1.jpg",
+      "images/small-images/kpep-2.jpg",
+      "images/small-images/kpep-3.jpg",
+      "images/small-images/kpep-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/fitbit-1.jpg",
+      "images/review-carousel/fitbit-2.jpg",
+      "images/review-carousel/fitbit-3.jpg",
+      "images/review-carousel/fitbit-4.jpg",
+      "images/review-carousel/fitbit-5.jpg",
+      "images/review-carousel/fitbit-3.jpg",
+      "images/review-carousel/fitbit-1.jpg",
+      "images/review-carousel/fitbit-5.jpg",
+      "images/review-carousel/fitbit-4.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/electronic-images/kpep.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/kpep-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-1.mp4",
+      "images/gallery-videos/kpep-2.mp4",
+      "images/gallery-videos/kpep-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/kpep-img-1.jpg",
+      "images/gallery-videos/kpep-img-2.jpg",
+      "images/gallery-videos/kpep-img-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/kpep-img-1.jpg",
+      "images/gallery-videos/kpep-img-1.jpg"
+    ],
+    advertisementVideosText : "Gydom Smart Watch for Men/Women, 1.85 inch AMOLED Vivid Screen Fitness..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/fitbit-1.jpg",
+      "images/electronic-images/kpep.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/kpep-1.jpg",
+      "images/big-images/kpep-2.jpg",
+      "images/big-images/kpep-3.jpg",
+      "images/big-images/kpep-4.jpg",
+      "images/big-images/kpep-5.jpg",
+      "images/big-images/kpep-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "KPEP AMOLED Fitness Watches for Women Men",
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 50,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/kpep.jpg", price: 19.99, listPrice: 39.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/fitbit-3.jpg",
+
+  rating: {
+    average: 4.6,
+    totalReviews: 9,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "1.5 inch AMOLED Vivid Screen",
+    modelNumber: "Generation M5/M4",
+    department: "KPEP",
+    upc: "070177229870",
+    manufacturer: "KPEP",
+    asin: "B09RC41QGJ",
+    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "【24/7 Comprehensive Health Monitoring】Stay in tune with your body using this KPEP smart watch. It packs essential health monitoring—tracking your heart rate, blood oxygen, and stress anytime. View health data on your wrist or check trends via the FitCloudPro App with automatic tracking. Designed as a capable watch for men and women, this watch also provides detailed sleep analysis, including awake, light, and deep sleep stages to give you meaningful insights into your sleep rhythms",
+    "【Stylish Design & Premium Metal Build Shell】Designed with elegance in mind, this sophisticated watch for women combines a classic aesthetic with incredible lightness. Watch shell Crafted from high-quality metal, it weighs only 38g for an unnoticeable, comfortable fit. Its stylish design keeps you on trend, while its functionality supports you all day. The ultimate blend of form and function, it's a lightweight smart watch for women and discreet yet powerful fitness trackers",
+    "【110+ Sport Modes & IP68 Waterproof Activity Traker】Achieve your fitness goals efficiently with this comprehensive heart rate monitor and activity tracker. Designed as a durable smart watch for men, it monitors daily steps, distance, and calories, with 110+ sports modes for you to choose. Sync with your phone's GPS to map route and view detailed exercise data in the app. IP68 waterproof for daily waterproof use (not suitable for diving, sauna, hot water). It's the high-performance mens watch for a dynamic lifestyle",
+    "【Bluetooth Calling & Message Notifications】Not only watches, but also your connected companion. With Bluetooth 5.3 chip, a microphone, and a waterproof speaker, take calls and get app notifications directly on this smart watch. It seamlessly blends powerful communication with essential fitness tools like an accurate pedometer. Designed for versatility, it serves as both a stylish womens watch and a functional device, keeping you updated and on track"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+////////////////////////////////////////LEGGINGS/////////////////////////////////////////////
 {
   id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
 
@@ -2494,10 +2967,10 @@
 
   categories: [
     "clothing",
-    "tablet",
-    "accessories",
-    "phone",
-    "iphone"
+    "leggings",
+    "shirts",
+    "pants",
+    "activewear"
   ],
 
   images: {
@@ -3304,7 +3777,7 @@
     }
   ]
 },
- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////WOMEN'S T-SHIRTS////////////////////////////////////////
 {
   id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
 
@@ -5508,8 +5981,7 @@
     }
   ]
 },
-///////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "d2785924-743d-49b3-8f03-ec258e640503",
 
@@ -5556,7 +6028,7 @@
       "images/advert-videos/ensure.png",
       "images/advert-videos/ensure.png"
     ],
-    cartImageConfiramation: "images/small-images/anrabess.jpg"
+    cartImageConfiramation: "images/clothes-images/anrabess.jpg"
   },
 
   videos : {
@@ -5786,6 +6258,827 @@
   ]
 },
 ///////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "1c079479-8586-494f-ab53-219325432536",
+
+  title: "AUSELILY Womens Summer Bodycon Dresses 2026 Basic Casual Sleeveless Knit Tank Midi Dress",
+
+  shortTitle: "AUSELILY Womens Summer Bodycon Dresses",
+
+  brand: "AUSELILY",
+
+  categories: [
+    "clothing",
+    "dresses",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/auselily.jpg",
+     
+    
+    gallery: [
+      "images/small-images/auselily-1.jpg",
+      "images/small-images/auselily-2.jpg",
+      "images/small-images/auselily-3.jpg",
+      "images/small-images/auselily-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/laughido-3.jpg",
+      "images/review-carousel/laughido-3.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/auselily.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/laughido-3.mp4",
+    galleryVideos : [
+      "images/gallery-videos/laughido-3.mp4",
+      "images/gallery-videos/laughido-1.mp4",
+      "images/gallery-videos/laughido-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-1.jpg"
+    ],
+    advertisementVideosText : "Grave Karin Women work Dress, Bodycon Pencil Business ..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-3.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-1.jpg",
+      "images/clothes-images/anrabess-3.jpg",
+      "images/clothes-images/anrabess-2.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+    ],
+    bigImages : [
+      "images/big-images/auselily-1.jpg",
+      "images/big-images/auselily-2.jpg",
+      "images/big-images/auselily-3.jpg",
+      "images/big-images/auselily-4.jpg",
+      "images/big-images/auselily-5.jpg",
+      "images/big-images/auselily-6.jpg"    
+    ]
+  },
+  fourthBigCarouselTitle: "AUSELILY Womens Summer Bodycon Dresses",
+
+  price: {
+    priceDollar: 25,
+    priceCents: 19,
+    currentPrice: 25.19,
+    currentPriceInCents: 2519,
+    currency: "USD",
+    discountPercent: 16,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/auselily.jpg", price: 25.19, listPrice: 29.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/laughido.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/auselily-2.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.4,
+    totalReviews: 410,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "ANRABESS",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "【Shop Without Any Regret】Made Of High-Quality Blended Fabrics (88%Polyester+12%Elastane), This Summer Dress Is More Light, Elastic, Soft, Comfortable, And Not See-Through. ★Plus, Laughido Provides Return And Exchange Service For Free, If You Encounter Any Problems During The Purchase, Please Feel Free To Contact Us",
+    "【Bodycon Ruched Sundress】Thanks To Elastic Fabrics, This Casual Dress Hugs Your Body Better While Providing More Comfort, Even Suit For Maternity. With The Bodycon Cut, Waist Ruched Design, This Ruched Shirt Dress Can Modify Women'S Figure Better To Make You Look Slim And Sexy.",
+    "【Standard U.S. Size】 - XS=(US 0-2), S=(US 4-6), M=(US 8-10), L=(US 12-14), XL=(US 16-18). Please Find Your Right Size Referring To Our Size Chart In The Picture Before Ordering The Ruched Tank Dress.",
+    "【Meet All Your Fashion Style】This Casual Ruched Bodycon Dress For Women Is An All-Match Fashion Item To Meet All Your Fashion Styles Whatever You Pair With, Such As Coat, Jacket, Cardigan, Blazer, Sunglasses, High Heels, Sandals, Sneakers, Slats, Even Flip Flops."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
+
+  title: "Laughido Women's Sleeveless Ruched Bodycon Sundress Summer Casual Knee Length Basic Tank Dress",
+
+  shortTitle: "Laughido Women's Sleeveless  Sundress",
+
+  brand: "Laughido",
+
+  categories: [
+    "clothing",
+    "dresses",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/laughido.jpg",
+     
+    
+    gallery: [
+      "images/small-images/laughido-1.jpg",
+      "images/small-images/laughido-2.jpg",
+      "images/small-images/laughido-3.jpg",
+      "images/small-images/laughido-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/laughido-3.jpg",
+      "images/review-carousel/laughido-3.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/laughido-1.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/laughido-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/laughido-2.mp4",
+      "images/gallery-videos/laughido-1.mp4",
+      "images/gallery-videos/laughido-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-1.jpg"
+    ],
+    advertisementVideosText : "Grave Karin Women work Dress, Bodycon Pencil Business ..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-3.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-1.jpg",
+      "images/clothes-images/anrabess-3.jpg",
+      "images/clothes-images/anrabess-2.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+    ],
+    bigImages : [
+      "images/big-images/laughido-1.jpg",
+      "images/big-images/laughido-2.jpg",
+      "images/big-images/laughido-3.jpg"    
+    ]
+  },
+  fourthBigCarouselTitle: "Laughido Women's Sleeveless Sundress Summer",
+
+  price: {
+    priceDollar: 25,
+    priceCents: 48,
+    currentPrice: 25.48,
+    currentPriceInCents: 2548,
+    currency: "USD",
+    discountPercent: 15,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/laughido.jpg", price: 25.48, listPrice: 29.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/laughido-1.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.5,
+    totalReviews: 10352,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "ANRABESS",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "【Shop Without Any Regret】Made Of High-Quality Blended Fabrics (88%Polyester+12%Elastane), This Summer Dress Is More Light, Elastic, Soft, Comfortable, And Not See-Through. ★Plus, Laughido Provides Return And Exchange Service For Free, If You Encounter Any Problems During The Purchase, Please Feel Free To Contact Us",
+    "【Bodycon Ruched Sundress】Thanks To Elastic Fabrics, This Casual Dress Hugs Your Body Better While Providing More Comfort, Even Suit For Maternity. With The Bodycon Cut, Waist Ruched Design, This Ruched Shirt Dress Can Modify Women'S Figure Better To Make You Look Slim And Sexy.",
+    "【Standard U.S. Size】 - XS=(US 0-2), S=(US 4-6), M=(US 8-10), L=(US 12-14), XL=(US 16-18). Please Find Your Right Size Referring To Our Size Chart In The Picture Before Ordering The Ruched Tank Dress.",
+    "【Meet All Your Fashion Style】This Casual Ruched Bodycon Dress For Women Is An All-Match Fashion Item To Meet All Your Fashion Styles Whatever You Pair With, Such As Coat, Jacket, Cardigan, Blazer, Sunglasses, High Heels, Sandals, Sneakers, Slats, Even Flip Flops."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "bc2847e9-5323-403f-b7cf-57fde044a955",
+
+  title: "Missufe Women's Summer Bodycon Dress Scoop Neck Sleeveless Slim Fit Casual Basic Mini Dresses",
+
+  shortTitle: "Missufe Women's Dress Scoop Neck Sleeveless",
+
+  brand: "Missufe",
+
+  categories: [
+    "clothing",
+    "dresses",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/missufe.jpg",
+     
+    
+    gallery: [
+      "images/small-images/missufe-1.jpg",
+      "images/small-images/missufe-2.jpg",
+      "images/small-images/missufe-3.jpg",
+      "images/small-images/missufe-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/missufe-1.jpg",
+      "images/review-carousel/missufe-2.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-2.jpg",
+      "images/review-carousel/laughido-4.jpg",
+      "images/review-carousel/laughido-5.jpg",
+      "images/review-carousel/laughido-1.jpg",
+      "images/review-carousel/laughido-3.jpg"
+    ],
+    advertisementImages: [
+      "images/advert-videos/ensure.png",
+      "images/advert-videos/ensure.png"
+    ],
+    cartImageConfiramation: "images/clothes-images/missufe.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/laughido-3.mp4",
+    galleryVideos : [
+      "images/gallery-videos/laughido-3.mp4",
+      "images/gallery-videos/laughido-2.mp4",
+      "images/gallery-videos/laughido-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/laughido-img-3.jpg",
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-1.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/laughido-img-3.jpg",
+      "images/gallery-videos/laughido-img-3.jpg"
+    ],
+    advertisementVideosText : "Grave Karin Women work Dress, Bodycon Pencil Business ..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/gallery-videos/laughido-img-1.jpg",
+      "images/gallery-videos/laughido-img-2.jpg",
+      "images/gallery-videos/laughido-img-3.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+      "images/clothes-images/anrabess-4.jpg",
+      "images/clothes-images/anrabess-5.jpg",
+      "images/clothes-images/anrabess-1.jpg",
+      "images/clothes-images/anrabess-3.jpg",
+      "images/clothes-images/anrabess-2.jpg",
+      "images/clothes-images/anrabess-6.jpg",
+      "images/clothes-images/anrabess-7.jpg",
+      "images/clothes-images/anrabess-8.jpg",
+    ],
+    bigImages : [
+      "images/big-images/missufe-1.jpg",
+      "images/big-images/missufe-2.jpg",
+      "images/big-images/missufe-3.jpg"    
+    ]
+  },
+  fourthBigCarouselTitle: "Missufe Women's Summer Bodycon Dress Scoop Neck Sleeveless",
+
+  price: {
+    priceDollar: 24,
+    priceCents: 99,
+    currentPrice: 24.99,
+    currentPriceInCents: 2499,
+    currency: "USD",
+    discountPercent: 14,
+    pricePerUnit: 0.17
+  },
+
+  colorItems : [
+    { id: 1, img: "images/clothes-images/missufe.jpg", price: 24.99, listPrice: 29.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
+    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
+    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
+    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
+    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
+    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
+    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
+    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
+    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
+    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
+    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
+    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
+    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
+    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
+    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
+  ],
+  
+  backgroundImage: "images/big-images/missufe-2.jpg",
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.5,
+    totalReviews: 40,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : {
+    productDimensions: "",
+    modelNumber: "Shirts",
+    department: "Women's Clothing",
+    upc: "070177229870",
+    manufacturer: "ANRABESS",
+    asin: "B09RC41QGJ",
+    units: ""
+  },
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Stay Cool, Confident, And Effortlessly Chic With This Summer Bodycon Dress. This Dress Offers The Perfect Mix Of Casual Comfort And Flattering Style, Making It A Standout Addition To Your Seasonal Wardrobe. Whether You're Dressing It Up Or Keeping It Simple, This Versatile Piece Will Have You Ready For Any Occasion.",
+    "【Standard U.S. Size】- This Slim-Fit Bodycon Dress Is Available In A Range Of Sizes To Suit Various Body Types. Please Find Your Right Size Referring To Our Size Chart In The Picture.",
+    "【Standard U.S. Size】 - XS=(US 0-2), S=(US 4-6), M=(US 8-10), L=(US 12-14), XL=(US 16-18). Please Find Your Right Size Referring To Our Size Chart In The Picture Before Ordering The Ruched Tank Dress.",
+    "【Meet All Your Fashion Style】This Casual Ruched Bodycon Dress For Women Is An All-Match Fashion Item To Meet All Your Fashion Styles Whatever You Pair With, Such As Coat, Jacket, Cardigan, Blazer, Sunglasses, High Heels, Sandals, Sneakers, Slats, Even Flip Flops."
+  ], 
+      
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
 
@@ -6074,56 +7367,4 @@
 
 
 
-const secondCarouselProducts = [
-  
-  {
-    id: "d2785924-743d-49b3-8f03-ec258e640503",
-    image: "images/second-carousel-images/ordinary-medinamide.jpg",
-    name: "The Ordinary 10% Niacinamide + 1% Zinc - 1 Fl Oz",
-    rating: {
-      stars: 5,
-      count: 83
-    },
-    priceCents: 1250,
-    keywords: [
-      "hats",
-      "winter hats",
-      "beanies",
-      "tuques",
-      "apparel",
-      "womens"
-    ]
-  },
-  {
-    id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
-    image: "images/second-carousel-images/shea-butter-body-lotion.jpg",
-    name: "Shea Butter Body Lotion - 20 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 9017
-    },
-    priceCents: 2290,
-    keywords: [
-      "pants",
-      "apparel",
-      "mens"
-    ]
-  },
-  {
-    id: "1c079479-8586-494f-ab53-219325432536",
-    image: "images/second-carousel-images/vani-cream-daily-facial.jpg",
-    name: "Vani Cream Daily Facial Moisturizer SPF 30 - 2 Fl Oz",
-    rating: {
-      stars: 4,
-      count: 229
-    },
-    priceCents: 3890,
-    keywords: [
-      "shoes",
-      "running shoes",
-      "footwear",
-      "mens"
-    ]
-    }
-];
 

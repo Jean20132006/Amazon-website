@@ -19,26 +19,26 @@ if (matchingProduct) {
   const reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
   const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
   const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
-  let productDetails = document.querySelectorAll('.product');                       // product details section
-  let productVideo1 = document.getElementById('product-video2');                    // product video element
-  let productVideo2 = document.getElementById('product-video');                     // product video element
-  let manifacturerFirstRow = document.querySelector('.js-manufacturer-first-row');  // manufacturer first row image
-  let proteinImage = document.querySelector('.js-protein');                         // protein image in manufacturer section
-  let firstImageSecondRow = document.querySelector('.js-manufacturer-second-row-container'); // first image in manufacturer second row
-  let thirdRowImage = document.querySelectorAll('.js-max');                          // images in manufacturer third row
-  let shortTitle = document.querySelector('.js-short-title');                        // short title element in manufacturer third row
-  let fourthRowImage = document.querySelector('.js-manufacturer-fourth-row-container'); // fourth row image in manufacturer section
-  let productPriceDollar = document.querySelectorAll('.dollars-amount');              // product price in dollars
-  let productPriceCent = document.querySelectorAll('.cents');                         // product price in cents
-  let pricePerUnit = document.querySelectorAll('.price-per-ounce');                   // price per unit
-  let advertVideo = document.querySelectorAll('.js-sponsored-video');                 // advert video element
-  let productDescription = document.querySelector('.js-product-description');         // product description element
-  let advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
-  let selectFlavorButtons = document.querySelectorAll('.js-btton-flavour');           // flavour selection buttons
-  let selectSizeButtons = document.querySelectorAll('.js-size-button');               // size selection buttons
-  let flavorName =document.getElementById('chocolate');                               // flavor name element in size selection section 
-  let imageOrText1 = document.querySelector('.js-image-or-text1');                   // image or text element in manufacturer section
-  let imageOrText2 = document.querySelector('.js-image-or-text2');                   // image or text element in manufacturer section
+  const productDetails = document.querySelectorAll('.product');                       // product details section
+  const productVideo1 = document.getElementById('product-video2');                    // product video element
+  const productVideo2 = document.getElementById('product-video');                     // product video element
+  const manifacturerFirstRow = document.querySelector('.js-manufacturer-first-row');  // manufacturer first row image
+  const proteinImage = document.querySelector('.js-protein');                         // protein image in manufacturer section
+  const firstImageSecondRow = document.querySelector('.js-manufacturer-second-row-container'); // first image in manufacturer second row
+  const thirdRowImage = document.querySelectorAll('.js-max');                          // images in manufacturer third row
+  const shortTitle = document.querySelector('.js-short-title');                        // short title element in manufacturer third row
+  const fourthRowImage = document.querySelector('.js-manufacturer-fourth-row-container'); // fourth row image in manufacturer section
+  const productPriceDollar = document.querySelectorAll('.dollars-amount');              // product price in dollars
+  const productPriceCent = document.querySelectorAll('.cents');                         // product price in cents
+  const pricePerUnit = document.querySelectorAll('.price-per-ounce');                   // price per unit
+  const advertVideo = document.querySelectorAll('.js-sponsored-video');                 // advert video element
+  const productDescription = document.querySelector('.js-product-description');         // product description element
+  const advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
+  const selectFlavorButtons = document.querySelectorAll('.js-btton-flavour');           // flavour selection buttons
+  const selectSizeButtons = document.querySelectorAll('.js-size-button');               // size selection buttons
+  const flavorName =document.getElementById('chocolate');                               // flavor name element in size selection section 
+  const imageOrText1 = document.querySelector('.js-image-or-text1');                   // image or text element in manufacturer section
+  const imageOrText2 = document.querySelector('.js-image-or-text2');                   // image or text element in manufacturer section
   const firsrowManufacturer = document.querySelector('.manufacturer-section'); // first row in manufacturer section
   const secondRowManufacturer = document.querySelector('.manufacturer-second-row-section'); // second row in manufacturer section
   const thirdRowManufacturer = document.querySelector('.manufacturer-third-row-section'); // third row in manufacturer section
@@ -57,7 +57,7 @@ if (matchingProduct) {
 
   ///////////////////////////////////////////////////////////////////////////////
   const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
-  const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
+  //const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
   
   if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
     firsrowManufacturer.style.display = "none";
@@ -911,8 +911,10 @@ function GenerateItemSize(matchProduct){
         selectButtonSize.appendChild(rowDiv);
     }
 }
+if(matchingProduct.categories === "clothing"){
+    GenerateItemSize(matchingProduct);
+}
 
-GenerateItemSize(matchingProduct);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
