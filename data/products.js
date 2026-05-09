@@ -4,7 +4,7 @@
 
   title: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
 
-  shortTitle: "Core Power Protein Shake",
+  shortTitle: "Core Power Elite Protein Shake",
 
   brand: "Fairlife",
 
@@ -96,15 +96,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "10.75 x 8.19 x 7.5 inches; 10.92 Pounds",
-    modelNumber: "1",
-    department: "Men",
-    upc: "811620020640",
-    manufacturer: "fairlife, LLC",
-    asin: "B01DDIRDZA",
-    units: "168 Fluid Ounces"
-  },
+  productDetails : [
+    "productDimensions: 10.75 x 8.19 x 7.5 inches; 10.92 Pounds",
+    "modelNumber: 1",
+    "department: Men",
+    "upc: 811620020640",
+    "manufacturer: fairlife, LLC",
+    "asin: B01DDIRDZA",
+    "units: 168 Fluid Ounces"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -190,6 +190,7 @@
 
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
     "Grocery & Gourmet Food",
@@ -277,15 +278,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "4.5 x 4.5 x 6.12 inches; 3 Pounds",
-    modelNumber: "0440792",
-    department: "GNC|ALL|ALL|ENERGY DRINK SUPPLMT FACT",
-    upc: "315054211198 889392000412",
-    manufacturer: "Celsius, Inc.",
-    asin: "B0714LQ3C2",
-    units: "48 Fluid Ounces"
-  },
+  productDetails : [
+    "productDimensions: 4.5 x 4.5 x 6.12 inches; 3 Pounds",
+    "modelNumber: 0440792",
+    "department: GNC|ALL|ALL|ENERGY DRINK SUPPLMT FACT",
+    "upc: 315054211198 889392000412",
+    "manufacturer: Celsius, Inc.",
+    "asin: B0714LQ3C2",
+    "units: 48 Fluid Ounces"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -368,6 +369,7 @@
 
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
     "Grocery & Gourmet Food",
@@ -455,15 +457,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "10.13 x 7.69 x 7.25 inches; 8.99 Pounds",
-    modelNumber: "71714",
-    department: "Men",
-    upc: "811620020640",
-    manufacturer: "Premier Nutrition, Inc.",
-    asin: " B07MJL8NXR",
-    units: "68 Fluid Ounces"
-  },
+  productDetails : [
+    "productDimensions: 10.13 x 7.69 x 7.25 inches; 8.99 Pounds",
+    "modelNumber: 71714",
+    "department: Men",
+    "upc: 811620020640",
+    "manufacturer: Premier Nutrition, Inc.",
+    "asin: B07MJL8NXR",
+    "units: 68 Fluid Ounces"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -547,10 +549,10 @@
 
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
-    "Grocery & Gourmet Food",
-    "beverages"
+    "Grocery & Gourmet Food"  
   ],
 
   images: {
@@ -634,15 +636,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "2.6 x 2.6 x 6.2 inches; 16.64 Pounds",
-    modelNumber: "U-S1-33333",
-    department: "Men",
-    upc: "070847891567",
-    manufacturer: "Monster Energy Company",
-    asin: "B0BL6WQKPM",
-    units: "240 Fluid Ounces"
-  },
+  productDetails : [
+    "productDimensions: 2.6 x 2.6 x 6.2 inches; 16.64 Pounds",
+    "modelNumber: U-S1-33333",
+    "department: Men",
+    "upc: 070847891567",
+    "manufacturer: Monster Energy Company",
+    "asin: B0BL6WQKPM",
+    "units: 240 Fluid Ounces"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -700,17 +702,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "David",
       rating: 5,
       title: "Great running shoes",
       comment: "Very comfortable and lightweight.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Laura",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Energy drink",
+      comment: "Good value. Delicious energy drink.",
       date: "2026-02-03"
     }
   ]
@@ -726,10 +728,10 @@
 
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
-    "Grocery & Gourmet Food",
-    "beverages"
+    "Grocery & Gourmet Food"
   ],
 
   images: {
@@ -813,15 +815,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "2.25 x 2.25 x 9.25 inches; 14.75 ounces",
-    modelNumber: "FG00014",
-    department: "Men",
-    upc: "016571245733",
-    manufacturer: "Talking Rain Beverage Company",
-    asin: "B003P02EGU",
-    units: "204 Fluid Ounces"
-  },
+  productDetails : [
+    "productDimensions: 2.25 x 2.25 x 9.25 inches; 14.75 ounces",
+    "modelNumber: FG00014",
+    "department: Men",
+    "upc: 016571245733",
+    "manufacturer: Talking Rain Beverage Company",
+    "asin: B003P02EGU",
+    "units: 204 Fluid Ounces"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -905,10 +907,10 @@
 
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
-    "Grocery & Gourmet Food",
-    "beverages"
+    "Grocery & Gourmet Food"
   ],
 
   images: {
@@ -992,15 +994,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "DAILYLIVEA120",
-    department: "Tea",
-    upc: "070177229870",
-    manufacturer: "Twinings",
-    asin: "B09RC41QGJ",
-    units: "100 counts"
-  },
+  productDetails : [
+    "productDimensions: 13.1 x 8.4 x 8.4 inches; 5.29 ounces",
+    "modelNumber: DAILYLIVEA120",
+    "department: Tea",
+    "upc: 070177229870",
+    "manufacturer: Twinings",
+    "asin: B09RC41QGJ",
+    "units: 100 counts"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -1054,17 +1056,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Linda",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great Tea",
+      comment: "Try it you won't regret it! The lemon and ginger flavor is so refreshing and perfect for any time of the day.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Mackenzie",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice Tea",
+      comment: "This tea is a great blend of lemon and ginger. It's perfect for soothing a sore throat or just enjoying a warm cup on a chilly day.",
       date: "2026-02-03"
     }
   ]
@@ -1080,7 +1082,7 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "tablets",
     "accessories",
     "phone",
     "iphone"
@@ -1234,15 +1236,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "DAILYLIVEA120",
-    department: "Tea",
-    upc: "070177229870",
-    manufacturer: "Twinings",
-    asin: "B09RC41QGJ",
-    units: "100 counts"
-  },
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
 
   inventory: {
     totalStock: 420,
@@ -1303,17 +1304,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "John",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Emily",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
       date: "2026-02-03"
     }
   ]
@@ -1329,7 +1330,7 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "tablets",
     "accessories",
     "phone",
     "iphone"
@@ -1476,15 +1477,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "DAILYLIVEA120",
-    department: "Mobdic",
-    upc: "070177229870",
-    manufacturer: "Mobdic",
-    asin: "B09RC41QGJ",
-    units: "100 counts"
-  },
+  productDetails : [
+    "Brand: MOBDIK",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
 
   inventory: {
     totalStock: 420,
@@ -1545,17 +1546,17 @@
 
   reviews: [
     {
-      user: "Michael",
-      rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      user: "Jen",
+      rating: 4,
+      title: "Great Screen Protector",
+      comment: "This screen protector provides a great paper-like feel when using the Apple Pencil. It has significantly improved my drawing experience on the iPad Pro. The anti-glare feature is also a nice bonus, making it easier to work in bright environments.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Denise",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Great Screen Protector",
+      comment: "This is a great screen protector for my iPad Pro. It provides excellent protection and the paper-like feel is fantastic when using the Apple Pencil.",
       date: "2026-02-03"
     }
   ]
@@ -1571,7 +1572,7 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "tablets",
     "accessories",
     "phone",
     "iphone"
@@ -1718,15 +1719,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "9.6L x 6.88W",
-    modelNumber: "Generation M5/M4",
-    department: "Ailun",
-    upc: "070177229870",
-    manufacturer: "Ailun",
-    asin: "B09RC41QGJ",
-    units: "iPad Pro 11 inch 2024 5th Generation M4, iPad Pro 11 inch 2025 6th"
-  },
+  productDetails : [
+    "Brand: Ailun",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: Black",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell"
+  ],
+
 
   inventory: {
     totalStock: 420,
@@ -1788,17 +1788,17 @@
 
   reviews: [
     {
-      user: "Michael",
-      rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      user: "Nate",
+      rating: 4.5,
+      title: "Excellent Screen Protector",
+      comment: "This screen protector is excellent! It fits perfectly on my iPad Pro 11 inch and provides great protection against scratches and smudges. The clarity is fantastic, and it doesn't interfere with the touch sensitivity at all. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
-      rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      user: "Denise",
+      rating: 4.5,
+      title: "Great Screen Protector",
+      comment: "This is a great screen protector for my iPad Pro. It provides excellent protection and the paper-like feel is fantastic when using the Apple Pencil.",
       date: "2026-02-03"
     }
   ]
@@ -1814,7 +1814,7 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "tablets",
     "accessories",
     "phone",
     "iphone"
@@ -1947,15 +1947,15 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "9.6L x 6.88W",
-    modelNumber: "Generation M5/M4",
-    department: "CoBak",
-    upc: "070177229870",
-    manufacturer: "CoBak",
-    asin: "B09RC41QGJ",
-    units: "CoBak Clear Case for ipad (A16) 11th Generation"
-  },
+  productDetails : [
+    "Brand: CoBak",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: pink",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
 
   inventory: {
     totalStock: 420,
@@ -2017,17 +2017,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Dominique",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great Case for iPad",
+      comment: "This case is fantastic! It fits my iPad perfectly and provides excellent protection. The adjustable angles are a great feature, allowing me to find the perfect position for watching videos and typing. I also love that it supports Apple Pencil charging and Touch ID. Highly recommend!021",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
-      rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      user: "Oscar De La Hoya",
+      rating: 4.5,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
       date: "2026-02-03"
     }
   ]
@@ -2043,8 +2043,10 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "laptops",
+    "computers",
     "accessories",
+    "tablets",
     "phone",
     "iphone"
   ],
@@ -2164,15 +2166,18 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "14 inches",
-    modelNumber: "HP 2025 Premium 14 Laptop",
-    department: "HP",
-    upc: "070177229870",
-    manufacturer: "HP",
-    asin: "B09RC41QGJ",
-    units: "Anti Glare Coating, Fast Charge, HD Audio, Lifetime MS Office, Microsoft Copilot"
-  },
+  productDetails : [
+    "Brand	HP",
+    "Model Name	HP 2026 Business 14 Laptop",
+    "Specific Uses For Product	Business/Student",
+    "Screen Size	14 Inches",
+    "Color	Natural Silver",
+    "Hard Disk Size	128 GB",
+    "CPU Model	Intel N150",
+    "Ram Memory Installed Size	4 GB",
+    "Operating System	Windows 11 Pro",
+    "Special Feature	Anti Glare Coating, Fast Charge, HD Audio, MS Office Pro"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -2234,17 +2239,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Eric",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Fantastic Laptop for Business and Study",
+      comment: "This HP Ultrabook 14 is fantastic for both business and study purposes. The performance is excellent, thanks to the quad-core Intel CPU and 16GB of RAM. It handles multitasking with ease, allowing me to run multiple applications smoothly. The Windows 11 Pro operating system provides a great user experience, and the anti-glare display is perfect for working outdoors. Highly recommend this laptop!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Raphael",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Good Value for the Price",
+      comment: "This HP Ultrabook offers good value for the price. The performance is solid for everyday tasks and light gaming, and the 14-inch anti-glare display is a nice feature. However, I wish it had a bit more storage space. Overall, it's a good choice for business and study needs.",
       date: "2026-02-03"
     }
   ]
@@ -2397,15 +2402,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "9.6L x 6.88W",
-    modelNumber: "Generation M5/M4",
-    department: "Kenke",
-    upc: "070177229870",
-    manufacturer: "Kenke",
-    asin: "B09RC41QGJ",
-    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
-  },
+  productDetails : [
+    "Brand: Kenke",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: pink",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
 
   inventory: {
     totalStock: 420,
@@ -2467,17 +2471,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Ryan",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Excellent Case for iPad",
+      comment: "This case is fantastic! It fits my iPad perfectly and provides excellent protection. The adjustable angles are a great feature, allowing me to find the perfect position for watching videos and typing. I also love that it supports Apple Pencil charging and Touch ID. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
-      rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      user: "Pharell Williams",
+      rating: 4.5,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
       date: "2026-02-03"
     }
   ]
@@ -2494,7 +2498,7 @@
 
   categories: [
     "electronics",
-    "tablet",
+    "watches",
     "accessories",
     "phone",
     "iphone"
@@ -2633,15 +2637,18 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "9.6L x 6.88W",
-    modelNumber: "Generation M5/M4",
-    department: "Kenke",
-    upc: "070177229870",
-    manufacturer: "Kenke",
-    asin: "B09RC41QGJ",
-    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
-  },
+ productDetails : [
+    "Operating System: android",
+    "Memory Storage Capacity: 4 GB",
+    "Special Feature: Heart Rate Monitor",
+    "Battery Capacity: 0.3",
+    "Connectivity Technology: Bluetooth",
+    "Wireless Communication Standard: Bluetooth",
+    "Battery Cell Composition: Lithium Ion",
+    "GPS: GPS Via Smartphone",
+    "Shape: Rectangular",
+    "Screen Size: 0.76 Inches"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -2703,17 +2710,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Mike",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great Fitness Tracker",
+      comment: "I love my Fitbit Charge 6! It has all the features I need to track my fitness goals, including heart rate monitoring, GPS, and health tools. The integration with Google apps is a nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Samnuel",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
       date: "2026-02-03"
     }
   ]
@@ -2870,15 +2877,18 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "1.5 inch AMOLED Vivid Screen",
-    modelNumber: "Generation M5/M4",
-    department: "KPEP",
-    upc: "070177229870",
-    manufacturer: "KPEP",
-    asin: "B09RC41QGJ",
-    units: "Compatible Devices	11/10th 2024/2022 iPad Case with Pencil Holder"
-  },
+  productDetails : [
+    "Operating System: android",
+    "Memory Storage Capacity: 4 GB",
+    "Special Feature: Heart Rate Monitor",
+    "Battery Capacity: 0.3",
+    "Connectivity Technology: Bluetooth",
+    "Wireless Communication Standard: Bluetooth",
+    "Battery Cell Composition: Lithium Ion",
+    "GPS: GPS Via Smartphone",
+    "Shape: Rectangular",
+    "Screen Size: 0.76 Inches"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -3144,15 +3154,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Leggings",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "THE GYM PEOPLE",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: THE GYM PEOPLE",
+    "Fabric type: 88% Polyamide, 12% Spandex",
+    "Material composition: 88% Polyamide, 12% Spandex",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Elastic"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -3212,16 +3221,16 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Michelle",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great leggings",
+      comment: "Very comfortable and perfect for workouts.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Samira",
       rating: 4,
-      title: "Nice shoes",
+      title: "Nice leggings",
       comment: "Good value but runs slightly small.",
       date: "2026-02-03"
     }
@@ -3418,15 +3427,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Leggings",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "THE GYM PEOPLE",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: THE GYM PEOPLE",
+    "Fabric type: 88% Polyamide, 12% Spandex",
+    "Material composition: 88% Polyamide, 12% Spandex",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Elastic"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -3693,15 +3701,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Leggings",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "THE GYM PEOPLE",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: THE GYM PEOPLE",
+    "Fabric type: 88% Polyamide, 12% Spandex",
+    "Material composition: 88% Polyamide, 12% Spandex",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Elastic"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -3757,22 +3764,22 @@
   description: " ",
 
   features: [
-    "See package for ingredients"
+    "See package"
   ],
 
   reviews: [
     {
-      user: "Michael",
-      rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      user: "Rachelle",
+      rating: 4.5,
+      title: "Great leggings",
+      comment: "Very comfortable and perfect for workouts.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
-      rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      user: "Samantha",
+      rating: 3.5,
+      title: "Nice leggings",
+      comment: "Try it yourself, but I found the material to be a bit thin.",
       date: "2026-02-03"
     }
   ]
@@ -3789,8 +3796,8 @@
 
   categories: [
     "clothing",
-    "shirts",
     "leggings",
+    "shirts",
     "workout",
     "yoga"
     
@@ -3967,15 +3974,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirrts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Trendy Queen",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -4036,17 +4042,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Lara",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Good quality",
+      comment: "Very comfortable and perfect for workouts.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Yvana",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "If you want something comfortable and cute, this is a great choice. I found the material to be a bit thin, but it works well for summer.",
       date: "2026-02-03"
     }
   ]
@@ -4243,15 +4249,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirrts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Trendy Queen",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -4312,17 +4317,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Maria",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great shirt",
+      comment: "I love the fit and the material is very soft. Perfect for summer workouts.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Sanchez",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "The shirt is comfortable and looks great. I just wish it came in more colors.",
       date: "2026-02-03"
     }
   ]
@@ -4521,15 +4526,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Trendy Queen",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -4590,17 +4594,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Jacky",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great shirt",
+      comment: "I love the fit and the material is very soft. Perfect for summer workouts.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Alexis",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "This shirt is comfortable and looks great. I just wish it came in more colors.",
       date: "2026-02-03"
     }
   ]
@@ -4800,15 +4804,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: GAYHAY",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -4869,17 +4872,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Miriam",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Best ever!",
+      comment: "Here is my honest review after trying these tees for a week. The material is incredibly soft and comfortable, making them perfect for everyday wear. I love how they fit snugly without being too tight, giving me a flattering silhouette. The option to roll them up into",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Brigitte",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Comfortable shirt",
+      comment: "That's what I was looking for! I like the material and the fit. It is perfect for my workouts.",
       date: "2026-02-03"
     }
   ]
@@ -5074,15 +5077,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Trendy Queen",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -5143,17 +5145,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Amelia",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Like it!",
+      comment: "awesome shirt! I bought it in white and I love it. The material is very soft and comfortable, and the fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Sophia",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "I like the material and the fit. It is perfect for my workouts.",
       date: "2026-02-03"
     }
   ]
@@ -5348,15 +5350,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "Trendy Queen",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: WIHOLL",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -5417,17 +5418,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Sandrine",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Love it!",
+      comment: "No egrets the shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Lydie",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "I like the material and the fit. It is perfect for my workouts.",
       date: "2026-02-03"
     }
   ]
@@ -5622,15 +5623,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "WIHOLL",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: WIHOLL", 
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -5693,15 +5693,15 @@
     {
       user: "Michael",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great Shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
       date: "2026-01-12"
     },
     {
       user: "Sarah",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "One of the best shirts I've bought",
+      comment: "Exactly what I was looking for! The shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
       date: "2026-02-03"
     }
   ]
@@ -5897,15 +5897,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "WIHOLL",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: WIHOLL",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -5966,17 +5965,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Shakira Lee",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great Shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Kimberly",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "Exactly what I was looking for! The shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
       date: "2026-02-03"
     }
   ]
@@ -6173,15 +6172,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "ANRABESS",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: ANRABESS",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -6242,17 +6240,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Paula",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Isabella",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "Want regret buying this shirt! The material is soft and comfortable, but the fit is a bit off. I bought it in red and it's a bit too tight around the chest area. It's not very flattering and I don't feel confident wearing it. I would recommend sizing up if you decide to buy this shirt.",
       date: "2026-02-03"
     }
   ]
@@ -6449,15 +6447,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "ANRABESS",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: AUSELILY",
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -6518,14 +6515,14 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Aurelia",
       rating: 5,
-      title: "Great running shoes",
+      title: "Best shirt ever!",
       comment: "Very comfortable and lightweight.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Jenna",
       rating: 4,
       title: "Nice shoes",
       comment: "Good value but runs slightly small.",
@@ -6722,15 +6719,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "ANRABESS",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Laughido",
+    "Fabric type92%Rayon+8%Elastane",
+    "Material composition92%Rayon+8%Elastane",
+    "Care instructions: Machine Wash",
+    "Origin: Imported",
+    "Closure type: Pull On"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -6791,17 +6787,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Dorothy",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great dress!",
+      comment: "I love the fit and the material is very comfortable.",
       date: "2026-01-12"
     },
     {
       user: "Sarah",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice dress",
+      comment: "Good value for the price, but the color is slightly different than expected.",
       date: "2026-02-03"
     }
   ]
@@ -6995,15 +6991,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "",
-    modelNumber: "Shirts",
-    department: "Women's Clothing",
-    upc: "070177229870",
-    manufacturer: "ANRABESS",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: Missufe",
+    "Fabric type: 92% Rayon + 8% Elastane",
+    "Material composition: 92% Rayon + 8% Elastane",
+    "Care instructions: Machine Wash",
+    "Origin: Imported",
+    "Closure type: Pull On"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -7063,17 +7058,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Daniella",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Great dress!",
+      comment: "I love the fit and the material is very comfortable.",
       date: "2026-01-12"
     },
     {
-      user: "Sarah",
+      user: "Emily",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice dress",
+      comment: "Try it on and it fits well. You can wear it for work or for a night out. I like the color and the material is soft.",
       date: "2026-02-03"
     }
   ]
@@ -7090,7 +7085,7 @@
 
   categories: [
     "clothing",
-    "shirts",
+    "men's shirts",
     "leggings",
     "workout",
     "yoga"
@@ -7270,15 +7265,14 @@
     }
   },
 
-  productDetails : {
-    productDimensions: "13.1 x 8.4 x 8.4 inches; 5.29 ounces",
-    modelNumber: "Shirts",
-    department: "Men's Clothing",
-    upc: "070177229870",
-    manufacturer: "J.VER",
-    asin: "B09RC41QGJ",
-    units: ""
-  },
+  productDetails : [
+    "Brand Name: J.VER",
+    "Fabric type: 92% Rayon + 8% Elastane",
+    "Material composition: 92% Rayon + 8% Elastane",
+    "Care instructions: Machine Wash",
+    "Origin: Imported",
+    "Closure type: Pull On"
+  ],
 
   inventory: {
     totalStock: 420,
@@ -7339,17 +7333,17 @@
 
   reviews: [
     {
-      user: "Michael",
+      user: "Mike",
       rating: 5,
-      title: "Great running shoes",
-      comment: "Very comfortable and lightweight.",
+      title: "Like it!",
+      comment: "Perfect fit and the material is very comfortable.",
       date: "2026-01-12"
     },
     {
       user: "Sarah",
       rating: 4,
-      title: "Nice shoes",
-      comment: "Good value but runs slightly small.",
+      title: "Nice shirt",
+      comment: "Try it on and it fits well. You can wear it for work or for a night out. I like the color and the material is soft.",
       date: "2026-02-03"
     }
   ]

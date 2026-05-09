@@ -19,7 +19,7 @@ if (matchingProduct) {
   const reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
   const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
   const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
-  const productDetails = document.querySelectorAll('.product');                       // product details section
+  //const productDetails = document.querySelectorAll('.product');                       // product details section
   const productVideo1 = document.getElementById('product-video2');                    // product video element
   const productVideo2 = document.getElementById('product-video');                     // product video element
   const manifacturerFirstRow = document.querySelector('.js-manufacturer-first-row');  // manufacturer first row image
@@ -54,6 +54,7 @@ if (matchingProduct) {
   const visitStore = document.querySelectorAll('.js-visit-store');                                    // visit store element after the title in checkout page
   const rating = document.querySelectorAll('.js-rating');                                             // rating element in checkout page
   const fourthBigCarouselTitle = document.querySelectorAll('.big-image-clothes-computers-text'); // title for fourth big carousel picture in clothes and computers section
+  const productClientRating = document.querySelectorAll('.js-checkout-carousel-client-rating-img'); // Product video carousel images
 
   ///////////////////////////////////////////////////////////////////////////////
   const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
@@ -137,13 +138,17 @@ if (matchingProduct) {
     img.src = matchingProduct.videos.galleryVideosImages[index];
   });
 
-  productDetails[0].textContent = `Product Dimensions : ${matchingProduct.productDetails.productDimensions}`;
+  productClientRating.forEach((img, index) => {
+    img.src = matchingProduct.videos.galleryVideosImages[index];
+  });
+
+  /*productDetails[0].textContent = `Product Dimensions : ${matchingProduct.productDetails.productDimensions}`;
   productDetails[1].textContent = `Item model number : ${matchingProduct.productDetails.modelNumber}`;
   productDetails[2].textContent = `Department : ${matchingProduct.productDetails.department}`;
   productDetails[3].textContent = `UPC : ${matchingProduct.productDetails.upc}`;
   productDetails[4].textContent = `Manufacturer : ${matchingProduct.productDetails.manufacturer}`;
   productDetails[5].textContent = `ASIN : ${matchingProduct.productDetails.asin}`;
-  productDetails[6].textContent = `Units : ${matchingProduct.productDetails.units}`;
+  productDetails[6].textContent = `Units : ${matchingProduct.productDetails.units}`;*/
 
   productVideo1.src = matchingProduct.videos.galleryVideos[0];
   productVideo2.src = matchingProduct.videos.galleryVideos[1];
@@ -165,10 +170,12 @@ if (matchingProduct) {
   productPriceCent.forEach((element) => {
     element.textContent = matchingProduct.price.priceCents;
   });
-
-  pricePerUnit.forEach((element) => {
-    element.textContent = `($${matchingProduct.price.pricePerUnit} / fluid ounce)`;
-  });
+  
+  if(matchingProduct.categories[0] === "drink"){
+        pricePerUnit.forEach((element) => {
+            element.textContent = `$${matchingProduct.price.pricePerUnit} / ounce`;
+        });
+   }
 
   advertVideo.forEach((video) => {
     video.src = matchingProduct.videos.advertisement;
@@ -437,7 +444,9 @@ totalPageReview.innerHTML = pagesReview.length;
 
 let currentIndexReview = 0;
 let pageWidthReview = document.querySelector('.checkout-carousel-review').clientWidth;
+
 function updateCarouselReview(){
+
     trackReview.style.transform = `translateX(-${currentIndexReview * pageWidthReview}px)`;
     currentPageReview.innerHTML = currentIndexReview + 1;
     if(currentIndexReview === 0){
@@ -726,6 +735,14 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
 }*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * @brief This if statement handles the functionalities that are in electronics and clothing
+ *        products only. 
+ *        It checks if the product belongs to either category and then executes the code block 
+ *        that contains functionalities specific to those categories, such as hiding certain 
+ *        sections, setting background images, and initializing carousels for clothes and computers.
+ */
+if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
 //////////////////////////////// Choose Items color & its carousel code ///////////////////////////////////////////////////////
 
 /**
@@ -785,6 +802,7 @@ function generateCarousel(items) {
 
 generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
      * @brief This script handles carousel to choose color functionality in checkout page
      * @note this script the page navigation. It updates the carousel's position based on the current 
@@ -937,6 +955,66 @@ function bigImageGenerator(matchProduct){
     }
 }
 
-bigImageGenerator(matchingProduct);                                         // Call the function                                       
+bigImageGenerator(matchingProduct);                                         // Call the function 
 
+//////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This script handles carousel for product video rating by clients functionality
+ */
+let leftButtonClientRating = document.querySelector('.checkout-arrow-client-rating.left-client-rating');
+let rightButtonClientRating = document.querySelector('.checkout-arrow-client-rating.right-client-rating');
+let trackClientRating = document.querySelector('.checkout-carousel-client-rating-track');
+let currentPageClientRating = document.querySelector('.current-page-client-rating');
+let totalPageClientRating = document.querySelector('.total-pages-client-rating');
+let pagesClientRating = document.querySelectorAll('.checkout-carosel-client-rating-page');
+/*totalPageClientRating.innerHTML = pagesClientRating.length;*/
+
+let currentIndexClientRating = 0;
+let pageWidthClientRating = document.querySelector('.checkout-carousel-client-rating').clientWidth;
+
+function updateCarouselClientRating(){
+
+    trackClientRating.style.transform = `translateX(-${currentIndexClientRating * pageWidthClientRating}px)`;
+    /*currentPageClientRating.innerHTML = currentIndexClientRating + 1;*/
+    if(currentIndexClientRating === 0){
+        leftButtonClientRating.disabled = true;
+    }
+    else{
+        leftButtonClientRating.disabled = false;
+    }
+    if(currentIndexClientRating === pagesClientRating.length - 1){
+        rightButtonClientRating.disabled = true;
+    }
+    else{
+        rightButtonClientRating.disabled = false;
+    }
+}
+leftButtonClientRating.addEventListener('click', () => {
+    if(currentIndexClientRating > 0){
+        currentIndexClientRating--;
+        updateCarouselClientRating();
+    }
+});
+rightButtonClientRating.addEventListener('click', () => {
+    if(currentIndexClientRating < pagesClientRating.length - 1){
+        currentIndexClientRating++;
+        updateCarouselClientRating();
+    }
+});
+
+updateCarouselClientRating();         // Initialize carousel state
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+const productDetailsList = document.querySelectorAll('.product-details-container'); // product details list element
+
+productDetailsList.forEach(element => {
+    matchingProduct.productDetails.forEach(detail => {
+        const detailItem = document.createElement('div');
+        detailItem.classList.add('product');
+        detailItem.innerHTML = detail;
+        element.appendChild(detailItem);
+    });
+});
 
