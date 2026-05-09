@@ -958,7 +958,7 @@ function bigImageGenerator(matchProduct){
 bigImageGenerator(matchingProduct);                                         // Call the function 
 
 //////////////////////////////////////////////////////////////////
-
+}
 /**
  * @brief This script handles carousel for product video rating by clients functionality
  */
