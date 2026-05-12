@@ -298,17 +298,21 @@
     font-size: 20px;
     font-weight: bold;
 }
-
+.down-button3,
+.up-button3,
 .down-button,
 .up-button{
     border: none;
     background-color: white;
 }
+.empty-div2,
+.empty-div3,
 .empty-div{
     font-family: Nunito, sans-serif;
     font-size: 14px;
     width: 490px;
     height: auto;
+    font-weight: bold;
 }
 .report-issue{
     display: flex;
@@ -479,13 +483,11 @@
 .main-checkout{
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     padding-left: 10px;
     padding-right: 10px;
     flex-shrink: 0;
     border: 1px solid grey;
     width: 270px;
-    /*height: 780px;*/
     height: auto;
     border-radius: 5px;
     gap: 15px;
@@ -666,8 +668,15 @@
 .title-container span{
     margin: 10px 0px;
 }
+
 .title-hr{
     width: 1175px;
+    height: 1px;
+    background-color: grey;
+}
+.title1-hr-product-details{
+    margin-top: 40px;
+    width: 1460px;
     height: 1px;
     background-color: grey;
 }
@@ -1101,7 +1110,7 @@
 .product{
     font-family: Nunito, sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
 }
 /* End of Product description section*/
 

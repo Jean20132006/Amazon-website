@@ -69,52 +69,6 @@ if (matchingProduct) {
     productDescriptionTitle.style.display = "none";
     clothesComputerBigCarouselBackground.style.backgroundImage = `url('${matchingProduct.backgroundImage}')`;
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
-    /**
-     * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
-     * clothing and computer products
-     */
-    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
-    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
-    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
-    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
-    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
-    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
-    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
-
-    let currentIndexBigCarousel = 0;
-    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
-    function updateCarouselBigCarousel(){
-        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
-        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
-        if(currentIndexBigCarousel === 0){
-            leftButtonBigCarousel.disabled = true;
-        }
-        else{
-            leftButtonBigCarousel.disabled = false;
-        }
-        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
-            rightButtonBigCarousel.disabled = true;
-        }
-        else{
-            rightButtonBigCarousel.disabled = false;
-        }
-    }
-    leftButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel > 0){
-            currentIndexBigCarousel--;
-            updateCarouselBigCarousel();
-        }
-    });
-    rightButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
-            currentIndexBigCarousel++;
-            updateCarouselBigCarousel();
-        }
-    });
-
-    updateCarouselBigCarousel();         // Initialize carousel state
   }
   ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -151,7 +105,7 @@ if (matchingProduct) {
   productDetails[6].textContent = `Units : ${matchingProduct.productDetails.units}`;*/
 
   productVideo1.src = matchingProduct.videos.galleryVideos[0];
-  productVideo2.src = matchingProduct.videos.galleryVideos[1];
+  //productVideo2.src = matchingProduct.videos.galleryVideos[1];
   
   manifacturerFirstRow.src = matchingProduct.manifacturer.image1;
   proteinImage.src = matchingProduct.manifacturer.image2;
@@ -275,7 +229,9 @@ if (matchingProduct) {
 } else {
   document.body.innerHTML = "Product not found";
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////// HANDLES DELIVERY DATE CALCULATIONS AND RENDERING //////////////////////////
 /**
  * @brief This function calculates the delivery date based on the number of days 
  * @param {number} days - The number of days until delivery
@@ -353,8 +309,9 @@ function renderShipping(product){
   `<span class="fastest">Or fastest delivery ${tomorrow}</span>`;*/
 
 }
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////// UPDATE THE TIMER FOR SHIPPING CUTOFF //////////////////////////////////
 /**
  * @brief Updates the timer display based on the remaining time until the shipping cutoff
  *  
@@ -384,14 +341,17 @@ function updateTimer(){
 setInterval(updateTimer,60000);              // Update the timer every minutes
 updateTimer();
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/////// HANDLES DROP DOWN FUNCTIONALITY FOR INGREDIENTS AND ABOUT THIS ITEM SECTIONS /////
  /** 
-  * @brief Script to handle drop down functionality for Ingredients section in checkout page
+  * @brief Script to handle drop down functionality for Ingredients section or Product Details
+  *        in checkout page
   * @param {HTMLElement} downButton - The dropdown button element
   * @param {HTMLElement} ingredientsSection - The section to show/hide content
  */
-let downButton = document.querySelector('.down-button');
-let ingredientsSection = document.querySelector('.empty-div');
+const downButton = document.querySelector('.down-button');
+const ingredientsSection = document.querySelector('.empty-div');
 
 downButton.addEventListener('click', () => {
     if(downButton.classList.contains('down-button')){
@@ -409,17 +369,19 @@ downButton.addEventListener('click', () => {
         downButton.classList.replace('up-button', 'down-button');
     }
 });
+/////////////////////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////////////////////////
 /** 
  * @brief This Script handle the About this item drop down
  * @param {HTMLElement} downButton2 - The dropdown button element
  * @param {HTMLElement} aboutSection - The section to show/hide content
  */
-let downButton2 = document.querySelector('.down-button2');
-let aboutSection= document.querySelector('.empty-div2');
+const downButton2 = document.querySelector('.down-button2');
+const aboutSection= document.querySelector('.empty-div2');
 downButton2.addEventListener('click', () =>{
     if(downButton2.classList.contains('down-button2')){
-        aboutSection.innerHTML= `Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack`;
+        aboutSection.innerHTML= `${toggleAboutSection(matchingProduct)}`;
         downButton2.innerHTML= `<i class="bi bi-chevron-up"></i>`;
         downButton2.classList.replace('down-button2', 'up-button2');
     }
@@ -429,7 +391,24 @@ downButton2.addEventListener('click', () =>{
         downButton2.classList.replace('up-button2', 'down-button2');
     }
 });
-//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////// FUNCTION TO TOGGLE ABOUT THIS ITEM SECTION CONTENT ////////////////
+
+function toggleAboutSection(matchProduct) {
+    const aboutContent = document.querySelector('.empty-div2');
+    const ulContainer = document.createElement('ul');
+    matchProduct.about.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = item;
+        ulContainer.appendChild(listItem);
+    });
+    return ulContainer.outerHTML; // Return the HTML string of the unordered list that include <ul> tag
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////// HANDLES CAROUSEL REVIEW FUNCTIONALITY ////////////////////////////
 
 /**
  * @brief This script handles carousel review functionality
@@ -477,7 +456,9 @@ rightButtonReview.addEventListener('click', () => {
 
 updateCarouselReview();         // Initialize carousel state
 
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////// HANDLES MULTIPLE CHECKOUT CAROUSELS INDEPENDENTLY /////////////////////
 /**
  * @brief Handles multiple checkout carousels independently
  */
@@ -535,7 +516,7 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 });
 
 
-//////////////////////////////////////////////////////////////////
+///////////////////////// HANDLES VIDEO CAROUSEL FUNCTIONALITY ////////////////////////////
 /**
  * @brief This script handles carousel video functionality
  */
@@ -579,7 +560,7 @@ rightButtonVideo.addEventListener('click', () => {
 // Initialize carousel state
 updateCarouselVideo();
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// HANDLES PROGRESS BAR FUNCTIONALITY ////////////////////////////
 /**
  * @brief This script handles progress bar functionality
  */
@@ -597,7 +578,9 @@ window.addEventListener('DOMContentLoaded', () => {
     progressBar4.style.width = 1 + '%';
     progressBar5.style.width = 4 + '%';
 });
+/////////////////////////////////////////////////////////////////////////////////////////////
 
+////////////////// Customer Reviews and Ratings Drop Down Functionality /////////////////////
 /**
  * @brief This script handles the customer reviews and ratings drop down
  * @param {HTMLElement} customerReviewsButton - The dropdown button element
@@ -623,20 +606,9 @@ customerReviewsButton.addEventListener('click', () => {
     }
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////
-/**
- * @brief This script handles the functionality of changing the main image 
- * when hovering over the color options in checkout page
- * @param {NodeList} buttonMouseover - The color option buttons
- * @param {HTMLElement} mainImage3 - The main image element to update
- */
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
+/////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
 
 /**
  * @brief This script handles the add to cart functionality on the checkout page
@@ -675,9 +647,10 @@ addToCart();
 let CheckoutCartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
 const cartNumberElement = document.querySelector('.js-cart-num-items');
 cartNumberElement.innerText = CheckoutCartNumberItems;
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////Generate dynamically carousels for checkout page////////////////////////////////////////
+//////////////////////// END OF CART FUNCTIONALITIES ////////////////////////////////////////
+
+/////////////////////// Generate dynamically carousels for checkout page/////////////////////
 
 /*const carousels = [
   { title: "Health & Nutrition", filter: p => p.category === "health" },
@@ -733,7 +706,9 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
 
   document.body.appendChild(container);
 }*/
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////// This part handles Electronics and Clothing specific functionalities///////////////
 
 /**
  * @brief This if statement handles the functionalities that are in electronics and clothing
@@ -743,222 +718,371 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
  *        sections, setting background images, and initializing carousels for clothes and computers.
  */
 if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
-//////////////////////////////// Choose Items color & its carousel code ///////////////////////////////////////////////////////
 
-/**
- * @brief This script  dynamically carousel to choose color functionality in checkout page
- * @note The carousel displays color options in a paginated format, allowing users to navigate through different color choices 
- *       for the product. Each page of the carousel contains a set number of color options, and users can click 
- *       on the left and right arrows to navigate between pages. The carousel dynamically generates its content based 
- *       on the available color options for the product.
- */
+    ////////////////////////Big Carousel in Electronics and Clothing////////////////////////////////////////////
 
-const itemsPerColumn = 3;                                                      // Number of items to display in each column
-const columnsPerPage = 6;                                                      // Number of columns to display in each page
-
-const track = document.querySelector(".checkout-carousel-color-track");        // The container element where the carousel pages will be added
-
-function generateCarousel(items) {
-  track.innerHTML = "";                                                        // Clear previous content
-
-  const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
-
-  for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
-    const pageDiv = document.createElement("div");                                // Create a new page container
-    pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
-
-    for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
-      const columnDiv = document.createElement("div");                            // Create a new column container
-      columnDiv.classList.add("column-color");                                    // Add class for styling
-
-      // Calculate start index of items for this column
-      const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
-      const endIndex = startIndex + itemsPerColumn;
-
-      items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
-        const button = document.createElement("button");
-        button.classList.add("item-color");
-        button.dataset.id = item.id;
-        // Set button content with image and price information
-        button.innerHTML = `
-          <img src="${item.img}" alt="color option ${item.id}">                  
-          <div class="item-color-horizontal-line"></div>
-          <div class="item-color-price">$${item.price.toFixed(2)}</div>
-          <div class="item-color-listprice">${item.listPrice ? `$${item.listPrice.toFixed(2)}` : ''}</div>
-        `;
-
-        columnDiv.appendChild(button);                                            // Add button to the column container
-      });
-
-      pageDiv.appendChild(columnDiv);                                             // Add column to the page container
-    }
-
-    track.appendChild(pageDiv);                                                   // Add page to the carousel track
-  }
-
-  displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
-
-}
-
-generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-/**
-     * @brief This script handles carousel to choose color functionality in checkout page
-     * @note this script the page navigation. It updates the carousel's position based on the current 
-     * page index and enables/disables navigation buttons accordingly.
+    /**
+     * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
+     * clothing and computer products
      */
-    let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
-    let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
-    let trackColor = document.querySelector('.checkout-carousel-color-track');
-    let currentPageColor = document.querySelector('.current-page-color');
-    let totalPageColor = document.querySelector('.total-pages-color');
-    let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
-    totalPageColor.innerHTML = pagesColor.length;
+    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
+    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
+    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
+    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
+    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
+    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
+    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
 
-    let currentIndexColor = 0;
-    let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
-    function updateCarouselColor(){
-        trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
-        currentPageColor.innerHTML = currentIndexColor + 1;
-        if(currentIndexColor === 0){
-            leftButtonColor.disabled = true;
+    let currentIndexBigCarousel = 0;
+    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
+    function updateCarouselBigCarousel(){
+        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
+        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
+        if(currentIndexBigCarousel === 0){
+            leftButtonBigCarousel.disabled = true;
         }
         else{
-            leftButtonColor.disabled = false;
+            leftButtonBigCarousel.disabled = false;
         }
-        if(currentIndexColor === pagesColor.length - 1){
-            rightButtonColor.disabled = true;
+        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
+            rightButtonBigCarousel.disabled = true;
         }
         else{
-            rightButtonColor.disabled = false;
+            rightButtonBigCarousel.disabled = false;
         }
     }
-    leftButtonColor.addEventListener('click', () => {
-        if(currentIndexColor > 0){
-            currentIndexColor--;
-            updateCarouselColor();
+    leftButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel > 0){
+            currentIndexBigCarousel--;
+            updateCarouselBigCarousel();
         }
     });
-    rightButtonColor.addEventListener('click', () => {
-        if(currentIndexColor < pagesColor.length - 1){
-            currentIndexColor++;
-            updateCarouselColor();
+    rightButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
+            currentIndexBigCarousel++;
+            updateCarouselBigCarousel();
         }
     });
 
-    updateCarouselColor();         // Initialize carousel state
+    updateCarouselBigCarousel();         // Initialize carousel state
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////
 
-/**
- * @brief This function handles the functionality of changing the main image on checkout page
- *        when clicking on the color options in checkout page
- * @note Instead of adding individual event listeners to each button, this approach adds a 
- *       single event listener 
- *       to the parent container of the cart items. When a click event occurs, it gets the 
- *       id of the clicked button and updates the main image accordingly. This method is more 
- *       efficient and scalable, especially when dealing with a large number of buttons or dynamically 
- *       generated content.
- * @param document.querySelector('.js-add-to-cart-corbeille-cart')
- *        -parent container element that holds all buttons for the cart items.
- * @param e - is the event object, It contains information about the click (where it happened, which element was clicked, etc.) 
- *       for identifying the cart item.
- * 
- * @code {JavaScript} 
- *       .addEventListener('click', (e) => { ... }); //Listen for ANY click inside a container.
- * @code {JavaScript} 
- *      const button = e.target.closest('.cart-action-btn'); // Find the actual button that was clicked
- *                                                              (even if user clicked icon inside it)
- */
+    ////////////////////// Choose Items color & its carousel code /////////////////////////////////
 
-function displayMainImage(matchProduct){
-    const buttonSelectItem = document.querySelectorAll('.item-color');
-    const mainImage2 = document.querySelector('.js-image-section');
-    const track = document.querySelector(".checkout-carousel-color-track");
-    track.addEventListener('click', (e) => {
-        const button = e.target.closest('.item-color');
-        if(button){
-            let buttonId = button.dataset.id;
-            mainImage2.src = `${matchProduct[buttonId - 1].img}`;
-            buttonSelectItem.forEach((btn) => {
-                btn.style.border = "1px solid grey";
-                btn.style.borderRadius = "5px";
-            });
-            button.style.border = "2px solid blue";
-        }
-    });
-}
+    /**
+     * @brief This script  dynamically carousel to choose color functionality in checkout page
+     * @note The carousel displays color options in a paginated format, allowing users to navigate through different color choices 
+     *       for the product. Each page of the carousel contains a set number of color options, and users can click 
+     *       on the left and right arrows to navigate between pages. The carousel dynamically generates its content based 
+     *       on the available color options for the product.
+     */
 
-//////////////////////////////////////////////////////////////////
+    const itemsPerColumn = 3;                                                      // Number of items to display in each column
+    const columnsPerPage = 6;                                                      // Number of columns to display in each page
 
-/**
- * @brief This function generates dynamically the list of size buttons for clothes items
- * @param {*} matchProduct is the matching product 
- */
+    const track = document.querySelector(".checkout-carousel-color-track");        // The container element where the carousel pages will be added
 
-function GenerateItemSize(matchProduct){
-    const selectButtonSize = document.querySelector('.items-size')
-    const allButtons = document.querySelector('.items-size-buttons');
-    let numBttonPerRow = 7;
-    let numButtons = matchProduct.size.length;
-    let numberOfDiv = Math.ceil(numButtons/numBttonPerRow);
-    let j = 0;
-    if(matchProduct.size.length < 7){
-        numBttonPerRow = matchProduct.size.length;
-    }
-    else{
-        numBttonPerRow = 7;
-    }
+    function generateCarousel(items) {
+    track.innerHTML = "";                                                        // Clear previous content
 
-    for(let i = 0; i < numberOfDiv; ++i){
-        let rowDiv = document.createElement("div");
-        rowDiv.classList.add("items-size-buttons");
-        let startIndex = i * numBttonPerRow;
-        let endIndex = (i + 1) * numBttonPerRow;
+    const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
 
-        (matchProduct.size).slice(startIndex, endIndex).forEach((element) => {
-            let button = document.createElement("button");
-            button.classList.add("item-size-btton");
-            button.innerHTML = `${matchProduct.size[j]}`;
-            j = j + 1;
-            button.dataset.id = j;                                    // set the id for each button
-            rowDiv.appendChild(button);
+    for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+        const pageDiv = document.createElement("div");                                // Create a new page container
+        pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
+
+        for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
+        const columnDiv = document.createElement("div");                            // Create a new column container
+        columnDiv.classList.add("column-color");                                    // Add class for styling
+
+        // Calculate start index of items for this column
+        const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
+        const endIndex = startIndex + itemsPerColumn;
+
+        items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
+            const button = document.createElement("button");
+            button.classList.add("item-color");
+            button.dataset.id = item.id;
+            // Set button content with image and price information
+            button.innerHTML = `
+            <img src="${item.img}" alt="color option ${item.id}">                  
+            <div class="item-color-horizontal-line"></div>
+            <div class="item-color-price">$${item.price.toFixed(2)}</div>
+            <div class="item-color-listprice">${item.listPrice ? `$${item.listPrice.toFixed(2)}` : ''}</div>
+            `;
+
+            columnDiv.appendChild(button);                                            // Add button to the column container
         });
 
-        selectButtonSize.appendChild(rowDiv);
+        pageDiv.appendChild(columnDiv);                                             // Add column to the page container
+        }
+
+        track.appendChild(pageDiv);                                                   // Add page to the carousel track
     }
-}
-if(matchingProduct.categories === "clothing"){
-    GenerateItemSize(matchingProduct);
+
+    displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
+
+    }
+
+    generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
+
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    /////////////////Navigation for color carousel in checkout page//////////////////////
+    /**
+         * @brief This script handles carousel to choose color functionality in checkout page
+         * @note this script the page navigation. It updates the carousel's position based on the current 
+         * page index and enables/disables navigation buttons accordingly.
+         */
+        let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
+        let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
+        let trackColor = document.querySelector('.checkout-carousel-color-track');
+        let currentPageColor = document.querySelector('.current-page-color');
+        let totalPageColor = document.querySelector('.total-pages-color');
+        let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
+        totalPageColor.innerHTML = pagesColor.length;
+
+        let currentIndexColor = 0;
+        let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
+        function updateCarouselColor(){
+            trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
+            currentPageColor.innerHTML = currentIndexColor + 1;
+            if(currentIndexColor === 0){
+                leftButtonColor.disabled = true;
+            }
+            else{
+                leftButtonColor.disabled = false;
+            }
+            if(currentIndexColor === pagesColor.length - 1){
+                rightButtonColor.disabled = true;
+            }
+            else{
+                rightButtonColor.disabled = false;
+            }
+        }
+        leftButtonColor.addEventListener('click', () => {
+            if(currentIndexColor > 0){
+                currentIndexColor--;
+                updateCarouselColor();
+            }
+        });
+        rightButtonColor.addEventListener('click', () => {
+            if(currentIndexColor < pagesColor.length - 1){
+                currentIndexColor++;
+                updateCarouselColor();
+            }
+        });
+
+        updateCarouselColor();         // Initialize carousel state
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+    ///// Main image update when clicking on color options in checkout page ////////////////
+
+    /**
+     * @brief This function handles the functionality of changing the main image on checkout page
+     *        when clicking on the color options in checkout page
+     * @note Instead of adding individual event listeners to each button, this approach adds a 
+     *       single event listener 
+     *       to the parent container of the cart items. When a click event occurs, it gets the 
+     *       id of the clicked button and updates the main image accordingly. This method is more 
+     *       efficient and scalable, especially when dealing with a large number of buttons or dynamically 
+     *       generated content.
+     * @param document.querySelector('.js-add-to-cart-corbeille-cart')
+     *        -parent container element that holds all buttons for the cart items.
+     * @param e - is the event object, It contains information about the click (where it happened, which element was clicked, etc.) 
+     *       for identifying the cart item.
+     * 
+     * @code {JavaScript} 
+     *       .addEventListener('click', (e) => { ... }); //Listen for ANY click inside a container.
+     * @code {JavaScript} 
+     *      const button = e.target.closest('.cart-action-btn'); // Find the actual button that was clicked
+     *                                                              (even if user clicked icon inside it)
+     */
+
+    function displayMainImage(matchProduct){
+        const buttonSelectItem = document.querySelectorAll('.item-color');
+        const mainImage2 = document.querySelector('.js-image-section');
+        const track = document.querySelector(".checkout-carousel-color-track");
+        track.addEventListener('click', (e) => {
+            const button = e.target.closest('.item-color');
+            if(button){
+                let buttonId = button.dataset.id;
+                mainImage2.src = `${matchProduct[buttonId - 1].img}`;
+                buttonSelectItem.forEach((btn) => {
+                    btn.style.border = "1px solid grey";
+                    btn.style.borderRadius = "5px";
+                });
+                button.style.border = "2px solid blue";
+            }
+        });
+    }
+
+    //////////////////////////////////////////////////////////////////
+
+    /////// Item size buttons for clothes items in checkout page //////////
+
+    /**
+     * @brief This function generates dynamically the list of size buttons for clothes items
+     * @param {*} matchProduct is the matching product 
+     */
+
+    function GenerateItemSize(matchProduct){
+        const selectButtonSize = document.querySelector('.items-size')
+        const allButtons = document.querySelector('.items-size-buttons');
+        let numBttonPerRow = 7;
+        let numButtons = matchProduct.size.length;
+        let numberOfDiv = Math.ceil(numButtons/numBttonPerRow);
+        let j = 0;
+        if(matchProduct.size.length < 7){
+            numBttonPerRow = matchProduct.size.length;
+        }
+        else{
+            numBttonPerRow = 7;
+        }
+
+        for(let i = 0; i < numberOfDiv; ++i){
+            let rowDiv = document.createElement("div");
+            rowDiv.classList.add("items-size-buttons");
+            let startIndex = i * numBttonPerRow;
+            let endIndex = (i + 1) * numBttonPerRow;
+
+            (matchProduct.size).slice(startIndex, endIndex).forEach((element) => {
+                let button = document.createElement("button");
+                button.classList.add("item-size-btton");
+                button.innerHTML = `${matchProduct.size[j]}`;
+                j = j + 1;
+                button.dataset.id = j;                                    // set the id for each button
+                rowDiv.appendChild(button);
+            });
+
+            selectButtonSize.appendChild(rowDiv);
+        }
+    }
+    if(matchingProduct.categories === "clothing"){
+        GenerateItemSize(matchingProduct);
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    //////// Generate Big images for clothes and computers in checkout page //////////
+
+    /**
+     * This function generates dynamically big images in clothes and computers checkout pages
+     * @param {*} matchProduct: matchingProduct 
+     */
+    function bigImageGenerator(matchProduct){
+        const bigImageContainer = document.querySelector('.clothes-computers-image-container');
+        let imageArrayLength = matchProduct.manifacturer.bigImages.length;
+
+        for (let i = 0; i < imageArrayLength; ++i) {
+
+            const img = document.createElement('img');                         // Create image
+            img.classList.add('js-clothes-computers-image-container');         // Add class
+            img.src = matchProduct.manifacturer.bigImages[i];                  // Set image source
+            img.alt = `${matchProduct.brand}`;                                 // add alt
+
+            bigImageContainer.appendChild(img);                                // Append image into container
+        }
+    }
+
+    bigImageGenerator(matchingProduct);                                         // Call the function 
+
+    //////////////////////////////////////////////////////////////////
 }
 
+/////////////////////////End of Electronics and Clothing specific code////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////// PRODUCT DETAILS SECTION IN CHECKOUT PAGE FOR ALL PAGES ////////////////
 
 /**
- * This function generates dynamically big images in clothes and computers checkout pages
- * @param {*} matchProduct: matchingProduct 
+ * @brief This script handles the product details section in checkout page for all pages
+ * @note This script dynamically generates the product details section in the checkout page 
+ *       for all pages. It iterates through the list of product details and creates a new div 
+ *       element for each detail, which is then appended to the product details container in the HTML. This allows for a dynamic and flexible way to display product information based on the specific details of each product.
  */
-function bigImageGenerator(matchProduct){
-    const bigImageContainer = document.querySelector('.clothes-computers-image-container');
-    let imageArrayLength = matchProduct.manifacturer.bigImages.length;
+function generateProductDetails(matchProduct){
+    const productDetailsList = document.querySelectorAll('.product-details-container'); // product details list element
 
-    for (let i = 0; i < imageArrayLength; ++i) {
+    productDetailsList.forEach(element => {
+        matchProduct.productDetails.forEach(detail => {
+            const detailItem = document.createElement('div');
+            detailItem.classList.add('product');
+            detailItem.innerHTML = detail;
+            element.appendChild(detailItem);
+        });
+    });
+    //return productDetailsList[0].outerHTML; // Return the HTML string of the first product details container that include <div class="product-details-container"> tag
+}
 
-        const img = document.createElement('img');                         // Create image
-        img.classList.add('js-clothes-computers-image-container');         // Add class
-        img.src = matchProduct.manifacturer.bigImages[i];                  // Set image source
-        img.alt = `${matchProduct.brand}`;                                 // add alt
+generateProductDetails(matchingProduct);
 
-        bigImageContainer.appendChild(img);                                // Append image into container
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////// GENERATE DYNAMICALLY CAROUSELS /////////////////////////////////////
+
+const carousels = [
+  { title: "PRODUCT VIDEOS", filter: p => p.categories[1] === matchingProduct.categories[1] },
+];
+
+// Generate carousel HTML for each category
+carousels.forEach(carousel => {
+  const filteredProducts = products.filter(carousel.filter);
+  //const filteredProducts = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
+
+  renderCarousel(carousel.title, filteredProducts);
+});
+
+// Function to render a carousel given a title and list of products
+function renderCarousel(title, items) {
+
+    const clientRatingCarouselTrack = document.querySelector('.checkout-carousel-client-rating-track');
+    let HTMLSummary = "";
+
+    // Create pages with 3 items each
+    const itemsPerPage = 3;
+
+    for (let i = 0; i < items.length; i += itemsPerPage) {
+        const page = document.createElement("div");
+        page.classList.add("checkout-carosel-client-rating-page");
+
+        items.slice(i, i + itemsPerPage).forEach(product => {
+            HTMLSummary += `
+                                <div class="checkout-carousel-client-rating-img">
+                                    <img class="js-checkout-carousel-client-rating-img" src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                                    <div class="checkout-carousel-client-rating-text">
+                                        <span class="checkout-carousel-client-rating-text">
+                                            ${product.shortTitle}...
+                                        </span>
+                                        <div class="carousel-img-reviews">
+                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">
+                                            <span class="carousel-reviews">${product.rating.totalReviews}</span>
+                                        </div>
+                                        <div class="price-indollar">
+                                            <span class="dollar-sign">$</span>
+                                            <span class="dollars-amount">${product.price.priceDollar}</span>
+                                            <span class="cents">${product.price.priceCents}</span>
+                                            <span class="price-per-ounce"></span>
+                                        </div>
+                                    </div>
+                                </div>  
+                                `;
+        
+        });
+
+        page.innerHTML = HTMLSummary;
+        clientRatingCarouselTrack.appendChild(page);
+        HTMLSummary = "";                                     // Reset HTML summary for the next page
     }
 }
 
-bigImageGenerator(matchingProduct);                                         // Call the function 
+/////////////////////// GENERATE DYNAMICALLY CAROUSELS /////////////////////
 
-//////////////////////////////////////////////////////////////////
-}
+
+//////////// CAROUSELS FOR PRODUCT VIDEO and PRODUCT VIDEO RATING BY CLIENTS ///////////
 /**
  * @brief This script handles carousel for product video rating by clients functionality
  */
@@ -1007,14 +1131,96 @@ updateCarouselClientRating();         // Initialize carousel state
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-const productDetailsList = document.querySelectorAll('.product-details-container'); // product details list element
+/////////////////////// GENERATE DYNAMICALLY THE VIDEO FOR THIS PRODUCT ///////////////
 
-productDetailsList.forEach(element => {
-    matchingProduct.productDetails.forEach(detail => {
-        const detailItem = document.createElement('div');
-        detailItem.classList.add('product');
-        detailItem.innerHTML = detail;
-        element.appendChild(detailItem);
+/**
+ * @brief This function handles the functionality of generating dynamically the video for this 
+ *        product section in checkout page
+ * @note This script filters the products based on the category of the matching product and 
+ *       generates a carousel of videos related to the product being viewed. It creates HTML 
+ *       elements for each video and appends them to the designated section in the checkout page, 
+ *       allowing users to view videos that are relevant to the product they are purchasing.
+ */
+function renderVideoCarouselClientRating(matchItem){
+
+    const filteredProductsVideo = products.filter(p => p.categories [1] === matchItem.categories[1]);
+    const videoForThisProduct = document.querySelector('.video-for-this-product');
+    /*const videoForThisProductTitle = document.createElement('span');
+    videoForThisProductTitle.classList.add('video-for-this-product-title');
+    videoForThisProductTitle.innerHTML = "Video for this product";
+    videoForThisProduct.appendChild(videoForThisProductTitle);*/
+
+    let HTMLSummaryVideo = "";
+    filteredProductsVideo.forEach(product => {
+        HTMLSummaryVideo += `<div class="product-video">
+                        <video id="product-video" controls >
+                            <source src="${product.videos.galleryVideos[0]}" type="video/mp4">
+                        </video>
+                        <span class="product-video-text">
+                            ${product.shortTitle}
+                        </span>
+                    </div>`;
     });
+
+    videoForThisProduct.innerHTML += HTMLSummaryVideo;
+}
+
+renderVideoCarouselClientRating(matchingProduct);
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////// GENERATE DYNAMICALLY FREQUENTLY BOUGHT TOGETHER SECTION IN CHECKOUT PAGE /////
+
+const filteredBoughtTogether = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
+
+const frequentlyBoughtTogether = document.querySelector('.products-totalPrice');
+let totalPrice = 0;
+
+if (filteredBoughtTogether.length > 3) {
+    filteredBoughtTogether.length = 3; // Limit to 3 products
+}
+let HTMLSummaryBoughtTogether = "";
+filteredBoughtTogether.forEach((product, index) => {
+    totalPrice += Number(product.price.currentPriceInCents);
+    HTMLSummaryBoughtTogether += `
+                <div class="first-image">
+                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}}">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>
+                        ${product.shortTitle}
+                        $${product.price.currentPrice} ${displayPricePerOunce(product)}
+                    </span>
+                </div>
+                `;
+                if(index < filteredBoughtTogether.length - 1){
+                    HTMLSummaryBoughtTogether += `<div class="plus-sign">+</div>`;
+                }
 });
+let text = filteredBoughtTogether.length > 1 ? `Add all ${filteredBoughtTogether.length} to cart` : `Add to cart`;
+HTMLSummaryBoughtTogether += `
+                <div class="totalprice">
+                    <span>Total price: 
+                        <span class="total-price-container">$${(totalPrice / 100).toFixed(2)}</span>
+                    </span>
+                    <button class="add-all-3-to-cart">${text}</button>
+                </div>`;
+frequentlyBoughtTogether.innerHTML = HTMLSummaryBoughtTogether;
+console.log(frequentlyBoughtTogether);
+
+//////////////////// UTILITY FUNCTION TO DISPLAY PRICE PER OUNCE ////////////////////////////
+function displayPricePerOunce(matchProduct){
+    if (matchProduct.categories[0] === "drink"){
+        let fluidOunce = `(${matchProduct.price.pricePerUnit}/fluid ounce)`;
+        return fluidOunce;
+    }
+    else{
+        fluidOunce = "";
+        return fluidOunce;
+    }
+}
+
+
+
+
+
 

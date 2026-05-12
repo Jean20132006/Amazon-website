@@ -4,16 +4,19 @@
 
   title: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
 
-  shortTitle: "Core Power Elite Protein Shake",
+  shortTitle: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
 
   brand: "Fairlife",
 
+  productPage: "checkout",
+
   categories: [
     "drink",
+    "beverages",
     "protein shake",
     "nutrition",
-    "Grocery & Gourmet Food",
-    "beverages"
+    "Grocery & Gourmet Food"
+    
   ],
 
   images: {
@@ -149,7 +152,7 @@
     totalSales: 152000
   },
 
-  about: "Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack",
+  about: ["Core Power Elite High Protein Shake, Chocolate, 42g Bottle, 14oz, 12 Pack"],
 
   description:
     "Whether you're working towards a new personal record or you're just trying to stay fit, you should make the most of your workouts, which includes your recovery. That's why Core Power protein shakes are designed to help you refuel, rebuild, rehydrate and recover from your workout. With Core Power Elite Chocolate, you get a protein shake that's packed with 42g of high quality protein, all 9 essential amino acids, electrolytes and a creamy chocolate taste. Its high quality protein from fairlife ultra-filtered milk helps you recover after each and every workout. These delicious ready-to-drink protein shakes come in a variety of different flavors, so you can always satisfy your taste buds. Fueled by fairlife ultra-filtered milk, Core Power Elite is about helping you recover after a workout so you feel good and can tackle the rest of your day. Champion Your Recovery.",
@@ -184,9 +187,11 @@
 
   title: "CELSIUS Sparkling Orange, Functional Essential Energy Drink 12 Fl Oz (Pack of 4)",
 
-  shortTitle: "CELSIUS Sparkling Orange",
+  shortTitle: "CELSIUS Sparkling Orange, Functional Essential Energy Drink",
 
   brand: "Celsius, Inc.",
+
+  productPage: "checkout",
 
   categories: [
     "drink",
@@ -331,6 +336,8 @@
     totalSales: 152000
   },
 
+  about: ["CELSIUS Sparkling Orange, Functional Essential Energy Drink 12 Fl Oz (Pack of 4)"],
+
   description: "CELSIUS is functional, Essential Energy, a better-for-you, premium alternative to traditional energy drinks. As a global, lifestyle fitness drink, CELSIUS was created to help people LIVE FIT, exceed their goals and elevate their everyday lives. Made with proven, premium ingredients, 7 Essential Vitamins and zero sugar, no artificial colors, no aspartame, no high fructose corn syrup and non-GMO. CELSIUS is vegan, gluten-free and Kosher. Our proprietary MetaPlus blend contains green tea extract with EGCG. It also includes guarana seed extract, ginger root for flavor and digestion, vitamin C to help support your immune system, vitamin B for energy production, and chromium to help control hunger, making it an ideal pre-workout drink. Stay active and dazzle your tastebuds with the juicy and citrusy sweet blend of refreshing oranges. Our take on a classic, but without all the sugar! Made with clinically proven ingredients, this carbonated flavor of CELSIUS has the perfect balance of flavor and energy that serves as an awesome pick-me-up for active lifestyles. Make CELSIUS your go-to choice for Essential Energy! CELSIUS is available in 12 oz. slim cans and sold in a 4-pack for convenience.",
 
   features: [
@@ -363,9 +370,11 @@
 
   title: "Premier Protein Shake, Chocolate, 30g Protein, 11.5 fl oz, 12 Pack",
 
-  shortTitle: "Premier Protein Shake",
+  shortTitle: "Premier Protein Shake, Chocolate, 30g Protein, 11.5 fl oz, 12 Pack",
 
   brand: "Premier Nutrition, Inc.",
+
+  productPage: "checkout",
 
   categories: [
     "drink",
@@ -510,6 +519,8 @@
     totalSales: 152000
   },
 
+  about: ["Premier Protein Shake, Chocolate, 30g Protein, 11.5 fl oz, 12 Pack"],
+
   description:
     "Packaged in an 11.5oz bottle, each Premier Protein Shake contains 30g of protein, complete with all the essential amino acids, 1g of sugar, 3–5g of carbs (depending on flavor), 160 calories, 24 vitamins and minerals, and is also low in fat. We use a blend of milk protein concentrate and calcium caseinate to help support your fitness goals. Enjoy a shake as a healthy snack, a breakfast on the go, or as post or pre-workout fuel. They are delicious as is but also highly customizable. Blend with your favorite fruits and vegetables in a smoothie, pour over cereal or oatmeal, or use as a base for proffee (protein coffee) or protein ice cream. Available in 12 core flavors: Bananas & Cream, Cake Batter Delight, Cafe Latte, Caramel, Chocolate, Chocolate Peanut Butter, Cinnamon Roll, Cookie Dough, Cookies & Cream, Peaches & Cream, Strawberries & Cream, and Vanilla. (Seasonal flavors also available for a limited time.)",
 
@@ -543,9 +554,11 @@
 
   title: "Monster Energy Ultra Sunrise, Sugar Free Energy Drink, 16 Fl Oz | Pack of 15",
 
-  shortTitle: "Monster Energy Ultra Sunrise",
+  shortTitle: "Monster Energy Ultra Sunrise, Sugar Free Energy Drink",
 
   brand: "Monster Energy",
+
+  productPage: "checkout",
 
   categories: [
     "drink",
@@ -689,6 +702,8 @@
     totalSales: 152000
   },
 
+  about: ["Monster Energy Ultra Sunrise, Sugar Free Energy Drink, 16 Fl Oz | Pack of 15"],
+
   description:
     "Ultra Sunrise is dedicated to those who sacrifice sleep for passion: catching waves at dawn patrol, up on the bike when the morning dew gives the dirt more grip, or the first pass on that glassy lake kicking off an epic wake session. Ultra Sunrise will get you started but it`s great anytime: light, crisp, and refreshing with a flavor all its own. Packed with a full load of our Monster orange energy blend to keep the fire burning all day long. After all it's always sunrise somewhere.",
 
@@ -722,9 +737,11 @@
 
   title: "Sparkling Ice, Black Raspberry Sparkling Water, Zero Sugar Flavored Water, 17 fl oz Bottles (Pack of 12)",
 
-  shortTitle: "Sparkling Ice",
+  shortTitle: "Sparkling Ice, Black Raspberry Sparkling Water, Zero Sugar",
 
   brand: "Talking Rain Beverage Company",
+
+  productPage: "checkout",
 
   categories: [
     "drink",
@@ -868,6 +885,8 @@
     totalSales: 152000
   },
 
+  about: ["Sparkling Ice, Black Raspberry Sparkling Water, Zero Sugar Flavored Water, 17 fl oz Bottles (Pack of 12)"],
+
   description:
     "This best-selling, succulent flavor makes for one sweet experience. Sparkling Ice Black Raspberry is a fizzy, flavorful sparkling water, without all the calories. Sparkling Ice Black Raspberry flavored sparkling water contains 0g sugar, only 5 calories per bottle, and 0g carbs. Made with better-for-you ingredients, this low-calorie carbonated water is bursting with real fruit flavor, is made with colors from natural sources, and contains vitamins and antioxidants. Enjoy Sparkling Ice as a mocktail or mix it with your drink of choice for a delicious, low calorie cocktail. The product ships in a pack of 12 bottles. Each sparkling water bottle contains 17 fl oz.",
 
@@ -901,9 +920,11 @@
 
   title: "Twinings Lemon & Ginger Herbal Tea, 100 Count (Pack of 1), Tangy Lemon, Spicy Ginger, 100 Teabags",
 
-  shortTitle: "Twinings Lemon & Ginger Tea",
+  shortTitle: "Twinings Lemon & Ginger Herbal Tea, Tangy Lemon, Spicy Ginger",
 
   brand: "Twinings",
+
+  productPage: "checkout",
 
   categories: [
     "drink",
@@ -1047,6 +1068,8 @@
     totalSales: 152000
   },
 
+  about: ["Twinings Lemon & Ginger Herbal Tea, 100 Count (Pack of 1), Tangy Lemon, Spicy Ginger, 100 Teabags"],
+
   description:
     "ZESTY CITRUS FLAVOUR OF LEMON: Blended with the distinct flavour of ginger along with blackberry leaves, lemon peel and lemongrass; Naturally Caffeine Free Herbal, 100 Tea Bags",
 
@@ -1076,9 +1099,11 @@
 
   title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
 
-  shortTitle: "iPad (A16) 11th Generation",
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
 
   brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -1324,9 +1349,11 @@
 
   title: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11 (2022&2021&2020&2018)/ iPad Air 5th & Air 4th Generation(10.9 Inch), Crafted for Natural Writing, Anti Glare, Easy Installation | (10.9 Inch), Anti Glare, Easy Installation",
 
-  shortTitle: "MOBDIK 2 Pack Paperfeel Screen Protector",
+  shortTitle: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11",
 
   brand: "MOBDIK",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -1566,9 +1593,11 @@
 
   title: "Ailun Screen Protector for iPad Pro 11 inch 2025/2024 [6th/5th Generation, M5/M4] 2 Pack + 2 Pack Camera Lens Protector,Tempered Glass 0.33mm,Face ID & Apple Pencil & Case Compatible [4 Pack]",
 
-  shortTitle: "Ailun Screen Protector for iPad Pro",
+  shortTitle: "Ailun Screen Protector for iPad Pro 11 inch 2025/2024",
 
   brand: "Ailun",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -1808,9 +1837,11 @@
 
   title: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025, iPad 10th Generation 10.9 inch 2022, Slim Stand Protective Cover with Hard PC Translucent Back Shell Cover, Support Touch ID, Raspberry",
 
-  shortTitle: "CoBak Case for iPad (A16)",
+  shortTitle: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025",
 
   brand: "CoBak",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -2037,9 +2068,11 @@
 
   title: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025, Lifetime MS Office + Windows 11 Pro, Quad-Core Intel CPU, 16GB RAM & 628GB Storage (128GB UFS+500GB Ext), Wi-Fi 6, HubxcelAccessory, Silver",
 
-  shortTitle: "HP Ultrabook 14 Laptop Computer",
+  shortTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
 
   brand: "HP",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -2259,9 +2292,11 @@
 
   title: "Kenke for iPad 11/10th Gen Case with Pencil Holder 11/10.9 inch 2025 A16/2022, Soft TPU Back Shell Hybrid Slim Trifold Stand Protective Cover Support Touch ID Auto Wake/Sleep (Pink)",
 
-  shortTitle: "Kenke iPad Case",
+  shortTitle: "Kenke for iPad 11/10th Gen Case with Pencil Holder 11/10.9 inch",
 
   brand: "Kenke",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -2492,9 +2527,11 @@
 
   title: "Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercise Equipment, 6-Months Premium Membership Included, GPS, Health Tools and More, Obsidian/Black, One Size (S & L Bands Included)",
 
-  shortTitle: "Fitbit Charge 6 Fitness Tracker with Google apps",
+  shortTitle: "Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercise",
 
   brand: "Fitbit",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -2731,9 +2768,11 @@
 
   title: "KPEP AMOLED Fitness Watches for Women Men with Stress Blood Oxygen Heart Rate Monitor Sleep Tracking 110+ Sport Modes Fitness Tracker Watch Calorie Counter Step Tracker IP68 Waterproof for Andriod iOS",
 
-  shortTitle: "KPEP AMOLED Fitness Watches for Women Men",
+  shortTitle: "KPEP AMOLED Fitness Watches for Women Men with Stress Blood Oxygen",
 
   brand: "KPEP",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "electronics",
@@ -2971,9 +3010,11 @@
 
   title: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
 
-  shortTitle: "The Gym People Thick",
+  shortTitle: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets",
 
   brand: "THE GYM PEOPLE",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -3242,9 +3283,11 @@
 
   title: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
 
-  shortTitle: "The Gym People Thick",
+  shortTitle: "THE GYM PEOPLE Thick High Waist Yoga Pants with Pockets",
 
   brand: "THE GYM PEOPLE",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -3515,9 +3558,11 @@
 
   title: "THE GYM PEOPLE Thick High Waist Capris Yoga Pants with Pockets, Tummy Control Workout Running Yoga Leggings for Women",
 
-  shortTitle: "The Gym People High Waist Capris",
+  shortTitle: "THE GYM PEOPLE Thick High Waist Capris Yoga Pants",
 
   brand: "THE GYM PEOPLE",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -3790,14 +3835,16 @@
 
   title: "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer Crop Tops Slim Fit Y2k Basic Tees for Workout",
 
-  shortTitle: "Trendy Queen Womens Short Sleeve T Shirts",
+  shortTitle: "Trendy Queen Womens Short Sleeve T Shirts - Buttery Soft Summer",
 
   brand: "Trendy Queen",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
-    "leggings",
     "shirts",
+    "leggings",
     "workout",
     "yoga"
     
@@ -4065,6 +4112,8 @@
   shortTitle: "Trendy Queen Womens Short Sleeve V Neck Crop Shirts",
 
   brand: "Trendy Queen",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -4342,6 +4391,8 @@
 
   brand: "Trendy Queen",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "shirts",
@@ -4618,6 +4669,8 @@
   shortTitle: "GAYHAY 3 Pack Basic Tees for Women",
 
   brand: "GAYHAY",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -4897,6 +4950,8 @@
 
   brand: "Trendy Queen",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "shirts",
@@ -5169,6 +5224,8 @@
   shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve",
 
   brand: "WIHOLL",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -5443,6 +5500,8 @@
 
   brand: "WIHOLL",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "shirts",
@@ -5716,6 +5775,8 @@
 
   brand: "WIHOLL",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "shirts",
@@ -5986,9 +6047,11 @@
 
   title: "ANRABESS Womens Short Sleeve Henley Tops V Neck Dressy Casual Blouses Summer Trendy Tee Shirts 2026 Vacation Fashion Clothes",
 
-  shortTitle: "ANRABESS Womens Short Sleeve Henley Tops V",
+  shortTitle: "ANRABESS Womens Short Sleeve Henley Tops V Neck Dressy",
 
   brand: "ANRABESS",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
@@ -6265,6 +6328,8 @@
 
   brand: "AUSELILY",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "dresses",
@@ -6540,6 +6605,8 @@
 
   brand: "Laughido",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "dresses",
@@ -6812,6 +6879,8 @@
 
   brand: "Missufe",
 
+  productPage: "checkoutClothesComputer",
+
   categories: [
     "clothing",
     "dresses",
@@ -7082,6 +7151,8 @@
   shortTitle: "J.VER Men's Dress Shirts",
 
   brand: "J.VER",
+
+  productPage: "checkoutClothesComputer",
 
   categories: [
     "clothing",
