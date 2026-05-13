@@ -17,8 +17,8 @@ if (matchingProduct) {
   const mainImage  = document.querySelector('.js-image-section');                     // main product image
   const imageGallery = document.querySelectorAll('.js-radio-button');                 // image gallery 
   const reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
-  const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
-  const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
+  //const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
+  //const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
   //const productDetails = document.querySelectorAll('.product');                       // product details section
   const productVideo1 = document.getElementById('product-video2');                    // product video element
   const productVideo2 = document.getElementById('product-video');                     // product video element
@@ -84,13 +84,13 @@ if (matchingProduct) {
     reviewImage.src = matchingProduct.images.reviews[index];
   });
 
-  videoElements.forEach((video, index) => {
+  /*videoElements.forEach((video, index) => {
     video.src = matchingProduct.videos.galleryVideos[index];
   });
 
   sponsoredVideosImages.forEach((img, index) => {
     img.src = matchingProduct.videos.galleryVideosImages[index];
-  });
+  });*/
 
   productClientRating.forEach((img, index) => {
     img.src = matchingProduct.videos.galleryVideosImages[index];
@@ -516,49 +516,6 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 });
 
 
-///////////////////////// HANDLES VIDEO CAROUSEL FUNCTIONALITY ////////////////////////////
-/**
- * @brief This script handles carousel video functionality
- */
-let leftButtonVideo = document.querySelector('.checkout-arrow-video.left-video');
-let rightButtonVideo = document.querySelector('.checkout-arrow-video.right-video');
-let trackVideo = document.querySelector('.checkout-carousel-video-track');
-let currentPageVideo = document.querySelector('.current-video-page');
-let totalPageVideo = document.querySelector('.total-video-pages');
-let pagesVideo = document.querySelectorAll('.checkout-carosel-video-page');
-totalPageVideo.innerHTML = pagesVideo.length;
-let currentIndexVideo = 0;
-let pageWidthVideo = document.querySelector('.checkout-carousel-video').clientWidth;
-function updateCarouselVideo(){
-    trackVideo.style.transform = `translateX(-${currentIndexVideo * pageWidthVideo}px)`;
-    currentPageVideo.innerHTML = currentIndexVideo + 1;
-    if(currentIndexVideo === 0){
-        leftButtonVideo.disabled = true;
-    }
-    else{
-        leftButtonVideo.disabled = false;
-    }
-    if(currentIndexVideo === pagesVideo.length - 1){
-        rightButtonVideo.disabled = true;
-    }
-    else{
-        rightButtonVideo.disabled = false;
-    }
-}
-leftButtonVideo.addEventListener('click', () => {
-    if(currentIndexVideo > 0){
-        currentIndexVideo--;
-        updateCarouselVideo();
-    }
-});
-rightButtonVideo.addEventListener('click', () => {
-    if(currentIndexVideo < pagesVideo.length - 1){
-        currentIndexVideo++;
-        updateCarouselVideo();
-    }
-});
-// Initialize carousel state
-updateCarouselVideo();
 
 /////////////////////////// HANDLES PROGRESS BAR FUNCTIONALITY ////////////////////////////
 /**
@@ -989,7 +946,6 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     bigImageGenerator(matchingProduct);                                         // Call the function 
 
-    //////////////////////////////////////////////////////////////////
 }
 
 /////////////////////////End of Electronics and Clothing specific code////////////////////////////
@@ -1022,7 +978,7 @@ generateProductDetails(matchingProduct);
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////// GENERATE DYNAMICALLY CAROUSELS /////////////////////////////////////
+/////////////////////// GENERATE DYNAMICALLY CAROUSELS FOR PRODUCTS VIDEOS /////////////////////////////////////
 
 const carousels = [
   { title: "PRODUCT VIDEOS", filter: p => p.categories[1] === matchingProduct.categories[1] },
@@ -1053,21 +1009,23 @@ function renderCarousel(title, items) {
             HTMLSummary += `
                                 <div class="checkout-carousel-client-rating-img">
                                     <img class="js-checkout-carousel-client-rating-img" src="${product.images.cartImageConfiramation}" alt="${product.brand}">
-                                    <div class="checkout-carousel-client-rating-text">
-                                        <span class="checkout-carousel-client-rating-text">
-                                            ${product.shortTitle}...
-                                        </span>
-                                        <div class="carousel-img-reviews">
-                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">
-                                            <span class="carousel-reviews">${product.rating.totalReviews}</span>
+                                    <a href="${product.productPage}.html?id=${product.id}">
+                                        <div class="checkout-carousel-client-rating-text">
+                                            <span class="checkout-carousel-client-rating-text">
+                                                ${product.shortTitle}...
+                                            </span>
+                                            <div class="carousel-img-reviews">
+                                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">
+                                                <span class="carousel-reviews">${product.rating.totalReviews}</span>
+                                            </div>
+                                            <div class="price-indollar">
+                                                <span class="dollar-sign">$</span>
+                                                <span class="dollars-amount">${product.price.priceDollar}</span>
+                                                <span class="cents">${product.price.priceCents}</span>
+                                                <span class="price-per-ounce"></span>
+                                            </div>
                                         </div>
-                                        <div class="price-indollar">
-                                            <span class="dollar-sign">$</span>
-                                            <span class="dollars-amount">${product.price.priceDollar}</span>
-                                            <span class="cents">${product.price.priceCents}</span>
-                                            <span class="price-per-ounce"></span>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>  
                                 `;
         
@@ -1145,10 +1103,6 @@ function renderVideoCarouselClientRating(matchItem){
 
     const filteredProductsVideo = products.filter(p => p.categories [1] === matchItem.categories[1]);
     const videoForThisProduct = document.querySelector('.video-for-this-product');
-    /*const videoForThisProductTitle = document.createElement('span');
-    videoForThisProductTitle.classList.add('video-for-this-product-title');
-    videoForThisProductTitle.innerHTML = "Video for this product";
-    videoForThisProduct.appendChild(videoForThisProductTitle);*/
 
     let HTMLSummaryVideo = "";
     filteredProductsVideo.forEach(product => {
@@ -1205,7 +1159,6 @@ HTMLSummaryBoughtTogether += `
                     <button class="add-all-3-to-cart">${text}</button>
                 </div>`;
 frequentlyBoughtTogether.innerHTML = HTMLSummaryBoughtTogether;
-console.log(frequentlyBoughtTogether);
 
 //////////////////// UTILITY FUNCTION TO DISPLAY PRICE PER OUNCE ////////////////////////////
 function displayPricePerOunce(matchProduct){
@@ -1218,6 +1171,96 @@ function displayPricePerOunce(matchProduct){
         return fluidOunce;
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/////// GENERATE DYNAMICALLY THE VIDEO CAROUSEL FOR SIMILAR PRODUCT IN CHECKOUT PAGE ///////
+
+const carouselVideostrack = document.querySelector('.checkout-carousel-video-track');
+const videosPerPage = 3;
+const filteredItemsVideo = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
+const filteredItemsLength = filteredItemsVideo.length; 
+
+let HTMLSummaryVideoCarousel = "";
+
+for(let i = 0; i < filteredItemsLength; i += videosPerPage){
+    const pageDiv = document.createElement("div");
+    pageDiv.classList.add("checkout-carosel-video-page");
+
+    filteredItemsVideo.slice(i, i + videosPerPage).forEach(video => {
+        HTMLSummaryVideoCarousel += `
+                    <div class="checkout-carousel-vid">
+                        <video autoplay muted playsinline loop class="js-checkout-carousel-vid">
+                            <source src="${video.videos.galleryVideos[0]}" type="video/mp4">
+                        </video>
+                        <a href="${video.productPage}.html?id=${video.id}">
+                            <div class="sponsored-text-video">
+                                <img class="js-sponsored-text-video" src="${video.videos.galleryVideosImages[0]}" alt="${video.brand}">
+                                <div class="text-garden">
+                                    <span>
+                                        ${video.shortTitle}...<br>
+                                    </span> 
+                                    <span class="clearence">
+                                      -${video.price.discountPercent}% $${video.price.currentPrice}
+                                    </span> 
+                                    <span class="old-price">$${((video.price.currentPriceInCents + (video.price.currentPriceInCents * video.price.discountPercent / 100)) / 100).toFixed(2)}</span>
+                                    <span class="sponsored-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                </div>
+                            </div>
+                        </a>   
+                    </div>`;
+    });
+    pageDiv.innerHTML = HTMLSummaryVideoCarousel;
+    console.log(pageDiv);
+    carouselVideostrack.appendChild(pageDiv);
+    HTMLSummaryVideoCarousel = "";                        // Reset HTML summary for the next page
+}
+
+///////////////////////// HANDLES VIDEO CAROUSEL FUNCTIONALITY ////////////////////////////
+/**
+ * @brief This script handles carousel video functionality
+ */
+let leftButtonVideo = document.querySelector('.checkout-arrow-video.left-video');
+let rightButtonVideo = document.querySelector('.checkout-arrow-video.right-video');
+let trackVideo = document.querySelector('.checkout-carousel-video-track');
+let currentPageVideo = document.querySelector('.current-video-page');
+let totalPageVideo = document.querySelector('.total-video-pages');
+let pagesVideo = document.querySelectorAll('.checkout-carosel-video-page');
+totalPageVideo.innerHTML = pagesVideo.length;
+let currentIndexVideo = 0;
+let pageWidthVideo = document.querySelector('.checkout-carousel-video').clientWidth;
+function updateCarouselVideo(){
+    trackVideo.style.transform = `translateX(-${currentIndexVideo * pageWidthVideo}px)`;
+    currentPageVideo.innerHTML = currentIndexVideo + 1;
+    if(currentIndexVideo === 0){
+        leftButtonVideo.disabled = true;
+    }
+    else{
+        leftButtonVideo.disabled = false;
+    }
+    if(currentIndexVideo === pagesVideo.length - 1){
+        rightButtonVideo.disabled = true;
+    }
+    else{
+        rightButtonVideo.disabled = false;
+    }
+}
+leftButtonVideo.addEventListener('click', () => {
+    if(currentIndexVideo > 0){
+        currentIndexVideo--;
+        updateCarouselVideo();
+    }
+});
+rightButtonVideo.addEventListener('click', () => {
+    if(currentIndexVideo < pagesVideo.length - 1){
+        currentIndexVideo++;
+        updateCarouselVideo();
+    }
+});
+// Initialize carousel state
+updateCarouselVideo();
+
+
+
 
 
 

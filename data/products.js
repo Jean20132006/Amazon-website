@@ -2161,10 +2161,10 @@
       "images/small-images/ipad-1.jpg"
     ],
     bigImages : [
-      "images/big-images/cobak-3.jpg",
-      "images/big-images/cobak-4.jpg",
-      "images/big-images/cobak-5.jpg",
-      "images/big-images/cobak-6.jpg"
+      "images/big-images/HP-1.jpg",
+      "images/big-images/HP-2.jpeg",
+      "images/big-images/HP-3.jpeg",
+      "images/big-images/HP-4.jpeg"
     ]
   },
   fourthBigCarouselTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
