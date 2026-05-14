@@ -17,9 +17,6 @@ if (matchingProduct) {
   const mainImage  = document.querySelector('.js-image-section');                     // main product image
   const imageGallery = document.querySelectorAll('.js-radio-button');                 // image gallery 
   const reviewImages = document.querySelectorAll('.js-checkout-carousel-review-img'); // review images in review carousel
-  //const videoElements = document.querySelectorAll('.js-checkout-carousel-vid');       // video elements in video carousel
-  //const sponsoredVideosImages = document.querySelectorAll('.js-sponsored-text-video');// images for sponsored videos
-  //const productDetails = document.querySelectorAll('.product');                       // product details section
   const productVideo1 = document.getElementById('product-video2');                    // product video element
   const productVideo2 = document.getElementById('product-video');                     // product video element
   const manifacturerFirstRow = document.querySelector('.js-manufacturer-first-row');  // manufacturer first row image
@@ -84,28 +81,11 @@ if (matchingProduct) {
     reviewImage.src = matchingProduct.images.reviews[index];
   });
 
-  /*videoElements.forEach((video, index) => {
-    video.src = matchingProduct.videos.galleryVideos[index];
-  });
-
-  sponsoredVideosImages.forEach((img, index) => {
-    img.src = matchingProduct.videos.galleryVideosImages[index];
-  });*/
-
   productClientRating.forEach((img, index) => {
     img.src = matchingProduct.videos.galleryVideosImages[index];
   });
 
-  /*productDetails[0].textContent = `Product Dimensions : ${matchingProduct.productDetails.productDimensions}`;
-  productDetails[1].textContent = `Item model number : ${matchingProduct.productDetails.modelNumber}`;
-  productDetails[2].textContent = `Department : ${matchingProduct.productDetails.department}`;
-  productDetails[3].textContent = `UPC : ${matchingProduct.productDetails.upc}`;
-  productDetails[4].textContent = `Manufacturer : ${matchingProduct.productDetails.manufacturer}`;
-  productDetails[5].textContent = `ASIN : ${matchingProduct.productDetails.asin}`;
-  productDetails[6].textContent = `Units : ${matchingProduct.productDetails.units}`;*/
-
   productVideo1.src = matchingProduct.videos.galleryVideos[0];
-  //productVideo2.src = matchingProduct.videos.galleryVideos[1];
   
   manifacturerFirstRow.src = matchingProduct.manifacturer.image1;
   proteinImage.src = matchingProduct.manifacturer.image2;
@@ -114,7 +94,7 @@ if (matchingProduct) {
     img.src= matchingProduct.manifacturer.thirdRowImages[index];
   });
 
-  shortTitle.textContent = matchingProduct.shortTitle;
+  shortTitle.textContent = matchingProduct.brand;
 
   fourthRowImage.src = matchingProduct.manifacturer.fourthRowImage;
 
@@ -537,7 +517,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////// Customer Reviews and Ratings Drop Down Functionality /////////////////////
+////////////////// CUSTOMER REVIEWS AND RATINGS DROP DOWN FUNCTIONALITY /////////////////////
 /**
  * @brief This script handles the customer reviews and ratings drop down
  * @param {HTMLElement} customerReviewsButton - The dropdown button element
@@ -599,7 +579,7 @@ function addToCart(){
 }
 addToCart();
 
-///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+///////////////////////// CART QUANTITY DISPLAY IN HEADER /////////////////////////////////////////////
 
 let CheckoutCartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
 const cartNumberElement = document.querySelector('.js-cart-num-items');
@@ -665,7 +645,7 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
 }*/
 
 
-///////////// This part handles Electronics and Clothing specific functionalities///////////////
+///////////// THIS PART HANDLES ELECTRONICS AND CLOTHING SPECIFIC FUNCTIONALITIES///////////////
 
 /**
  * @brief This if statement handles the functionalities that are in electronics and clothing
@@ -676,7 +656,7 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
  */
 if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
 
-    ////////////////////////Big Carousel in Electronics and Clothing////////////////////////////////////////////
+    ////////////////////////BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
 
     /**
      * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
@@ -725,7 +705,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
-    ////////////////////// Choose Items color & its carousel code /////////////////////////////////
+    ////////////////////// CHOOSE ITEMS COLOR & ITS CAROUSEL CODE /////////////////////////////////
 
     /**
      * @brief This script  dynamically carousel to choose color functionality in checkout page
@@ -786,7 +766,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    /////////////////Navigation for color carousel in checkout page//////////////////////
+    /////////////////NAVIGATION FOR COLOR CAROUSEL IN CHECKOUT PAGE//////////////////////
     /**
          * @brief This script handles carousel to choose color functionality in checkout page
          * @note this script the page navigation. It updates the carousel's position based on the current 
@@ -835,7 +815,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     /////////////////////////////////////////////////////////////////////////////////////////
 
-    ///// Main image update when clicking on color options in checkout page ////////////////
+    ///// MAIN IMAGE UPDATE WHEN CLICKING ON COLOR OPTIONS IN CHECKOUT PAGE ////////////////
 
     /**
      * @brief This function handles the functionality of changing the main image on checkout page
@@ -878,7 +858,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     //////////////////////////////////////////////////////////////////
 
-    /////// Item size buttons for clothes items in checkout page //////////
+    /////// ITEMS SIZE BUTTONS FOR CLOTHES ITEMS IN CHECKOUT PAGE //////////
 
     /**
      * @brief This function generates dynamically the list of size buttons for clothes items
@@ -923,7 +903,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    //////// Generate Big images for clothes and computers in checkout page //////////
+    //////// GENERATE BIG FOR CLOTHES  AND COMPUTERS computers IN CHECKOUT PAGE //////////
 
     /**
      * This function generates dynamically big images in clothes and computers checkout pages
@@ -1125,95 +1105,123 @@ renderVideoCarouselClientRating(matchingProduct);
 
 ///////////// GENERATE DYNAMICALLY FREQUENTLY BOUGHT TOGETHER SECTION IN CHECKOUT PAGE /////
 
-const filteredBoughtTogether = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
+function renderFrequentlyBoughtTogether(matchProduct){
+    const filteredBoughtTogether = products.filter(p => p.categories[1] === matchProduct.categories[1]);
+    const itemExists = filteredBoughtTogether.find(p => p.id === matchProduct.id);
+    if (itemExists) {
+        const index = filteredBoughtTogether.findIndex(p => p.id === matchProduct.id);
+        if(index != 0){
+            filteredBoughtTogether.splice(index, 1);
+            filteredBoughtTogether.unshift(matchProduct); // Add the main product at the beginning of the array
 
-const frequentlyBoughtTogether = document.querySelector('.products-totalPrice');
-let totalPrice = 0;
+        }    
+    }
 
-if (filteredBoughtTogether.length > 3) {
-    filteredBoughtTogether.length = 3; // Limit to 3 products
-}
-let HTMLSummaryBoughtTogether = "";
-filteredBoughtTogether.forEach((product, index) => {
-    totalPrice += Number(product.price.currentPriceInCents);
+    const frequentlyBoughtTogether = document.querySelector('.products-totalPrice');
+    let totalPrice = 0;
+
+    if (filteredBoughtTogether.length > 3) {
+        filteredBoughtTogether.length = 3; // Limit to 3 products
+    }
+    let HTMLSummaryBoughtTogether = "";
+    filteredBoughtTogether.forEach((product, index) => {
+        totalPrice += Number(product.price.currentPriceInCents);
+        HTMLSummaryBoughtTogether += `
+                    <a href="${product.productPage}.html?id=${product.id}">
+                        <div class="first-image">
+                            <img src="${product.images.cartImageConfiramation}" alt="${product.brand}}">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>
+                                ${product.shortTitle}
+                                $${product.price.currentPrice} ${displayPricePerOunce(product)}
+                            </span>
+                        </div>
+                    </a>
+                    `;
+                    if(index < filteredBoughtTogether.length - 1){
+                        HTMLSummaryBoughtTogether += `<div class="plus-sign">+</div>`;
+                    }
+    });
+    let text = filteredBoughtTogether.length > 1 ? `Add all ${filteredBoughtTogether.length} to cart` : `Add to cart`;
     HTMLSummaryBoughtTogether += `
-                <div class="first-image">
-                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}}">
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>
-                        ${product.shortTitle}
-                        $${product.price.currentPrice} ${displayPricePerOunce(product)}
-                    </span>
-                </div>
-                `;
-                if(index < filteredBoughtTogether.length - 1){
-                    HTMLSummaryBoughtTogether += `<div class="plus-sign">+</div>`;
-                }
-});
-let text = filteredBoughtTogether.length > 1 ? `Add all ${filteredBoughtTogether.length} to cart` : `Add to cart`;
-HTMLSummaryBoughtTogether += `
-                <div class="totalprice">
-                    <span>Total price: 
-                        <span class="total-price-container">$${(totalPrice / 100).toFixed(2)}</span>
-                    </span>
-                    <button class="add-all-3-to-cart">${text}</button>
-                </div>`;
-frequentlyBoughtTogether.innerHTML = HTMLSummaryBoughtTogether;
+                    <div class="totalprice">
+                        <span>Total price: 
+                            <span class="total-price-container">$${(totalPrice / 100).toFixed(2)}</span>
+                        </span>
+                        <button class="add-all-3-to-cart">${text}</button>
+                    </div>`;
+    frequentlyBoughtTogether.innerHTML = HTMLSummaryBoughtTogether;
+}
+
+renderFrequentlyBoughtTogether(matchingProduct);
 
 //////////////////// UTILITY FUNCTION TO DISPLAY PRICE PER OUNCE ////////////////////////////
 function displayPricePerOunce(matchProduct){
-    if (matchProduct.categories[0] === "drink"){
-        let fluidOunce = `(${matchProduct.price.pricePerUnit}/fluid ounce)`;
-        return fluidOunce;
-    }
-    else{
-        fluidOunce = "";
-        return fluidOunce;
-    }
+    let fluidOunce = matchProduct.categories[0] === "drink" ? `(${matchProduct.price.pricePerUnit}/fluid ounce)` : "";
+    return fluidOunce;
 }
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 /////// GENERATE DYNAMICALLY THE VIDEO CAROUSEL FOR SIMILAR PRODUCT IN CHECKOUT PAGE ///////
 
-const carouselVideostrack = document.querySelector('.checkout-carousel-video-track');
-const videosPerPage = 3;
-const filteredItemsVideo = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
-const filteredItemsLength = filteredItemsVideo.length; 
+/**
+ * @brief This function generates dynamically the video carousel for similar products in checkout page
+ * @param {*} matchProduct is the matching product for which we want to generate the video carousel 
+ *          for similar products
+ * @note This function filters the products based on the category of the matching product and 
+ *       generates a carousel of videos related to similar products. It creates HTML elements for 
+ *       each video and appends them to the designated section in the checkout page, allowing users 
+ *       to view videos that are relevant to products similar to the one they are purchasing. 
+ */
 
-let HTMLSummaryVideoCarousel = "";
+function renderVideoCarouselForSimilarProducts(matchProduct){
+    const carouselVideostrack = document.querySelector('.checkout-carousel-video-track');
+    const videosPerPage = 3;
+    const filteredItemsVideo = products.filter(p => p.categories[1] === matchProduct.categories[1]);
+    const filteredItemsLength = filteredItemsVideo.length; 
 
-for(let i = 0; i < filteredItemsLength; i += videosPerPage){
-    const pageDiv = document.createElement("div");
-    pageDiv.classList.add("checkout-carosel-video-page");
+    let HTMLSummaryVideoCarousel = "";
+    let control;
 
-    filteredItemsVideo.slice(i, i + videosPerPage).forEach(video => {
-        HTMLSummaryVideoCarousel += `
-                    <div class="checkout-carousel-vid">
-                        <video autoplay muted playsinline loop class="js-checkout-carousel-vid">
-                            <source src="${video.videos.galleryVideos[0]}" type="video/mp4">
-                        </video>
-                        <a href="${video.productPage}.html?id=${video.id}">
-                            <div class="sponsored-text-video">
-                                <img class="js-sponsored-text-video" src="${video.videos.galleryVideosImages[0]}" alt="${video.brand}">
-                                <div class="text-garden">
-                                    <span>
-                                        ${video.shortTitle}...<br>
-                                    </span> 
-                                    <span class="clearence">
-                                      -${video.price.discountPercent}% $${video.price.currentPrice}
-                                    </span> 
-                                    <span class="old-price">$${((video.price.currentPriceInCents + (video.price.currentPriceInCents * video.price.discountPercent / 100)) / 100).toFixed(2)}</span>
-                                    <span class="sponsored-prime"><i class="bi bi-check-lg"></i>prime</span>
+    for(let i = 0; i < filteredItemsLength; i += videosPerPage){
+        const pageDiv = document.createElement("div");
+        pageDiv.classList.add("checkout-carosel-video-page");
+
+        filteredItemsVideo.slice(i, i + videosPerPage).forEach((video, index) => {
+            
+            control = index == 0 ? "autoplay muted playsinline loop" : "controls";
+             
+            HTMLSummaryVideoCarousel += `
+                        <div class="checkout-carousel-vid">
+                            <video ${control} class="js-checkout-carousel-vid">
+                                <source src="${video.videos.galleryVideos[0]}" type="video/mp4">
+                            </video>
+                            <a href="${video.productPage}.html?id=${video.id}">
+                                <div class="sponsored-text-video">
+                                    <img class="js-sponsored-text-video" src="${video.videos.galleryVideosImages[0]}" alt="${video.brand}">
+                                    <div class="text-garden">
+                                        <span>
+                                            ${video.shortTitle}...<br>
+                                        </span> 
+                                        <span class="clearence">
+                                        -${video.price.discountPercent}% $${video.price.currentPrice}
+                                        </span> 
+                                        <span class="old-price">$${((video.price.currentPriceInCents + (video.price.currentPriceInCents * video.price.discountPercent / 100)) / 100).toFixed(2)}</span>
+                                        <span class="sponsored-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>   
-                    </div>`;
-    });
-    pageDiv.innerHTML = HTMLSummaryVideoCarousel;
-    console.log(pageDiv);
-    carouselVideostrack.appendChild(pageDiv);
-    HTMLSummaryVideoCarousel = "";                        // Reset HTML summary for the next page
+                            </a>   
+                        </div>`;
+        });
+        pageDiv.innerHTML = HTMLSummaryVideoCarousel;
+        console.log(pageDiv);
+        carouselVideostrack.appendChild(pageDiv);
+        HTMLSummaryVideoCarousel = "";                        // Reset HTML summary for the next page
+    }
 }
+
+renderVideoCarouselForSimilarProducts(matchingProduct);
 
 ///////////////////////// HANDLES VIDEO CAROUSEL FUNCTIONALITY ////////////////////////////
 /**
@@ -1228,6 +1236,7 @@ let pagesVideo = document.querySelectorAll('.checkout-carosel-video-page');
 totalPageVideo.innerHTML = pagesVideo.length;
 let currentIndexVideo = 0;
 let pageWidthVideo = document.querySelector('.checkout-carousel-video').clientWidth;
+
 function updateCarouselVideo(){
     trackVideo.style.transform = `translateX(-${currentIndexVideo * pageWidthVideo}px)`;
     currentPageVideo.innerHTML = currentIndexVideo + 1;

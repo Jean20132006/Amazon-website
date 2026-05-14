@@ -1349,7 +1349,7 @@
 
   title: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11 (2022&2021&2020&2018)/ iPad Air 5th & Air 4th Generation(10.9 Inch), Crafted for Natural Writing, Anti Glare, Easy Installation | (10.9 Inch), Anti Glare, Easy Installation",
 
-  shortTitle: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro 11",
+  shortTitle: "MOBDIK 2 Pack Paperfeel Screen Protector Compatible with iPad Pro",
 
   brand: "MOBDIK",
 

@@ -695,6 +695,11 @@
     height: auto;
     flex-shrink: 0;
 }
+.products-totalPrice-add-to-list-container a{
+    font-family: Nunito, Arial;
+    text-decoration: none;
+    color: #003049;
+}
 .products-totalPrice{
     display: flex;
     flex-direction: row;
