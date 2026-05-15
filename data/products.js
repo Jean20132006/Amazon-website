@@ -25,7 +25,7 @@
       "images/small-images/core.jpg",
       "images/small-images/core2.jpg",
       "images/small-images/core3.jpg",
-      "https://m.media-amazon.com/images/I/51DuUJcDgJL._AA50_.jpg"
+      "images/small-images/core2.jpg"
     ],
     reviews: [
       "images/review-carousel/core1.jpg",
@@ -39,15 +39,19 @@
       "images/review-carousel/core9.jpg",
       "images/review-carousel/core10.jpg"
     ],
-    advertisementImages: [
-      "images/pub1.jpg",
-      "images/advert-videos/celsius-advert-img.png"
+    advertisementImages1: [
+      "images/recovery-core.jpg"
     ],
+
+    advertisementImages2: [
+      "images/recovery-core.jpg"
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/core-power.jpg"
   },
 
   videos : {
-    advertisement: "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/eba56eed-1ecb-4741-b838-21f9b551eb02.mp4/productVideoOptimized.mp4",
+    advertisement: "images/advertissment video.mp4",
     galleryVideos : [
       "images/productVideoOptimized.mp4",
       "images/video2.mp4",
@@ -222,10 +226,15 @@
       "images/review-carousel/celsius-orange-2.jpg",
       "images/review-carousel/celsius-orange-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/celsius-advert-img.png",
+
+    advertisementImages1: [
       "images/advert-videos/celsius-advert-img.png"
     ],
+
+    advertisementImages2: [
+      "images/advert-videos/celsius-advert-img.png"
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/celsius-sparkling-orange.jpg"
   },
 
@@ -406,10 +415,15 @@
       "images/review-carousel/core9.jpg",
       "images/review-carousel/core10.jpg"
     ],
-    advertisementImages: [
-      "images/pub1.jpg",
-      "images/advert-videos/celsius-advert-img.png"
+
+    advertisementImages1: [
+      "images/high-quality.jpg"
     ],
+
+    advertisementImages2: [
+      "images/high-quality.jpg"
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/premier_protein.jpg"
   },
 
@@ -589,10 +603,15 @@
       "images/review-carousel/monster3.jpg",
       "images/review-carousel/monster4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/celsius-advert-img.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/monster-energy.jpg"
   },
 
@@ -772,10 +791,15 @@
       "images/review-carousel/sparkling-ice-5.jpg",
       "images/review-carousel/sparkling-ice-2.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/sparkling-energy.jpg"
     ],
+
+    advertisementImages2: [
+      "images/sparkling-energy.jpg"
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/sparkling-ice.jpg"
   },
 
@@ -955,10 +979,15 @@
       "images/review-carousel/twinings-2.jpg",
       "images/review-carousel/twinings-1.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/first-carousel-images/twining-lemon.jpg"
   },
 
@@ -1135,10 +1164,15 @@
       "images/review-carousel/ipad6.jpg",
       "images/review-carousel/ipad1.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/Sixth-carousel-images/moko.jpg"
   },
 
@@ -1385,10 +1419,15 @@
       "images/review-carousel/mobdik-5.jpg",
       "images/review-carousel/mobdik-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/mobdik-4.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/mobdik-4.jpg"
+    ],
+
     cartImageConfiramation: "images/Sixth-carousel-images/mobdic.jpg"
   },
 
@@ -1629,10 +1668,15 @@
       "images/review-carousel/ailun-5.jpg",
       "images/review-carousel/ailun-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/ailun-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/ailun-1.jpg"
+    ],
+
     cartImageConfiramation: "images/Sixth-carousel-images/aliun-screen-protector.jpg"
   },
 
@@ -1873,10 +1917,15 @@
       "images/review-carousel/cobak-5.jpg",
       "images/review-carousel/cobak-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/cobak-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
     cartImageConfiramation: "images/Sixth-carousel-images/cobak.jpg",
   },
 
@@ -1928,6 +1977,8 @@
       "images/small-images/ipad-1.jpg"
     ],
     bigImages : [
+      "images/big-images/cobak-1.jpg",
+      "images/big-images/cobak-2.jpg",
       "images/big-images/cobak-3.jpg",
       "images/big-images/cobak-4.jpg",
       "images/big-images/cobak-5.jpg",
@@ -2106,10 +2157,15 @@
       "images/review-carousel/hp-5.jpg",
       "images/review-carousel/hp-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/electronic-images/hp.jpg",
   },
 
@@ -2327,10 +2383,15 @@
       "images/review-carousel/kenke-5.jpg",
       "images/review-carousel/kenke-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/Sixth-carousel-images/kenke.jpg",
   },
 
@@ -2562,10 +2623,15 @@
       "images/review-carousel/fitbit-5.jpg",
       "images/review-carousel/fitbit-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/fitbit-3.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/fitbit-3.jpg"
+    ],
+
     cartImageConfiramation: "images/electronic-images/fitbit-1.jpg",
   },
 
@@ -2803,10 +2869,15 @@
       "images/review-carousel/fitbit-5.jpg",
       "images/review-carousel/fitbit-4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/kpep-4.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/kpep-4.jpg"
+    ],
+
     cartImageConfiramation: "images/electronic-images/kpep.jpg",
   },
 
@@ -3047,10 +3118,15 @@
       "images/review-carousel/gym-people3.jpg",
       "images/review-carousel/gym-people4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/fifth-carousel-images/gym-people.jpg"
   },
 
@@ -3320,10 +3396,15 @@
       "images/review-carousel/gym-people3.jpg",
       "images/review-carousel/gym-people4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/fifth-carousel-images/gym-people-1.jpg"
   },
 
@@ -3595,10 +3676,15 @@
       "images/review-carousel/gym-people3.jpg",
       "images/review-carousel/gym-people4.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/gym-capris-3.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/gym-capris-3.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/gym-capris.jpg"
   },
 
@@ -3873,10 +3959,15 @@
       "images/review-carousel/trendy-1.jpg",
       "images/review-carousel/trendy-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/trendy-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/trendy-1.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/trendy-cart.jpg"
   },
 
@@ -4147,10 +4238,15 @@
       "images/review-carousel/trendy-1.jpg",
       "images/review-carousel/trendy-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/trendy-v-cart.jpg"
   },
 
@@ -4425,10 +4521,15 @@
       "images/review-carousel/y2k-1.jpg",
       "images/review-carousel/y2k-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/y2k-1.jpg"
   },
 
@@ -4704,10 +4805,15 @@
       "images/review-carousel/y2k-1.jpg",
       "images/review-carousel/y2k-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/gayhay-1.jpg"
   },
 
@@ -4984,10 +5090,15 @@
       "images/review-carousel/fashion-1.jpg",
       "images/review-carousel/fashion-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/fashion-1.jpg"
   },
 
@@ -5259,10 +5370,15 @@
       "images/review-carousel/wiholl-1.jpg",
       "images/review-carousel/wiholl-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/wiholl-4.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/wiholl-4.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/wiholl.jpg"
   },
 
@@ -5535,10 +5651,15 @@
       "images/review-carousel/wiholl-1.jpg",
       "images/review-carousel/wiholl-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/wiholl-v-4.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/wiholl-v-1.jpg"
   },
 
@@ -5810,10 +5931,15 @@
       "images/review-carousel/wiholl-1.jpg",
       "images/review-carousel/wiholl-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/wiholl2-1.jpg"
   },
 
@@ -6086,10 +6212,15 @@
       "images/review-carousel/anrabess-1.jpg",
       "images/review-carousel/anrabess-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/anrabess-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/anrabess-1.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/anrabess.jpg"
   },
 
@@ -6363,10 +6494,15 @@
       "images/review-carousel/laughido-1.jpg",
       "images/review-carousel/laughido-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/auselily-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/auselily-1.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/auselily.jpg"
   },
 
@@ -6640,10 +6776,15 @@
       "images/review-carousel/laughido-1.jpg",
       "images/review-carousel/laughido-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      "images/big-images/laughido-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/laughido-1.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/laughido-1.jpg"
   },
 
@@ -6914,10 +7055,15 @@
       "images/review-carousel/laughido-1.jpg",
       "images/review-carousel/laughido-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+    advertisementImages1: [
+      
     ],
+
+    advertisementImages2: [
+      
+    ],
+
     cartImageConfiramation: "images/clothes-images/missufe.jpg"
   },
 
@@ -7186,10 +7332,15 @@
       "images/review-carousel/j-ver-1.jpg",
       "images/review-carousel/j-ver-3.jpg"
     ],
-    advertisementImages: [
-      "images/advert-videos/ensure.png",
-      "images/advert-videos/ensure.png"
+
+   advertisementImages1: [
+      "images/big-images/j-ver-1.jpg"
     ],
+
+    advertisementImages2: [
+      "images/big-images/j-ver-1.jpg"
+    ],
+
     cartImageConfiramation: "images/clothes-images/j-ver-1.jpg"
   },
 

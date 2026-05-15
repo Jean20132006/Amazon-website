@@ -30,7 +30,7 @@ if (matchingProduct) {
   const pricePerUnit = document.querySelectorAll('.price-per-ounce');                   // price per unit
   const advertVideo = document.querySelectorAll('.js-sponsored-video');                 // advert video element
   const productDescription = document.querySelector('.js-product-description');         // product description element
-  const advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
+  //const advertImage = document.querySelectorAll('.js-advert-img');                      // advert image element
   const selectFlavorButtons = document.querySelectorAll('.js-btton-flavour');           // flavour selection buttons
   const selectSizeButtons = document.querySelectorAll('.js-size-button');               // size selection buttons
   const flavorName =document.getElementById('chocolate');                               // flavor name element in size selection section 
@@ -117,9 +117,9 @@ if (matchingProduct) {
 
   productDescription.textContent = matchingProduct.description;
 
-  advertImage.forEach((img, index) => {
+  /*advertImage.forEach((img, index) => {
     img.src= matchingProduct.images.advertisementImages[index];
-  });
+  });*/
 
     selectFlavorButtons.forEach((button, index) => {
     button.textContent = matchingProduct.variants[index].flavor;
@@ -1267,6 +1267,79 @@ rightButtonVideo.addEventListener('click', () => {
 });
 // Initialize carousel state
 updateCarouselVideo();
+
+////////////////////////////////////// HANDLES ADVERTISSMENT IMAGES ///////////////////////////
+function lastImageAdvert(){
+
+    const sponsoredText = document.querySelector('.sponsored-imgAdvert');
+    const lastImageAdvert = document.querySelector('.checkout-corePower-last-advert1');
+    let randomIndex = Math.floor(Math.random() * products.length);
+
+    if(products[randomIndex].images.advertisementImages2.length === 1){
+        products[randomIndex].images.advertisementImages2.forEach(img => {
+            const imgAdvertDiv = document.createElement('div');
+            imgAdvertDiv.classList.add('core-power-advertissement');
+
+            const link = document.createElement('a');
+            link.href = `${products[randomIndex].productPage}.html?id=${products[randomIndex].id}`;
+            
+            const imgAdvert = document.createElement('img');
+            imgAdvert.classList.add('js-advert-img');
+            imgAdvert.src = products[randomIndex].images.advertisementImages2[0]; 
+            imgAdvert.alt= products[randomIndex].brand;
+            
+            link.appendChild(imgAdvert);
+            imgAdvertDiv.appendChild(link);
+            lastImageAdvert.appendChild(imgAdvertDiv);
+        
+        });
+    }
+    else{
+        sponsoredText.style.display = "none";
+    }
+}
+
+lastImageAdvert();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+function firstImageAdvert(){
+
+    const sponsoredText1 = document.querySelector('.sponsored-imgAdvert1');
+    const firstImageAdvert = document.querySelector('.advertissement-section1');
+    let randomIndex = Math.floor(Math.random() * products.length);
+
+    if(products[randomIndex].images.advertisementImages1.length === 1){
+        products[randomIndex].images.advertisementImages1.forEach(img => {
+            const imgAdvertDiv = document.createElement('div');
+            imgAdvertDiv.classList.add('advertissement-container');
+
+            const link = document.createElement('a');
+            link.href = `${products[randomIndex].productPage}.html?id=${products[randomIndex].id}`;
+            
+            const imgAdvert = document.createElement('img');
+            imgAdvert.classList.add('js-advert-img');
+            imgAdvert.src = products[randomIndex].images.advertisementImages1[0]; 
+            imgAdvert.alt= products[randomIndex].brand;
+            
+           link.appendChild(imgAdvert);
+            imgAdvertDiv.appendChild(link);
+            firstImageAdvert.appendChild(imgAdvertDiv);
+            
+        });
+    }
+    else{
+        sponsoredText1.style.display = "none";
+
+    }
+}
+firstImageAdvert();
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 
 
