@@ -1477,10 +1477,13 @@
 
 .sponsored-imgAdvert1{
     position: absolute;
-    right: 570px;
-    bottom: 20px;
+    right: 480px;
+    bottom: -20px;
     font-family: Nunito, Arial, sans-serif;
     font-size: 13px;
+}
+.bi.bi-info-circle-fill{
+    color: grey;
 }
 .advertissement-container a{
     text-decoration: none;
@@ -1939,7 +1942,6 @@
     font-size: 13px;
     right: 380px;
     bottom: -20px;
-    color: grey;
 }
 
 .bi.bi-info-circle-fill{

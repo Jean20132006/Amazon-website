@@ -1215,7 +1215,6 @@ function renderVideoCarouselForSimilarProducts(matchProduct){
                         </div>`;
         });
         pageDiv.innerHTML = HTMLSummaryVideoCarousel;
-        console.log(pageDiv);
         carouselVideostrack.appendChild(pageDiv);
         HTMLSummaryVideoCarousel = "";                        // Reset HTML summary for the next page
     }
@@ -1269,6 +1268,36 @@ rightButtonVideo.addEventListener('click', () => {
 updateCarouselVideo();
 
 ////////////////////////////////////// HANDLES ADVERTISSMENT IMAGES ///////////////////////////
+
+function topAdvertImage(){
+    let randomIndex = Math.floor(Math.random() * products.length);
+    const topAvertImage = document.querySelector('.advertissement');
+    topAvertImage.innerHTML = `
+                            <img src="${products[randomIndex].images.cartImageConfiramation}" alt="${products[randomIndex].brand}">
+                            <div class="advertissement-text">
+                                <div class="product-text">
+                                    <span>${products[randomIndex].shortTitle}...
+                                    </span>
+                                </div>
+                                <div class="star-price-container">
+                                    <div class="star-rating">
+                                        <img src="images/bottom-carousel-images/star.png" alt="Star Rating">
+                                        <span>${products[randomIndex].rating.totalReviews}</span>
+                                    </div>
+                                    <span>|</span>
+                                    <span class="price">$${products[randomIndex].price.currentPrice}</span>
+                                    <span class="check-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                </div>
+                                <div class="shop-now">
+                                    <a href="${products[randomIndex].productPage}.html?id=${products[randomIndex].id}">Shop now ></a>
+                                </div>
+                            </div>
+                            `;
+
+                        //topAvertImage.style.backgroundColor = "green";  
+}
+topAdvertImage();
+///////////////////////////////////////////////////////////////////////////////////////////////
 function lastImageAdvert(){
 
     const sponsoredText = document.querySelector('.sponsored-imgAdvert');
