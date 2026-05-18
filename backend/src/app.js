@@ -2,7 +2,8 @@ import express from "express";
 
 const app = express();
 
-app.use(express.json());
+//In Express.js, middleware is a function that runs between the request and the response.
+app.use(express.json()); //This middleware converts JSON request bodies into JavaScript objects.
 
 // import routes
 import userRouter from "./routes/user.routes.js";

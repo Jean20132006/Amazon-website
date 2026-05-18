@@ -29,12 +29,51 @@ const registerUser = async (req, res) => {
             user: {id: user._id, username: user.username, email: user.email}
         });
     } catch (error) {
-        res.status(500).json({message: "Internal Server error", error: error.message});
+        res.status(500).json({
+            message: "Internal Server error", 
+            error: error.message,
+            stack: error.stack
+        });
         
     }
     
 }
 
-export{
-    registerUser
+const loginUser = async (req, res) => {
+    try {
+
+        //Check if the user already exists
+        const {email, password} = req.body;
+        const user = await User.findOne({email: email.toLowerCase()});
+        if(!user){
+            return res.status(400).json({message: "user not found"});
+        }
+
+        //Compare password
+        const isMatch = await user.comparePassword(password);
+        if(!isMatch) return res.status(400).json({message: "Invalid credentials"});
+
+        res.status(200).json({
+            message: "user logged in",
+            user: {
+                id: user._id,
+                email: user.email,
+                username: user.username
+            }
+        });
+    
+    } catch (error) {
+        res.status(500).json({
+            message: "Internal Server error",
+            error: error.message,
+            stack: error.stack
+        });
+        
+        
+    }
 }
+
+export{
+    registerUser,
+    loginUser
+};
