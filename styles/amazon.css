@@ -1,14 +1,14 @@
 
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    background-color: rgb(202, 199, 199) !important;   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: rgb(202, 199, 199) !important;   
 }
 main{
-    padding-top: 110px;
+  padding-top: 110px;
 }
 /*Slideshow styles*/
 .amazon-slideshow-section{

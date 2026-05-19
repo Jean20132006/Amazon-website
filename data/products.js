@@ -2114,6 +2114,697 @@
     }
   ]
 },
+///////////////////////////// COMPUTERS //////////////////////////////////////////
+{
+  id: "d37a651a-d501-483b-aae6-a9659b0757a0",
+
+  title: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025, Lifetime MS Office + Windows 11 Pro, Quad-Core Intel CPU, 16GB RAM & 628GB Storage (128GB UFS+500GB Ext), Wi-Fi 6, HubxcelAccessory, Silver",
+
+  shortTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+
+  brand: "HP",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "laptops",
+    "computers",
+    "accessories",
+    "tablets",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/hp-4.jpg",
+    
+    gallery: [
+      "images/small-images/HP4-1.jpg",
+      "images/small-images/hp-2.jpg",
+      "images/small-images/hp-3.jpg",
+      "images/small-images/hp-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-2.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-4.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-4.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/hp-4.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/hp.jpg",
+      "images/electronic-images/hp-2.jpg",
+      "images/electronic-images/hp-3.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/HP-1.jpg",
+      "images/big-images/HP-2.jpeg",
+      "images/big-images/HP-3.jpeg",
+      "images/big-images/HP-4.jpeg"
+    ]
+  },
+  fourthBigCarouselTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+  price: {
+    priceDollar: 359,
+    priceCents: 10,
+    currentPrice: 359.10,
+    currentPriceInCents: 35910,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
+    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
+    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
+    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
+  ],
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 148,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand	HP",
+    "Model Name	HP 2026 Business 14 Laptop",
+    "Specific Uses For Product	Business/Student",
+    "Screen Size	14 Inches",
+    "Color	Natural Silver",
+    "Hard Disk Size	128 GB",
+    "CPU Model	Intel N150",
+    "Ram Memory Installed Size	4 GB",
+    "Operating System	Windows 11 Pro",
+    "Special Feature	Anti Glare Coating, Fast Charge, HD Audio, MS Office Pro"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Honey Lavender",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    " [Quad-Core Intel N150 Processor] 13th Gen Intel N150 (Up to 3.6 GHz with Intel Turbo Boost Technology, 6 MB L3 Cache, 4 cores, 4 threads). Save time and increase productivity with powerful performance and smooth multitasking. Access fast web applications, edit photos and videos, and get the responsiveness you're looking for",
+    "[16GB RAM + 628GB Storage (128GB UFS + 500GB Ext)] Reams of high-bandwidth 16GB DDR4 RAM to smoothly run your games and video-editing applications, as well as numerous programs and browser tabs all at once. Non-volatile 128GB UFS storage handles multiple read and write requests simultaneously; power gating increases power efficiency. Enjoy additional portable storage with 500GB external drive.",
+    "[Windows Pro Operating System] Windows 11 Pro delivers a powerful, streamlined user experience that helps you stay focused and get more done wherever your office might be. Safeguard data and access anywhere with hardware-based isolation, encryption, and malware protection built in.",
+    "[14 Anti-glare Display] Watch videos and create colorful presentations in excellent, high definition quality rendered with 1 million pixels. The anti-glare panel lets you enjoy time outside without glare on your screen. HP True Vision 720p HD camera with integrated dual array digital microphones. Online Class, Google Classroom, Remote Learning, Zoom Ready."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Eric",
+      rating: 5,
+      title: "Fantastic Laptop for Business and Study",
+      comment: "This HP Ultrabook 14 is fantastic for both business and study purposes. The performance is excellent, thanks to the quad-core Intel CPU and 16GB of RAM. It handles multitasking with ease, allowing me to run multiple applications smoothly. The Windows 11 Pro operating system provides a great user experience, and the anti-glare display is perfect for working outdoors. Highly recommend this laptop!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Raphael",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "This HP Ultrabook offers good value for the price. The performance is solid for everyday tasks and light gaming, and the 14-inch anti-glare display is a nice feature. However, I wish it had a bit more storage space. Overall, it's a good choice for business and study needs.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "0d7f9afa-2efe-4fd9-b0fd-ba5663e0a524",
+
+  title: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025, Lifetime MS Office + Windows 11 Pro, Quad-Core Intel CPU, 16GB RAM & 628GB Storage (128GB UFS+500GB Ext), Wi-Fi 6, HubxcelAccessory, Silver",
+
+  shortTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+
+  brand: "HP",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "laptops",
+    "computers",
+    "accessories",
+    "tablets",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/hp-3.jpg",
+    
+    gallery: [
+      "images/small-images/HP3-1.jpg",
+      "images/small-images/hp-2.jpg",
+      "images/small-images/hp-3.jpg",
+      "images/small-images/hp-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-2.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-4.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-4.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/hp-3.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/hp.jpg",
+      "images/electronic-images/hp-2.jpg",
+      "images/electronic-images/hp-3.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/HP-1.jpg",
+      "images/big-images/HP-2.jpeg",
+      "images/big-images/HP-3.jpeg",
+      "images/big-images/HP-4.jpeg"
+    ]
+  },
+  fourthBigCarouselTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+  price: {
+    priceDollar: 359,
+    priceCents: 10,
+    currentPrice: 359.10,
+    currentPriceInCents: 35910,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
+    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
+    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
+    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
+  ],
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 148,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand	HP",
+    "Model Name	HP 2026 Business 14 Laptop",
+    "Specific Uses For Product	Business/Student",
+    "Screen Size	14 Inches",
+    "Color	Natural Silver",
+    "Hard Disk Size	128 GB",
+    "CPU Model	Intel N150",
+    "Ram Memory Installed Size	4 GB",
+    "Operating System	Windows 11 Pro",
+    "Special Feature	Anti Glare Coating, Fast Charge, HD Audio, MS Office Pro"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Honey Lavender",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    " [Quad-Core Intel N150 Processor] 13th Gen Intel N150 (Up to 3.6 GHz with Intel Turbo Boost Technology, 6 MB L3 Cache, 4 cores, 4 threads). Save time and increase productivity with powerful performance and smooth multitasking. Access fast web applications, edit photos and videos, and get the responsiveness you're looking for",
+    "[16GB RAM + 628GB Storage (128GB UFS + 500GB Ext)] Reams of high-bandwidth 16GB DDR4 RAM to smoothly run your games and video-editing applications, as well as numerous programs and browser tabs all at once. Non-volatile 128GB UFS storage handles multiple read and write requests simultaneously; power gating increases power efficiency. Enjoy additional portable storage with 500GB external drive.",
+    "[Windows Pro Operating System] Windows 11 Pro delivers a powerful, streamlined user experience that helps you stay focused and get more done wherever your office might be. Safeguard data and access anywhere with hardware-based isolation, encryption, and malware protection built in.",
+    "[14 Anti-glare Display] Watch videos and create colorful presentations in excellent, high definition quality rendered with 1 million pixels. The anti-glare panel lets you enjoy time outside without glare on your screen. HP True Vision 720p HD camera with integrated dual array digital microphones. Online Class, Google Classroom, Remote Learning, Zoom Ready."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Eric",
+      rating: 5,
+      title: "Fantastic Laptop for Business and Study",
+      comment: "This HP Ultrabook 14 is fantastic for both business and study purposes. The performance is excellent, thanks to the quad-core Intel CPU and 16GB of RAM. It handles multitasking with ease, allowing me to run multiple applications smoothly. The Windows 11 Pro operating system provides a great user experience, and the anti-glare display is perfect for working outdoors. Highly recommend this laptop!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Raphael",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "This HP Ultrabook offers good value for the price. The performance is solid for everyday tasks and light gaming, and the 14-inch anti-glare display is a nice feature. However, I wish it had a bit more storage space. Overall, it's a good choice for business and study needs.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "02e3a47e-dd68-467e-9f71-8bf6f723fdae",
+
+  title: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025, Lifetime MS Office + Windows 11 Pro, Quad-Core Intel CPU, 16GB RAM & 628GB Storage (128GB UFS+500GB Ext), Wi-Fi 6, HubxcelAccessory, Silver",
+
+  shortTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+
+  brand: "HP",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "laptops",
+    "computers",
+    "accessories",
+    "tablets",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/hp-2.jpg",
+    
+    gallery: [
+      "images/small-images/HP2-1.jpg",
+      "images/small-images/hp-2.jpg",
+      "images/small-images/hp-3.jpg",
+      "images/small-images/hp-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-2.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-4.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-3.jpg",
+      "images/review-carousel/hp-1.jpg",
+      "images/review-carousel/hp-5.jpg",
+      "images/review-carousel/hp-4.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/hp-2.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+      "images/gallery-videos/ipadVideo-1.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/hp.jpg",
+      "images/electronic-images/hp-2.jpg",
+      "images/electronic-images/hp-3.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/HP-1.jpg",
+      "images/big-images/HP-2.jpeg",
+      "images/big-images/HP-3.jpeg",
+      "images/big-images/HP-4.jpeg"
+    ]
+  },
+  fourthBigCarouselTitle: "HP Ultrabook 14 Laptop Computer Business Study & Home 2025",
+  price: {
+    priceDollar: 359,
+    priceCents: 10,
+    currentPrice: 359.10,
+    currentPriceInCents: 35910,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
+    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
+    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
+    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
+  ],
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 148,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand	HP",
+    "Model Name	HP 2026 Business 14 Laptop",
+    "Specific Uses For Product	Business/Student",
+    "Screen Size	14 Inches",
+    "Color	Natural Silver",
+    "Hard Disk Size	128 GB",
+    "CPU Model	Intel N150",
+    "Ram Memory Installed Size	4 GB",
+    "Operating System	Windows 11 Pro",
+    "Special Feature	Anti Glare Coating, Fast Charge, HD Audio, MS Office Pro"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Honey Lavender",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    " [Quad-Core Intel N150 Processor] 13th Gen Intel N150 (Up to 3.6 GHz with Intel Turbo Boost Technology, 6 MB L3 Cache, 4 cores, 4 threads). Save time and increase productivity with powerful performance and smooth multitasking. Access fast web applications, edit photos and videos, and get the responsiveness you're looking for",
+    "[16GB RAM + 628GB Storage (128GB UFS + 500GB Ext)] Reams of high-bandwidth 16GB DDR4 RAM to smoothly run your games and video-editing applications, as well as numerous programs and browser tabs all at once. Non-volatile 128GB UFS storage handles multiple read and write requests simultaneously; power gating increases power efficiency. Enjoy additional portable storage with 500GB external drive.",
+    "[Windows Pro Operating System] Windows 11 Pro delivers a powerful, streamlined user experience that helps you stay focused and get more done wherever your office might be. Safeguard data and access anywhere with hardware-based isolation, encryption, and malware protection built in.",
+    "[14 Anti-glare Display] Watch videos and create colorful presentations in excellent, high definition quality rendered with 1 million pixels. The anti-glare panel lets you enjoy time outside without glare on your screen. HP True Vision 720p HD camera with integrated dual array digital microphones. Online Class, Google Classroom, Remote Learning, Zoom Ready."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Eric",
+      rating: 5,
+      title: "Fantastic Laptop for Business and Study",
+      comment: "This HP Ultrabook 14 is fantastic for both business and study purposes. The performance is excellent, thanks to the quad-core Intel CPU and 16GB of RAM. It handles multitasking with ease, allowing me to run multiple applications smoothly. The Windows 11 Pro operating system provides a great user experience, and the anti-glare display is perfect for working outdoors. Highly recommend this laptop!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Raphael",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "This HP Ultrabook offers good value for the price. The performance is solid for everyday tasks and light gaming, and the 14-inch anti-glare display is a nice feature. However, I wish it had a bit more storage space. Overall, it's a good choice for business and study needs.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "04701903-bc79-49c6-bc11-1af7e3651358",
 
@@ -2343,6 +3034,7 @@
     }
   ]
 },
+/////////////////////////////// CASE PROTECTOR /////////////////////////////////////////
 {
   id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
 
@@ -2832,6 +3524,239 @@
 {
   id: "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
 
+  title: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Answer/Make Calls, IP68 Waterproof/Heart Rate/Sleep Tracker/100 Sports, Fitness Watch Compatible Android iOS",
+
+  shortTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls",
+
+  brand: "TOOBUR",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/toubur.jpg",
+    
+    gallery: [
+      "images/small-images/toubur-1.jpg",
+      "images/small-images/toubur-2.jpg",
+      "images/small-images/toubur-3.jpg",
+      "images/small-images/toubur-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-2.avif",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-4.jpg",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/toubur.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/toubur.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/electronic-images/toubur.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/kpep-img-2.jpg",
+      "images/gallery-videos/kpep-img-2.jpg"
+    ],
+    advertisementVideosText : "FITVII Slim Fitness Tracker AMOLED with Blood Oxygen, Blood Pressure, 24/7..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/toubur-1.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/toubur-1.jpg",
+      "images/big-images/toubur-2.jpg",
+      "images/big-images/toubur-3.jpg",
+      "images/big-images/toubur-4.jpg",
+      "images/big-images/toubur-5.jpg",
+      "images/big-images/toubur-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in",
+  price: {
+    priceDollar: 44,
+    priceCents: 99,
+    currentPrice: 44.99,
+    currentPriceInCents: 4499,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/toubur-5.jpg",
+
+  rating: {
+    average: 4.3,
+    totalReviews: 9700,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+ productDetails : [
+    "Operating System	   Android 6.0+ / iOS 9.0+",
+    "Special Feature	  Alexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My PhoneAlexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My Phone",
+    "Connectivity    Technology	Bluetooth",
+    "Wireless Communication   Standard	Bluetooth",
+    "Battery Cell Composition  	Lithium Polymer",
+    "GPS	 GPS Via Smartphone",
+    "Shape	 Rectangular",
+    "Screen  Size	1.95 Inches",
+    "Brand	 TOOBUR",
+    "Model Name	IDW16",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "black",
+      size: "1.95 inch",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "[Alexa Built-in] Enjoy the convenience of Alexa on your wrist! With TOOBUR's smart watch, you can control your smart home devices, set reminders,get weather updates and more all from your wrist. Simply download the VeryFit app from the Apple Store or Google Play, connect to your watch via Bluetooth, and enjoy the convenience of Alexa on your smartwatch.",
+    "[Stay connected on-the-go] Simplify your daily routine by managing your calls and messages in one place. With Bluetooth compatibility, the TOOBUR smartwatch allows you to make and receive phone calls, you can also receive social media, E-mail and SMS notification right on your wrist, you will never miss an important message or notification. keeping you connected while you're on-the-go.",
+    "[Activity & FitnessTracker] Track your health and fitness goals with the TOOBUR fitness & activity tracker. The fitness watch can monitor your heart rate, and stress levels in real-time, and alert you if anything is abnormal. With over 100 different sports modes, the activity tracker allows you to easily track your steps, calories burned, distance, speed and with an IP68 waterproof, the watch is perfect for swimming and any activity. Get yours now and start tracking your progress!",
+    "[A Good Sleep is All You Need] Get a better night's sleep with TOOBUR's sleep tracker.The smartwatch monitors your sleep in three different modes - REM, light, and deep sleep. The data is sent to the VeryFit app, which provides you with insights and tips to improve your sleep quality. Use this feature to improve your overall sleep habits and wake up feeling refreshed.",
+    "[Long Battery Life] Experience uninterrupted smart living with TOOBUR smartwatch's long battery life. With up to 30 days of standby time, 20 days in power saving mode, and 7-10 days of daily usage, you can wear your smartwatch without worrying about frequent charging. And it only takes 2.5 hours to fully charge, allowing you to spend more time enjoying the benefits of a smartwatch and less time worrying about battery life."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package"
+  ],
+
+  reviews: [
+    {
+      user: "Mike",
+      rating: 5,
+      title: "Great Fitness Tracker",
+      comment: "I love my toubur! It has all the features I need to track my fitness goals, including heart rate monitoring, GPS, and health tools. The integration with Google apps is a nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Samnuel",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
+
   title: "KPEP AMOLED Fitness Watches for Women Men with Stress Blood Oxygen Heart Rate Monitor Sleep Tracking 110+ Sport Modes Fitness Tracker Watch Calorie Counter Step Tracker IP68 Waterproof for Andriod iOS",
 
   shortTitle: "KPEP AMOLED Fitness Watches for Women Men with Stress Blood Oxygen",
@@ -3075,6 +4000,948 @@
     }
   ]
 },
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "36c64692-677f-4f58-b5ec-0dc2cf109e27",
+
+  title: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Answer/Make Calls, IP68 Waterproof/Heart Rate/Sleep Tracker/100 Sports, Fitness Watch Compatible Android iOS",
+
+  shortTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls",
+
+  brand: "TOOBUR",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/toubur2.jpg",
+    
+    gallery: [
+      "images/small-images/toubur2-1.jpg",
+      "images/small-images/toubur2-2.jpg",
+      "images/small-images/toubur2-3.jpg",
+      "images/small-images/toubur2-4.jpg",
+      "images/small-images/toubur2-3.jpg",
+      "images/small-images/toubur2-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-2.avif",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-4.jpg",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/toubur2.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/toubur.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/electronic-images/toubur.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/gallery-videos/kpep-img-2.jpg",
+      "images/gallery-videos/kpep-img-2.jpg"
+    ],
+    advertisementVideosText : "FITVII Slim Fitness Tracker AMOLED with Blood Oxygen, Blood Pressure, 24/7..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/toubur2.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/toubur-1.jpg",
+      "images/big-images/toubur-2.jpg",
+      "images/big-images/toubur-3.jpg",
+      "images/big-images/toubur-4.jpg",
+      "images/big-images/toubur-5.jpg",
+      "images/big-images/toubur-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in",
+  price: {
+    priceDollar: 44,
+    priceCents: 99,
+    currentPrice: 44.99,
+    currentPriceInCents: 4499,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/toubur2.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/toubur-5.jpg",
+
+  rating: {
+    average: 4.3,
+    totalReviews: 9700,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+ productDetails : [
+    "Operating System	   Android 6.0+ / iOS 9.0+",
+    "Special Feature	  Alexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My PhoneAlexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My Phone",
+    "Connectivity    Technology	Bluetooth",
+    "Wireless Communication   Standard	Bluetooth",
+    "Battery Cell Composition  	Lithium Polymer",
+    "GPS	 GPS Via Smartphone",
+    "Shape	 Rectangular",
+    "Screen  Size	1.95 Inches",
+    "Brand	 TOOBUR",
+    "Model Name	IDW16",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Beige",
+      size: "1.95 inch",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "[Alexa Built-in] Enjoy the convenience of Alexa on your wrist! With TOOBUR's smart watch, you can control your smart home devices, set reminders,get weather updates and more all from your wrist. Simply download the VeryFit app from the Apple Store or Google Play, connect to your watch via Bluetooth, and enjoy the convenience of Alexa on your smartwatch.",
+    "[Stay connected on-the-go] Simplify your daily routine by managing your calls and messages in one place. With Bluetooth compatibility, the TOOBUR smartwatch allows you to make and receive phone calls, you can also receive social media, E-mail and SMS notification right on your wrist, you will never miss an important message or notification. keeping you connected while you're on-the-go.",
+    "[Activity & FitnessTracker] Track your health and fitness goals with the TOOBUR fitness & activity tracker. The fitness watch can monitor your heart rate, and stress levels in real-time, and alert you if anything is abnormal. With over 100 different sports modes, the activity tracker allows you to easily track your steps, calories burned, distance, speed and with an IP68 waterproof, the watch is perfect for swimming and any activity. Get yours now and start tracking your progress!",
+    "[A Good Sleep is All You Need] Get a better night's sleep with TOOBUR's sleep tracker.The smartwatch monitors your sleep in three different modes - REM, light, and deep sleep. The data is sent to the VeryFit app, which provides you with insights and tips to improve your sleep quality. Use this feature to improve your overall sleep habits and wake up feeling refreshed.",
+    "[Long Battery Life] Experience uninterrupted smart living with TOOBUR smartwatch's long battery life. With up to 30 days of standby time, 20 days in power saving mode, and 7-10 days of daily usage, you can wear your smartwatch without worrying about frequent charging. And it only takes 2.5 hours to fully charge, allowing you to spend more time enjoying the benefits of a smartwatch and less time worrying about battery life."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package"
+  ],
+
+  reviews: [
+    {
+      user: "Mike",
+      rating: 5,
+      title: "Great Fitness Tracker",
+      comment: "I love my toubur! It has all the features I need to track my fitness goals, including heart rate monitoring, GPS, and health tools. The integration with Google apps is a nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Samnuel",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "77a845b1-16ed-4eac-bdf9-5b591882113d",
+
+  title: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Answer/Make Calls, IP68 Waterproof/Heart Rate/Sleep Tracker/100 Sports, Fitness Watch Compatible Android iOS",
+
+  shortTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls",
+
+  brand: "TOOBUR",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/toubur3.jpg",
+    
+    gallery: [
+      "images/small-images/toubur3-1.jpg",
+      "images/small-images/toubur3-2.jpg",
+      "images/small-images/toubur2-3.jpg",
+      "images/small-images/toubur2-4.jpg",
+      "images/small-images/toubur2-3.jpg",
+      "images/small-images/toubur2-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-2.avif",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-4.jpg",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/toubur3.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/toubur.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/electronic-images/toubur.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/electronic-images/toubur3.jpg",
+      "images/electronic-images/toubur3.jpg"
+    ],
+    advertisementVideosText : "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/toubur2.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/taygeer.jpg",
+      "images/Sixth-carousel-images/procase-ipad.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/toubur-1.jpg",
+      "images/big-images/toubur-2.jpg",
+      "images/big-images/toubur-3.jpg",
+      "images/big-images/toubur-4.jpg",
+      "images/big-images/toubur-5.jpg",
+      "images/big-images/toubur-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in",
+  price: {
+    priceDollar: 44,
+    priceCents: 99,
+    currentPrice: 44.99,
+    currentPriceInCents: 4499,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/toubur2.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/toubur-5.jpg",
+
+  rating: {
+    average: 4.3,
+    totalReviews: 9638,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+ productDetails : [
+    "Operating System	   Android 6.0+ / iOS 9.0+",
+    "Special Feature	  Alexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My PhoneAlexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My Phone",
+    "Connectivity    Technology	Bluetooth",
+    "Wireless Communication   Standard	Bluetooth",
+    "Battery Cell Composition  	Lithium Polymer",
+    "GPS	 GPS Via Smartphone",
+    "Shape	 Rectangular",
+    "Screen  Size	1.95 Inches",
+    "Brand	 TOOBUR",
+    "Model Name	IDW16",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Blue",
+      size: "1.95 inch",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "[Alexa Built-in] Enjoy the convenience of Alexa on your wrist! With TOOBUR's smart watch, you can control your smart home devices, set reminders,get weather updates and more all from your wrist. Simply download the VeryFit app from the Apple Store or Google Play, connect to your watch via Bluetooth, and enjoy the convenience of Alexa on your smartwatch.",
+    "[Stay connected on-the-go] Simplify your daily routine by managing your calls and messages in one place. With Bluetooth compatibility, the TOOBUR smartwatch allows you to make and receive phone calls, you can also receive social media, E-mail and SMS notification right on your wrist, you will never miss an important message or notification. keeping you connected while you're on-the-go.",
+    "[Activity & FitnessTracker] Track your health and fitness goals with the TOOBUR fitness & activity tracker. The fitness watch can monitor your heart rate, and stress levels in real-time, and alert you if anything is abnormal. With over 100 different sports modes, the activity tracker allows you to easily track your steps, calories burned, distance, speed and with an IP68 waterproof, the watch is perfect for swimming and any activity. Get yours now and start tracking your progress!",
+    "[A Good Sleep is All You Need] Get a better night's sleep with TOOBUR's sleep tracker.The smartwatch monitors your sleep in three different modes - REM, light, and deep sleep. The data is sent to the VeryFit app, which provides you with insights and tips to improve your sleep quality. Use this feature to improve your overall sleep habits and wake up feeling refreshed.",
+    "[Long Battery Life] Experience uninterrupted smart living with TOOBUR smartwatch's long battery life. With up to 30 days of standby time, 20 days in power saving mode, and 7-10 days of daily usage, you can wear your smartwatch without worrying about frequent charging. And it only takes 2.5 hours to fully charge, allowing you to spend more time enjoying the benefits of a smartwatch and less time worrying about battery life."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package"
+  ],
+
+  reviews: [
+    {
+      user: "Eric",
+      rating: 5,
+      title: "Great smart watc",
+      comment: "Nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Peter",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "If you look for something reliable and useful at the same time, I strongly recommend you this wireless watch with Alexa incorporated",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "10ed8504-57db-433c-b0a3-fc71a35c88a1",
+
+  title: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Answer/Make Calls, IP68 Waterproof/Heart Rate/Sleep Tracker/100 Sports, Fitness Watch Compatible Android iOS",
+
+  shortTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls",
+
+  brand: "TOOBUR",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/toubur4.jpg",
+    
+    gallery: [
+      "images/small-images/toubur4-1.jpg",
+      "images/small-images/toubur4-2.jpg",
+      "images/small-images/toubur4-3.jpg",
+      "images/small-images/toubur4-4.jpg",
+      "images/small-images/toubur4-3.jpg",
+      "images/small-images/toubur4-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-2.avif",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-4.jpg",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/toubur4.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/toubur.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/electronic-images/toubur.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/electronic-images/toubur3.jpg",
+      "images/electronic-images/toubur3.jpg"
+    ],
+    advertisementVideosText : "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/toubur.jpg",
+      "images/electronic-images/toubur2.jpg",
+      "images/electronic-images/toubur3.jpg",
+      "images/electronic-images/toubur4.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/toubur-1.jpg",
+      "images/big-images/toubur-2.jpg",
+      "images/big-images/toubur-3.jpg",
+      "images/big-images/toubur-4.jpg",
+      "images/big-images/toubur-5.jpg",
+      "images/big-images/toubur-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in",
+  price: {
+    priceDollar: 44,
+    priceCents: 99,
+    currentPrice: 44.99,
+    currentPriceInCents: 4499,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/toubur2.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/toubur3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/toubur4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/toubur-5.jpg",
+
+  rating: {
+    average: 4.3,
+    totalReviews: 5689,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+ productDetails : [
+    "Operating System	   Android 6.0+ / iOS 9.0+",
+    "Special Feature	  Alexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My PhoneAlexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My Phone",
+    "Connectivity    Technology	Bluetooth",
+    "Wireless Communication   Standard	Bluetooth",
+    "Battery Cell Composition  	Lithium Polymer",
+    "GPS	 GPS Via Smartphone",
+    "Shape	 Rectangular",
+    "Screen  Size	1.95 Inches",
+    "Brand	 TOOBUR",
+    "Model Name	IDW16",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Lilac",
+      size: "1.95 inch",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "[Alexa Built-in] Enjoy the convenience of Alexa on your wrist! With TOOBUR's smart watch, you can control your smart home devices, set reminders,get weather updates and more all from your wrist. Simply download the VeryFit app from the Apple Store or Google Play, connect to your watch via Bluetooth, and enjoy the convenience of Alexa on your smartwatch.",
+    "[Stay connected on-the-go] Simplify your daily routine by managing your calls and messages in one place. With Bluetooth compatibility, the TOOBUR smartwatch allows you to make and receive phone calls, you can also receive social media, E-mail and SMS notification right on your wrist, you will never miss an important message or notification. keeping you connected while you're on-the-go.",
+    "[Activity & FitnessTracker] Track your health and fitness goals with the TOOBUR fitness & activity tracker. The fitness watch can monitor your heart rate, and stress levels in real-time, and alert you if anything is abnormal. With over 100 different sports modes, the activity tracker allows you to easily track your steps, calories burned, distance, speed and with an IP68 waterproof, the watch is perfect for swimming and any activity. Get yours now and start tracking your progress!",
+    "[A Good Sleep is All You Need] Get a better night's sleep with TOOBUR's sleep tracker.The smartwatch monitors your sleep in three different modes - REM, light, and deep sleep. The data is sent to the VeryFit app, which provides you with insights and tips to improve your sleep quality. Use this feature to improve your overall sleep habits and wake up feeling refreshed.",
+    "[Long Battery Life] Experience uninterrupted smart living with TOOBUR smartwatch's long battery life. With up to 30 days of standby time, 20 days in power saving mode, and 7-10 days of daily usage, you can wear your smartwatch without worrying about frequent charging. And it only takes 2.5 hours to fully charge, allowing you to spend more time enjoying the benefits of a smartwatch and less time worrying about battery life."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package"
+  ],
+
+  reviews: [
+    {
+      user: "Eric",
+      rating: 5,
+      title: "Great smart watc",
+      comment: "Nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Peter",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "If you look for something reliable and useful at the same time, I strongly recommend you this wireless watch with Alexa incorporated",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "8a53b080-6d40-4a65-ab26-b24ecf700bce",
+
+  title: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Answer/Make Calls, IP68 Waterproof/Heart Rate/Sleep Tracker/100 Sports, Fitness Watch Compatible Android iOS",
+
+  shortTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls",
+
+  brand: "TOOBUR",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "watches",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/toubur5.jpg",
+    
+    gallery: [
+      "images/small-images/toubur5-1.jpg",
+      "images/small-images/toubur5-2.jpg",
+      "images/small-images/toubur5-3.jpg",
+      "images/small-images/toubur5-4.jpg",
+      "images/small-images/toubur5-3.jpg",
+      "images/small-images/toubur5-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-2.avif",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-4.jpg",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-3.avif",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-5.jpg",
+      "images/review-carousel/toubur-1.avif",
+      "images/review-carousel/toubur-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/toubur-5.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/toubur5.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/toubur.mp4",
+    galleryVideos : [
+      "images/gallery-videos/kpep-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/electronic-images/toubur.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/electronic-images/toubur3.jpg",
+      "images/electronic-images/toubur3.jpg"
+    ],
+    advertisementVideosText : "TOOBUR Smart Watch for Men Women Alexa Built-in, 1.95 inch Fitness Tracker with Calls..."
+  },
+
+  manifacturer: {                                                     // Not used
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
+
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/electronic-images/toubur.jpg",
+      "images/electronic-images/toubur2.jpg",
+      "images/electronic-images/toubur3.jpg",
+      "images/electronic-images/toubur4.jpg",
+      "images/small-images/ipad-3.jpg",
+      "images/Sixth-carousel-images/procase.jpg",
+      "images/Sixth-carousel-images/mobdic.jpg",
+      "images/Sixth-carousel-images/maten.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/small-images/ipad-1.jpg",
+      "images/Sixth-carousel-images/smart.jpg",
+      "images/Sixth-carousel-images/sparin-screen.jpg",
+      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
+      "images/Sixth-carousel-images/amzon-pen.jpg",
+      "images/small-images/ipad-1.jpg"
+    ],
+    bigImages : [
+      "images/big-images/toubur-1.jpg",
+      "images/big-images/toubur-2.jpg",
+      "images/big-images/toubur-3.jpg",
+      "images/big-images/toubur-4.jpg",
+      "images/big-images/toubur-5.jpg",
+      "images/big-images/toubur-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "TOOBUR Smart Watch for Men Women Alexa Built-in",
+  price: {
+    priceDollar: 44,
+    priceCents: 99,
+    currentPrice: 44.99,
+    currentPriceInCents: 4499,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  colorItems : [
+    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
+    { id: 2, img: "images/electronic-images/toubur2.jpg", price: 16.79, listPrice: null, color: "purple" },
+    { id: 3, img: "images/electronic-images/toubur3.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 4, img: "images/electronic-images/toubur4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 5, img: "images/electronic-images/toubur5.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
+    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
+    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
+    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
+    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
+    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
+    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
+    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
+  ],
+
+  backgroundImage: "images/big-images/toubur-5.jpg",
+
+  rating: {
+    average: 4.3,
+    totalReviews: 4689,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+ productDetails : [
+    "Operating System	   Android 6.0+ / iOS 9.0+",
+    "Special Feature	  Alexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My PhoneAlexa Built-in, Compatible with Bluetooth Calls, iOS & Android Compatible, Notifications, Heart Rate, Sleep Tracker, Step Calorie Counter, Activity Tracker, 100 Sport Modes, IP68 Waterproof, Find My Phone",
+    "Connectivity    Technology	Bluetooth",
+    "Wireless Communication   Standard	Bluetooth",
+    "Battery Cell Composition  	Lithium Polymer",
+    "GPS	 GPS Via Smartphone",
+    "Shape	 Rectangular",
+    "Screen  Size	1.95 Inches",
+    "Brand	 TOOBUR",
+    "Model Name	IDW16",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Pink",
+      size: "1.95 inch",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "[Alexa Built-in] Enjoy the convenience of Alexa on your wrist! With TOOBUR's smart watch, you can control your smart home devices, set reminders,get weather updates and more all from your wrist. Simply download the VeryFit app from the Apple Store or Google Play, connect to your watch via Bluetooth, and enjoy the convenience of Alexa on your smartwatch.",
+    "[Stay connected on-the-go] Simplify your daily routine by managing your calls and messages in one place. With Bluetooth compatibility, the TOOBUR smartwatch allows you to make and receive phone calls, you can also receive social media, E-mail and SMS notification right on your wrist, you will never miss an important message or notification. keeping you connected while you're on-the-go.",
+    "[Activity & FitnessTracker] Track your health and fitness goals with the TOOBUR fitness & activity tracker. The fitness watch can monitor your heart rate, and stress levels in real-time, and alert you if anything is abnormal. With over 100 different sports modes, the activity tracker allows you to easily track your steps, calories burned, distance, speed and with an IP68 waterproof, the watch is perfect for swimming and any activity. Get yours now and start tracking your progress!",
+    "[A Good Sleep is All You Need] Get a better night's sleep with TOOBUR's sleep tracker.The smartwatch monitors your sleep in three different modes - REM, light, and deep sleep. The data is sent to the VeryFit app, which provides you with insights and tips to improve your sleep quality. Use this feature to improve your overall sleep habits and wake up feeling refreshed.",
+    "[Long Battery Life] Experience uninterrupted smart living with TOOBUR smartwatch's long battery life. With up to 30 days of standby time, 20 days in power saving mode, and 7-10 days of daily usage, you can wear your smartwatch without worrying about frequent charging. And it only takes 2.5 hours to fully charge, allowing you to spend more time enjoying the benefits of a smartwatch and less time worrying about battery life."
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package"
+  ],
+
+  reviews: [
+    {
+      user: "Massaro",
+      rating: 5,
+      title: "Great smart watch",
+      comment: "Nice bonus. The battery life is impressive, and the design is sleek. Highly recommend this fitness tracker!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Alex",
+      rating: 4,
+      title: "Good Value for the Price",
+      comment: "If you look for something reliable and useful at the same time, I strongly recommend you this wireless watch with Alexa incorporated",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////LEGGINGS/////////////////////////////////////////////
 {
   id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
