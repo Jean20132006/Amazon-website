@@ -705,7 +705,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
-    ////////////////////// CHOOSE ITEMS COLOR & ITS CAROUSEL CODE /////////////////////////////////
+    ////////////////////// CHOOSE ITEMS COLOR & IN THE CAROUSEL CODE /////////////////////////////////
 
     /**
      * @brief This script  dynamically carousel to choose color functionality in checkout page
@@ -719,52 +719,83 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
     const columnsPerPage = 6;                                                      // Number of columns to display in each page
 
     const track = document.querySelector(".checkout-carousel-color-track");        // The container element where the carousel pages will be added
+    
+    // Get the arry of identical products but the different color
+    const filteredMatchBrand = products.filter(p => p.brand === matchingProduct.brand);
+    const itemExists = filteredMatchBrand.find(p => p.id === matchingProduct.id);
+    if (itemExists) {
+        const index = filteredMatchBrand.findIndex(p => p.id === matchingProduct.id);
+        if(index != 0){
+            filteredMatchBrand.splice(index, 1);         // remove one element at position index
+            filteredMatchBrand.unshift(matchingProduct); // Add the main product at the beginning of the array
+
+        }    
+    }
 
     function generateCarousel(items) {
-    track.innerHTML = "";                                                        // Clear previous content
 
-    const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
+        track.innerHTML = "";                                                        // Clear previous content
 
-    for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
-        const pageDiv = document.createElement("div");                                // Create a new page container
-        pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
+        const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
 
-        for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
-        const columnDiv = document.createElement("div");                            // Create a new column container
-        columnDiv.classList.add("column-color");                                    // Add class for styling
+        for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+            const pageDiv = document.createElement("div");                                // Create a new page container
+            pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
 
-        // Calculate start index of items for this column
-        const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
-        const endIndex = startIndex + itemsPerColumn;
+            for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
+            const columnDiv = document.createElement("div");                            // Create a new column container
+            columnDiv.classList.add("column-color");                                    // Add class for styling
 
-        items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
-            const button = document.createElement("button");
-            button.classList.add("item-color");
-            button.dataset.id = item.id;
-            // Set button content with image and price information
-            button.innerHTML = `
-            <img src="${item.img}" alt="color option ${item.id}">                  
-            <div class="item-color-horizontal-line"></div>
-            <div class="item-color-price">$${item.price.toFixed(2)}</div>
-            <div class="item-color-listprice">${item.listPrice ? `$${item.listPrice.toFixed(2)}` : ''}</div>
-            `;
+            // Calculate start index of items for this column
+            const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
+            const endIndex = startIndex + itemsPerColumn;
 
-            columnDiv.appendChild(button);                                            // Add button to the column container
-        });
+            items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
+                const link = document.createElement("a");
+                link.href = `${item.productPage}.html?id=${item.id}`;
+                const button = document.createElement("button");
+                button.classList.add("item-color");
+                button.dataset.id = item.id;
+                // Set button content with image and price information
+                button.innerHTML = `
+                <img src="${item.images.main}" alt="color option ${item.id}">                  
+                <div class="item-color-horizontal-line"></div>
+                <div class="item-color-price">$${item.price.currentPrice}</div>
+                <div class="item-color-listprice">${listPrice(item)}</div>
+                `;
+                link.appendChild(button)
+                columnDiv.appendChild(link);                                            // Add button to the column container
+            });
 
-        pageDiv.appendChild(columnDiv);                                             // Add column to the page container
+            pageDiv.appendChild(columnDiv);                                             // Add column to the page container
+            }
+
+            track.appendChild(pageDiv);                                                   // Add page to the carousel track
         }
 
-        track.appendChild(pageDiv);                                                   // Add page to the carousel track
-    }
-
-    displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
+        //displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
 
     }
 
-    generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
+    //generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
+    generateCarousel(filteredMatchBrand); 
 
     /////////////////////////////////////////////////////////////////////////////////////
+    ///////////////// FUNCTION UTILITY TO FIND THE LIST PRICE //////////////////////////
+    /**
+     * @brief Calculate list price if discount is not 0 else print nothing
+     * @param {*} item 
+     * @returns oldPrice
+     */
+    function listPrice(item){
+        //let oldPrice = item.price.discountPercent != 0 ? ((item.price.currentPriceInCents + (item.price.currentPriceInCents * item.price.discountPercent / 100)) / 100).toFixed(2) : '';
+        let oldPrice = item.price.discountPercent != 0
+    ? `$${((item.price.currentPriceInCents +
+        (item.price.currentPriceInCents * item.price.discountPercent / 100)) / 100).toFixed(2)}`
+    : '';
+        return oldPrice;
+    }
+    ////////////////////////////////////////////////////////////////////////////////////
 
     /////////////////NAVIGATION FOR COLOR CAROUSEL IN CHECKOUT PAGE//////////////////////
     /**
@@ -897,13 +928,13 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
             selectButtonSize.appendChild(rowDiv);
         }
     }
-    if(matchingProduct.categories === "clothing"){
+    if(matchingProduct.categories[0] === "clothing"){
         GenerateItemSize(matchingProduct);
     }
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    //////// GENERATE BIG FOR CLOTHES  AND COMPUTERS computers IN CHECKOUT PAGE //////////
+    //////// GENERATE BIG IMAGES FOR CLOTHES  AND COMPUTERS computers IN CHECKOUT PAGE //////////
 
     /**
      * This function generates dynamically big images in clothes and computers checkout pages

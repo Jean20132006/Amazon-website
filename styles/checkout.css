@@ -2296,7 +2296,7 @@
 .checkout-carousel-color-track{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     flex-shrink: 0;
     height: auto;
@@ -2305,8 +2305,8 @@
 .checkout-carosel-color-page{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: top;
+    justify-content: left;
     gap: 5px;
     height: auto;
     flex-shrink: 0;
@@ -2356,6 +2356,11 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;   
+}
+
+.column-color a{
+    text-decoration: none;
+
 }
 .item-color{
     display: flex;

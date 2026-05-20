@@ -2695,13 +2695,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
-    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
-    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
-    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
-  ],
-
   backgroundImage: "images/big-images/cobak-1.jpg",
 
   rating: {
@@ -2925,13 +2918,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "Natural Silver" },
-    { id: 2, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "pink clear" },
-    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
-    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
-  ],
-
   backgroundImage: "images/big-images/cobak-1.jpg",
 
   rating: {
@@ -3152,30 +3138,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/Sixth-carousel-images/kenke.jpg", price: 6.29, listPrice: 6.69, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
-
   backgroundImage: "images/big-images/kenke-2.jpg",
 
   rating: {
@@ -3393,30 +3355,6 @@
     discountPercent: 25,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/fitbit.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
 
   backgroundImage: "images/big-images/fitbit-3.jpg",
 
@@ -3638,30 +3576,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
-
   backgroundImage: "images/big-images/toubur-5.jpg",
 
   rating: {
@@ -3873,30 +3787,6 @@
     discountPercent: 50,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/kpep.jpg", price: 19.99, listPrice: 39.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
 
   backgroundImage: "images/big-images/fitbit-3.jpg",
 
@@ -4120,30 +4010,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/electronic-images/toubur2.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
-
   backgroundImage: "images/big-images/toubur-5.jpg",
 
   rating: {
@@ -4354,30 +4220,6 @@
     discountPercent: 0,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/toubur2.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/kenke-1.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/kenke-2.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/kenke-3.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
 
   backgroundImage: "images/big-images/toubur-5.jpg",
 
@@ -4590,30 +4432,6 @@
     pricePerUnit: 3.19
   },
 
-  colorItems : [
-    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/toubur2.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/toubur3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/toubur4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/kenke-4.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
-
   backgroundImage: "images/big-images/toubur-5.jpg",
 
   rating: {
@@ -4825,30 +4643,6 @@
     discountPercent: 0,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/toubur.jpg", price: 119.95, listPrice: 159.99, color: "pink" },
-    { id: 2, img: "images/electronic-images/toubur2.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/toubur3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/toubur4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/toubur5.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 19, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 20, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 21, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-  ],
 
   backgroundImage: "images/big-images/toubur-5.jpg",
 
@@ -5063,57 +4857,6 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/fifth-carousel-images/gym-people.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 }
-  ],
-  
   backgroundImage: "images/big-images/gym-people-1.jpg",
 
   size: [
@@ -5340,57 +5083,6 @@
     discountPercent: 5,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/fifth-carousel-images/gym-people.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99 },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80 },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99 },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65 },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99 },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80 },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65 },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99 }
-  ],
   
   backgroundImage: "images/big-images/gym-people-1.jpg",
   size: [
@@ -5621,57 +5313,6 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/clothes-images/gym-capris.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
-  
   backgroundImage: "images/big-images/gym-people-1.jpg",
 
   size: [
@@ -5903,57 +5544,6 @@
     discountPercent: 20,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/trendy.jpg", price: 7.99, listPrice: 8.99, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/trendy-2.jpg",
 
@@ -6182,57 +5772,6 @@
     discountPercent: 50,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/trendy-v.jpg", price: 8.99, listPrice: 17.19, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/trendy-2.jpg",
 
@@ -6466,57 +6005,6 @@
     discountPercent: 33,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/y2k.jpg", price: 7.99, listPrice: 11.99, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/y2k-1.jpg",
 
@@ -6752,59 +6240,9 @@
     discountPercent: 55,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/gayhay.jpg", price: 14.99, listPrice: 32.99, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/gayhay-1.jpg",
+
   size: [
     "3X-Small",
     "XX-Small",
@@ -7034,59 +6472,9 @@
     discountPercent: 13,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/fashion.jpg", price: 12.99, listPrice: 14.99, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/fashion-3.jpg",
+
   size: [
     "X-Small",
     "Small",
@@ -7316,59 +6704,9 @@
     discountPercent: 7,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/wiholl.jpg", price: 7.98, listPrice: 14.99, color: "Red" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/wiholl-1.jpg",
+
   size: [
     "Small",
     "Medium",
@@ -7473,13 +6811,709 @@
     }
   ]
 },
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// T-SHIRTS ////////////////////////////////////////////////
+{
+  id: "a434b69f-1bc1-482d-9ce7-cd7f4a66ce8d",
+
+  title: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops 2026 Fashion S-4XL",
+
+  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops",
+
+  brand: "WIHOLL",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/wiholl-green.jpg",
+     
+    
+    gallery: [
+      "images/small-images/wiholl-green-1.jpg",
+      "images/small-images/wiholl-green-2.jpg",
+      "images/small-images/wiholl-green-3.jpg",
+       "images/small-images/wiholl-green-4.jpg",
+      "images/small-images/wiholl-green-2.jpg",
+      "images/small-images/wiholl-green-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/wiholl-v-1.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-3.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-3.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    cartImageConfiramation: "images/clothes-images/wiholl-green.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-people-video-1.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosText : "Wiholl Trendy Sweater color Bloc tops Long Sleeve T Shirts Fall..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/wiholl-v-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/wiholl.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/wiholl-v-1.jpg",
+      "images/big-images/wiholl-v-2.jpg",
+      "images/big-images/wiholl-v-3.jpg",
+      "images/big-images/wiholl-v-4.jpg",
+      "images/big-images/wiholl-v-5.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color",
+
+  price: {
+    priceDollar: 14,
+    priceCents: 99,
+    currentPrice: 14.99,
+    currentPriceInCents: 1499,
+    currency: "USD",
+    discountPercent: 17,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/big-images/wiholl-v-1.jpg",
+
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 391,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: WIHOLL", 
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Green",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Fashionable and Versatile Tops: These half-sleeve, loose-fit tops are great for all body types, covering the abdomen and pairing well with denim, skirts, and more. They're perfect for a chic or casual look.",
+    "Comfortable Fabric: Made of a blend (60% Polyester, 35% Rayon, 5% Spandex), these tops are soft, breathable, and ideal for summer wear",
+    "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great Shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "One of the best shirts I've bought",
+      comment: "Exactly what I was looking for! The shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
+      date: "2026-02-03"
+    }
+  ]
+},
+//////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "a45cfa0a-66d6-4dc7-9475-e2b01595f7d7",
+
+  title: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops 2026 Fashion S-4XL",
+
+  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops",
+
+  brand: "WIHOLL",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/wiholl-white.jpg",
+     
+    
+    gallery: [
+      "images/small-images/wiholl-white-1.jpg",
+      "images/small-images/wiholl-white-2.jpg",
+      "images/small-images/wiholl-white-3.jpg",
+       "images/small-images/wiholl-white-1.jpg",
+      "images/small-images/wiholl-white-2.jpg",
+      "images/small-images/wiholl-white-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/wiholl-v-1.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-3.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-3.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    cartImageConfiramation: "images/clothes-images/wiholl-white.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-people-video-1.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosText : "Wiholl Trendy Sweater color Bloc tops Long Sleeve T Shirts Fall..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/wiholl-v-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/wiholl.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/wiholl-v-1.jpg",
+      "images/big-images/wiholl-v-2.jpg",
+      "images/big-images/wiholl-v-3.jpg",
+      "images/big-images/wiholl-v-4.jpg",
+      "images/big-images/wiholl-v-5.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color",
+
+  price: {
+    priceDollar: 9,
+    priceCents: 99,
+    currentPrice: 9.99,
+    currentPriceInCents: 999,
+    currency: "USD",
+    discountPercent: 7,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/big-images/wiholl-v-1.jpg",
+
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 391,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: WIHOLL", 
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Fashionable and Versatile Tops: These half-sleeve, loose-fit tops are great for all body types, covering the abdomen and pairing well with denim, skirts, and more. They're perfect for a chic or casual look.",
+    "Comfortable Fabric: Made of a blend (60% Polyester, 35% Rayon, 5% Spandex), these tops are soft, breathable, and ideal for summer wear",
+    "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great Shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "One of the best shirts I've bought",
+      comment: "Exactly what I was looking for! The shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "d339adf3-e004-4c20-a120-40e8874c66cb",
+
+  title: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops 2026 Fashion S-4XL",
+
+  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops",
+
+  brand: "WIHOLL",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shirts",
+    "leggings",
+    "workout",
+    "yoga"
+    
+  ],
+
+  images: {
+    main: "images/clothes-images/wiholl-kaki.jpg",
+     
+    
+    gallery: [
+      "images/small-images/wiholl-kaki-1.jpg",
+      "images/small-images/wiholl-kaki-2.jpg",
+      "images/small-images/wiholl-kaki-3.jpg",
+       "images/small-images/wiholl-kaki-1.jpg",
+      "images/small-images/wiholl-kaki-2.jpg",
+      "images/small-images/wiholl-kaki-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/wiholl-v-1.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-3.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-2.jpg",
+      "images/review-carousel/wiholl-4.jpg",
+      "images/review-carousel/wiholl-5.jpg",
+      "images/review-carousel/wiholl-1.jpg",
+      "images/review-carousel/wiholl-3.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/wiholl-v-4.jpg"
+    ],
+
+    cartImageConfiramation: "images/clothes-images/wiholl-kaki.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/wiholl.mp4",
+    galleryVideos : [
+      "images/gallery-videos/gym-people-video-1.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/wiholl-advert.jpg",
+      "images/small-images/wiholl-advert.jpg"
+    ],
+    advertisementVideosText : "Wiholl Trendy Sweater color Bloc tops Long Sleeve T Shirts Fall..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    clothesComputerImages : [                                               //Use in manufacturer big carousel
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/wiholl-v-1.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/wiholl.jpg",
+      "images/clothes-images/gayhay-2.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+      "images/clothes-images/trendy-carousel-8.jpg",
+      "images/clothes-images/j-ver-1.jpg",
+      "images/clothes-images/trendy-carousel-5.jpg",
+      "images/clothes-images/y2k-1.jpg",
+      "images/clothes-images/trendy-carousel-3.jpg",
+      "images/clothes-images/gayhay-1.jpg",
+      "images/clothes-images/fashion-1.jpg",
+      "images/clothes-images/trendy-carousel-6.jpg",
+      "images/clothes-images/trendy-carousel-7.jpg",
+    ],
+    bigImages : [
+      "images/big-images/wiholl-v-1.jpg",
+      "images/big-images/wiholl-v-2.jpg",
+      "images/big-images/wiholl-v-3.jpg",
+      "images/big-images/wiholl-v-4.jpg",
+      "images/big-images/wiholl-v-5.jpg"   
+    ]
+  },
+  fourthBigCarouselTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color",
+
+  price: {
+    priceDollar: 8,
+    priceCents: 99,
+    currentPrice: 8.99,
+    currentPriceInCents: 899,
+    currency: "USD",
+    discountPercent: 7,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/big-images/wiholl-v-1.jpg",
+
+  size: [
+    "Small",
+    "Medium",
+    "Large",
+    "X-Large",
+    "XX-Large",
+    "3X-Large",
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 391,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: WIHOLL", 
+    "Fabric type: 92% Polyester, 8% Spandex",
+    "Material composition: 92% Polyester, 8% Spandex",
+    "Care instructions: Machine Washable",
+    "Origin: Imported",
+    "Closure type: Pullover"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Kaki",
+      size: "17 oz Bottle",
+      pack: "3 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Fashionable and Versatile Tops: These half-sleeve, loose-fit tops are great for all body types, covering the abdomen and pairing well with denim, skirts, and more. They're perfect for a chic or casual look.",
+    "Comfortable Fabric: Made of a blend (60% Polyester, 35% Rayon, 5% Spandex), these tops are soft, breathable, and ideal for summer wear",
+    "Stylish Wearing: This basic shirt is a must-have for spring,summer,fall and winter, perfect wear with cargo pants,shorts,jeans,skirt,cardigan,hoodie,sweater and jacket for a fashion y2k look",
+    "Easy Care Long Lasting:Machine washable in cold water with like colors. For best results, hand wash or use a gentle cycle to keep this top looking new. Do not bleach; hang dry to maintain its vibrant color and stretch"
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great Shirt!",
+      comment: "If you look for something comfortable and stylish, this shirt is a great choice. The material is soft and breathable, making it perfect for workouts or casual wear. I bought it in dark blue and it's become one of my favorite shirts. The fit is true to size and it looks great with jeans or shorts. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "One of the best shirts I've bought",
+      comment: "Exactly what I was looking for! The shirt is very comfortable and the material is soft. I bought it in red and I love it. The fit is perfect. I can wear it as a regular shirt or fold it up for a cute crop top look. It's great for layering under jackets or cardigans too. Highly recommend!",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
 
   title: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops 2026 Fashion S-4XL",
 
-  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve",
+  shortTitle: "WIHOLL Womens T Shirts Loose Fit Short Sleeve Tees V Neck Color Block Summer Tops",
 
   brand: "WIHOLL",
 
@@ -7597,58 +7631,8 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/clothes-images/wiholl-v.jpg", price: 8.99, listPrice: 14.99, color: "Dark Blue" },
-    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
-  
   backgroundImage: "images/big-images/wiholl-v-1.jpg",
+
   size: [
     "Small",
     "Medium",
@@ -7761,7 +7745,7 @@
 
   shortTitle: "WIHOLL Womens Summer Tops Short Petal Sleeve",
 
-  brand: "WIHOLL",
+  brand: "WIHOLL-V",
 
   productPage: "checkoutClothesComputer",
 
@@ -7877,59 +7861,9 @@
     discountPercent: 0,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/wiholl2.jpg", price: 9.99, listPrice: 9.99, color: "White" },
-    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/wiholl2-1.jpg",
+
   size: [
     "Small",
     "Medium",
