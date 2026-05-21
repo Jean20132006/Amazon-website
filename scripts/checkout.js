@@ -45,8 +45,8 @@ if (matchingProduct) {
   const priceOnAdvertVideo = document.querySelectorAll('.clearence');                             // price on advert video
   const listPriceOnAdvertVideo = document.querySelectorAll('.old-price');                          // list price on advert video
   const ingredientsButton = document.querySelector('.ingredients'); // ingredients dropdown button
-  const clothesComputerBigCarouselBackground = document.querySelector('.checkout-carousel-clothes-computers-track'); // background for clothes and computers carousel
-  const bigCarouselSquareText = document.querySelectorAll('.title-four-picture-container-name');      // text in big carousel for clothes and computers
+  //const clothesComputerBigCarouselBackground = document.querySelector('.checkout-carousel-clothes-computers-track'); // background for clothes and computers carousel
+  //const bigCarouselSquareText = document.querySelectorAll('.title-four-picture-container-name');      // text in big carousel for clothes and computers
   const productDescriptionTitle = document.querySelector('.js-product-decription-title');             // product description title element
   const visitStore = document.querySelectorAll('.js-visit-store');                                    // visit store element after the title in checkout page
   const rating = document.querySelectorAll('.js-rating');                                             // rating element in checkout page
@@ -64,7 +64,7 @@ if (matchingProduct) {
     fourthRowManufacturer.style.display = "none";
     ingredientsButton.style.display = "none";
     productDescriptionTitle.style.display = "none";
-    clothesComputerBigCarouselBackground.style.backgroundImage = `url('${matchingProduct.backgroundImage}')`;
+    //clothesComputerBigCarouselBackground.style.backgroundImage = `url('${matchingProduct.backgroundImage}')`;
 
   }
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -116,10 +116,6 @@ if (matchingProduct) {
   });
 
   productDescription.textContent = matchingProduct.description;
-
-  /*advertImage.forEach((img, index) => {
-    img.src= matchingProduct.images.advertisementImages[index];
-  });*/
 
     selectFlavorButtons.forEach((button, index) => {
     button.textContent = matchingProduct.variants[index].flavor;
@@ -187,9 +183,9 @@ if (matchingProduct) {
         element.textContent = `$${(matchingProduct.price.currentPriceInCents / 100).toFixed(2)}`;
     });
 
-    bigCarouselSquareText.forEach(element => {
+    /*bigCarouselSquareText.forEach(element => {
         element.textContent = matchingProduct.shortTitle;
-    });
+    });*/
 
     visitStore.forEach(element => {
         element.innerHTML = `<a href="#visit">Visit the ${matchingProduct.brand} Store</a>`;
@@ -656,54 +652,6 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
  */
 if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
 
-    ////////////////////////BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
-
-    /**
-     * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
-     * clothing and computer products
-     */
-    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
-    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
-    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
-    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
-    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
-    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
-    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
-
-    let currentIndexBigCarousel = 0;
-    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
-    function updateCarouselBigCarousel(){
-        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
-        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
-        if(currentIndexBigCarousel === 0){
-            leftButtonBigCarousel.disabled = true;
-        }
-        else{
-            leftButtonBigCarousel.disabled = false;
-        }
-        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
-            rightButtonBigCarousel.disabled = true;
-        }
-        else{
-            rightButtonBigCarousel.disabled = false;
-        }
-    }
-    leftButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel > 0){
-            currentIndexBigCarousel--;
-            updateCarouselBigCarousel();
-        }
-    });
-    rightButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
-            currentIndexBigCarousel++;
-            updateCarouselBigCarousel();
-        }
-    });
-
-    updateCarouselBigCarousel();         // Initialize carousel state
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////
 
     ////////////////////// CHOOSE ITEMS COLOR & IN THE CAROUSEL CODE /////////////////////////////////
 
@@ -789,10 +737,9 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
      */
     function listPrice(item){
         //let oldPrice = item.price.discountPercent != 0 ? ((item.price.currentPriceInCents + (item.price.currentPriceInCents * item.price.discountPercent / 100)) / 100).toFixed(2) : '';
-        let oldPrice = item.price.discountPercent != 0
-    ? `$${((item.price.currentPriceInCents +
-        (item.price.currentPriceInCents * item.price.discountPercent / 100)) / 100).toFixed(2)}`
-    : '';
+        let oldPrice = item.price.discountPercent != 0 ? `$${((item.price.currentPriceInCents +
+        (item.price.currentPriceInCents * item.price.discountPercent / 100)) / 100).toFixed(2)}` : '';
+
         return oldPrice;
     }
     ////////////////////////////////////////////////////////////////////////////////////
@@ -934,7 +881,248 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    //////// GENERATE BIG IMAGES FOR CLOTHES  AND COMPUTERS computers IN CHECKOUT PAGE //////////
+    //////////////////// BIG CAROUSEL FOR CLOTHES AND COMPUTERS ////////////////////////
+    
+function bigCarouselGenerator(matchProduct){
+
+    const bigCarouselTrack = document.querySelector(
+        '.checkout-carousel-clothes-computers-track'
+    );
+
+    bigCarouselTrack.style.backgroundImage = `url('${matchProduct.backgroundImage}')`;
+    
+    // Filter products
+    let filteredImages = products.filter(
+        p => p.brand === matchProduct.brand
+    );
+
+    // Limit to 16 items max
+    filteredImages = filteredImages.slice(0, 16);
+
+    console.log(filteredImages);
+
+    // Clear previous carousel
+    bigCarouselTrack.innerHTML = '';
+
+    const itemsPerPage = 8;
+    const itemsPerSquare = 4;
+
+    // LOOP THROUGH PAGES
+    for (let i = 0; i < filteredImages.length; i += itemsPerPage) {
+
+        // Create page
+        const bigCarouselPage = document.createElement('div');
+
+        bigCarouselPage.classList.add(
+            'checkout-carosel-clothes-computers-page'
+        );
+
+        // Get current page items (8 max)
+        const currentPageItems = filteredImages.slice(
+            i,
+            i + itemsPerPage
+        );
+
+        // LOOP THROUGH SQUARES
+        for (let j = 0; j < currentPageItems.length; j += itemsPerSquare) {
+
+            // Create square container
+            const squareContainer = document.createElement('div');
+
+            squareContainer.classList.add(
+                'square-itemname-container'
+            );
+
+            // Get 4 items for current square
+            const squareItems = currentPageItems.slice(
+                j,
+                j + itemsPerSquare
+            );
+
+            // Main square
+            const firstSquare = document.createElement('div');
+
+            firstSquare.classList.add(
+                'first-square-container'
+            );
+
+            // FIRST COLUMN
+            const firstColumnLink = document.createElement('a');
+
+            firstColumnLink.classList.add(
+                'a-link-dolce-gabana'
+            );
+
+            firstColumnLink.href =
+                `${squareItems[0]?.productPage}.html?id=${squareItems[0]?.id}`;
+
+            const firstColumn = document.createElement('div');
+
+            firstColumn.classList.add(
+                'first-square-first-column'
+            );
+
+            // SECOND COLUMN
+            const secondColumnLink = document.createElement('a');
+
+            secondColumnLink.classList.add(
+                'a-link-dolce-gabana'
+            );
+
+            secondColumnLink.href =
+                `${squareItems[2]?.productPage}.html?id=${squareItems[2]?.id}`;
+
+            const secondColumn = document.createElement('div');
+
+            secondColumn.classList.add(
+                'first-square-second-column'
+            );
+
+            // ADD IMAGES
+            
+            squareItems.forEach((item, index) => {
+                
+                const image = document.createElement('img');
+
+                image.classList.add('container1-img');
+                if(item.categories[1] != "leggings"){
+                image.src = item.images.cartImageConfiramation;
+                }
+                else{
+                    image.src = item.images.gallery[0];
+                }
+                //image.alt = item.name || 'product image';
+
+                // First 2 images → first column
+                if (index < 2) {
+
+                    firstColumn.appendChild(image);
+
+                } else {
+
+                    secondColumn.appendChild(image);
+                }
+            
+            });
+
+            // Append columns to links
+            firstColumnLink.appendChild(firstColumn);
+
+            secondColumnLink.appendChild(secondColumn);
+
+            // Append links to square
+            firstSquare.appendChild(firstColumnLink);
+
+            firstSquare.appendChild(secondColumnLink);
+
+            // NAME + STORE LINK
+            const nameLinkContainer = document.createElement('div');
+
+            nameLinkContainer.classList.add(
+                'name-link-container'
+            );
+
+            // Title
+            const title = document.createElement('div');
+
+            title.classList.add(
+                'title-four-picture-container-name'
+            );
+
+            /*title.textContent =
+                squareItems[0]?.name || 'Product';*/
+
+            // Store Link Container
+            const storeLinkContainer = document.createElement('div');
+
+            storeLinkContainer.classList.add(
+                'title-four-picture-container-link'
+            );
+
+            // Store Link
+            const storeLink = document.createElement('a');
+
+            storeLink.href = '#';
+
+            storeLink.textContent = 'Visit the store';
+
+            storeLinkContainer.appendChild(storeLink);
+
+            // Append title/link
+            nameLinkContainer.appendChild(title);
+
+            nameLinkContainer.appendChild(storeLinkContainer);
+
+            // Append square content
+            squareContainer.appendChild(firstSquare);
+
+            squareContainer.appendChild(nameLinkContainer);
+
+            // Append square to page
+            bigCarouselPage.appendChild(squareContainer);
+        }
+
+        // Append page to track
+        bigCarouselTrack.appendChild(bigCarouselPage);
+    }
+
+    
+
+}
+
+bigCarouselGenerator(matchingProduct);
+////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
+
+    /**
+     * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
+     * clothing and computer products
+     */
+    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
+    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
+    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
+    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
+    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
+    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
+    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
+
+    let currentIndexBigCarousel = 0;
+    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
+    function updateCarouselBigCarousel(){
+        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
+        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
+        if(currentIndexBigCarousel === 0){
+            leftButtonBigCarousel.disabled = true;
+        }
+        else{
+            leftButtonBigCarousel.disabled = false;
+        }
+        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
+            rightButtonBigCarousel.disabled = true;
+        }
+        else{
+            rightButtonBigCarousel.disabled = false;
+        }
+    }
+    leftButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel > 0){
+            currentIndexBigCarousel--;
+            updateCarouselBigCarousel();
+        }
+    });
+    rightButtonBigCarousel.addEventListener('click', () => {
+        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
+            currentIndexBigCarousel++;
+            updateCarouselBigCarousel();
+        }
+    });
+
+    updateCarouselBigCarousel();         // Initialize carousel state
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //////// GENERATE BIG IMAGES FOR CLOTHES AND COMPUTERS IN CHECKOUT PAGE ////////////
 
     /**
      * This function generates dynamically big images in clothes and computers checkout pages
