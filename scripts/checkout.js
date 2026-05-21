@@ -541,6 +541,23 @@ customerReviewsButton.addEventListener('click', () => {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////// DISPLAY GALLERY IMAGES NEXT TO MAIN IMAGE IN CHECKOUT ////////////////////
+
+const galleryImages = document.querySelector('.radio-button-section');
+matchingProduct.images.gallery.forEach((item, index) => {
+
+    const radioButton = document.createElement('button');
+    radioButton.classList.add('radio-button');
+
+    const galleryImg = document.createElement('img');
+    galleryImg.classList.add('js-radio-button');
+    console.log(galleryImg);
+    galleryImg.src = `${matchingProduct.images.gallery[index]}`;
+    radioButton.appendChild(galleryImg);
+    galleryImages.appendChild(radioButton);
+});
+///////////////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
 
 /**
@@ -651,6 +668,11 @@ cartNumberElement.innerText = CheckoutCartNumberItems;
  *        sections, setting background images, and initializing carousels for clothes and computers.
  */
 if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
+
+    /////////////////////// DISPLAY THE COLOR NAME ON THE CHECKOUT PAGE /////////////////////////////
+    const colorName= document.getElementById('chocolate');
+    colorName.innerHTML = ` ${matchingProduct.variants[0].color}`;
+    ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     ////////////////////// CHOOSE ITEMS COLOR & IN THE CAROUSEL CODE /////////////////////////////////
@@ -881,28 +903,19 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     /////////////////////////////////////////////////////////////////////////////////////
 
-    //////////////////// BIG CAROUSEL FOR CLOTHES AND COMPUTERS ////////////////////////
+    //////////////////// BIG CAROUSEL WITH SQUARE FOR CLOTHES AND COMPUTERS  ////////////////////////
     
 function bigCarouselGenerator(matchProduct){
 
-    const bigCarouselTrack = document.querySelector(
-        '.checkout-carousel-clothes-computers-track'
-    );
+    const bigCarouselTrack = document.querySelector('.checkout-carousel-clothes-computers-track');
 
     bigCarouselTrack.style.backgroundImage = `url('${matchProduct.backgroundImage}')`;
     
-    // Filter products
-    let filteredImages = products.filter(
-        p => p.brand === matchProduct.brand
-    );
+    let filteredImages = products.filter(p => p.brand === matchProduct.brand); // Filter products
 
-    // Limit to 16 items max
-    filteredImages = filteredImages.slice(0, 16);
-
-    console.log(filteredImages);
-
-    // Clear previous carousel
-    bigCarouselTrack.innerHTML = '';
+    filteredImages = filteredImages.slice(0, 16);                              // Limit to 16 items max
+    
+    bigCarouselTrack.innerHTML = '';                                           // Clear previous carousel
 
     const itemsPerPage = 8;
     const itemsPerSquare = 4;
@@ -910,88 +923,57 @@ function bigCarouselGenerator(matchProduct){
     // LOOP THROUGH PAGES
     for (let i = 0; i < filteredImages.length; i += itemsPerPage) {
 
-        // Create page
-        const bigCarouselPage = document.createElement('div');
+        const bigCarouselPage = document.createElement('div');                 // Create page
 
-        bigCarouselPage.classList.add(
-            'checkout-carosel-clothes-computers-page'
-        );
+        bigCarouselPage.classList.add('checkout-carosel-clothes-computers-page');
 
-        // Get current page items (8 max)
-        const currentPageItems = filteredImages.slice(
-            i,
-            i + itemsPerPage
-        );
+        const currentPageItems = filteredImages.slice(i, i + itemsPerPage);     // Get current page items (8 max)
 
         // LOOP THROUGH SQUARES
         for (let j = 0; j < currentPageItems.length; j += itemsPerSquare) {
 
-            // Create square container
-            const squareContainer = document.createElement('div');
+            const squareContainer = document.createElement('div');             // Create square container
+            squareContainer.classList.add('square-itemname-container');
 
-            squareContainer.classList.add(
-                'square-itemname-container'
-            );
+            const squareItems = currentPageItems.slice(j, j + itemsPerSquare); // Get 4 items for current square
+            const firstSquare = document.createElement('div');                 // Main square
 
-            // Get 4 items for current square
-            const squareItems = currentPageItems.slice(
-                j,
-                j + itemsPerSquare
-            );
-
-            // Main square
-            const firstSquare = document.createElement('div');
-
-            firstSquare.classList.add(
-                'first-square-container'
-            );
+            firstSquare.classList.add('first-square-container');
 
             // FIRST COLUMN
             const firstColumnLink = document.createElement('a');
-
-            firstColumnLink.classList.add(
-                'a-link-dolce-gabana'
-            );
+            firstColumnLink.classList.add('a-link-dolce-gabana');
 
             firstColumnLink.href =
                 `${squareItems[0]?.productPage}.html?id=${squareItems[0]?.id}`;
 
             const firstColumn = document.createElement('div');
 
-            firstColumn.classList.add(
-                'first-square-first-column'
-            );
+            firstColumn.classList.add('first-square-first-column');
 
             // SECOND COLUMN
             const secondColumnLink = document.createElement('a');
-
-            secondColumnLink.classList.add(
-                'a-link-dolce-gabana'
-            );
+            secondColumnLink.classList.add('a-link-dolce-gabana');
 
             secondColumnLink.href =
                 `${squareItems[2]?.productPage}.html?id=${squareItems[2]?.id}`;
 
             const secondColumn = document.createElement('div');
-
-            secondColumn.classList.add(
-                'first-square-second-column'
-            );
+            secondColumn.classList.add('first-square-second-column');
 
             // ADD IMAGES
-            
             squareItems.forEach((item, index) => {
                 
                 const image = document.createElement('img');
-
                 image.classList.add('container1-img');
+
                 if(item.categories[1] != "leggings"){
                 image.src = item.images.cartImageConfiramation;
                 }
                 else{
                     image.src = item.images.gallery[0];
                 }
-                //image.alt = item.name || 'product image';
+                image.alt = item.brand;
 
                 // First 2 images → first column
                 if (index < 2) {
@@ -1015,62 +997,40 @@ function bigCarouselGenerator(matchProduct){
 
             firstSquare.appendChild(secondColumnLink);
 
-            // NAME + STORE LINK
-            const nameLinkContainer = document.createElement('div');
+            const nameLinkContainer = document.createElement('div');  // Create a div for link
+            nameLinkContainer.classList.add('name-link-container');
 
-            nameLinkContainer.classList.add(
-                'name-link-container'
-            );
+            const title = document.createElement('div');              // Title
 
-            // Title
-            const title = document.createElement('div');
+            title.classList.add('title-four-picture-container-name');
+            title.textContent = squareItems[0]?.brand;
 
-            title.classList.add(
-                'title-four-picture-container-name'
-            );
+            const storeLinkContainer = document.createElement('div'); // Store Link Container
+            storeLinkContainer.classList.add('title-four-picture-container-link');
 
-            /*title.textContent =
-                squareItems[0]?.name || 'Product';*/
-
-            // Store Link Container
-            const storeLinkContainer = document.createElement('div');
-
-            storeLinkContainer.classList.add(
-                'title-four-picture-container-link'
-            );
-
-            // Store Link
-            const storeLink = document.createElement('a');
-
+            const storeLink = document.createElement('a');            // Store Link
             storeLink.href = '#';
-
             storeLink.textContent = 'Visit the store';
-
             storeLinkContainer.appendChild(storeLink);
 
-            // Append title/link
-            nameLinkContainer.appendChild(title);
+            nameLinkContainer.appendChild(title);                     // Append title/link
 
             nameLinkContainer.appendChild(storeLinkContainer);
 
-            // Append square content
-            squareContainer.appendChild(firstSquare);
+            squareContainer.appendChild(firstSquare);                 // Append square content
 
             squareContainer.appendChild(nameLinkContainer);
 
-            // Append square to page
-            bigCarouselPage.appendChild(squareContainer);
+            bigCarouselPage.appendChild(squareContainer);            // Append square to page
         }
 
-        // Append page to track
-        bigCarouselTrack.appendChild(bigCarouselPage);
-    }
-
-    
+        bigCarouselTrack.appendChild(bigCarouselPage);               // Append page to track
+    }    
 
 }
 
 bigCarouselGenerator(matchingProduct);
+
 ////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
@@ -1117,8 +1077,9 @@ bigCarouselGenerator(matchingProduct);
             updateCarouselBigCarousel();
         }
     });
-
+    
     updateCarouselBigCarousel();         // Initialize carousel state
+    
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
