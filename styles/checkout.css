@@ -201,6 +201,11 @@
     color: grey;
     font-weight: 600;
 }
+#color-name {
+    font-weight: bold;
+    color: black;
+
+}
 #chocolate{
     font-weight: bold;
     color: black;

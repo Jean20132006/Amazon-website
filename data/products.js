@@ -6899,24 +6899,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/wiholl-v-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl-v-1.jpg",
       "images/big-images/wiholl-v-2.jpg",
@@ -7131,24 +7125,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/wiholl-v-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl-v-1.jpg",
       "images/big-images/wiholl-v-2.jpg",
@@ -7363,24 +7351,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/wiholl-v-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl-v-1.jpg",
       "images/big-images/wiholl-v-2.jpg",
@@ -7593,24 +7575,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/wiholl-v-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl-v-1.jpg",
       "images/big-images/wiholl-v-2.jpg",
@@ -8054,24 +8030,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/anrabess-1.jpg",
-      "images/clothes-images/anrabess-2.jpg",
-      "images/clothes-images/anrabess-3.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-1.jpg",
-      "images/clothes-images/anrabess-3.jpg",
-      "images/clothes-images/anrabess-2.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+    
     bigImages : [
       "images/big-images/anrabess-1.jpg",
       "images/big-images/anrabess-2.jpg",

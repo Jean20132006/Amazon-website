@@ -556,6 +556,19 @@ matchingProduct.images.gallery.forEach((item, index) => {
     radioButton.appendChild(galleryImg);
     galleryImages.appendChild(radioButton);
 });
+
+////////////////////////// CUSTOMERS SAY SECTION CODE /////////////////////////////////////////
+/**
+ * @brief This function display the text message on Customer Say section
+ * @param {*} matchProduct is matching product
+ */
+function customerSay(matchProduct){
+    const customerSay = document.querySelector('.say-rating');
+    customerSay.innerHTML = `${matchProduct.reviews[0].comment}`;
+}
+
+customerSay(matchingProduct);
+///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
