@@ -329,6 +329,11 @@
     height: auto;
     font-weight: bold;
 }
+.empty-div3{
+    font-weight: 600;
+    line-height: 2.5;
+    margin-left: 20px;
+}
 .report-issue{
     display: flex;
     flex-direction: row;
@@ -1766,10 +1771,19 @@
     font-size: 15px;
     font-weight: bold;    
 }
+
+.select-to-learn-more-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 .select-to-learn-more-content-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    /*width: 320px;*/
+    height: auto;
 }
 .select-to-learn-more-button{
     display: flex;

@@ -78,8 +78,20 @@
       "images/woman-sport-drink.jpg",
       "images/half-drink.jpg"
     ],
-    fourthRowImage: "images/recovery-core.jpg"
+    fourthRowImage: "images/recovery-core.jpg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
+  
 
   price: {
     priceDollar: 50,
@@ -267,7 +279,18 @@
       "images/manufacturer-images/celsius-manu-3.jpeg",
       "images/manufacturer-images/celsius-manu-4.jpeg"
     ],
-    fourthRowImage: "images/manufacturer-images/celsius-manu-5.jpeg"
+    fourthRowImage: "images/manufacturer-images/celsius-manu-5.jpeg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
 
   price: {
@@ -455,7 +478,18 @@
       "images/manufacturer-images/premier-manu-6.jpg",
       "images/manufacturer-images/premier-manu-7.jpg"
     ],
-    fourthRowImage: "images/manufacturer-images/premier-manu-4.jpg"
+    fourthRowImage: "images/manufacturer-images/premier-manu-4.jpg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
 
   price: {
@@ -643,7 +677,18 @@
       "images/manufacturer-images/monster-manu-7.jpg",
       "images/manufacturer-images/monster-manu-5.jpg"
     ],
-    fourthRowImage: "images/manufacturer-images/monster-manu-8.jpeg"
+    fourthRowImage: "images/manufacturer-images/monster-manu-8.jpeg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
 
   price: {
@@ -831,7 +876,18 @@
       "images/manufacturer-images/ice-manu-5.jpeg",
       "images/manufacturer-images/ice-manu-6.jpeg"
     ],
-    fourthRowImage: "images/manufacturer-images/ice-manu-1.jpeg"
+    fourthRowImage: "images/manufacturer-images/ice-manu-1.jpeg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
 
   price: {
@@ -1019,7 +1075,18 @@
       "images/manufacturer-images/twinings-manu-1.jpg",
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
-    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg"
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+
+    selectMore : [ 
+      "Taste",                                              
+      "Protein content",
+      "Texture",
+      "Protein goals",
+      "Meal replacement",
+      "Chocolate content",
+      "Convenience",
+      "Value for money"
+    ]
   },
 
   price: {
@@ -1123,6 +1190,7 @@
     }
   ]
 },
+//////////////////////////////// ELECTRONICS CATEGORY PRODUCTS /////////////////////////////////
 {
   id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
 
@@ -1205,24 +1273,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amile.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/electronic-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg",
-      "images/electronic-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/ipad-1.jpg",
       "images/big-images/ipad-2.jpg",
@@ -1241,45 +1303,6 @@
     discountPercent: 27,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "Yellow" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "Yellow" },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "Yellow" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Cobalt Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Black" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "White" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Red" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Green" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "Yellow" }
-  ],
 
   backgroundImage: "images/background-images/background-ipad.jpg",
 
@@ -1460,24 +1483,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/electronic-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg",
-      "images/electronic-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/electronic-images/ipad-7.jpg",
-      "images/electronic-images/ipad-5.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/mobdik-1.jpg",
       "images/big-images/mobdik-2.jpg",
@@ -1495,39 +1512,6 @@
     discountPercent: 20,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" }
-  ],
 
   backgroundImage: "images/big-images/mobdik-4.jpg",
 
@@ -1709,24 +1693,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/ailun-1.jpg",
       "images/big-images/ailun-2.jpg",
@@ -1744,39 +1722,6 @@
     discountPercent: 0,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/ipad-13.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 14, img: "images/electronic-images/ipad-14.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/ipad-15.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/ipad-16.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },  
-    { id: 17, img: "images/electronic-images/ipad-17.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 18, img: "images/electronic-images/ipad-18.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 1, img: "images/electronic-images/ipad-1.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 2, img: "images/electronic-images/ipad-2.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 3, img: "images/electronic-images/ipad-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/electronic-images/ipad-4.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/ipad-5.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/ipad-6.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/ipad-7.jpg", price: 9.95, listPrice: 13.65, color: "Blue" },
-    { id: 8, img: "images/electronic-images/ipad-8.jpg", price: 20.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/ipad-9.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/ipad-10.jpg", price: 15.49, listPrice: 18.99, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/ipad-11.jpg", price: 12.99, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/ipad-12.jpg", price: 14.99, listPrice: null, color: "White" }
-  ],
 
   backgroundImage: "images/big-images/ailun-4.jpg",
 
@@ -1958,24 +1903,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/cobak-1.jpg",
       "images/big-images/cobak-2.jpg",
@@ -1995,25 +1934,6 @@
     discountPercent: 10,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/cobak-1.jpg", price: 6.29, listPrice: 6.69, color: "pink" },
-    { id: 2, img: "images/electronic-images/cobak-2.jpg", price: 16.79, listPrice: null, color: "purple" },
-    { id: 3, img: "images/electronic-images/cobak-3.jpg", price: 16.79, listPrice: null, color: "clear pink" },
-    { id: 4, img: "images/electronic-images/cobak-4.jpg", price: 15.49, listPrice: 15.99, color: "Yellow" },
-    { id: 5, img: "images/electronic-images/cobak-5.jpg", price: 6.99, listPrice: null, color: "Black" },
-    { id: 6, img: "images/electronic-images/cobak-6.jpg", price: 16.79, listPrice: null, color: "White" },
-    { id: 7, img: "images/electronic-images/cobak-7.jpg", price: 16.79, listPrice: 16.95, color: "Blue" },
-    { id: 8, img: "images/electronic-images/cobak-8.jpg", price: 13.99, listPrice: null, color: "Red" },
-    { id: 9, img: "images/electronic-images/cobak-9.jpg", price: 16.79, listPrice: null, color: "Green" },
-    { id: 10, img: "images/electronic-images/cobak-10.jpg", price: 13.49, listPrice: 13.89, color: "Yellow" },
-    { id: 11, img: "images/electronic-images/cobak-11.jpg", price: 16.79, listPrice: null, color: "Black" },
-    { id: 12, img: "images/electronic-images/cobak-12.jpg", price: 14.99, listPrice: null, color: "White" },
-    { id: 13, img: "images/electronic-images/cobak-13.jpg", price: 16.79, listPrice: 16.85, color: "Blue" },
-    { id: 14, img: "images/electronic-images/cobak-14.jpg", price: 16.79, listPrice: null, color: "Red" },
-    { id: 15, img: "images/electronic-images/cobak-15.jpg", price: 15.99, listPrice: null, color: "Green" },
-    { id: 16, img: "images/electronic-images/cobak-16.jpg", price: 16.79, listPrice: 16.89, color: "Yellow" },
-  ],
 
   backgroundImage: "images/big-images/cobak-1.jpg",
 
@@ -2199,24 +2119,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/hp.jpg",
-      "images/electronic-images/hp-2.jpg",
-      "images/electronic-images/hp-3.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/HP-1.jpg",
       "images/big-images/HP-2.jpeg",
@@ -2234,13 +2148,6 @@
     discountPercent: 0,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
-    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
-    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
-    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
-  ],
 
   backgroundImage: "images/big-images/cobak-1.jpg",
 
@@ -2429,24 +2336,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/hp.jpg",
-      "images/electronic-images/hp-2.jpg",
-      "images/electronic-images/hp-3.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/HP-1.jpg",
       "images/big-images/HP-2.jpeg",
@@ -2464,13 +2365,6 @@
     discountPercent: 0,
     pricePerUnit: 3.19
   },
-
-  colorItems : [
-    { id: 1, img: "images/electronic-images/hp-2.jpg", price: 359, listPrice: null, color: "Natural Silver" },
-    { id: 2, img: "images/electronic-images/hp.jpg", price: 359, listPrice: null, color: "pink clear" },
-    { id: 3, img: "images/electronic-images/hp-3.jpg", price: 359, listPrice: null, color: "clear blue" },
-    { id: 4, img: "images/electronic-images/hp-4.jpg", price: 359, listPrice: 359.99, color: "clear green" }
-  ],
 
   backgroundImage: "images/big-images/cobak-1.jpg",
 
@@ -2659,24 +2553,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/hp.jpg",
-      "images/electronic-images/hp-2.jpg",
-      "images/electronic-images/hp-3.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/HP-1.jpg",
       "images/big-images/HP-2.jpeg",
@@ -2882,24 +2770,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/HP-1.jpg",
       "images/big-images/HP-2.jpeg",
@@ -3102,24 +2984,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/kenke-1.jpg",
       "images/big-images/kenke-2.jpg",
@@ -3319,24 +3195,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/fitbit-1.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/fitbit-1.jpg",
       "images/big-images/fitbit-2.jpg",
@@ -3538,24 +3407,18 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/toubur-1.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/toubur-1.jpg",
       "images/big-images/toubur-2.jpg",
@@ -3750,24 +3613,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/fitbit-1.jpg",
-      "images/electronic-images/kpep.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/kpep-1.jpg",
       "images/big-images/kpep-2.jpg",
@@ -3972,24 +3828,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/toubur2.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/toubur-1.jpg",
       "images/big-images/toubur-2.jpg",
@@ -4183,24 +4032,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/toubur2.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/taygeer.jpg",
-      "images/Sixth-carousel-images/procase-ipad.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/toubur-1.jpg",
       "images/big-images/toubur-2.jpg",
@@ -4394,24 +4236,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/toubur.jpg",
-      "images/electronic-images/toubur2.jpg",
-      "images/electronic-images/toubur3.jpg",
-      "images/electronic-images/toubur4.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/toubur-1.jpg",
       "images/big-images/toubur-2.jpg",
@@ -4606,24 +4441,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",   // Not used
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/electronic-images/toubur.jpg",
-      "images/electronic-images/toubur2.jpg",
-      "images/electronic-images/toubur3.jpg",
-      "images/electronic-images/toubur4.jpg",
-      "images/small-images/ipad-3.jpg",
-      "images/Sixth-carousel-images/procase.jpg",
-      "images/Sixth-carousel-images/mobdic.jpg",
-      "images/Sixth-carousel-images/maten.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/small-images/ipad-1.jpg",
-      "images/Sixth-carousel-images/smart.jpg",
-      "images/Sixth-carousel-images/sparin-screen.jpg",
-      "images/Sixth-carousel-images/aliun-screen-protector.jpg",
-      "images/Sixth-carousel-images/amzon-pen.jpg",
-      "images/small-images/ipad-1.jpg"
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
     ],
+
     bigImages : [
       "images/big-images/toubur-1.jpg",
       "images/big-images/toubur-2.jpg",
@@ -4820,24 +4648,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/gym-big-carousel-1.jpg",
-      "images/clothes-images/gym-big-carousel-2.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
-      "images/clothes-images/gym-big-carousel-8.jpg",
-      "images/clothes-images/gym-big-carousel-9.jpg",
-      "images/clothes-images/gym-big-carousel-10.jpg",
-      "images/clothes-images/gym-big-carousel-11.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/gym-people-1.jpg",
       "images/big-images/gym-people-2.jpg",
@@ -5047,24 +4869,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/gym-big-carousel-1.jpg",
-      "images/clothes-images/gym-big-carousel-2.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
-      "images/clothes-images/gym-big-carousel-8.jpg",
-      "images/clothes-images/gym-big-carousel-9.jpg",
-      "images/clothes-images/gym-big-carousel-10.jpg",
-      "images/clothes-images/gym-big-carousel-11.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/gym-people-1.jpg",
       "images/big-images/gym-people-2.jpg",
@@ -5276,24 +5092,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/gym-big-carousel-1.jpg",
-      "images/clothes-images/gym-big-carousel-2.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
-      "images/clothes-images/gym-big-carousel-8.jpg",
-      "images/clothes-images/gym-big-carousel-9.jpg",
-      "images/clothes-images/gym-big-carousel-10.jpg",
-      "images/clothes-images/gym-big-carousel-11.jpg",
-      "images/clothes-images/gym-big-carousel-3.jpg",
-      "images/clothes-images/gym-big-carousel-4.jpg",
-      "images/clothes-images/gym-big-carousel-5.jpg",
-      "images/clothes-images/gym-big-carousel-6.jpg",
-      "images/clothes-images/gym-big-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/gym-capris-1.jpg",
       "images/big-images/gym-capris-2.jpg",
@@ -5508,24 +5318,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-2.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/trendy-carousel-2.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/trendy-1.jpg",
       "images/big-images/trendy-2.jpg",
@@ -5736,24 +5540,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/trendy-v-cart.jpg",
-      "images/clothes-images/trendy-carousel-2.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/trendy-carousel-2.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/trendy-v-1.jpg",
       "images/big-images/trendy-v-2.jpg",
@@ -5968,24 +5766,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/y2k-1.jpg",
       "images/big-images/y2k-2.jpg",
@@ -6201,24 +5993,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/gayhay-1.jpg",
       "images/big-images/gayhay-2.jpg",
@@ -6436,24 +6222,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/fashion-1.jpg",
       "images/big-images/fashion-2.jpg",
@@ -6666,24 +6446,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl-1.jpg",
       "images/big-images/wiholl-2.jpg",
@@ -7799,24 +7573,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/wiholl-v-1.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/wiholl.jpg",
-      "images/clothes-images/gayhay-2.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/y2k-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/gayhay-1.jpg",
-      "images/clothes-images/fashion-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/wiholl2-1.jpg",
       "images/big-images/wiholl2-2.jpg",
@@ -8041,7 +7809,7 @@
       "Material",
       "Size"
     ],
-    
+
     bigImages : [
       "images/big-images/anrabess-1.jpg",
       "images/big-images/anrabess-2.jpg",
@@ -8064,57 +7832,6 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/clothes-images/anrabess.jpg", price: 8.99, listPrice: 19.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
-  
   backgroundImage: "images/big-images/anrabess-1.jpg",
   size: [
     "Small",
@@ -8307,24 +8024,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/gallery-videos/laughido-img-1.jpg",
-      "images/gallery-videos/laughido-img-2.jpg",
-      "images/gallery-videos/laughido-img-3.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-1.jpg",
-      "images/clothes-images/anrabess-3.jpg",
-      "images/clothes-images/anrabess-2.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/auselily-1.jpg",
       "images/big-images/auselily-2.jpg",
@@ -8345,57 +8055,6 @@
     discountPercent: 16,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/auselily.jpg", price: 25.19, listPrice: 29.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/laughido.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/auselily-2.jpg",
   size: [
@@ -8589,24 +8248,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/gallery-videos/laughido-img-1.jpg",
-      "images/gallery-videos/laughido-img-2.jpg",
-      "images/gallery-videos/laughido-img-3.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-1.jpg",
-      "images/clothes-images/anrabess-3.jpg",
-      "images/clothes-images/anrabess-2.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/laughido-1.jpg",
       "images/big-images/laughido-2.jpg",
@@ -8624,57 +8276,6 @@
     discountPercent: 15,
     pricePerUnit: 0.17
   },
-
-  colorItems : [
-    { id: 1, img: "images/clothes-images/laughido.jpg", price: 25.48, listPrice: 29.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
   
   backgroundImage: "images/big-images/laughido-1.jpg",
   size: [
@@ -8868,24 +8469,17 @@
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
 
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/gallery-videos/laughido-img-1.jpg",
-      "images/gallery-videos/laughido-img-2.jpg",
-      "images/gallery-videos/laughido-img-3.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
-      "images/clothes-images/anrabess-4.jpg",
-      "images/clothes-images/anrabess-5.jpg",
-      "images/clothes-images/anrabess-1.jpg",
-      "images/clothes-images/anrabess-3.jpg",
-      "images/clothes-images/anrabess-2.jpg",
-      "images/clothes-images/anrabess-6.jpg",
-      "images/clothes-images/anrabess-7.jpg",
-      "images/clothes-images/anrabess-8.jpg",
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/missufe-1.jpg",
       "images/big-images/missufe-2.jpg",
@@ -8904,57 +8498,6 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/clothes-images/missufe.jpg", price: 24.99, listPrice: 29.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/wiholl-v.jpg", price: 7.98, listPrice: 13.80, color: "Red" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
-  
   backgroundImage: "images/big-images/missufe-2.jpg",
   size: [
     "Small",
@@ -9144,24 +8687,18 @@
       "images/manufacturer-images/twinings-manu-4.jpg"
     ],
     fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
-    clothesComputerImages : [                                               //Use in manufacturer big carousel
-      "images/clothes-images/trendy-v-cart.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/j-ver-1.jpg",
-      "images/clothes-images/trendy-carousel-5.jpg",
-      "images/clothes-images/trendy-carousel-8.jpg",
-      "images/clothes-images/trendy-carousel-3.jpg",
-      "images/clothes-images/trendy-carousel-4.jpg",
-      "images/clothes-images/trendy-carousel-1.jpg",
-      "images/clothes-images/trendy-carousel-6.jpg",
-      "images/clothes-images/trendy-carousel-7.jpg",
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
     ],
+
     bigImages : [
       "images/big-images/j-ver-3.jpg",
       "images/big-images/j-ver-1.jpg",
@@ -9181,57 +8718,6 @@
     pricePerUnit: 0.17
   },
 
-  colorItems : [
-    { id: 1, img: "images/clothes-images/j-ver.jpg", price: 19.99, listPrice: 23.99, color: "white" },
-    { id: 2, img: "images/fifth-carousel-images/gym-people-1.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black"},
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" },
-    { id: 1, img: "images/clothes-images/gym-people-color-1.jpg", price: 19.19, listPrice: 26.99, color: "Black" },
-    { id: 2, img: "images/clothes-images/gym-people-color-2.jpg", price: 20.99, listPrice: 28.80, color: "Blue" },
-    { id: 3, img: "images/clothes-images/gym-people-color-3.jpg", price: 19.99, listPrice: null, color: "Green" },
-    { id: 4, img: "images/clothes-images/gym-people-color-4.jpg", price: 27.49, listPrice: 28.99, color: "Red" },
-    { id: 5, img: "images/clothes-images/gym-people-color-5.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 6, img: "images/clothes-images/gym-people-color-6.jpg", price: 19.99, listPrice: null, color: "Purple" },
-    { id: 7, img: "images/clothes-images/gym-people-color-6.jpg", price: 9.95, listPrice: 13.65, color: "Pink" },
-    { id: 8, img: "images/clothes-images/gym-people-color-8.jpg", price: 20.99, listPrice: null, color: "White" },
-    { id: 9, img: "images/clothes-images/gym-people-color-9.jpg", price: 19.99, listPrice: null, color: "Orange" },
-    { id: 10, img: "images/clothes-images/gym-people-color-10.jpg", price: 27.49, listPrice: 30.99, color: "Gray" },
-    { id: 11, img: "images/clothes-images/gym-people-color-11.jpg", price: 20.99, listPrice: 24.80, color: "Brown" },
-    { id: 12, img: "images/clothes-images/gym-people-color-12.jpg", price: 19.99, listPrice: null, color: "Black" },
-    { id: 13, img: "images/clothes-images/gym-people-color-13.jpg", price: 19.95, listPrice: 23.65, color: "Green" },
-    { id: 14, img: "images/clothes-images/gym-people-color-14.jpg", price: 20.99, listPrice: null, color: "Blue" },
-    { id: 15, img: "images/clothes-images/gym-people-color-15.jpg", price: 19.99, listPrice: null, color: "Yellow" },
-    { id: 16, img: "images/clothes-images/gym-people-color-16.jpg", price: 15.49, listPrice: 18.99, color: "Black" }
-  ],
-  
   backgroundImage: "images/big-images/j-ver-3.jpg",
   size: [
     "3X-Small",

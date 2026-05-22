@@ -54,7 +54,7 @@ if (matchingProduct) {
   const productClientRating = document.querySelectorAll('.js-checkout-carousel-client-rating-img'); // Product video carousel images
 
   ///////////////////////////////////////////////////////////////////////////////
-  const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
+  //const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
   //const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
   
   if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories[0] === "clothing") {
@@ -164,9 +164,9 @@ if (matchingProduct) {
         imageOrText2.innerHTML = `<img class="image-or-text" src="${matchingProduct.manifacturer.image3}" alt="manufacturer">`;
     }
 
-    clothesComputersCarouselImages.forEach((img, index) => {
+    /*clothesComputersCarouselImages.forEach((img, index) => {
         img.src = matchingProduct.manifacturer.clothesComputerImages[index];
-    });
+    });*/
 
     imageForVideoAdvertisement.forEach((img, index) => {
         img.src = matchingProduct.videos.advertisementVideosImages[index];
@@ -551,8 +551,8 @@ matchingProduct.images.gallery.forEach((item, index) => {
 
     const galleryImg = document.createElement('img');
     galleryImg.classList.add('js-radio-button');
-    console.log(galleryImg);
     galleryImg.src = `${matchingProduct.images.gallery[index]}`;
+
     radioButton.appendChild(galleryImg);
     galleryImages.appendChild(radioButton);
 });
@@ -568,8 +568,51 @@ function customerSay(matchProduct){
 }
 
 customerSay(matchingProduct);
+
+//////////////////////////// SELECT TO LEARN MORE /////////////////////////////////////////////
+
+function selectToLearMore(matchProduct){
+    const selectToLearnMore = document.querySelector('.select-to-learn-more-content');
+    const lineNumberOfButtons = Math.ceil(matchProduct.manifacturer.selectMore.length / 4); // Calculate the number of lines needed for the buttons (4 buttons per line)
+    let selectToLearnMoreHTML = '';
+
+    for(let i = 0; i < matchProduct.manifacturer.selectMore.length; i += 4){
+
+        const buttonsForLine = document.createElement('div');
+        buttonsForLine.classList.add('select-to-learn-more-content-container');
+
+        matchProduct.manifacturer.selectMore.slice(i, i + 4).forEach((item) => {
+        selectToLearnMoreHTML += `<button class="select-to-learn-more-button">
+                                <span><i class="bi bi-check2"></i></span>
+                                <span >${item}</span>
+                                <span  class="taste">|</span>
+                            </button>`;
+        });
+        buttonsForLine.innerHTML = selectToLearnMoreHTML;
+        selectToLearnMore.appendChild(buttonsForLine);
+        selectToLearnMoreHTML = ''; // Reset HTML string for the next line of buttons
+
+    }
+}
+selectToLearMore(matchingProduct);
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////// CUSTOMERS' COMMENT ///////////////////////////////////
+
+function customerComment(matchProduct){
+
+    const customerSays = document.querySelector('.comment-Nate');
+    const commentTitle = document.querySelector('.js-review-stars');
+    const commenterName = document.querySelector('.commenter-name');
+    commenterName.innerHTML = matchProduct.reviews[1].user;
+    commentTitle.innerHTML = `${matchProduct.reviews[1].title}`;
+    customerSays.innerHTML = `${matchProduct.reviews[1].comment}`;
+}
+
+customerComment(matchingProduct);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
 
@@ -586,13 +629,13 @@ function addToCart(){
     const addToCartButton = document.querySelector('.js-add-to-cart-btn');
 
     addToCartButton.addEventListener('click', () => {
-        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];      // Get existing cart or create empty array
+        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
         let existingItem = cart1.find(item => item.id === id);           // Check if product already exists
         if(existingItem){
             existingItem.quantity += 1;                                  // Increase quantity           
         } 
         else {
-            cart1.push({                                                 // Add new product to cart
+            cart1.unshift({                                              // Add new product to cart at the beginning
             id: id,
             quantity: 1
             });
@@ -764,6 +807,37 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
     generateCarousel(filteredMatchBrand); 
 
     /////////////////////////////////////////////////////////////////////////////////////
+
+    /////// HANDLES DROP DOWN FUNCTIONALITY FOR PRODUCTS DETAILS IN CHECKOUT PAGES  /////
+ /** 
+  * @brief Script to handle drop down functionality for Product Details
+  *        in checkout page for electronics
+  * @param {HTMLElement} downButton3 - The dropdown button element
+  * @param {HTMLElement} productDetailsSection - The section to show/hide content
+ */
+const downButton3 = document.querySelector('.down-button3');
+const productDetailsSection = document.querySelector('.empty-div3');
+let productDetailsHTLM = "";
+
+downButton3.addEventListener('click', () => {
+    if(downButton3.classList.contains('down-button3')){
+        matchingProduct.productDetails.forEach(details => {
+            productDetailsHTLM += `${details}<br>`;
+
+        });
+        productDetailsSection.innerHTML = productDetailsHTLM;
+        downButton3.innerHTML= `<i class="bi bi-chevron-up"></i>`;
+        downButton3.classList.replace('down-button3', 'up-button3');
+    }
+    else{
+        productDetailsSection.innerHTML= ``;
+        downButton3.innerHTML= `<i class="bi bi-chevron-down"></i>`;
+        downButton3.classList.replace('up-button3', 'down-button3');
+    }
+});
+/////////////////////////////////////////////////////////////////////////////////////////
+
+    
     ///////////////// FUNCTION UTILITY TO FIND THE LIST PRICE //////////////////////////
     /**
      * @brief Calculate list price if discount is not 0 else print nothing
@@ -855,7 +929,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
         const buttonSelectItem = document.querySelectorAll('.item-color');
         const mainImage2 = document.querySelector('.js-image-section');
         const track = document.querySelector(".checkout-carousel-color-track");
-        track.addEventListener('click', (e) => {
+        track.addEventListener('mouseover', (e) => {
             const button = e.target.closest('.item-color');
             if(button){
                 let buttonId = button.dataset.id;
@@ -868,6 +942,7 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
             }
         });
     }
+    //displayMainImage(matchingProduct);
 
     //////////////////////////////////////////////////////////////////
 
@@ -990,24 +1065,17 @@ function bigCarouselGenerator(matchProduct){
 
                 // First 2 images → first column
                 if (index < 2) {
-
                     firstColumn.appendChild(image);
 
                 } else {
-
                     secondColumn.appendChild(image);
                 }
             
             });
 
-            // Append columns to links
-            firstColumnLink.appendChild(firstColumn);
-
-            secondColumnLink.appendChild(secondColumn);
-
-            // Append links to square
-            firstSquare.appendChild(firstColumnLink);
-
+            firstColumnLink.appendChild(firstColumn);       // Append columns to links
+            secondColumnLink.appendChild(secondColumn);           
+            firstSquare.appendChild(firstColumnLink);       // Append links to square
             firstSquare.appendChild(secondColumnLink);
 
             const nameLinkContainer = document.createElement('div');  // Create a div for link
@@ -1027,17 +1095,13 @@ function bigCarouselGenerator(matchProduct){
             storeLinkContainer.appendChild(storeLink);
 
             nameLinkContainer.appendChild(title);                     // Append title/link
-
             nameLinkContainer.appendChild(storeLinkContainer);
-
             squareContainer.appendChild(firstSquare);                 // Append square content
-
             squareContainer.appendChild(nameLinkContainer);
-
-            bigCarouselPage.appendChild(squareContainer);            // Append square to page
+            bigCarouselPage.appendChild(squareContainer);             // Append square to page
         }
 
-        bigCarouselTrack.appendChild(bigCarouselPage);               // Append page to track
+        bigCarouselTrack.appendChild(bigCarouselPage);                // Append page to track
     }    
 
 }
@@ -1121,7 +1185,7 @@ bigCarouselGenerator(matchingProduct);
 
 }
 
-/////////////////////////End of Electronics and Clothing specific code////////////////////////////
+/////////////////////////END OF ELECTRONICS AND  CLOTHING SPECIFIC CODE ////////////////////////////
 
 
 
@@ -1144,10 +1208,11 @@ function generateProductDetails(matchProduct){
             element.appendChild(detailItem);
         });
     });
-    //return productDetailsList[0].outerHTML; // Return the HTML string of the first product details container that include <div class="product-details-container"> tag
+    //return productDetailsList[0].outerHTML; 
 }
 
 generateProductDetails(matchingProduct);
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
