@@ -1,6 +1,8 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 
 //In Express.js, middleware is a function that runs between the request and the response.
 app.use(express.json()); //This middleware converts JSON request bodies into JavaScript objects.

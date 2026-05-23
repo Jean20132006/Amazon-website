@@ -229,5 +229,43 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
 const cartNumberElement = document.querySelector('.js-cart-num-items');
 cartNumberElement.innerText = cartNumber;
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+/*document.addEventListener("DOMContentLoaded", async () => {
+
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "/login.html";
+        return;
+    }
+
+    const response = await fetch("/api/v1/profile", {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+
+    if (!response.ok) {
+        // token invalid or expired
+        localStorage.removeItem("token");
+        window.location.href = "/login.html";
+        return;
+    }
+
+    const data = await response.json();
+
+    console.log("User profile:", data);
+});*/
+
+/*document.addEventListener("DOMContentLoaded", () => {
+
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "html";
+        return;
+    }
+
+});*/
 

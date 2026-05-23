@@ -1389,10 +1389,10 @@ function renderFrequentlyBoughtTogether(matchProduct){
                         <div class="first-image">
                             <img src="${product.images.cartImageConfiramation}" alt="${product.brand}}">
                             <i class="bi bi-check-square-fill"></i>
-                            <span>
-                                ${product.shortTitle}
-                                $${product.price.currentPrice} ${displayPricePerOunce(product)}
-                            </span>
+                            <div class="frequently-title-price">
+                                <span>${product.shortTitle}</span>
+                                <span class="frequently-price">$${product.price.currentPrice} ${displayPricePerOunce(product)}</span>
+                            </div>
                         </div>
                     </a>
                     `;

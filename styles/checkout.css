@@ -715,6 +715,15 @@
     height: auto;
     flex-shrink: 0;
 }
+.frequently-title-price{
+    display: flex;
+    flex-direction: column;
+}
+.frequently-price{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
 .products-totalPrice-add-to-list-container a{
     font-family: Nunito, Arial;
     text-decoration: none;

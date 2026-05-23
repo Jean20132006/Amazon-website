@@ -11,6 +11,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 40px;
 }
 .amazon-logo-sign-in-section{
     /*border: 1px solid red;*/
@@ -76,6 +77,8 @@ body{
     font-family: Nunito, Arial, sans-serif;
     font-size: 13px;
 }
+
+.username-input,
 .email-input,
 .password-input{
     font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -85,9 +88,13 @@ body{
     border: 1px solid grey;
     padding: 4px;
 }
+
+.username-input,
 .email-input{
     margin-bottom: 10px;
 }
+
+.enter-username,
 .enter-password,
 .enter-email{
     display: flex;
@@ -103,6 +110,23 @@ body{
 .enter-password{
     margin-left: -166px;
 }
+.enter-username{
+    margin-left: -166px;
+}
+
+/*.enter-username,
+.username-input{
+    display: none;
+}*/
+/* hidden is a CSS class*/
+.hidden{
+    display: none;
+}
+.username-input:focus-within, 
+.password-input:focus-within, 
+.email-input:focus-within  {
+    border: 3px solid #21ef40;      
+}     
 .sign-in-button{
     width: 270px;
     height: auto;
@@ -112,6 +136,27 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 4px;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Nunito, Arial, Helvetica, sans-serif; 
+    font-size: 15px;
+    width: 270px;
+    height:auto;
+    border: none;
+    box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
+               rgba(250, 250, 250, 0.4) 0px 1px 2px; 
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /*background-color: #c1fba4;
+    
+    
+    */
+
 }
 .conditions-neeed-buy-create-account{
     display: flex;
@@ -139,16 +184,71 @@ body{
     margin-bottom: 20px;
   
 }
+
 .conditions-neeed-buy-create-account a{
     text-decoration: none;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #03045e;
+    color: #134074;
+    font-weight: 600;
     
 }
 .conditions-of-use a{
     font-family: Nunito, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #03045e;
+    color: #134074;
+
+}
+
+.line-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    background-color: grey;
+    width: 1460px;
+    height: 1px;
+}
+
+.sign-bottom-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.condition-privacy-help{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1460px;
+    justify-content: center;
+    gap: 20px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+}
+
+.condition-privacy-help a{
+    text-decoration: none;
+    color: #134074;
+    font-weight: 600;
+}
+
+.sign-rights-reserved{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
 
 }

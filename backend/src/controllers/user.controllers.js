@@ -44,6 +44,19 @@ const loginUser = async (req, res) => {
 
         //Check if the user already exists
         const {email, password} = req.body;
+        ////////////////////////////////////////////////////////////
+        // Validation
+        if (
+            [email, password].some(
+                (field) => field?.trim() === ""
+            )
+        ) {
+            return res.status(400).json({
+                success: false,
+                message: "All fields are required"
+            });
+        }
+        ///////////////////////////////////////////////////////////////
         const user = await User.findOne({email: email.toLowerCase()});
         if(!user){
             return res.status(400).json({message: "user not found"});
@@ -51,10 +64,14 @@ const loginUser = async (req, res) => {
 
         //Compare password
         const isMatch = await user.comparePassword(password);
-        if(!isMatch) return res.status(400).json({message: "Invalid credentials"});
+        if(!isMatch) return res.status(400).json({message: "Incorrect password or Email"});
+
+        // GENERATE TOKEN HERE
+        //const token = user.generateAccessToken();
 
         res.status(200).json({
             message: "user logged in",
+            //token,                         // send token to frontend
             user: {
                 id: user._id,
                 email: user.email,
