@@ -1,5 +1,6 @@
-//////////////////////////////////////////////////////////////////
+/////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
 
+//////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE /////////////////////////////
 /**
  * @brief This script handles carousel the first carousel in addToCart page
  * 
@@ -99,6 +100,8 @@ rightButtonAddToCart2.addEventListener('click', () => {
 
 updateSecondCarouselAddToCart();         // Initialize carousel state
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
  * @brief Handles multiple checkout carousels independently
  */
@@ -170,9 +173,13 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 // Get last added product id from localStorage and set product image in confirmation message
 let id2 = localStorage.getItem("lastAddedProduct");                         // Get last added product id 
 let product = products.find(p => p.id == id2);                              // Get product from your product list
+
 document.querySelector('.js-image-add-to-cart').src = product.images.cartImageConfiramation; // Set product image in confirmation message
+
 if(product.categories[0] === "drink"){
+
     const flavorElement = document.querySelector('.add-to-cart-product-flavor');
+
     flavorElement.innerHTML = `<span class="addtocart-product-flavor">Flavor Name: 
                                 <span class="js-add-to-cart-flavor">${product.variants[0].flavor}</span>
                             </span>
@@ -182,6 +189,7 @@ if(product.categories[0] === "drink"){
 }
 else{
     const flavorElement = document.querySelector('.add-to-cart-product-flavor');
+    
     flavorElement.innerHTML = `<span class="addtocart-product-flavor">Color: 
                                 <span class="js-add-to-cart-flavor">${product.variants[0].color}</span>
                             </span>`;
