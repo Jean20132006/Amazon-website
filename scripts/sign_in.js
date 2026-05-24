@@ -39,11 +39,16 @@ const emailInput =
 const passwordInput =
     document.querySelector('.password-input');
 
+const crossIcon = document.querySelector('.cross-icon');
+
+
 // DEFAULT MODE = SIGN IN
 let isSignupMode = false;
 
 // RENDER UI
 function renderAuthMode() {
+
+    form.reset();                               // Clear message
 
     // SIGN UP MODE
     if (isSignupMode) {
@@ -119,6 +124,32 @@ renderAuthMode();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////// TOGGLE PASSWORD VISIBILTY ///////////////////////////////////
+
+const toggleButton = document.querySelector('.eye-icon');
+
+toggleButton.addEventListener('click', (event) => {
+
+    event.preventDefault();                        
+
+    event.stopPropagation();                       //stops event from bubbling upward to form/container listeners
+
+    if (passwordInput.type === "password") {
+
+        passwordInput.type = "text";
+
+        toggleButton.innerHTML = `<i class="bi bi-eye-fill"></i>`;
+
+    } else {
+
+        passwordInput.type = "password";
+
+        toggleButton.innerHTML = `<i class="bi bi-eye-slash-fill"></i>`;
+    }
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////// HANDLE FORM SUBMISSION ///////////////////////////////////////
 
 form.addEventListener('submit', async (event) => {
@@ -185,7 +216,10 @@ form.addEventListener('submit', async (event) => {
         if (response.ok) {
 
             // save token if backend sends one        
-            //localStorage.setItem("token", data.token);
+            localStorage.setItem("token", data.token);
+
+            message.classList.remove('hidden');
+            message.classList.add('green-gradient');
 
             message.innerHTML = `
                 <span style="color: green;">
@@ -202,6 +236,10 @@ form.addEventListener('submit', async (event) => {
         // ERROR
         else {
 
+            message.classList.remove('hidden');
+            crossIcon.classList.remove('hidden');
+            message.classList.add('red-gradient');
+
             message.innerHTML = `
                 <span style="color: red;">
                     ${data.message}
@@ -212,7 +250,10 @@ form.addEventListener('submit', async (event) => {
     } catch (error) {
 
         console.log(error);
-        
+
+        message.classList.remove('hidden');
+        message.classList.add('red-gradient');
+
         message.innerHTML = `
             <span style="color: red;">
                 ${data.message}
@@ -222,3 +263,4 @@ form.addEventListener('submit', async (event) => {
     }
     
 });
+

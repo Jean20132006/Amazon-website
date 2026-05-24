@@ -50,7 +50,7 @@ userSchema.pre("save", async function() {
         return;
     }
 
-    this.password = await bcrypt.hash(this.password, 10);
+    this.password = await bcrypt.hash(this.password, 10); // 10 is salt rounds
 });
 
 //Compare password
@@ -59,7 +59,7 @@ userSchema.methods.comparePassword = async function(password){
 }
 
 // Generate JWT token
-/*userSchema.methods.generateAccessToken = function () {
+userSchema.methods.generateAccessToken = function () {
 
     return jwt.sign(
         {
@@ -71,7 +71,7 @@ userSchema.methods.comparePassword = async function(password){
             expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
     );
-};*/
+};
 
 
 

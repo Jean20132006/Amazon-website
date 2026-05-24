@@ -38,12 +38,18 @@
                         
                         
                         <span class="enter-password">Enter password</span>
-                        <input type="password" class="password-input" placeholder="Password">
+                        <div class="password-input-eye-icon">
+                           <input type="password" class="password-input" placeholder="Password">
+                           <button class="eye-icon"> <i class="bi bi-eye-slash-fill"></i></button>
+                        </div>
                         
                         <button class="sign-in-button" type="submit">Sign in</button>
                     </form>
-
-                    <div class="message"></div>
+                    <div class="message-position-relative-container">
+                        <div class="message hidden"></div>
+                        <div class="cross-icon hidden"><i class="bi bi-x"></i></div>
+                    </div>
+                    
                 </div>
                 <div class="conditions-neeed-buy-create-account">
                     <span class="conditions-of-use">By continuing, you agree to Amazon's 

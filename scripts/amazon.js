@@ -231,7 +231,7 @@ const cartNumberElement = document.querySelector('.js-cart-num-items');
 cartNumberElement.innerText = cartNumber;
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-/*document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
     const token = localStorage.getItem("token");
 
@@ -240,7 +240,7 @@ cartNumberElement.innerText = cartNumber;
         return;
     }
 
-    const response = await fetch("/api/v1/profile", {
+    const response = await fetch("http://localhost:4000/api/v1/users/profile", {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -255,17 +255,8 @@ cartNumberElement.innerText = cartNumber;
 
     const data = await response.json();
 
-    console.log("User profile:", data);
-});*/
+    //console.log("User profile:", data);
+});
 
-/*document.addEventListener("DOMContentLoaded", () => {
 
-    const token = localStorage.getItem("token");
-
-    if (!token) {
-        window.location.href = "html";
-        return;
-    }
-
-});*/
 

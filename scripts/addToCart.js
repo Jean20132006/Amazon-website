@@ -1,11 +1,13 @@
 //////////////////////////////////////////////////////////////////
 
 /**
- * @brief This script handles carousel review functionality
+ * @brief This script handles carousel the first carousel in addToCart page
+ * 
  */
+
 let leftButtonAddToCart = document.querySelector('.add-to-cart-arrow.left');
 let rightButtonAddToCart = document.querySelector('.add-to-cart-arrow.right');
-let trackAddToCart = document.querySelector('.add-to-cart-carousel-track');
+let trackAddToCart = document.querySelector('.add-to-cart-carousel-track1');
 let currentPageAddToCart = document.querySelector('.add-to-cart-current-page');
 let totalPageAddToCart = document.querySelector('.add-to-cart-total-pages');
 let pagesAddToCart = document.querySelectorAll('.add-to-cart-first-carosel-page');
@@ -14,6 +16,7 @@ totalPageAddToCart.innerHTML = pagesAddToCart.length;
 let currentIndexAddToCart = 0;
 let pageWidthAddToCart = document.querySelector('.add-to-cart-first-carousel').clientWidth;
 function updateCarouselAddToCart(){
+
     trackAddToCart.style.transform = `translateX(-${currentIndexAddToCart * pageWidthAddToCart}px)`;
     currentPageAddToCart.innerHTML = currentIndexAddToCart + 1;
     if(currentIndexAddToCart === 0){
@@ -45,11 +48,60 @@ rightButtonAddToCart.addEventListener('click', () => {
 updateCarouselAddToCart();         // Initialize carousel state
 
 //////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
+
+/////////////////////// HANDLES SECOND CAROUSEL IN THE ADDTOCART PAGE ///////////////////////////
+
+/**
+ * @brief This script handles carousel the second carousel in addToCart page
+ * 
+ */
+
+let leftButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.left2');
+let rightButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.right2');
+let trackAddToCart2 = document.querySelector('.add-to-cart-carousel-track2');
+let currentPageAddToCart2 = document.querySelector('.current-page2');
+let totalPageAddToCart2 = document.querySelector('.total-pages2');
+let pagesAddToCart2 = document.querySelectorAll('.add-to-cart-carosel-page2');
+totalPageAddToCart2.innerHTML = pagesAddToCart2.length;
+
+let currentIndexAddToCart2 = 0;
+let pageWidthAddToCart2 = document.querySelector('.add-to-cart-carousel2').clientWidth;
+
+function updateSecondCarouselAddToCart(){
+
+    trackAddToCart2.style.transform = `translateX(-${currentIndexAddToCart2 * pageWidthAddToCart2}px)`;
+    currentPageAddToCart2.innerHTML = currentIndexAddToCart2 + 1;
+    if(currentIndexAddToCart2 === 0){
+        leftButtonAddToCart2.disabled = true;
+    }
+    else{
+        leftButtonAddToCart2.disabled = false;
+    }
+    if(currentIndexAddToCart2 === pagesAddToCart2.length - 1){
+        rightButtonAddToCart2.disabled = true;
+    }
+    else{
+        rightButtonAddToCart2.disabled = false;
+    }
+}
+leftButtonAddToCart2.addEventListener('click', () => {
+    if(currentIndexAddToCart2 > 0){
+        currentIndexAddToCart2--;
+        updateSecondCarouselAddToCart();
+    }
+});
+rightButtonAddToCart2.addEventListener('click', () => {
+    if(currentIndexAddToCart2 < pagesAddToCart2.length - 1){
+        currentIndexAddToCart2++;
+        updateSecondCarouselAddToCart();
+    }
+});
+
+updateSecondCarouselAddToCart();         // Initialize carousel state
+/////////////////////////////////////////////////////////////////////////////////////////////////
 /**
  * @brief Handles multiple checkout carousels independently
  */
-
 document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
     const leftButton  = container.querySelector('.checkout-arrow.left');
@@ -266,7 +318,7 @@ document.querySelector('.js-add-to-cart-corbeille-cart')
 
     const id = plusBtn.dataset.id;
 
-    const item = cart1.find(i => i.id === id);
+    const item = cart1.find(p => p.id === id);
     if (!item) return;
 
     item.quantity += 1;
