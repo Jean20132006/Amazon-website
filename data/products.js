@@ -1192,6 +1192,2950 @@
 },
 //////////////////////////////// ELECTRONICS CATEGORY PRODUCTS /////////////////////////////////
 {
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-15",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-16.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-red-1.jpg",
+      "images/small-images/ipad-forest-green-2.jpg",
+      "images/small-images/ipad-red-3.jpg",
+      "images/small-images/ipad-red-4.jpg",
+      "images/small-images/ipad-red-5.jpg",
+      "images/small-images/ipad-red-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-16.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 18,
+    priceCents: 99,
+    currentPrice: 18.99,
+    currentPriceInCents: 1899,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 732,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Red",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Red",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-14",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-15.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-midnight-green-1.jpg",
+      "images/small-images/ipad-forest-green-2.jpg",
+      "images/small-images/ipad-midnight-green-3.jpg",
+      "images/small-images/ipa-midnight-green-4.jpg",
+      "images/small-images/ipad-midnight-green-5.jpg",
+      "images/small-images/ipad-midnight-green-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-15.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 7325,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Midnight Green",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Midnight Green",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-13",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-14.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-forest-green-1.jpg",
+      "images/small-images/ipad-forest-green-2.jpg",
+      "images/small-images/ipad-forest-green-3.jpg",
+      "images/small-images/ipad-forest-green-4.jpg",
+      "images/small-images/ipad-forest-green-5.jpg",
+      "images/small-images/ipad-forest-green-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-14.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 1934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Forest Green",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Forest Green",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-12",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-13.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-pitaya-red-1.jpg",
+      "images/small-images/ipad-pitaya-red-2.jpg",
+      "images/small-images/ipad-pitaya-red-3.jpg",
+      "images/small-images/ipad-pitaya-red-4.jpg",
+      "images/small-images/ipad-pitaya-red-5.jpg",
+      "images/small-images/ipad-pitaya-red-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-13.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 17,
+    priceCents: 99,
+    currentPrice: 17.99,
+    currentPriceInCents: 1799,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Pitaya Red",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Pitaya Red",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-11",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-12.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-white-1.jpg",
+      "images/small-images/ipad-white-2.jpg",
+      "images/small-images/ipad-white-3.jpg",
+      "images/small-images/ipad-white-4.jpg",
+      "images/small-images/ipad-white-5.jpg",
+      "images/small-images/ipad-white-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-12.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-10",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-11.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-deep-purple-1.jpg",
+      "images/small-images/ipad-deep-purple-2.jpg",
+      "images/small-images/ipad-deep-purple-3.jpg",
+      "images/small-images/ipad-deep-purple-4.jpg",
+      "images/small-images/ipad-deep-purple-5.jpg",
+      "images/small-images/ipad-deep-purple-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-11.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Apricot Orange",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-9",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-10.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-abricot-orange-1.jpg",
+      "images/small-images/ipad-light-yellow-2.jpg",
+      "images/small-images/ipad-abricot-orange-2.jpg",
+      "images/small-images/ipad-abricot-orange-3.jpg",
+      "images/small-images/ipad-abricot-orange-1.jpg",
+      "images/small-images/ipad-abricot-orange-2.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-10.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Apricot Orange",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-8",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-9.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-light-yellow-1.jpg",
+      "images/small-images/ipad-light-yellow-2.jpg",
+      "images/small-images/ipad-light-yellow-3.jpg",
+      "images/small-images/ipad-light-yellow-4.jpg",
+      "images/small-images/ipad-light-yellow-5.jpg",
+      "images/small-images/ipad-light-yellow-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-9.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 17,
+    priceCents: 99,
+    currentPrice: 17.99,
+    currentPriceInCents: 1799,
+    currency: "USD",
+    discountPercent: 10,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Light Yellow",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-7",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-8.jpg",
+    
+    gallery: [
+      "images/small-images/small-ipad-1.jpg",
+      "images/small-images/small-ipad-2.jpg",
+      "images/small-images/small-ipad-3.jpg",
+      "images/small-images/small-ipad-4.jpg",
+      "images/small-images/ipad-flowers-pink-5.jpg",
+      "images/small-images/small-ipad-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-8.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Dark Sea Blue",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-6",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-7.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-flowers-pink-1.jpg",
+      "images/small-images/ipad-flowers-pink-2.jpg",
+      "images/small-images/ipad-flowers-pink-3.jpg",
+      "images/small-images/ipad-flowers-pink-4.jpg",
+      "images/small-images/ipad-flowers-pink-5.jpg",
+      "images/small-images/ipad-flowers-pink-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-7.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 18,
+    priceCents: 95,
+    currentPrice: 18.95,
+    currentPriceInCents: 1895,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 7934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Flowers Pink ",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-5",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-6.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-light-pink-1.jpg",
+      "images/small-images/ipad-light-pink-2.jpg",
+      "images/small-images/ipad-light-pink-3.jpg",
+      "images/small-images/ipad-light-pink-4.jpg",
+      "images/small-images/ipad-light-pink-5.jpg",
+      "images/small-images/ipad-dark-cofee-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-6.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 23,
+    priceCents: 99,
+    currentPrice: 23.99,
+    currentPriceInCents: 2399,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 7934,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Light Pink Gold Marble",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-4",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-5.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-dark-cofee-1.jpg",
+      "images/small-images/ipad-dark-cofee-2.jpg",
+      "images/small-images/ipad-dark-cofee-3.jpg",
+      "images/small-images/ipad-dark-cofee-4.jpg",
+      "images/small-images/ipad-dark-cofee-1.jpg",
+      "images/small-images/ipad-dark-cofee-2.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-5.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 3936,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Dark Cofee",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-3",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-4.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-black-1.jpg",
+      "images/small-images/small-ipad-2.jpg",
+      "images/small-images/ipad-black-2.jpg",
+      "images/small-images/ipad-black-3.jpg",
+      "images/small-images/ipad-black-1.jpg",
+      "images/small-images/ipad-black-2.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-4.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-2.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-2.jpg"  
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 3936,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-2",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-3.jpg",
+    
+    gallery: [
+      "images/small-images/ipad-lilac-1.jpg",
+      "images/small-images/small-ipad-2.jpg",
+      "images/small-images/ipad-lilac-2.jpg",
+      "images/small-images/ipad-lilac-3.jpg",
+      "images/small-images/ipad-lilac-1.jpg",
+      "images/small-images/ipad-lilac-2.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-3.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-1.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg"
+      
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 3936,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Lilac",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d-1",
+
+  title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
+
+  shortTitle: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025",
+
+  brand: "Moko",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/ipad-2.jpg",
+    
+    gallery: [
+      "images/small-images/small-ipad-1.jpg",
+      "images/small-images/small-ipad-2.jpg",
+      "images/small-images/small-ipad-3.jpg",
+      "images/small-images/small-ipad-4.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/ipad1.jpg",
+      "images/review-carousel/ipad2.jpg",
+      "images/review-carousel/ipad3.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad4.jpg",
+      "images/review-carousel/ipad5.jpg",
+      "images/review-carousel/ipad6.jpg",
+      "images/review-carousel/ipad1.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/electronic-images/ipad-2.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ipadVideo-1.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ipadVideo-1.mp4",
+      "images/gallery-videos/ipadVideo-2.mp4",
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-2.jpg"
+      
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ipad-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "DDTO foe ipad A16 Case, ipad 11th /10th Generation Case..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/ipad-1.jpg",
+      "images/big-images/ipad-2.jpg",
+      "images/big-images/ipad-3.jpg",
+      "images/big-images/ipad-4.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "Ultra Slim and Stylist",
+
+  price: {
+    priceDollar: 19,
+    priceCents: 99,
+    currentPrice: 19.99,
+    currentPriceInCents: 1999,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+
+  backgroundImage: "images/background-images/background-ipad.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 3936,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand: MoKo",
+    "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color: 1-Navy Blue",
+    "Form Factor: Case",
+    "Shell Type: Hard Shell",
+    "Material: Polycarbonate",
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Hagerston", stock: 120 },
+      { location: "TX Fulfillment Center", stock: 2400 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Colbat Blue",
+      size: "",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments"
+  ], 
+      
+  description:
+    "",
+
+  features: [
+    ""
+  ],
+
+  reviews: [
+    {
+      user: "Lee",
+      rating: 5,
+      title: " Good Ipad Case",
+      comment: "This case is perfect for my iPad! It fits snugly and provides great protection. The auto wake/sleep feature works flawlessly, and I love the smart cover design. Highly recommend!",
+      date: "2026-01-12"
+    },
+    {
+      user: "Emily",
+      rating: 4,
+      title: "Good Case",
+      comment: "The case is good overall, but I wish it had more color options. The cobalt blue is nice, but it would be great to have more choices. The fit and protection are excellent though.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
   id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
 
   title: "MoKo for iPad (A16) 11th Generation Case 11 Inch 2025, iPad 10th Generation Case 10.9 Inch 2022, Slim Stand Hard PC Translucent Back Shell Smart Cover, Support Touch ID, Auto Wake/Sleep, Cobalt Blue",
