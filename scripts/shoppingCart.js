@@ -1,5 +1,6 @@
 
 
+
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
  * @brief Handles multiple checkout carousels independently

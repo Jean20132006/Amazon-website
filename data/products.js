@@ -1413,7 +1413,7 @@
       "images/small-images/ipad-midnight-green-1.jpg",
       "images/small-images/ipad-forest-green-2.jpg",
       "images/small-images/ipad-midnight-green-3.jpg",
-      "images/small-images/ipa-midnight-green-4.jpg",
+      "images/small-images/ipad-midnight-green-4.jpg",
       "images/small-images/ipad-midnight-green-5.jpg",
       "images/small-images/ipad-midnight-green-1.jpg"
       
@@ -2103,7 +2103,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-White",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -2299,7 +2299,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Deep Purple",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -2315,7 +2315,7 @@
 
   variants: [
     {
-      color: "Apricot Orange",
+      color: "Deep Purple",
       size: "",
       pack: "1 Pack",
       asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
@@ -2495,7 +2495,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Apricot Orange",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -2691,7 +2691,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Light Yellow",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -2887,7 +2887,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Dark Sea Blue",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -3083,7 +3083,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Flowers Pink",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -3279,7 +3279,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Light Pink Gold Marble",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -3475,7 +3475,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Dark Cofee",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -3671,7 +3671,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Black",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -3870,7 +3870,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Lilac",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -4067,7 +4067,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Colbat Blue",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -4265,7 +4265,7 @@
   productDetails : [
     "Brand: MoKo",
     "Compatible Devices: iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
-    "Color: 1-Navy Blue",
+    "Color: 1-Blue",
     "Form Factor: Case",
     "Shell Type: Hard Shell",
     "Material: Polycarbonate",
@@ -4765,6 +4765,610 @@
     }
   ]
 },
+///////////////////////////////////////////// COBAK /////////////////////////////////////////
+{
+  id: "1ad29d11-ea98-41ee-9285-b916638cac4a-3",
+
+  title: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025, iPad 10th Generation 10.9 inch 2022, Slim Stand Protective Cover with Hard PC Translucent Back Shell Cover, Support Touch ID, Raspberry",
+
+  shortTitle: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025",
+
+  brand: "CoBak",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/cobak-celadon-green.jpg",
+    
+    gallery: [
+      "images/small-images/cobak-celadon-green-1.jpg",
+      "images/small-images/cobak-celadon-green-2.jpg",
+      "images/small-images/cobak-celadon-green-3.jpg",
+      "images/small-images/cobak-celadon-green-4.jpg",
+      "images/small-images/cobak-celadon-green-5.jpg",
+      "images/small-images/cobak-celadon-green-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-2.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-4.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/cobak-celadon-green.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/cobak-1.jpg",
+      "images/big-images/cobak-2.jpg",
+      "images/big-images/cobak-3.jpg",
+      "images/big-images/cobak-4.jpg",
+      "images/big-images/cobak-5.jpg",
+      "images/big-images/cobak-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "CoBak Clear Case for ipad (A16) 11th Generation",
+  price: {
+    priceDollar: 13,
+    priceCents: 99,
+    currentPrice: 13.99,
+    currentPriceInCents: 1399,
+    currency: "USD",
+    discountPercent: 17,
+    pricePerUnit: 3.19
+  },
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.5,
+    totalReviews: 812,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand:    CoBak",
+    "Compatible Devices:    iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color:    Celadon Green",
+    "Form Factor:    Case",
+    "Shell Type:   Hard Shell",
+    "Material:   Polycarbonate",
+  ],
+
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color:   "Celadon Green",
+      size:   "",
+      pack:   "1 Pack",
+      asin:   "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+    
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Dominique",
+      rating: 5,
+      title: "Great Case for iPad",
+      comment: "This case is fantastic! It fits my iPad perfectly and provides excellent protection. The adjustable angles are a great feature, allowing me to find the perfect position for watching videos and typing. I also love that it supports Apple Pencil charging and Touch ID. Highly recommend!021",
+      date: "2026-01-12"
+    },
+    {
+      user: "Oscar De La Hoya",
+      rating: 4.5,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "1ad29d11-ea98-41ee-9285-b916638cac4a-2",
+
+  title: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025, iPad 10th Generation 10.9 inch 2022, Slim Stand Protective Cover with Hard PC Translucent Back Shell Cover, Support Touch ID, Raspberry",
+
+  shortTitle: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025",
+
+  brand: "CoBak",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/cobak-ocean-blue.jpg",
+    
+    gallery: [
+      "images/small-images/cobak-ocean-blue-1.jpg",
+      "images/small-images/cobak-ocean-blue-2.jpg",
+      "images/small-images/cobak-ocean-blue-3.jpg",
+      "images/small-images/cobak-ocean-blue-4.jpg",
+      "images/small-images/cobak-ocean-blue-5.jpg",
+      "images/small-images/cobak-ocean-blue-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-2.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-4.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/cobak-ocean-blue.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/cobak-1.jpg",
+      "images/big-images/cobak-2.jpg",
+      "images/big-images/cobak-3.jpg",
+      "images/big-images/cobak-4.jpg",
+      "images/big-images/cobak-5.jpg",
+      "images/big-images/cobak-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "CoBak Clear Case for ipad (A16) 11th Generation",
+  price: {
+    priceDollar: 6,
+    priceCents: 99,
+    currentPrice: 6.99,
+    currentPriceInCents: 699,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 811,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand:    CoBak",
+    "Compatible Devices:    iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color:    Ocean Blue",
+    "Form Factor:    Case",
+    "Shell Type:   Hard Shell",
+    "Material:   Polycarbonate",
+  ],
+
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color:   "Ocean Blue",
+      size:   "",
+      pack:   "1 Pack",
+      asin:   "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+    
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Dominique",
+      rating: 5,
+      title: "Great Case for iPad",
+      comment: "This case is fantastic! It fits my iPad perfectly and provides excellent protection. The adjustable angles are a great feature, allowing me to find the perfect position for watching videos and typing. I also love that it supports Apple Pencil charging and Touch ID. Highly recommend!021",
+      date: "2026-01-12"
+    },
+    {
+      user: "Oscar De La Hoya",
+      rating: 4.5,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "1ad29d11-ea98-41ee-9285-b916638cac4a-1",
+
+  title: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025, iPad 10th Generation 10.9 inch 2022, Slim Stand Protective Cover with Hard PC Translucent Back Shell Cover, Support Touch ID, Raspberry",
+
+  shortTitle: "CoBak Case for iPad (A16) 11th Generation 11 Inch 2025",
+
+  brand: "CoBak",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "electronics",
+    "tablets",
+    "accessories",
+    "phone",
+    "iphone"
+  ],
+
+  images: {
+    main: "images/electronic-images/cobak-black.jpg",
+    
+    gallery: [
+      "images/small-images/cobak-black-1.jpg",
+      "images/small-images/cobak-black-2.jpg",
+      "images/small-images/cobak-black-3.jpg",
+      "images/small-images/cobak-black-4.jpg",
+      "images/small-images/cobak-black-5.jpg",
+      "images/small-images/cobak-black-6.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-2.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-4.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-3.jpg",
+      "images/review-carousel/cobak-1.jpg",
+      "images/review-carousel/cobak-5.jpg",
+      "images/review-carousel/cobak-4.jpg"
+    ],
+
+    advertisementImages1: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    advertisementImages2: [
+      "images/big-images/cobak-1.jpg"
+    ],
+
+    cartImageConfiramation: "images/electronic-images/cobak-black.jpg",
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/ailunVideo.mp4",
+    galleryVideos : [
+      "images/gallery-videos/ailunVideo.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/ailun-1.jpg",
+      "images/small-images/ipad-3.jpg"
+    ],
+    advertisementVideosText : "PandaShield 2Pack Screen Protector for ipad Pro 11 inch..."
+  },
+
+  manifacturer: {
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",
+    
+    selectMore : [ 
+      "Quality",                                              
+      "Fit",
+      "Functionality",
+      "Appearence",
+      "Color",
+      "Value for money",
+      "Protection",
+      "Durability"
+    ],
+
+    bigImages : [
+      "images/big-images/cobak-1.jpg",
+      "images/big-images/cobak-2.jpg",
+      "images/big-images/cobak-3.jpg",
+      "images/big-images/cobak-4.jpg",
+      "images/big-images/cobak-5.jpg",
+      "images/big-images/cobak-6.jpg"
+    ]
+  },
+  fourthBigCarouselTitle: "CoBak Clear Case for ipad (A16) 11th Generation",
+  price: {
+    priceDollar: 6,
+    priceCents: 99,
+    currentPrice: 6.99,
+    currentPriceInCents: 699,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 3.19
+  },
+
+  backgroundImage: "images/big-images/cobak-1.jpg",
+
+  rating: {
+    average: 4.4,
+    totalReviews: 811,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand:    CoBak",
+    "Compatible Devices:    iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)iPad 11th generation 11-inch 2025(Model:A3354, A3355, A3356), iPad 10th generation 10.9-inch 2022 (Model:A2696/A2757/A2777)",
+    "Color:    Black",
+    "Form Factor:    Case",
+    "Shell Type:   Hard Shell",
+    "Material:   Polycarbonate",
+  ],
+
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color:   "Black",
+      size:   "",
+      pack:   "1 Pack",
+      asin:   "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    }
+    
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: "2",
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Compatibility : Specially designed for iPad (A16) 11th generation 11-inch 2025 (Model: A3354, A3355, A3356),iPad 10th generation 10.9-inch 2022 (Model: A2696, A2757, A2777). Note: It will not be compatible other model. Please check your iPad model before purchase",
+    "Excellent Quality : Our iPad 11th/10th Gen 11/10.9 inch case 2025/2022 is made of premium PU leather exterior, Soft microfiber lining and coverage with translucent PC back shell, Providing total full protection for your precious tablet",
+    "Adjustable Angles : Strong magnetic connection to create a stable viewing/typing stand for your iPad (A16) 11th generation tablet 2025 or iPad 10th generation tablet 2022. Two viewing angles are provided for watching, reading or typing. Satisfying your needs. Free your hands for other entertainments",
+    "Support Apple 1st/USB-C Pencil Charging and Touch ID : With the precise cutouts, this new iPad 11/10.9 inch Case 2025/2022 supports 1st /USB-C apple pencil charging (Need Apple USB-C to Apple Pencil Adapter) and Touch ID functions. Also allows you to access to all features and controls, Such as speakers, earphones and volume buttons.(Pencil is Not included)"
+  ], 
+    
+    
+  description:
+    "",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Dominique",
+      rating: 5,
+      title: "Great Case for iPad",
+      comment: "This case is fantastic! It fits my iPad perfectly and provides excellent protection. The adjustable angles are a great feature, allowing me to find the perfect position for watching videos and typing. I also love that it supports Apple Pencil charging and Touch ID. Highly recommend!021",
+      date: "2026-01-12"
+    },
+    {
+      user: "Oscar De La Hoya",
+      rating: 4.5,
+      title: "Good Value for the Price",
+      comment: "This case offers good value for the price. It provides decent protection for my iPad and the adjustable angles are a nice touch. The support for Apple Pencil charging is a bonus. Overall, I'm satisfied with this purchase.",
+      date: "2026-02-03"
+    }
+  ]
+},
+///////////////////////////////////////////////////////////////////////////////////////////////////
 {
   id: "1ad29d11-ea98-41ee-9285-b916638cac4a",
 
@@ -4978,6 +5582,7 @@
     }
   ]
 },
+///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// COMPUTERS //////////////////////////////////////////
 {
   id: "d37a651a-d501-483b-aae6-a9659b0757a0",
