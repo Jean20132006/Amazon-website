@@ -4395,7 +4395,7 @@
       "images/big-images/mobdik-4.jpg"
     ],
 
-    cartImageConfiramation: "images/Sixth-carousel-images/mobdic.jpg"
+    cartImageConfiramation: "images/electronic-images/mobdik-1.jpg"
   },
 
   videos : {
@@ -4605,7 +4605,7 @@
       "images/big-images/ailun-1.jpg"
     ],
 
-    cartImageConfiramation: "images/Sixth-carousel-images/aliun-screen-protector.jpg"
+    cartImageConfiramation: "images/electronic-images/ailun.jpg"
   },
 
   videos : {

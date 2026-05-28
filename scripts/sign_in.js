@@ -210,7 +210,7 @@ form.addEventListener('submit', async (event) => {
         
         const data = await response.json();  // read the body, parse the JSON
 
-        console.log("User data", data);
+        console.log(data);
 
         // SUCCESS
         if (response.ok) {
@@ -256,7 +256,7 @@ form.addEventListener('submit', async (event) => {
 
         message.innerHTML = `
             <span style="color: red;">
-                ${data.message}
+                ${error.message}
             </span>
         `;
         

@@ -1,5 +1,15 @@
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
+///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+function displayCartNumberItems(){
+  let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
+  const cartNumberElement = document.querySelector('.js-cart-num-items');
+  cartNumberElement.innerText = cartNumber;
+}
+
+displayCartNumberItems();
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**

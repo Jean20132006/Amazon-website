@@ -93,7 +93,7 @@
     /*border: 1px solid green;*/
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     /*justify-content: center;*/
     flex-shrink: 0;
     gap: 30px;
@@ -108,15 +108,6 @@
     flex-shrink: 0;
     width: 1130px;
     background-color: white;
-}
-
-.subtotal-proceed-checkout-related-products-container{
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    width: 300px;
 }
 
 .shopping-cart-title-price-container{
@@ -194,7 +185,7 @@
 .Shopping-cart-first-item-section{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     width: 1090px;
     gap: 150px;
     margin-top: 20px;
@@ -216,7 +207,7 @@
 }
 
 .shopping-cart-item-name-delivery-option-button-container{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -226,20 +217,19 @@
     font-family: Nunito, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .shopping-cart-price-indollar{
-    /*border: 1px solid green;*/
     display: flex;
     flex-direction: row;
     align-items: top;
     font-family: Nunito, sans-serif;
-    height: 80px;
+    /*height: 80px;*/
     font-weight: bold;   
 }
 
 .shopping-cart-dollar-sign{
-    /*font-family: Nunito, sans-serif;*/
     font-size: 12px;
     margin-top: 3px;
     font-weight: bold;
@@ -289,6 +279,7 @@
     gap: 5px;
     font-size: 13px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
 }
 
 .shopping-cart-item-name-delivery-option-button-container a{
@@ -298,7 +289,12 @@
     font-weight: 600;
 }
 
-
+.add-to-cart-item-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
 
 .add-to-cart-num-items,
 .add-to-cart-plus-sign{
@@ -335,3 +331,327 @@
     font-size: 16px;
 }
 
+.shopping-cart-delete-button{
+    background-color: white;
+    border: none;
+    color: #01497c;
+}
+
+.add-to-cart-item-button{
+    font-size: 13px;
+}
+
+.subtotal-proceed-checkout-related-products-container{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 30px;
+    width: 320px;
+}
+
+.shopping-cart-subtotal-proceed-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 320px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.shopping-cart-subtotal-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.subtotal-checkbox-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    gap: 5px;
+}
+
+.shopping-cart-proceed-to-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.price-in-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: Nunito, sans-serif;  
+}
+
+.proceed-to-checkout-button{
+    background-color: #ffd60a;
+    border: none;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    width: 280px;
+    height: 35px;  
+}
+
+.shopping-cart-price,
+.shopping-cart-number-item,
+.shopping-cart-subtotal{
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.shopping-cart-price{
+    font-weight: bold;
+}
+
+.shopping-cart-price-in-dollar{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;   
+}
+
+.or,
+.number-of-weeks{
+    font-family: Nunito, sans-serif;
+    color: grey;
+    font-size: 14px;
+}
+.or{
+    display: flex;
+    align-items: center;
+}
+.shopping-cart-proceed-to-checkout a{
+    text-decoration: none;
+    color:#01497c;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+mark{
+    background-color: #caf0f8;
+    border-radius: 5px;
+}
+
+.business-logo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 320px;
+    gap: 10px;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 5px;
+}
+.business-logo-section img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.shopping-for-work-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.shopping-for-work-title{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    /*width: 210px;*/
+}
+
+.three-boxes-image img{
+    width: 55px;
+    height: auto;
+    object-fit: contain;
+}
+
+.shopping-title{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.get-percent-off{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.get-percent-off a{
+    text-decoration: none;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color:#01497c;
+}
+
+.create-bussiness-account-button{
+    padding: 3px;
+    width: 280px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.create-bussiness-account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-to-bussiness-account-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-to-bussiness{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+.related-products-with-fast-delivery-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    /*border: 1px solid grey;*/
+    border-radius: 5px;
+}
+
+.related-products-title{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image-item-name-star-price-delivery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+.item-name-star-price-delivery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.image-item-name-star-price-delivery-container img{
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+
+.item-name-star-price-delivery-container img{
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+.item-name-star-price-delivery-container a{
+    text-decoration: none;
+    color:#01497c;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.free-delivery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shopping-cart-add-to-cart-button{
+    width: 120px;
+    font-size: 14px;
+    background-color: #ffd60a;
+    border: none;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.prime-delivery-add-to-cart-button{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.free-delivery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.delivery-date-related-product{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.shopping-cart-check-icon-prime{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0466c8;
+}
+
+.bi.bi-check-lg{
+    color: #e36414;
+    font-size: bold;
+}
+
+
+.shopping-cart-price-indollar{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    font-family: Nunito, sans-serif;
+    /*height: 80px;*/
+    font-weight: bold;   
+}
+
+.shopping-cart-dollar-sign-related-products{
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.bi.bi-currency-dollar{
+    font-weight: bold;
+    color: black;
+}
+.shopping-cart-cents-related-products{
+    font-family: Nunito, sans-serif;
+    font-size: 8px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+.shopping-cart-dollars-amount-related-products{
+    font-size: 16px;
+    font-weight: bold;
+}

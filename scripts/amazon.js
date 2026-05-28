@@ -225,10 +225,13 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+function displayCartNumberItems(){
+  let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
+  const cartNumberElement = document.querySelector('.js-cart-num-items');
+  cartNumberElement.innerText = cartNumber;
+}
 
-let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
-const cartNumberElement = document.querySelector('.js-cart-num-items');
-cartNumberElement.innerText = cartNumber;
+displayCartNumberItems();
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -255,7 +258,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const data = await response.json();
 
-    //console.log("User profile:", data);
+    //console.log(data);
 });
 
 
