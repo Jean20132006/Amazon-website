@@ -96,7 +96,7 @@
     align-items: top;
     /*justify-content: center;*/
     flex-shrink: 0;
-    gap: 30px;
+    gap: 25px;
     width: 1460px;
 }
 
@@ -347,7 +347,7 @@
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    gap: 30px;
+    gap: 25px;
     width: 320px;
 }
 
@@ -527,21 +527,32 @@ mark{
     color: grey;
 }
 
+.related-products-with-fast-delivery-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    /*padding: 20px;*/
+    /*border: 1px solid grey;*/
+    border-radius: 5px;
+}
 .related-products-with-fast-delivery-section{
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 320px;
-    background-color: white;
-    padding: 20px;
-    /*border: 1px solid grey;*/
-    border-radius: 5px;
+    width: 320px; 
+    padding: 20px   
+}
+
+.related-products-title-container{
+    padding: 20px
 }
 
 .related-products-title{
     font-family: Nunito, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .image-item-name-star-price-delivery-container{
@@ -589,6 +600,7 @@ mark{
     border: none;
     border-radius: 20px;
     padding: 3px;
+    margin-bottom: 25px;
 }
 
 .prime-delivery-add-to-cart-button{
@@ -602,6 +614,7 @@ mark{
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    /*text-wrap: 1;*/
     font-family: Nunito, Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
@@ -655,3 +668,71 @@ mark{
     font-size: 16px;
     font-weight: bold;
 }
+
+.shopping-cart-bottom-subtotal-container{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin-left: 850px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+.shopping-cart-bottom-numItem{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.shopping-cart-bottom-subtotal{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-elegibility-for-protection-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.elegibility-for-protection-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1460px;
+    gap: 4px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #01497c;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+
+    background: linear-gradient(
+        to right,
+        #01497c 0%,
+        #01497c 0.8%,
+        white 0.8%,
+        white 100%
+    );
+    
+}
+
+.elegibility-for-protection-container a{
+    text-decoration: none;
+    color:#01497c;
+}
+
+.bi.bi-info-circle-fill{
+    color:#01497c;
+    margin-left: 15px;
+    font-size: 18px;
+}
+

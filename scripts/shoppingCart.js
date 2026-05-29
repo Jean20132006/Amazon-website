@@ -123,6 +123,7 @@ function renderShoppingCart(){
         let matchProduct = products.find(p => p.id === item.id);
 
         const iconTrashOrMinus = item.quantity > 1 ? 'bi-dash-lg' : 'bi-trash';
+        const isCentZero = matchProduct.price.priceCents === 0 ? '0' : '';
 
         shoppingCartSummaryHTML += `
             <div class="Shopping-cart-first-item-section">
@@ -168,10 +169,11 @@ function renderShoppingCart(){
                                     <div class="shopping-cart-price-indollar">
                                         <span class="shopping-cart-dollar-sign"><i class="bi bi-currency-dollar"></i></span>
                                         <span class="shopping-cart-dollars-amount">${matchProduct.price.priceDollar}</span>
-                                        <span class="shopping-cart-cents">${matchProduct.price.priceCents}</span>
+                                        <span class="shopping-cart-cents">${matchProduct.price.priceCents}${isCentZero}</span>
                                     </div>
                                 </div>
                                 <div class="shopping-cart-horizontal-line"></div>
+                        
                                 `;
     });
 
@@ -180,7 +182,6 @@ function renderShoppingCart(){
     updateShoppingCartSummary();
 }
 renderShoppingCart();
-//attachCheckboxListeners();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -231,7 +232,7 @@ function decreaseOrDeleteShoppingCartItem(){
 
         // Re-render everything
         renderShoppingCart();
-        updateShoppingCartSummary();
+        //updateShoppingCartSummary();
     });
 }
 
@@ -271,7 +272,7 @@ function increaseItemNumberShoppingCart(){
 
         // Re-render everything
         renderShoppingCart();
-        updateShoppingCartSummary();
+        //updateShoppingCartSummary();
     });
 }
 
@@ -279,47 +280,6 @@ increaseItemNumberShoppingCart();
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////// HANDLES SHOPPING CART BY CONSIDERING CHECK BOX ITEMS /////////////////////
-/*function attachCheckboxListeners() {
-    
-    let quantityItemSelected = 0;
-    const checkboxes =
-        document.querySelectorAll(
-            ".shopping-cart-checkbox"
-        );
-
-    checkboxes.forEach((checkbox) => {
-
-        checkbox.addEventListener("change", () => {
-
-            const productId =
-                Number(checkbox.dataset.id);
-
-            const cartItem =
-                cart1.find(
-                    item => item.id === productId
-                );
-
-            if(cartItem){
-
-                cartItem.selected =
-                    checkbox.checked;
-
-                localStorage.setItem(
-                    "cart1",
-                    JSON.stringify(cart1)
-                );
-
-                // UPDATE PRICE HERE
-                updateShoppingCartSummary();
-
-                //console.log(cart1);
-            }
-
-        });
-
-    });
-
-}*/
 
 function attachCheckboxListeners(){
 
@@ -327,9 +287,9 @@ function attachCheckboxListeners(){
     .addEventListener('change', (e) => {
 
         const checkbox = e.target.closest('.shopping-cart-checkbox');
-        let cartItemId = checkbox.dataset.id;
+        const cartItemId = checkbox.dataset.id;
 
-        let matchProduct = cart1.find(p => p.id === cartItemId);
+        const matchProduct = cart1.find(p => p.id === cartItemId);
 
         if(matchProduct){
             matchProduct.selected = checkbox.checked;
@@ -363,6 +323,8 @@ function updateShoppingCartSummary() {
     let cartQuantity = 0;   // reset every time
     let subtotal = 0;
     let quantityItemSelected = 0;
+    let cartTotal = 0;
+
 
     cart1.forEach(item => {
         cartQuantity += item.quantity;
@@ -373,25 +335,40 @@ function updateShoppingCartSummary() {
             quantityItemSelected += item.quantity;
             subtotal += item.quantity * (product.price.currentPriceInCents / 100);
         }
+
+        if(product){
+          cartTotal += item.quantity * (product.price.currentPriceInCents / 100);  
+        }
     });
     
     // store values
-    localStorage.setItem("cartQuantity", cartQuantity);
-    localStorage.setItem("subtotal", subtotal);
-    localStorage.setItem("quantityItemSelected", quantityItemSelected);
+    localStorage.setItem("cartQuantity", cartQuantity);                 // Total quantity of items in the cart          
+    localStorage.setItem("subtotal", subtotal);                         // subtotal of checked items
+    localStorage.setItem("quantityItemSelected", quantityItemSelected); // quantity of checked items
+    localStorage.setItem("cartTotal", cartTotal);                       // Cart total amount
+    
+    
+    const formattedSubtotal = subtotal.toFixed(2);                       // format subtotal for checked items
+    
+    const formattedCartTotal =cartTotal.toFixed(2);                      //Total amount of the cart
 
-    const formattedSubtotal = subtotal.toFixed(2);                                           // format subtotal to 2 decimal places
+    const cartTotalDOM = document.querySelector('.shopping-cart-bottom-subtotal');
+    cartTotalDOM.innerHTML = `<i class="bi bi-currency-dollar"></i>${formattedCartTotal}`;
+
     const subtotalContainer = document.querySelectorAll('.shopping-cart-price');
     subtotalContainer.forEach(container => {
-        container.innerHTML = `$${formattedSubtotal}`;
+        container.innerHTML = `<i class="bi bi-currency-dollar"></i>${formattedSubtotal}`;
     });
-    /*const proceedToCheckoutButton = document.querySelector('.shopping-cart-number-item');
+    
+    // for the total items in the cart
+    const numberBottomCartItems = document.querySelector('.shopping-cart-bottom-numItem');
     const itemText = cartQuantity === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
-    proceedToCheckoutButton.innerHTML = `(${cartQuantity} ${itemText})`;*/ // Update proceed to checkout button with current cart quantity
-
-    const proceedToCheckoutButton = document.querySelector('.shopping-cart-number-item');
-    const itemText = quantityItemSelected === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
-    proceedToCheckoutButton.innerHTML = `(${quantityItemSelected} ${itemText})`; // Update proceed to checkout button with current cart quantity
+    numberBottomCartItems.innerHTML = `Subtotal (${cartQuantity} ${itemText}):`;             // Update cart current quantity
+    
+    // For items with check mark in the cart
+    const proceedToCheckoutPrice = document.querySelector('.shopping-cart-number-item');
+    const itemPlurialOrSingular = quantityItemSelected === 1 ? "item" : "items";             // Handle singular vs plural for item(s)
+    proceedToCheckoutPrice.innerHTML = `(${quantityItemSelected} ${itemPlurialOrSingular})`; // Update proceed to checkout button with current cart quantity
 
 
     ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
@@ -473,5 +450,60 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
     updateCarousel();
 });
 
+////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////
+/////////////////// GENERATE DYNAMICALLY RELATED PRODUCTS SECTION ////////////////////// 
+let filteredRelatedProducts = [];
+cart1.forEach(item => {
+    const matchProduct = products.find(p => p.id === item.id);
+    const matchItem = products.find(p => p.categories[1] === matchProduct.categories[1]);
+
+    if(filteredRelatedProducts.length === 0){
+        filteredRelatedProducts.push(matchItem);
+    }else if(matchProduct.brand === matchItem.brand){
+        filteredRelatedProducts.push(matchItem);
+    }
+    
+});
+
+//console.log(filteredRelatedProducts);
+
+const relatedProductsList = document.querySelector('.related-products-with-fast-delivery-section');
+let = relatedProductsHTML = '';
+filteredRelatedProducts.forEach(item => {
+
+    const isCentZero = item.price.priceCents === 0 ? '0' : '';
+
+    relatedProductsHTML += `
+                        <div class="image-item-name-star-price-delivery-container">
+                            <img src="${item.images.cartImageConfiramation}" alt="image-alium">
+                            <div class="item-name-star-price-delivery-container">
+                                <a href="#">${item.title.slice(0, 17)}...</a>
+                                <img src="images/star-2.png" alt="star">
+                                <div class="shopping-cart-price-in-dollar">
+                                    <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
+                                    <span class="shopping-cart-dollars-amount-related-products">${item.price.priceDollar}</span>
+                                    <span class="shopping-cart-cents-related-products">${item.price.priceCents}${isCentZero}</span>
+                                </div>
+                                
+                                <div class="prime-delivery-add-to-cart-button">
+                                    <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                    <div class="free-delivery-container">
+                                        
+                                        
+                                        <span class="delivery-date-related-product">
+                                            ${renderShoppingCartShipping(item)}
+                                        </span>
+                                    </div>
+                                    <div class="shopping-cart-add-to-cart-button-container">
+                                        <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        `;
+
+});
+
+relatedProductsList.innerHTML = relatedProductsHTML;

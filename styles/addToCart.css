@@ -668,7 +668,7 @@ body{
 .add-to-cart-corbeille-image img{
     width: 110px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 .add-to-cart-corbeille-item-price{
     font-family: Nunito, sans-serif;

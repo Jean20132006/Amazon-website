@@ -54,6 +54,8 @@ if (matchingProduct) {
   const productClientRating = document.querySelectorAll('.js-checkout-carousel-client-rating-img'); // Product video carousel images
 
   ///////////////////////////////////////////////////////////////////////////////
+
+  const isCentZero = matchingProduct.price.priceCents === 0 ? '0' : ''; // utility. helps to display two zero if cent = 0
   //const clothesComputersCarouselImages = document.querySelectorAll('.container1-img'); // images in clothes and computers carousel
   //const clothesComputerBigImages = document.querySelectorAll('.js-clothes-computers-image-container'); // big images in clothes and computers carousel
   
@@ -102,7 +104,7 @@ if (matchingProduct) {
     element.textContent = matchingProduct.price.priceDollar;
   });
   productPriceCent.forEach((element) => {
-    element.textContent = matchingProduct.price.priceCents;
+    element.innerHTML = `${matchingProduct.price.priceCents}${isCentZero}`;
   });
   
   if(matchingProduct.categories[0] === "drink"){
@@ -199,8 +201,13 @@ if (matchingProduct) {
         element.textContent = `${matchingProduct.fourthBigCarouselTitle}`;
     });
     renderShipping(matchingProduct);
-    document.querySelector(".js-delivery-day").innerHTML = `FREE delivery <span class="delivery-date">${getDeliveryDate(3)}</span>`;
-    document.getElementById("advert-free-delivery").innerHTML = `${getDeliveryDate(3)}`; 
+    document.querySelector(".js-delivery-day").innerHTML = `
+                        FREE delivery 
+                        <span class="delivery-date">
+                           ${getDeliveryDate(matchingProduct.shipping.estimatedDelivery)}
+                        </span>`;
+    document.getElementById("advert-free-delivery").innerHTML = `
+                                    ${getDeliveryDate(matchingProduct.shipping.estimatedDelivery)}`; 
 
 } else {
   document.body.innerHTML = "Product not found";
