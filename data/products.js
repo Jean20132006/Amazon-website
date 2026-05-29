@@ -156,8 +156,8 @@
 
   shipping: {
     primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2 days",
+    freeShipping: false,
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -356,8 +356,8 @@
 
   shipping: {
     primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2 days",
+    freeShipping: false,
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -554,9 +554,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2 days",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -753,9 +753,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2 days",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -954,7 +954,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2 days",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -1153,7 +1153,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2 days",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -1343,9 +1343,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -1541,7 +1541,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -1735,9 +1735,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -1931,9 +1931,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -2129,7 +2129,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -2323,9 +2323,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -2519,9 +2519,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -2715,9 +2715,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 5,
     weight: "1.2 lb"
   },
 
@@ -2913,7 +2913,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -3108,8 +3108,8 @@
 
   shipping: {
     primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    freeShipping: false,
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -3305,7 +3305,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -3499,9 +3499,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -3695,9 +3695,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -3894,9 +3894,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -4093,7 +4093,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -4303,7 +4303,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -4511,9 +4511,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -4720,9 +4720,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -4921,9 +4921,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -5124,7 +5124,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -5323,9 +5323,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -5539,7 +5539,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -5755,9 +5755,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -5972,9 +5972,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -6189,9 +6189,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -6408,7 +6408,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -6618,7 +6618,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -6833,7 +6833,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -7033,9 +7033,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -7250,9 +7250,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -7455,7 +7455,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -7657,9 +7657,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -7863,7 +7863,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -8065,9 +8065,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -8292,7 +8292,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -8515,7 +8515,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -8737,9 +8737,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -8960,9 +8960,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -9185,9 +9185,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -9414,7 +9414,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -9641,9 +9641,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -9867,7 +9867,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -10089,9 +10089,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -10299,9 +10299,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -10511,7 +10511,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -10721,7 +10721,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -10929,9 +10929,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -11139,9 +11139,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -11349,9 +11349,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -11559,9 +11559,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -11771,7 +11771,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -11981,7 +11981,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -12193,9 +12193,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -12419,9 +12419,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -12647,7 +12647,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 1,
     weight: "1.2 lb"
   },
 
@@ -12871,9 +12871,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -13095,9 +13095,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -13320,9 +13320,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 5,
     weight: "1.2 lb"
   },
 
@@ -13530,9 +13530,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -13740,9 +13740,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 3,
     weight: "1.2 lb"
   },
 
@@ -13950,9 +13950,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -14177,7 +14177,7 @@
   shipping: {
     primeEligible: true,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -14399,9 +14399,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 4,
     weight: "1.2 lb"
   },
 
@@ -14841,9 +14841,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
+    primeEligible: false,
     freeShipping: true,
-    estimatedDelivery: "2",
+    estimatedDelivery: 2,
     weight: "1.2 lb"
   },
 
@@ -15065,9 +15065,9 @@
   ],
 
   shipping: {
-    primeEligible: true,
-    freeShipping: true,
-    estimatedDelivery: "2",
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 5,
     weight: "1.2 lb"
   },
 

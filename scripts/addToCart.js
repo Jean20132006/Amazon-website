@@ -252,10 +252,10 @@ function renderCart() {
 
 renderCart(); // Initial render of cart summary
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////// DECREASE NUMBER OF THE SAME ITEM OR DELETE IT //////////////////////////////
 /**
  * @brief This section uses event delegation to handle click events for both delete and minus buttons in the 
  *        cart summary.
@@ -276,35 +276,41 @@ renderCart(); // Initial render of cart summary
  */
 
 //Select parent container and add event listener for both delete and minus buttons using event delegation
-document.querySelector('.js-add-to-cart-corbeille-cart')
-.addEventListener('click', (e) => {
+function decreaseOrDeleteItem(){
+    document.querySelector('.js-add-to-cart-corbeille-cart')
+    .addEventListener('click', (e) => {
 
-    const button = e.target.closest('.cart-action-btn');
-    if (!button) return;
+        const button = e.target.closest('.cart-action-btn');
+        if (!button) return;
 
-    const id = button.dataset.id;
-    const itemIndex = cart1.findIndex(item => item.id === id);
+        const id = button.dataset.id;
+        const itemIndex = cart1.findIndex(item => item.id === id);
 
-    if (itemIndex === -1) return;
+        if (itemIndex === -1) return;
 
-    const item = cart1[itemIndex];
+        const item = cart1[itemIndex];
 
-    if (item.quantity > 1) {
-        // MINUS behavior
-        item.quantity -= 1;
-    } else {
-        // DELETE behavior
-        cart1 = cart1.filter(i => i.id !== id);
-    }
+        if (item.quantity > 1) {
+            // MINUS behavior
+            item.quantity -= 1;
+        } else {
+            // DELETE behavior
+            cart1 = cart1.filter(i => i.id !== id);
+        }
 
-    localStorage.setItem("cart1", JSON.stringify(cart1));
+        localStorage.setItem("cart1", JSON.stringify(cart1));
 
-    // Re-render everything
-    renderCart();
-    updateCartSummary();
-});
-               
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Re-render everything
+        renderCart();
+        updateCartSummary();
+    });
+}
+
+decreaseOrDeleteItem();
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////// INCREASE THE NUMBER FOR A GIVEN ITEM //////////////////////////////////
 /**
  * @brief This section uses event delegation to handle click events for the plus button in the cart summary.
  * @note Similar to the previous section, this approach adds a single event listener to the parent container of the cart items. When a click event occurs, it checks if the clicked element is a plus button and increments the quantity of the corresponding cart item, updates localStorage, and re-renders the cart summary.
@@ -318,26 +324,33 @@ document.querySelector('.js-add-to-cart-corbeille-cart')
  *      const plusBtn = e.target.closest('.add-to-cart-plus-sign'); // Find the actual plus button that was clicked
  *                                                              (even if user clicked icon inside it)
  */
-document.querySelector('.js-add-to-cart-corbeille-cart')
-.addEventListener('click', (e) => {
+function increaseItemNumber(){
+    document.querySelector('.js-add-to-cart-corbeille-cart')
+    .addEventListener('click', (e) => {
 
-    const plusBtn = e.target.closest('.add-to-cart-plus-sign');
-    if (!plusBtn) return;
+        const plusBtn = e.target.closest('.add-to-cart-plus-sign');
+        if (!plusBtn) return;
 
-    const id = plusBtn.dataset.id;
+        const id = plusBtn.dataset.id;
 
-    const item = cart1.find(p => p.id === id);
-    if (!item) return;
+        const item = cart1.find(p => p.id === id);
+        if (!item) return;
 
-    item.quantity += 1;
+        item.quantity += 1;
 
-    localStorage.setItem("cart1", JSON.stringify(cart1));
+        localStorage.setItem("cart1", JSON.stringify(cart1));
 
-    // Re-render everything
-    renderCart();
-    updateCartSummary();
-});
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Re-render everything
+        renderCart();
+        updateCartSummary();
+    });
+}
+
+increaseItemNumber();
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////// UPDATE SUBTOTAL AND TOTAL //////////////////////////////////////////
 
 /**
  * @brief This section calculates the total quantity of items in the cart and the subtotal price, then

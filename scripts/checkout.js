@@ -637,7 +637,8 @@ function addToCart(){
         else {
             cart1.unshift({                                              // Add new product to cart at the beginning
             id: id,
-            quantity: 1
+            quantity: 1,
+            selected: true
             });
     }
     
@@ -649,10 +650,13 @@ function addToCart(){
 addToCart();
 
 ///////////////////////// CART QUANTITY DISPLAY IN HEADER /////////////////////////////////////////////
+function cartNumberItems(){
+    let CheckoutCartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
+    const cartNumberElement = document.querySelector('.js-cart-num-items');
+    cartNumberElement.innerText = CheckoutCartNumberItems;
+}
 
-let CheckoutCartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
-const cartNumberElement = document.querySelector('.js-cart-num-items');
-cartNumberElement.innerText = CheckoutCartNumberItems;
+cartNumberItems();
 
 //////////////////////// END OF CART FUNCTIONALITIES ////////////////////////////////////////
 
