@@ -13,8 +13,8 @@ function getShoppingCartDeliveryDate(days){
   date.setDate(date.getDate() + days);                // Add the specified number of days to the current date
 
   return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
-    weekday:"long",
-    month:"long",
+    weekday:"short",
+    month:"short",
     day:"numeric"
   });
 
@@ -38,8 +38,8 @@ function getShoppingCartTomorrow(){
   date.setDate(date.getDate() + 1);                    // Add 1 day to the current date to get tomorrow's date
   // Format the date as a string in the format "Weekday, Month Day" and return it
   return date.toLocaleDateString("en-US",{
-    weekday:"long",
-    month:"long",
+    weekday:"short",
+    month:"short",
     day:"numeric"
   });
 
@@ -126,7 +126,7 @@ function renderShoppingCart(){
         const isCentZero = matchProduct.price.priceCents === 0 ? '0' : '';
 
         shoppingCartSummaryHTML += `
-            <div class="Shopping-cart-first-item-section">
+            <div class="Shopping-cart-first-item-section js-cart-item-${matchProduct.id}">
                                     <div class="Shopping-cart-first-item-container">
                                         <input type="checkbox" class="shopping-cart-checkbox" data-id="${item.id}" ${item.selected ? "checked" : ""}>
                                         <img src="${matchProduct.images.cartImageConfiramation}" alt="${matchProduct.brand}">
@@ -158,7 +158,9 @@ function renderShoppingCart(){
                                                     </button>
                                                 </div>
                                                 <span>|</span>
-                                                <button class="shopping-cart-delete-button" data-id="${item.id}">Delete</button>
+                                                <button class="shopping-cart-delete-button js-shopping-cart-delete-button-${item.id}" data-id="${item.id}">
+                                                    Delete
+                                                </button>
                                                 <span>|</span>
                                                 <a href="#" data-id="${item.id}">Save for later</a>
                                                 <span>|</span>
@@ -320,26 +322,41 @@ function attachCheckboxListeners(){
  */
 
 function updateShoppingCartSummary() {
-    let cartQuantity = 0;   // reset every time
-    let subtotal = 0;
-    let quantityItemSelected = 0;
-    let cartTotal = 0;
+    let cartQuantity = 0;                  // reset every time. Total number of items in the cart
+    let subtotal = 0;                      // amount for items checked in the cart
+    let quantityItemSelected = 0;          // quantity of items checked in the cart
+    let cartTotal = 0;                     // cart total amount
+    let weeklyPay = 0;                     // payment in details (per week) 
 
 
     cart1.forEach(item => {
-        cartQuantity += item.quantity;
+        cartQuantity += item.quantity;     // Cart total number of items
 
-        const product = products.find(p => p.id === item.id);                                // find matching product to get price
-
+        const product = products.find(p => p.id === item.id);                     // find matching product to get price
+        
+        // Quantity and total foe items checked in the cart
         if (product && item.selected) {
             quantityItemSelected += item.quantity;
             subtotal += item.quantity * (product.price.currentPriceInCents / 100);
         }
-
+        
+        // Total amount of the cart
         if(product){
           cartTotal += item.quantity * (product.price.currentPriceInCents / 100);  
         }
     });
+
+    // Calculate the price to pay per week (loan)
+    weeklyPay = (subtotal / 4).toFixed(2);
+    let formatedWeeklyPay = Math.floor(weeklyPay);
+    let weekCents = (weeklyPay - Math.floor(weeklyPay)) * 100;
+    let formatWeekCents = Math.round(weekCents);
+    //console.log(formatedWeeklyPay);
+    //console.log(formatWeekCents);
+
+    const weeklyDollar = document.querySelector('.shopping-cart-dollars-amount-weekly-payment');
+    weeklyDollar.innerHTML = `${formatedWeeklyPay}`;
+    document.querySelector('.shopping-cart-cents-weekly-payment').innerHTML = `${formatWeekCents}`;
     
     // store values
     localStorage.setItem("cartQuantity", cartQuantity);                 // Total quantity of items in the cart          
@@ -348,19 +365,17 @@ function updateShoppingCartSummary() {
     localStorage.setItem("cartTotal", cartTotal);                       // Cart total amount
     
     
-    const formattedSubtotal = subtotal.toFixed(2);                       // format subtotal for checked items
+    const formattedSubtotal = subtotal.toFixed(2);                      // format subtotal for checked items
     
-    const formattedCartTotal =cartTotal.toFixed(2);                      //Total amount of the cart
+    const formattedCartTotal =cartTotal.toFixed(2);                     //Total amount of the cart
 
+    // Cart total amount on the bottom cart
     const cartTotalDOM = document.querySelector('.shopping-cart-bottom-subtotal');
     cartTotalDOM.innerHTML = `<i class="bi bi-currency-dollar"></i>${formattedCartTotal}`;
 
-    const subtotalContainer = document.querySelectorAll('.shopping-cart-price');
-    subtotalContainer.forEach(container => {
-        container.innerHTML = `<i class="bi bi-currency-dollar"></i>${formattedSubtotal}`;
-    });
     
-    // for the total items in the cart
+    
+    // for the total number of items in the cart
     const numberBottomCartItems = document.querySelector('.shopping-cart-bottom-numItem');
     const itemText = cartQuantity === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
     numberBottomCartItems.innerHTML = `Subtotal (${cartQuantity} ${itemText}):`;             // Update cart current quantity
@@ -370,6 +385,10 @@ function updateShoppingCartSummary() {
     const itemPlurialOrSingular = quantityItemSelected === 1 ? "item" : "items";             // Handle singular vs plural for item(s)
     proceedToCheckoutPrice.innerHTML = `(${quantityItemSelected} ${itemPlurialOrSingular})`; // Update proceed to checkout button with current cart quantity
 
+    const subtotalContainer = document.querySelectorAll('.shopping-cart-price');
+    subtotalContainer.forEach(container => {
+        container.innerHTML = `<i class="bi bi-currency-dollar"></i>${formattedSubtotal}`;
+    });
 
     ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
 
@@ -452,7 +471,9 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////// GENERATE DYNAMICALLY RELATED PRODUCTS SECTION ////////////////////// 
+/////////////////// GENERATE DYNAMICALLY RELATED PRODUCTS SECTION //////////////////////
+
+// Array of related products
 let filteredRelatedProducts = [];
 cart1.forEach(item => {
     const matchProduct = products.find(p => p.id === item.id);
@@ -466,44 +487,97 @@ cart1.forEach(item => {
     
 });
 
-//console.log(filteredRelatedProducts);
+function renderProductsRelated(productsList){
 
-const relatedProductsList = document.querySelector('.related-products-with-fast-delivery-section');
-let = relatedProductsHTML = '';
-filteredRelatedProducts.forEach(item => {
+    const relatedProductsList = document.querySelector('.related-products-with-fast-delivery-section');
+    let = relatedProductsHTML = '';
 
-    const isCentZero = item.price.priceCents === 0 ? '0' : '';
+    productsList.forEach(item => {
 
-    relatedProductsHTML += `
-                        <div class="image-item-name-star-price-delivery-container">
-                            <img src="${item.images.cartImageConfiramation}" alt="image-alium">
-                            <div class="item-name-star-price-delivery-container">
-                                <a href="#">${item.title.slice(0, 17)}...</a>
-                                <img src="images/star-2.png" alt="star">
-                                <div class="shopping-cart-price-in-dollar">
-                                    <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
-                                    <span class="shopping-cart-dollars-amount-related-products">${item.price.priceDollar}</span>
-                                    <span class="shopping-cart-cents-related-products">${item.price.priceCents}${isCentZero}</span>
-                                </div>
-                                
-                                <div class="prime-delivery-add-to-cart-button">
-                                    <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
-                                    <div class="free-delivery-container">
-                                        
-                                        
-                                        <span class="delivery-date-related-product">
-                                            ${renderShoppingCartShipping(item)}
-                                        </span>
+        const isCentZero = item.price.priceCents === 0 ? '0' : '';
+
+        relatedProductsHTML += `
+                            <div class="image-item-name-star-price-delivery-container">
+                                <img src="${item.images.cartImageConfiramation}" alt="image-alium">
+                                <div class="item-name-star-price-delivery-container">
+                                    <a href="#">${item.title.slice(0, 50)}...</a>
+                                    <img src="images/star-2.png" alt="star">
+                                    <div class="shopping-cart-price-in-dollar">
+                                        <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
+                                        <span class="shopping-cart-dollars-amount-related-products">${item.price.priceDollar}</span>
+                                        <span class="shopping-cart-cents-related-products">${item.price.priceCents}${isCentZero}</span>
                                     </div>
-                                    <div class="shopping-cart-add-to-cart-button-container">
-                                        <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                    
+                                    <div class="prime-delivery-add-to-cart-button">
+                                        <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                        <div class="free-delivery-container">
+                                            
+                                            
+                                            <span class="delivery-date-related-product">
+                                                ${renderShoppingCartShipping(item)}
+                                            </span>
+                                        </div>
+                                        <div class="shopping-cart-add-to-cart-button-container">
+                                            <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                        </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
-                        </div>
-                        `;
+                            `;
 
-});
+    });
 
-relatedProductsList.innerHTML = relatedProductsHTML;
+    relatedProductsList.innerHTML = relatedProductsHTML;
+}
+
+renderProductsRelated(filteredRelatedProducts);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////// DELETE ITEM FROM THE SHOPPING CART ///////////////////////////////
+
+/**
+ * @brief This function delete items from the cart when pressing delete button
+ */
+
+function deleteItemShoppingCart() {
+
+    document.querySelector('.shopping-cart-checkbox-img-itemName-price-container')
+    .addEventListener('click', (e) => {
+
+        const deleteButton = e.target.closest('.shopping-cart-delete-button');
+
+        if (!deleteButton) return;
+
+        const buttonId = deleteButton.dataset.id;
+
+        const cartItemElement = document.querySelector(`.js-cart-item-${buttonId}`);
+        
+        if (!cartItemElement) {
+            console.error(`Could not find cart item element for ID: ${buttonId}`);
+            return;
+        }
+
+        // Start animation
+        cartItemElement.classList.add('cart-removing');
+        //cartItemElement.classList.add('cart-explode');
+
+        // Wait for animation to finish
+        setTimeout(() => {
+
+            cart1 = cart1.filter( item => item.id !== buttonId);
+
+            localStorage.setItem("cart1", JSON.stringify(cart1));
+
+            renderShoppingCart();
+
+        }, 500);
+
+    });
+
+}
+
+deleteItemShoppingCart();
+
+///////////////////////////////////////////////////////////////////////////////////////////

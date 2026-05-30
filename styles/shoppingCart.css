@@ -239,12 +239,16 @@
     font-weight: bold;
     color: black;
 }
+
+.shopping-cart-cents-weekly-payment,
 .shopping-cart-cents{
     font-family: Nunito, sans-serif;
     font-size: 12px;
     margin-top: 3px;
     font-weight: bold;
 }
+
+.shopping-cart-dollars-amount-weekly-payment,
 .shopping-cart-dollars-amount{
     font-size: 20px;
     font-weight: bold;
@@ -335,6 +339,7 @@
     background-color: white;
     border: none;
     color: #01497c;
+    /*transition-duration: 1s;*/
 }
 
 .add-to-cart-item-button{
@@ -735,4 +740,46 @@ mark{
     margin-left: 15px;
     font-size: 18px;
 }
+
+.cart-removing {
+    background-color: #ea4f4d;
+    width: 300px;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: transform 1s ease,
+                opacity 1s ease;
+}
+
+/*.cart-explode {
+    animation: slideExplode 0.8s forwards;
+}
+
+@keyframes slideExplode {
+
+    0% {
+        transform: translateX(0) scale(1) rotate(0deg);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    40% {
+        transform: translateX(80px) scale(1.1) rotate(5deg);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    70% {
+        transform: translateX(140px) scale(1.4) rotate(15deg);
+        opacity: 0.7;
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translateX(220px) scale(0.1) rotate(45deg);
+        opacity: 0;
+        filter: blur(8px);
+    }
+}*/
+
+
 

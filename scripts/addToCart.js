@@ -295,7 +295,7 @@ function decreaseOrDeleteItem(){
             item.quantity -= 1;
         } else {
             // DELETE behavior
-            cart1 = cart1.filter(i => i.id !== id);
+            cart1 = cart1.filter(p => p.id !== id);
         }
 
         localStorage.setItem("cart1", JSON.stringify(cart1));
