@@ -1,0 +1,208 @@
+@media (max-width: 455px){
+    .nav-bar-place-order .secure-checkout-container{
+        display: none;
+    }
+}
+.nav-bar-place-order{
+    background-color: hsla(128, 50%, 6%, 0.871);
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: auto;
+    padding: 0 20px;
+    box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;   
+}
+
+.nav-bar-place-order a{
+    text-decoration: none;
+}
+
+.amazon-logo-secure-checkout-cart-section{
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-location-place-order-container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: auto;
+    white-space: nowrap;   /*prevent text wrapping*/
+    flex-shrink: 0;
+    
+}
+
+.secure-checkout-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*font-family:  Arial, Helvetica, sans-serif;*/
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-top: -5px;
+
+}
+
+.right-place-order-section{
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: auto;
+    white-space: nowrap;   /*prevent text wrapping*/
+    flex-shrink: 0;
+}
+
+.delivery-pay-place-order-section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+.delivery-pay-place-order-section{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 20px;
+    width: 1460px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.right-page,
+.left-page{
+    flex-shrink: 1;
+    width: 250px;
+}
+
+.place-order-delivery-pay-container{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    width: 1000px;   
+}
+
+.placeOrder-delivery-container{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.rapproach-delivery-place{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-destination-change{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place-order-destination{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.order-destination-change a{
+    text-decoration: none;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color:#01497c;
+
+}
+
+.placeOrder-delivery-container a{
+    text-decoration: none;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#01497c;
+}
+
+.destination-name-container{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.place-order-container{
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    width: 460px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+.place-order-button{
+    background-color: #ffd000;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+.place-order-amazon-policy-order{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.place-order-amazon-policy-order a{
+    text-decoration: none;
+    color: #01497c
+}
+
+.place-order-horizontal-line{
+    background-color: grey;
+    width: 400px;
+    height: 1px;
+}
+
+.items-shipping-tax-total-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.number-items-price-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /*font-weight: 600;*/
+    color: black;
+}
+
+.place-order-total-price,
+.place-order-total{
+    font-weight: 600;
+    font-size: 20px;
+}

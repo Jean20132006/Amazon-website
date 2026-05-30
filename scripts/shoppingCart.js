@@ -132,7 +132,7 @@ function renderShoppingCart(){
                                         <img src="${matchProduct.images.cartImageConfiramation}" alt="${matchProduct.brand}">
                                         <div class="shopping-cart-item-name-delivery-option-button-container">
                                             <span class="shopping-cart-item-name">
-                                                ${matchProduct.shortTitle} ...
+                                                ${matchProduct.title.slice(0, 125)} ...
                                             </span>
                                             <div class="shopping-cart-free-delivery-order-within">
                                                 ${renderShoppingCartShipping(matchProduct)}
@@ -395,23 +395,13 @@ function updateShoppingCartSummary() {
     let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0;                //Get current cart quantity from localStorage or initialize to 0 
     const cartNumberElement = document.querySelector('.js-cart-num-items');
     cartNumberElement.innerText = cartNumberItems;
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////
 
 }
 
 updateShoppingCartSummary(); // Call function to update cart summary on page load
 
-
-
-///////////////////////// CART QUANTITY DISPLAY IN THE HEADER ///////////////////////////////////
-/*function displayCartNumberItems(){
-  let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
-  const cartNumberElement = document.querySelector('.js-cart-num-items');
-  cartNumberElement.innerText = cartNumber;
-}
-
-displayCartNumberItems();*/
-//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
@@ -500,7 +490,7 @@ function renderProductsRelated(productsList){
                             <div class="image-item-name-star-price-delivery-container">
                                 <img src="${item.images.cartImageConfiramation}" alt="image-alium">
                                 <div class="item-name-star-price-delivery-container">
-                                    <a href="#">${item.title.slice(0, 50)}...</a>
+                                    <a href="#">${item.title.slice(0, 27)}...</a>
                                     <img src="images/star-2.png" alt="star">
                                     <div class="shopping-cart-price-in-dollar">
                                         <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
