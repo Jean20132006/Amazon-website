@@ -3,6 +3,7 @@
         display: none;
     }
 }
+
 .nav-bar-place-order{
     background-color: hsla(128, 50%, 6%, 0.871);
     background-color: black;
@@ -48,7 +49,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*font-family:  Arial, Helvetica, sans-serif;*/
     font-size: 26px;
     font-weight: bold;
     color: white;
@@ -69,11 +69,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*border: 1px solid black;*/
 }
 
 .delivery-pay-place-order-section{
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -90,7 +88,6 @@
 }
 
 .place-order-delivery-pay-container{
-    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -99,13 +96,21 @@
 }
 
 .placeOrder-delivery-container{
-    /*border: 1px solid green;*/
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 10px;
     background-color: white;
     padding: 20px;
+
+    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        #a22c29 0%,
+        #a22c29 7%,
+        white 7%,
+        white 100%
+    );
 }
 
 .rapproach-delivery-place{
@@ -148,7 +153,6 @@
 }
 
 .place-order-container{
-    /*border: 1px solid black;*/
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -158,6 +162,14 @@
     padding: 20px;
     background-color: white;
     font-family: Nunito, Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        #01497c 0%,
+        #01497c 3%,
+        white 3%,
+        white 100%
+    );
 }
 
 .place-order-button{
@@ -166,6 +178,7 @@
     border: none;
     border-radius: 20px;
     padding: 5px;
+    margin-top: 10px;
 }
 .place-order-amazon-policy-order{
     font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -175,7 +188,7 @@
 }
 .place-order-amazon-policy-order a{
     text-decoration: none;
-    color: #01497c
+    color: #01497c;
 }
 
 .place-order-horizontal-line{
@@ -205,4 +218,308 @@
 .place-order-total{
     font-weight: 600;
     font-size: 20px;
+}
+
+/*Gift card section CSS*/
+
+.place-order-amazon-gift-card-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.place-order-amazon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1460px;
+}
+
+.gift-card-place-order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 985px;
+    background-color: white;
+    height: 130px;
+    
+}
+
+.gift-card-place-order-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 750px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.place-order-get-amazon-gift-card{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 92px;
+    margin-top: 1px;
+    padding-right: 20px;
+}
+
+.place-order-gift-card-text{
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+}
+.upon-approval{
+    color: black;
+}
+
+.place-order-get-amazon-gift-card a{
+    text-decoration: none;
+    color: #01497c;
+}
+/*End of gift card CSS*/
+
+/*First Item in the cart CSS*/
+
+.place-order-cart-first-item-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.place-order-first-item-full-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1460px;    
+}
+
+.place-order-first-item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-shrink: 0;
+    gap: 20px;
+    padding: 20px;
+    width: 985px;
+    background-color: white;
+    height: auto;
+}
+
+.arraving-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.image-item-name-price-container{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 20px;
+    width: 570px;
+    background-color: rgb(249, 246, 246);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image-minus-plus-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.image-item-name-price-container img{
+    width: 175px;
+    height: auto;
+    object-fit: contain;
+    background-color: rgb(249, 246, 246);
+}
+
+.item-name-price-place-order{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 400px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.price-place-order-cart{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.item-name-price-place-order a{
+    text-decoration: none;
+    color: #01497c;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.gift-option-place-order{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+}
+
+.place-order-button-gift-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.add-to-cart-num-items,
+.add-to-cart-plus-sign{
+    font-size: 16px;
+    font-weight: bold;
+}
+.add-to-cart-delete-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+    height: 35px;
+    background-color: white;
+    border: 3px solid #ffd60a;
+    border-radius: 17px;
+    font-family: Nunito, sans-serif;
+    padding: 5px;
+}
+.cart-action-btn,
+.add-to-cart-plus-sign,
+.add-to-cart-delete-button{
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bi.bi-plus-lg,
+.bi.bi-trash{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.shopping-cart-check-icon-prime{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0466c8;
+}
+
+.bi.bi-check-lg{
+    color: #e36414;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-delivery-date{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 30px;
+}
+
+.radio-input-delivery-date{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 10px;
+}
+
+.delivery-date{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.delivery-options-free{
+    margin-left: 30px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.bottom-order-total-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bottom-order-full-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1460px;
+}
+
+.place-order-button-total-order-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+    width: 985px;
+    background-color: white; 
+    padding: 20px;
+}
+
+.place-order-bottom-button{
+    border: none;
+    width: 200px;
+    background-color: #ffd000;
+    border-radius: 15px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    /*color: black;*/
+}
+
+.bottom-total-order-price{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.bottom-amazon-policy-container{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.bottom-amazon-policy-container a{
+    text-decoration: none;
+    color: #01497c;
+}
+
+.total-order-amazon-policy-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 700px;
 }
