@@ -565,7 +565,7 @@ mark{
 .image-item-name-star-price-delivery-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     gap: 20px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
 }

@@ -103,11 +103,11 @@
                     <div class="items-shipping-tax-total-container">
                     <div class="number-items-price-container">
                         <span class="place-order-number-items">Items(2):</span>
-                        <span class="place-order-price">$538.15</span>
+                        <span class="place-order-price js-place-order-price">$538.15</span>
                     </div>
                     <div class="number-items-price-container">
                         <span class="place-order-shipping-handling">Shipping and Handling:</span>
-                        <span class="place-order-shipping-price">$0.00</span>
+                        <span class="place-order-shipping-price"><i class="bi bi-currency-dollar"></i>0.00</span>
                     </div>
                     <div class="number-items-price-container">
                         <span class="place-order-estimated-tax">Estimated tax to be collected:*</span>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="number-items-price-container">
                         <span class="place-order-total">Order total:</span>
-                        <span class="place-order-total-price">$571.34</span>
+                        <span class="place-order-total-price js-place-order-total-price">$571.34</span>
                     </div>
                     </div>
                 </div>   
@@ -138,6 +138,7 @@
             </div>
             <div class="right-page"></div>
         </div>
+        <!--Items in the cart-->
         <div class="place-order-cart-first-item-section">
             <div class="left-page"></div>
             <div class="place-order-first-item-full-row">
@@ -149,52 +150,51 @@
 
 
                     <div class="product-delivery-date">
-                    <div class="image-item-name-price-container">
-                        <div class="image-minus-plus-button-container">
-                            <img src="images/electronic-images/hp-2.jpg" alt="toubur">
-                            <div class="place-order-button-gift-options">
-                                <div class="add-to-cart-delete-add">
-                                    <button class="cart-action-btn" >
-                                        <i class="bi bi-trash"></i>
-                                    </button>
+                        <div class="image-item-name-price-container">
+                            <div class="image-minus-plus-button-container">
+                                <img src="images/electronic-images/hp-2.jpg" alt="toubur">
+                                <div class="place-order-button-gift-options">
+                                    <div class="add-to-cart-delete-add">
+                                        <button class="cart-action-btn" >
+                                            <i class="bi bi-trash"></i>
+                                        </button>
 
-                                    <span class="add-to-cart-num-items">1</span>
+                                        <span class="add-to-cart-num-items">1</span>
 
-                                    <button class="add-to-cart-plus-sign">
-                                        <i class="bi bi-plus-lg"></i>
-                                    </button>
+                                        <button class="add-to-cart-plus-sign">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </button>
+                                    </div>
+                                    <span class="gift-option-place-order">Gift options not available</span>
                                 </div>
-                                <span class="gift-option-place-order">Gift options not available</span>
+                            </div>
+                            <div class="item-name-price-place-order">
+                                <span class="name-place-order">
+                                    ANPABO Licensed Ford F-150 24V 2 Seater Ride on Car for 
+                                    Kids, 4x100W Motors for All-Terrain Electric Car with Parental 
+                                    Remote, Retro Style, 3-Speeds, Large Storage Box, Music Player, 
+                                    Aged 3-8, White
+                                </span>
+                                <span class="bought-place-order">100+ bought in past month</span>
+                                <span class="price-place-order-cart">$349.99</span>
+                                <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                <a href="#disclaimer">Disclaimers</a>
                             </div>
                         </div>
-                        <div class="item-name-price-place-order">
-                            <span class="name-place-order">
-                                ANPABO Licensed Ford F-150 24V 2 Seater Ride on Car for 
-                                Kids, 4x100W Motors for All-Terrain Electric Car with Parental 
-                                Remote, Retro Style, 3-Speeds, Large Storage Box, Music Player, 
-                                Aged 3-8, White
-                            </span>
-                            <span class="bought-place-order">100+ bought in past month</span>
-                            <span class="price-place-order-cart">$349.99</span>
-                            <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
-                            <a href="#disclaimer">Disclaimers</a>
+
+                        <div class="radio-input-delivery-date">
+                            <div>
+                            <input type="radio" class="radio-input-place-order" checked>
+                            </div>
+                            <span class="delivery-date">Thursday, jun 4 - Monday, jun 8</span>
+                            <span class="delivery-options-free">FREE</span>
                         </div>
                     </div>
-
-                    <div class="radio-input-delivery-date">
-                        <div>
-                        <input type="radio" class="radio-input-place-order" checked>
-                        </div>
-                        <span class="delivery-date">Thursday, jun 4 - Monday, jun 8</span>
-                        <span class="delivery-options-free">FREE</span>
-                    </div>
-                    </div>
-
-
                 </div>
             </div>
              <div class="right-page"></div>
         </div>
+        <!--End of the cart-->
         <div class="bottom-order-total-section">
             <div class="left-page"></div>
             <div class="bottom-order-full-line">
@@ -203,7 +203,10 @@
                         <button class="place-order-bottom-button">Place your order</button>
                     </div>
                     <div class="total-order-amazon-policy-bottom">
-                        <span class="bottom-total-order-price">Order total: $571.33</span>
+                        <div class="bottom-total-price-container">
+                            <span class="bottom-total-order-price">Order total:</span>
+                            <span class="bottom-total-order-price js-place-order-total-price">$571.33</span>
+                        </div>
                         <div class="place-order-amazon-policy">
                             <span class="place-order-amazon-policy-order">
                                 By placing your order, you agree to Amazon's 

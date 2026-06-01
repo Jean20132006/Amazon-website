@@ -72,12 +72,6 @@ function renderShoppingCartShipping(product){
           <span class="shopping-cart-free-delivery">${getShoppingCartDeliveryDate(7)}</span>`;
   }
 
-  /*document.querySelector(".js-delivery-day").innerHTML = message1;*/
-  //document.querySelector('.js-prime-delivery-date').innerHTML = message2;
-
-  /*document.querySelector(".js-fastest-delivery").innerHTML =
-  `<span class="fastest">Or fastest delivery ${tomorrow}</span>`;*/
-
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -129,7 +123,9 @@ function renderShoppingCart(){
             <div class="Shopping-cart-first-item-section js-cart-item-${matchProduct.id}">
                                     <div class="Shopping-cart-first-item-container">
                                         <input type="checkbox" class="shopping-cart-checkbox" data-id="${item.id}" ${item.selected ? "checked" : ""}>
-                                        <img src="${matchProduct.images.cartImageConfiramation}" alt="${matchProduct.brand}">
+                                        <a href="${matchProduct.productPage}.html?id=${matchProduct.id}">
+                                            <img src="${matchProduct.images.cartImageConfiramation}" alt="${matchProduct.brand}">
+                                        </a>
                                         <div class="shopping-cart-item-name-delivery-option-button-container">
                                             <span class="shopping-cart-item-name">
                                                 ${matchProduct.title.slice(0, 125)} ...
@@ -351,8 +347,6 @@ function updateShoppingCartSummary() {
     let formatedWeeklyPay = Math.floor(weeklyPay);
     let weekCents = (weeklyPay - Math.floor(weeklyPay)) * 100;
     let formatWeekCents = Math.round(weekCents);
-    //console.log(formatedWeeklyPay);
-    //console.log(formatWeekCents);
 
     const weeklyDollar = document.querySelector('.shopping-cart-dollars-amount-weekly-payment');
     weeklyDollar.innerHTML = `${formatedWeeklyPay}`;
@@ -488,7 +482,9 @@ function renderProductsRelated(productsList){
 
         relatedProductsHTML += `
                             <div class="image-item-name-star-price-delivery-container">
-                                <img src="${item.images.cartImageConfiramation}" alt="image-alium">
+                                <a href="${item.productPage}.html?id=${item.id}">
+                                    <img src="${item.images.cartImageConfiramation}" alt="image-alium">
+                                </a>
                                 <div class="item-name-star-price-delivery-container">
                                     <a href="#">${item.title.slice(0, 27)}...</a>
                                     <img src="images/star-2.png" alt="star">
