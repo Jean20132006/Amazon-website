@@ -6,7 +6,7 @@ body{
 }
 /*add to cart navbar*/
 .nav-bar-add-to-cart{
-    background-color: hsla(128, 50%, 6%, 0.871);
+    /*background-color: hsla(128, 50%, 6%, 0.871);*/
     background-color: black;
     width: 1760px;
     height: 70px;
@@ -595,8 +595,7 @@ body{
     align-items: top;
     flex-shrink: 0;
     background-color: white;
-    /*border: 1px solid red;*/
-    height: 3644px;
+    height: auto;
     width: 130px;
     position: relative;
     
@@ -639,7 +638,8 @@ body{
     font-family: Nunito, sans-serif;
     font-size: 12px;
     width: 120px;
-    height: 25px;  
+    height: 25px;
+    /*height: auto;*/
 }
 .add-to-cart-corbeille-cart-roll{
     display: flex;
@@ -648,13 +648,13 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    height: auto;
+    height: 800px;
 }
 .add-to-cart-corbeille-image-button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: auto;
     gap: 10px;
     border-bottom: 1px solid rgb(232, 231, 231);
     margin-top: 20px;
@@ -664,6 +664,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 .add-to-cart-corbeille-image img{
     width: 110px;
@@ -674,6 +675,10 @@ body{
     font-family: Nunito, sans-serif;
     font-size: 15px;
     font-weight: bold;    
+}
+
+.add-to-cart-item-button{
+    margin-bottom: 20px;
 }
 .add-to-cart-num-items,
 .add-to-cart-plus-sign{
