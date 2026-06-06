@@ -1,4 +1,38 @@
 /**
+ * @brief :This function checks for user authentication on page load. 
+ * If the user is not authenticated, it redirects them to the sign-in page. 
+ * If authenticated, it fetches the user's profile data from the server.
+ * @note This function runs once the DOM content is fully loaded.
+ */
+document.addEventListener("DOMContentLoaded", async () => {
+
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "/sign_in.html";
+        return;
+    }
+
+    const response = await fetch("http://localhost:4000/api/v1/users/profile", {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+
+    if (!response.ok) {
+        // token invalid or expired
+        localStorage.removeItem("token");
+        window.location.href = "/sign_in.html";
+        return;
+    }
+
+    const data = await response.json();
+
+    //console.log(data);
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
  * @brief :This function handles the slideshow functionality 
  * including next/previous slide navigation, auto-sliding, 
  * and video play/pause controls.*/
@@ -233,33 +267,3 @@ function displayCartNumberItems(){
 
 displayCartNumberItems();
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-document.addEventListener("DOMContentLoaded", async () => {
-
-    const token = localStorage.getItem("token");
-
-    if (!token) {
-        window.location.href = "/login.html";
-        return;
-    }
-
-    const response = await fetch("http://localhost:4000/api/v1/users/profile", {
-        headers: {
-            Authorization: `Bearer ${token}`
-        }
-    });
-
-    if (!response.ok) {
-        // token invalid or expired
-        localStorage.removeItem("token");
-        window.location.href = "/login.html";
-        return;
-    }
-
-    const data = await response.json();
-
-    //console.log(data);
-});
-
-
-

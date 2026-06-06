@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Orders Returns</title>
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/amazon.css">
     <link rel="stylesheet" href="styles/shoppingCart.css">
+    <link rel="stylesheet" href="styles/order_return.css">
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     <nav class="nav-bar">
         <div class="logo-location-container">
             <div class="hamburger-tooltip-hello-signin">
-                <a href="hamburger-sidebar-signin">
+                <a href="sign_in.html">
                     <img src="images/avatar-icon.png" alt="avatar icon">
                     <span>Hello, Sign in</span>
                 </a>    
@@ -483,91 +484,244 @@
     </header>
     <!--End of header section-->
     <main>
-        <!--Prime cart-->
-        <div class="shopping-cart-prime-card-section">
-            <div class="leftpage-section"></div>
-            <div class="shopping-cart-prime-card-container">
-                <div class="shopping-cart-prime-inner-container">
-                    <div class="shopping-cart-prime-card">
-                        <img src="images/amazon-prime-rewards-visa-signature-card.webp" alt="prime-card">
-                        <span class="card-text">$150 instant gift card</span>
-                    </div>
-                    <div class="shopping-cart-prime-card-text">
-                        <span class="client-congratulations">Jean thank you for being a prime member</span>
-                        <div class="get-approval">Get 
-                            <a href="#">$150 Amazon Gift Card instantly</a>
-                            upon approval for <span class="prime-visa">Prime Visa</span>
-                        </div>
-                    </div>
-                    <div class="shopping-cart-prime-learn-button">
-                        <button class="shopping-cart-prime-card-btton">Learn more</button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightpage-section"></div>
-        </div>
-        <!--End of the prime card in the shopping cart-->
-        <div class="add-elegibility-for-protection-section">
-            <div class="leftpage-section"></div>
-            <div class="elegibility-for-protection-container">
-                <i class="bi bi-info-circle-fill"></i>
-                <a href="#addprotection">add protection</a>
-                <span class="for-eligible-items">for eligible items</span>
-            </div>
-            <div class="rightpage-section"></div>
-        </div>
-        <!--Beginning of the cart items-->
-        <div class="shopping-cart-proceed-to-checkout-section">
-            <div class="leftpage-section"></div>
-            <div class="shopping-cart-proceed-to-checkout-container">
-                <div class="shopping-cart-checkbox-image-name-price-container">
-                    <div class="shopping-cart-title-price-container">
-                        <span class="shopping-cart-title">Shopping Cart</span>
-                        <div class="select-all-items">
-                            <a href="shoppingCart.html">select all items</a>
-                        </div>
-                        <span class="item-price-title">Price</span>
-                        <div class="shopping-cart-horizontal-line"></div>
-                        <div class="shopping-cart-checkbox-img-itemName-price-container">
-                            
-                        </div>
-                    </div>
-                    <div class="shopping-cart-bottom-subtotal-container">
-                        <span class="shopping-cart-bottom-numItem">Subtotal(9 items):</span>
-                        <span class="shopping-cart-bottom-subtotal">$906.17</span>
-
-                    </div>
-
-                </div>
-                <div class="subtotal-proceed-checkout-related-products-container">
-                    <div class="shopping-cart-subtotal-proceed-section">
-                        <div class="shopping-cart-subtotal-container">
-                            <span class="shopping-cart-subtotal">Subtotal</span>
-                            <span class="shopping-cart-number-item"></span>
-                            <span class="shopping-cart-price"><i class="bi bi-currency-dollar"></i></span>
-                        </div>
-                        <div class="subtotal-checkbox-container">
-                            <input type="checkbox" class="subtotal-checkbox">
-                            <span class="order-contains-gift">This order contains gift</span>
-                        </div>
-                        <div class="shopping-cart-proceed-to-checkout">
-                            <div class="price-in-details">
-                                <mark class="shopping-cart-price-in-dollar">
-                                    <span class="or">or</span>
-                                    <span class="shopping-cart-dollar-sign"><i class="bi bi-currency-dollar"></i></span>
-                                    <span class="shopping-cart-dollars-amount-weekly-payment">40</span>
-                                    <span class="shopping-cart-cents-weekly-payment">15</span>
-                                </mark>
-                                <span class="number-of-weeks">/4 weeks at 0% APR</span>
+        <div class="order-return-buy-again-section">
+            <div class="leftpage"></div>
+            <div class="order-return-buy-again-container">
+                <div class="order-return-section">
+                    <div class="your-orders-return-account">
+                        <a href="#your-account">Your Account</a>
+                        <span class="superior-inequality-sign">></span>
+                        <span class="order-details-order">Your Orders</span>
+                    </div> 
+                    <div class="orders-input-search-button-search-section">
+                        <div class="orders-your-big-title">Your Orders</div>
+                        <div class="input-search-button-search-container">
+                            <div class="search-icon-input">
+                                <input type="text" class="orders-input-search" placeholder="Search all orders">
                             </div>
-                            <a href="#">Select plan</a>
-                            <div class="add-to-cart-proceed-to-checkout-button">
-                                <a href="placeOrder.html">
-                                    <button class="proceed-to-checkout-button">Proceed to checkout</button>
-                                </a>
+                            <button class="orders-search-button">
+                                <span class="orders-search-button-text">Search Orders</span>
+                            </button>
+                        </div>
+                   </div>
+                   <div class="orders-buy-again-shipped-digital-amazon-pay-horizontal-line">
+                        <div class="orders-buy-again-shipped-digital-amazon-pay">
+                            <span class="orders-third-row">Orders</span>
+                            <a href="#Buy again" class="link-buy-again">Buy again</a>
+                            <a href="#Not Yet Shipped" class="link-buy-again">Not Yet Shipped</a>
+                            <a href="#Digital Orders" class="link-buy-again">Digital Orders</a>
+                            <a href="#Amazon Pay" class="link-buy-again">Amazon Pay</a>
+                        </div>
+                        <div class="order-return-horizontal-line"></div>
+                   </div>
+                   <div class="orders-in-the-last-months">
+                        <span class="number-of-orders">20</span>
+                        <span class="number-of-orders">orders</span>
+                        <span class="orders-in-the-last-months-text">place in</span>
+                        <form class="orders-in-the-last-months-form">
+                            <select name="timeframe">
+                                <option value="Last 30 days">Last 30 days</option>
+                                <option value="Last 3 months">Last 3 months</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </form>
+                   </div>
+                   <!--First Order-->
+                   <div class="order-return-first-sample">
+                        <div class="oder-return-header">
+                            <div class="the-three-first-one">
+                                <div class="order-return-placed">
+                                    <span class="order-placed">ORDER PLACED</span>
+                                    <span class="order-return-placed-date">June 06, 2026</span>
+                                </div>
+                                <div class="order-return-placed">
+                                    <span class="order-placed">TOTAL</span>
+                                    <span class="order-return-placed-date">$22.86</span>
+                                </div>
+                                <div class="order-return-placed">
+                                    <span class="order-placed">Ship to</span>
+                                    <span class="order-return-name">Jean Eric Tsanga</span>
+                                </div>
+                            </div>
+                            <div class="order-return-placed">
+                                <div class="order-return-placed-order-number">
+                                    <span class="order-placed">Order #:</span>
+                                    <span class="order-placed">111-8731258-4189862</span>
+                                </div>
+                                <div class="view-order-invoice">
+                                    <a href="#view-order-details">View order details</a>
+                                    <span class="separator-line">|</span>
+                                    <a href="#view-invoice">View in voice</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="alexa-button">
+                            <button class="alexa-button-container">
+                                <img src="images/alexa.png" alt="alexa logo" class="alexa-logo">
+                                <span class="alexa-button-text">Ask Alexa about this order</span>
+                            </button>
+                        </div>
+                        <div class="after-alexa-separator-line"></div>
+                        <div class="deliverydate-item-image-buttons-section">
+                            <div class="delivery-item-image-section">
+                                <div class="order-return-delivery-date-message">
+                                    <span class="order-return-delivery">Delivered May 2026</span>
+                                    <span class="order-return-message">
+                                        Your package was left in front of your door or porch 
+                                    </span>
+                                </div>
+                                <div class="image-item-name-buy-again-button">
+                                    <a href="#productPgage">
+                                        <img src="images/electronic-images/hp-2.jpg" alt="image">
+                                    </a>
+                                    <div class="item-name-buy-again-button">
+                                        <a href="#productPage" class="order-return-item-name">
+                                            WIHOLL 2 Piece Sets for Women Workout Sets Spring Cruise 
+                                            Outfits 2026 Lounge Sets Fall Fashion 2025 Travel Vacation 
+                                            Airport Outfits Going Out...
+                                        </a>
+                                        <span class="return-or-replace">Return or replace item eligible through June 13, 2026</span>
+                                        <button class="order-return-buy-again-button">
+                                            <div class="sub-save-cart">
+                                                <i class="bi bi-arrow-repeat"></i>
+                                                <i class="bi bi-cart4"></i>
+                                            </div>
+                                            <span>Buy it again</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons-section">
+                                <button class="order-return-track-package">Track package</button>
+                                <button class="order-return-track-package">Return or Replace items</button>
+                                <button class="order-return-track-package">Share gift receipts</button>
+
+                            </div>
+                        </div>
+
+                        <!--Second product-->
+                        <div class="deliverydate-item-image-buttons-section">
+                            <div class="delivery-item-image-section">
+                                <div class="order-return-delivery-date-message">
+                                    <span class="order-return-delivery">Delivered June 2026</span>
+                                    <span class="order-return-message">
+                                        Your package was left in front of your door or porch 
+                                    </span>
+                                </div>
+                                <div class="image-item-name-buy-again-button">
+                                    <a href="#productPgage">
+                                        <img src="images/first-carousel-images/monster-energy.jpg" alt="image">
+                                    </a>
+                                    <div class="item-name-buy-again-button">
+                                        <a href="#productPage" class="order-return-item-name">
+                                            WIHOLL 2 Piece Sets for Women Workout Sets Spring Cruise 
+                                            Outfits 2026 Lounge Sets Fall Fashion 2025 Travel Vacation 
+                                            Airport Outfits Going Out...
+                                        </a>
+                                        <span class="return-or-replace">Return or replace item eligible through June 13, 2026</span>
+                                        <button class="order-return-buy-again-button">
+                                            <div class="sub-save-cart">
+                                                <i class="bi bi-arrow-repeat"></i>
+                                                <i class="bi bi-cart4"></i>
+                                            </div>
+                                            <span>Buy it again</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons-section">
+                                <button class="order-return-track-package">Track package</button>
+                                <button class="order-return-track-package">Return or Replace items</button>
+                                <button class="order-return-track-package">Share gift receipts</button>
+
+                            </div>
+                        </div>
+                        <!--End of second product-->
+                   </div>
+                   <!--End First order-->
+                   
+                   <!---Second order-->
+                   <div class="order-return-first-sample">
+                        <div class="oder-return-header">
+                            <div class="the-three-first-one">
+                                <div class="order-return-placed">
+                                    <span class="order-placed">ORDER PLACED</span>
+                                    <span class="order-return-placed-date">June 06, 2026</span>
+                                </div>
+                                <div class="order-return-placed">
+                                    <span class="order-placed">TOTAL</span>
+                                    <span class="order-return-placed-date">$22.86</span>
+                                </div>
+                                <div class="order-return-placed">
+                                    <span class="order-placed">Ship to</span>
+                                    <span class="order-return-name">Jean Eric Tsanga</span>
+                                </div>
+                            </div>
+                            <div class="order-return-placed">
+                                <div class="order-return-placed-order-number">
+                                    <span class="order-placed">Order #:</span>
+                                    <span class="order-placed">111-8731258-4189862</span>
+                                </div>
+                                <div class="view-order-invoice">
+                                    <a href="#view-order-details">View order details</a>
+                                    <span class="separator-line">|</span>
+                                    <a href="#view-invoice">View in voice</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alexa-button">
+                            <button class="alexa-button-container">
+                                <img src="images/alexa.png" alt="alexa logo" class="alexa-logo">
+                                <span class="alexa-button-text">Ask Alexa about this order</span>
+                            </button>
+                        </div>
+                        <div class="after-alexa-separator-line"></div>
+                        <div class="deliverydate-item-image-buttons-section">
+                            <div class="delivery-item-image-section">
+                                <div class="order-return-delivery-date-message">
+                                    <span class="order-return-delivery">Delivered May 2026</span>
+                                    <span class="order-return-message">
+                                        Your package was left in front of your door or porch 
+                                    </span>
+                                </div>
+                                <div class="image-item-name-buy-again-button">
+                                    <a href="#productPgage">
+                                        <img src="images/Sixth-carousel-images/cobak.jpg" alt="image">
+                                    </a>
+                                    <div class="item-name-buy-again-button">
+                                        <a href="#productPage" class="order-return-item-name">
+                                            WIHOLL 2 Piece Sets for Women Workout Sets Spring Cruise 
+                                            Outfits 2026 Lounge Sets Fall Fashion 2025 Travel Vacation 
+                                            Airport Outfits Going Out...
+                                        </a>
+                                        <span class="return-or-replace">Return or replace item eligible through June 13, 2026</span>
+                                        <button class="order-return-buy-again-button">
+                                            <div class="sub-save-cart">
+                                                <i class="bi bi-arrow-repeat"></i>
+                                                <i class="bi bi-cart4"></i>
+                                            </div>
+                                            <span>Buy it again</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons-section">
+                                <button class="order-return-track-package">Track package</button>
+                                <button class="order-return-track-package">Return or Replace items</button>
+                                <button class="order-return-track-package">Share gift receipts</button>
+
+                            </div>
+                        </div>
+                   </div>
+                   <!--End of second order-->
+                </div>
+                <!--Right section of the page-->                
+                <div class="buy-again-section">
                     <div class="business-logo-section">
                         <img src="images/amazon-business.png" alt="amazon-bussiness-logo">
                         <div class="shopping-for-work-container">
@@ -594,43 +748,42 @@
                     </div>
                     <div class="related-products-with-fast-delivery-section1">
                         <div class="related-products-title-container">
-                            <span class="related-products-title">Related products with fast delivery</span>
+                            <span class="related-products-title">Buy it again</span>
                         </div>
 
                         <div class="related-products-with-fast-delivery-section">
-                        <div class="image-item-name-star-price-delivery-container">
-                            <img src="images/electronic-images/mobdik-1.jpg" alt="image-alium">
-                            <div class="item-name-star-price-delivery-container">
-                                <a href="#">Arduino porta Hat...</a>
-                                <img src="images/star-2.png" alt="star">
-                                <div class="shopping-cart-price-in-dollar">
-                                    <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
-                                    <span class="shopping-cart-dollars-amount-related-products">170</span>
-                                    <span class="shopping-cart-cents-related-products">15</span>
-                                </div>
-                                
-                                <div class="prime-delivery-add-to-cart-button">
-                                    <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
-                                    <div class="free-delivery-container">
-                                        <span class="free-delivery">FREE Delivery</span>
-                                        <span class="delivery-date-related-product">Thu, May 28</span>
+                            <div class="image-item-name-star-price-delivery-container">
+                                <img src="images/electronic-images/mobdik-1.jpg" alt="image-alium">
+                                <div class="item-name-star-price-delivery-container">
+                                    <a href="#">Arduino porta Hat...</a>
+                                    <img src="images/star-2.png" alt="star">
+                                    <div class="shopping-cart-price-in-dollar">
+                                        <span class="shopping-cart-dollar-sign-related-products"><i class="bi bi-currency-dollar"></i></span>
+                                        <span class="shopping-cart-dollars-amount-related-products">170</span>
+                                        <span class="shopping-cart-cents-related-products">15</span>
                                     </div>
-                                    <div class="shopping-cart-add-to-cart-button-container">
-                                        <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                    
+                                    <div class="prime-delivery-add-to-cart-button">
+                                        <span class="shopping-cart-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                        <div class="free-delivery-container">
+                                            <span class="free-delivery">FREE Delivery</span>
+                                            <span class="delivery-date-related-product">Thu, May 28</span>
+                                        </div>
+                                        <div class="shopping-cart-add-to-cart-button-container">
+                                            <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                        </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="rightpage-section"></div>
-
+            <div class="rightpage"></div>
         </div>
-
+       
         <!--bottom page carousel section-->
         <div class="last-bottom-container">
             <div class="title1-section">
@@ -1522,6 +1675,6 @@
 
     <script src="data/products.js"></script>
     <script src="scripts/nav-bar.js"></script>
-    <script src="scripts/shoppingCart.js"></script> 
+    <script src="scripts/order_return.js"></script> 
 </body>
 </html>
