@@ -1,3 +1,4 @@
+
 /////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
 
 //////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE /////////////////////////////
@@ -197,6 +198,122 @@ else{
 
 let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
+ *        localStorage
+ */
+async function loadCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        return (JSON.parse(localStorage.getItem("cart1")) || []);
+    }
+
+    try {
+
+        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+
+        /*if (!response.ok) {
+
+            console.log(
+                "No cart found for user."
+            );
+
+            return [];
+        }*/
+
+        const data = await response.json();
+
+        console.log("cart has been loaded:");
+        console.log(data.cart.items);
+
+        return data.cart.items || [];
+
+    } catch (error) {
+
+        console.error(
+            "Error loading cart:",
+            error
+        );
+
+        return [];
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/*let cart1 = [];
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
+
+        cart1 = await loadCart();
+
+        //renderShoppingCart();
+    }
+);*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function store the cart. if the user signed in, it stores the cart to backend
+ *        else it stores the cart to local storage
+ */
+async function storeCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        localStorage.setItem("cart1", JSON.stringify(cart1));
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(
+                `http://localhost:4000/api/v1/cart/${userId}`,
+                {
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        items: cart1
+                    })
+                }
+            );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Failed to save cart"
+            );
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Error storing cart:",
+            error
+        );
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
@@ -299,6 +416,7 @@ function decreaseOrDeleteItem(){
         }
 
         localStorage.setItem("cart1", JSON.stringify(cart1));
+        //storeCart();
 
         // Re-render everything
         renderCart();
@@ -339,6 +457,7 @@ function increaseItemNumber(){
         item.quantity += 1;
 
         localStorage.setItem("cart1", JSON.stringify(cart1));
+        //storeCart();
 
         // Re-render everything
         renderCart();

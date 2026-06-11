@@ -1,3 +1,4 @@
+//let cart1 = [];
 /**
  * @brief This script generates the checkoutout page content dynamically based on the product data
  *@note  window.location.search returns everything after the ?
@@ -623,6 +624,67 @@ customerComment(matchingProduct);
 
 /////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
+ *        localStorage
+ */
+async function loadCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        return (JSON.parse(localStorage.getItem("cart1")) || []);
+    }
+
+    try {
+
+        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+
+        if (!response.ok) {
+
+            console.log(
+                "No cart found for user."
+            );
+
+            return [];
+        }
+
+
+        const data = await response.json();
+
+        console.log("cart has been loaded:");
+        console.log(data.cart.items);
+
+        return data.cart.items || [];
+
+    } catch (error) {
+
+        console.error(
+            "Error loading cart:",
+            error
+        );
+
+        return [];
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/*let cart1 = [];
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
+
+        cart1 = await loadCart();
+        //renderShoppingCart();
+    }
+);*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 /**
  * @brief This script handles the add to cart functionality on the checkout page
  * @note When the "Add to Cart" button is clicked, the script retrieves the existing cart from localStorage 
@@ -649,12 +711,47 @@ function addToCart(){
             });
     }
     
-    localStorage.setItem("cart1", JSON.stringify(cart1));              // Save updated cart
+    localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
+    //storeCart();
     localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
     window.location.href = "addToCart.html";                         // Redirect
     });
 }
 addToCart();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+async function addToCart() {
+
+    const addToCartButton = document.querySelector('.js-add-to-cart-btn');
+
+    addToCartButton.addEventListener("click", async () => {
+
+            const existingItem = cart1.find(item => item.id === id);
+
+            if (existingItem) {
+
+                existingItem.quantity += 1;
+
+            } else {
+
+                cart1.unshift({
+                    id: id,
+                    quantity: 1,
+                    selected: true
+                });
+            }
+
+            await storeCart();
+
+            localStorage.setItem("lastAddedProduct", id);
+
+            window.location.href = "addToCart.html";
+        }
+    );
+}
+
+//addToCart();
 
 ///////////////////////// CART QUANTITY DISPLAY IN HEADER /////////////////////////////////////////////
 function cartNumberItems(){
@@ -664,6 +761,61 @@ function cartNumberItems(){
 }
 
 cartNumberItems();
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function store the cart. if the user signed in, it stores the cart to backend
+ *        else it stores the cart to local storage
+ */
+async function storeCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        localStorage.setItem("cart1", JSON.stringify(cart1));
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(
+                `http://localhost:4000/api/v1/cart/${userId}`,
+                {
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        items: cart1
+                    })
+                }
+            );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Failed to save cart"
+            );
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Error storing cart:",
+            error
+        );
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////// END OF CART FUNCTIONALITIES ////////////////////////////////////////
 

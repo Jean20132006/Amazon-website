@@ -215,8 +215,14 @@ form.addEventListener('submit', async (event) => {
         // SUCCESS
         if (response.ok) {
 
-            // save token if backend sends one        
-            localStorage.setItem("token", data.token);
+                    
+            localStorage.setItem("token", data.token);              // save token if backend sends one
+
+            localStorage.setItem( "userId", data.user.id);          // save user ID
+
+            localStorage.setItem("email", data.user.email);         // save user email
+
+            localStorage.setItem("username", data.user.username);   // save user username
 
             message.classList.remove('hidden');
             message.classList.add('green-gradient');

@@ -1,3 +1,4 @@
+
 ////////////////// HANDLES DELIVERY DATE CALCULATIONS AND RENDERING //////////////////////////
 /**
  * @brief This function calculates the delivery date based on the number of days 
@@ -89,7 +90,58 @@ function renderPlaceOrderShipping(product){
  */
 
 let cart1 = JSON.parse(localStorage.getItem('cart1'));
-console.log(cart1);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
+ *        localStorage
+ */
+async function loadCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        return (JSON.parse(localStorage.getItem("cart1")) || []);
+    }
+
+    try {
+
+        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+
+        const data = await response.json();
+
+        return data.cart.items || [];
+        console.log("cart has been loaded:");
+        console.log(data.cart.items);
+
+    } catch (error) {
+
+        console.error(
+            "Error loading cart:",
+            error
+        );
+
+        return [];
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*let cart1 = [];
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
+
+        cart1 = await loadCart();
+
+        //renderShoppingCart();
+    }
+);*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 let cart = cart1.filter(p => p.selected === true);
 localStorage.setItem('cart', JSON.stringify(cart));
@@ -171,7 +223,6 @@ renderOrder();
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 ///////////////////// DECREASE NUMBER OF THE SAME ITEM OR DELETE IT //////////////////////////////
 /**
