@@ -267,5 +267,142 @@ function updateCartSummary() {
 
 updateCartSummary(); // Call function to update cart summary on page load
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function return the current date
+ */
+function getDate(){
+
+  const date = new Date();                            // Get the current date
+ //date.setDate(date.getDate() + days);                // Add the specified number of days to the current date
+
+  return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
+    weekday:"short",
+    month:"short",
+    day:"numeric"
+  });
+
+}
+
+function getReturnDueDate(){
+
+  const date = new Date();                            // Get the current date
+ date.setMonth(date.getMonth() + 1);                  // Add the specified number of months to the current month
+
+  return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
+    weekday:"short",
+    month:"short",
+    day:"numeric"
+  });
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ // Get values        
+    
+    const total = (Number(localStorage.getItem("total"))).toFixed(2);
+    const taxes = (Number(localStorage.getItem("taxes"))).toFixed(2);
+    const payment = (Number(localStorage.getItem("payment"))).toFixed(2);
+    const orderID = JSON.parse(localStorage.getItem("orderID"));
+    const order = JSON.parse(localStorage.getItem("order"));
+    console.log(order);
+
+    document.querySelectorAll('.js-order-number')
+       .forEach(element => {
+            element.innerHTML = `${orderID}`;                            // order number
+       });
+    
+    document.querySelectorAll('.js-date')
+        .forEach(element => {
+            element.innerHTML = `${getDate()}`                           // Date you placed the order
+    });
+    
+    document.querySelectorAll('.js-item-subtotal-price-order')
+        .forEach(element => {
+            element.innerHTML = `${total}`;                               // Total before taxes
+        });
+        
+    document.querySelector('.js-taxes-order').innerHTML = `${taxes}`;
+
+    document.querySelectorAll('.js-grand-total-price')
+        .forEach(element => {
+            element.innerHTML = `${payment}`;
+    });
+    
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function generates dynamically the order
+ */
+function renderOrderDetails(){
+    const orderElement = document.querySelector('.js-order-return-first-sample');
+
+    let orderHTMLSummary = '';
+
+    order.items.forEach(item => {
+
+        const matchingItem = products.find(p => p.id === item.id);
+
+        orderHTMLSummary += `
+                        <div class="deliverydate-item-image-buttons-section">
+                                <div class="delivery-item-image-section">
+                                    <div class="order-return-delivery-date-message">
+                                    <div class="order-return-delivery-container">
+                                            <span class="order-return-delivery">Order Placed</span>
+                                            <span class="current-order-date">${getDate()}</span>
+                                        </div>
+                                        <span class="order-return-message">
+                                            Your package was left in front of your door or porch 
+                                        </span>
+                                    </div>
+                                    <div class="image-item-name-buy-again-button">
+                                        <a href="${matchingItem.productPage}.html?id=${matchingItem.id}">
+                                            <img src="${matchingItem.images.cartImageConfiramation}" alt="${matchingItem.brand}">
+                                        </a>
+                                        <div class="item-name-buy-again-button">
+                                            <a href="${matchingItem.productPage}.html?id=${matchingItem.id}" class="order-return-item-name">
+                                                ${matchingItem.title}...
+                                            </a>
+                                            <div class="return-or-replace-container">
+                                                <span class="return-or-replace">Return or replace item eligible through</span>
+                                                <span>${getReturnDueDate()}</span>
+                                            </div>
+                                            <button class="order-return-buy-again-button" data-id="${matchingItem.id}">
+                                                <div class="sub-save-cart">
+                                                    <i class="bi bi-arrow-repeat"></i>
+                                                    <i class="bi bi-cart4"></i>
+                                                </div>
+                                                <span>Buy it again</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-section">
+                                    <button class="order-return-track-package color" data-id="${matchingItem.id}">
+                                    Track package
+                                    </button>
+                                    <button class="order-return-track-package" data-id="${matchingItem.id}">
+                                    Return or Replace items
+                                    </button>
+                                    <button class="order-return-track-package" data-id="${matchingItem.id}">
+                                    Share gift receipts
+                                    </button>
+
+                                </div>
+                            </div>
+                                `;
+
+    });
+
+    orderElement.innerHTML = orderHTMLSummary;
+}
+
+renderOrderDetails();
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 

@@ -220,9 +220,8 @@ function renderOrder(){
 
 renderOrder();
 
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 ///////////////////// DECREASE NUMBER OF THE SAME ITEM OR DELETE IT //////////////////////////////
 /**
@@ -380,3 +379,49 @@ function updatePlaceOderSummary(){
 }
 
 updatePlaceOderSummary();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This code post the order to the backend
+ */
+
+let yourPayment = Number(localStorage.getItem("payment"));       // Get total payment
+let formatYourPayment = yourPayment.toFixed(2);                  // Format total payment
+
+const userId = localStorage.getItem("userId");                   // Get user ID
+
+
+const placeOrderButtons = document.querySelectorAll('.js-place-order-button');
+placeOrderButtons.forEach(button => {
+    button.addEventListener('click', async () => {
+        const response = await fetch(
+                `http://localhost:4000/api/v1/orders/${userId}`,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        items: cart,
+                        totalAmount: formatYourPayment
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            const orderID = data.orderId;
+            const order = data.order;
+
+            // Store values in local storage
+            localStorage.setItem("orderID", JSON.stringify(orderID));
+            localStorage.setItem("order", JSON.stringify(order));
+
+            window.location.href = 'yourOrderDetails.html';
+
+    });
+});
+///////////////////////////////////////////////////////////////////////////////////////////////////

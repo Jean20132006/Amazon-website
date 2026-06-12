@@ -721,7 +721,7 @@ addToCart();
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-async function addToCart() {
+/*async function addToCart() {
 
     const addToCartButton = document.querySelector('.js-add-to-cart-btn');
 
@@ -749,7 +749,7 @@ async function addToCart() {
             window.location.href = "addToCart.html";
         }
     );
-}
+}*/
 
 //addToCart();
 

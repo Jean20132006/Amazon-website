@@ -51,6 +51,20 @@
     font-weight: 600;
 }
 
+.order-return-delivery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.order-number-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
 .order-separator{
     color: grey;
 }
@@ -135,5 +149,30 @@
 
 .add-to-cart-corbeille{
     border-left: 1px solid rgb(211, 208, 208);
+}
+
+.order-return-track-package.color{
+    background-color: #ffd60a;
+}
+
+.current-order-date{
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.order-return-first-sample.js-order-return-first-sample{
+    border: none;
+}
+
+.return-or-replace-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    /*font-family: Nunito, Arial, Helvetica, sans-serif;*/
+    font-size: 13px;
+    font-weight: bold;
 }
 

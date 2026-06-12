@@ -492,9 +492,14 @@
                     Order Details
                 </div>
                 <div class="order-place-date-order-number">
-                    <span class="order-place-date">Order placed <span class="date">May 15, 2026</span></span>
+                    <span class="order-place-date">Order placed <span class="date js-date">May 15, 2026</span></span>
                     <span class="order-separator">|</span>
-                    <span class="order-number">Order #123-4567890-1234567</span>
+                    <div class="order-number-container">
+                        <span class="order-number">Order #</span>
+                        <span class="order-number js-order-number">123-4567890-1234567</span>
+                    </div>
+                    
+                        
                 </div>
                 <div class="ship-payment-method-order-summary-section">
                     <div class="ship-payment-method-section">
@@ -518,7 +523,9 @@
                         <span class="ship-label">Order Summary</span>
                         <div class="item-subtotal-order">
                             <span class="ship-name">Item(s) Subtotal:</span>
-                            <span class="item-subtotal-price-order">$29.99</span>
+                            <span class="item-subtotal-price-order js-item-subtotal-price-order">
+                                $29.99
+                            </span>
                         </div>
                         <div class="item-subtotal-order">
                             <span class="ship-name">Shipping & Handling:</span>
@@ -526,36 +533,36 @@
                         </div>
                         <div class="item-subtotal-order">
                             <span class="ship-name">Total before Tax:</span>
-                            <span class="item-subtotal-price-order">$29.99</span>
+                            <span class="item-subtotal-price-order js-item-subtotal-price-order">
+                                $29.99
+                            </span>
                         </div>
                         <div class="item-subtotal-order">
                             <span class="ship-name">Estimated tax:</span>
-                            <span class="item-subtotal-price-order">$2.99</span>
+                            <span class="item-subtotal-price-order js-taxes-order">
+                                $2.99
+                            </span>
                         </div>
                         <div class="item-subtotal-order">
                             <span class="grand-total-text">Grand Total:</span>
-                            <span class="grand-total-price">$32.98</span>
+                            <span class="grand-total-price js-grand-total-price">$32.98</span>
                         </div>
                             
                                      
                     </div>
                 </div>
-
-
-
-                <!--<div class="order-return-section">-->
-                   
+                   <!--<div class="order-return-section">-->
                    <!--First Order-->
                    <div class="order-return-first-sample">
                         <div class="oder-return-header">
                             <div class="the-three-first-one">
                                 <div class="order-return-placed">
                                     <span class="order-placed">ORDER PLACED</span>
-                                    <span class="order-return-placed-date">June 06, 2026</span>
+                                    <span class="order-return-placed-date js-date">June 06, 2026</span>
                                 </div>
                                 <div class="order-return-placed">
                                     <span class="order-placed">TOTAL</span>
-                                    <span class="order-return-placed-date">$22.86</span>
+                                    <span class="order-return-placed-date js-grand-total-price">$32.98</span>
                                 </div>
                                 <div class="order-return-placed">
                                     <span class="order-placed">Ship to</span>
@@ -565,7 +572,7 @@
                             <div class="order-return-placed">
                                 <div class="order-return-placed-order-number">
                                     <span class="order-placed">Order #:</span>
-                                    <span class="order-placed">111-8731258-4189862</span>
+                                    <span class="order-placed js-order-number">111-8731258-4189862</span>
                                 </div>
                                 <div class="view-order-invoice">
                                     <a href="#view-order-details">View order details</a>
@@ -581,85 +588,14 @@
                             </button>
                         </div>
                         <div class="after-alexa-separator-line"></div>
-                        <div class="deliverydate-item-image-buttons-section">
-                            <div class="delivery-item-image-section">
-                                <div class="order-return-delivery-date-message">
-                                    <span class="order-return-delivery">Delivered May 2026</span>
-                                    <span class="order-return-message">
-                                        Your package was left in front of your door or porch 
-                                    </span>
-                                </div>
-                                <div class="image-item-name-buy-again-button">
-                                    <a href="#productPgage">
-                                        <img src="images/electronic-images/hp-2.jpg" alt="image">
-                                    </a>
-                                    <div class="item-name-buy-again-button">
-                                        <a href="#productPage" class="order-return-item-name">
-                                            WIHOLL 2 Piece Sets for Women Workout Sets Spring Cruise 
-                                            Outfits 2026 Lounge Sets Fall Fashion 2025 Travel Vacation 
-                                            Airport Outfits Going Out...
-                                        </a>
-                                        <span class="return-or-replace">Return or replace item eligible through June 13, 2026</span>
-                                        <button class="order-return-buy-again-button">
-                                            <div class="sub-save-cart">
-                                                <i class="bi bi-arrow-repeat"></i>
-                                                <i class="bi bi-cart4"></i>
-                                            </div>
-                                            <span>Buy it again</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buttons-section">
-                                <button class="order-return-track-package">Track package</button>
-                                <button class="order-return-track-package">Return or Replace items</button>
-                                <button class="order-return-track-package">Share gift receipts</button>
 
-                            </div>
+                        <div class="order-return-first-sample js-order-return-first-sample">
+                             <!--order goes here-->
                         </div>
-
-                        <!--Second product-->
-                        <div class="deliverydate-item-image-buttons-section">
-                            <div class="delivery-item-image-section">
-                                <div class="order-return-delivery-date-message">
-                                    <span class="order-return-delivery">Delivered June 2026</span>
-                                    <span class="order-return-message">
-                                        Your package was left in front of your door or porch 
-                                    </span>
-                                </div>
-                                <div class="image-item-name-buy-again-button">
-                                    <a href="#productPgage">
-                                        <img src="images/first-carousel-images/monster-energy.jpg" alt="image">
-                                    </a>
-                                    <div class="item-name-buy-again-button">
-                                        <a href="#productPage" class="order-return-item-name">
-                                            WIHOLL 2 Piece Sets for Women Workout Sets Spring Cruise 
-                                            Outfits 2026 Lounge Sets Fall Fashion 2025 Travel Vacation 
-                                            Airport Outfits Going Out...
-                                        </a>
-                                        <span class="return-or-replace">Return or replace item eligible through June 13, 2026</span>
-                                        <button class="order-return-buy-again-button">
-                                            <div class="sub-save-cart">
-                                                <i class="bi bi-arrow-repeat"></i>
-                                                <i class="bi bi-cart4"></i>
-                                            </div>
-                                            <span>Buy it again</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buttons-section">
-                                <button class="order-return-track-package">Track package</button>
-                                <button class="order-return-track-package">Return or Replace items</button>
-                                <button class="order-return-track-package">Share gift receipts</button>
-
-                            </div>
-                        </div>
-                        <!--End of second product-->
                    </div>
                    <!--End First order-->
             </div>
-                    
+
             <!--bottom page carousel section-->
             <div class="last-bottom-container">
                 <div class="title1-section">
