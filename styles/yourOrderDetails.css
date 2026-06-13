@@ -153,6 +153,7 @@
 
 .order-return-track-package.color{
     background-color: #ffd60a;
+    border: none;
 }
 
 .current-order-date{
@@ -174,5 +175,13 @@
     /*font-family: Nunito, Arial, Helvetica, sans-serif;*/
     font-size: 13px;
     font-weight: bold;
+}
+
+.order-return-first-sample{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 

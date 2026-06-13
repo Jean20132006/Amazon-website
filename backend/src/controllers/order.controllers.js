@@ -39,58 +39,15 @@ const getOrders = async (req, res) => {
 
         const { userId } = req.params;
 
-        const { filter } = req.query;
+        const { from, to } = req.query;
 
-        let startDate = new Date();
-
-        switch (filter) {
-
-            case "lastMonth":
-                startDate.setMonth(
-                    startDate.getMonth() - 1
-                );
-                break;
-
-            case "last3Months":
-                startDate.setMonth(
-                    startDate.getMonth() - 3
-                );
-                break;
-
-            case "2026":
-                startDate =
-                    new Date("2026-01-01");
-
-                const endDate =
-                    new Date("2026-12-31");
-
-                const orders2026 =
-                    await Order.find({
-                        user: userId,
-                        createdAt: {
-                            $gte: startDate,
-                            $lte: endDate
-                        }
-                    });
-
-                return res.status(200).json({
-                    success: true,
-                    orders: orders2026
-                });
-
-            default:
-                startDate =
-                    new Date("2006-01-01");
-        }
-
-        const orders =
-            await Order.find({
-                user: userId,
-                createdAt: {
-                    $gte: startDate
-                }
-            })
-            .sort({ createdAt: -1 });
+        const orders = await Order.find({
+            user: userId,
+            createdAt: {
+                $gte: new Date(from),
+                $lte: new Date(to)
+            }
+        }).sort({ createdAt: -1 });
 
         res.status(200).json({
             success: true,

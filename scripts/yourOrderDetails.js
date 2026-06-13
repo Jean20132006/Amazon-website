@@ -269,7 +269,7 @@ updateCartSummary(); // Call function to update cart summary on page load
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
- * @brief This function return the current date
+ * @brief This function return the due date
  */
 function getDate(){
 
@@ -306,7 +306,14 @@ function getReturnDueDate(){
     const payment = (Number(localStorage.getItem("payment"))).toFixed(2);
     const orderID = JSON.parse(localStorage.getItem("orderID"));
     const order = JSON.parse(localStorage.getItem("order"));
-    console.log(order);
+    //console.log(order);
+      
+    const userName = (localStorage.getItem('username')).toUpperCase();  // Get user username
+
+    document.querySelectorAll('.js-ship-name')
+        .forEach(element => {
+            element.innerHTML = `${userName}`;
+        });
 
     document.querySelectorAll('.js-order-number')
        .forEach(element => {
@@ -340,6 +347,18 @@ function renderOrderDetails(){
 
     let orderHTMLSummary = '';
 
+     const createdAt = order.createdAt;
+
+        const formattedDate = new Date(createdAt)
+            .toLocaleDateString(
+                "en-US",
+                {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric"
+                }
+            );
+
     order.items.forEach(item => {
 
         const matchingItem = products.find(p => p.id === item.id);
@@ -350,7 +369,7 @@ function renderOrderDetails(){
                                     <div class="order-return-delivery-date-message">
                                     <div class="order-return-delivery-container">
                                             <span class="order-return-delivery">Order Placed</span>
-                                            <span class="current-order-date">${getDate()}</span>
+                                            <span class="current-order-date">${formattedDate}</span>
                                         </div>
                                         <span class="order-return-message">
                                             Your package was left in front of your door or porch 

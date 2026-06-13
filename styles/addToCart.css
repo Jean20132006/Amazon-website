@@ -473,6 +473,9 @@ body{
     font-size: 14px;
     font-weight: bold;
 }
+.jean-get.js-jean-get{
+    font-size: 16px;
+}
 .add-to-cart-cost-after-savings{
     display: flex;
     flex-direction: row;

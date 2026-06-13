@@ -207,5 +207,221 @@ function renderProductsRelated(productsList){
 }
 
 renderProductsRelated(filteredRelatedProducts);
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function return the due date
+ */
+/*function getDate(){
+
+  const date = new Date();                            // Get the current date
+ //date.setDate(date.getDate() + days);                // Add the specified number of days to the current date
+
+  return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
+    weekday:"short",
+    month:"short",
+    day:"numeric"
+  });
+
+}*/
+
+function getReturnDueDate(){
+
+  const date = new Date();                            // Get the current date
+ date.setMonth(date.getMonth() + 1);                  // Add the specified number of months to the current month
+
+  return date.toLocaleDateString("en-US",{            // Format the date as a string in the format "Weekday, Month Day"
+    weekday:"short",
+    month:"short",
+    day:"numeric"
+  });
+
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This code fetch orders from backend
+ */
+let orderRoaster;
+document.addEventListener('DOMContentLoaded', async () => {
+
+    const userId = localStorage.getItem("userId");                   // Get user ID
+
+    const period = document.getElementById('order-period').value;
+
+    let from;
+    let to = new Date();
+
+    if (period === "1month") {
+
+        from = new Date();
+        from.setMonth(from.getMonth() - 1);
+
+    } 
+    else if (period === "3months") {
+
+        from = new Date();
+        from.setMonth(
+            from.getMonth() - 3);
+
+    } 
+    else if (period === "2026") {
+
+        from = new Date("2026-01-01");
+
+        to = new Date("2026-12-31");
+    }
+
+    const response = await fetch(
+            `http://localhost:4000/api/v1/orders/${userId}?from=${from.toISOString()}&to=${to.toISOString()}`
+        );
+
+    const data = await response.json();
+
+    orderRoaster = data.orders;
+
+    /*console.log("List of orders:");
+    console.log(orderRoaster);
+    console.log(orderRoaster[0].createdAt);*/
+
+
+    document.querySelector('.js-number-of-orders').innerHTML = orderRoaster.length;
+
+    const userName = (localStorage.getItem('username')).toUpperCase();  // Get user username
+
+    const orderRoasterElement = document.querySelector('.order-roaster-container');
+
+    let orderSummaryHTML = '';
+    let orderContainer;
+
+    orderRoaster.forEach(order => {
+
+        // Get create date and format it
+        const createdAt = order.createdAt;
+
+        const formattedDate = new Date(createdAt)
+            .toLocaleDateString(
+                "en-US",
+                {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric"
+                }
+            );
+
+        orderContainer = document.createElement('div');
+        orderContainer.classList.add('order-return-first-sample');
+        orderSummaryHTML += `
+                       
+                     <div class="oder-return-header">
+                                    <div class="the-three-first-one">
+                                        <div class="order-return-placed">
+                                            <span class="order-placed">ORDER PLACED</span>
+                                            <span class="order-return-placed-date">${formattedDate}</span>
+                                        </div>
+                                        <div class="order-return-placed">
+                                            <span class="order-placed">TOTAL</span>
+                                            <span class="order-return-placed-date">$${order.totalAmount}</span>
+                                        </div>
+                                        <div class="order-return-placed">
+                                            <span class="order-placed">Ship to</span>
+                                            <span class="order-return-name">${userName}</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-return-placed">
+                                        <div class="order-return-placed-order-number">
+                                            <span class="order-placed">Order #:</span>
+                                            <span class="order-placed">${order._id}</span>
+                                        </div>
+                                        <div class="view-order-invoice">
+                                            <a href="yourOrderDetails.html">View order details</a>
+                                            <span class="separator-line">|</span>
+                                            <a href="#view-invoice">View in voice</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alexa-button">
+                                    <button class="alexa-button-container">
+                                        <img src="images/alexa.png" alt="alexa logo" class="alexa-logo">
+                                        <span class="alexa-button-text">Ask Alexa about this order</span>
+                                    </button>
+                                </div>
+                                <div class="after-alexa-separator-line"></div>`; 
+
+        order.items.forEach(item => {
+            matchingProduct = products.find(p => p.id === item.id);
+
+            orderSummaryHTML += `
+                   
+                         <div class="deliverydate-item-image-buttons-section">
+                                    <div class="delivery-item-image-section">
+                                        <div class="order-return-delivery-date-message">
+                                            <div class="order-return-delivery-container">
+                                                <span class="order-return-delivery">Delivered</span>
+                                                <span class="order-return-delivery">May 2026</span>
+                                            </div>
+                                            <span class="order-return-message">
+                                                Your package was left in front of your door or porch 
+                                            </span>
+                                        </div>
+                                        <div class="image-item-name-buy-again-button">
+                                            <a href="${matchingProduct.productPage}.html?id=${matchingProduct.id}">
+                                                <img src="${matchingProduct.images.cartImageConfiramation}" alt="image">
+                                            </a>
+                                            <div class="item-name-buy-again-button">
+                                                <a href="${matchingProduct.productPage}.html?id=${matchingProduct.id}" class="order-return-item-name">
+                                                    ${matchingProduct.title}...
+                                                </a>
+                                                <div>
+                                                    <span class="return-or-replace">Return or replace item eligible through</span>
+                                                    <span class="return-or-replace">${getReturnDueDate()}</span>
+                                                </div>
+                                                <button class="order-return-buy-again-button" data-id="${matchingProduct.id}">
+                                                    <div class="sub-save-cart">
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                        <i class="bi bi-cart4"></i>
+                                                    </div>
+                                                    <span>Buy it again</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-section">
+                                        <button class="order-return-track-package color" data-id="${matchingProduct.id}">
+                                            Track package
+                                        </button>
+                                        <button class="order-return-track-package" data-id="${matchingProduct.id}">
+                                            Return or Replace items
+                                        </button>
+                                        <button class="order-return-track-package" data-id="${matchingProduct.id}">
+                                            Share gift receipts
+                                        </button>
+
+                                    </div>
+                                </div>`;
+
+
+        });
+        orderContainer.innerHTML = orderSummaryHTML;
+        
+    });
+    orderRoasterElement.appendChild(orderContainer);
+    //orderContainer = "";
+    
+
+});
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This function generates dynamically the order roaster
+ * 
+ */
+
+
+
+

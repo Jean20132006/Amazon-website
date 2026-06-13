@@ -194,6 +194,7 @@ select{
     border-top-right-radius: 10px;
     font-family: Nunito, sans-serif;
     font-weight: 600;
+    /*border-top: 1px solid grey;*/
 }
 
 .the-three-first-one{
@@ -413,4 +414,24 @@ select{
     background-color: #ffd60a;
     border: none;
 }
+
+.order-roaster-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.order-return-track-package.color{
+    background-color: #ffd60a;
+    border: none;
+}
+
+.order-return-delivery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
 

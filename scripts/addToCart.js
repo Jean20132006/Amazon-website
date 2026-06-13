@@ -510,16 +510,26 @@ function updateCartSummary() {
     const itemText = cartQuantity === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
     proceedToCheckoutButton.innerHTML = `Proceed to checkout (${cartQuantity} ${itemText})`; // Update proceed to checkout button with current cart quantity
 
-    ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
+    ///////////////////////// Cart Quantity Display in Header ////////////////////////////////////
 
-    let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0;                //Get current cart quantity from localStorage or initialize to 0 
+    let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0;                 //Get current cart quantity from localStorage or initialize to 0 
     const cartNumberElement = document.querySelector('.js-cart-num-items');
     cartNumberElement.innerText = cartNumberItems;
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////
 
 }
 
 updateCartSummary(); // Call function to update cart summary on page load
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const userName = (localStorage.getItem('username'));  // Get user username
+
+if(userName){
+    document.querySelector('.js-jean-get').innerHTML = userName;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
