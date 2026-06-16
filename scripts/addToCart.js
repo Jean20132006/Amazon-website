@@ -1,7 +1,208 @@
 
 /////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
 
-//////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE /////////////////////////////
+let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
+
+/////////////////////////////// GENERATE DYNAMICALLY FIRST CAROUSEL ////////////////////////////
+
+function renderFirstCarousel(){
+
+    let matchesItem
+    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
+
+    if(itemAddedToCartId){
+        matchesItem = products.find(p => p.id === itemAddedToCartId);
+    }
+    else{
+        matchesItem = products.find(p => p.id === products[0].id);
+    }
+
+    const carousels = [
+    { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
+    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    const CarouselTrack = document.querySelectorAll('.add-to-cart-carousel-track1');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 7 items each
+        const itemsPerPage = 7;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("add-to-cart-first-carosel-page");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="add-to-cart-carousel-img">
+                                    <a href="${product.productPage}.html?id=${product.id}">
+                                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                                    </a>
+                                    <div class="add-to-cart-img-text-container">
+                                        <span class="add-to-cart-carousel-img-text">
+                                            <a href="${product.productPage}.html?id=${product.id}">
+                                               ${product.shortTitle}...
+                                            </a>
+                                        </span>
+                                        <span class="add-to-cart-carousel-img-rating">
+                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                                        </span>
+                                        <span class="add-to-cart-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                                        <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                    </div>
+                                    <div class="add-to-cart-carousel-button">
+                                        <a href="#product">
+                                            <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn"  data-id="${product.id}">
+                                                Add to Cart
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                `;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+renderFirstCarousel();
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////// GENERATE DYNAMICALLY FIRST CAROUSEL ////////////////////////////
+
+function renderSecondCarousel(){
+
+    /*let matchesItem
+    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
+
+    if(itemAddedToCartId){
+        matchesItem = products.find(p => p.id === itemAddedToCartId);
+    }
+    else{
+        matchesItem = products.find(p => p.id === products[0].id);
+    }*/
+
+    const carousels = [
+    //{ title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
+    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    document.querySelector('.js-title-second-carousel').innerHTML = carousels[0].title;
+
+    const CarouselTrack = document.querySelectorAll('.add-to-cart-carousel-track2');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 8 items each
+        const itemsPerPage = 8;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("add-to-cart-carosel-page2");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="add-to-cart-carousel-img">
+                                    <a href="${product.productPage}.html?id=${product.id}">
+                                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                                    </a>
+                                    <div class="add-to-cart-img-text-container">
+                                        <span class="add-to-cart-carousel-img-text">
+                                            <a href="${product.productPage}.html?id=${product.id}">
+                                               ${product.shortTitle}...
+                                            </a>
+                                        </span>
+                                        <span class="add-to-cart-carousel-img-rating">
+                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                                        </span>
+                                        <span class="add-to-cart-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                                        <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                    </div>
+                                    <div class="add-to-cart-carousel-button">
+                                        <a href="#product">
+                                            <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn" data-id="${product.id}">
+                                                Add to Cart
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                `;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+renderSecondCarousel();
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////// ADD ITEM TO CART WHEN CLICKING ANY ADD TO CART BUTTON ///////////////////
+
+/**
+ * @brief This script handles the add to cart functionality on the pages with several add to cart buttons
+ * @note When the "Add to Cart" button is clicked, the script retrieves the existing cart from localStorage 
+ *       (or initializes an empty array if no cart exists), checks if the product being added already exists 
+ *       in the cart, and either increments the quantity of the existing item or adds a new item to the cart. 
+ *       The updated cart is then saved back to localStorage, and the user is redirected to the addToCart 
+ *       confirmation page.
+ */
+
+function addToCartAllButtons(){
+    const addToCartButton = document.querySelectorAll('.js-add-to-cart-btn');
+
+    addToCartButton.forEach(button => {
+        button.addEventListener('click', () => {
+        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
+        let id1 = button.dataset.id;
+        console.log("The id is:", id1);
+        let existingItem = cart1.find(item => item.id === id1);           // Check if product already exists
+        if(existingItem){
+            existingItem.quantity += 1;                                  // Increase quantity           
+        } 
+        else {
+            cart1.unshift({                                              // Add new product to cart at the beginning
+            id: id1,
+            quantity: 1,
+            selected: true
+            });
+    }
+    
+        localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
+        //storeCart();
+        //localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
+        window.location.href = "addToCart.html";                         // Redirect
+        });
+    });
+    
+}
+
+addToCartAllButtons();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE //////////////////////////////
 /**
  * @brief This script handles carousel the first carousel in addToCart page
  * 
@@ -102,6 +303,77 @@ rightButtonAddToCart2.addEventListener('click', () => {
 updateSecondCarouselAddToCart();         // Initialize carousel state
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////// GENERATE DYNAMICALLY THE TWO BOTTOM CAROUSELS ///////////////////////////////
+
+
+
+function generateMultipleCarousel(){
+
+    let matchesItem
+    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
+
+    if(itemAddedToCartId){
+        matchesItem = products.find(p => p.id === itemAddedToCartId);
+    }
+    else{
+        matchesItem = products.find(p => p.id === products[0].id);
+    }
+
+    const carousels = [
+    { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
+    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    const CarouselTrack = document.querySelectorAll('.checkout-carousel-track');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 7 items each
+        const itemsPerPage = 7;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("checkout-carosel-page");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="checkout-carousel-img">
+                            <a href="${product.productPage}.html?id=${product.id}">
+                            <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                            </a>
+                            <span class="checkout-carousel-img-text">
+                                <a href="${product.productPage}.html?id=${product.id}">
+                                ${product.shortTitle}...
+                                </a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">   
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>`;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+generateMultipleCarousel();
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
  * @brief Handles multiple checkout carousels independently
@@ -196,7 +468,6 @@ else{
                             </span>`;
 }
 
-let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -530,6 +801,4 @@ if(userName){
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 

@@ -130,39 +130,157 @@ video.addEventListener("ended", () => {
   playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
 });
 
+/////////////////////////////// GENERATE DYNAMICALLY SCROLL CAROUSELS ////////////////////////////
+
 /**
- * @brief :This function handles the carousel functionality 
- * including next/previous item navigation.
+ * @brief This code render scrollable carousel on the home page
  */
 
-/*const track = document.querySelector('.carousel-track');
-  const leftBtn = document.querySelector('.arrow.left');
-  const rightBtn = document.querySelector('.arrow.right');
 
-  const scrollAmount = 300;
-
-  function updateArrows() {
-    const maxScrollLeft = track.scrollWidth - track.clientWidth;
-
-    leftBtn.disabled = track.scrollLeft <= 0;
-    rightBtn.disabled = track.scrollLeft >= maxScrollLeft - 1;
-  }
-
-  leftBtn.addEventListener('click', () => {
-    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  });
-
-  rightBtn.addEventListener('click', () => {
-    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  });
-
-  track.addEventListener('scroll', updateArrows);
-  window.addEventListener('resize', updateArrows);
-
-  // Initialize on load
-  /*updateArrows();*/
+let matchItem
+let itemClickedID = localStorage.getItem("id");
 
 
+if(itemClickedID){
+  matchItem = products.find(p => p.id === itemClickedID);
+}
+else{
+  matchItem = products.find(p => p.id === products[0].id);
+}
+
+let matchClickedItemArray = products.filter(p => p.categories[1] === matchItem.categories[1]);
+
+//Best Sellers in Beauty & Personal Care
+
+const carousels = [
+    {
+        title: "Selected for you",
+        //products: products.slice(0, 20)
+        products: matchClickedItemArray
+    },
+    {
+        title: "Best Sellers in Electronics",
+        products: products.slice(15, 30)
+    },
+    {
+        title: "Recommended For You",
+        products: products.slice(30, 45)
+    },
+    {
+        title: "Clothes & Deals",
+        products: products.slice(45, 60)
+    },
+    {
+        title: "Home Essentials",
+        products: products.slice(60, 72)
+    },
+    {
+        title: "Recommended For You",
+        products: products.slice(30, 45)
+    },
+    {
+        title: "Top Fashion Deals",
+        products: products.slice(50, 70)
+    }
+];
+
+let carouselHTML = '';
+document.querySelectorAll('.carousel-section').forEach((carousel, index) => {
+
+    carouselHTML += `
+              
+                    <div class="leftpage-section"></div>
+                    <div class="carousel">
+                        <div class="carousel-title">
+                            <span>${carousels[index].title}</span>
+                        </div>
+                        <div class="carousel-track">
+
+                            <button class="arrow left">&#10094;</button>
+                            `;
+                            
+    carousels[index].products.forEach(item => {
+
+      carouselHTML += `
+            
+                   <a class="a-link-normal" href="${item.productPage}.html?id=${item.id}">
+                      <img src="${item.images.cartImageConfiramation}" alt="${item.brand}">
+                   </a>
+                `;
+
+    });
+
+    carouselHTML += `
+           
+                  <button class="arrow right">&#10095;</button>
+                  </div>   
+              </div>
+              <div class="rightpage-section"></div>`;
+
+
+    carousel.innerHTML = carouselHTML;
+    carouselHTML = "";
+
+
+});
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////// GENERATE DYNAMICALLY MULTIPLE CAROUSELS ///////////////////////////////
+
+function generateMultipleCarousel(){
+    const carousels = [
+    { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchItem.categories[1]) },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
+    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    const CarouselTrack = document.querySelectorAll('.checkout-carousel-track');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 7 items each
+        const itemsPerPage = 7;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("checkout-carosel-page");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="checkout-carousel-img">
+                            <a href="${product.productPage}.html?id=${product.id}">
+                            <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                            </a>
+                            <span class="checkout-carousel-img-text">
+                                <a href="${product.productPage}.html?id=${product.id}">
+                                ${product.shortTitle}...
+                                </a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">   
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>`;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+generateMultipleCarousel();
+///////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 /**
  * @brief :This function handles the carousel functionality 
@@ -267,3 +385,100 @@ function displayCartNumberItems(){
 
 displayCartNumberItems();
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////// GENERATE DYNAMICALLY ROW OF SQUARES///////////////////////////////
+/**
+ * @brief This code generates dynamically The row of square
+ * @code: {JavaScript}
+ *        {products.filter(p => p.categories.includes("jewelry")).slice(0, 4)}
+ *         includes() is a JavaScript method that checks whether an array contains a specific value.
+ *         It returns true if the specific value is included in the array and the product is store
+ */
+
+const sections = [
+    {
+        title: "Shop Leggings & Dresses",
+        linkText: "Shop Shirts & Dress",
+        //products: products.filter(p => p.categories.includes("watches") || p.categories.includes("computers")).slice(0, 4)
+        products: [
+          ...products.filter(p => p.categories.includes("shirts")).slice(0, 2),
+
+          ...products.filter(p => p.categories.includes("dresses")).slice(0, 2)
+        ]
+    },
+
+    {
+        title: "Shop Watches & Tablets Picks",
+        linkText: "Shop Saks on Amazon",
+        products: [
+          ...products.filter(p => p.categories.includes("watches")).slice(0, 2),
+
+          ...products.filter(p => p.categories.includes("tablets")).slice(0, 2)
+        ]
+    },
+
+    {
+        title: "Deals on Tech",
+        linkText: "Shop all tech deals",
+        products: [
+          ...products.filter(p => p.categories.includes("computers")).slice(0, 1),
+          ...products.filter(p => p.categories.includes("tablets")).slice(0, 1),
+          ...products.filter(p => p.categories.includes("watches")).slice(0, 1),
+          ...products.filter(p => p.categories.includes("watches")).slice(0, 1)
+        ]
+    },
+
+    {
+        title: "Trending Watches",
+        linkText: "See all watches",
+        products: products.filter(p => p.categories.includes("watches")).slice(0, 4)
+    }
+];
+
+const rowElement = document.querySelectorAll('.row-container');
+const squareElement = document.querySelector('.title-four-picture-container');
+
+let squareHTML = '';
+
+rowElement.forEach(square => {
+    for(let i = 0; i < 4; ++i){
+        
+        const squareDiv = document.createElement('div');
+        squareDiv.classList.add('title-four-picture-container');
+
+        squareHTML += `<span>${sections[i].title}</span>
+                    <div class="first-square-container">
+                            <div class="first-square-first-column">
+                                <a class="a-link-dolce-gabana" href="${sections[i].products[0].productPage}.html?id=${sections[i].products[0].id}">
+                                    <img class="container1-img" src="${sections[i].products[0].images.cartImageConfiramation}" alt="${sections[i].products[0].brand}">
+                                </a>
+                                <div class="chanel">${sections[i].products[0].brand}</div>
+                                <a class="a-link-dolce-gabana" href="${sections[i].products[1].productPage}.html?id=${sections[i].products[1].id}">
+                                    <img class="container1-img" src="${sections[i].products[1].images.cartImageConfiramation}" alt="${sections[i].products[1].brand}">
+                                </a>
+                                <div class="chanel">${sections[i].products[1].brand}</div>   
+                            </div>
+                        
+                            <div class="first-square-first-column">
+                                <a class="a-link-dolce-gabana" href="${sections[i].products[2].productPage}.html?id=${sections[i].products[2].id}">
+                                    <img class="container1-img" src="${sections[i].products[2].images.cartImageConfiramation}" alt="${sections[i].products[2].brand}">
+                                </a>
+                                <div class="chanel">${sections[i].products[2].brand}</div>
+                                <a class="a-link-dolce-gabana" href="${sections[i].products[3].productPage}.html?id=${sections[i].products[3].id}">
+                                    <img class="container1-img" src="${sections[i].products[3].images.cartImageConfiramation}" alt="${sections[i].products[3].brand}">
+                                </a>
+                                <div class="chanel">${sections[i].products[3].brand}</div>   
+                            </div>
+                    </div>
+                    <a href="#jewerly">Shop ${sections[i].title}</a> 
+                `;
+
+
+          squareDiv.innerHTML = squareHTML;
+          square.appendChild(squareDiv);
+          squareHTML = '';    
+    }
+
+});
+
+

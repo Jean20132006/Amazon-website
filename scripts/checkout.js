@@ -13,6 +13,8 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const matchingProduct = products.find(product => product.id === id);
 
+localStorage.setItem("id", id);         // Store id
+
 if (matchingProduct) {
   const title = document.querySelector('.name-section');                              // product name
   const mainImage  = document.querySelector('.js-image-section');                     // main product image
@@ -391,6 +393,73 @@ function toggleAboutSection(matchProduct) {
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////// GENERATE DYNAMICALLY MULTIPLE CAROUSELS ////////////////////////////////////
+
+
+
+function generateMultipleCarouselCheckout(){
+    const carousels = [
+    { title: "Products related to this item", filteredItems : products.filter(p => p.categories[1] === matchingProduct.categories[1]) },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "Beverages", filteredItems : products.filter(p => p.categories[1] === "drink") },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "tablets & Computers", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    // Title
+    document.querySelectorAll('.js-title-container').forEach((element, index) => {
+        if (carousels[index]) {
+            element.innerHTML =carousels[index].title;
+        }
+    });
+
+
+    const CarouselTrack = document.querySelectorAll('.checkout-carousel-track');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 7 items each
+        const itemsPerPage = 7;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("checkout-carosel-page");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="checkout-carousel-img">
+                            <a href="${product.productPage}.html?id=${product.id}">
+                            <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                            </a>
+                            <span class="checkout-carousel-img-text">
+                                <a href="${product.productPage}.html?id=${product.id}">
+                                ${product.shortTitle}...
+                                </a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">   
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>`;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+generateMultipleCarouselCheckout();
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////// HANDLES CAROUSEL REVIEW FUNCTIONALITY ////////////////////////////
 
@@ -819,63 +888,6 @@ async function storeCart() {
 
 //////////////////////// END OF CART FUNCTIONALITIES ////////////////////////////////////////
 
-/////////////////////// Generate dynamically carousels for checkout page/////////////////////
-
-/*const carousels = [
-  { title: "Health & Nutrition", filter: p => p.category === "health" },
-  { title: "Top Rated", filter: p => p.rating >= 4.5 },
-  { title: "Sports", filter: p => p.category === "sports" }
-];*/
-
-// Generate carousel HTML for each category
-/*carousels.forEach(carousel => {
-  const filteredProducts = products.filter(carousel.filter);
-  //const filteredProducts = products.filter(p => p.category === "health");
-
-  renderCarousel(carousel.title, filteredProducts);
-});*/
-
-// Function to render a carousel given a title and list of products
-/*function renderCarousel(title, items) {
-  const container = document.createElement("div");
-  container.classList.add("carousel-container");
-
-  container.innerHTML = `
-    <h2>${title}</h2>
-    <div class="carousel">
-      <button class="left">←</button>
-      <div class="track"></div>
-      <button class="right">→</button>
-    </div>
-  `;
-
-  const track = container.querySelector(".track");
-
-  // Create pages with 6 items each
-  const itemsPerPage = 6;
-
-  for (let i = 0; i < items.length; i += itemsPerPage) {
-    const page = document.createElement("div");
-    page.classList.add("page");
-
-    items.slice(i, i + itemsPerPage).forEach(product => {
-      const item = document.createElement("div");
-      item.classList.add("product");
-
-      item.innerHTML = `
-        <img src="${product.image}">
-        <p>${product.title}</p>
-      `;
-
-      page.appendChild(item);
-    });
-
-    track.appendChild(page);
-  }
-
-  document.body.appendChild(container);
-}*/
-
 
 ///////////// THIS PART HANDLES ELECTRONICS AND CLOTHING SPECIFIC FUNCTIONALITIES///////////////
 
@@ -1148,6 +1160,7 @@ downButton3.addEventListener('click', () => {
             selectButtonSize.appendChild(rowDiv);
         }
     }
+    
     if(matchingProduct.categories[0] === "clothing"){
         GenerateItemSize(matchingProduct);
     }
@@ -1381,12 +1394,12 @@ generateProductDetails(matchingProduct);
 
 /////////////////////// GENERATE DYNAMICALLY CAROUSELS FOR PRODUCTS VIDEOS /////////////////////////////////////
 
-const carousels = [
+const carouselsVideo = [
   { title: "PRODUCT VIDEOS", filter: p => p.categories[1] === matchingProduct.categories[1] },
 ];
 
 // Generate carousel HTML for each category
-carousels.forEach(carousel => {
+carouselsVideo.forEach(carousel => {
   const filteredProducts = products.filter(carousel.filter);
   //const filteredProducts = products.filter(p => p.categories[1] === matchingProduct.categories[1]);
 
@@ -1437,9 +1450,6 @@ function renderCarousel(title, items) {
         HTMLSummary = "";                                     // Reset HTML summary for the next page
     }
 }
-
-/////////////////////// GENERATE DYNAMICALLY CAROUSELS /////////////////////
-
 
 //////////// CAROUSELS FOR PRODUCT VIDEO and PRODUCT VIDEO RATING BY CLIENTS ///////////
 /**

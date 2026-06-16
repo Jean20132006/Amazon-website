@@ -1,3 +1,73 @@
+
+/////////////////////// GENERATE DYNAMICALLY THE TWO BOTTOM CAROUSELS ///////////////////////////////
+
+
+function generateMultipleCarousel(){
+
+    let matchesItem
+    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
+
+    if(itemAddedToCartId){
+        matchesItem = products.find(p => p.id === itemAddedToCartId);
+    }
+    else{
+    matchesItem = products.find(p => p.id === products[0].id);
+    }
+
+    const carousels = [
+    { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
+    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
+    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
+    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
+    ];
+
+    const CarouselTrack = document.querySelectorAll('.checkout-carousel-track');
+    let HTMLSummary = "";
+
+    CarouselTrack.forEach((carousel, index) => {
+
+        // Create pages with 7 items each
+        const itemsPerPage = 7;
+
+        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
+            const page = document.createElement("div");
+            page.classList.add("checkout-carosel-page");
+
+           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+
+                HTMLSummary += `
+                        <div class="checkout-carousel-img">
+                            <a href="${product.productPage}.html?id=${product.id}">
+                            <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+                            </a>
+                            <span class="checkout-carousel-img-text">
+                                <a href="${product.productPage}.html?id=${product.id}">
+                                ${product.shortTitle}...
+                                </a>
+                            </span>
+                            <span class="checkout-carousel-img-rating">   
+                                <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
+                            </span>
+                            <span class="checkout-amazon-choice">Amazon's choice</span>
+                            <span class="checkout-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
+                            <span class="checkout-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                        </div>`;
+            
+            });
+
+            page.innerHTML = HTMLSummary;
+            
+            carousel.appendChild(page);
+            HTMLSummary = "";                                     // Reset HTML summary for the next page
+        }
+    });
+}
+
+generateMultipleCarousel();
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
  * @brief Handles multiple checkout carousels independently
@@ -193,7 +263,9 @@ function renderProductsRelated(productsList){
                                             </span>
                                         </div>
                                         <div class="shopping-cart-add-to-cart-button-container">
-                                            <button class="shopping-cart-add-to-cart-button">add to cart</button>
+                                            <button class="shopping-cart-add-to-cart-button js-add-to-cart-btn" data-id="${item.id}">
+                                                add to cart
+                                            </button>
                                         </div>
                                     </div>
 
@@ -355,7 +427,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             orderSummaryHTML += `
                    
-                         <div class="deliverydate-item-image-buttons-section">
+                                <div class="deliverydate-item-image-buttons-section">
                                     <div class="delivery-item-image-section">
                                         <div class="order-return-delivery-date-message">
                                             <div class="order-return-delivery-container">
@@ -378,7 +450,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                                     <span class="return-or-replace">Return or replace item eligible through</span>
                                                     <span class="return-or-replace">${getReturnDueDate()}</span>
                                                 </div>
-                                                <button class="order-return-buy-again-button" data-id="${matchingProduct.id}">
+                                                <button class="order-return-buy-again-button js-add-to-cart-btn" data-id="${matchingProduct.id}">
                                                     <div class="sub-save-cart">
                                                         <i class="bi bi-arrow-repeat"></i>
                                                         <i class="bi bi-cart4"></i>
@@ -400,7 +472,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         </button>
 
                                     </div>
-                                </div>`;
+                                </div>
+                                `;
 
 
         });
@@ -417,10 +490,49 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+////////////////////// ADD ITEM TO CART WHEN CLICKING ANY ADD TO CART BUTTON ///////////////////
+
 /**
- * @brief This function generates dynamically the order roaster
- * 
+ * @brief This script handles the add to cart functionality on the pages with several add to cart buttons
+ * @note When the "Add to Cart" button is clicked, the script retrieves the existing cart from localStorage 
+ *       (or initializes an empty array if no cart exists), checks if the product being added already exists 
+ *       in the cart, and either increments the quantity of the existing item or adds a new item to the cart. 
+ *       The updated cart is then saved back to localStorage, and the user is redirected to the addToCart 
+ *       confirmation page.
  */
+
+function addToCartAllButtons(){
+    const addToCartButton = document.querySelectorAll('.js-add-to-cart-btn');
+
+    addToCartButton.forEach(button => {
+        button.addEventListener('click', () => {
+        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
+        let id1 = button.dataset.id;
+        console.log("The id is:", id1);
+        let existingItem = cart1.find(item => item.id === id1);           // Check if product already exists
+        if(existingItem){
+            existingItem.quantity += 1;                                  // Increase quantity           
+        } 
+        else {
+            cart1.unshift({                                              // Add new product to cart at the beginning
+            id: id1,
+            quantity: 1,
+            selected: true
+            });
+    }
+    
+        localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
+        //storeCart();
+        
+        window.location.href = "shoppingCart.html";                         // Redirect
+        });
+    });
+    
+}
+
+addToCartAllButtons();
+
+////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
