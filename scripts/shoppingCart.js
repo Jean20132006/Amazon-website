@@ -259,9 +259,13 @@ function renderShoppingCart(){
                                                     Delete
                                                 </button>
                                                 <span>|</span>
-                                                <a href="#" data-id="${item.id}">Save for later</a>
+                                                <button class="shopping-cart-safe-for-later-button js-shopping-cart-safe-for-later-button-${item.id}" data-id="${item.id}">
+                                                     Save for later
+                                                </button>
                                                 <span>|</span>
-                                                <a href="#" data-id="${item.id}">Share</a>
+                                                <button class="shopping-cart-share-button js-share-btn" data-id="${item.id}">
+                                                     Share
+                                                </button>
                                             </div>    
                                         </div>
                                     </div>
@@ -787,3 +791,134 @@ function deleteItemShoppingCart() {
 deleteItemShoppingCart();
 
 ///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * This code display the user username on the navbar
+ */
+
+const userName = (localStorage.getItem('username'));  // Get user username
+
+if(userName){
+    document.querySelectorAll('.js-jean-get')
+        .forEach(element => {
+            element.innerHTML = userName;
+        });       
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This code handles modal poup window whenclicking on share button
+ */
+
+const shareButton = document.querySelectorAll(".js-share-btn");
+
+const overlay = document.querySelector(".js-share-overlay");      // 
+
+const closeButton = document.querySelectorAll(".js-close-share");
+
+const shareInput = document.querySelectorAll(".js-share-link");
+
+const copyButton = document.querySelectorAll(".js-copy-link");
+
+shareButton.forEach(sharebutton => {
+    sharebutton.addEventListener("click", () => {
+
+        let buttonId = sharebutton.dataset.id;
+
+        let match = products.find(p => p.id === buttonId);
+
+        //const url = window.location.href;
+        const url = `${match.productPage}.html?id=${match.id}`;
+        localStorage.setItem("url", JSON.stringify(url));
+
+        shareInput.forEach(input => {
+            input.value = url;
+        });
+        
+        overlay.classList.add("show");
+    });
+});
+
+
+closeButton.forEach(closebutton => {
+    closebutton.addEventListener("click", () => {
+
+        overlay.classList.remove("show");
+    });
+
+});
+
+overlay.addEventListener("click", e => {
+
+    if(e.target === overlay){
+        overlay.classList.remove("show");
+    }
+});
+
+document.addEventListener("click", async (e) => {
+
+        const copyButton = e.target.closest(".js-copy-link");
+
+        if (!copyButton) {
+            return;
+        }
+
+        const shareInput = copyButton.closest(".share-link-container")
+            .querySelector(".js-share-link");
+
+        await navigator.clipboard.writeText(shareInput.value);
+
+        copyButton.textContent = "Copied!";
+
+        setTimeout(() => {
+
+                copyButton.textContent = "Copy Link";
+
+            }, 2000);
+    }
+);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This part of code open each link depending on which link the user clicked
+ *        encodeURIComponent: converts special characters into a safe format
+ */
+
+//const url = encodeURIComponent(window.location.href);
+let urlString = JSON.parse(localStorage.getItem('url'));
+//console.log(urlString);
+const url = encodeURIComponent(urlString);
+
+document.querySelectorAll(".facebook").forEach(facebook => {
+    facebook.addEventListener("click", () => {
+
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`);
+    });
+});
+
+
+document.querySelectorAll(".twitter").forEach(twitter => {
+    twitter.addEventListener("click", () => {
+
+        window.open(`https://twitter.com/intent/tweet?url=${url}`);
+    });
+
+});
+
+document.querySelectorAll(".pinterest").forEach(pinterest => {
+    pinterest.addEventListener("click", () => {
+
+        window.open(`https://pinterest.com/pin/create/button/?url=${url}`);
+    });
+});
+
+
+document.querySelectorAll(".email").forEach(email => {
+    email.addEventListener("click", () => {
+
+        window.location.href = `mailto:?subject=Check out this product&body=${window.location.href}`;
+    });
+});

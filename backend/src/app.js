@@ -12,6 +12,7 @@ import userRouter from "./routes/user.routes.js";     // For authentification
 import postRouter from "./routes/post.routes.js";     // For POST
 import cartRouter from "./routes/cart.routes.js";     // For cart
 import orderRouter from "./routes/order.routes.js";   // For order
+//import emailRouter from "./routes/email.order.routes.js";   // For order email
 
 
 
@@ -20,6 +21,7 @@ app.use("/api/v1/users", userRouter);                  // For authentification
 app.use("/api/v1/posts", postRouter);                  // For POST
 app.use("/api/v1/cart", cartRouter);                   // For cart
 app.use("/api/v1/orders", orderRouter);                // For order
+//app.use("/api/v1/email", emailRouter);                 // For order email
 
 
 //Example route for users; http://localhost:4000/api/v1/users/register

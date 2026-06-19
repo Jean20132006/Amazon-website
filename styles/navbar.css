@@ -481,6 +481,13 @@
 .account-signin-container:hover{
     border: 1px solid white;
 }
+
+.hello-sign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
 .hello-sign,
 .account-lists-text{
     color: white;

@@ -935,47 +935,52 @@ if(matchingProduct.categories[0] === "electronics" || matchingProduct.categories
 
     function generateCarousel(items) {
 
-        track.innerHTML = "";                                                        // Clear previous content
+        if(items.length > 1){
 
-        const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
+            track.innerHTML = "";                                                        // Clear previous content
 
-        for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
-            const pageDiv = document.createElement("div");                                // Create a new page container
-            pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
+            const totalPages = Math.ceil(items.length / (itemsPerColumn * columnsPerPage)); // Calculate total number of pages needed based on items and layout
 
-            for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
-            const columnDiv = document.createElement("div");                            // Create a new column container
-            columnDiv.classList.add("column-color");                                    // Add class for styling
+            for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+                const pageDiv = document.createElement("div");                                // Create a new page container
+                pageDiv.classList.add("checkout-carosel-color-page");                         // Add class for styling
 
-            // Calculate start index of items for this column
-            const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
-            const endIndex = startIndex + itemsPerColumn;
+                for (let colIndex = 0; colIndex < columnsPerPage; colIndex++) {
+                const columnDiv = document.createElement("div");                            // Create a new column container
+                columnDiv.classList.add("column-color");                                    // Add class for styling
 
-            items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
-                const link = document.createElement("a");
-                link.href = `${item.productPage}.html?id=${item.id}`;
-                const button = document.createElement("button");
-                button.classList.add("item-color");
-                button.dataset.id = item.id;
-                // Set button content with image and price information
-                button.innerHTML = `
-                <img src="${item.images.main}" alt="color option ${item.id}">                  
-                <div class="item-color-horizontal-line"></div>
-                <div class="item-color-price">$${item.price.currentPrice}</div>
-                <div class="item-color-listprice">${listPrice(item)}</div>
-                `;
-                link.appendChild(button)
-                columnDiv.appendChild(link);                                            // Add button to the column container
-            });
+                // Calculate start index of items for this column
+                const startIndex = pageIndex * itemsPerColumn * columnsPerPage + colIndex * itemsPerColumn; 
+                const endIndex = startIndex + itemsPerColumn;
 
-            pageDiv.appendChild(columnDiv);                                             // Add column to the page container
+                items.slice(startIndex, endIndex).forEach(item => {                         // Loop through items for this column and create buttons
+                    const link = document.createElement("a");
+                    link.href = `${item.productPage}.html?id=${item.id}`;
+                    const button = document.createElement("button");
+                    button.classList.add("item-color");
+                    button.dataset.id = item.id;
+                    // Set button content with image and price information
+                    button.innerHTML = `
+                    <img src="${item.images.main}" alt="color option ${item.id}">                  
+                    <div class="item-color-horizontal-line"></div>
+                    <div class="item-color-price">$${item.price.currentPrice}</div>
+                    <div class="item-color-listprice">${listPrice(item)}</div>
+                    `;
+                    link.appendChild(button)
+                    columnDiv.appendChild(link);                                            // Add button to the column container
+                });
+
+                pageDiv.appendChild(columnDiv);                                             // Add column to the page container
+                }
+
+                track.appendChild(pageDiv);                                                   // Add page to the carousel track
             }
-
-            track.appendChild(pageDiv);                                                   // Add page to the carousel track
+            //displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
         }
-
-        //displayMainImage(items);                                                        // Call function to handle main image update when color option is selected
-
+        else{
+            document.querySelector('.current-page-color').style.display = "none";
+            document.querySelector('.total-pages-color').style.display = "none";
+        }
     }
 
     //generateCarousel(matchingProduct.colorItems);                                     // Generate the carousel with the color options for the current product
@@ -1796,6 +1801,22 @@ function firstImageAdvert(){
 firstImageAdvert();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * This code display the user username on the navbar
+ */
+
+const userName = (localStorage.getItem('username'));  // Get user username
+
+if(userName){
+    document.querySelectorAll('.js-jean-get')
+        .forEach(element => {
+            element.innerHTML = userName;
+        });       
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

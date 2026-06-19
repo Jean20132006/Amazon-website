@@ -339,11 +339,20 @@
     font-size: 16px;
 }
 
+.shopping-cart-share-button,
+.shopping-cart-safe-for-later-button,
 .shopping-cart-delete-button{
     background-color: white;
     border: none;
     color: #01497c;
-    /*transition-duration: 1s;*/
+    font-weight: 600;
+}
+
+.name-congrat-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
 .add-to-cart-item-button{
@@ -782,6 +791,147 @@ mark{
         filter: blur(8px);
     }
 }*/
+
+
+/*CSS for share button  modal popup */
+.share-overlay{
+    position:fixed;
+    inset:0;
+    /* inset: 0; is same with right: 0; left: 0; top: 0; bottom: 0;*/                      
+    background:rgba(0,0,0,.55);
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.share-overlay.show{
+    display:flex;
+}
+
+.share-modal{
+    width:580px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:
+    0 4px 30px rgba(0,0,0,.25);
+}
+
+.share-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 28px;
+
+    border-bottom:1px solid #ddd;
+}
+
+.share-title{
+    font-size: 20px;
+    font-weight:700;
+}
+
+.close-share{
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.share-icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:35px 0;
+}
+
+.share-option{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+}
+
+.share-option span{
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.share-option i{
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:36px;
+
+    margin-bottom:10px;
+}
+
+.email i{
+    border:1px solid #ddd;
+}
+
+.pinterest i{
+    background:#e60023;
+    color:white;
+}
+
+.facebook i{
+    background:#1877f2;
+    color:white;
+}
+
+.twitter i{
+    background:black;
+    color:white;
+}
+
+.share-link-container{
+    margin:0 30px 30px;
+
+    display:flex;
+
+    border:1px solid #ccc;
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.share-link-input{
+    flex:1;
+
+    border:none;
+    outline:none;
+
+    padding:14px;
+    font-size:15px;
+}
+
+.copy-link-btn{
+    border:none;
+
+    padding:0 24px;
+
+    cursor:pointer;
+
+    background:#f8f8f8;
+
+    font-weight:600;
+}
+
+.copy-link-btn:hover{
+    background:#eee;
+}
+/*End of modal popup window*/
 
 
 

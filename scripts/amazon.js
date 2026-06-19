@@ -481,4 +481,20 @@ rowElement.forEach(square => {
 
 });
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * This code display the user username on the navbar
+ */
+
+const userName = (localStorage.getItem('username'));  // Get user username
+
+if(userName){
+    document.querySelectorAll('.js-jean-get')
+        .forEach(element => {
+            element.innerHTML = userName;
+        });       
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 

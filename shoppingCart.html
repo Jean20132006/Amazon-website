@@ -162,7 +162,8 @@
                 <div class="account-signin-container">
                     <a href="sign_in.html">
                         <div class="hello-sign" >
-                            <span >Hello, Sign in</span>
+                            <span >Hello,</span>
+                            <span class="js-jean-get">Sign in</span>
                         </div>
                         <div class="account-lists-text">
                             <span>Account & Lists</span>
@@ -493,7 +494,10 @@
                         <span class="card-text">$150 instant gift card</span>
                     </div>
                     <div class="shopping-cart-prime-card-text">
-                        <span class="client-congratulations">Jean thank you for being a prime member</span>
+                        <div class="name-congrat-container">
+                            <span class="client-congratulations js-jean-get">Jean</span>
+                            <span class="client-congratulations"> thank you for being a prime member</span>
+                        </div>
                         <div class="get-approval">Get 
                             <a href="#">$150 Amazon Gift Card instantly</a>
                             upon approval for <span class="prime-visa">Prime Visa</span>
@@ -535,9 +539,7 @@
                     <div class="shopping-cart-bottom-subtotal-container">
                         <span class="shopping-cart-bottom-numItem">Subtotal(9 items):</span>
                         <span class="shopping-cart-bottom-subtotal">$906.17</span>
-
                     </div>
-
                 </div>
                 <div class="subtotal-proceed-checkout-related-products-container">
                     <div class="shopping-cart-subtotal-proceed-section">
@@ -630,6 +632,66 @@
             <div class="rightpage-section"></div>
 
         </div>
+
+        <!--modal popup window when pressing share button-->
+        <div class="share-overlay js-share-overlay">
+
+            <div class="share-modal">
+
+                <div class="share-header">
+
+                    <span class="share-title">
+                        Share this product with friends
+                    </span>
+
+                    <button class="close-share js-close-share">
+                        ✕
+                    </button>
+
+                </div>
+
+                <div class="share-icons">
+
+                    <div class="share-option email">
+                        <i class="bi bi-envelope"></i>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="share-option pinterest">
+                        <i class="bi bi-pinterest"></i>
+                        <span>Pinterest</span>
+                    </div>
+
+                    <div class="share-option facebook">
+                        <i class="bi bi-facebook"></i>
+                        <span>Facebook</span>
+                    </div>
+
+                    <div class="share-option twitter">
+                        <i class="bi bi-twitter-x"></i>
+                        <span>X</span>
+                    </div>
+
+                </div>
+
+                <div class="share-link-container">
+
+                    <input
+                        type="text"
+                        class="share-link-input js-share-link"
+                        readonly
+                    >
+
+                    <button class="copy-link-btn js-copy-link">
+                        Copy Link
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--End modal popup window-->
 
         <!--bottom page carousel section-->
         <div class="last-bottom-container">

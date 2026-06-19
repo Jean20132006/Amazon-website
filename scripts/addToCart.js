@@ -477,7 +477,7 @@ else{
  * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
  *        localStorage
  */
-async function loadCart() {
+/*async function loadCart() {
 
     const userId = localStorage.getItem("userId");
 
@@ -490,14 +490,14 @@ async function loadCart() {
 
         const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
 
-        /*if (!response.ok) {
+        if (!response.ok) {
 
             console.log(
                 "No cart found for user."
             );
 
             return [];
-        }*/
+        }
 
         const data = await response.json();
 
@@ -515,7 +515,7 @@ async function loadCart() {
 
         return [];
     }
-}
+}*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 /*let cart1 = [];
 
@@ -793,12 +793,18 @@ function updateCartSummary() {
 updateCartSummary(); // Call function to update cart summary on page load
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * This code display the user username on the navbar
+ */
 
 const userName = (localStorage.getItem('username'));  // Get user username
 
 if(userName){
-    document.querySelector('.js-jean-get').innerHTML = userName;
+    document.querySelectorAll('.js-jean-get')
+        .forEach(element => {
+            element.innerHTML = userName;
+        });       
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 

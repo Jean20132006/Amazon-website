@@ -425,3 +425,38 @@ placeOrderButtons.forEach(button => {
     });
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Frentend for api send email
+ */
+
+/*await fetch(
+    "http://localhost:4000/api/v1/email/send-order-email",
+    {
+
+        method: "POST",
+
+        headers: {
+            "Content-Type":
+                "application/json"
+        },
+
+        body: JSON.stringify({
+
+            email:
+                localStorage.getItem(
+                    "userEmail"
+                ),
+
+            username:
+                localStorage.getItem(
+                    "username"
+                ),
+
+            orderId:
+                data.order._id,
+
+            totalAmount:
+                orderTotal
+        })
+    }
+);*/
