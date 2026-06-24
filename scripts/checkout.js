@@ -1,4 +1,5 @@
 //let cart1 = [];
+let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 /**
  * @brief This script generates the checkoutout page content dynamically based on the product data
  *@note  window.location.search returns everything after the ?
@@ -691,68 +692,9 @@ customerComment(matchingProduct);
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////// ADD TO CART FUNCTIONALITY /////////////////////////////////////
+/////////////////////////////// ADD TO CART FUNCTIONALITY ////////////////////////////////////
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/**
- * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
- *        localStorage
- */
-async function loadCart() {
-
-    const userId = localStorage.getItem("userId");
-
-    if (!userId) {
-
-        return (JSON.parse(localStorage.getItem("cart1")) || []);
-    }
-
-    try {
-
-        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
-
-        if (!response.ok) {
-
-            console.log(
-                "No cart found for user."
-            );
-
-            return [];
-        }
-
-
-        const data = await response.json();
-
-        console.log("cart has been loaded:");
-        console.log(data.cart.items);
-
-        return data.cart.items || [];
-
-    } catch (error) {
-
-        console.error(
-            "Error loading cart:",
-            error
-        );
-
-        return [];
-    }
-}
-////////////////////////////////////////////////////////////////////////////////////////////////////
-/*let cart1 = [];
-
-document.addEventListener(
-    "DOMContentLoaded",
-    async () => {
-
-        cart1 = await loadCart();
-        //renderShoppingCart();
-    }
-);*/
-
-//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// ADD ITEM TO THE CART ////////////////////////////////////////
 
 /**
  * @brief This script handles the add to cart functionality on the checkout page
@@ -763,34 +705,7 @@ document.addEventListener(
  *       confirmation page.
  */
 
-function addToCart(){
-    const addToCartButton = document.querySelector('.js-add-to-cart-btn');
-
-    addToCartButton.addEventListener('click', () => {
-        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
-        let existingItem = cart1.find(item => item.id === id);           // Check if product already exists
-        if(existingItem){
-            existingItem.quantity += 1;                                  // Increase quantity           
-        } 
-        else {
-            cart1.unshift({                                              // Add new product to cart at the beginning
-            id: id,
-            quantity: 1,
-            selected: true
-            });
-    }
-    
-    localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
-    //storeCart();
-    localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
-    window.location.href = "addToCart.html";                         // Redirect
-    });
-}
-addToCart();
-
-////////////////////////////////////////////////////////////////////////////////////////////
-
-/*async function addToCart() {
+async function addToCart() {
 
     const addToCartButton = document.querySelector('.js-add-to-cart-btn');
 
@@ -800,11 +715,11 @@ addToCart();
 
             if (existingItem) {
 
-                existingItem.quantity += 1;
+                existingItem.quantity += 1;                                   // Increase quantity 
 
             } else {
 
-                cart1.unshift({
+                cart1.unshift({                                               // Add new product to cart at the beginning
                     id: id,
                     quantity: 1,
                     selected: true
@@ -812,15 +727,31 @@ addToCart();
             }
 
             await storeCart();
+            localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
+    
+            localStorage.setItem("lastAddedProduct", id);                    // Save last added product (for confirmation page)
+            window.location.href = "addToCart.html";                         // Redirect
 
-            localStorage.setItem("lastAddedProduct", id);
-
-            window.location.href = "addToCart.html";
         }
     );
-}*/
 
-//addToCart();
+
+    /*emailjs.send(
+    "service_id",
+    "template_id",
+    {
+        user_name: "Jean",
+        user_email: "jeanerictsanga8@example.com",
+        message: "Hello"
+    },
+    "public_key"
+    )
+    .then(() => {
+        console.log("Email sent");
+    });*/
+}
+
+addToCart();
 
 ///////////////////////// CART QUANTITY DISPLAY IN HEADER /////////////////////////////////////////////
 function cartNumberItems(){
@@ -836,52 +767,58 @@ cartNumberItems();
  * @brief This function store the cart. if the user signed in, it stores the cart to backend
  *        else it stores the cart to local storage
  */
+
 async function storeCart() {
+
+    console.log("storeCart called");
 
     const userId = localStorage.getItem("userId");
 
+    console.log("userId:", userId);
+
     if (!userId) {
 
-        localStorage.setItem("cart1", JSON.stringify(cart1));
+        console.log("No userId found");
+
+        localStorage.setItem(
+            "cart1",
+            JSON.stringify(cart1)
+        );
+
         return;
     }
 
+    console.log("cart1 before PUT:", cart1);
+
     try {
 
-        const response =
-            await fetch(
-                `http://localhost:4000/api/v1/cart/${userId}`,
-                {
-                    method: "PUT",
+        console.log("About to send PUT request");
 
-                    headers: {
-                        "Content-Type":
-                            "application/json"
-                    },
+        const response = await fetch(
+            `http://localhost:4000/api/v1/cart/${userId}`,
+            {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    items: cart1
+                })
+            }
+        );
 
-                    body: JSON.stringify({
-                        items: cart1
-                    })
-                }
-            );
+        console.log("PUT response received");
 
         const data = await response.json();
-
+        
+        console.log("Data from backend:");
         console.log(data);
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Failed to save cart"
-            );
-        }
+        localStorage.setItem('cart1', JSON.stringify(data.cart.items));
+        console.log(JSON.parse(localStorage.getItem('cart1')));
 
     } catch (error) {
 
-        console.error(
-            "Error storing cart:",
-            error
-        );
+        console.error(error);
     }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -1021,7 +958,7 @@ downButton3.addEventListener('click', () => {
     ///////////////// FUNCTION UTILITY TO FIND THE LIST PRICE //////////////////////////
     /**
      * @brief Calculate list price if discount is not 0 else print nothing
-     * @param {*} item 
+     * @param {object} item 
      * @returns oldPrice
      */
     function listPrice(item){

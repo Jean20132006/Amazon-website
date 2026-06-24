@@ -111,104 +111,67 @@ let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/**
- * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
- *        localStorage
- */
-/*async function loadCart() {
-
-    const userId = localStorage.getItem("userId");
-
-    if (!userId) {
-
-        return (JSON.parse(localStorage.getItem("cart1")) || []);
-    }
-
-    try {
-
-        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
-
-        const data = await response.json();
-
-        console.log("cart has been loaded:");
-        console.log(data.cart.items);
-
-        return data.cart.items || [];
-
-    } catch (error) {
-
-        console.error(
-            "Error loading cart:",
-            error
-        );
-
-        return [];
-    }
-}*/
-////////////////////////////////////////////////////////////////////////////////////////////////////
-/*let cart1 = [];
-
-document.addEventListener(
-    "DOMContentLoaded",
-    async () => {
-
-        cart1 = await loadCart();
-
-        //renderShoppingCart();
-    }
-);*/
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 /**
  * @brief This function store the cart. if the user signed in, it stores the cart to backend
  *        else it stores the cart to local storage
  */
-/*async function storeCart() {
+
+async function storeCart() {
+
+    console.log("storeCart called");
 
     const userId = localStorage.getItem("userId");
 
+    console.log("userId:", userId);
+
     if (!userId) {
-        localStorage.setItem("cart1", JSON.stringify(cart1));              // Save updated cart
+
+        console.log("No userId found");
+
+        localStorage.setItem(
+            "cart1",
+            JSON.stringify(cart1)
+        );
+
         return;
     }
 
+    console.log("cart1 before PUT:", cart1);
+
     try {
 
-        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`,
-        {
-            method: "PUT",
+        console.log("About to send PUT request");
 
-            headers: {
-                "Content-Type": "application/json"
-            },
+        const response = await fetch(
+            `http://localhost:4000/api/v1/cart/${userId}`,
+            {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    items: cart1
+                })
+            }
+        );
 
-            body: JSON.stringify({
-                items: cart1
-            })
-        }
-);
+        console.log("PUT response received");
 
         const data = await response.json();
-         
+        
+        console.log("Data from backend:");
         console.log(data);
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Failed to save cart"
-            );
-        }
+        localStorage.setItem('cart1', JSON.stringify(data.cart.items));
+        console.log(JSON.parse(localStorage.getItem('cart1')));
 
     } catch (error) {
 
-        console.error(
-            "Error loading cart:",
-            error
-        );
+        console.error(error);
     }
-}*/
+}
 //////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function renderShoppingCart(){
     const shoppingCartHTML = document.querySelector('.shopping-cart-checkbox-img-itemName-price-container');
@@ -332,7 +295,7 @@ function decreaseOrDeleteShoppingCartItem(){
         }
 
         localStorage.setItem("cart1", JSON.stringify(cart1));
-        //storeCart();
+        storeCart();
 
         // Re-render everything
         renderShoppingCart();
@@ -373,7 +336,7 @@ function increaseItemNumberShoppingCart(){
         item.quantity += 1;
 
         localStorage.setItem("cart1", JSON.stringify(cart1));
-        //storeCart();
+        storeCart();
 
         // Re-render everything
         renderShoppingCart();
@@ -400,7 +363,7 @@ function attachCheckboxListeners(){
             matchProduct.selected = checkbox.checked;
 
             localStorage.setItem("cart1", JSON.stringify(cart1));
-            //storeCart();
+            storeCart();
 
             // UPDATE PRICE HERE
             updateShoppingCartSummary();
@@ -732,7 +695,7 @@ function addToCartAllButtons(){
     }
     
         localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
-        //storeCart();
+        storeCart();
         
         window.location.href = "shoppingCart.html";                         // Redirect
         });
@@ -778,7 +741,7 @@ function deleteItemShoppingCart() {
             cart1 = cart1.filter( item => item.id !== buttonId);
 
             localStorage.setItem("cart1", JSON.stringify(cart1));
-            //storeCart();
+            storeCart();
 
             renderShoppingCart();
 

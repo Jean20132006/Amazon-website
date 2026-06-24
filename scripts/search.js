@@ -1,62 +1,64 @@
-
 /////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
 
 let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 
-/////////////////////////////// GENERATE DYNAMICALLY FIRST CAROUSEL ////////////////////////////
+//////////////////////////////////////// GET PARAM /////////////////////////////////////////
 
-function renderFirstCarousel(){
+const params = new URLSearchParams( window.location.search);
 
-    let matchesItem
-    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
+const query = params.get("q");
 
-    if(itemAddedToCartId){
-        matchesItem = products.find(p => p.id === itemAddedToCartId);
-    }
-    else{
-        matchesItem = products.find(p => p.id === products[0].id);
-    }
+const results = searchProducts(query);
 
-    const carousels = [
-    { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
-    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
-    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
-    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
-    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
-    ];
+console.log(results);
 
-    const CarouselTrack = document.querySelectorAll('.add-to-cart-carousel-track1');
-    let HTMLSummary = "";
+renderProducts(results);
 
-    CarouselTrack.forEach((carousel, index) => {
+////////////////////////////////////////////////////////////////////////////////////////////
+function renderProducts(searchResults){
+    const productsContainer = document.querySelector('.js-search-products-section');
 
-        // Create pages with 7 items each
-        const itemsPerPage = 7;
+    const itemsPerRow = 5;
 
-        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
-            const page = document.createElement("div");
-            page.classList.add("add-to-cart-first-carosel-page");
+    let productsHTML = '';
 
-           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
+    for (let i = 0; i < searchResults.length; i += itemsPerRow){
 
-                HTMLSummary += `
-                        <div class="add-to-cart-carousel-img">
-                                    <a href="${product.productPage}.html?id=${product.id}">
-                                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
+        const rowDiv = document.createElement('div');
+        rowDiv.classList.add('search-products-container');
+
+        searchResults.slice(i, i + itemsPerRow).forEach(product => {
+
+            productsHTML += `
+                
+                            <div class="image-name-star-price-container">
+                                    <a class="main-image1 href="${product.productPage}.html?id=${product.id}">
+                                        <img class="main-image" src="${product.images.main}" alt="${product.brand}">
                                     </a>
-                                    <div class="add-to-cart-img-text-container">
-                                        <span class="add-to-cart-carousel-img-text">
-                                            <a href="${product.productPage}.html?id=${product.id}">
-                                               ${product.shortTitle}...
-                                            </a>
-                                        </span>
-                                        <span class="add-to-cart-carousel-img-rating">
-                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
-                                        </span>
-                                        <span class="add-to-cart-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
-                                        <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                    <span class="brand">${product.brand}</span>
+                                    <span class="search-item-name">
+                                        <a href="${product.productPage}.html?id=${product.id}">
+                                            ${product.title.slice(0, 65)}...
+                                        </a>
+                                    </span>
+                                    <div class="search-star-rating-review2">
+                                        <span class="search-advert-rating">${product.rating.average}</span>
+                                        <img src="images/star-2.png" alt="Star Rating">
+                                        <span class="search-advert-review">${product.rating.totalReviews}</span>
                                     </div>
-                                    <div class="add-to-cart-carousel-button">
+                                    <div class="shopping-cart-price-indollar">
+                                        <span class="shopping-cart-dollar-sign"><i class="bi bi-currency-dollar"></i></span>
+                                        <span class="shopping-cart-dollars-amount">${product.price.priceDollar}</span>
+                                        <span class="shopping-cart-cents">${product.price.priceCents}</span>
+                                    </div>
+                                    <div class="search-prime-delivery-date">
+                                        <span class="search-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
+                                        <div class="search-delivery-date">
+                                            <span class="search-delivery">FREE delivery</span>
+                                            <span class="search-delivery">Tomorrow</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart-button">
                                         <a href="#product">
                                             <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn"  data-id="${product.id}">
                                                 Add to Cart
@@ -65,98 +67,78 @@ function renderFirstCarousel(){
                                     </div>
                                 </div>
                                 `;
-            
-            });
 
-            page.innerHTML = HTMLSummary;
-            
-            carousel.appendChild(page);
-            HTMLSummary = "";                                     // Reset HTML summary for the next page
-        }
-    });
-}
+        });
 
-renderFirstCarousel();
-////////////////////////////////////////////////////////////////////////////////////////////////
+        rowDiv.innerHTML = productsHTML;
+        productsContainer.appendChild(rowDiv);
+        productsHTML = '';
 
-/////////////////////////////// GENERATE DYNAMICALLY FIRST CAROUSEL ////////////////////////////
-
-function renderSecondCarousel(){
-
-    /*let matchesItem
-    let itemAddedToCartId = localStorage.getItem("lastAddedProduct");
-
-    if(itemAddedToCartId){
-        matchesItem = products.find(p => p.id === itemAddedToCartId);
     }
-    else{
-        matchesItem = products.find(p => p.id === products[0].id);
-    }*/
+}
+////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function searches the user input words that match either the title, brand
+ *        or categories in the array of products
+ * @param searchText is the user input
+ * @param {String} searchableText contains words to compare with user input 
+ *        trim()  remove whitespace from the beginning and end of a string.
+ *        join() method combines all elements of an array into a single string
+ *        split() method converts a string to an array
+ * @returns 
+ */
 
-    const carousels = [
-    //{ title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchesItem.categories[1]) },
-    { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
-    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
-    { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
-    { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
-    ];
+function searchProducts(searchText) {
 
-    document.querySelector('.js-title-second-carousel').innerHTML = carousels[0].title;
+    const keywords =
+        searchText
+            .toLowerCase()
+            .trim()
+            .split(" ");
 
-    const CarouselTrack = document.querySelectorAll('.add-to-cart-carousel-track2');
-    let HTMLSummary = "";
+    return products.filter(product => {
 
-    CarouselTrack.forEach((carousel, index) => {
+            const searchableText =
+                `
+                ${product.title}
+                ${product.brand}
+                ${product.categories.join(" ")}
+                `
+                .toLowerCase();
 
-        // Create pages with 8 items each
-        const itemsPerPage = 8;
-
-        for (let i = 0; i < carousels[index].filteredItems.length; i += itemsPerPage) {
-            const page = document.createElement("div");
-            page.classList.add("add-to-cart-carosel-page2");
-
-           carousels[index].filteredItems.slice(i, i + itemsPerPage).forEach(product => {
-
-                HTMLSummary += `
-                        <div class="add-to-cart-carousel-img">
-                                    <a href="${product.productPage}.html?id=${product.id}">
-                                    <img src="${product.images.cartImageConfiramation}" alt="${product.brand}">
-                                    </a>
-                                    <div class="add-to-cart-img-text-container">
-                                        <span class="add-to-cart-carousel-img-text">
-                                            <a href="${product.productPage}.html?id=${product.id}">
-                                               ${product.shortTitle}...
-                                            </a>
-                                        </span>
-                                        <span class="add-to-cart-carousel-img-rating">
-                                            <img src="images/bottom-carousel-images/star.png" alt="Star Rating">${product.rating.average}
-                                        </span>
-                                        <span class="add-to-cart-carousel-img-price">$${product.price.currentPrice} ($0.23/fluid ounce)</span>
-                                        <span class="add-to-cart-carousel-prime"><i class="bi bi-check-lg"></i>prime</span>
-                                    </div>
-                                    <div class="add-to-cart-carousel-button">
-                                        <a href="#product">
-                                            <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn" data-id="${product.id}">
-                                                Add to Cart
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                `;
-            
-            });
-
-            page.innerHTML = HTMLSummary;
-            
-            carousel.appendChild(page);
-            HTMLSummary = "";                                     // Reset HTML summary for the next page
+            return keywords.some(keyword => searchableText.includes(keyword));
         }
-    });
+    );
 }
 
-renderSecondCarousel();
+/////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+const advertsection = document.querySelector('.js-search-advertissement-section');
+let advertissementHTML = '';
+
+advertissementHTML += `
+          
+                       <video autoplay muted playsinline loop class="search-advert-video">
+                            <source src="${results[0].videos.advertisement}" type="video/mp4">
+                        </video>
+                        <a href="${results[0].productPage}.html?id=${results[0].id}">
+                        <div class="search-advert-img-text-container">
+                            <img class="advert-image" src="${results[0].videos.advertisementVideosImages[0]}" alt="image"> 
+                            <span class="search-advert-text">
+                                ${results[0].title.slice(0, 120)}
+                            </span>
+                            <div class="search-star-rating-review">
+                                <span class="search-advert-rating">${results[0].rating.average}</span>
+                                <img src="images/star-2.png" alt="Star Rating">
+                                <span class="search-advert-review">${results[0].rating.totalReviews}</span>
+                            </div>
+                        </div> 
+                        </a> 
+                        `;
+
+advertsection.innerHTML = advertissementHTML;
+
+////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////// ADD ITEM TO CART WHEN CLICKING ANY ADD TO CART BUTTON ///////////////////
 
@@ -198,110 +180,12 @@ function addToCartAllButtons(){
     
 }
 
-addToCartAllButtons();
+//addToCartAllButtons();
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE //////////////////////////////
-/**
- * @brief This script handles carousel the first carousel in addToCart page
- * 
- */
 
-let leftButtonAddToCart = document.querySelector('.add-to-cart-arrow.left');
-let rightButtonAddToCart = document.querySelector('.add-to-cart-arrow.right');
-let trackAddToCart = document.querySelector('.add-to-cart-carousel-track1');
-let currentPageAddToCart = document.querySelector('.add-to-cart-current-page');
-let totalPageAddToCart = document.querySelector('.add-to-cart-total-pages');
-let pagesAddToCart = document.querySelectorAll('.add-to-cart-first-carosel-page');
-totalPageAddToCart.innerHTML = pagesAddToCart.length;
 
-let currentIndexAddToCart = 0;
-let pageWidthAddToCart = document.querySelector('.add-to-cart-first-carousel').clientWidth;
-function updateCarouselAddToCart(){
-
-    trackAddToCart.style.transform = `translateX(-${currentIndexAddToCart * pageWidthAddToCart}px)`;
-    currentPageAddToCart.innerHTML = currentIndexAddToCart + 1;
-    if(currentIndexAddToCart === 0){
-        leftButtonAddToCart.disabled = true;
-    }
-    else{
-        leftButtonAddToCart.disabled = false;
-    }
-    if(currentIndexAddToCart === pagesAddToCart.length - 1){
-        rightButtonAddToCart.disabled = true;
-    }
-    else{
-        rightButtonAddToCart.disabled = false;
-    }
-}
-leftButtonAddToCart.addEventListener('click', () => {
-    if(currentIndexAddToCart > 0){
-        currentIndexAddToCart--;
-        updateCarouselAddToCart();
-    }
-});
-rightButtonAddToCart.addEventListener('click', () => {
-    if(currentIndexAddToCart < pagesAddToCart.length - 1){
-        currentIndexAddToCart++;
-        updateCarouselAddToCart();
-    }
-});
-
-updateCarouselAddToCart();         // Initialize carousel state
-
-//////////////////////////////////////////////////////////////////
-
-/////////////////////// HANDLES SECOND CAROUSEL IN THE ADDTOCART PAGE ///////////////////////////
-
-/**
- * @brief This script handles carousel the second carousel in addToCart page
- * 
- */
-
-let leftButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.left2');
-let rightButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.right2');
-let trackAddToCart2 = document.querySelector('.add-to-cart-carousel-track2');
-let currentPageAddToCart2 = document.querySelector('.current-page2');
-let totalPageAddToCart2 = document.querySelector('.total-pages2');
-let pagesAddToCart2 = document.querySelectorAll('.add-to-cart-carosel-page2');
-totalPageAddToCart2.innerHTML = pagesAddToCart2.length;
-
-let currentIndexAddToCart2 = 0;
-let pageWidthAddToCart2 = document.querySelector('.add-to-cart-carousel2').clientWidth;
-
-function updateSecondCarouselAddToCart(){
-
-    trackAddToCart2.style.transform = `translateX(-${currentIndexAddToCart2 * pageWidthAddToCart2}px)`;
-    currentPageAddToCart2.innerHTML = currentIndexAddToCart2 + 1;
-    if(currentIndexAddToCart2 === 0){
-        leftButtonAddToCart2.disabled = true;
-    }
-    else{
-        leftButtonAddToCart2.disabled = false;
-    }
-    if(currentIndexAddToCart2 === pagesAddToCart2.length - 1){
-        rightButtonAddToCart2.disabled = true;
-    }
-    else{
-        rightButtonAddToCart2.disabled = false;
-    }
-}
-leftButtonAddToCart2.addEventListener('click', () => {
-    if(currentIndexAddToCart2 > 0){
-        currentIndexAddToCart2--;
-        updateSecondCarouselAddToCart();
-    }
-});
-rightButtonAddToCart2.addEventListener('click', () => {
-    if(currentIndexAddToCart2 < pagesAddToCart2.length - 1){
-        currentIndexAddToCart2++;
-        updateSecondCarouselAddToCart();
-    }
-});
-
-updateSecondCarouselAddToCart();         // Initialize carousel state
-/////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////// GENERATE DYNAMICALLY THE TWO BOTTOM CAROUSELS ///////////////////////////////
 
@@ -433,42 +317,7 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////// ADD TO CART CODE ///////////////////////////////////
 
-/**
- * @brief This script handles the add to cart functionality, including 
- *        updating the cart count and displaying a confirmation message when an 
- *        item is added to the cart.
- * @note  The script listens for click events on the "Add to Cart" button,
- *        updates the cart count in localStorage, and retrieves the last added. 
- */
-
-// Get last added product id from localStorage and set product image in confirmation message
-let id2 = localStorage.getItem("lastAddedProduct");                         // Get last added product id 
-let product = products.find(p => p.id == id2);                              // Get product from your product list
-
-document.querySelector('.js-image-add-to-cart').src = product.images.cartImageConfiramation; // Set product image in confirmation message
-
-if(product.categories[0] === "drink"){
-
-    const flavorElement = document.querySelector('.add-to-cart-product-flavor');
-
-    flavorElement.innerHTML = `<span class="addtocart-product-flavor">Flavor Name: 
-                                <span class="js-add-to-cart-flavor">${product.variants[0].flavor}</span>
-                            </span>
-                            <span class="addtocart-product-flavor">Size: 
-                                <span class="js-add-to-cart-size">${product.variants[0].size} ($${product.variants[0].pack})</span>
-                            </span>`;
-}
-else{
-    const flavorElement = document.querySelector('.add-to-cart-product-flavor');
-    
-    flavorElement.innerHTML = `<span class="addtocart-product-flavor">Color: 
-                                <span class="js-add-to-cart-flavor">${product.variants[0].color}</span>
-                            </span>`;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 /**
@@ -720,10 +569,7 @@ function updateCartSummary() {
     subtotalContainer.forEach(container => {
         container.innerHTML = `$${formattedSubtotal}`;
     });
-    const proceedToCheckoutButton = document.querySelector('.js-proceed-to-checkout-button');
-    const itemText = cartQuantity === 1 ? "item" : "items";                                  // Handle singular vs plural for item(s)
-    proceedToCheckoutButton.innerHTML = `Proceed to checkout (${cartQuantity} ${itemText})`; // Update proceed to checkout button with current cart quantity
-
+    
     ///////////////////////// Cart Quantity Display in Header ////////////////////////////////////
 
     let cartNumberItems = Number(localStorage.getItem("cartQuantity")) || 0;                 //Get current cart quantity from localStorage or initialize to 0 

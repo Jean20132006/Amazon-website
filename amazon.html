@@ -41,7 +41,10 @@
                             <i class="bi bi-geo-alt" id="location-icon-address"></i>
                         </div>
                         <div class="location-details">
-                            <span class="delivery-address">Delivering to Frederick 2172</span>
+                            <div class="delivery-name-location-container">
+                                <span class="delivery-address">Deliver to </span>
+                                <span class="delivery-address js-jean-get">you</span>
+                            </div>   
                             <span class="update-location">Update location</span>
                         </div>        
                     </div>        
@@ -98,11 +101,11 @@
                     </ul>
                 </div>
             </div>
-            <input type="text" id="search-input" name="search" class="search-bar-input" placeholder="Search Amazon">
+            <input type="text" id="search-input" name="search" class="search-bar-input js-search-input" placeholder="Search Amazon">
            <!--<div class="search-bar-input-container">
                <input type="text" class="search-bar-input" placeholder="Search Amazon">
            </div>-->
-           <button class="search-button">
+           <button class="search-button js-search-btn">
                 <i class="bi bi-search"></i>
             </button>
            <!--<div class="search-bar-button-container">

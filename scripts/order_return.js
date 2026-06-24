@@ -353,18 +353,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await response.json();
 
     orderRoaster = data.orders;
-
-    /*console.log("List of orders:");
-    console.log(orderRoaster);
-    console.log(orderRoaster[0].createdAt);*/
-
+    localStorage.setItem('orderRoaster', JSON.stringify(orderRoaster));
 
     document.querySelector('.js-number-of-orders').innerHTML = orderRoaster.length;
 
-    const userName = (localStorage.getItem('username')).toUpperCase();  // Get user username
+    /*console.log("List of orders:");
+    console.log(orderRoaster);
+    console.log(orderRoaster[0].createdAt);*/ 
 
-    const orderRoasterElement = document.querySelector('.order-roaster-container');
+});
 
+function renderOrder(){
+
+    const username = (localStorage.getItem('username')).toUpperCase();  // Get user username
+    orderRoaster = JSON.parse(localStorage.getItem('orderRoaster'));
+    
+    let orderRoasterElement;
+    let headerElement;
+    const orderSection = document.querySelector('.order-roaster-section');
+
+    let orderHTML = '';
+    let orderHeaderHTML = '';
     let orderSummaryHTML = '';
     let orderContainer;
 
@@ -383,11 +392,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             );
 
+        orderRoasterElement = document.createElement('div');
+        orderRoasterElement.classList.add('order-roaster-container');
+
+        headerElement = document.createElement('div');
+        headerElement.classList.add('header-alexa-button-container');
+
         orderContainer = document.createElement('div');
         orderContainer.classList.add('order-return-first-sample');
-        orderSummaryHTML += `
-                       
-                     <div class="oder-return-header">
+
+        orderHeaderHTML += `
+                    
+                                <div class="oder-return-header">
                                     <div class="the-three-first-one">
                                         <div class="order-return-placed">
                                             <span class="order-placed">ORDER PLACED</span>
@@ -399,7 +415,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         </div>
                                         <div class="order-return-placed">
                                             <span class="order-placed">Ship to</span>
-                                            <span class="order-return-name">${userName}</span>
+                                            <span class="order-return-name">${username}</span>
                                         </div>
                                     </div>
                                     <div class="order-return-placed">
@@ -420,13 +436,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         <span class="alexa-button-text">Ask Alexa about this order</span>
                                     </button>
                                 </div>
-                                <div class="after-alexa-separator-line"></div>`; 
+                                <div class="after-alexa-separator-line"></div>
+                                `; 
 
         order.items.forEach(item => {
             matchingProduct = products.find(p => p.id === item.id);
 
-            orderSummaryHTML += `
-                   
+            orderHTML += `
+                
                                 <div class="deliverydate-item-image-buttons-section">
                                     <div class="delivery-item-image-section">
                                         <div class="order-return-delivery-date-message">
@@ -470,25 +487,88 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         <button class="order-return-track-package" data-id="${matchingProduct.id}">
                                             Share gift receipts
                                         </button>
-
                                     </div>
                                 </div>
                                 `;
 
 
         });
-        orderContainer.innerHTML = orderSummaryHTML;
+
+        headerElement.innerHTML = orderHeaderHTML; 
+        orderContainer.innerHTML = orderHTML;
+        orderRoasterElement.appendChild(headerElement);
+        orderRoasterElement.appendChild(orderContainer);
+        orderSection.appendChild(orderRoasterElement); 
+        orderHTML = '';
+        orderHeaderHTML = '';
         
     });
-    orderRoasterElement.appendChild(orderContainer);
-    //orderContainer = "";
-    
+} 
 
-});
-
-
+renderOrder();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////// STORE CART IN THE BACKEND /////////////////////////////////////////
+/**
+ * @brief This function store the cart. if the user signed in, it stores the cart to backend
+ *        else it stores the cart to local storage
+ */
+
+async function storeCart() {
+
+    console.log("storeCart called");
+
+    const userId = localStorage.getItem("userId");
+
+    console.log("userId:", userId);
+
+    if (!userId) {
+
+        console.log("No userId found");
+
+        localStorage.setItem(
+            "cart1",
+            JSON.stringify(cart1)
+        );
+
+        return;
+    }
+
+    console.log("cart1 before PUT:", cart1);
+
+    try {
+
+        console.log("About to send PUT request");
+
+        const response = await fetch(
+            `http://localhost:4000/api/v1/cart/${userId}`,
+            {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    items: cart1
+                })
+            }
+        );
+
+        console.log("PUT response received");
+
+        const data = await response.json();
+        
+        console.log("Data from backend:");
+        console.log(data);
+        localStorage.setItem('cart1', JSON.stringify(data.cart.items));
+        console.log(JSON.parse(localStorage.getItem('cart1')));
+
+    } catch (error) {
+
+        console.error(error);
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////// ADD ITEM TO CART WHEN CLICKING ANY ADD TO CART BUTTON ///////////////////
 
@@ -506,7 +586,7 @@ function addToCartAllButtons(){
 
     addToCartButton.forEach(button => {
         button.addEventListener('click', () => {
-        let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
+        //let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];     // Get existing cart or create empty array
         let id1 = button.dataset.id;
         console.log("The id is:", id1);
         let existingItem = cart1.find(item => item.id === id1);           // Check if product already exists
@@ -522,7 +602,7 @@ function addToCartAllButtons(){
     }
     
         localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
-        //storeCart();
+        storeCart();
         
         window.location.href = "shoppingCart.html";                         // Redirect
         });

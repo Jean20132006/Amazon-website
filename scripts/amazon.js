@@ -1,3 +1,4 @@
+let cart1 = [];
 /**
  * @brief :This function checks for user authentication on page load. 
  * If the user is not authenticated, it redirects them to the sign-in page. 
@@ -32,6 +33,65 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * @brief This function load the cart from backend if the user signed in. Otherwise, it loads it from 
+ *        localStorage
+ */
+async function loadCart() {
+
+    const userId = localStorage.getItem("userId");
+
+    if (!userId) {
+
+        return (JSON.parse(localStorage.getItem("cart1")) || []);
+    }
+
+    try {
+
+        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+
+        if (!response.ok) {
+
+            console.log(
+                "No cart found for user."
+            );
+
+            return;
+        }
+
+
+        const data = await response.json();
+
+        console.log("cart has been loaded:");
+        console.log(data.cart.items);
+
+        //return data.cart.items || [];
+        return data.cart.items;
+
+    } catch (error) {
+
+        console.error(
+            "Error loading cart:",
+            error
+        );
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async () => {
+
+        cart1 = await loadCart();
+       
+        localStorage.setItem("cart1", JSON.stringify(cart1));            // Save updated cart
+        
+    }
+);
+
 /**
  * @brief :This function handles the slideshow functionality 
  * including next/previous slide navigation, auto-sliding, 
@@ -376,14 +436,28 @@ document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function HomepageCartQuantity(){
+    let cartQuantity = 0;   // reset every time
+    let cart1 = JSON.parse(localStorage.getItem('cart1')) || [];
+    
+    cart1.forEach(item => {
+        cartQuantity += item.quantity;
+    });
+    
+    // store values
+    localStorage.setItem("cartQuantity", cartQuantity);
+}
+
+HomepageCartQuantity();
+
 ///////////////////////// Cart Quantity Display in Header /////////////////////////////////////////////
-function displayCartNumberItems(){
+function HomePageCartNumberItems(){
   let cartNumber = Number(localStorage.getItem("cartQuantity")) || 0; //Get current cart quantity from localStorage or initialize to 0 
   const cartNumberElement = document.querySelector('.js-cart-num-items');
   cartNumberElement.innerText = cartNumber;
 }
 
-displayCartNumberItems();
+HomePageCartNumberItems();
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////// GENERATE DYNAMICALLY ROW OF SQUARES///////////////////////////////
@@ -495,6 +569,44 @@ if(userName){
         });       
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
+
+/**
+ * @brief when you click on the search button, we get the value and redirect to search.html
+ */
+
+const searchButton = document.querySelector(".js-search-btn");
+
+searchButton.addEventListener("click", () => {
+
+        const searchText = document.querySelector(".js-search-input").value;
+
+        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+    }
+);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Search on Enter Key
+ */
+
+const searchInput = document.querySelector(".js-search-input");
+
+searchInput.addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            let searchText = searchInput.value;
+
+            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+            
+        }
+    }
+);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 

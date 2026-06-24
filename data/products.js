@@ -14221,7 +14221,7 @@
 },
 ///////////////////////////////////////////////////////////////////////////////////////////
 {
-  id: "1c079479-8586-494f-ab53-219325432536",
+  id: "1c079479-8586-494f-ab53-219325432536-1",
 
   title: "AUSELILY Womens Summer Bodycon Dresses 2026 Basic Casual Sleeveless Knit Tank Midi Dress",
 
@@ -14241,14 +14241,16 @@
   ],
 
   images: {
-    main: "images/clothes-images/auselily.jpg",
+    main: "images/clothes-images/auselily.png",
      
     
     gallery: [
       "images/small-images/auselily-1.jpg",
       "images/small-images/auselily-2.jpg",
       "images/small-images/auselily-3.jpg",
-      "images/small-images/auselily-4.jpg"
+      "images/small-images/auselily-4.jpg",
+      "images/small-images/auselily-2.jpg",
+      "images/small-images/auselily-3.jpg"
       
     ],
     reviews: [
@@ -14445,7 +14447,7 @@
 },
 //////////////////////////////////////////////////////////////////////////////////////////
 {
-  id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
+  id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0-1",
 
   title: "Laughido Women's Sleeveless Ruched Bodycon Sundress Summer Casual Knee Length Basic Tank Dress",
 
@@ -14470,6 +14472,8 @@
     
     gallery: [
       "images/small-images/laughido-1.jpg",
+      "images/small-images/laughido-2.jpg",
+      "images/small-images/laughido-3.jpg",
       "images/small-images/laughido-2.jpg",
       "images/small-images/laughido-3.jpg",
       "images/small-images/laughido-4.jpg"

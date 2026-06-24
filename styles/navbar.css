@@ -58,6 +58,13 @@
     border-style: solid;
 }
 
+.delivery-name-location-container{
+    display: flx;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
 .location-text{
     display: flex;
     flex-direction: row;

@@ -1,4 +1,4 @@
-import { Cart } from "../models/cart.models.js";
+
 
 /*const saveCart = async (req, res) => {
 
@@ -74,6 +74,7 @@ import { Cart } from "../models/cart.models.js";
     }
 };*/
 
+import { Cart } from "../models/cart.models.js";
 const saveCart = async (req, res) => {
 
     try {
@@ -81,9 +82,14 @@ const saveCart = async (req, res) => {
         const { userId } = req.params;
         const { items } = req.body;
 
+        console.log("=== saveCart reached ===");
+        console.log("params:", req.params);
+        console.log("body:", req.body);
+
         console.log("Incoming items:", items);
 
         let cart = await Cart.findOne({ user: userId });
+        console.log("cart found:", cart);
 
         if (!cart) {
             cart = await Cart.create({
