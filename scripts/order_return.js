@@ -630,6 +630,44 @@ if(userName){
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
+
+/**
+ * @brief when you click on the search button, we get the value and redirect to search.html
+ */
+
+const searchButton = document.querySelector(".js-search-btn");
+
+searchButton.addEventListener("click", () => {
+
+        const searchText = document.querySelector(".js-search-input").value;
+
+        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+    }
+);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Search on Enter Key
+ */
+
+const searchInput = document.querySelector(".js-search-input");
+
+searchInput.addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            let searchText = searchInput.value;
+
+            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+            
+        }
+    }
+);
+
 
 
 

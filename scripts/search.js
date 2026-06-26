@@ -1,8 +1,48 @@
-/////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
+/////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART //////////////
 
 let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
 
-//////////////////////////////////////// GET PARAM /////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
+
+/**
+ * @brief when you click on the search button, we get the value and redirect to search.html
+ */
+
+/*const searchButton = document.querySelector(".js-search-btn");
+
+searchButton.addEventListener("click", () => {
+
+        const searchText = document.querySelector(".js-search-input").value;
+
+        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+    }
+);*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Search on Enter Key
+ */
+
+/*const searchInput = document.querySelector(".js-search-input");
+
+searchInput.addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            let searchText = searchInput.value;
+
+            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+            
+        }
+    }
+);*/
+
+//////////////////////////////////////// GET PARAM ////////////////////////////////////////
 
 const params = new URLSearchParams( window.location.search);
 
@@ -32,13 +72,16 @@ function renderProducts(searchResults){
             productsHTML += `
                 
                             <div class="image-name-star-price-container">
-                                    <a class="main-image1 href="${product.productPage}.html?id=${product.id}">
-                                        <img class="main-image" src="${product.images.main}" alt="${product.brand}">
-                                    </a>
+                                    <div class="card__image-wrap">
+                                       <a href="${product.productPage}.html?id=${product.id}">
+                                           <img class="main-image" src="${product.images.main}" alt="${product.brand}">
+                                        </a>
+                                    </div>
+                                    <div class="name-star-price-container">
                                     <span class="brand">${product.brand}</span>
                                     <span class="search-item-name">
                                         <a href="${product.productPage}.html?id=${product.id}">
-                                            ${product.title.slice(0, 65)}...
+                                            ${product.title.slice(0, 75)}...
                                         </a>
                                     </span>
                                     <div class="search-star-rating-review2">
@@ -46,11 +89,7 @@ function renderProducts(searchResults){
                                         <img src="images/star-2.png" alt="Star Rating">
                                         <span class="search-advert-review">${product.rating.totalReviews}</span>
                                     </div>
-                                    <div class="shopping-cart-price-indollar">
-                                        <span class="shopping-cart-dollar-sign"><i class="bi bi-currency-dollar"></i></span>
-                                        <span class="shopping-cart-dollars-amount">${product.price.priceDollar}</span>
-                                        <span class="shopping-cart-cents">${product.price.priceCents}</span>
-                                    </div>
+                                    
                                     <div class="search-prime-delivery-date">
                                         <span class="search-check-icon-prime"><i class="bi bi-check-lg"></i>prime</span>
                                         <div class="search-delivery-date">
@@ -58,12 +97,20 @@ function renderProducts(searchResults){
                                             <span class="search-delivery">Tomorrow</span>
                                         </div>
                                     </div>
-                                    <div class="add-to-cart-button">
-                                        <a href="#product">
-                                            <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn"  data-id="${product.id}">
-                                                Add to Cart
-                                            </button>
-                                        </a>
+                                    <div class="footer">
+                                       <div class="shopping-cart-price-indollar">
+                                            <span class="shopping-cart-dollar-sign"><i class="bi bi-currency-dollar"></i></span>
+                                            <span class="shopping-cart-dollars-amount">${product.price.priceDollar}</span>
+                                            <span class="shopping-cart-cents">${product.price.priceCents}</span>
+                                        </div>
+                                        <div class="add-to-cart-button">
+                                            <a href="#product">
+                                                <button class="add-to-cart-carousel-add-to-cart-button js-add-to-cart-btn"  data-id="${product.id}">
+                                                    Add to Cart
+                                                </button>
+                                           </a>
+                                       </div>
+                                    </div>
                                     </div>
                                 </div>
                                 `;
@@ -76,6 +123,42 @@ function renderProducts(searchResults){
 
     }
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+/**
+ * This code render random colors for each product
+ */
+document.querySelectorAll('.name-star-price-container').forEach(box => {
+
+    const color1 =
+        `hsl(${Math.random() * 360}, 100%, 60%)`;
+
+    const color2 =
+        `hsl(${Math.random() * 360}, 100%, 60%)`;
+
+    const color3 =
+        `hsl(${Math.random() * 360}, 100%, 60%)`;
+
+    box.style.background = `
+        conic-gradient(
+            from 0deg,
+            ${color1},
+            ${color2},
+            ${color3},
+            ${color1}
+        )
+    `;
+});
+///////////////////////////////////////////////////////////////////////////////////////
+/*document.querySelectorAll('.card__image-wrap')
+  .forEach((image, index) => {
+       image.style.background = `${results[index].variants[0].color}`;
+       
+  });*/
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////
 /**
  * @brief This function searches the user input words that match either the title, brand
@@ -94,7 +177,8 @@ function searchProducts(searchText) {
         searchText
             .toLowerCase()
             .trim()
-            .split(" ");
+            .split(" ")
+            .map(normalizeWord);
 
     return products.filter(product => {
 
@@ -110,6 +194,32 @@ function searchProducts(searchText) {
         }
     );
 }
+
+////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This function converts plurals to singulars before searching
+ *        This is a common problem in search engines called stemming or lemmatization.
+ */
+
+function normalizeWord(word) {
+
+    word = word.toLowerCase();
+
+    if (word.endsWith("ies")) {
+        return word.slice(0, -3) + "y";
+    }
+
+    if (word.endsWith("es")) {
+        return word.slice(0, -2);
+    }
+
+    if (word.endsWith("s")) {
+        return word.slice(0, -1);
+    }
+
+    return word;
+}
+////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -581,7 +691,7 @@ function updateCartSummary() {
 
 updateCartSummary(); // Call function to update cart summary on page load
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 /**
  * This code display the user username on the navbar
  */
@@ -595,5 +705,7 @@ if(userName){
         });       
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
 

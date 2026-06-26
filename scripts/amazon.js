@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (!token) {
         window.location.href = "/sign_in.html";
+        //window.location.href = "amazon.html";
         return;
     }
 
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // token invalid or expired
         localStorage.removeItem("token");
         window.location.href = "/sign_in.html";
+        //window.location.href = "amazon.html";
         return;
     }
 

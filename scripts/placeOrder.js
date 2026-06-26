@@ -391,7 +391,8 @@ let formatYourPayment = yourPayment.toFixed(2);                  // Format total
 const userId = localStorage.getItem("userId");                   // Get user ID
 
 
-const placeOrderButtons = document.querySelectorAll('.js-place-order-button');
+//const placeOrderButtons = document.querySelectorAll('.js-place-order-button');
+const placeOrderButtons = document.querySelectorAll('.js-close-btn');
 placeOrderButtons.forEach(button => {
     button.addEventListener('click', async () => {
         const response = await fetch(
@@ -424,6 +425,67 @@ placeOrderButtons.forEach(button => {
 
     });
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief This code handles order confirmation  
+ */
+
+const triggerBtn = document.querySelectorAll('.js-place-order-button');
+const modal = document.getElementById('successModal');
+const closeBtn = document.getElementById('closeBtn');
+
+triggerBtn.forEach(button => {
+    button.addEventListener('click', () => {
+       modal.classList.add('is-active');
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+});
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
+
+/**
+ * @brief when you click on the search button, we get the value and redirect to search.html
+ */
+
+const searchButton = document.querySelector(".js-search-btn");
+
+searchButton.addEventListener("click", () => {
+
+        const searchText = document.querySelector(".js-search-input").value;
+
+        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+    }
+);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Search on Enter Key
+ */
+
+const searchInput = document.querySelector(".js-search-input");
+
+searchInput.addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            let searchText = searchInput.value;
+
+            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+            
+        }
+    }
+);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 /**
  * Frentend for api send email

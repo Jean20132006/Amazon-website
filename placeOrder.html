@@ -194,6 +194,32 @@
             </div>
              <div class="right-page"></div>
         </div>
+
+        <!---Place order confirmation-->
+
+        <!--xmlns="http://www.w3.org/2000/svg": Tells the browser: This element contains SVG graphics."
+            Without it, some browsers may not render the SVG correctly.-->
+        <!--viewBox="0 0 52 52": Defines the SVG's internal coordinate system. Format: minX minY width height-->
+        <!--A path is the most powerful SVG shape. It can draw any shape.
+            The d attribute contains drawing commands. M = Move-->
+        <div class="success-overlay" id="successModal">
+            <div class="success-card">
+            <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+        
+            <div class="success-text">
+                <h3>Order Confirmed</h3>
+                <p>Thank you. Your order has been successfully placed and is being processed.</p>
+            </div>
+        
+            <button class="close-btn js-close-btn" id="closeBtn">Continue</button>
+            </div>
+        </div>
+        <!--End of place order confirmation-->
+
+
         <!--End of the cart-->
         <div class="bottom-order-total-section">
             <div class="left-page"></div>

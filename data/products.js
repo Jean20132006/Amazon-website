@@ -1008,10 +1008,10 @@
 
   categories: [
     "drink",
-    "beverages",
-    "protein shake",
+    "tea",
+    "cofee",
     "nutrition",
-    "Grocery & Gourmet Food"
+    "twining"
   ],
 
   images: {
@@ -1206,8 +1206,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad",
+    "tablet"
   ],
 
   images: {
@@ -13996,7 +13996,7 @@
 },
 //////////////////////////////////////////////////////////////////////////////////////////////////
 {
-  id: "d2785924-743d-49b3-8f03-ec258e640503",
+  id: "d2785924-743d-49b3-8f03-ec258e640503-1",
 
   title: "ANRABESS Womens Short Sleeve Henley Tops V Neck Dressy Casual Blouses Summer Trendy Tee Shirts 2026 Vacation Fashion Clothes",
 
@@ -14008,8 +14008,8 @@
 
   categories: [
     "clothing",
+    "shirt",
     "shirts",
-    "leggings",
     "workout",
     "yoga"
     
@@ -14670,7 +14670,7 @@
 },
 //////////////////////////////////////////////////////////////////////////////////////////
 {
-  id: "bc2847e9-5323-403f-b7cf-57fde044a955",
+  id: "bc2847e9-5323-403f-b7cf-57fde044a955-1",
 
   title: "Missufe Women's Summer Bodycon Dress Scoop Neck Sleeveless Slim Fit Casual Basic Mini Dresses",
 
@@ -14682,9 +14682,9 @@
 
   categories: [
     "clothing",
-    "dresses",
-    "leggings",
-    "workout",
+    "dress",
+    "sexy dress",
+    "outfit",
     "yoga"
     
   ],
@@ -14892,7 +14892,7 @@
 {
   id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
 
-  title: "J.VER Men's Dress Shirts Solid Long Sleeve Stretch Wrinkle-Free Formal Shirt Business Casual Button Down Shirts",
+  title: "J.VER Men's Shirts Solid Long Sleeve Stretch Wrinkle-Free Formal Shirt Business Casual Button Down Shirts",
 
   shortTitle: "J.VER Men's Dress Shirts",
 
@@ -14903,7 +14903,7 @@
   categories: [
     "clothing",
     "men's shirts",
-    "leggings",
+    "shirt",
     "workout",
     "yoga"
     
