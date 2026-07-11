@@ -15112,7 +15112,671 @@
       date: "2026-02-03"
     }
   ]
-}
+},
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9-a",
+
+  title: "Air Jordan 4 RM Men's Shoes (FQ7939-004, Black/White)",
+
+  shortTitle: "Air Jordan 4 RM Men's Shoes (FQ7939-004, Black/White)",
+
+  brand: "Nike",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shoes",
+    "sneakers",
+    "air jordan",
+    "men's shoes"
+  ],
+
+  images: {
+    main: "images/men-shoes/air-jordan.jpg",
+     
+    
+    gallery: [
+      "images/small-images/air-jordan-1.jpg",
+      "images/small-images/air-jordan-2.jpg",
+      "images/small-images/air-jordan-3.jpg",
+      "images/small-images/air-jordan-4.jpg",
+      "images/small-images/air-jordan-5.jpg",
+      "images/small-images/air-jordan-6.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/air-jordan-1.jpg",
+      "images/review-carousel/air-jordan-2.jpg",
+      "images/review-carousel/air-jordan-3.jpg",
+      "images/review-carousel/air-jordan-4.jpg",
+      "images/review-carousel/air-jordan-5.jpg",
+      "images/review-carousel/air-jordan-2.jpg",
+      "images/review-carousel/air-jordan-3.jpg",
+      "images/review-carousel/air-jordan-4.jpg",
+      "images/review-carousel/air-jordan-1.jpg",
+      "images/review-carousel/air-jordan-5.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/men-shoes/air-jordan.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/xidiso.mp4",
+    galleryVideos : [
+      "images/gallery-videos/xidiso-2.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/small-images/xidiso-2-img.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/xidiso-2-img.jpg",
+      "images/small-images/xidiso-2-img.jpg"
+    ],
+    advertisementVideosText : "SANNAX Fashion Shoes for Mens High Top Casual Walking Shoes Non Slip..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
+    ],
+
+    bigImages : [
+      "images/big-images/gym-people-1.jpg"
+    
+    ]
+  },
+  fourthBigCarouselTitle: "Air Jordan 4 RM Men's Shoes",
+
+  price: {
+    priceDollar: 95,
+    priceCents: 77,
+    currentPrice: 95.77,
+    currentPriceInCents: 9577,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
+  size: [
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "13.5",
+    "14"
+  ],
+
+  rating: {
+    average: 4.4,
+    totalReviews: 3795,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: Nike",
+    "Outer: leather",
+    "Inner material: Fleece",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Lace-up"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "White/Black/Neutral Grey/Varsity Red",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: 3,
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Heel Support: The new, sleek heel shape is padded for support when coming to sudden stops.",
+    "Enhanced Traction: We upgraded the traction pattern to Giannis' standards, giving you and the Greek Freak better court feel and mobility when cutting and moving at high speeds.",
+    "Control Your Moves: An internal containment system allows you to control every movement once you lace up."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////
+   {
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9-b",
+
+  title: "Nike Men's Jordan Max Aura 2 Basketball Shoe",
+
+  shortTitle: "Nike Men's Jordan Max Aura 2 Basketball Shoe",
+
+  brand: "Nike",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shoes",
+    "sneakers",
+    "air jordan",
+    "men's shoes"
+  ],
+
+  images: {
+    main: "images/men-shoes/aura.jpg",
+     
+    
+    gallery: [
+      "images/small-images/aura-1.jpg",
+      "images/small-images/aura-2.jpg",
+      "images/small-images/aura-3.jpg",
+      "images/small-images/aura-4.jpg",
+      "images/small-images/aura-3.jpg",
+      "images/small-images/aura-2.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/aura-1.jpg",
+      "images/review-carousel/aura-2.jpg",
+      "images/review-carousel/aura-3.jpg",
+      "images/review-carousel/aura-4.jpg",
+      "images/review-carousel/aura-5.jpg",
+      "images/review-carousel/aura-2.jpg",
+      "images/review-carousel/aura-3.jpg",
+      "images/review-carousel/aura-4.jpg",
+      "images/review-carousel/aura-1.jpg",
+      "images/review-carousel/aura-5.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/men-shoes/aura.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/xidiso.mp4",
+    galleryVideos : [
+      "images/gallery-videos/aura.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/aura-img.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/xidiso-2-img.jpg",
+      "images/small-images/xidiso-2-img.jpg"
+    ],
+    advertisementVideosText : "SANNAX Fashion Shoes for Mens High Top Casual Walking Shoes Non Slip..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
+    ],
+
+    bigImages : [
+      "images/big-images/gym-people-1.jpg"
+    
+    ]
+  },
+  fourthBigCarouselTitle: "Nike Men's Jordan Max Aura 2 Basketball Shoe",
+
+  price: {
+    priceDollar: 119,
+    priceCents: 77,
+    currentPrice: 119.77,
+    currentPriceInCents: 11977,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
+  size: [
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "13.5",
+    "14"
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 3795,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: Nike",
+    "Outer: leather",
+    "Inner material: Fleece",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Lace-up"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black/Gym Red/White/Wolf Grey",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: 3,
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Heel Support: The new, sleek heel shape is padded for support when coming to sudden stops.",
+    "Enhanced Traction: We upgraded the traction pattern to Giannis' standards, giving you and the Greek Freak better court feel and mobility when cutting and moving at high speeds.",
+    "Control Your Moves: An internal containment system allows you to control every movement once you lace up."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
+/////////////////////////////////////////////////////////////////////////////////
+{
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9-c",
+
+  title: "Nike Unisex Adult Giannis Immortality 4 Basketball Shoes",
+
+  shortTitle: "Nike Unisex Adult Giannis Immortality 4 Basketball Shoes",
+
+  brand: "Nike",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shoes",
+    "sneakers",
+    "air jordan",
+    "men's shoes"
+  ],
+
+  images: {
+    main: "images/men-shoes/gianis.jpg",
+     
+    
+    gallery: [
+      "images/small-images/gianis-1.jpg",
+      "images/small-images/gianis-2.jpg",
+      "images/small-images/gianis-3.jpg",
+      "images/small-images/gianis-4.jpg",
+      "images/small-images/gianis-5.jpg",
+      "images/small-images/gianis-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/gianis-1.jpg",
+      "images/review-carousel/gianis-2.jpg",
+      "images/review-carousel/gianis-3.jpg",
+      "images/review-carousel/gianis-4.jpg",
+      "images/review-carousel/gianis-5.jpg",
+      "images/review-carousel/gianis-2.jpg",
+      "images/review-carousel/gianis-3.jpg",
+      "images/review-carousel/gianis-4.jpg",
+      "images/review-carousel/gianis-1.jpg",
+      "images/review-carousel/gianis-5.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/men-shoes/gianis.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/xidiso.mp4",
+    galleryVideos : [
+      "images/gallery-videos/aura.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/aura-img.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/xidiso-2-img.jpg",
+      "images/small-images/xidiso-2-img.jpg"
+    ],
+    advertisementVideosText : "SANNAX Fashion Shoes for Mens High Top Casual Walking Shoes Non Slip..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
+    ],
+
+    bigImages : [
+      "images/big-images/gym-people-1.jpg"
+    
+    ]
+  },
+  fourthBigCarouselTitle: "Nike Unisex Adult Giannis Immortality 4 Basketball Shoes",
+
+  price: {
+    priceDollar: 85,
+    priceCents: 0,
+    currentPrice: 85.00,
+    currentPriceInCents: 8500,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+  
+  backgroundImage: "images/big-images/gym-people-1.jpg",
+  size: [
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "13.5",
+    "14"
+  ],
+
+  rating: {
+    average: 4.6,
+    totalReviews: 390,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: Nike",
+    "Outer: leather",
+    "Inner material: Fleece",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Lace-up"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Black/Metallic Gold",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: true,
+    freeShipping: true,
+    estimatedDelivery: 3,
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.8,
+    totalSales: 152000
+  },
+
+  about: [
+    "Heel Support: The new, sleek heel shape is padded for support when coming to sudden stops.",
+    "Enhanced Traction: We upgraded the traction pattern to Giannis' standards, giving you and the Greek Freak better court feel and mobility when cutting and moving at high speeds.",
+    "Control Your Moves: An internal containment system allows you to control every movement once you lace up."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
 /////////////////////////////////////////////////////////////////////////////////
 
 ];

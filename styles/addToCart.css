@@ -24,6 +24,14 @@ body{
 .nav-bar-add-to-cart a{
     text-decoration: none;
 }
+
+@media (max-width: 445px){
+    .search-bar-input{
+        width: 40px;
+        flex: 1;
+    }
+}
+/*End of nav bar add to cart*/
 /*Add to cart all content (entire page) */
 .add-to-cart-container{
     display: flex;

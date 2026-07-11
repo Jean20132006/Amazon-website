@@ -212,20 +212,22 @@
 }
 
 
-.search-bar-input-container{
+/*.search-bar-input-container{
     border: none;
     flex:1;
-    height: 40px;    
-}
+    height: 40px;   
+}*/
+
+
 .search-bar-input{
     background-color: white;
     font-size: 14px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     border: none;
     flex: 1;
-    height: 40px;
-    /*width: 0;*/  
+    height: 40px; 
 }
+
 .search-bar-input:focus-within  {
     border: 3px solid orange;      
 }      
@@ -311,6 +313,11 @@
     margin-top: 5px;
     gap: 5px;
     justify-content:space-between;
+    height: auto;
+}
+
+.flag-text{
+    margin-top: 20px;
 }
 .tooltip-text {
     font-size: 13px;

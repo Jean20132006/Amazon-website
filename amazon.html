@@ -42,10 +42,10 @@
                         </div>
                         <div class="location-details">
                             <div class="delivery-name-location-container">
-                                <span class="delivery-address">Deliver to </span>
-                                <span class="delivery-address js-jean-get">you</span>
+                                <span class="delivery-address" data-i18n="deliver_to">Deliver to </span>
+                                <span class="delivery-address js-jean-get" data-i18n="you">you</span>
                             </div>   
-                            <span class="update-location">Update location</span>
+                            <span class="update-location" data-i18n="update_location">Update location</span>
                         </div>        
                     </div>        
                 </a>
@@ -55,12 +55,12 @@
         <div class="search-bar-container">
             <div class="all">
                 <button class="all-button">
-                    <span>All</span>
+                    <span data-i18n="all">All</span>
                     <div class="all-drop-downfill">
                         <i class="bi bi-caret-down-fill"></i>
                     </div>        
                 </button>
-                <div class="all-tooltip">Search in</div>
+                <div class="all-tooltip" data-i18n="search_in">Search in</div>
                 <div class="all-active-tooltip">
                     <ul>
                         <a href="#all-departments"><li class="all-department">All Departments</li></a>
@@ -101,9 +101,9 @@
                     </ul>
                 </div>
             </div>
-            <input type="text" id="search-input" name="search" class="search-bar-input js-search-input" placeholder="Search Amazon">
+            <input type="text" id="search-input" name="search" class="search-bar-input js-search-input" placeholder="Search Amazon"  data-i18n-placeholder="search">
            <!--<div class="search-bar-input-container">
-               <input type="text" class="search-bar-input" placeholder="Search Amazon">
+               <input type="text" class="search-bar-input js-search-input" placeholder="Search Amazon">
            </div>-->
            <button class="search-button js-search-btn">
                 <i class="bi bi-search"></i>
@@ -137,11 +137,14 @@
                         <p>Change language</p>
                         <div class="lang-radio-button">
                             <form>
-                                <input type="radio" id="english" name="language" value="english" checked>
+                                <input type="radio" id="english" name="language" value="en" checked>
                                 <label for="english">English - EN</label><br>
                                 <hr>
-                                <input type="radio" id="spanish" name="language" value="spanish">
+                                <input type="radio" id="spanish" name="language" value="es">
                                 <label for="spanish">Spanish - ES</label><br>
+                                <hr>
+                                <input type="radio" id="french" name="language" value="fr">
+                                <label for="french">French - FR</label><br>
                                 <hr>
                                 
                             </form>
@@ -164,11 +167,11 @@
                 <div class="account-signin-container">
                     <a href="sign_in.html">
                         <div class="hello-sign" >
-                            <span >Hello,</span>
-                            <span class="js-jean-get">Sign in</span>
+                            <span data-i18n="hello">Hello,</span>
+                            <span class="js-jean-get" data-i18n="sign_in">Sign in</span>
                         </div>
                         <div class="account-lists-text">
-                            <span>Account & Lists</span>
+                            <span data-i18n="account_lists">Account & Lists</span>
                         </div>
                     </a> 
                     <div class="account-signin-tooltip">
@@ -196,19 +199,19 @@
                                     <span>Your Account</span>
                                     <div class="account-links">
                                         <a href="#account">Account</a><br>
-                                        <a href="#orders">Orders</a><br>
-                                        <a href="#keepshopping">Keep Shopping For</a><br>
-                                        <a href="#recommendations">Recommendations</a><br>
-                                        <a href="#browsinghistory">Browsing History</a><br>
-                                        <a href="#amazoncreditcards">Amazon Credits Cards</a><br>
-                                        <a href="#watchlist">Watchlist</a><br>
-                                        <a href="#videos">Video Purchases & Rental</a><br>
-                                        <a href="#kindle">Kindle Unlimited</a><br>
-                                        <a href="#contentanddevice">Content & Devices</a><br>
-                                        <a href="#subscribe">Subscribe & Save Items</a><br>
-                                        <a href="#membership">Memberships &Subscriptions</a><br>
-                                        <a href="#primemember">Prime membership</a><br>
-                                        <a href="#music">Music Library</a><br>
+                                        <a href="#orders" data-i18n="orders">Orders</a><br>
+                                        <a href="#keepshopping" data-i18n="keep_shopping">Keep Shopping For</a><br>
+                                        <a href="#recommendations" data-i18n="recommendations">Recommendations</a><br>
+                                        <a href="#browsinghistory" data-i18n="browsing_history">Browsing History</a><br>
+                                        <a href="#amazoncreditcards" data-i18n="amazon_credit_cards">Amazon Credits Cards</a><br>
+                                        <a href="#watchlist" data-i18n="watchlist">Watchlist</a><br>
+                                        <a href="#videos" data-i18n="video_purchases_rental">Video Purchases & Rental</a><br>
+                                        <a href="#kindle" data-i18n="kindle_unlimited">Kindle Unlimited</a><br>
+                                        <a href="#contentanddevice" data-i18n="content_devices">Content & Devices</a><br>
+                                        <a href="#subscribe" data-i18n="subscribe_save_items">Subscribe & Save Items</a><br>
+                                        <a href="#membership" data-i18n="memberships_subscriptions">Memberships &Subscriptions</a><br>
+                                        <a href="#primemember" data-i18n="prime_membership">Prime membership</a><br>
+                                        <a href="#music" data-i18n="music_library">Music Library</a><br>
                                         <a href="#start">Start a Selling Account</a><br>
                                         <a href="#createfree">Create Your Free Business<br>Account</a><br>
                                         <a href="#customerservice">Customer Service</a>
@@ -225,10 +228,10 @@
             <div class="return-order-container">
                 <a href="order_return.html">
                     <div class="return-text">
-                        <span>Returns</span>
+                        <span data-i18n="returns">Returns</span>
                     </div>
                     <div class="order-text">
-                        <span>& Orders</span>
+                        <span data-i18n="orders">& Orders</span>
                     </div>
                 </a>
             </div>
@@ -246,7 +249,7 @@
                                 
                             </div>
                             <div class="cart-text">
-                              <span >Cart</span> 
+                              <span data-i18n="cart">Cart</span> 
                            </div>
                     </div>    
                 </a>
@@ -265,7 +268,7 @@
                     <button class="hamburger-button">
                         <div class="hamburger-menu">
                             <i class="bi bi-list"></i>
-                            <span class="all-department-text">All</span>    
+                            <span class="all-department-text" data-i18n="all">All</span>    
                         </div>
                     </button>
                     <!--<div class="hamburger-tooltip-hello-signin">
@@ -343,14 +346,14 @@
                 <div class="amazon-haul-container"> 
                     <a href="#amazon-haul">
                         <div class="amazon-haul">
-                            <span>Amazon-Haul</span>
+                            <span data-i18n="amazon_haul">Amazon-Haul</span>
                         </div>
                     </a>
                 </div>
                 <div class="medical-care-container">
                     <a href="#medical-care">
                         <div class="medical-care">
-                            <span>Medical Care</span>
+                            <span data-i18n="medical_care">Medical Care</span>
                             <i class="bi bi-caret-down-fill"></i>   
                         </div>
                         
@@ -359,49 +362,49 @@
                 <div class="amazon-basics-container">
                     <a href="#amazon-basics">
                         <div class="amazon-basics">
-                            <span>Amazon Basics</span>
+                            <span data-i18n="amazon_basics">Amazon Basics</span>
                         </div>
                     </a>
                 </div>
                 <div class="best-sellers-container">
                     <a href="#best-sellers">
                         <div class="best-sellers">
-                            <span>Best Sellers</span>
+                            <span data-i18n="best_sellers">Best Sellers</span>
                         </div>
                     </a>
                 </div>
                 <div class="books-container">
                     <a href="#books">
                         <div class="books">
-                            <span>Books</span>
+                            <span data-i18n="books">Books</span>
                         </div>
                     </a>
                 </div>
                 <div class="new-releases-container">
                     <a href="#new-releases">
                         <div class="new-releases">
-                            <span>New Releases</span>
+                            <span data-i18n="new_releases">New Releases</span>
                         </div>
                     </a>
                 </div>
                 <div class="registry-container">
                     <a href="#registry">
                         <div class="registry">
-                            <span>Registry</span>
+                            <span data-i18n="registry">Registry</span>
                         </div>
                     </a>
                 </div>
                 <div class="today-deal-container">
                     <a href="#today-deal">          
                         <div class="today-deal">
-                            <span>Today's Deals</span>
+                            <span data-i18n="today_deals">Today's Deals</span>
                         </div>
                     </a>
                 </div>
                 <div class="gift-cards-container">
                     <a href="#gift-cards">
                         <div class="gift-cards">
-                            <span>Gift Cards</span>
+                            <span data-i18n="gift_cards">Gift Cards</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </div>
                     </a>
@@ -412,14 +415,14 @@
                 <div class="smart-home-container">
                     <a href="#smart-home">
                         <div class="smart-home">
-                            <span>Smart Home</span>
+                            <span data-i18n="smart_home">Smart Home</span>
                         </div>
                     </a>
                 </div>
                 <div class="groceries-container">
                     <a href="#groceries">
                         <div class="groceries">
-                            <span>Groceries</span>
+                            <span data-i18n="groceries">Groceries</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </div>
                     </a>
@@ -427,7 +430,7 @@
                 <div class="prime-container">
                     <a href="#prime">
                         <div class="prime">
-                            <span>Prime</span>
+                            <span data-i18n="prime">Prime</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </div>
                     </a>
@@ -435,49 +438,49 @@
                 <div class="pharmacy-container">
                     <a href="#pharmacy">
                         <div class="pharmacy">
-                            <span>Pharmacy</span>
+                            <span data-i18n="pharmacy">Pharmacy</span>
                         </div>
                     </a>
                 </div>
                 <div class="customer-service-container">
                     <a href="#customer-service">
                         <div class="customer-service">
-                            <span>Customer Service</span>
+                            <span data-i18n="customer_service">Customer Service</span>
                         </div>
                     </a>
                 </div>
                 <div class="music-container">
                     <a href="#music">
                         <div class="music">
-                            <span>Music</span>
+                            <span data-i18n="music">Music</span>
                         </div>
                     </a>
                 </div>
                 <div class="amazon-home-container">
                     <a href="#amazon-home">
                         <div class="amazon-home">
-                            <span>Amazon Home</span>
+                            <span data-i18n="amazon_home">Amazon Home</span>
                         </div>
                     </a>
                 </div>
                 <div class="fashion-container">
                     <a href="#fashion">
                         <div class="fashion">
-                            <span>Fashion</span>
+                            <span data-i18n="fashion">Fashion</span>
                         </div>
                     </a>
                 </div>
                 <div class="toys-games-container">
                     <a href="#toys-games">
                         <div class="toys-games">
-                            <span>Toys & Games</span>
+                            <span data-i18n="toys_games">Toys & Games</span>
                         </div>
                     </a>
                 </div>
                 <div class="sports-outdoors-container">
                     <a href="#sports-outdoors">
                         <div class="sports-outdoors">
-                            <span>Sports & Outdoors</span>
+                            <span data-i18n="sports_outdoors">Sports & Outdoors</span>
                         </div>
                     </a>
                 </div>
@@ -497,7 +500,7 @@
             <!--<div class="slide background" style="background-image: url('https://m.media-amazon.com/images/I/61K7+SH3bYL._SR3000,600_.jpg');"></div>-->
             <!--<img class="slide active" src="images/prime-image.jpg" alt="Prime Image">-->
             <!-- VIDEO SLIDE -->
-            <video class="slide active" id="video" muted loop playsinline preload="none"
+            <video class="slide active" id="video" muted autoplay loop playsinline preload="none"
                 poster="images/prime-image.jpg">
                 <source src="videos/basket-ball.mp4" type="video/mp4">
             </video>
@@ -510,7 +513,7 @@
             <!--<img class="slide" src="images/home-fresh.jpg" alt="Home Fresh Image">-->
             <img class="slide" src="images/terrasse.jpg" alt="Terrasse Image">
             <!-- VIDEO SLIDE -->
-            <video class="slide" id="video" muted loop playsinline preload="none"
+            <video class="slide" id="video" muted autoplay loop playsinline preload="none"
                 poster="images/sparkling-energy.jpg">
                 <source src="videos/sparkling-drink.mp4" type="video/mp4">
             </video>
@@ -540,104 +543,165 @@
     <!--First row of products section-->
     <div class="first-row-section">
         <div class="first-row-flex-box-left"></div>
-        <div class="row-container">
-            <!--<div class="title-four-picture-container">
-                <span>Up to 15% off luxury jewelry</span>
-                <div class="first-square-container">
-                        <div class="first-square-first-column">
-                            <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                                <img class="container1-img" src="images/products-img/CORE_HP_Trending_Pre-loved_handbags_5.jpg" alt="Pre-loved handbags">
-                            </a>
-                            <div class="chanel">Chanel</div>
-                            <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                                <img class="container1-img" src="images/products-img/CORE_HP_Pre-loved_jewelry_6.jpg" alt="Pre-loved jewelry">
-                            </a>
-                            <div class="chanel">Hermes</div>   
-                        </div>
-                    
-                        <div class="first-square-first-column">
-                            <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                               <img class="container1-img" src="images/products-img/CORE_HP_Pre-loved_jewelry_7.jpg" alt="Pre-loved jewelry">
-                            </a>
-                            <div class="chanel">Van Cleef</div>
-                            <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                                <img class="container1-img" src="images/products-img/CORE_HP_Trending_Pre-loved_handbags_8.jpg" alt="Pre-loved handbags">
-                            </a>
-                            <div class="chanel">Fendi</div>
-                        </div>     
-                </div>
-                <a href="#jewerly">Shop pre-loved handbags & jewelry</a>    
-            </div>
-
-            <div class="title-four-picture-container">
-                <span>Shop Sacks Picks</span>
-                <div class="second-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="second-square-first-column">
-                            <img class="container1-img" src="images/products-img/Desktop_QC_TopLeft_Editorial_5.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Dolce&Gabbana</div>
-                            <img class="container1-img" src="images/products-img/Desktop_QC_BottomRight_Editorial_5.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Balmain</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="second-square-second-column">
-                            <img class="container2-img" src="images/products-img/Desktop_QC_BottomLeft_Editorial_4.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Stella McCartney</div>
-                            <img class="container2-img" src="images/products-img/Desktop_QC_TopRight_Editorial_5.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Pierre Hardy</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop Sacks on Amazon</a>
-            </div>
-            <div class="title-four-picture-container">
-                <span>Deals on Tech</span>
-                <div class="third-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="third-square-first-column">
-                            <img class="container1-img" src="images/products-img/PC.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">PC</div>
-                            <img class="container1-img" src="images/products-img/XCM_CUTTLE.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Software</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="third-square-second-column">
-                            <img class="container2-img" src="images/products-img/Wireless.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Wireless</div>
-                            <img class="container2-img" src="images/products-img/HomeEntertainment.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Home Entertainment</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop all tech deals</a>
-            </div>
-            <div class="title-four-picture-container hidden">
-                <span>Up to 15% off luxury jewelry</span>
-                <div class="fourth-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="fourth-square-first-column">
-                            <img class="container1-img" src="images/products-img/CORE_HP_Trending_Pre-loved_handbags_5.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Chanel</div>
-                            <img class="container1-img" src="images/products-img/CORE_HP_Pre-loved_jewelry_6.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Chanel</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="fourth-square-second-column">
-                            <img class="container2-img" src="images/products-img/CORE_HP_Pre-loved_jewelry_7.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Chanel</div>
-                            <img class="container2-img" src="images/products-img/CORE_HP_Trending_Pre-loved_handbags_8.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Chanel</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop pre-loved handbags & jewelry</a>
-            </div>-->
+        <div class="row-container js-first-row-container">
+            
         </div> 
         <div class="first-row-flex-box-right"></div>    
     </div>
+
+    <!---New Carousel Section-->
+    <div class="carousel-square-section">
+        <div class="leftpage-section"></div>
+            <div class="carousel-square">
+                <div class="carousel-square-track">
+                    <button class="arrow-square left-square">&#10094;</button>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Trending now</span>
+                                <span class="image-title-bold">Shop the summer color edit</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/shop-summer.jpg">
+                                <source src="images/men-shoes/shop-summer-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a> 
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">New releases</span>
+                                <span class="image-title-bold">World's smallest smart ring</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/ring-img.jpg">
+                                <source src="images/men-shoes/ring.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Send less on college tech</span>
+                                <span class="image-title-bold">Laptops starting at $200</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/computer.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-4.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-3.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-2.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-4.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-bold-prime">Buy a new car, get a 1,000 gift card*</span>
+                                <span class="image-title-small-prime">Prime members exclusive</span>
+                                <img class="amazon-autos-logo" src="images/men-shoes/amazon-autos.png" alt="amazo-auto-logo">
+                                <div class="amazon-gift-square-carousel">*Amazon.com gift card. Select area. Terms apply.</div>
+                            </div>
+                            
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/car-poster.jpg">
+                                <source src="images/men-shoes/car.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">College must-haves</span>
+                                <span class="image-title-bold">Shop our 29+ water bottles</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/stanley.jpg">
+                                <source src="images/men-shoes/water-bottle.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-bold-prime">Top 100+ first appartment finds</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/tv.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/amazon-image.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/furniture.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/fourth-row-images/sofa.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/decor.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Premium brands</span>
+                                <span class="image-title-bold">Shop summer finds under $100</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/Summer.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/GiftsForHim.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/JBL.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/forher.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/cream.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">spend less every day</span>
+                                <span class="image-title-bold">Shop Summer faves under $50</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/stanley.jpg" alt="image">
+                        </div>
+                    </a>
+                    <button class="arrow-square right-square">&#10095;</button>
+                </div>
+            </div>       
+        <div class="rightpage-section"></div>
+       
+    </div>
+    <!--End of New Carousel Section-->
 
     <!--End of First row of products section-->
     <!-- FirstCarousel Section-->
@@ -655,7 +719,7 @@
     <!--Second row of products-->
     <div class="second-row-section">
         <div class="first-row-flex-box-left"></div>
-        <div class="row-container">
+        <div class="row-container js-row-container">
             <!--<div class="title-four-picture-container">
                 <span>Valentine's Day gifts for all</span>
                 <div class="first-square-container">
@@ -763,103 +827,159 @@
     </div>
     <!-- End of Fourth Carousel Section-->
 
-    <!--Third row of products section-->
-    <div class="second-row-section">
-        <div class="first-row-flex-box-left"></div>
-        <div class="row-container">
-            <!--<div class="title-four-picture-container">
-                <span>Valentine's Day gifts for all</span>
-                <div class="first-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="first-square-first-column">
-                            <img class="container1-img" src="images/second-row-images/GiftsForHim.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">For Him</div>
-                            <img class="container1-img" src="images/second-row-images/forkids.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">For Kids</div>   
+    <!---New Carousel Section-->
+    <div class="carousel-square-section">
+        <div class="leftpage-section"></div>
+            <div class="carousel-square">
+                <div class="carousel-square-track">
+                    <button class="arrow-square left-square">&#10094;</button>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Back to school</span>
+                                <span class="image-title-bold">Our top 22+ kids' water bottles</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/kid-water-bottle.jpg">
+                                <source src="images/men-shoes/kid-water-bottle-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a> 
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">New releases</span>
+                                <span class="image-title-bold">World's smallest smart ring</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/ring-img.jpg">
+                                <source src="images/men-shoes/ring.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </a>
-                    
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="first-square-second-column">
-                            <img class="container2-img" src="images/second-row-images/forher.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">For Her</div>
-                            <img class="container2-img" src="images/second-row-images/forgalletine.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">For galentines</div>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Send less on college tech</span>
+                                <span class="image-title-bold">Laptops starting at $200</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/computer.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-4.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-3.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-2.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/electronic-images/hp-4.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
                         </div>
                     </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-bold-prime">Buy a new car, get a 1,000 gift card*</span>
+                                <span class="image-title-small-prime">Prime members exclusive</span>
+                                <img class="amazon-autos-logo" src="images/men-shoes/amazon-autos.png" alt="amazo-auto-logo">
+                                <div class="amazon-gift-square-carousel">*Amazon.com gift card. Select area. Terms apply.</div>
+                            </div>
+                            
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/car-poster.jpg">
+                                <source src="images/men-shoes/car.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">College must-haves</span>
+                                <span class="image-title-bold">Shop our 29+ water bottles</span>
+                            </div>
+                            <video class="video-carousel" muted autoplay loop playsinline preload="auto" 
+                                poster="images/men-shoes/stanley.jpg">
+                                <source src="images/men-shoes/water-bottle.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-bold-prime">Top 100+ first appartment finds</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/tv.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/amazon-image.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/furniture.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/fourth-row-images/sofa.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/decor.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square ">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">Premium brands</span>
+                                <span class="image-title-bold">Shop summer finds under $100</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/Summer.jpg" alt="image"> 
+                            <div class="four-items-container">
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/GiftsForHim.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/JBL.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                                <div class="two-items-container">
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/forher.jpg" alt="computer-image">
+                                    </div>
+                                    <div class="two-item-img">
+                                        <img src="images/second-row-images/cream.jpg" alt="computer-image">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </a>
+                    <a class="a-link-normal" href="#">
+                        <div class="image-carousel-square">
+                            <div class="text-square-carousel">
+                                <span class="image-title-small">spend less every day</span>
+                                <span class="image-title-bold">Shop Summer faves under $50</span>
+                            </div>
+                            <img class="poster-img" src="images/men-shoes/stanley.jpg" alt="image">
+                        </div>
+                    </a>
+                    <button class="arrow-square right-square">&#10095;</button>
                 </div>
-                <a href="#jewerly">Shop valentine's Day</a>    
-            </div>
-            <div class="title-four-picture-container">
-                <span>Makeup & Wellness</span>
-                <div class="second-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="second-square-first-column">
-                            <img class="container1-img" src="images/second-row-images/tiny.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Under $10</div>
-                            <img class="container1-img" src="images/second-row-images/hat.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Under $50</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="second-square-second-column">
-                            <img class="container2-img" src="images/second-row-images/cream.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Under $20</div>
-                            <img class="container2-img" src="images/second-row-images/JBL.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Under $100</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop gifts by price</a>
-            </div>
-            <div class="title-four-picture-container">
-                <span>Premium home finds</span>
-                <div class="third-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="third-square-first-column">
-                            <img class="container1-img" src="images/second-row-images/decor.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Decor</div>
-                            <img class="container1-img" src="images/second-row-images/amazon-image.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Kitchen</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="third-square-second-column">
-                            <img class="container2-img" src="images/second-row-images/beddig-bath.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Bedding & Bath</div>
-                            <img class="container2-img" src="images/second-row-images/furniture.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Furniture</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop all </a>
-            </div>
-            <div class="title-four-picture-container hidden">
-                <span>Winter Beauty & Wellness</span>
-                <div class="fourth-square-container">
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="fourth-square-first-column">
-                            <img class="container1-img" src="images/second-row-images/beauty.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Skincare</div>
-                            <img class="container1-img" src="images/second-row-images/beauty-winter.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">K-beauty</div>
-                        </div>
-                    </a>
-                    <a class="a-link-dolce-gabana" href="#dolce-gabbana">
-                        <div class="fourth-square-second-column">
-                            <img class="container2-img" src="images/second-row-images/lips-beauty-winter.jpg" alt="Pre-loved jewelry">
-                            <div class="chanel">Wellness</div>
-                            <img class="container2-img" src="images/second-row-images/mega-beauty.jpg" alt="Pre-loved handbags">
-                            <div class="chanel">Hair care</div>
-                        </div>
-                    </a>
-                </div>
-                <a href="#jewerly">Shop all </a>
-            </div>-->
-        </div> 
-        <div class="first-row-flex-box-right"></div>    
+            </div>       
+        <div class="rightpage-section"></div>
+       
     </div>
-    <!--End of third row of products section-->
+    <!--End of New Carousel Section-->
 
     <!--Fifth carousel section-->
     <div class="carousel-section">
@@ -873,16 +993,16 @@
     </div>
     <!-- End of sixth Carousel Section-->
 
-    <!--Fourth row of products section-->
+    <!--Third row of products section-->
     <div class="second-row-section">
         <div class="first-row-flex-box-left"></div>
-        <div class="row-container">
+        <div class="row-container js-row-container">
             
         </div> 
         <div class="first-row-flex-box-right"></div>    
     </div>
 
-    <!--End of Fourth row of products section-->
+    <!--End of Third row of products section-->
 
     <!--seventh carousel section is half-->
     <div class="carousel-section">

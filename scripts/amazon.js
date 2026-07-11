@@ -94,6 +94,7 @@ document.addEventListener(
     }
 );
 
+////////////////////////////////// SLIDESHOW FUNCTIONALITY ///////////////////////////////
 /**
  * @brief :This function handles the slideshow functionality 
  * including next/previous slide navigation, auto-sliding, 
@@ -109,8 +110,8 @@ const prevBtn = document.querySelector('.prev');
 // Current slide index
 let currentIndex = 0;
 
-// Auto slide interval (8 seconds)
-let autoSlide = setInterval(nextSlide, 8000);
+// Auto slide interval (5 seconds)
+let autoSlide = setInterval(nextSlide, 5000);
 
 // Show slide by index
 function showSlide(index) {
@@ -159,7 +160,7 @@ prevBtn.addEventListener('click', () => {
 // Reset auto slideshow after manual click
 function resetAutoSlide() {
   clearInterval(autoSlide);
-  autoSlide = setInterval(nextSlide, 8000);
+  autoSlide = setInterval(nextSlide, 5000);
 }
 /*function to toggle play/pause on video slides */
 const video = document.getElementById("video");
@@ -192,7 +193,7 @@ video.addEventListener("ended", () => {
   playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
 });
 
-/////////////////////////////// GENERATE DYNAMICALLY SCROLL CAROUSELS ////////////////////////////
+/////////////////////////////// ADDING ITEMS DYNAMICALLY IN SCROLL CAROUSELS ////////////////////////////
 
 /**
  * @brief This code render scrollable carousel on the home page
@@ -288,7 +289,7 @@ document.querySelectorAll('.carousel-section').forEach((carousel, index) => {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////// GENERATE DYNAMICALLY MULTIPLE CAROUSELS ///////////////////////////////
+/////////////////////// GENERATE DYNAMICALLY MULTIPLE SCROLLABLE CAROUSELS ///////////////////////////////
 
 function generateMultipleCarousel(){
     const carousels = [
@@ -343,7 +344,7 @@ function generateMultipleCarousel(){
 
 generateMultipleCarousel();
 ///////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
+////////////////////////// NAVIGATE SCROLL CAROUSEL ///////////////////////////////////////
 /**
  * @brief :This function handles the carousel functionality 
  * including next/previous item navigation.
@@ -462,102 +463,366 @@ function HomePageCartNumberItems(){
 HomePageCartNumberItems();
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////// GENERATE DYNAMICALLY ROW OF SQUARES///////////////////////////////
+/////////////////////////// GENERATE DYNAMICALLY ROW OF SQUARES IMAGES///////////////////////////////
 /**
- * @brief This code generates dynamically The row of square
+ * @brief This code generates dynamically The row of square images
  * @code: {JavaScript}
  *        {products.filter(p => p.categories.includes("jewelry")).slice(0, 4)}
  *         includes() is a JavaScript method that checks whether an array contains a specific value.
  *         It returns true if the specific value is included in the array and the product is store
+ * 
+ */
+//////////////////// GENERATE DYNAMICALLY THE FIRST ROW OF SQUARES IMAGES ///////////////////
+function generateFirstRowSquareImages() {
+    const sections = [
+        {
+            title: "Selected for you",
+            linkText: "Shop Selected for you",
+           // products: products.filter(p => p.categories[1] === matchItem.categories[1]).slice(0, 4)
+            products: [
+            ...products.filter(p => p.categories.includes("shirts")).slice(0, 2),
+
+            ...products.filter(p => p.categories.includes("dresses")).slice(0, 2)
+            ]
+        },
+
+        {
+            title: "Shop Beaauty & Skincare Picks",
+            linkText: "Skincare on Amazon",
+            products: [
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 2),
+
+            ...products.filter(p => p.categories.includes("tablets")).slice(0, 2)
+            ]
+        },
+
+        {
+            title: "Deals on Tech",
+            linkText: "all tech deals",
+            products: [
+            ...products.filter(p => p.categories.includes("computers")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("tablets")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 1)
+            ]
+        },
+
+        {
+            title: "Trending Watches",
+            linkText: "See all watches",
+            products: products.filter(p => p.categories.includes("watches")).slice(0, 4)
+        }
+    ];
+
+    const rowElement = document.querySelectorAll('.js-first-row-container');
+    const squareElement = document.querySelector('.title-four-picture-container');
+
+    let squareHTML = '';
+
+    rowElement.forEach(square => {
+        for(let i = 0; i < 4; ++i){
+            
+            const squareDiv = document.createElement('div');
+            squareDiv.classList.add('title-four-picture-container');
+
+            squareHTML += `<span>${sections[i].title}</span>
+                        <div class="first-square-container">
+                                <div class="first-square-first-column">
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[0].productPage}.html?id=${sections[i].products[0].id}">
+                                        <img class="container1-img" src="${sections[i].products[0].images.cartImageConfiramation}" alt="${sections[i].products[0].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[0].brand}</div>
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[1].productPage}.html?id=${sections[i].products[1].id}">
+                                        <img class="container1-img" src="${sections[i].products[1].images.cartImageConfiramation}" alt="${sections[i].products[1].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[1].brand}</div>   
+                                </div>
+                            
+                                <div class="first-square-first-column">
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[2].productPage}.html?id=${sections[i].products[2].id}">
+                                        <img class="container1-img" src="${sections[i].products[2].images.cartImageConfiramation}" alt="${sections[i].products[2].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[2].brand}</div>
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[3].productPage}.html?id=${sections[i].products[3].id}">
+                                        <img class="container1-img" src="${sections[i].products[3].images.cartImageConfiramation}" alt="${sections[i].products[3].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[3].brand}</div>   
+                                </div>
+                        </div>
+                        <a href="#jewerly">Shop ${sections[i].title}</a> 
+                    `;
+
+
+            squareDiv.innerHTML = squareHTML;
+            square.appendChild(squareDiv);
+            squareHTML = '';    
+        }
+
+    });
+}
+
+generateFirstRowSquareImages();
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////// GENERATE THE SECOND AND THIRD ROW OF SQUARES IMAGES ////////////////////
+
+function generateRowSquareImages() {
+    const sections = [
+        {
+            title: "Shop Leggings & Dresses",
+            linkText: "Shop Shirts & Dress",
+            //products: products.filter(p => p.categories.includes("watches") || p.categories.includes("computers")).slice(0, 4)
+            products: [
+            ...products.filter(p => p.categories.includes("shirts")).slice(0, 2),
+
+            ...products.filter(p => p.categories.includes("dresses")).slice(0, 2)
+            ]
+        },
+
+        {
+            title: "Shop Watches & Tablets Picks",
+            linkText: "Shop Saks on Amazon",
+            products: [
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 2),
+
+            ...products.filter(p => p.categories.includes("tablets")).slice(0, 2)
+            ]
+        },
+
+        {
+            title: "Deals on Tech",
+            linkText: "Shop all tech deals",
+            products: [
+            ...products.filter(p => p.categories.includes("computers")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("tablets")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 1),
+            ...products.filter(p => p.categories.includes("watches")).slice(0, 1)
+            ]
+        },
+
+        {
+            title: "Trending Watches",
+            linkText: "See all watches",
+            products: products.filter(p => p.categories.includes("watches")).slice(0, 4)
+        }
+    ];
+
+    const rowElement = document.querySelectorAll('.js-row-container');
+    const squareElement = document.querySelector('.title-four-picture-container');
+
+    let squareHTML = '';
+
+    rowElement.forEach(square => {
+        for(let i = 0; i < 4; ++i){
+            
+            const squareDiv = document.createElement('div');
+            squareDiv.classList.add('title-four-picture-container');
+
+            squareHTML += `<span>${sections[i].title}</span>
+                        <div class="first-square-container">
+                                <div class="first-square-first-column">
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[0].productPage}.html?id=${sections[i].products[0].id}">
+                                        <img class="container1-img" src="${sections[i].products[0].images.cartImageConfiramation}" alt="${sections[i].products[0].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[0].brand}</div>
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[1].productPage}.html?id=${sections[i].products[1].id}">
+                                        <img class="container1-img" src="${sections[i].products[1].images.cartImageConfiramation}" alt="${sections[i].products[1].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[1].brand}</div>   
+                                </div>
+                            
+                                <div class="first-square-first-column">
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[2].productPage}.html?id=${sections[i].products[2].id}">
+                                        <img class="container1-img" src="${sections[i].products[2].images.cartImageConfiramation}" alt="${sections[i].products[2].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[2].brand}</div>
+                                    <a class="a-link-dolce-gabana" href="${sections[i].products[3].productPage}.html?id=${sections[i].products[3].id}">
+                                        <img class="container1-img" src="${sections[i].products[3].images.cartImageConfiramation}" alt="${sections[i].products[3].brand}">
+                                    </a>
+                                    <div class="chanel">${sections[i].products[3].brand}</div>   
+                                </div>
+                        </div>
+                        <a href="#jewerly">Shop ${sections[i].title}</a> 
+                    `;
+
+
+            squareDiv.innerHTML = squareHTML;
+            square.appendChild(squareDiv);
+            squareHTML = '';    
+        }
+
+    });
+}
+
+generateRowSquareImages();
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////// TRANSLATE TEXT ON THE WEBSITE /////////////////////////////////////////////
+/**
+ * @brief :This function handles the translation of text on the website based on the selected language.
+ * @note It uses a JSON file containing translations for different languages.
  */
 
-const sections = [
-    {
-        title: "Shop Leggings & Dresses",
-        linkText: "Shop Shirts & Dress",
-        //products: products.filter(p => p.categories.includes("watches") || p.categories.includes("computers")).slice(0, 4)
-        products: [
-          ...products.filter(p => p.categories.includes("shirts")).slice(0, 2),
+const languages = {
 
-          ...products.filter(p => p.categories.includes("dresses")).slice(0, 2)
-        ]
+    en: {
+
+        cart: "Cart",
+        returns: "Returns",
+        orders: "Orders",
+        hello: "Hello,",
+        sign_in: "Sign in",
+        account_lists: "Account & Lists",
+        deliver_to: "Deliver to ",
+        you: "you",
+        update_location: "Update location",
+        all: "All",
+        search_in: "Search in",
+        search: "Search on Amazon",
+        amazon_haul: "Amazon Haul",
+        prime: "Prime",
+        pharmacy: "Pharmacy",
+        customer_service: "Customer Service",
+        music: "Music",
+        amazon_home: "Amazon Home",
+        sports_outdoors: "Sports & Outdoors",
+        fashion: "Fashion",
+        toys_games: "Toys & Games",
+        medical_care: "Medical Care",
+        amazon_basics: "Amazon Basics",
+        best_sellers: "Best Sellers",
+        books: "Books",
+        new_releases: "New Releases",
+        registry: "Registry",
     },
 
-    {
-        title: "Shop Watches & Tablets Picks",
-        linkText: "Shop Saks on Amazon",
-        products: [
-          ...products.filter(p => p.categories.includes("watches")).slice(0, 2),
+    es: {
 
-          ...products.filter(p => p.categories.includes("tablets")).slice(0, 2)
-        ]
+        cart: "Carrito",
+        returns: "Devoluciones",
+        orders: "Pedidos",
+        hello: "Hola,",
+        sign_in: "Iniciar sesión",
+        account_lists: "Cuenta y Listas",
+        deliver_to: "Entregar a ",
+        you: "tú",
+        update_location: "Actualizar ubicación",
+        all: "Todo",
+        search_in: "Buscar en",
+        search: "Buscar en Amazon",
+        amazon_haul: "Amazon Haul",
+        prime: "Prime",
+        pharmacy: "Farmacia",
+        customer_service: "Servicio al Cliente",
+        music: "Música",
+        amazon_home: "Amazon Hogar",
+        sports_outdoors: "Deportes y Aire Libre",
+        fashion: "Moda",
+        toys_games: "Juguetes y Juegos",
+        medical_care: "Cuidado Médico",
+        amazon_basics: "Amazon Básico",
+        best_sellers: "Más Vendidos",
+        books: "Libros",
+        new_releases: "Nuevos Lanzamientos",
+        registry: "Registro"
     },
 
-    {
-        title: "Deals on Tech",
-        linkText: "Shop all tech deals",
-        products: [
-          ...products.filter(p => p.categories.includes("computers")).slice(0, 1),
-          ...products.filter(p => p.categories.includes("tablets")).slice(0, 1),
-          ...products.filter(p => p.categories.includes("watches")).slice(0, 1),
-          ...products.filter(p => p.categories.includes("watches")).slice(0, 1)
-        ]
-    },
+    fr: {
+        cart: "Panier",
+        returns: "Retours",
+        orders: "Commandes",
+        hello: "Bonjour,",
+        sign_in: "Connectez-vous",
+        account_lists: "Compte et Listes",
+        deliver_to: "Livrer à ",
+        you: "vous",
+        update_location: "destination",
+        all: "Tout",
+        search_in: "Chercher dans",
+        search: "Chercher sur Amazon",
+        amazon_haul: "Amazon Haul",
+        prime: "Prime",
+        pharmacy: "Pharmacie",
+        customer_service: "Service Client",
+        music: "Musique",
+        amazon_home: "Amazon Maison",
+        sports_outdoors: "Sports et Plein Air",
+        fashion: "Mode",
+        toys_games: "Jouets et Jeux",
+        medical_care: "Soins Médicaux",
+        amazon_basics: "Amazon Basique",
+        best_sellers: "Meilleures Ventes",
+        books: "Livres",
+        new_releases: "Nouveautés",
+        registry: "Registre"
 
-    {
-        title: "Trending Watches",
-        linkText: "See all watches",
-        products: products.filter(p => p.categories.includes("watches")).slice(0, 4)
     }
-];
+};
 
-const rowElement = document.querySelectorAll('.row-container');
-const squareElement = document.querySelector('.title-four-picture-container');
+// Change language function
 
-let squareHTML = '';
+function changeLanguage(language){
 
-rowElement.forEach(square => {
-    for(let i = 0; i < 4; ++i){
-        
-        const squareDiv = document.createElement('div');
-        squareDiv.classList.add('title-four-picture-container');
+    const dictionary = languages[language];
 
-        squareHTML += `<span>${sections[i].title}</span>
-                    <div class="first-square-container">
-                            <div class="first-square-first-column">
-                                <a class="a-link-dolce-gabana" href="${sections[i].products[0].productPage}.html?id=${sections[i].products[0].id}">
-                                    <img class="container1-img" src="${sections[i].products[0].images.cartImageConfiramation}" alt="${sections[i].products[0].brand}">
-                                </a>
-                                <div class="chanel">${sections[i].products[0].brand}</div>
-                                <a class="a-link-dolce-gabana" href="${sections[i].products[1].productPage}.html?id=${sections[i].products[1].id}">
-                                    <img class="container1-img" src="${sections[i].products[1].images.cartImageConfiramation}" alt="${sections[i].products[1].brand}">
-                                </a>
-                                <div class="chanel">${sections[i].products[1].brand}</div>   
-                            </div>
-                        
-                            <div class="first-square-first-column">
-                                <a class="a-link-dolce-gabana" href="${sections[i].products[2].productPage}.html?id=${sections[i].products[2].id}">
-                                    <img class="container1-img" src="${sections[i].products[2].images.cartImageConfiramation}" alt="${sections[i].products[2].brand}">
-                                </a>
-                                <div class="chanel">${sections[i].products[2].brand}</div>
-                                <a class="a-link-dolce-gabana" href="${sections[i].products[3].productPage}.html?id=${sections[i].products[3].id}">
-                                    <img class="container1-img" src="${sections[i].products[3].images.cartImageConfiramation}" alt="${sections[i].products[3].brand}">
-                                </a>
-                                <div class="chanel">${sections[i].products[3].brand}</div>   
-                            </div>
-                    </div>
-                    <a href="#jewerly">Shop ${sections[i].title}</a> 
-                `;
+    // Text
 
+    document.querySelectorAll("[data-i18n]").forEach(element=>{
 
-          squareDiv.innerHTML = squareHTML;
-          square.appendChild(squareDiv);
-          squareHTML = '';    
-    }
+        const key = element.dataset.i18n;
+
+        if(dictionary[key]){
+
+            element.textContent = dictionary[key];
+
+        }
+
+    });
+
+    // Placeholder
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(element=>{
+
+        const key = element.dataset.i18nPlaceholder;
+
+        if(dictionary[key]){
+
+            element.placeholder = dictionary[key];
+
+        }
+
+    });
+
+    localStorage.setItem("language",language);
+
+}
+
+// Radio buttons events
+const radios = document.querySelectorAll("input[name='language']");
+
+radios.forEach(radio=>{
+
+    radio.addEventListener("change",()=>{
+
+        changeLanguage(radio.value);
+
+    });
 
 });
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+// Restore language on page load
+const savedLanguage = localStorage.getItem("language") || "en";
+
+changeLanguage(savedLanguage);
+
+document.querySelector(
+
+`input[value="${savedLanguage}"]`
+
+).checked = true;
+///////////////////////////////////////////////////////////////////////////////////////
+
 /**
  * This code display the user username on the navbar
  */
@@ -610,5 +875,76 @@ searchInput.addEventListener("keydown", event => {
 );
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////// PLAY VIDEO ONLY IF VIDEO IS VISIBLE IN THE VIEWPORT ////////////////////////////////////////////
+
+const carouselVideos = document.querySelectorAll(".video-carousel");
+
+const videoObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      const video = entry.target;
+
+      if (entry.isIntersecting) {
+        video.muted = true;
+        video.play().catch(error => {
+          console.warn("Video autoplay blocked:", error);
+        });
+      } else {
+        video.pause();
+      }
+    });
+  },
+  {
+    threshold: 0.6
+  }
+);
+
+carouselVideos.forEach(video => {
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  videoObserver.observe(video);
+});
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////// NAVIGATE THE COLORED CAROUSEL /////////////////////////////
+/**
+ * @brief :This function handles the carousel functionality 
+ * including next/previous item navigation.
+ * @note Handles carousel functionality per carousel instance
+ */
+
+document.querySelectorAll('.carousel-square').forEach(carousel => {
+  const trackSquareCarousel = carousel.querySelector('.carousel-square-track');
+  const leftBtnSquareCarousel = carousel.querySelector('.arrow-square.left-square');
+  const rightBtnSquareCarousel = carousel.querySelector('.arrow-square.right-square');
+  const scrollAmountSquareCarousel = 300;
+  const toleranceSquareCarousel = 2;
+
+  function navigateCarousel() {
+    const maxScrollLeft = trackSquareCarousel.scrollWidth - trackSquareCarousel.clientWidth;
+
+    leftBtnSquareCarousel.disabled = trackSquareCarousel.scrollLeft <= toleranceSquareCarousel;
+    rightBtnSquareCarousel.disabled = trackSquareCarousel.scrollLeft >= maxScrollLeft - toleranceSquareCarousel;
+  }
+
+  leftBtnSquareCarousel.addEventListener('click', e => {
+    e.preventDefault(); // Prevent the link from opening the href or url
+    trackSquareCarousel.scrollBy({ left: -scrollAmountSquareCarousel, behavior: 'smooth' });
+  });
+
+  rightBtnSquareCarousel.addEventListener('click', e => {
+    e.preventDefault(); // Prevent the link from opening the href or url
+    trackSquareCarousel.scrollBy({ left: scrollAmountSquareCarousel, behavior: 'smooth' });
+  });
+
+  trackSquareCarousel.addEventListener('scroll', navigateCarousel);
+  window.addEventListener('load', navigateCarousel);
+  window.addEventListener('resize', navigateCarousel);
+});
+
+//////////////////////////////////////////////////////////////////
 
 
