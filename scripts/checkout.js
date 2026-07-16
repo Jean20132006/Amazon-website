@@ -1228,7 +1228,7 @@ bigCarouselGenerator(matchingProduct);
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
+//////////////////////// NAVIGATION OF BIG CAROUSEL IN ELECTRONICS AND CLOTHING////////////////////////////////////////////
 
     /**
      * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
@@ -1595,7 +1595,7 @@ function renderVideoCarouselForSimilarProducts(matchProduct){
 
 renderVideoCarouselForSimilarProducts(matchingProduct);
 
-///////////////////////// HANDLES VIDEO CAROUSEL FUNCTIONALITY ////////////////////////////
+///////////////////////// HANDLES VIDEO CAROUSEL NAVIGATION ////////////////////////////
 /**
  * @brief This script handles carousel video functionality
  */

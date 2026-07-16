@@ -294,7 +294,7 @@ document.querySelectorAll('.carousel-section').forEach((carousel, index) => {
 function generateMultipleCarousel(){
     const carousels = [
     { title: "Selected for you", filteredItems : products.filter(p => p.categories[1] === matchItem.categories[1]) },
-    { title: "Smart Watches", filteredItems : products.filter(p => p.categories[1] === "watches") },
+    { title: "Beverages", filteredItems : products.filter(p => p.categories[1] === "beverages") },
     { title: "Top Rated", filteredItems : products.filter(p => p.rating.average >= 4.5) },
     { title: "laptos & Accesories", filteredItems : products.filter(p => p.categories[1] === "laptops") },
     { title: "tablets", filteredItems : products.filter(p => p.categories[1] === "tablets") }
@@ -570,9 +570,9 @@ generateFirstRowSquareImages();
 function generateRowSquareImages() {
     const sections = [
         {
-            title: "Shop Leggings & Dresses",
+            title: "Keep Shopping for",
             linkText: "Shop Shirts & Dress",
-            //products: products.filter(p => p.categories.includes("watches") || p.categories.includes("computers")).slice(0, 4)
+            //products: products.filter(p => p.categories[1] === matchItem.categories[1]).slice(0, 4)
             products: [
             ...products.filter(p => p.categories.includes("shirts")).slice(0, 2),
 
@@ -945,6 +945,458 @@ document.querySelectorAll('.carousel-square').forEach(carousel => {
   window.addEventListener('resize', navigateCarousel);
 });
 
-//////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
 
 
+// First colored row of squares images
+
+const firstRowSlides = [
+  {
+    type: "video",
+    href: "search.html?q=clothing",
+    smallTitle: "Trending now",
+    boldTitle: "Shop the summer color edit",
+    video: "images/men-shoes/shop-summer-video.mp4",
+    poster: "images/men-shoes/shop-summer.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "New releases",
+    boldTitle: "World's smallest smart ring",
+    video: "images/men-shoes/ring.mp4",
+    poster: "images/men-shoes/ring-img.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Spend less on college tech",
+    boldTitle: "Laptops starting at $200",
+
+    // Select four products from the products array.
+    category: "computers",
+
+    // Optional image behind the four product images.
+    poster: "images/men-shoes/computer.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    primeTitle: "Buy a new car, get a $1,000 gift card*",
+    primeSubtitle: "Prime members exclusive",
+    logo: "images/men-shoes/amazon-autos.png",
+    disclaimer:
+      "*Amazon.com gift card. Select areas. Terms apply.",
+    video: "images/men-shoes/car.mp4",
+    poster: "images/men-shoes/car-poster.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "College must-haves",
+    boldTitle: "Shop our 29+ water bottles",
+    video: "images/men-shoes/water-bottle.mp4",
+    poster: "images/men-shoes/stanley.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    boldTitle: "Top 100+ first apartment finds",
+    titleClass: "image-title-bold-prime",
+    category: "shirts",
+    poster: "images/men-shoes/tv.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Premium brands",
+    boldTitle: "Shop summer finds under $100",
+    category: "clothing",
+    poster: "images/men-shoes/Summer.jpg"
+  },
+
+  {
+    type: "image",
+    href: "#",
+    smallTitle: "Spend less every day",
+    boldTitle: "Shop summer favorites under $50",
+    image: "images/men-shoes/stanley.jpg",
+    imageAlt: "Summer favorites"
+  }
+];
+
+const secondRowSlides = [
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "Trending now",
+    boldTitle: "Shop the summer color edit",
+    video: "images/men-shoes/kid-water-bottle-video.mp4",
+    poster: "images/men-shoes/kid-water-bottle.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Shop & Save",
+    boldTitle: "Deals on Amazon Devices",
+
+    // Select four products from the products array.
+    category: "computers",
+
+    // Optional image behind the four product images.
+    poster: "images/men-shoes/amazon_devices.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "Shop deals on clothes & more",
+    boldTitle: "Ready-fit under $50",
+    video: "images/men-shoes/college-fit.mp4",
+    poster: "images/men-shoes/college-fit-poster.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    boldTitle: "Top 100+ first apartment finds",
+    titleClass: "image-title-bold-prime",
+    category: "shirts",
+    poster: "images/men-shoes/tv.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Premium brands",
+    boldTitle: "Shop summer finds under $100",
+    category: "clothing",
+    poster: "images/men-shoes/Summer.jpg"
+  },
+
+  {
+    type: "image",
+    href: "#",
+    smallTitle: "Spend less every day",
+    boldTitle: "Shop summer favorites under $50",
+    image: "images/men-shoes/stanley.jpg",
+    imageAlt: "Summer favorites"
+  }
+];
+
+const thirdRowSlides = [
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "Trending now",
+    boldTitle: "Shop the summer color edit",
+    video: "images/men-shoes/shop-summer-video.mp4",
+    poster: "images/men-shoes/shop-summer.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "New releases",
+    boldTitle: "World's smallest smart ring",
+    video: "images/men-shoes/ring.mp4",
+    poster: "images/men-shoes/ring-img.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Spend less on college tech",
+    boldTitle: "Laptops starting at $200",
+
+    // Select four products from the products array.
+    category: "computers",
+
+    // Optional image behind the four product images.
+    poster: "images/men-shoes/computer.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    primeTitle: "Buy a new car, get a $1,000 gift card*",
+    primeSubtitle: "Prime members exclusive",
+    logo: "images/men-shoes/amazon-autos.png",
+    disclaimer:
+      "*Amazon.com gift card. Select areas. Terms apply.",
+    video: "images/men-shoes/car.mp4",
+    poster: "images/men-shoes/car-poster.jpg"
+  },
+
+  {
+    type: "video",
+    href: "#",
+    smallTitle: "College must-haves",
+    boldTitle: "Shop our 29+ water bottles",
+    video: "images/men-shoes/water-bottle.mp4",
+    poster: "images/men-shoes/stanley.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    boldTitle: "Top 100+ first apartment finds",
+    titleClass: "image-title-bold-prime",
+    category: "shirts",
+    poster: "images/men-shoes/tv.jpg"
+  },
+
+  {
+    type: "products",
+    href: "#",
+    smallTitle: "Premium brands",
+    boldTitle: "Shop summer finds under $100",
+    category: "clothing",
+    poster: "images/men-shoes/Summer.jpg"
+  },
+
+  {
+    type: "image",
+    href: "#",
+    smallTitle: "Spend less every day",
+    boldTitle: "Shop summer favorites under $50",
+    image: "images/men-shoes/stanley.jpg",
+    imageAlt: "Summer favorites"
+  }
+];
+
+/*Reusable carousel function*/
+
+function renderDynamicCarousel(trackSelector, slides, products) {
+  const carouselTrack = document.querySelector(trackSelector);
+
+  if (!carouselTrack) {
+    console.warn(`Carousel not found: ${trackSelector}`);
+    return;
+  }
+
+  const leftArrow = carouselTrack.querySelector(".left-square");
+  const rightArrow = carouselTrack.querySelector(".right-square");
+
+  function getProductImage(product) {
+    return product?.images?.main || "images/placeholder.jpg";
+  }
+
+  function getProductUrl(product) {
+    return `${product.productPage}.html?id=${encodeURIComponent(product.id)}`;
+  }
+
+  function getProductsByCategory(category, count = 4) {
+    if (!category) {
+      return products.slice(0, count);
+    }
+
+    return products
+      .filter(product =>
+        product.categories?.some(productCategory =>
+          productCategory.toLowerCase() === category.toLowerCase()
+        )
+      )
+      .slice(0, count);
+  }
+
+  function getProductsByIds(productIds = []) {
+    return productIds
+      .map(id => products.find(product => product.id === id))
+      .filter(Boolean)
+      .slice(0, 4);
+  }
+
+  function createProductRow(rowProducts) {
+    return `
+      <div class="two-items-container">
+        ${rowProducts.map(product => `
+          <div class="two-item-img">
+            <a
+              href="${getProductUrl(product)}"
+              aria-label="${product.shortTitle || product.title}"
+            >
+              <img
+                src="${getProductImage(product)}"
+                alt="${product.shortTitle || product.title}"
+                loading="lazy"
+              >
+            </a>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function createFourProductImages(slide) {
+    let selectedProducts;
+
+    if (Array.isArray(slide.productIds)) {
+      selectedProducts = getProductsByIds(slide.productIds);
+    } else {
+      selectedProducts = getProductsByCategory(slide.category, 4);
+    }
+
+    if (!selectedProducts.length) {
+      return `
+        <div class="four-items-container">
+          <p>No matching products found.</p>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="four-items-container">
+        ${createProductRow(selectedProducts.slice(0, 2))}
+        ${createProductRow(selectedProducts.slice(2, 4))}
+      </div>
+    `;
+  }
+
+  function createTitle(slide) {
+    return `
+      <div class="text-square-carousel">
+        ${
+          slide.smallTitle
+            ? `<span class="image-title-small">${slide.smallTitle}</span>`
+            : ""
+        }
+
+        ${
+          slide.boldTitle
+            ? `<span class="${slide.titleClass || "image-title-bold"}">
+                ${slide.boldTitle}
+              </span>`
+            : ""
+        }
+      </div>
+    `;
+  }
+
+  function createVideoSlide(slide) {
+    return `
+      <a
+        class="a-link-normal carousel-generated-slide"
+        href="${slide.href || "#"}"
+      >
+        <div class="image-carousel-square">
+          ${createTitle(slide)}
+
+          <video
+            class="video-carousel"
+            muted
+            autoplay
+            loop
+            playsinline
+            preload="metadata"
+            poster="${slide.poster || ""}"
+          >
+            <source src="${slide.video}" type="video/mp4">
+          </video>
+        </div>
+      </a>
+    `;
+  }
+
+  function createImageSlide(slide) {
+    return `
+      <a
+        class="a-link-normal carousel-generated-slide"
+        href="${slide.href || "#"}"
+      >
+        <div class="image-carousel-square">
+          ${createTitle(slide)}
+
+          <img
+            class="poster-img"
+            src="${slide.image}"
+            alt="${slide.imageAlt || slide.boldTitle || "Promotion"}"
+            loading="lazy"
+          >
+        </div>
+      </a>
+    `;
+  }
+
+  function createProductsSlide(slide) {
+    return `
+      <div class="a-link-normal carousel-generated-slide">
+        <div class="image-carousel-square">
+          ${createTitle(slide)}
+
+          ${
+            slide.poster
+              ? `
+                <img
+                  class="poster-img"
+                  src="${slide.poster}"
+                  alt="${slide.boldTitle || "Product collection"}"
+                  loading="lazy"
+                >
+              `
+              : ""
+          }
+
+          ${createFourProductImages(slide)}
+        </div>
+      </div>
+    `;
+  }
+
+  function createSlide(slide) {
+    switch (slide.type) {
+      case "video":
+        return createVideoSlide(slide);
+
+      case "image":
+        return createImageSlide(slide);
+
+      case "products":
+        return createProductsSlide(slide);
+
+      default:
+        console.warn("Unknown slide type:", slide.type);
+        return "";
+    }
+  }
+
+  const slidesMarkup = slides.map(createSlide).join("");
+
+  carouselTrack.innerHTML = "";
+
+  if (leftArrow) {
+    carouselTrack.appendChild(leftArrow);
+  }
+
+  carouselTrack.insertAdjacentHTML("beforeend", slidesMarkup);
+
+  if (rightArrow) {
+    carouselTrack.appendChild(rightArrow);
+  }
+}
+
+
+renderDynamicCarousel(
+  ".js-carousel-row-1",
+  firstRowSlides,
+  products
+);
+
+renderDynamicCarousel(
+  ".js-carousel-row-2",
+  secondRowSlides,
+  products
+);
+
+renderDynamicCarousel(
+  ".js-carousel-row-3",
+  thirdRowSlides,
+  products
+);

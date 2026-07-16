@@ -843,46 +843,6 @@ document.addEventListener("click", async (e) => {
 );
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
-
-/**
- * @brief when you click on the search button, we get the value and redirect to search.html
- */
-
-const searchButton = document.querySelector(".js-search-btn");
-
-searchButton.addEventListener("click", () => {
-
-        const searchText = document.querySelector(".js-search-input").value;
-
-        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
-
-    }
-);
-
-
-/////////////////////////////////////////////////////////////////////////////////////////
-/**
- * @brief Search on Enter Key
- */
-
-const searchInput = document.querySelector(".js-search-input");
-
-searchInput.addEventListener("keydown", event => {
-
-        if (event.key === "Enter") {
-
-            let searchText = searchInput.value;
-
-            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
-
-            
-        }
-    }
-);
-
 /**
  * @brief This part of code open each link depending on which link the user clicked
  *        encodeURIComponent: converts special characters into a safe format
@@ -923,4 +883,45 @@ document.querySelectorAll(".email").forEach(email => {
         window.location.href = `mailto:?subject=Check out this product&body=${window.location.href}`;
     });
 });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////// SEARCH IN THE SEARCH BAR CODE ///////////////////////////////////
+
+/**
+ * @brief when you click on the search button, we get the value and redirect to search.html
+ */
+
+const searchButton = document.querySelector(".js-search-btn");
+
+searchButton.addEventListener("click", () => {
+
+        const searchText = document.querySelector(".js-search-input").value;
+
+        window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+    }
+);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * @brief Search on Enter Key
+ */
+
+const searchInput = document.querySelector(".js-search-input");
+
+searchInput.addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            let searchText = searchInput.value;
+
+            window.location.href = `search.html?q=${encodeURIComponent(searchText)}`;
+
+            
+        }
+    }
+);
+
 

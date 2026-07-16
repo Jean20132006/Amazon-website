@@ -1207,7 +1207,7 @@
     "tablets",
     "accessories",
     "ipad",
-    "tablet"
+    "ipad case"
   ],
 
   images: {
@@ -1402,7 +1402,7 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
+    "ipad case",
     "iphone"
   ],
 
@@ -1598,7 +1598,7 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
+    "ipad case",
     "iphone"
   ],
 
@@ -1794,8 +1794,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -1990,8 +1990,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -2186,8 +2186,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -2382,8 +2382,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -2578,8 +2578,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -2774,8 +2774,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -2970,8 +2970,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -3166,8 +3166,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -3362,8 +3362,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -3558,8 +3558,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -3754,8 +3754,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -3953,8 +3953,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -4150,8 +4150,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad case",
+    "ipad protection"
   ],
 
   images: {
@@ -4360,8 +4360,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad protection"
   ],
 
   images: {
@@ -4570,8 +4570,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad case"
   ],
 
   images: {
@@ -4781,8 +4781,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "ipad",
+    "ipad case"
   ],
 
   images: {
@@ -4982,8 +4982,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad case"
   ],
 
   images: {
@@ -5183,8 +5183,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad case"
   ],
 
   images: {
@@ -5384,8 +5384,8 @@
     "electronics",
     "tablets",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad protection"
   ],
 
   images: {
@@ -5817,9 +5817,8 @@
     "laptops",
     "computers",
     "accessories",
-    "tablets",
-    "phone",
-    "iphone"
+    "tablets"
+    
   ],
 
   images: {
@@ -6031,12 +6030,12 @@
 
   categories: [
     "electronics",
-    "laptops",
+    "laptop",
     "computers",
+    "computer",
     "accessories",
-    "tablets",
-    "phone",
-    "iphone"
+    "tablets"
+    
   ],
 
   images: {
@@ -6252,8 +6251,8 @@
     "computers",
     "accessories",
     "tablets",
-    "phone",
-    "iphone"
+    "laptop",
+    "computer"
   ],
 
   images: {
@@ -6467,8 +6466,8 @@
     "electronics",
     "tablet",
     "accessories",
-    "phone",
-    "iphone"
+    "screen protector",
+    "ipad case"
   ],
 
   images: {
@@ -6677,8 +6676,8 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "watch",
+    "fitness tracker"
   ],
 
   images: {
@@ -6892,8 +6891,8 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "watch"
   ],
 
   images: {
@@ -7095,8 +7094,8 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "watch"
   ],
 
   images: {
@@ -7311,8 +7310,9 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "smartwatch",
+    "watch"
   ],
 
   images: {
@@ -7515,8 +7515,9 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "smartwatch",
+    "watch"
   ],
 
   images: {
@@ -7719,8 +7720,9 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "smartwatch",
+    "watch"
   ],
 
   images: {
@@ -7923,8 +7925,9 @@
     "electronics",
     "watches",
     "accessories",
-    "phone",
-    "iphone"
+    "fitness tracker",
+    "smartwatch",
+    "watch"
   ],
 
   images: {
@@ -8127,7 +8130,8 @@
   categories: [
     "clothing",
     "leggings",
-    "shirts",
+    "workout leggings",
+    "leggings for women",
     "pants",
     "activewear"
   ],
@@ -8350,7 +8354,8 @@
     "leggings",
     "workout",
     "yoga",
-    "shirts"
+    "legging",
+    "leggings for women",
   ],
 
   images: {
@@ -8573,7 +8578,8 @@
     "leggings",
     "workout",
     "yoga",
-    "shirts"
+    "legging",
+    "leggings for women"
   ],
 
   images: {
@@ -8796,10 +8802,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "shirt for women",
+    "t-shirt",
+    "t-shirts for women",  
   ],
 
   images: {
@@ -9018,9 +9023,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women",
     
   ],
 
@@ -9244,9 +9249,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women",
     
   ],
 
@@ -9471,10 +9476,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "shirt",
+    "t-shirt",
+    "t-shirts for women",  
   ],
 
   images: {
@@ -9700,10 +9704,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "shirt",
+    "t-shirt",
+    "t-shirts for women"  
   ],
 
   images: {
@@ -9924,10 +9927,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "shirt",
+    "t-shirt",
+    "t-shirts for women"   
   ],
 
   images: {
@@ -10148,10 +10150,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "shirt",
+    "t-shirt",
+    "t-shirts for women"  
   ],
 
   images: {
@@ -10358,9 +10359,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -10568,9 +10569,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -10778,9 +10779,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -10988,9 +10989,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -11198,9 +11199,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -11408,9 +11409,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -11618,9 +11619,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -11828,9 +11829,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -12038,9 +12039,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -12252,9 +12253,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -12478,9 +12479,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -12704,9 +12705,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -12930,9 +12931,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -13154,9 +13155,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -13379,9 +13380,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -13589,9 +13590,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -13799,9 +13800,9 @@
   categories: [
     "clothing",
     "shirts",
-    "leggings",
-    "workout",
-    "yoga"
+    "shirt",
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -14010,8 +14011,8 @@
     "clothing",
     "shirt",
     "shirts",
-    "workout",
-    "yoga"
+    "t-shirt",
+    "t-shirts for women" 
     
   ],
 
@@ -14234,10 +14235,8 @@
   categories: [
     "clothing",
     "dresses",
-    "leggings",
-    "workout",
-    "yoga"
-    
+    "dress",
+    "robe" 
   ],
 
   images: {
@@ -14460,9 +14459,9 @@
   categories: [
     "clothing",
     "dresses",
-    "leggings",
-    "workout",
-    "yoga"
+    "dress",
+    "women dress",
+    "robe" 
     
   ],
 
@@ -14685,7 +14684,8 @@
     "dress",
     "sexy dress",
     "outfit",
-    "yoga"
+    "women dress",
+    "robe" 
     
   ],
 
@@ -14904,9 +14904,7 @@
     "clothing",
     "men's shirts",
     "shirt",
-    "workout",
-    "yoga"
-    
+    "men outfit" 
   ],
 
   images: {
@@ -15572,6 +15570,7 @@
   categories: [
     "clothing",
     "shoes",
+    "shoe",
     "sneakers",
     "air jordan",
     "men's shoes"
