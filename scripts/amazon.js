@@ -5,7 +5,7 @@ let cart1 = [];
  * If authenticated, it fetches the user's profile data from the server.
  * @note This function runs once the DOM content is fully loaded.
  */
-document.addEventListener("DOMContentLoaded", async () => {
+/*document.addEventListener("DOMContentLoaded", async () => {
 
     const token = localStorage.getItem("token");
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = await response.json();
 
     //console.log(data);
-});
+});*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
