@@ -1018,7 +1018,7 @@ const firstRowSlides = [
     smallTitle: "Premium brands",
     boldTitle: "Shop summer finds under $100",
     category: "clothing",
-    poster: "images/men-shoes/Summer.jpg"
+    poster: "images/men-shoes/summer.jpg"
   },
 
   {
@@ -1078,7 +1078,7 @@ const secondRowSlides = [
     smallTitle: "Premium brands",
     boldTitle: "Shop summer finds under $100",
     category: "clothing",
-    poster: "images/men-shoes/Summer.jpg"
+    poster: "images/men-shoes/summer.jpg"
   },
 
   {
@@ -1159,7 +1159,7 @@ const thirdRowSlides = [
     smallTitle: "Premium brands",
     boldTitle: "Shop summer finds under $100",
     category: "clothing",
-    poster: "images/men-shoes/Summer.jpg"
+    poster: "images/men-shoes/summer.jpg"
   },
 
   {
