@@ -15227,7 +15227,7 @@
     pricePerUnit: 0.17
   },
   
-  backgroundImage: "images/big-images/gym-people-1.jpg",
+  backgroundImage: "images/big-images/beita-3.jpg",
   size: [
     "9.5",
     "10",
@@ -15450,7 +15450,7 @@
     pricePerUnit: 0.17
   },
   
-  backgroundImage: "images/big-images/gym-people-1.jpg",
+  backgroundImage: "images/big-images/beita-3.jpg",
   size: [
     "11",
     "11.5",
@@ -15671,7 +15671,7 @@
     pricePerUnit: 0.17
   },
   
-  backgroundImage: "images/big-images/gym-people-1.jpg",
+  backgroundImage: "images/big-images/beita-3.jpg",
   size: [
     "11",
     "11.5",
@@ -15776,7 +15776,233 @@
     }
   ]
 },
-/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+{
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9-d",
+
+  title: "Beita High Upper Basketball Shoes for Men Sneakers Breathable Sports Shoes Anti Slip",
+
+  shortTitle: "Beita High Upper Basketball Shoes for Men Sneakers Breathable Sports Shoes Anti Slip",
+
+  brand: "Beita",
+
+  productPage: "checkoutClothesComputer",
+
+  categories: [
+    "clothing",
+    "shoes",
+    "shoe",
+    "sneakers",
+    "air jordan",
+    "men's shoes"
+  ],
+
+  images: {
+    main: "images/men-shoes/keita.jpg",
+     
+    
+    gallery: [
+      "images/small-images/beita-1.jpg",
+      "images/small-images/beita-2.jpg",
+      "images/small-images/beita-3.jpg",
+      "images/small-images/beita-4.jpg",
+      "images/small-images/beita-5.jpg",
+      "images/small-images/beita-1.jpg"
+      
+    ],
+    reviews: [
+      "images/review-carousel/beita-1.jpg",
+      "images/review-carousel/beita-2.jpg",
+      "images/review-carousel/beita-3.jpg",
+      "images/review-carousel/beita-4.jpg",
+      "images/review-carousel/beita-5.jpg",
+      "images/review-carousel/beita-2.jpg",
+      "images/review-carousel/beita-3.jpg",
+      "images/review-carousel/beita-4.jpg",
+      "images/review-carousel/beita-1.jpg",
+      "images/review-carousel/beita-5.jpg"
+    ],
+
+    advertisementImages1: [
+      
+    ],
+
+    advertisementImages2: [
+      
+    ],
+
+    cartImageConfiramation: "images/men-shoes/keita.jpg"
+  },
+
+  videos : {
+    advertisement: "images/gallery-videos/xidiso.mp4",
+    galleryVideos : [
+      "images/gallery-videos/aura.mp4",
+      "images/gallery-videos/gym-people-video-2.mp4",
+      "images/gallery-videos/gym-people-video-3.mp4"
+    ],
+    galleryVideosImages : [
+      "images/gallery-videos/aura-img.jpg",
+      "images/small-images/small-gym-people-2.jpg",
+      "images/small-images/small-gym-people-3.jpg"
+    ],
+    advertisementVideosImages : [
+      "images/small-images/xidiso-2-img.jpg",
+      "images/small-images/xidiso-2-img.jpg"
+    ],
+    advertisementVideosText : "SANNAX Fashion Shoes for Mens High Top Casual Walking Shoes Non Slip..."
+  },
+
+  manifacturer: {                                                      // not used here
+    image1: "images/manufacturer-images/twinings-manu-1.jpg",
+    image2: "images/manufacturer-images/twinings-manu-2.jpg",
+    image3: "images/manufacturer-images/twinings-manu-3.jpeg",
+    thirdRowImages: [
+      "images/manufacturer-images/twinings-manu-4.jpg",
+      "images/manufacturer-images/twinings-manu-1.jpg",
+      "images/manufacturer-images/twinings-manu-4.jpg"
+    ],
+    fourthRowImage: "images/manufacturer-images/twinings-manu-4.jpg",       // not used here
+    
+    selectMore : [                                               
+      "Fit",
+      "Quality",
+      "Comfort",
+      "Appearence",
+      "Color",
+      "Softness",
+      "Material",
+      "Size"
+    ],
+
+    bigImages : [
+      "images/big-images/beita-1.jpg",
+      "images/big-images/beita-2.jpg",
+      "images/big-images/beita-3.jpg"
+    
+    ]
+  },
+  fourthBigCarouselTitle: "Nike Unisex Adult Giannis Immortality 4 Basketball Shoes",
+
+  price: {
+    priceDollar: 53,
+    priceCents: 99,
+    currentPrice: 53.99,
+    currentPriceInCents: 5399,
+    currency: "USD",
+    discountPercent: 0,
+    pricePerUnit: 0.17
+  },
+  
+  backgroundImage: "images/big-images/beita-3.jpg",
+  size: [
+    "9",
+    "9.5",
+    "10",
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "13.5",
+    "14"
+  ],
+
+  rating: {
+    average: 4.3,
+    totalReviews: 4408,
+    breakdown: {
+      fiveStar: 70,
+      fourStar: 18,
+      threeStar: 7,
+      twoStar: 3,
+      oneStar: 2
+    }
+  },
+
+  productDetails : [
+    "Brand Name: Beita",
+    "Outer: leather",
+    "Inner material: Fleece",
+    "Care instructions: Hand Wash Only",
+    "Origin: Imported",
+    "Closure type: Lace-up"
+  ],
+
+  inventory: {
+    totalStock: 420,
+    warehouses: [
+      { location: "MD Fulfillment Center", stock: 180 },
+      { location: "TX Fulfillment Center", stock: 240 }
+    ]
+  },
+
+  variants: [
+    {
+      color: "Classic Blue",
+      size: "17 oz Bottle",
+      pack: "1 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-1"
+    },
+    {
+      flavor: "Ginger",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-2"
+    },
+    {
+      flavor: "herbal",
+      size: "17 oz Bottle",
+      pack: "100 Pack",
+      asin: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e-3"
+    }
+  ],
+
+  shipping: {
+    primeEligible: false,
+    freeShipping: false,
+    estimatedDelivery: 3,
+    weight: "1.2 lb"
+  },
+
+  seller: {
+    sellerId: "SELL84729",
+    name: "FastRun Official Store",
+    rating: 4.3,
+    totalSales: 152000
+  },
+
+  about: [
+    "【Breathable Mesh Upper】 Basketball shoes for men, Lightweight textile upper offers flexibility.",
+    "【Anti slip Rubber Sole】 Mens basketball shoes, rubber outsole with its distinct anti-skid, comfortable and well wear-resistant.",
+    "【Comfortable Insole】 Breathable Insole, thick,you can keep your shoes dry and comfortable after long time walking or exercise.",
+    "❤【Protective and Support】 High top shoes style, attached ankle closely, Protecting your ankle from damage."
+  ], 
+    
+    
+  description: " ",
+
+  features: [
+    "See package for ingredients"
+  ],
+
+  reviews: [
+    {
+      user: "Michael",
+      rating: 5,
+      title: "Great running shoes",
+      comment: "Very comfortable and lightweight.",
+      date: "2026-01-12"
+    },
+    {
+      user: "Sarah",
+      rating: 4,
+      title: "Nice shoes",
+      comment: "Good value but runs slightly small.",
+      date: "2026-02-03"
+    }
+  ]
+},
 
 ];
 
