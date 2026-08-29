@@ -10,7 +10,7 @@
  * 
  */
 
-const createAccountContainer =
+/*const createAccountContainer =
     document.querySelector('.create-account');
 
 const enterUsername =
@@ -268,5 +268,6 @@ form.addEventListener('submit', async (event) => {
         
     }
     
+});*/
 });
 
