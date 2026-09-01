@@ -725,3 +725,51 @@ body{
     font-weight: bold;
     font-size: 16px;
 }
+
+/* ============================================================
+   MOBILE RESPONSIVE OVERRIDES (added)
+   These selectors were hardcoded to fixed desktop pixel widths
+   (700-1760px) above. On a phone screen, a fixed width wider
+   than the device forces the whole page's layout viewport to
+   widen to fit it - even with a correct viewport meta tag - which
+   is why every page required zooming out to see properly. This
+   block does not touch any rule above; it only adds a mobile
+   override that takes priority at narrow widths via the media
+   query and appearing later in the file.
+   ============================================================ */
+@media (max-width: 1500px) {
+.nav-bar-add-to-cart,
+.add-to-cart-content,
+.header-add-to-cart,
+.add-to-cart-picture-procceed-to-checkout,
+.add-to-cart-picture,
+.add-to-cart-carousel-container2,
+.add-to-cart-carousel2,
+.add-to-cart-carosel-page2,
+.add-to-cart-title-pagenum-container,
+.add-to-cart-first-carousel-container,
+.add-to-cart-first-carousel,
+.add-to-cart-first-carosel-page,
+.add-to-cart-title,
+.add-to-cart-title1-section,
+.add-to-cart-title1-container,
+.personalized-recom,
+.go-to-top,
+.links,
+.before-footer-links,
+.title1-container,
+.title1-hr,
+.checkout-carousel,
+.checkout-carosel-page,
+.title-pagenum-container,
+.last-bottom-container,
+.last-links-container,
+.conditions-of-use-copyright-container,
+.conditions-of-use-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+    box-sizing: border-box !important;
+}
+}
