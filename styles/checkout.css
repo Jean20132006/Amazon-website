@@ -13,6 +13,20 @@
   .conditions-of-use-container span:nth-child(3){
     display: none;
   }
+  .conditions-of-use-container{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+  .last-links-column:last-child {
+    display: none;
+  }
+}
+@media (max-width:404px){
+  .bottom-button.flag{
+    display: none;
+  }
 }
 .image-name-checkout-container{
     display: flex;
