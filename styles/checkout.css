@@ -2678,8 +2678,7 @@
 
 
 /* ================================ RESPONSIVE ================================ */
-/* Every section is: .leftpage (spacer) + content + .rightpage (spacer).
-   The content was a fixed 1460px; now it fills the screen up to 1460px. */
+
 .leftpage + *{
     width: 100%;
     max-width: 1460px;
@@ -2871,7 +2870,6 @@ video{
 .personalized-recom,
 .signin-bottom-button,
 .go-to-top,
-.links,
 .fourth-column,
 .before-footer-links,
 .last-links-container,
@@ -3133,12 +3131,20 @@ video{
     .third-column,
     .fourth-column{
         align-items: center;
-        text-align: center;
+        /*text-align: center;*/
     }
 }
 /* Tablets and phones: the size buttons of clothing items (checkoutClothesComputer.html) are hidden */
 @media (max-width: 900px){
     .items-size{
         display: none;
+    }
+
+    .links{
+      flex-wrap: wrap;
+    }
+    .first-column{
+      flex: 0 1 calc(33.33% - 13.33px);
+      text-align: left;
     }
 }
