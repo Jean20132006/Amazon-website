@@ -1,11 +1,11 @@
 body{
     background-color: white !important;
-    
+
     border-radius: 5px;
 }
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* *: Apply margin: 0 to every element on the page. 
+/* *: Apply margin: 0 to every element on the page.
    *::before: It targets every ::before pseudo-element
    box-sizing: border-box: Makes the size of item to stay same even if you
                add padding, border etc. if the width is 300px, it remains 300px
@@ -27,20 +27,27 @@ body{
     --text-primary: #f5f0e8;
     --text-muted: rgba(245, 240, 232, 0.55);
     --shadow-deep: rgba(0, 0, 0, 0.15);*/
+
+    /* Product cards: how many per row and the space between them (changed in the media queries below) */
+    --search-cards-per-row: 5;
+    --search-cards-gap: clamp(8px, 0.7vw, 10px);
   }
 
 .number-of-result-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    width: 1760px;
-    height: 50px;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 1760px;
+    min-width: 0;
+    min-height: clamp(40px, 3.4vw, 50px);
     border-bottom: 1px solid rgb(202, 201, 201);
     margin-top: 110px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: clamp(13px, 1.1vw, 16px);
     font-weight: 600;
-    padding: 10px;
+    padding: clamp(6px, 0.7vw, 10px);
     box-shadow:
     0 4px 5px rgba(0,0,0,.15);
 }
@@ -49,19 +56,23 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 1;
     /*gap: 20px;*/
     height: auto;
-    width: 1760px;
-    margin-top: 30px;
+    width: 100%;
+    max-width: 1760px;
+    min-width: 0;
+    margin-top: clamp(15px, 2vw, 30px);
 }
 
+/* The empty left column and the results keep their original 280 / 1470 proportion */
 .search-left-page{
     /*border: 1px solid blue;*/
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 280px;
+    flex: 0 1 280px;
+    min-width: 0;
     height: auto;
 }
 
@@ -71,7 +82,8 @@ body{
     flex-direction: column;
     align-items: center;
     /*gap: 10px;*/
-    width: 1470px;
+    flex: 0 1 1470px;
+    min-width: 0;
     height: auto;
 }
 
@@ -83,9 +95,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    gap: 10px;
-    width: 1470px;
+    gap: clamp(6px, 0.7vw, 10px);
+    width: 100%;
     height: auto;
     background-color: #f8f9fa;
 }
@@ -93,11 +104,15 @@ body{
 .search-advertissement-section a{
     text-decoration: none;
     color: black;
+    flex: 0 1 350px;
+    min-width: 0;
 }
 
 .search-advert-video{
     width: 600px;
-    height: 350px;
+    max-width: 45%;
+    height: auto;
+    aspect-ratio: 600 / 350;
     object-fit: contain;
 }
 
@@ -107,28 +122,30 @@ body{
     flex-direction: column;
     align-items: center;
     /*gap: 10px;*/
-    width: 350px;
+    width: 100%;
     border-radius: 5px;
 }
 
 .advert-image{
     width: 300px;
-    height: 240px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 300 / 240;
     object-fit: contain;
     background-color: #f8f9fa;
-    padding-bottom: 10px;
+    padding-bottom: clamp(6px, 0.7vw, 10px);
 }
 
 .search-advert-text{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     color: black;
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: clamp(6px, 0.7vw, 10px);
+    padding-right: clamp(6px, 0.7vw, 10px);
 }
 
 .search-star-rating-review{
@@ -137,17 +154,18 @@ body{
     align-items: center;
     justify-content: left;
     gap: 5px;
-    width: 348px;
+    width: 100%;
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: clamp(6px, 0.7vw, 10px);
+    padding-right: clamp(6px, 0.7vw, 10px);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: clamp(13px, 1.1vw, 16px);
 }
 
 .search-star-rating-review img{
-    width: 80px;
-    height: 30px;
+    width: clamp(64px, 5.5vw, 80px);
+    height: clamp(24px, 2vw, 30px);
     object-fit: contain;
 }
 
@@ -156,10 +174,9 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    flex-shrink: 0;
-    width: 1470px;
+    width: 100%;
     /*font-family: Nunito, Arial, Helvetica, sans-serif;*/
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     color: grey;
 }
 
@@ -167,12 +184,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    width: 1470px;
+    width: 100%;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 1.65vw, 24px);
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: clamp(15px, 2vw, 30px);
 }
 
 .bi.bi-info-circle-fill{
@@ -184,20 +200,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items: left;
-    flex-shrink: 0;
-    gap: 15px;
-    width: 1470px;
+    gap: clamp(10px, 1vw, 15px);
+    width: 100%;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    
+
 }
 
+/* All the cards are in this one row (see search.js); they wrap to the next line */
 .search-products-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: top;
-    flex-shrink: 0;
-    gap: 10px;
-    width: 1470px;
+    column-gap: var(--search-cards-gap);
+    row-gap: clamp(10px, 1vw, 15px);
+    width: 100%;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color: black;
 
@@ -208,7 +225,7 @@ body{
     flex-direction: column;
     align-items: left;
     gap: 5px;
-    width: 285px;
+    width: 100%;
     height: auto;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     /*background: #0d0a14;*/
@@ -219,7 +236,7 @@ body{
     #00ff85,
     #00f5ff
   );
-    
+
 
 }
 
@@ -229,15 +246,16 @@ body{
     flex-direction: column;
     align-items: left;
     gap: 5px;
-    width: 285px;
+    width: calc((100% - (var(--search-cards-per-row) - 1) * var(--search-cards-gap)) / var(--search-cards-per-row));
+    min-width: 0;
     height: auto;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color: black;
     font-weight: 600;
-    
-    
+
+
     position: relative;
-    border-radius: 28px;
+    border-radius: clamp(18px, 1.9vw, 28px);
     background: var(--glass-bg);
     backdrop-filter: blur(24px) saturate(180%);
     -webkit-backdrop-filter: blur(24px) saturate(180%); /*backdrop-filter: Blurs what's behind the element*/
@@ -260,7 +278,7 @@ body{
 .brand{
     font-weight: bold;
     font-size: 26px;
-    font-family: 'Cormorant Garamond', serif; font-size: 20px;
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(16px, 1.4vw, 20px);
 }
 
 
@@ -269,17 +287,17 @@ body{
     /*display: flex;
     align-items: center;
     justify-content: center;*/
-    width: 283px;
-    height: 280px;
+    width: 100%;
+    height: clamp(170px, 19vw, 280px);
     object-fit: contain;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    padding-top: 20px;
+    border-top-left-radius: clamp(18px, 1.9vw, 28px);
+    border-top-right-radius: clamp(18px, 1.9vw, 28px);
+    padding-top: clamp(10px, 1.4vw, 20px);
     transition: transform 0.6s ease-in-out;
 
 }
 
-.card__image-wrap { position: relative; height: 280px; overflow: hidden; background-color: white}
+.card__image-wrap { position: relative; height: clamp(170px, 19vw, 280px); overflow: hidden; background-color: white}
 
 .card__image-wrap::before {
     content: '';
@@ -303,7 +321,7 @@ body{
 
     filter: blur(20px);
     z-index: 0;
-    
+
 }
 
 .card__image-wrap img {
@@ -316,11 +334,13 @@ body{
 .footer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 6px;
     border-top: 1px solid rgba(255,255,255,0.4);
     background: rgba(255,255,255,0.5);
-    padding: 18px 24px;
+    padding: clamp(10px, 1.2vw, 18px) clamp(10px, 1.6vw, 24px);
 }
 
 .shopping-cart-price-indollar{
@@ -329,8 +349,8 @@ body{
     align-items: top;
     /*font-family: Nunito, sans-serif;*/
     font-family: 'Cormorant Garamond', serif;
-    font-weight: bold; 
-    color: black;  
+    font-weight: bold;
+    color: black;
 }
 
 .shopping-cart-dollar-sign{
@@ -341,7 +361,7 @@ body{
 
 .bi.bi-currency-dollar{
     font-weight: bold;
-    
+
 }
 
 .shopping-cart-cents{
@@ -353,7 +373,7 @@ body{
 }
 
 .shopping-cart-dollars-amount{
-    font-size: 24px;
+    font-size: clamp(18px, 1.65vw, 24px);
     font-weight: bold;
 }
 
@@ -365,18 +385,20 @@ body{
     justify-content: left;
     gap: 5px;
     /*width: 300px;*/
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     color: rgb(31, 31, 31);
 
 }
 
 .search-star-rating-review2 img{
-    width: 70px;
-    height: 18px;
+    width: clamp(56px, 4.8vw, 70px);
+    height: auto;
 }
 
 .add-to-cart-carousel-add-to-cart-button{
-    width: 120px;
+    width: clamp(96px, 8.2vw, 120px);
+    max-width: 100%;
+    font-size: clamp(13px, 1vw, 15px);
     color: black;
     font-weight: 600;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -392,10 +414,12 @@ body{
 .search-delivery-date{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
     /*font-family: Nunito, Arial, Helvetica, sans-serif;*/
     font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(13px, 1.1vw, 16px);
     color: black;
 
 }
@@ -403,13 +427,13 @@ body{
 .search-check-icon-prime{
     font-weight: bold;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0160fc;
 }
 
 .bi.bi-check-lg{
     color: #ff5400;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
 }
 
@@ -417,35 +441,69 @@ body{
     text-decoration: none;
     color: black;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
 }
 
-/* ============================================================
-   MOBILE RESPONSIVE OVERRIDES (added)
-   These selectors were hardcoded to fixed desktop pixel widths
-   (700-1760px) above. On a phone screen, a fixed width wider
-   than the device forces the whole page's layout viewport to
-   widen to fit it - even with a correct viewport meta tag - which
-   is why every page required zooming out to see properly. This
-   block does not touch any rule above; it only adds a mobile
-   override that takes priority at narrow widths via the media
-   query and appearing later in the file.
-   ============================================================ */
-@media (max-width: 1500px) {
-.number-of-result-container,
-.search-left-page-search-items-section,
-.search-items-container,
-.search-advertissement-section,
-.search-advert-sponsored,
-.result-container,
-.search-products-section,
-.search-products-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    flex-shrink: 0 !important;
-    box-sizing: border-box !important;
-}
+.name-star-price-container > *{
+    overflow-wrap: break-word;
 }
 
 
+/* ================================ RESPONSIVE ================================ */
+/* The page content was a fixed 1760px; now it fills the screen up to 1760px */
+@media (max-width: 1920px){
+    .number-of-result-container,
+    .search-left-page-search-items-section{
+        width: calc(100% - 20px);
+    }
+}
+
+/* Smaller laptops: 4 cards per row */
+@media (max-width: 1300px){
+    :root{
+        --search-cards-per-row: 4;
+    }
+}
+
+/* Tablets: 3 cards per row */
+@media (max-width: 1000px){
+    :root{
+        --search-cards-per-row: 3;
+    }
+}
+
+/* Phones: the empty left column goes away (the cart sidebar is hidden too, see addToCart.css),
+   the advert video sits above its product, and 2 cards per row */
+@media (max-width: 700px){
+    :root{
+        --search-cards-per-row: 2;
+    }
+    .search-left-page{
+        display: none;
+    }
+    .search-items-container{
+        flex: 1 1 auto;
+    }
+    .search-advertissement-section{
+        flex-direction: column;
+    }
+    .search-advert-video{
+        width: 100%;
+        max-width: 100%;
+    }
+    .search-advertissement-section a{
+        flex: none;
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .add-to-cart-carousel-add-to-cart-button{
+        width: 100%;
+    }
+    .add-to-cart-button,
+    .add-to-cart-button a{
+        width: 100%;
+    }
+}
