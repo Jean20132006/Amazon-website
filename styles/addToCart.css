@@ -1,3 +1,4 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ body{
 .nav-bar-add-to-cart{
     /*background-color: hsla(128, 50%, 6%, 0.871);*/
     background-color: black;
-    width: 1760px;
+    width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -37,7 +38,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: top;
-    flex-shrink: 0;
+    width: 100%;
 }
 .add-to-cart-content{
     /*border: 1px solid blue;*/
@@ -45,8 +46,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0;
-    width: 1760px;
+    flex: 1;
+    min-width: 0;         /* lets the content shrink next to the cart sidebar */
 }
 
 /*End of add to cart all content (entire page)*/
@@ -54,7 +55,7 @@ body{
 /*Add to cart header*/
 .header-add-to-cart{
     margin-top: 70px;
-    width: 1760px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,10 +75,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
     gap: 20px;
-    height: 160px;
-    width: 1730px;
+    height: auto;
+    width: calc(100% - 30px);
     margin-top: 120px;
 }
 .add-to-cart-picture{
@@ -85,9 +85,9 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    flex: 1;
+    min-width: 0;
     height: 160px;
-    width: 1400px;
     background-color: white;
     gap: 30px;
 }
@@ -109,7 +109,7 @@ body{
     align-items: center;
     gap: 10px;
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
 }
 .added-to-cart-bi-check{
     border-radius: 100%;
@@ -163,12 +163,12 @@ body{
 }
 .add-to-cart-subtotal-text{
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: bold;
 }
 .add-to-cart-subtotal-price{
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: 600;    
 }
 .proceed-to-checkout-button{
@@ -176,7 +176,7 @@ body{
     border: none;
     border-radius: 17px;
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     width: 280px;
     height: 35px;  
 }
@@ -185,7 +185,7 @@ body{
     border: 1px solid black;
     border-radius: 17px;
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     width: 280px;
     height: 35px;  
 }
@@ -197,17 +197,15 @@ body{
     flex-direction: row;
     align-items: center;
     background-color: white;
-    width: 1730px;
+    width: calc(100% - 30px);
     height: 450px;
-    flex-shrink: 0;
 }
 .add-to-cart-carousel2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1730px;
+    width: 100%;
     height: 450px;
-    flex-shrink: 0;
     overflow: hidden;
     position: relative;
 }
@@ -215,19 +213,19 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    justify-content: flex-start;
+    width: 100%;
     height: 400px;
-    transition: transform 0.7s ease-in-out;
+    overflow-x: auto;      /* scrolls at any width; the arrows scroll one visible width */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 .add-to-cart-carosel-page2{
-    display: flex;
+    display: contents;   /* products sit directly in the scrolling track */
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: auto;
-    flex-shrink: 0;
-    min-width: 1730px;
 }
 .add-to-cart-carousel-img{
     display: flex;
@@ -267,14 +265,12 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1730px;
     height: auto;
-    flex-shrink: 0;
 }
 
 .add-to-cart-page-num{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     position : absolute;
     top: -5px;
@@ -296,11 +292,11 @@ body{
 }
 .add-to-cart-arrow2.left2{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .add-to-cart-arrow2.right2{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .add-to-cart-amazon-choice{
     background-color: black;
@@ -343,7 +339,7 @@ body{
     flex-direction: row;
     align-items: center;
     height: auto;
-    flex-shrink: 0;
+    width: calc(100% - 30px);
     gap: 20px;
 }
 
@@ -353,9 +349,9 @@ body{
     flex-direction: row;
     align-items: center;
     background-color: white;
-    width: 1400px;
+    flex: 1;
+    min-width: 0;
     height: 450px;
-    flex-shrink: 0;
     
 }
 
@@ -364,9 +360,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1400px;
+    width: 100%;
     height: 450px;
-    flex-shrink: 0;
     overflow: hidden;
     position: relative;
 }
@@ -375,20 +370,20 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    justify-content: flex-start;
+    width: 100%;
     height: 400px;
-    transition: transform 0.7s ease-in-out;
+    overflow-x: auto;      /* scrolls at any width; the arrows scroll one visible width */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 .add-to-cart-first-carosel-page{
     /*border: 1px solid blue;*/
-    display: flex;
+    display: contents;   /* products sit directly in the scrolling track */
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: auto;
-    flex-shrink: 0;
-    min-width: 1400px;
 }
 
 .add-to-cart-arrow{
@@ -407,31 +402,33 @@ body{
 }
 .add-to-cart-arrow.left{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .add-to-cart-arrow.right{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .add-to-cart-first-title1-section{
     display: flex;
     flex-direction: row;
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: bold;
     margin-top: 20px;
+    width: calc(100% - 30px);
 }
 .add-to-cart-first-title1-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
-    flex-shrink: 0;
+    width: 100%;
     gap: 20px;
 }
 .add-to-cart-title{
     background-color: white;
-    width: 1400px;
+    flex: 1;
+    min-width: 0;
 }
 .add-to-cart-title span{
     margin-left: 20px;
@@ -439,6 +436,7 @@ body{
 
 .add-to-cart-first-title1-right-section{
     width: 310px;
+    flex-shrink: 0;
 }
 .add-to-cart-credit-card{
     display: flex;
@@ -446,6 +444,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 310px;
+    flex-shrink: 0;
     height: 260px;
     background-color: white;
     margin-top: -294px;
@@ -455,7 +454,7 @@ body{
     text-decoration: none;
     color: black;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 /*credit card section*/
@@ -465,7 +464,7 @@ body{
     align-items: center;
     gap: 20px;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     margin-top: 10px;
 }
@@ -482,7 +481,7 @@ body{
     font-weight: bold;
 }
 .jean-get.js-jean-get{
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
 }
 .add-to-cart-cost-after-savings{
     display: flex;
@@ -534,10 +533,10 @@ body{
     display: flex;
     flex-direction: row;
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: bold;
     margin-top: 20px;
-    width: 1730px;
+    width: calc(100% - 30px);
     background-color: white;
     
 }
@@ -548,9 +547,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 1730px;
+    width: 100%;
     height: auto;
-    flex-shrink: 0;
 }
 .add-to-cart-title1-container span{
     margin: 10px 0px;
@@ -558,44 +556,40 @@ body{
 /* End of add to cart title second carousel section*/
 
 /*Bottom add to cart section*/
-.personalized-recom{
-    width: 1730px;
-}
-.go-to-top{
-    width: 1730px;
-}
-.links{
-    width: 1730px;
-}
-.before-footer-links{
-    width: 1730px;
-}
-.title1-container{
-    width: 1730px;
-}
-.title1-hr{
-    width: 1730px;
-}
-.checkout-carousel{
-    width: 1730px;
-}
-.checkout-carosel-page{
-    min-width: 1730px;
-}
-.title-pagenum-container{
-    width: 1730px;
+/* Same width as the sections above: full width minus 15px on each side */
+.personalized-recom,
+.go-to-top,
+.links,
+.before-footer-links,
+.title1-container,
+.title1-hr,
+.checkout-carousel,
+.title-pagenum-container,
+.last-links-container,
+.conditions-of-use-copyright-container,
+.conditions-of-use-container{
+    width: 100%;
+    max-width: none;
 }
 .last-bottom-container{
-    width: 1730px;
+    width: calc(100% - 30px);
 }
-.last-links-container{
-    width: 1730px;
+/* Bottom carousels scroll like the ones above */
+.checkout-carousel-track{
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    transform: none !important;
 }
-.conditions-of-use-copyright-container{
-    width: 1730px;
+.checkout-carosel-page{
+    display: contents;
 }
-.conditions-of-use-container{
-    width: 1730px;
+.add-to-cart-carousel-track1::-webkit-scrollbar,
+.add-to-cart-carousel-track2::-webkit-scrollbar,
+.checkout-carousel-track::-webkit-scrollbar{
+    display: none;
 }
 /*End of bottom add to cart section*/
 
@@ -726,3 +720,56 @@ body{
     font-size: 16px;
 }
 
+/* Space so the first/last products are not under the arrows */
+.add-to-cart-carousel-track1,
+.add-to-cart-carousel-track2{
+    padding: 0 20px;
+    scroll-padding: 0 20px;
+}
+
+/* ============================ RESPONSIVE ============================ */
+/* Same as .header in header.css: hide the second group of header links */
+@media (max-width: 1026px){
+    .header-add-to-cart .flexible-container-two{
+        display: none;
+    }
+}
+/* Tablets: stack the side boxes under the main content */
+@media (max-width: 900px){
+    .add-to-cart-picture-procceed-to-checkout,
+    .add-to-cart-first-carousel-card-container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .add-to-cart-picture{
+        flex: none;
+    }
+    .add-to-cart-proceed-to-checkout,
+    .add-to-cart-credit-card{
+        width: 100%;
+        margin-top: 0;
+        padding: 20px 0;
+        height: auto;
+    }
+    .add-to-cart-first-carousel-container{
+        flex: none;
+    }
+    .add-to-cart-first-title1-right-section{
+        display: none;
+    }
+}
+/* Phones: hide the cart sidebar and tighten the "Added to cart" box */
+@media (max-width: 700px){
+    .add-to-cart-corbeille{
+        display: none;
+    }
+    .add-to-cart-picture{
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+    .image-add-to-cart img{
+        width: 70px;
+        height: 70px;
+    }
+}
