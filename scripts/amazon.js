@@ -1,38 +1,46 @@
 let cart1 = [];
 /**
- * @brief :This function checks for user authentication on page load. 
- * If the user is not authenticated, it redirects them to the sign-in page. 
- * If authenticated, it fetches the user's profile data from the server.
+ * @brief :This function checks for user authentication on page load.
+ * If the user is not signed in, the home page opens in guest mode (cart from localStorage).
+ * If signed in, it fetches the user's profile data from the server.
+ * If the token is invalid or expired, the user data is cleared and the page continues as guest.
  * @note This function runs once the DOM content is fully loaded.
  */
-/*document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
     const token = localStorage.getItem("token");
 
     if (!token) {
-        window.location.href = "/sign_in.html";
-        //window.location.href = "amazon.html";
+        // Guest mode: no redirect, the home page stays open
         return;
     }
 
-    const response = await fetch("http://localhost:4000/api/v1/users/profile", {
-        headers: {
-            Authorization: `Bearer ${token}`
+    try {
+
+        const response = await fetch("http://localhost:4000/api/v1/users/profile", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
+
+        if (!response.ok) {
+            // token invalid or expired: sign the user out and continue as guest
+            localStorage.removeItem("token");
+            localStorage.removeItem("userId");
+            localStorage.removeItem("email");
+            localStorage.removeItem("username");
+            return;
         }
-    });
 
-    if (!response.ok) {
-        // token invalid or expired
-        localStorage.removeItem("token");
-        window.location.href = "/sign_in.html";
-        //window.location.href = "amazon.html";
-        return;
+        const data = await response.json();
+
+        //console.log(data);
+
+    } catch (error) {
+
+        console.error("Error fetching profile:", error);
     }
-
-    const data = await response.json();
-
-    //console.log(data);
-});*/
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47,7 +55,7 @@ async function loadCart() {
 
     if (!userId) {
 
-        return (JSON.parse(localStorage.getItem("cart1")) || []);
+        return getLocalCart();
     }
 
     try {
@@ -60,7 +68,7 @@ async function loadCart() {
                 "No cart found for user."
             );
 
-            return;
+            return getLocalCart();
         }
 
 
@@ -69,8 +77,7 @@ async function loadCart() {
         console.log("cart has been loaded:");
         console.log(data.cart.items);
 
-        //return data.cart.items || [];
-        return data.cart.items;
+        return data.cart.items || [];
 
     } catch (error) {
 
@@ -78,6 +85,23 @@ async function loadCart() {
             "Error loading cart:",
             error
         );
+
+        return getLocalCart();
+    }
+}
+
+/**
+ * @brief Returns the cart saved in localStorage, or an empty cart if it is missing or invalid
+ */
+function getLocalCart() {
+
+    try {
+
+        return JSON.parse(localStorage.getItem("cart1")) || [];
+
+    } catch (error) {
+
+        return [];
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -581,7 +605,7 @@ function generateRowSquareImages() {
         },
 
         {
-            title: "Shop Watches & Tablets Picks",
+            title: "Watches & Tablets",
             linkText: "Shop Saks on Amazon",
             products: [
             ...products.filter(p => p.categories.includes("watches")).slice(0, 2),
