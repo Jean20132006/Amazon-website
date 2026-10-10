@@ -226,7 +226,7 @@
 .search-bar-input{
     display: flex;
     background-color: white;
-    font-size: 14px;
+    font-size: clamp(12px, 1.4vw, 14px);
     font-family: Nunito, Arial, Helvetica, sans-serif;
     border: none;
     flex: 1;
@@ -240,7 +240,7 @@
 
 .search-bar-input::placeholder{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(12px, 1.6vw, 16px);
     padding-left: 8px;
 }
 
