@@ -1047,7 +1047,7 @@ main{
     text-decoration: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
   .last-links-container{
     flex-wrap: wrap;      
   }
