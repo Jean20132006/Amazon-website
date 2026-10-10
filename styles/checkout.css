@@ -35,7 +35,7 @@
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .radiobutton-image-section{
     display: flex;
@@ -44,7 +44,7 @@
     width: 550px;
     height: auto;
     flex-shrink: 0;
-    margin-top: 20px;
+    margin-top: clamp(10px, 1.37vw, 20px);
 }
 .radio-button-section{
     display: flex;
@@ -56,10 +56,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: clamp(15px, 2.05vw, 30px);
     width: 470px;
     height: auto;
-    margin-top: 60px;
+    margin-top: clamp(30px, 4.11vw, 60px);
 }
 .image-section img{
     width: 470px;
@@ -79,7 +79,7 @@
 .click-to-see-full-view a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     color: #0077b6;
     font-weight: 600;
 
@@ -92,11 +92,11 @@
     flex-direction: column;
     align-items: left;
     flex-shrink: 0;
-    gap: 10px;
-    margin-bottom: 80px;
+    gap: clamp(5px, 0.68vw, 10px);
+    margin-bottom: clamp(30px, 5.48vw, 80px);
 }
 .name-section{
-    margin-top: 10px;
+    margin-top: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
     font-size: clamp(18px, 1.65vw, 24px);
     font-weight: 600;
@@ -107,11 +107,11 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-bottom: 10px;
+    margin-bottom: clamp(5px, 0.68vw, 10px);
     margin-top: -10px;
     font-family: Nunito, sans-serif;
     font-weight: 400;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 
 .star-visit-amazonchoice-section a{
@@ -129,12 +129,12 @@
     font-weight: 600;
 }
 .dollar-sign{
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     margin-top: -5px;
     font-weight: 600;
 }
 .cents{
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     margin-top: -5px;
     font-weight: 600;
 }
@@ -146,7 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     
 }
 .btton-size:hover{
@@ -156,7 +156,7 @@
     text-decoration: none;
     color: black;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: bold;
     
 }
@@ -164,28 +164,28 @@
     text-decoration: none;
     color: black;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: bold;
 }
 .size-button-text{
-    padding-bottom: 10px;
+    padding-bottom: clamp(5px, 0.68vw, 10px);
     padding-top: 5px;
     font-weight: bold;
 }
 .size-button-text a{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: bold;
     margin-bottom: -150px;
 }
 .amount{
     font-weight: 600;
-    font-size: 12px;
+    font-size: clamp(11px, 0.85vw, 12px);
 }
 .amazon-choice{
     background-color: black;
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     width: 110px;
     height: auto;
     padding: 2px 5px 2px 5px;
@@ -195,7 +195,7 @@
 .get a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0077b6;
     font-weight: 600;
 }
@@ -216,7 +216,7 @@
 }
 .favour-name{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: grey;
     font-weight: 600;
 }
@@ -232,7 +232,7 @@
 .flavour-button{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .btton-flavour{
     border: 1px solid grey;
@@ -246,6 +246,9 @@
 .btton-flavour:hover{
     border: 2px solid blue;
 }
+.page-num-color{
+    display: none;
+}
 .size a{
     text-decoration: none;
     color: black;
@@ -256,12 +259,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     
 }
 .amount{
     font-family: Nunito, sans-serif;
-    font-size: 12px;
+    font-size: clamp(11px, 0.85vw, 12px);
     font-weight: 600;
 }
 
@@ -286,14 +289,14 @@
     font-family: Nunito, sans-serif;
     font-size: clamp(16px, 1.4vw, 20px);
     font-weight: bold;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .diet-option{
     display: flex;
     flex-direction: row;
     width: 70px;
     height: auto;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     background-color: #e9edf1;
 }
@@ -320,7 +323,7 @@
     gap: 460px;
 }*/
 .About-this-item{
-    gap: 420px;
+    gap: clamp(30px, 28.77vw, 420px);
 }
 .up-button2,
 .down-button2{
@@ -343,7 +346,7 @@
 .empty-div3,
 .empty-div{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     width: 490px;
     height: auto;
     font-weight: bold;
@@ -351,14 +354,14 @@
 .empty-div3{
     font-weight: 600;
     line-height: 2.5;
-    margin-left: 20px;
+    margin-left: clamp(10px, 1.37vw, 20px);
 }
 .report-issue{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0077b6;
     text-decoration: none;
 }
@@ -368,19 +371,19 @@
     font-weight: 600;
 }
 .bi.bi-chat-square-text{
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     color: grey;
 }
 .advertissement{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
+    margin-top: clamp(10px, 1.37vw, 20px);
     width: 600px;
     height: auto;
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 10px;
+    padding: clamp(5px, 0.68vw, 10px);
     background-color: #f9f9f9;
 }
 .advertissement img{
@@ -392,19 +395,19 @@
     display: flex;
     flex-direction: column;
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .star-price-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
 }
 .star-price-container span{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .star-rating img{
@@ -414,23 +417,23 @@
 }
 .star-rating span{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .check-prime{
     color: #0683dd;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 .bi.bi-check-lg{
     color: #ff6d00;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: bold;
 }
 .shop-now a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0077b6;
     font-weight: 600;
 }
@@ -440,7 +443,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: clamp(6px, 0.82vw, 12px);
     flex-shrink: 0;
 }
 .prime-checkout1{
@@ -450,58 +453,58 @@
     width: 270px;
     height: 190px;
     border-radius: 5px;
-    gap: 10px;
-    padding-right: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
+    padding-right: clamp(5px, 0.68vw, 10px);
 }
 
 .prime-checkout1 img{
     width: 60px;
     height: auto;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
+    margin-top: clamp(5px, 0.68vw, 10px);
 }
 .prime-checkout1-text{
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
+    margin-top: clamp(5px, 0.68vw, 10px);
 }
 .join-prime-link a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0077b6;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
 }
 .purchase-option{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
+    margin-left: clamp(5px, 0.68vw, 10px);
+    margin-top: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: bold;
 }
 .price-per-ounce{
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
 }
 .delivery-day{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
 }
 .prime-members{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
 }
 .prime-members a{
     text-decoration: none;
@@ -510,9 +513,9 @@
 }
 .delivery-address-checkout{
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: clamp(5px, 0.68vw, 10px);
 }
 .delivery-address-checkout a{
     text-decoration: none;
@@ -522,15 +525,15 @@
 .main-checkout{
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: clamp(5px, 0.68vw, 10px);
+    padding-right: clamp(5px, 0.68vw, 10px);
     flex-shrink: 0;
     border: 1px solid grey;
     width: 270px;
     height: auto;
     border-radius: 5px;
-    gap: 15px;
-    padding-top: 10px;
+    gap: clamp(8px, 1.03vw, 15px);
+    padding-top: clamp(5px, 0.68vw, 10px);
 }
 .purchase-option{
     display: flex;
@@ -539,7 +542,7 @@
 .purchase-container{
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: clamp(30px, 5.48vw, 80px);
 }
 .bi.bi-record-circle-fill{
     color: #023e8a;
@@ -547,24 +550,24 @@
 }
 .delivery-date{
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: bold;
 }
 .prime-mem{
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
     color: #0077b6;
 }
 .time{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     color: green;
 }
 .in-stock{
     font-family: Nunito, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: 600;
     color: green;
 }
@@ -576,7 +579,7 @@
     padding: 5px;
 }
 .quantity-section span{
-    margin-right: 80px;
+    margin-right: clamp(30px, 5.48vw, 80px);
 }
 .quantity-dropdown{
     border: none;
@@ -591,7 +594,7 @@
     height: 35px;
     border-radius: 17px;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .add-cart-btn{
@@ -599,15 +602,15 @@
 }
 .snap{
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     font-weight: 600;   
 }
 .shipper-seller{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;   
+    font-size: clamp(12px, 1vw, 14px);   
 }
 .amazon-com{
     font-weight: 600;
@@ -615,9 +618,9 @@
 .return-checkout{
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: clamp(30px, 4.11vw, 60px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
 }
 .return-checkout a{
     text-decoration: none;
@@ -627,9 +630,9 @@
 .payment{
     display: flex;
     flex-direction: row;
-    gap: 55px;
+    gap: clamp(28px, 3.77vw, 55px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
 }
 .payment a{
     text-decoration: none;
@@ -639,9 +642,9 @@
 .add-gift{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 .subscribe-save-container{
@@ -653,7 +656,7 @@
     width: 268px;
     height: auto;
     margin-left: -10px;
-    padding: 0 10px 25px 10px;
+    padding: 0 clamp(5px, 0.68vw, 10px) clamp(12px, 1.71vw, 25px) clamp(5px, 0.68vw, 10px);
 }
 .subscribe-save-container a{
     text-decoration: none;
@@ -663,22 +666,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: clamp(5px, 0.68vw, 10px);
 }
 .bi.bi-circle-fill{
     color: white;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
 }
 .bi.bi-cart4{
-    font-size: 12px;
+    font-size: clamp(11px, 0.85vw, 12px);
     margin-left: -21px;
-    margin-right: 70px;
+    margin-right: clamp(30px, 4.79vw, 70px);
 }
 .bi.bi-arrow-repeat{
     margin-left: 5px;
-    font-size: 30px;
+    font-size: clamp(22px, 2.05vw, 30px);
     color:#ffba08;   
 }
 
@@ -704,7 +707,7 @@
     flex-shrink: 0;
 }
 .title-container span{
-    margin: 10px 0px;
+    margin: clamp(5px, 0.68vw, 10px) 0px;
 }
 
 .title-hr{
@@ -713,7 +716,7 @@
     background-color: grey;
 }
 .title1-hr-product-details{
-    margin-top: 40px;
+    margin-top: clamp(20px, 2.74vw, 40px);
     width: 1460px;
     height: 1px;
     background-color: grey;
@@ -722,13 +725,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .products-totalPrice-add-to-list-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 1460px;
     height: auto;
     flex-shrink: 0;
@@ -751,7 +754,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 1160px;
     height: auto;
     flex-shrink: 0;
@@ -765,9 +768,9 @@
     width: 190px;
     height: auto;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     align-items: center;
     position: relative;
@@ -789,7 +792,7 @@
 }
 
 .plus-sign{
-    font-size: 24px;
+    font-size: clamp(18px, 1.65vw, 24px);
     font-weight: bold;
     margin-top: -140px;
 }
@@ -809,7 +812,7 @@
     height: 35px;
     border-radius: 17px;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .add-to-list{
@@ -818,9 +821,9 @@
     align-items: center;
     font-family: Nunito, sans-serif;
     flex-shrink: 0;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .link-to-add-to-list{
     width: 270px;
@@ -839,7 +842,7 @@
 .link-to-add-to-list a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: black;
     font-weight: 600;
 }
@@ -850,13 +853,13 @@
     width: 270px;
     height: auto;
     border-radius: 5px;
-    gap: 10px;
-    padding: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
+    padding: clamp(5px, 0.68vw, 10px);
 }
 .other-sellers-container a{
     text-decoration: none;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color: #0077b6;
     font-weight: 600;
 }
@@ -865,7 +868,7 @@
     top: 5px;
     right: -10px;
     color: #023e8a;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
 }
 /* End of Frequently Bought Together Section */
 
@@ -884,12 +887,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 300px;
     height: auto;
     
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 
 }
@@ -905,7 +908,7 @@
 }
 .clearence{
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     color: red;    
 }
 .old-price{
@@ -935,7 +938,7 @@
     flex-shrink: 0;
 }
 .title1-container span{
-    margin: 10px 0px;
+    margin: clamp(5px, 0.68vw, 10px) 0px;
 }
 .title1-hr{
     width: 1460px;
@@ -947,7 +950,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .manufacturer-container{
     display: flex;
@@ -973,7 +976,7 @@
 .protein img{
     width: 240px;
     height: auto;
-    margin-right: 20px; 
+    margin-right: clamp(10px, 1.37vw, 20px); 
 }
 /* End of Manufacturer first row Section */
 
@@ -982,7 +985,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: clamp(30px, 4.11vw, 60px);
 }
 .manufacturer-second-row-container{
     display: flex;
@@ -992,7 +995,7 @@
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
 }
 .core-power{
     display: flex;
@@ -1000,10 +1003,10 @@
     align-items: center;
     width: 400px;
     height: 450px;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     flex-shrink: 0;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 
@@ -1024,11 +1027,11 @@
 }
 .list{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 10px;
+    padding: clamp(5px, 0.68vw, 10px);
     background-color: #edede9;
 }
 .fairlife-container{
@@ -1051,7 +1054,7 @@
 }
 .fairlife-text{ 
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;   
 }
 .fairlife-text span{
@@ -1074,7 +1077,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .manufacturer-third-row-container{
     display: flex;
@@ -1084,7 +1087,7 @@
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    gap: 50px;
+    gap: clamp(25px, 3.42vw, 50px);
 }
 .maximize-recovery,
 .recovery-start,
@@ -1097,10 +1100,10 @@
     width: 300px;
     height: auto;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     flex-shrink: 0;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .maximize-recovery img,
@@ -1122,7 +1125,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .manufacturer-fourth-row-container{
     display: flex;
@@ -1143,28 +1146,28 @@
 /*Product description section*/
 .product-description-container{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    margin-bottom: 40px;
-    padding-left: 20px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
+    padding-left: clamp(10px, 1.37vw, 20px);
 }
 .product-details-container{
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 500px;
     height: auto;
     flex-shrink: 0;
-    padding-left: 10px;
+    padding-left: clamp(5px, 0.68vw, 10px);
     /*margin-bottom: 40px;*/
 }
 .product{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 /* End of Product description section*/
@@ -1174,7 +1177,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .checkout-carousel{
     /*border: 1px solid green;*/
@@ -1217,7 +1220,7 @@
 }
 .checkout-carousel-img{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .checkout-carousel-img img{
@@ -1232,7 +1235,7 @@
 }
 .checkout-carousel-img-text a{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     text-decoration: none;
     color:#0077b6;
@@ -1252,7 +1255,7 @@
 
 .page-num{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     position : absolute;
     top: -5px;
@@ -1283,7 +1286,7 @@
 .checkout-amazon-choice{
     background-color: black;
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     width: 110px;
     height: auto;
     padding: 2px 5px 2px 5px;
@@ -1298,14 +1301,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .product-videos-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 1460px;
-    gap: 25px;
+    gap: clamp(12px, 1.71vw, 25px);
     height: auto;
     flex-shrink: 0;
     border: 1px solid grey;
@@ -1316,7 +1319,7 @@
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    gap: 15px;
+    gap: clamp(8px, 1.03vw, 15px);
     width: 1085px;
 }
 .video-for-this-product{
@@ -1325,7 +1328,7 @@
     flex-direction: column;
     align-items: top;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -1342,7 +1345,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 345px;
     height: auto;
     object-fit: contain;
@@ -1354,7 +1357,7 @@
     width: 150px;
     height: auto;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: bold;
 }
 .client-rating-video{
@@ -1400,7 +1403,7 @@
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-client-rating-track{
     display: flex;
@@ -1416,11 +1419,11 @@
     flex-direction: row;
     align-items: center;
     /*justify-content: center;*/
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     height: auto;
     flex-shrink: 0;
     min-width: 1085px;
-    padding-left: 60px;
+    padding-left: clamp(30px, 4.11vw, 60px);
 }
 .checkout-carousel-client-rating-img{
     display: flex;
@@ -1430,13 +1433,13 @@
     height: 120px;
     flex-shrink: 0;
     /*justify-content: center;*/
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     border: 1px solid grey;
     border-radius: 5px;
-    padding-left: 20px;
+    padding-left: clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-client-rating-img a{
     text-decoration: none;
@@ -1481,7 +1484,7 @@
 }
 .page-num-client-rating{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 
@@ -1508,7 +1511,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .advertissement-section1,
 .advertissement-container{
@@ -1527,7 +1530,7 @@
     right: 480px;
     bottom: -20px;
     font-family: Nunito, Arial, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
 }
 .bi.bi-info-circle-fill{
     color: grey;
@@ -1547,7 +1550,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .checkout-carousel-video{
     /*border: 1px solid green;*/
@@ -1579,7 +1582,7 @@
     height: auto;
     flex-shrink: 0;
     min-width: 1460px;
-    gap: 40px;
+    gap: clamp(20px, 2.74vw, 40px);
 }
 .checkout-carousel-vid{
     display: flex;
@@ -1589,7 +1592,7 @@
 }
 .checkout-carousel-vid a{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     text-decoration: none;
     color:#003049;
@@ -1601,7 +1604,7 @@
 }
 .page-video-num{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 .checkout-arrow-video{
@@ -1629,11 +1632,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 375px;
     height: auto;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .sponsored-text-video img{
@@ -1647,8 +1650,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: clamp(20px, 2.74vw, 40px);
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .customers-review-and-say-container{
     display: flex;
@@ -1664,7 +1667,7 @@
     align-items: left;
     width: 450px;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .say-container{
     display: flex;
@@ -1672,7 +1675,7 @@
     align-items: left;
     width: 750px;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
 }
 .review-title{
     font-family: Nunito, sans-serif;
@@ -1688,7 +1691,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
     font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
@@ -1699,21 +1702,21 @@
 }
 .review-count{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 400;
     color: grey;
 }
 .share-your-thoughts,
 .say-rating{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 .static-progress-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
      
 }
 .progress-bar{
@@ -1746,7 +1749,7 @@
     flex-direction: row;
     align-items: center;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     gap: 5px;
 }
@@ -1759,7 +1762,7 @@
 }
 .How-customer-reviews-and-ratings-work-text-expand{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     width: 304px;
     height: auto;
@@ -1771,8 +1774,8 @@
     width: 320px;
     height: 1px;
     background-color: grey;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: clamp(5px, 0.68vw, 10px);
+    margin-bottom: clamp(5px, 0.68vw, 10px);
 }
 .write-a-customer-review{
     width: 320px;
@@ -1780,10 +1783,10 @@
     background-color: white;
     border-radius: 17px;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     border: 1px solid black;
-    margin-bottom: 10px;
+    margin-bottom: clamp(5px, 0.68vw, 10px);
     transition: background-color 0.3s ease;
 }
 .write-a-customer-review a{
@@ -1795,7 +1798,7 @@
 }
 .select-to-learn-more{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: bold;    
 }
 
@@ -1808,7 +1811,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     /*width: 320px;*/
     height: auto;
 }
@@ -1818,14 +1821,14 @@
     align-items: center;
     gap: 5px;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     border: none;
     background-color: white;
     color: #023e8a; 
 }
 .select-to-learn-more-button .bi.bi-check2{
     color: green;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
 }
 .taste{
     color: grey;
@@ -1833,19 +1836,19 @@
 }
 .say-view{
     font-family: Nunito, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     color: grey;    
 }
 .bi.bi-dash{
-    font-size: 25px;
+    font-size: clamp(19px, 1.7vw, 25px);
     font-weight: bold;
 }
 .customer-say-hr{
     width: 1010px;
     height: 1px;
     background-color: grey;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: clamp(5px, 0.68vw, 10px);
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 .Customer-Nate-comment{
     display: flex;
@@ -1857,13 +1860,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .customer-say-comment .bi.bi-person-circle {
-    font-size: 40px;
+    font-size: clamp(28px, 2.75vw, 40px);
     color: grey;
 }
 .customer-say-comment span{
@@ -1871,7 +1874,7 @@
 }
 .comment-Nate{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     width: 700px;
     height: auto;
@@ -1888,7 +1891,7 @@
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-review-track{
     display: flex;
@@ -1904,7 +1907,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     height: auto;
     flex-shrink: 0;
     min-width: 1010px;
@@ -1919,7 +1922,7 @@
 }
 .checkout-carousel-review-img{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .checkout-carousel-review-img img{
@@ -1960,7 +1963,7 @@
 }
 .page-num-review{
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
 }
 /* End of carousel review section*/
@@ -1970,7 +1973,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
 }
 
 .checkout-corePower-last-advert1,
@@ -1995,7 +1998,7 @@
 .sponsored-imgAdvert{
     position: absolute;
     font-family: Nunito, serif Arial;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     right: 380px;
     bottom: -20px;
 }
@@ -2011,14 +2014,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     min-width: 1460px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 2.74vw, 40px);
     border: 1px solid rgb(191, 187, 187);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: clamp(20px, 2.74vw, 40px);
+    margin-bottom: clamp(20px, 2.74vw, 40px);
     /*box-shadow: rgb(30, 30, 30) 0px 1px 3px, 
                rgba(250, 250, 250, 0.4) 0px 1px 2px;*/
 
@@ -2028,8 +2031,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin-bottom: clamp(20px, 2.74vw, 40px);
+  margin-top: clamp(10px, 1.37vw, 20px);
   background-color: white;
 }
 /*@media (max-width: 1493px){
@@ -2053,12 +2056,12 @@
   align-items: center;
   font-family: Nunito, Arial, Helvetica, sans-serif;
   
-  margin: 20px 0;
+  margin: clamp(10px, 1.37vw, 20px) 0;
 }
 .text{
   font-size: clamp(18px, 1.65vw, 24px);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: clamp(5px, 0.68vw, 10px);
 }
 .signin-bottom-button{
   background-color: #ffb703;
@@ -2069,7 +2072,7 @@
 }
 .sign-here{
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: clamp(11px, 0.85vw, 12px);
   font-weight: 400px;  
 }
 /* End of last bottom container section*/
@@ -2079,7 +2082,7 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: clamp(10px, 1.37vw, 20px);
   background-color: rgb(55, 71, 90);
   
 }
@@ -2100,7 +2103,7 @@
   height: 50px;
   flex-shrink: 0;
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 1vw, 14px);
   color: white;
   justify-content: center;
 }
@@ -2126,13 +2129,13 @@
   flex-direction: row;
   align-items: start;
   flex-shrink: 0;
-  gap: 120px;
-  padding-top: 40px;
+  gap: clamp(30px, 8.22vw, 120px);
+  padding-top: clamp(20px, 2.74vw, 40px);
   width: 1460px;
   height: auto;
   justify-content: center;
    background-color: rgb(35, 47, 62);
-   padding-bottom: 60px;
+   padding-bottom: clamp(30px, 4.11vw, 60px);
 }
 .first-column,
 .second-column,
@@ -2187,7 +2190,7 @@
   flex-shrink: 0;
   width: 1460px;
   height: 80px;
-  gap: 20px;
+  gap: clamp(10px, 1.37vw, 20px);
   justify-content: center;
   background-color: rgb(35, 47, 62);
 }
@@ -2198,7 +2201,7 @@
 }
 .but-buttom{
   color: white;
-  font-size: 15px;
+  font-size: clamp(13px, 1.05vw, 15px);
   width: 130px;
   font-family: Nunito, Arial, Helvetica, sans-serif;
   background-color: rgb(35, 47, 62);
@@ -2223,7 +2226,7 @@
 }
 .bottom-button span{
   color: white;
-  font-size: 15px;
+  font-size: clamp(13px, 1.05vw, 15px);
   font-family: Nunito, Arial, Helvetica, sans-serif;
   background-color: rgb(35, 47, 62);
 }
@@ -2251,19 +2254,19 @@
     display: flex;
     flex-direction: row;
     align-items: top;
-    gap: 40px;
+    gap: clamp(20px, 2.74vw, 40px);
     justify-content: center;
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    padding-top: 40px;
+    padding-top: clamp(20px, 2.74vw, 40px);
     background-color: black;
-     padding-bottom: 40px;
+     padding-bottom: clamp(20px, 2.74vw, 40px);
 }
 .last-links-column{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     width: 120px;
     height: auto;
     color: white;
@@ -2275,7 +2278,7 @@
     font-family: Nunito, Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: grey;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     
 }
@@ -2305,19 +2308,19 @@
     width: 1460px;
     height: auto;
     flex-shrink: 0;
-    gap: 10px;
+    gap: clamp(5px, 0.68vw, 10px);
     background-color: black;
     color: white;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    padding-bottom: 20px;
+    font-size: clamp(12px, 0.9vw, 13px);
+    padding-bottom: clamp(10px, 1.37vw, 20px);
 }
 .conditions-of-use-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
     width: 1460px;
     height: auto;
     flex-shrink: 0;  
@@ -2337,7 +2340,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-color{
     display: flex;
@@ -2378,7 +2381,7 @@
 }
 .checkout-carousel-color-img{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .checkout-carousel-color-img img{
@@ -2423,7 +2426,7 @@
     flex-direction: column;
     align-items: center;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     width: 80px;
     height: 110px;
     border: 1px solid grey;
@@ -2455,7 +2458,7 @@
 .total-pages-color{
     border: 1px solid grey;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 5px clamp(5px, 0.68vw, 10px);
 }
 .current-page-color{
     background-color: #cae9ff;
@@ -2468,8 +2471,8 @@
     flex-direction: column;
     align-items: center;
     gap: 7px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: clamp(5px, 0.68vw, 10px);
+    margin-bottom: clamp(5px, 0.68vw, 10px);
 }
 .items-size-buttons{
     display: flex;
@@ -2483,7 +2486,7 @@
     height: auto;
     border: 1px solid grey;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-family: Nunito, sans-serif; 
 }
 /*End of size of items*/
@@ -2494,7 +2497,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-clothes-computers{
     display: flex;
@@ -2523,7 +2526,7 @@
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    gap: 20px;
+    gap: clamp(10px, 1.37vw, 20px);
     height: auto;
     flex-shrink: 0;
     min-width: 1460px;
@@ -2538,7 +2541,7 @@
 }
 .checkout-carousel-clothes-computers-img{
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 }
 .checkout-carousel-clothes-computers-img img{
@@ -2579,7 +2582,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px, 1.37vw, 20px);
 }
 
 /*square of 4 pictures styles*/
@@ -2589,7 +2592,7 @@
   align-items: center;
   flex-shrink: 0;
   justify-content: center;
-  gap: 10px;
+  gap: clamp(5px, 0.68vw, 10px);
   position: relative;
   background-color: white;
   height: 360px;
@@ -2598,13 +2601,13 @@
 .first-square-first-column{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(5px, 0.68vw, 10px);
   
 }
 .first-square-second-column{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(5px, 0.68vw, 10px);
  
 }
 
@@ -2627,14 +2630,14 @@
   font-size: clamp(15px, 1.25vw, 18px);
   font-weight: bold;
   color: black;
-  margin-left: 20px;
+  margin-left: clamp(10px, 1.37vw, 20px);
 }
 .title-four-picture-container-link a{
   text-decoration: none;
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 1vw, 14px);
   color: #0066c0;
-  margin-left: 20px;
+  margin-left: clamp(10px, 1.37vw, 20px);
 
 }
 /*End of big carousel for clothes and computers section*/
@@ -2668,8 +2671,8 @@
      width: 1460px;
      height: auto;
      flex-shrink: 0;
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin-top: clamp(10px, 1.37vw, 20px);
+     margin-bottom: clamp(10px, 1.37vw, 20px);
 }
 /*End of big image CSS*/
 
@@ -2739,7 +2742,7 @@ video{
     justify-content: flex-start;
     justify-content: safe center;   /* centered when everything fits, scrollable when not */
     transform: none !important;
-    padding: 0 20px;
+    padding: 0 clamp(10px, 1.37vw, 20px);
 }
 .checkout-carousel-track::-webkit-scrollbar,
 .checkout-carousel-client-rating-track::-webkit-scrollbar,
@@ -2777,7 +2780,7 @@ video{
 .checkout-carousel-vid{
     width: min(375px, calc(100vw - 100px));
     max-width: none;
-    gap: 12px;              /* space between the video and the picture + text under it */
+    gap: clamp(6px, 0.82vw, 12px);              /* space between the video and the picture + text under it */
 }
 .checkout-carousel-vid video,
 .sponsored-text-video{
@@ -2788,10 +2791,10 @@ video{
 }
 /* gaps that used to be on the pages */
 .checkout-carousel-client-rating-track,
-.checkout-carousel-review-track{ gap: 10px; }
-.checkout-carousel-video-track{ gap: 40px; }
+.checkout-carousel-review-track{ gap: clamp(5px, 0.68vw, 10px); }
+.checkout-carousel-video-track{ gap: clamp(20px, 2.74vw, 40px); }
 .checkout-carousel-color-track{ gap: 5px; padding: 0; }
-.checkout-carousel-clothes-computers-track{ gap: 20px; }
+.checkout-carousel-clothes-computers-track{ gap: clamp(10px, 1.37vw, 20px); }
 
 /* ----- Every fixed width of 250px+ can shrink to fit its container (no change on wide screens) ----- */
 .image-name-checkout-container,
@@ -2904,18 +2907,18 @@ video{
 .before-footer-links{
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: clamp(10px, 1.37vw, 20px);
 }
 .customers-review-and-say-container{
-    column-gap: 30px;
+    column-gap: clamp(15px, 2.05vw, 30px);
 }
 .links{
-    row-gap: 40px;
+    row-gap: clamp(20px, 2.74vw, 40px);
 }
 .before-footer-links{
     height: auto;
     min-height: 80px;
-    padding: 20px 10px;
+    padding: clamp(10px, 1.37vw, 20px) clamp(5px, 0.68vw, 10px);
 }
 .bottom-logo-lang-flag{
     height: auto;
@@ -3030,7 +3033,7 @@ video{
     width: auto;
 }
 .About-this-item{
-    gap: 10px;              /* was a fixed 420px gap; space-between still pushes the arrow to the right */
+    gap: clamp(5px, 0.68vw, 10px);              /* was a fixed 420px gap; space-between still pushes the arrow to the right */
 }
 @media (max-width: 1200px){
     /* Details and buy box: their content fits the narrower columns */
@@ -3131,5 +3134,11 @@ video{
     .fourth-column{
         align-items: center;
         text-align: center;
+    }
+}
+/* Tablets and phones: the size buttons of clothing items (checkoutClothesComputer.html) are hidden */
+@media (max-width: 900px){
+    .items-size{
+        display: none;
     }
 }
