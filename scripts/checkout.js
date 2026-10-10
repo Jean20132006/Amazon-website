@@ -467,48 +467,13 @@ generateMultipleCarouselCheckout();
 /**
  * @brief This script handles carousel review functionality
  */
-let leftButtonReview = document.querySelector('.checkout-arrow-review.left-review');
-let rightButtonReview = document.querySelector('.checkout-arrow-review.right-review');
-let trackReview = document.querySelector('.checkout-carousel-review-track');
-let currentPageReview = document.querySelector('.current-page-review');
-let totalPageReview = document.querySelector('.total-pages-review');
-let pagesReview = document.querySelectorAll('.checkout-carosel-review-page');
-totalPageReview.innerHTML = pagesReview.length;
-
-let currentIndexReview = 0;
-let pageWidthReview = document.querySelector('.checkout-carousel-review').clientWidth;
-
-function updateCarouselReview(){
-
-    trackReview.style.transform = `translateX(-${currentIndexReview * pageWidthReview}px)`;
-    currentPageReview.innerHTML = currentIndexReview + 1;
-    if(currentIndexReview === 0){
-        leftButtonReview.disabled = true;
-    }
-    else{
-        leftButtonReview.disabled = false;
-    }
-    if(currentIndexReview === pagesReview.length - 1){
-        rightButtonReview.disabled = true;
-    }
-    else{
-        rightButtonReview.disabled = false;
-    }
-}
-leftButtonReview.addEventListener('click', () => {
-    if(currentIndexReview > 0){
-        currentIndexReview--;
-        updateCarouselReview();
-    }
-});
-rightButtonReview.addEventListener('click', () => {
-    if(currentIndexReview < pagesReview.length - 1){
-        currentIndexReview++;
-        updateCarouselReview();
-    }
-});
-
-updateCarouselReview();         // Initialize carousel state
+setupScrollCarousel(
+    document.querySelector('.checkout-carousel-review-track'),
+    document.querySelector('.checkout-arrow-review.left-review'),
+    document.querySelector('.checkout-arrow-review.right-review'),
+    document.querySelector('.current-page-review'),
+    document.querySelector('.total-pages-review')
+);
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -519,54 +484,13 @@ updateCarouselReview();         // Initialize carousel state
 
 document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
-    const leftButton  = container.querySelector('.checkout-arrow.left');
-    const rightButton = container.querySelector('.checkout-arrow.right');
-    const track       = container.querySelector('.checkout-carousel-track');
-    const pages       = container.querySelectorAll('.checkout-carosel-page');
-    const carousel    = container.querySelector('.checkout-carousel');
-
-    const currentPage = container.querySelector('.current-page');
-    const totalPage   = container.querySelector('.total-pages');
-
-    let currentIndex = 0;
-
-    totalPage.innerHTML = pages.length;
-
-    function getPageWidth() {
-        return carousel.clientWidth;
-    }
-
-    function updateCarousel() {
-        const pageWidth = getPageWidth();
-        track.style.transform = `translateX(-${currentIndex * pageWidth}px)`;
-
-        if (currentPage) {
-            currentPage.innerHTML = currentIndex + 1;
-        }
-
-        leftButton.disabled  = currentIndex === 0;
-        rightButton.disabled = currentIndex === pages.length - 1;
-    }
-
-    leftButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
-
-    rightButton.addEventListener('click', () => {
-        if (currentIndex < pages.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
-
-    // Recalculate width on resize
-    window.addEventListener('resize', updateCarousel);
-
-    // Initialize
-    updateCarousel();
+    setupScrollCarousel(
+        container.querySelector('.checkout-carousel-track'),
+        container.querySelector('.checkout-arrow.left'),
+        container.querySelector('.checkout-arrow.right'),
+        container.querySelector('.current-page'),
+        container.querySelector('.total-pages')
+    );
 });
 
 
@@ -976,46 +900,13 @@ downButton3.addEventListener('click', () => {
          * @note this script the page navigation. It updates the carousel's position based on the current 
          * page index and enables/disables navigation buttons accordingly.
          */
-        let leftButtonColor = document.querySelector('.checkout-arrow-color.left');
-        let rightButtonColor = document.querySelector('.checkout-arrow-color.right');
-        let trackColor = document.querySelector('.checkout-carousel-color-track');
-        let currentPageColor = document.querySelector('.current-page-color');
-        let totalPageColor = document.querySelector('.total-pages-color');
-        let pagesColor = document.querySelectorAll('.checkout-carosel-color-page');
-        totalPageColor.innerHTML = pagesColor.length;
-
-        let currentIndexColor = 0;
-        let pageWidthColor = document.querySelector('.checkout-carousel-color').clientWidth;
-        function updateCarouselColor(){
-            trackColor.style.transform = `translateX(-${currentIndexColor * pageWidthColor}px)`;
-            currentPageColor.innerHTML = currentIndexColor + 1;
-            if(currentIndexColor === 0){
-                leftButtonColor.disabled = true;
-            }
-            else{
-                leftButtonColor.disabled = false;
-            }
-            if(currentIndexColor === pagesColor.length - 1){
-                rightButtonColor.disabled = true;
-            }
-            else{
-                rightButtonColor.disabled = false;
-            }
-        }
-        leftButtonColor.addEventListener('click', () => {
-            if(currentIndexColor > 0){
-                currentIndexColor--;
-                updateCarouselColor();
-            }
-        });
-        rightButtonColor.addEventListener('click', () => {
-            if(currentIndexColor < pagesColor.length - 1){
-                currentIndexColor++;
-                updateCarouselColor();
-            }
-        });
-
-        updateCarouselColor();         // Initialize carousel state
+        setupScrollCarousel(
+            document.querySelector('.checkout-carousel-color-track'),
+            document.querySelector('.checkout-arrow-color.left'),
+            document.querySelector('.checkout-arrow-color.right'),
+            document.querySelector('.current-page-color'),
+            document.querySelector('.total-pages-color')
+        );
 
     /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1234,46 +1125,13 @@ bigCarouselGenerator(matchingProduct);
      * @brief This script handles Big carousel functionality in checkoutClothesComputer page only for 
      * clothing and computer products
      */
-    let leftButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.left');
-    let rightButtonBigCarousel = document.querySelector('.checkout-arrow-clothes-computers.right');
-    let trackBigCarousel = document.querySelector('.checkout-carousel-clothes-computers-track');
-    let currentPageBigCarousel = document.querySelector('.current-page-clothes-computers');
-    let totalPageBigCarousel = document.querySelector('.total-pages-clothes-computers');
-    let pagesBigCarousel = document.querySelectorAll('.checkout-carosel-clothes-computers-page');
-    totalPageBigCarousel.innerHTML = pagesBigCarousel.length;
-
-    let currentIndexBigCarousel = 0;
-    let pageWidthBigCarousel = document.querySelector('.checkout-carousel-clothes-computers').clientWidth;
-    function updateCarouselBigCarousel(){
-        trackBigCarousel.style.transform = `translateX(-${currentIndexBigCarousel * pageWidthBigCarousel}px)`;
-        currentPageBigCarousel.innerHTML = currentIndexBigCarousel + 1;
-        if(currentIndexBigCarousel === 0){
-            leftButtonBigCarousel.disabled = true;
-        }
-        else{
-            leftButtonBigCarousel.disabled = false;
-        }
-        if(currentIndexBigCarousel === pagesBigCarousel.length - 1){
-            rightButtonBigCarousel.disabled = true;
-        }
-        else{
-            rightButtonBigCarousel.disabled = false;
-        }
-    }
-    leftButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel > 0){
-            currentIndexBigCarousel--;
-            updateCarouselBigCarousel();
-        }
-    });
-    rightButtonBigCarousel.addEventListener('click', () => {
-        if(currentIndexBigCarousel < pagesBigCarousel.length - 1){
-            currentIndexBigCarousel++;
-            updateCarouselBigCarousel();
-        }
-    });
-    
-    updateCarouselBigCarousel();         // Initialize carousel state
+    setupScrollCarousel(
+        document.querySelector('.checkout-carousel-clothes-computers-track'),
+        document.querySelector('.checkout-arrow-clothes-computers.left'),
+        document.querySelector('.checkout-arrow-clothes-computers.right'),
+        document.querySelector('.current-page-clothes-computers'),
+        document.querySelector('.total-pages-clothes-computers')
+    );
     
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1397,48 +1255,13 @@ function renderCarousel(title, items) {
 /**
  * @brief This script handles carousel for product video rating by clients functionality
  */
-let leftButtonClientRating = document.querySelector('.checkout-arrow-client-rating.left-client-rating');
-let rightButtonClientRating = document.querySelector('.checkout-arrow-client-rating.right-client-rating');
-let trackClientRating = document.querySelector('.checkout-carousel-client-rating-track');
-let currentPageClientRating = document.querySelector('.current-page-client-rating');
-let totalPageClientRating = document.querySelector('.total-pages-client-rating');
-let pagesClientRating = document.querySelectorAll('.checkout-carosel-client-rating-page');
-/*totalPageClientRating.innerHTML = pagesClientRating.length;*/
-
-let currentIndexClientRating = 0;
-let pageWidthClientRating = document.querySelector('.checkout-carousel-client-rating').clientWidth;
-
-function updateCarouselClientRating(){
-
-    trackClientRating.style.transform = `translateX(-${currentIndexClientRating * pageWidthClientRating}px)`;
-    /*currentPageClientRating.innerHTML = currentIndexClientRating + 1;*/
-    if(currentIndexClientRating === 0){
-        leftButtonClientRating.disabled = true;
-    }
-    else{
-        leftButtonClientRating.disabled = false;
-    }
-    if(currentIndexClientRating === pagesClientRating.length - 1){
-        rightButtonClientRating.disabled = true;
-    }
-    else{
-        rightButtonClientRating.disabled = false;
-    }
-}
-leftButtonClientRating.addEventListener('click', () => {
-    if(currentIndexClientRating > 0){
-        currentIndexClientRating--;
-        updateCarouselClientRating();
-    }
-});
-rightButtonClientRating.addEventListener('click', () => {
-    if(currentIndexClientRating < pagesClientRating.length - 1){
-        currentIndexClientRating++;
-        updateCarouselClientRating();
-    }
-});
-
-updateCarouselClientRating();         // Initialize carousel state
+setupScrollCarousel(
+    document.querySelector('.checkout-carousel-client-rating-track'),
+    document.querySelector('.checkout-arrow-client-rating.left-client-rating'),
+    document.querySelector('.checkout-arrow-client-rating.right-client-rating'),
+    null,
+    null
+);
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -1599,46 +1422,13 @@ renderVideoCarouselForSimilarProducts(matchingProduct);
 /**
  * @brief This script handles carousel video functionality
  */
-let leftButtonVideo = document.querySelector('.checkout-arrow-video.left-video');
-let rightButtonVideo = document.querySelector('.checkout-arrow-video.right-video');
-let trackVideo = document.querySelector('.checkout-carousel-video-track');
-let currentPageVideo = document.querySelector('.current-video-page');
-let totalPageVideo = document.querySelector('.total-video-pages');
-let pagesVideo = document.querySelectorAll('.checkout-carosel-video-page');
-totalPageVideo.innerHTML = pagesVideo.length;
-let currentIndexVideo = 0;
-let pageWidthVideo = document.querySelector('.checkout-carousel-video').clientWidth;
-
-function updateCarouselVideo(){
-    trackVideo.style.transform = `translateX(-${currentIndexVideo * pageWidthVideo}px)`;
-    currentPageVideo.innerHTML = currentIndexVideo + 1;
-    if(currentIndexVideo === 0){
-        leftButtonVideo.disabled = true;
-    }
-    else{
-        leftButtonVideo.disabled = false;
-    }
-    if(currentIndexVideo === pagesVideo.length - 1){
-        rightButtonVideo.disabled = true;
-    }
-    else{
-        rightButtonVideo.disabled = false;
-    }
-}
-leftButtonVideo.addEventListener('click', () => {
-    if(currentIndexVideo > 0){
-        currentIndexVideo--;
-        updateCarouselVideo();
-    }
-});
-rightButtonVideo.addEventListener('click', () => {
-    if(currentIndexVideo < pagesVideo.length - 1){
-        currentIndexVideo++;
-        updateCarouselVideo();
-    }
-});
-// Initialize carousel state
-updateCarouselVideo();
+setupScrollCarousel(
+    document.querySelector('.checkout-carousel-video-track'),
+    document.querySelector('.checkout-arrow-video.left-video'),
+    document.querySelector('.checkout-arrow-video.right-video'),
+    document.querySelector('.current-video-page'),
+    document.querySelector('.total-video-pages')
+);
 
 ////////////////////////////////////// HANDLES ADVERTISSMENT IMAGES ///////////////////////////
 
@@ -1793,15 +1583,43 @@ searchInput.addEventListener("keydown", event => {
     }
 );
 
+/////////////////////////// SHARED CAROUSEL NAVIGATION ////////////////////////////////////
+/**
+ * @brief Makes a carousel scroll horizontally, so it works at any screen width.
+ *        The arrows scroll by one visible width ("page") and the page number is
+ *        recalculated from the scroll position (and again when the window is resized).
+ * @param track the element that holds the products and scrolls
+ * @param leftButton, rightButton the arrows
+ * @param currentPage, totalPages the "Page x of y" spans (can be null)
+ */
+function setupScrollCarousel(track, leftButton, rightButton, currentPage, totalPages) {
 
+    if (!track || !leftButton || !rightButton) return;
 
+    function updateCarousel() {
+        const pageWidth = track.clientWidth || 1;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const total = Math.max(1, Math.ceil(track.scrollWidth / pageWidth - 0.01));
+        const current = track.scrollLeft >= maxScroll - 2 ? total : Math.floor(track.scrollLeft / pageWidth + 0.01) + 1;
 
+        if (totalPages) totalPages.innerHTML = total;
+        if (currentPage) currentPage.innerHTML = current;
 
+        leftButton.disabled = track.scrollLeft <= 2;
+        rightButton.disabled = track.scrollLeft >= maxScroll - 2;
+    }
 
+    leftButton.addEventListener('click', () => {
+        track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+    });
+    rightButton.addEventListener('click', () => {
+        track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+    });
 
+    track.addEventListener('scroll', updateCarousel);
+    window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);      // images change the width once loaded
 
-
-
-
-
-
+    updateCarousel();
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
