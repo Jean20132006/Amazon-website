@@ -9,6 +9,11 @@
 .rightpage{
     flex: 1;
 }
+@media (max-width: 658px){
+  .conditions-of-use-container span:nth-child(3){
+    display: none;
+  }
+}
 .image-name-checkout-container{
     display: flex;
     flex-direction: row;
