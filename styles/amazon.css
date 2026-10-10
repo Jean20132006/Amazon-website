@@ -752,15 +752,15 @@ main{
   font-size: clamp(14px, 1.1vw, 16px);
   font-weight: bold;
 }
-/*@media (max-width: 600px){
+@media (max-width: 600px){
   .first-column,
   .second-column,
   .third-column,
   .fourth-column{
     align-items: center;   /* centers each title/link inside its column */
-    text-align: center;    /* centers text that wraps onto two lines */
+    /*text-align: center;*/    /* centers text that wraps onto two lines */
   }
-}*/
+}
 
 /* End of links section styles*/
 
@@ -1128,6 +1128,12 @@ main{
 @media (max-width: 658px){
   .conditions-of-use-container span:nth-child(3){
     display: none;
+  }
+  .conditions-of-use-container{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
   }
 }
 .conditions-of-use-container a{
