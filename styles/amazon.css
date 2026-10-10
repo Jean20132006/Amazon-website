@@ -610,11 +610,7 @@ main{
               rgba(250, 250, 250, 0.4) 0px 1px 2px;
 }
 
-/*@media (max-width: 1493px){
-  .carousel{
-    margin-left: 15px;
-  }
-}*/
+
 /*End of first carousel styles*/
 
 /*Personalized recommendation styles*/
@@ -761,6 +757,16 @@ main{
   font-size: clamp(14px, 1.1vw, 16px);
   font-weight: bold;
 }
+@media (max-width: 600px){
+  .first-column,
+  .second-column,
+  .third-column,
+  .fourth-column{
+    align-items: center;   /* centers each title/link inside its column */
+    text-align: center;    /* centers text that wraps onto two lines */
+  }
+}
+
 /*@media (max-width: 1493px){
   .amazon-botton-link{
     margin-left: 15px;
