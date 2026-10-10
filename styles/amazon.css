@@ -129,7 +129,7 @@ main{
   justify-content: center;
   width: 100%;
   gap: 20px;
-  margin-top: max(-22.67%, -340px);   /* overlap scales with the slideshow (% is of the page width), 340px max */
+  margin-top: max(-17.67%, -340px);   /* overlap scales with the slideshow (% is of the page width), 340px max */
 }
 /*second row of products*/
 .second-row-section{
