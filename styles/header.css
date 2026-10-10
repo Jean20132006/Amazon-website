@@ -1,4 +1,6 @@
 /*Header CSS*/
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
 @media (max-width: 1026px){
     .header .flexible-container-two{
         display: none;
@@ -35,7 +37,7 @@ header a{
 .flexible-container-one{
     display: flex;
     align-items: center;
-    width: 916px;
+    width: auto;
     flex-shrink: 0;
     gap: 12px;
     
@@ -45,7 +47,11 @@ header a{
     align-items: center;
     justify-content: space-between;
     flex: 1;
-    gap: 12px;
+    min-width: 0;
+    gap: 0 12px;
+    flex-wrap: wrap;      /* links that don't fit wrap to a second line... */
+    height: 40px;
+    overflow: hidden;     /* ...which is hidden, so links disappear whole instead of being cut */
     
 }
 .hamburger-container{
@@ -426,23 +432,11 @@ hr{
     border: 1px solid white;
 }
 
-/* ============================================================
-   MOBILE RESPONSIVE OVERRIDES (added)
-   These selectors were hardcoded to fixed desktop pixel widths
-   (700-1760px) above. On a phone screen, a fixed width wider
-   than the device forces the whole page's layout viewport to
-   widen to fit it - even with a correct viewport meta tag - which
-   is why every page required zooming out to see properly. This
-   block does not touch any rule above; it only adds a mobile
-   override that takes priority at narrow widths via the media
-   query and appearing later in the file.
-   ============================================================ */
-@media (max-width: 1500px) {
-.flexible-container-one {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    flex-shrink: 0 !important;
-    box-sizing: border-box !important;
-}
-}
+/* Responsive header: hide links from the right before they get cut off */
+@media (max-width: 940px){ .gift-cards-container{ display: none; } }
+@media (max-width: 850px){ .today-deal-container{ display: none; } }
+@media (max-width: 745px){ .registry-container{ display: none; } }
+@media (max-width: 675px){ .new-releases-container{ display: none; } }
+@media (max-width: 570px){ .books-container{ display: none; } }
+@media (max-width: 510px){ .best-sellers-container{ display: none; } }
+@media (max-width: 420px){ .amazon-basics-container{ display: none; } }
