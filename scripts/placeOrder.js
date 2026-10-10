@@ -1,4 +1,3 @@
-
 ////////////////// HANDLES DELIVERY DATE CALCULATIONS AND RENDERING //////////////////////////
 /**
  * @brief This function calculates the delivery date based on the number of days 
@@ -454,7 +453,7 @@ closeBtn.addEventListener('click', () => {
 
 const searchButton = document.querySelector(".js-search-btn");
 
-searchButton.addEventListener("click", () => {
+searchButton?.addEventListener("click", () => {
 
         const searchText = document.querySelector(".js-search-input").value;
 
@@ -471,7 +470,7 @@ searchButton.addEventListener("click", () => {
 
 const searchInput = document.querySelector(".js-search-input");
 
-searchInput.addEventListener("keydown", event => {
+searchInput?.addEventListener("keydown", event => {
 
         if (event.key === "Enter") {
 
