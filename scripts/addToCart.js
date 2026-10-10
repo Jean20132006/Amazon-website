@@ -1,4 +1,3 @@
-
 /////////////////// The CODE HERE HANDLES MOST FUNCTIONNALITIES IN THE CART ///////////////////
 
 let cart1 = JSON.parse(localStorage.getItem("cart1")) || [];                 // Get cart from localStorage or initialize as empty array
@@ -202,105 +201,63 @@ addToCartAllButtons();
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-//////////////////////// HANDLES FIRST CAROUSEL IN ADDTOCART PAGE //////////////////////////////
+//////////////////////// HANDLES THE CAROUSELS IN ADDTOCART PAGE //////////////////////////////
 /**
- * @brief This script handles carousel the first carousel in addToCart page
- * 
+ * @brief Makes a carousel scroll horizontally, so it works at any screen width.
+ *        The arrows scroll by one visible width ("page") and the page number is
+ *        recalculated from the scroll position (and again when the window is resized).
+ * @param track the element that holds the products and scrolls
+ * @param leftButton, rightButton the arrows
+ * @param currentPage, totalPages the "Page x of y" spans
  */
+function setupScrollCarousel(track, leftButton, rightButton, currentPage, totalPages) {
 
-let leftButtonAddToCart = document.querySelector('.add-to-cart-arrow.left');
-let rightButtonAddToCart = document.querySelector('.add-to-cart-arrow.right');
-let trackAddToCart = document.querySelector('.add-to-cart-carousel-track1');
-let currentPageAddToCart = document.querySelector('.add-to-cart-current-page');
-let totalPageAddToCart = document.querySelector('.add-to-cart-total-pages');
-let pagesAddToCart = document.querySelectorAll('.add-to-cart-first-carosel-page');
-totalPageAddToCart.innerHTML = pagesAddToCart.length;
+    if (!track) return;
 
-let currentIndexAddToCart = 0;
-let pageWidthAddToCart = document.querySelector('.add-to-cart-first-carousel').clientWidth;
-function updateCarouselAddToCart(){
+    function updateCarousel() {
+        const pageWidth = track.clientWidth || 1;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const total = Math.max(1, Math.ceil(track.scrollWidth / pageWidth - 0.01));
+        const current = track.scrollLeft >= maxScroll - 2 ? total : Math.floor(track.scrollLeft / pageWidth + 0.01) + 1;
 
-    trackAddToCart.style.transform = `translateX(-${currentIndexAddToCart * pageWidthAddToCart}px)`;
-    currentPageAddToCart.innerHTML = currentIndexAddToCart + 1;
-    if(currentIndexAddToCart === 0){
-        leftButtonAddToCart.disabled = true;
+        if (totalPages) totalPages.innerHTML = total;
+        if (currentPage) currentPage.innerHTML = current;
+
+        leftButton.disabled = track.scrollLeft <= 2;
+        rightButton.disabled = track.scrollLeft >= maxScroll - 2;
     }
-    else{
-        leftButtonAddToCart.disabled = false;
-    }
-    if(currentIndexAddToCart === pagesAddToCart.length - 1){
-        rightButtonAddToCart.disabled = true;
-    }
-    else{
-        rightButtonAddToCart.disabled = false;
-    }
+
+    leftButton.addEventListener('click', () => {
+        track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+    });
+    rightButton.addEventListener('click', () => {
+        track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+    });
+
+    track.addEventListener('scroll', updateCarousel);
+    window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);      // images change the width once loaded
+
+    updateCarousel();
 }
-leftButtonAddToCart.addEventListener('click', () => {
-    if(currentIndexAddToCart > 0){
-        currentIndexAddToCart--;
-        updateCarouselAddToCart();
-    }
-});
-rightButtonAddToCart.addEventListener('click', () => {
-    if(currentIndexAddToCart < pagesAddToCart.length - 1){
-        currentIndexAddToCart++;
-        updateCarouselAddToCart();
-    }
-});
 
-updateCarouselAddToCart();         // Initialize carousel state
+// First carousel
+setupScrollCarousel(
+    document.querySelector('.add-to-cart-carousel-track1'),
+    document.querySelector('.add-to-cart-arrow.left'),
+    document.querySelector('.add-to-cart-arrow.right'),
+    document.querySelector('.add-to-cart-current-page'),
+    document.querySelector('.add-to-cart-total-pages')
+);
 
-//////////////////////////////////////////////////////////////////
-
-/////////////////////// HANDLES SECOND CAROUSEL IN THE ADDTOCART PAGE ///////////////////////////
-
-/**
- * @brief This script handles carousel the second carousel in addToCart page
- * 
- */
-
-let leftButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.left2');
-let rightButtonAddToCart2 = document.querySelector('.add-to-cart-arrow2.right2');
-let trackAddToCart2 = document.querySelector('.add-to-cart-carousel-track2');
-let currentPageAddToCart2 = document.querySelector('.current-page2');
-let totalPageAddToCart2 = document.querySelector('.total-pages2');
-let pagesAddToCart2 = document.querySelectorAll('.add-to-cart-carosel-page2');
-totalPageAddToCart2.innerHTML = pagesAddToCart2.length;
-
-let currentIndexAddToCart2 = 0;
-let pageWidthAddToCart2 = document.querySelector('.add-to-cart-carousel2').clientWidth;
-
-function updateSecondCarouselAddToCart(){
-
-    trackAddToCart2.style.transform = `translateX(-${currentIndexAddToCart2 * pageWidthAddToCart2}px)`;
-    currentPageAddToCart2.innerHTML = currentIndexAddToCart2 + 1;
-    if(currentIndexAddToCart2 === 0){
-        leftButtonAddToCart2.disabled = true;
-    }
-    else{
-        leftButtonAddToCart2.disabled = false;
-    }
-    if(currentIndexAddToCart2 === pagesAddToCart2.length - 1){
-        rightButtonAddToCart2.disabled = true;
-    }
-    else{
-        rightButtonAddToCart2.disabled = false;
-    }
-}
-leftButtonAddToCart2.addEventListener('click', () => {
-    if(currentIndexAddToCart2 > 0){
-        currentIndexAddToCart2--;
-        updateSecondCarouselAddToCart();
-    }
-});
-rightButtonAddToCart2.addEventListener('click', () => {
-    if(currentIndexAddToCart2 < pagesAddToCart2.length - 1){
-        currentIndexAddToCart2++;
-        updateSecondCarouselAddToCart();
-    }
-});
-
-updateSecondCarouselAddToCart();         // Initialize carousel state
+// Second carousel
+setupScrollCarousel(
+    document.querySelector('.add-to-cart-carousel-track2'),
+    document.querySelector('.add-to-cart-arrow2.left2'),
+    document.querySelector('.add-to-cart-arrow2.right2'),
+    document.querySelector('.current-page2'),
+    document.querySelector('.total-pages2')
+);
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////// GENERATE DYNAMICALLY THE TWO BOTTOM CAROUSELS ///////////////////////////////
@@ -380,54 +337,13 @@ generateMultipleCarousel();
  */
 document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
-    const leftButton  = container.querySelector('.checkout-arrow.left');
-    const rightButton = container.querySelector('.checkout-arrow.right');
-    const track       = container.querySelector('.checkout-carousel-track');
-    const pages       = container.querySelectorAll('.checkout-carosel-page');
-    const carousel    = container.querySelector('.checkout-carousel');
-
-    const currentPage = container.querySelector('.current-page');
-    const totalPage   = container.querySelector('.total-pages');
-
-    let currentIndex = 0;
-
-    totalPage.innerHTML = pages.length;
-
-    function getPageWidth() {
-        return carousel.clientWidth;
-    }
-
-    function updateCarousel() {
-        const pageWidth = getPageWidth();
-        track.style.transform = `translateX(-${currentIndex * pageWidth}px)`;
-
-        if (currentPage) {
-            currentPage.innerHTML = currentIndex + 1;
-        }
-
-        leftButton.disabled  = currentIndex === 0;
-        rightButton.disabled = currentIndex === pages.length - 1;
-    }
-
-    leftButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
-
-    rightButton.addEventListener('click', () => {
-        if (currentIndex < pages.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
-
-    // Recalculate width on resize
-    window.addEventListener('resize', updateCarousel);
-
-    // Initialize
-    updateCarousel();
+    setupScrollCarousel(
+        container.querySelector('.checkout-carousel-track'),
+        container.querySelector('.checkout-arrow.left'),
+        container.querySelector('.checkout-arrow.right'),
+        container.querySelector('.current-page'),
+        container.querySelector('.total-pages')
+    );
 });
 
 
@@ -788,4 +704,3 @@ searchInput.addEventListener("keydown", event => {
         }
     }
 );
-
