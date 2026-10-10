@@ -1,4 +1,4 @@
-
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 .checkout-container{
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@
 .name-section{
     margin-top: 10px;
     font-family: Nunito, sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 1.65vw, 24px);
     font-weight: 600;
     width: 500px;
 }
@@ -120,7 +120,7 @@
     font-weight: 600;
 }
 .dollars-amount{
-    font-size: 24px;
+    font-size: clamp(18px, 1.65vw, 24px);
     font-weight: bold;
 }
 .info-section{
@@ -265,7 +265,7 @@
     display: flex;
     flex-direction: column;
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: bold;
     gap: 10px;
 }
@@ -310,7 +310,7 @@
 }
 #ingredients{
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: bold;
 }
 .down-button3,
@@ -672,7 +672,7 @@
     display: flex;
     flex-direction: row;
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: bold;
     margin-top: -60px;
 }
@@ -719,7 +719,7 @@
     flex-direction: column;
 }
 .frequently-price{
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: 600;
     color: black;
 }
@@ -779,7 +779,7 @@
     flex-direction: column;
     align-items: center;
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
     margin-top: -140px;
 }
@@ -903,7 +903,7 @@
     display: flex;
     flex-direction: row;
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: bold;
     
 }
@@ -1040,11 +1040,11 @@
 }
 .title-shake{
     font-family: Nunito, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
 }
 .champion{
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     color: grey;
     font-weight: 600;
 }
@@ -1095,7 +1095,7 @@
 }
 .max{
     font-weight: bold;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
 }
 /* End of Manufacturer third row section*/
 /* Manufaturer fourth row section*/
@@ -1245,7 +1245,7 @@
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid rgb(243, 241, 241);
-    /*font-size: 24px;*/
+    /*font-size: clamp(18px, 1.65vw, 24px);*/
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -1255,11 +1255,11 @@
 }
 .checkout-arrow.left{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow.right{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-amazon-choice{
     background-color: black;
@@ -1316,7 +1316,7 @@
 }
 .video-for-this-product-title{
     font-family: Nunito, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
 }
 .product-video{
@@ -1445,11 +1445,11 @@
 }
 .checkout-arrow-client-rating.left-client-rating{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow-client-rating.right-client-rating{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .say-title-pagenum{
     display: flex;
@@ -1600,11 +1600,11 @@
 }
 .checkout-arrow-video.left-video{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow-video.right-video{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .sponsored-text-video{
     display: flex;
@@ -1657,12 +1657,12 @@
 }
 .review-title{
     font-family: Nunito, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: bold;
 }
 .say-title{
     font-family: Nunito, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: bold;
 }
 .review-rating{
@@ -1671,7 +1671,7 @@
     align-items: center;
     gap: 10px;
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
 }
 .review-rating img{
@@ -1810,7 +1810,7 @@
 }
 .taste{
     color: grey;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
 }
 .say-view{
     font-family: Nunito, sans-serif;
@@ -1924,11 +1924,11 @@
 }
 .checkout-arrow-review.left-review{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow-review.right-review{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .say-title-pagenum{
     display: flex;
@@ -2037,7 +2037,7 @@
   margin: 20px 0;
 }
 .text{
-  font-size: 24px;
+  font-size: clamp(18px, 1.65vw, 24px);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -2132,14 +2132,14 @@
 .links a{
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: clamp(13px, 1.05vw, 15px);
   font-weight: 400px;
   line-height: 1.8;
   
 }
 .title-links{
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: clamp(14px, 1.1vw, 16px);
   font-weight: bold;
 }
 /*@media (max-width: 1493px){
@@ -2382,11 +2382,11 @@
 }
 .checkout-arrow-color.left{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow-color.right{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .column-color{
     display: flex;
@@ -2542,11 +2542,11 @@
 }
 .checkout-arrow-clothes-computers.left{
     left: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 .checkout-arrow-clothes-computers.right{
     right: 0px;
-    font-size: 28px;
+    font-size: clamp(20px, 1.9vw, 28px);
 }
 /*End of Big Carousel for brand for clothes and electronics section*/
 
@@ -2605,7 +2605,7 @@
 
 .title-four-picture-container-name{
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: clamp(15px, 1.25vw, 18px);
   font-weight: bold;
   color: black;
   margin-left: 20px;
@@ -2644,7 +2644,7 @@
 .big-image-clothes-computers-text{
     font-family: Nunito, Arial, Helvetica, sans-serif;
      color: black;
-     font-size: 18px;
+     font-size: clamp(15px, 1.25vw, 18px);
      font-weight: bold;
      width: 1460px;
      height: auto;
@@ -2654,75 +2654,463 @@
 }
 /*End of big image CSS*/
 
-/* ============================================================
-   MOBILE RESPONSIVE OVERRIDES (added)
-   These selectors were hardcoded to fixed desktop pixel widths
-   (700-1760px) above. On a phone screen, a fixed width wider
-   than the device forces the whole page's layout viewport to
-   widen to fit it - even with a correct viewport meta tag - which
-   is why every page required zooming out to see properly. This
-   block does not touch any rule above; it only adds a mobile
-   override that takes priority at narrow widths via the media
-   query and appearing later in the file.
-   ============================================================ */
-@media (max-width: 1500px) {
+
+/* ================================ RESPONSIVE ================================ */
+/* Every section is: .leftpage (spacer) + content + .rightpage (spacer).
+   The content was a fixed 1460px; now it fills the screen up to 1460px. */
+.leftpage + *{
+    width: 100%;
+    max-width: 1460px;
+    min-width: 0;
+    flex-shrink: 1;
+}
+@media (max-width: 1490px){
+    .leftpage + *{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+img,
+video{
+    max-width: 100%;
+}
+
+/* ----- Carousels: the track scrolls; the arrows scroll one visible width (see checkout.js) ----- */
+.checkout-carousel,
+.checkout-carousel-video,
+.checkout-carousel-clothes-computers{
+    width: 100%;
+    max-width: 1460px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.checkout-carousel-client-rating,
+.client-rating-video,
+.rating-video-carousel,
+.client-rating-video-carousel{
+    width: 100%;
+    max-width: 1085px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.checkout-carousel-review{
+    width: 100%;
+    max-width: 1010px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.checkout-carousel-color{
+    width: 100%;
+    max-width: 600px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.checkout-carousel-track,
+.checkout-carousel-client-rating-track,
+.checkout-carousel-video-track,
+.checkout-carousel-review-track,
+.checkout-carousel-color-track,
+.checkout-carousel-clothes-computers-track{
+    width: 100%;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    justify-content: safe center;   /* centered when everything fits, scrollable when not */
+    transform: none !important;
+    padding: 0 20px;
+}
+.checkout-carousel-track::-webkit-scrollbar,
+.checkout-carousel-client-rating-track::-webkit-scrollbar,
+.checkout-carousel-video-track::-webkit-scrollbar,
+.checkout-carousel-review-track::-webkit-scrollbar,
+.checkout-carousel-color-track::-webkit-scrollbar,
+.checkout-carousel-clothes-computers-track::-webkit-scrollbar{
+    display: none;
+}
+/* The pages no longer slide: their items sit directly in the scrolling track */
+.checkout-carosel-page,
+.checkout-carosel-client-rating-page,
+.checkout-carosel-video-page,
+.checkout-carosel-review-page,
+.checkout-carosel-color-page,
+.checkout-carosel-clothes-computers-page{
+    display: contents;
+}
+/* The cards keep their size in the scrolling row (otherwise they get squeezed and overlap) */
+.checkout-carousel-track > *,
+.checkout-carousel-client-rating-track > *,
+.checkout-carousel-video-track > *,
+.checkout-carousel-review-track > *,
+.checkout-carousel-color-track > *,
+.checkout-carousel-clothes-computers-track > *,
+.checkout-carosel-page > *,
+.checkout-carosel-client-rating-page > *,
+.checkout-carosel-video-page > *,
+.checkout-carosel-review-page > *,
+.checkout-carosel-color-page > *,
+.checkout-carosel-clothes-computers-page > *{
+    flex-shrink: 0;
+}
+/* Similar products videos: on small screens a card is at most the screen width minus the arrows */
+.checkout-carousel-vid{
+    width: min(375px, calc(100vw - 100px));
+    max-width: none;
+    gap: 12px;              /* space between the video and the picture + text under it */
+}
+.checkout-carousel-vid video,
+.sponsored-text-video{
+    width: 100%;
+}
+.sponsored-text-video img{
+    flex-shrink: 0;
+}
+/* gaps that used to be on the pages */
+.checkout-carousel-client-rating-track,
+.checkout-carousel-review-track{ gap: 10px; }
+.checkout-carousel-video-track{ gap: 40px; }
+.checkout-carousel-color-track{ gap: 5px; padding: 0; }
+.checkout-carousel-clothes-computers-track{ gap: 20px; }
+
+/* ----- Every fixed width of 250px+ can shrink to fit its container (no change on wide screens) ----- */
 .image-name-checkout-container,
+.radiobutton-image-section,
+.image-section,
+.image-section img,
+.name-section,
+.hr-checkout,
+.empty-div,
+.advertissement,
+.prime-checkout1,
+.main-checkout,
+.subscribe-save-container,
 .title-container,
 .title-hr,
 .title1-hr-product-details,
 .products-totalPrice-add-to-list-container,
 .products-totalPrice,
+.add-all-3-to-cart,
+.link-to-add-to-list,
+.othersellers-hr,
+.other-sellers-container,
+.sponsored-video-section,
+.sponsored video,
+.sponsored-text,
 .title1-container,
 .title1-hr,
 .manufacturer-container,
 .manufacturer-first-row,
 .manufacturer-first-row img,
 .manufacturer-second-row-container,
+.core-power,
+.core-power img,
+.power-img,
+.power-img img,
+.fairlife-container,
+.image-or-text,
 .manufacturer-third-row-container,
+.fuel-by-fairlife,
+.fuel-by-fairlife img,
 .manufacturer-fourth-row-container,
 .manufacturer-fourth-row-container img,
 .product-description-container,
+.product-details-container,
 .checkout-carousel,
-.checkout-carosel-page,
 .title-pagenum-container,
 .product-videos-container,
 .client-rating-video-carousel,
+.video-for-this-product,
+.product-video,
 .client-rating-video,
 .rating-video-carousel,
 #product-video2,
 .checkout-carousel-client-rating,
-.checkout-carosel-client-rating-page,
+.checkout-carousel-client-rating-img,
 .say-title-pagenum,
-.advertissement-section1,
 .advertissement-container,
+.advertissement-container img,
 .checkout-carousel-video,
-.checkout-carosel-video-page,
+.checkout-carousel-vid,
+.checkout-carousel-vid video,
+.sponsored-text-video,
 .customers-review-and-say-container,
+.review-container,
 .say-container,
+.How-customer-reviews-and-ratings-work-text-expand,
+.customer-review-hr,
+.write-a-customer-review,
 .customer-say-hr,
 .comment-Nate,
 .checkout-carousel-review,
-.checkout-carosel-review-page,
-.checkout-corePower-last-advert1,
 .core-power-advertissement,
 .core-power-advertissement img,
-.last-bottom-container,
 .personalized-recom,
+.signin-bottom-button,
 .go-to-top,
 .links,
+.fourth-column,
 .before-footer-links,
 .last-links-container,
 .conditions-of-use-copyright-container,
 .conditions-of-use-container,
+.checkout-carousel-color,
 .checkout-carousel-clothes-computers,
-.checkout-carosel-clothes-computers-page,
+.first-square-container,
+.name-link-container,
 .clothes-computers-image-container,
 .clothes-computers-image-container img,
-.big-image-clothes-computers-text {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    flex-shrink: 0 !important;
-    box-sizing: border-box !important;
+.big-image-clothes-computers-text{
+    max-width: 100%;
+    min-width: 0;
 }
+.last-bottom-container{
+    min-width: 0;
+}
+/* its sections were sized to their content (align-items: center), which made the carousels as wide as all their products */
+.last-bottom-container > *{
+    width: 100%;
+}
+
+/* ----- Rows that wrap onto several lines when they don't fit ----- */
+.products-totalPrice-add-to-list-container,
+.products-totalPrice,
+.manufacturer-container,
+.manufacturer-second-row-container,
+.manufacturer-third-row-container,
+.customers-review-and-say-container,
+.links,
+.last-links-container,
+.before-footer-links{
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+.customers-review-and-say-container{
+    column-gap: 30px;
+}
+.links{
+    row-gap: 40px;
+}
+.before-footer-links{
+    height: auto;
+    min-height: 80px;
+    padding: 20px 10px;
+}
+.bottom-logo-lang-flag{
+    height: auto;
+    min-height: 80px;
+}
+.products-totalPrice{
+    flex-shrink: 1;
+}
+.manufacturer-first-row img,
+.manufacturer-fourth-row-container img,
+.clothes-computers-image-container img,
+.advertissement-container img,
+.core-power-advertissement img{
+    height: auto;
+}
+#product-video2{
+    width: 100%;
+}
+/* "Back to top": the link around the bar takes the available width, so the bar can shrink */
+.back-to-top a{
+    flex: 0 1 1460px;
+    min-width: 0;
+}
+.go-to-top{
+    width: 100%;
+}
+
+/* ----- Product videos: the big video and "Video for this product" stay side by side ----- */
+.video-for-this-product{
+    flex: 0 0 345px;       /* keeps its width; the big video column shrinks instead */
+}
+.product-video{
+    width: 100%;
+}
+#product-video{
+    flex-shrink: 0;
+}
+@media (max-width: 900px){
+    .product-videos-container{
+        gap: 10px;
+    }
+    .product-video-text{
+        display: none;         /* only the thumbnails on small screens */
+    }
+    .video-for-this-product{
+        flex: 0 0 auto;
+        width: auto;
+        padding: 0 5px;
+    }
+    #product-video{
+        width: 110px;
+    }
+    #product-video2{
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    #product-video{
+        width: 80px;
+    }
+    .video-for-this-product-title{
+        width: 80px;           /* the title wraps above the thumbnails */
+    }
+    .video-for-this-product{
+        height: 300px;
+    }
+}
+
+/* ----- Product area: images | name & details | buy box ----- */
+.checkout-carousel-color-container{
+    flex: 1;
+    min-width: 0;
+}
+.select-to-learn-more-content-container{
+    flex-wrap: wrap;
+}
+/* Line above "Frequently Bought Together": stops before the buy box (270px + gap), as the original 1175px of 1460px */
+.title-hr{
+    width: calc(100% - 285px);
+}
+/* The three columns stay side by side at every width, like the original layout; they just get narrower */
+.radiobutton-image-section{
+    flex: 0 1 550px;
+    min-width: 0;
+}
+.image-section{
+    flex: 1;
+    min-width: 0;
+}
+/* Main image: same 470x500 frame as the original, scaled down (never up) when the column is narrower */
+.image-section img{
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    aspect-ratio: 470 / 500;
+    object-fit: contain;
+}
+.name-star-info-section{
+    flex: 1 1 400px;
+    min-width: 0;
+}
+.name-section{
+    width: auto;
+}
+.checkout-section{
+    flex: 0 1 270px;
+    min-width: 0;
+}
+.empty-div,
+.empty-div2,
+.empty-div3{
+    width: auto;
+}
+.About-this-item{
+    gap: 10px;              /* was a fixed 420px gap; space-between still pushes the arrow to the right */
+}
+@media (max-width: 1200px){
+    /* Details and buy box: their content fits the narrower columns */
+    .name-star-info-section *,
+    .checkout-section *{
+        min-width: 0;
+        max-width: 100%;
+    }
+    .flavour-button,
+    .size-button,
+    .advertissement,
+    .checkout-section div{
+        flex-wrap: wrap;
+    }
+    .prime-checkout1,
+    .main-checkout,
+    .quantity-section,
+    .add-cart-btn,
+    .buy-now-btn{
+        width: 100%;
+    }
+    .prime-checkout1{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .subscribe-save-container{
+        width: calc(100% + 20px);   /* still spans the box edge to edge (it has margin-left: -10px) */
+        max-width: none;
+    }
+}
+/* Phones: the buy box keeps a readable width; the image and details share the rest */
+@media (max-width: 600px){
+    .radiobutton-image-section,
+    .name-star-info-section{
+        flex: 1 1 0;
+    }
+    .checkout-section{
+        flex: 0 0 120px;
+    }
+    .image-name-checkout-container{
+        overflow-wrap: anywhere;    /* long words break instead of pushing past the narrow columns */
+    }
+    .title-hr{
+        width: calc(100% - 130px);  /* the buy box is 120px on phones */
+    }
+    /* Sponsored product under "About this item": only its name and the "Shop now" link */
+    .advertissement img,
+    .advertissement .star-price-container{
+        display: none;
+    }
+    .main-checkout{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .subscribe-save-container{
+        width: calc(100% + 12px);
+        margin-left: -6px;
+    }
+}
+/* Frequently bought together: when the total wraps to its own line, it no longer needs to be pulled up next to the images */
+@media (max-width: 960px){
+    .totalprice{
+        margin-top: 0;
+        flex-basis: 100%;
+    }
+}
+/* Small screens: tighter spacing so the three columns keep room */
+@media (max-width: 700px){
+    .image-name-checkout-container{
+        gap: 6px;
+    }
+    .radiobutton-image-section{
+        flex-direction: column-reverse;   /* thumbnails go under the main image instead of beside it */
+    }
+    .radio-button-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .image-section{
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .main-checkout,
+    .prime-checkout1{
+        height: auto;
+    }
+}
+/* Phones */
+@media (max-width: 600px){
+    .power-img,
+    .power-img img,
+    .core-power img{
+        height: auto;
+    }
+    .first-column,
+    .second-column,
+    .third-column,
+    .fourth-column{
+        align-items: center;
+        text-align: center;
+    }
 }
