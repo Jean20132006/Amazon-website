@@ -1,3 +1,10 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+/* Width of the "Place your order" summary box and the gap next to it.
+   The gift card, items and bottom total rows use the rest, so they stay aligned under the delivery column. */
+:root{
+    --place-order-summary-width: clamp(260px, 31.5vw, 460px);
+    --place-order-gap: clamp(10px, 1.4vw, 20px);
+}
 @media (max-width: 455px){
     .nav-bar-place-order .secure-checkout-container{
         display: none;
@@ -13,12 +20,12 @@
     flex-direction: row;
     align-items: center;
     gap: auto;
-    padding: 0 20px;
+    padding: 0 clamp(10px, 1.4vw, 20px);
     box-shadow: 0 0.1vw 0.2vw rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;   
+    z-index: 1000;
 }
 
 .nav-bar-place-order a{
@@ -42,14 +49,14 @@
     gap: auto;
     white-space: nowrap;   /*prevent text wrapping*/
     flex-shrink: 0;
-    
+
 }
 
 .secure-checkout-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 26px;
+    font-size: clamp(18px, 1.8vw, 26px);
     font-weight: bold;
     color: white;
     margin-top: -5px;
@@ -75,33 +82,50 @@
     display: flex;
     flex-direction: row;
     align-items: top;
-    gap: 20px;
-    width: 1460px;
+    gap: var(--place-order-gap);
+    width: 100%;
+    max-width: 1460px;
+    min-width: 0;
     justify-content: center;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .right-page,
 .left-page{
     flex-shrink: 1;
     width: 250px;
+    min-width: 0;
+}
+/* The spacers only take the space left next to the 1460px content, and each row takes the screen width
+   (main centers them, which otherwise sizes them to their content) */
+.right-page,
+.left-page{
+    flex: 1 1 0;
+    width: auto;
+}
+.delivery-pay-place-order-section1,
+.place-order-amazon-gift-card-section,
+.place-order-cart-first-item-section,
+.bottom-order-total-section{
+    width: 100%;
 }
 
 .place-order-delivery-pay-container{
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px;
-    width: 1000px;   
+    gap: var(--place-order-gap);
+    flex: 1 1 1000px;
+    min-width: 0;
 }
 
 .placeOrder-delivery-container{
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 10px;
+    gap: clamp(6px, 0.7vw, 10px);
     background-color: white;
-    padding: 20px;
+    padding: clamp(12px, 1.4vw, 20px);
 
     border-radius: 10px;
     background: linear-gradient(
@@ -121,13 +145,15 @@
 .order-destination-change{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 10px;
     align-items: center;
     justify-content: space-between;
 }
 
 .place-order-destination{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     font-weight: 600;
     color: black;
 }
@@ -142,13 +168,13 @@
 .placeOrder-delivery-container a{
     text-decoration: none;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     color:#01497c;
 }
 
 .destination-name-container{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     color: black;
 }
 
@@ -156,10 +182,11 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px;
-    width: 460px;
+    gap: clamp(12px, 1.4vw, 20px);
+    flex: 0 0 var(--place-order-summary-width);
+    min-width: 0;
     height: auto;
-    padding: 20px;
+    padding: clamp(12px, 1.4vw, 20px);
     background-color: white;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     border-radius: 10px;
@@ -174,15 +201,17 @@
 
 .place-order-button{
     background-color: #ffd000;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border: none;
     border-radius: 20px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: clamp(4px, 0.7vw, 10px);
+    font-size: clamp(14px, 1.1vw, 16px);
 }
 .place-order-amazon-policy-order{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
 
 }
@@ -193,7 +222,8 @@
 
 .place-order-horizontal-line{
     background-color: grey;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 1px;
 }
 
@@ -208,8 +238,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     /*font-weight: 600;*/
     color: black;
 }
@@ -217,7 +248,7 @@
 .place-order-total-price,
 .place-order-total{
     font-weight: 600;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
 }
 
 /*Gift card section CSS*/
@@ -226,16 +257,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--place-order-gap);
+    margin-bottom: var(--place-order-gap);
 }
 
 .place-order-amazon-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    width: 1460px;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 1460px;
+    min-width: 0;
 }
 
 .gift-card-place-order{
@@ -243,20 +276,29 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 985px;
+    width: calc(100% - var(--place-order-summary-width) - var(--place-order-gap));
     background-color: white;
-    height: 130px;
-    
+    min-height: clamp(90px, 8.9vw, 130px);
+    padding: clamp(10px, 1.4vw, 20px);
+
 }
 
 .gift-card-place-order-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
+    min-width: 0;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: clamp(12px, 1.05vw, 15px);
 
+}
+
+.gift-card-place-order-container img{
+    height: clamp(60px, 6.4vw, 93px);
+    width: auto;
+    flex-shrink: 0;
 }
 
 .place-order-get-amazon-gift-card{
@@ -264,16 +306,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
-    height: 92px;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    min-height: clamp(59px, 6.3vw, 92px);
     margin-top: 1px;
-    padding-right: 20px;
+    padding: 4px clamp(10px, 1.4vw, 20px) 4px 0;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .place-order-gift-card-text{
     font-weight: bold;
     color: black;
-    margin-left: 20px;
+    margin-left: clamp(10px, 1.4vw, 20px);
 }
 .upon-approval{
     color: black;
@@ -291,15 +336,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--place-order-gap);
 }
 
 .place-order-first-item-full-row{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    width: 1460px;   
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 1460px;
+    min-width: 0;
 }
 
 .place-order-first-item-container{
@@ -307,20 +354,21 @@
     flex-direction: column;
     align-items: left;
     flex-shrink: 0;
-    gap: 20px;
-    padding: 20px;
-    width: 985px;
+    gap: clamp(12px, 1.4vw, 20px);
+    padding: clamp(12px, 1.4vw, 20px);
+    width: calc(100% - var(--place-order-summary-width) - var(--place-order-gap));
     background-color: white;
     height: auto;
-    margin-bottom: 20px; 
+    margin-bottom: var(--place-order-gap);
 }
 
 .arraving-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5px;
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
     font-weight: 600;
     color: black;
 }
@@ -329,22 +377,25 @@
     display: flex;
     flex-direction: row;
     align-items: top;
-    gap: 20px;
-    width: 570px;
+    gap: clamp(10px, 1.4vw, 20px);
+    flex: 1 1 570px;
+    max-width: 570px;
+    min-width: 0;
     background-color: rgb(249, 246, 246);
     border-radius: 10px;
-    padding: 20px;
+    padding: clamp(10px, 1.4vw, 20px);
 }
 
 .image-minus-plus-button-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: clamp(16px, 4.8vw, 70px);
+    flex-shrink: 0;
 }
 
 .image-item-name-price-container img{
-    width: 175px;
+    width: clamp(90px, 12vw, 175px);
     height: auto;
     object-fit: contain;
     background-color: rgb(249, 246, 246);
@@ -354,15 +405,18 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 400px;
+    flex: 1 1 400px;
+    max-width: 400px;
+    min-width: 0;
+    overflow-wrap: break-word;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     color: black;
 }
 
 .price-place-order-cart{
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: bold;
     color: black;
 }
@@ -370,13 +424,14 @@
 .item-name-price-place-order a{
     text-decoration: none;
     color: #01497c;
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: clamp(13px, 1.05vw, 15px);
+    margin-top: clamp(6px, 0.7vw, 10px);
 }
 
 .gift-option-place-order{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: clamp(11px, 0.9vw, 13px);
+    text-align: center;
     font-weight: 600;
     color: black;
 }
@@ -385,7 +440,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: clamp(6px, 0.7vw, 10px);
 }
 
 
@@ -399,8 +454,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 110px;
-    height: 35px;
+    width: clamp(96px, 7.5vw, 110px);
+    height: clamp(32px, 2.4vw, 35px);
     background-color: white;
     border: 3px solid #ffd60a;
     border-radius: 17px;
@@ -426,7 +481,7 @@
 
 .shopping-cart-check-icon-prime{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: bold;
     color: #0466c8;
 }
@@ -434,21 +489,24 @@
 .bi.bi-check-lg{
     color: #e36414;
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
 }
 
 .product-delivery-date{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: top;
-    gap: 30px;
+    gap: clamp(12px, 2vw, 30px);
 }
 
 .radio-input-delivery-date{
     display: flex;
     flex-direction: row;
     align-items: top;
-    width: 340px;
+    flex: 1 1 260px;
+    max-width: 340px;
+    min-width: 0;
     justify-content: space-between;
     font-weight: 600;
 }
@@ -462,14 +520,14 @@
 
 .delivery-date{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: bold;
 }
 
 .delivery-options-free{
-    margin-left: 30px;
+    margin-left: clamp(10px, 2vw, 30px);
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.1vw, 16px);
     font-weight: 600;
     color: black;
 }
@@ -478,15 +536,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--place-order-gap);
 }
 
 .bottom-order-full-line{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-shrink: 0;
-    width: 1460px;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 1460px;
+    min-width: 0;
 }
 
 .place-order-button-total-order-container{
@@ -494,33 +554,33 @@
     flex-direction: row;
     align-items: center;
     flex-shrink: 0;
-    gap: 20px;
-    width: 985px;
-    background-color: white; 
-    padding: 20px;
+    gap: clamp(10px, 1.4vw, 20px);
+    width: calc(100% - var(--place-order-summary-width) - var(--place-order-gap));
+    background-color: white;
+    padding: clamp(12px, 1.4vw, 20px);
 }
 
 .place-order-bottom-button{
     border: none;
-    width: 200px;
+    width: clamp(140px, 14vw, 200px);
     background-color: #ffd000;
     border-radius: 15px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     padding: 5px;
     /*color: black;*/
 }
 
 .bottom-total-order-price{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
     color: black;
 }
 
 .bottom-amazon-policy-container{
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
 }
 .bottom-amazon-policy-container a{
     text-decoration: none;
@@ -531,7 +591,13 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 700px;
+    flex: 1 1 700px;
+    max-width: 700px;
+    min-width: 0;
+}
+
+.place-order-div-button{
+    flex-shrink: 0;
 }
 
 .bottom-total-price-container{
@@ -560,11 +626,12 @@
 
 .success-card {
   background: #ffffff;
-  padding: 40px;
+  padding: clamp(20px, 2.7vw, 40px);
   border-radius: 12px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 400px;
+  width: calc(100% - 32px);
   transform: translateY(20px) scale(0.95);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -584,7 +651,7 @@
   border-radius: 50%;
   display: block;
   stroke-width: 3;
-  stroke: #10b981; 
+  stroke: #10b981;
   stroke-miterlimit: 10;
   margin: 0 auto 20px auto;
   box-shadow: inset 0px 0px 0px #10b981;
@@ -623,20 +690,21 @@
 }
 
 .success-overlay.is-active .success-text {
-  animation: fadeUp 0.5s ease forwards 0.8s; 
+  animation: fadeUp 0.5s ease forwards 0.8s;
 }
 
 .success-text h3 {
   margin: 0 0 8px 0;
   color: #0f172a;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: clamp(20px, 1.65vw, 24px);
 }
 
 .success-text p {
   margin: 0 0 24px 0;
   color: #64748b;
   font-family: sans-serif;
+  font-size: clamp(14px, 1.1vw, 16px);
   line-height: 1.5;
 }
 
@@ -653,7 +721,7 @@
 }
 
 .success-overlay.is-active .close-btn {
-  animation: fadeUp 0.5s ease forwards 1s; 
+  animation: fadeUp 0.5s ease forwards 1s;
 }
 
 .close-btn:hover {
@@ -677,33 +745,64 @@
   }
 }
 
-/* ============================================================
-   MOBILE RESPONSIVE OVERRIDES (added)
-   These selectors were hardcoded to fixed desktop pixel widths
-   (700-1760px) above. On a phone screen, a fixed width wider
-   than the device forces the whole page's layout viewport to
-   widen to fit it - even with a correct viewport meta tag - which
-   is why every page required zooming out to see properly. This
-   block does not touch any rule above; it only adds a mobile
-   override that takes priority at narrow widths via the media
-   query and appearing later in the file.
-   ============================================================ */
-@media (max-width: 1500px) {
-.delivery-pay-place-order-section,
-.place-order-delivery-pay-container,
-.place-order-amazon-container,
-.gift-card-place-order,
-.gift-card-place-order-container,
-.place-order-first-item-full-row,
-.place-order-first-item-container,
-.bottom-order-full-line,
-.place-order-button-total-order-container,
-.total-order-amazon-policy-bottom {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    flex-shrink: 0 !important;
-    box-sizing: border-box !important;
-}
+/* ================================ RESPONSIVE ================================ */
+/* Each row is: .left-page (spacer) + content + .right-page (spacer).
+   The content was a fixed 1460px; now it fills the screen up to 1460px. */
+@media (max-width: 1490px){
+    .delivery-pay-place-order-section,
+    .place-order-amazon-container,
+    .place-order-first-item-full-row,
+    .bottom-order-full-line{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
+/* Phones: no room for the summary box next to the delivery column,
+   so it goes under it and every row takes the full width */
+@media (max-width: 700px){
+    .delivery-pay-place-order-section{
+        flex-direction: column;
+    }
+    .place-order-delivery-pay-container,
+    .place-order-container{
+        flex: none;
+        width: 100%;
+    }
+    .gift-card-place-order,
+    .place-order-first-item-container,
+    .place-order-button-total-order-container{
+        width: 100%;
+    }
+    .place-order-button,
+    .place-order-horizontal-line{
+        max-width: none;
+    }
+    .place-order-button-total-order-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .place-order-div-button,
+    .place-order-bottom-button{
+        width: 100%;
+    }
+    .image-item-name-price-container,
+    .radio-input-delivery-date{
+        max-width: none;
+    }
+}
+
+/* Small phones: the item image and its quantity buttons sit above the item name */
+@media (max-width: 420px){
+    .image-item-name-price-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .image-minus-plus-button-container{
+        flex-direction: row;
+        gap: 12px;
+    }
+    .item-name-price-place-order{
+        max-width: none;
+    }
+}
