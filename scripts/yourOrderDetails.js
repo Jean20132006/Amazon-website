@@ -1,59 +1,52 @@
-
 ///////////////////// HANDLES TOGETHER THE LAST TWO CAROUSELS IN THE BOTTOM PAGE ////////////////
 /**
  * @brief Handles multiple checkout carousels independently
  */
 document.querySelectorAll('.checkout-carousel-container').forEach(container => {
 
-    const leftButton  = container.querySelector('.checkout-arrow.left');
-    const rightButton = container.querySelector('.checkout-arrow.right');
-    const track       = container.querySelector('.checkout-carousel-track');
-    const pages       = container.querySelectorAll('.checkout-carosel-page');
-    const carousel    = container.querySelector('.checkout-carousel');
+    setupScrollCarousel(
+        container.querySelector('.checkout-carousel-track'),
+        container.querySelector('.checkout-arrow.left'),
+        container.querySelector('.checkout-arrow.right'),
+        container.querySelector('.current-page'),
+        container.querySelector('.total-pages')
+    );
+});
 
-    const currentPage = container.querySelector('.current-page');
-    const totalPage   = container.querySelector('.total-pages');
+/**
+ * @brief Scrollable carousel: the arrows scroll one visible width, the page counter follows the scroll
+ * @note The track scrolls horizontally (see addToCart.css), so it works at any screen width
+ */
+function setupScrollCarousel(track, leftButton, rightButton, currentPage, totalPages) {
 
-    let currentIndex = 0;
-
-    totalPage.innerHTML = pages.length;
-
-    function getPageWidth() {
-        return carousel.clientWidth;
-    }
+    if (!track || !leftButton || !rightButton) return;
 
     function updateCarousel() {
-        const pageWidth = getPageWidth();
-        track.style.transform = `translateX(-${currentIndex * pageWidth}px)`;
+        const pageWidth = track.clientWidth || 1;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const total = Math.max(1, Math.ceil(track.scrollWidth / pageWidth - 0.01));
+        const current = track.scrollLeft >= maxScroll - 2 ? total : Math.floor(track.scrollLeft / pageWidth + 0.01) + 1;
 
-        if (currentPage) {
-            currentPage.innerHTML = currentIndex + 1;
-        }
+        if (totalPages) totalPages.innerHTML = total;
+        if (currentPage) currentPage.innerHTML = current;
 
-        leftButton.disabled  = currentIndex === 0;
-        rightButton.disabled = currentIndex === pages.length - 1;
+        leftButton.disabled = track.scrollLeft <= 2;
+        rightButton.disabled = track.scrollLeft >= maxScroll - 2;
     }
 
     leftButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
+        track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
     });
-
     rightButton.addEventListener('click', () => {
-        if (currentIndex < pages.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
+        track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
     });
 
-    // Recalculate width on resize
+    track.addEventListener('scroll', updateCarousel);
     window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);      // images change the width once loaded
 
-    // Initialize
     updateCarousel();
-});
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -536,9 +529,3 @@ searchInput.addEventListener("keydown", event => {
         }
     }
 );
-
-
-
-
-
-
