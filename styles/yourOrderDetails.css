@@ -1,10 +1,13 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 .order-page-section{
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 10px;
-    padding: 20px;
-    width: 1000px;
+    gap: clamp(8px, 0.7vw, 10px);
+    padding: clamp(10px, 1.4vw, 20px);
+    width: calc(100% - 20px);
+    max-width: 1000px;
+    min-width: 0;
     height: auto;
     background-color: white;
     margin-top: 130px;
@@ -13,9 +16,10 @@
 .your-account-orders-order-details{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     gap: 5px;
 }
@@ -36,17 +40,19 @@
 
 .order-details-container{
     /*font-family: Nunito, sans-serif;*/
-    font-size: 24px;
+    font-size: clamp(20px, 1.65vw, 24px);
     font-weight: 600;
 }
 
 .order-place-date-order-number{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    column-gap: clamp(10px, 1.4vw, 20px);
+    row-gap: 4px;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     color: black;
     font-weight: 600;
 }
@@ -61,8 +67,11 @@
 .order-number-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
+    min-width: 0;
+    overflow-wrap: anywhere;        /* the long order id breaks instead of overflowing */
 }
 
 .order-separator{
@@ -73,17 +82,20 @@
     display: flex;
     flex-direction: row;
     align-items: top;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: clamp(16px, 2vw, 30px);
     border: 1px solid grey;
     border-radius: 10px;
-    padding: 20px;
+    padding: clamp(12px, 1.4vw, 20px);
 }
 
 .ship-payment-method-section{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: top;
-    gap: 50px;
+    gap: clamp(16px, 3.4vw, 50px);
 }
 
 .order-summary-section,
@@ -93,14 +105,15 @@
     flex-direction: column;
     align-items: left;
     font-family: Nunito, sans-serif;
-    font-size: 15px;
+    font-size: clamp(13px, 1.05vw, 15px);
     font-weight: 600;
     color: black;
+    min-width: 0;
 }
 
 .ship-label{
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: clamp(6px, 0.7vw, 10px);
 }
 
 .visa-card-ending-code{
@@ -110,19 +123,20 @@
 }
 
 .visa-card-ending-code img{
-    width: 40px;
+    width: clamp(32px, 2.7vw, 40px);
     height: auto;
     object-fit: contain
 }
 .view-related-transaction{
     border: 1px solid grey;
     border-radius: 20px;
-    width: 200px;
+    width: clamp(180px, 13.7vw, 200px);
+    max-width: 100%;
     background-color: white;
-    margin-top: 10px;
+    margin-top: clamp(6px, 0.7vw, 10px);
     text-align: center;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     color: black;
 }
@@ -131,10 +145,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 100px;
+    gap: clamp(20px, 6.8vw, 100px);
     justify-content: space-between;
     font-family: Nunito, sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: 600;
     color: black;
 }
@@ -142,7 +156,7 @@
 .grand-total-price,
 .grand-total-text{
     font-family: Nunito, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
     color: black;
 }
@@ -158,7 +172,7 @@
 
 .current-order-date{
     font-family: Nunito, sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     font-weight: bold;
     color: black;
 }
@@ -170,10 +184,11 @@
 .return-or-replace-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 5px;
+    gap: 0 5px;
     /*font-family: Nunito, Arial, Helvetica, sans-serif;*/
-    font-size: 13px;
+    font-size: clamp(12px, 0.9vw, 13px);
     font-weight: bold;
 }
 
@@ -185,25 +200,13 @@
     border-radius: 10px;
 }
 
-/* ============================================================
-   MOBILE RESPONSIVE OVERRIDES (added)
-   These selectors were hardcoded to fixed desktop pixel widths
-   (700-1760px) above. On a phone screen, a fixed width wider
-   than the device forces the whole page's layout viewport to
-   widen to fit it - even with a correct viewport meta tag - which
-   is why every page required zooming out to see properly. This
-   block does not touch any rule above; it only adds a mobile
-   override that takes priority at narrow widths via the media
-   query and appearing later in the file.
-   ============================================================ */
-@media (max-width: 1500px) {
-.order-page-section {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    flex-shrink: 0 !important;
-    box-sizing: border-box !important;
+/* ================================ RESPONSIVE ================================ */
+/* Phones: "Ship to" / "Payment Method" and the order summary stack, and the summary takes the full width */
+@media (max-width: 700px){
+    .ship-payment-method-order-summary-section{
+        flex-direction: column;
+    }
+    .order-summary-section{
+        width: 100%;
+    }
 }
-}
-
-
