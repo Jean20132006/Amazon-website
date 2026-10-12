@@ -227,7 +227,7 @@ cart1.forEach(item => {
 function renderProductsRelated(productsList){
 
     const relatedProductsList = document.querySelector('.related-products-with-fast-delivery-section');
-    let = relatedProductsHTML = '';
+    let relatedProductsHTML = '';
 
     productsList.forEach(item => {
 
