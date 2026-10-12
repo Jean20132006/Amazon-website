@@ -107,7 +107,7 @@ async function loadCart() {
 
     try {
 
-        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+        const response = await fetch(`${API_BASE_URL}/api/v1/cart/${userId}`);
 
         const data = await response.json();
 
@@ -395,7 +395,7 @@ const placeOrderButtons = document.querySelectorAll('.js-close-btn');
 placeOrderButtons.forEach(button => {
     button.addEventListener('click', async () => {
         const response = await fetch(
-                `http://localhost:4000/api/v1/orders/${userId}`,
+                `${API_BASE_URL}/api/v1/orders/${userId}`,
                 {
                     method: "POST",
 
@@ -491,7 +491,7 @@ searchInput?.addEventListener("keydown", event => {
  */
 
 /*await fetch(
-    "http://localhost:4000/api/v1/email/send-order-email",
+    `${API_BASE_URL}/api/v1/email/send-order-email`,
     {
 
         method: "POST",

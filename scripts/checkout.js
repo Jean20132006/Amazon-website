@@ -719,7 +719,7 @@ async function storeCart() {
         console.log("About to send PUT request");
 
         const response = await fetch(
-            `http://localhost:4000/api/v1/cart/${userId}`,
+            `${API_BASE_URL}/api/v1/cart/${userId}`,
             {
                 method: "PUT",
                 headers: {

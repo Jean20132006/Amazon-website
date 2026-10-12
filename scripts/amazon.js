@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:4000/api/v1/users/profile", {
+        const response = await fetch(`${API_BASE_URL}/api/v1/users/profile`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -60,7 +60,7 @@ async function loadCart() {
 
     try {
 
-        const response = await fetch(`http://localhost:4000/api/v1/cart/${userId}`);
+        const response = await fetch(`${API_BASE_URL}/api/v1/cart/${userId}`);
 
         if (!response.ok) {
 

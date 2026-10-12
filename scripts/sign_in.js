@@ -172,7 +172,7 @@ form.addEventListener('submit', async (event) => {
         // Sign Up
         if(isSignupMode){
 
-            response = await fetch('http://localhost:4000/api/v1/users/register',
+            response = await fetch(`${API_BASE_URL}/api/v1/users/register`,
                 {
                     method: 'POST',
 
@@ -190,7 +190,7 @@ form.addEventListener('submit', async (event) => {
             );
         }
         else{                             // Login
-            response = await fetch('http://localhost:4000/api/v1/users/login',
+            response = await fetch(`${API_BASE_URL}/api/v1/users/login`,
 
                 {
                     method: 'POST',

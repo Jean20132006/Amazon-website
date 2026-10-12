@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const response = await fetch(
-            `http://localhost:4000/api/v1/orders/${userId}?from=${from.toISOString()}&to=${to.toISOString()}`
+            `${API_BASE_URL}/api/v1/orders/${userId}?from=${from.toISOString()}&to=${to.toISOString()}`
         );
 
     const data = await response.json();
@@ -536,7 +536,7 @@ async function storeCart() {
         console.log("About to send PUT request");
 
         const response = await fetch(
-            `http://localhost:4000/api/v1/cart/${userId}`,
+            `${API_BASE_URL}/api/v1/cart/${userId}`,
             {
                 method: "PUT",
                 headers: {
